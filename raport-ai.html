@@ -24,6 +24,8 @@
 	<link rel="stylesheet" href="assets/css/dark-theme.css" />
 	<link rel="stylesheet" href="assets/css/semi-dark.css" />
 	<link rel="stylesheet" href="assets/css/header-colors.css" />
+	<link href="assets/css/digitalizare.css" rel="stylesheet">
+	<script src="assets/js/digitalizare.js" defer></script>
 	<title> Admin Dashboard </title>
     <script src="assets/js/chatgpt.js" defer></script>
 </head>
@@ -54,6 +56,20 @@
 					</a>
 				</li>
 
+				<li>
+					<a href="raport-ai.html" class="has-arrow">
+						<div class="parent-icon"><i class="bx bx-category"></i>
+						</div>
+
+						<div class="menu-title">AI Robo</div>
+					</a>
+					<ul>
+						<li> <a href="chat.html"><i class="bx bx-right-arrow-alt"></i>Chat</a>
+						</li>
+						<li> <a href="raport-ai.html"><i class="bx bx-right-arrow-alt"></i>Raport AI</a>
+						</li>
+					</ul>
+				</li>
 
 				<li>
 					<a href="crm.html" class="has-arrow">
@@ -194,21 +210,6 @@
 						</li>
 						<li> <a href="component-progress-bars.html"><i class="bx bx-right-arrow-alt"></i>Exporta
 								E-factura</a>
-						</li>
-					</ul>
-				</li>
-
-				<li>
-					<a href="raport-ai.html" class="has-arrow">
-						<div class="parent-icon"><i class="bx bx-category"></i>
-						</div>
-
-						<div class="menu-title">AI Robo</div>
-					</a>
-					<ul>
-						<li> <a href="chat.html"><i class="bx bx-right-arrow-alt"></i>Chat</a>
-						</li>
-						<li> <a href="raport-ai.html"><i class="bx bx-right-arrow-alt"></i>Raport AI</a>
 						</li>
 					</ul>
 				</li>
@@ -878,7 +879,16 @@
 							<div class="d-flex">
 								<img src="https://media.istockphoto.com/id/1010001882/vector/%C3%B0%C3%B0%C2%B5%C3%B1%C3%B0%C3%B1%C3%B1.jpg?s=612x612&w=0&k=20&c=1jeAr9KSx3sG7SKxUPR_j8WPSZq_NIKL0P-MA4F1xRw=" width="48" height="48" class="rounded-circle" alt="" />
 								<div class="flex-grow-1 ms-2">
-									<p class="chat-left-msg">Salut, adreseaza-mi o intrebare</p>
+									<div class="chat-left-msg">
+
+										Salut, adreseaza-mi o intrebare, spre exemplu:
+										<br>
+										<br>
+										<div class="ai-question" id="ai-question-1">Ce inseamna un CRM si care sunt beneficiile acestuia</div>
+
+
+									</div>
+
 								</div>
 							</div>
 						</div>
