@@ -102,4 +102,9 @@ askGpt.addEventListener('keypress', function (e) {
 });
 
 
-
+const aiQuestion1 = document.getElementById('ai-question-1');
+aiQuestion1.addEventListener('click', function() {
+    renderAnswer(aiQuestion1.innerHTML);
+    addMessage('right', aiQuestion1.innerHTML)
+    addLoading();
+})
