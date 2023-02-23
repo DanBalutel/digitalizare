@@ -7,7 +7,7 @@ const chatBox = document.getElementById('chatBox');
 
 // acces API with question
 function renderAnswer(question) {
-    fetch('http://api.raport.ai:3000/post', {
+    fetch('https://api.raport.ai/post', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
