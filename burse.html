@@ -737,8 +737,9 @@
                         <div class="card">
                             <div class="card-body">
 
-                                <iframe src="https://tradingeconomics.com/romania/stock-market" width="100%" style="height: 100vh;" frameborder="0"></iframe>
+                                <iframe id="iframe"  width="100%" style="height: 100vh;"  src="https://tradingeconomics.com/romania/stock-market#UpdatePanelChart"></iframe>
 
+                                
                             </div>
                         </div>
                     </div>
@@ -855,6 +856,9 @@
             <script src="assets/js/index.js"></script>
             <!--app JS-->
             <script src="assets/js/app.js"></script>
+            <script>
+                $('#iframe').contents().find('UpdatePanelChart')
+            </script>
 </body>
 
 </html>
