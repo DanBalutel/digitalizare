@@ -356,30 +356,3 @@ var ctx = document.getElementById("chart4").getContext('2d');
 
 
    });	 
-   // function to set a given theme/color-scheme
-function setTheme(themeName) {
-  localStorage.setItem('theme', themeName);
-  document.documentElement.className = themeName;
-}
-// function to toggle between light and dark theme
-function toggleTheme() {
- if (localStorage.getItem('theme') === 'dark-theme'){
-     setTheme('light-theme');
-     document.getElementById("theme-icon").classList.add('bx-moon');
-     document.getElementById("theme-icon").classList.remove('bx-sun');
- } else {
-     setTheme('dark-theme');
-     document.getElementById("theme-icon").classList.add('bx-sun');
-     document.getElementById("theme-icon").classList.remove('bx-moon');
- }
-}
-// Immediately invoked function to set the theme on initial load
-(function () {
- if (localStorage.getItem('theme') === 'dark-theme') {
-     setTheme('dark-theme');
-     document.getElementById("theme-icon").classList.add('bx-sun');
- } else {
-     setTheme('light-theme');
-     document.getElementById("theme-icon").classList.add('bx-moon');
- }
-})();
