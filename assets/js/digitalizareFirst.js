@@ -51,6 +51,8 @@ function render(cuiValue, requestApi) {
         console.log(dataObj);
     } else {
         dataObj = JSON.parse(window.localStorage.dataObj);
+        // all html rendering goes here
+        populatePage();
 
     }
 
