@@ -10,6 +10,7 @@ if (document.cookie.includes("cui-present:true")) {
     document.addEventListener("DOMContentLoaded", function () {
 
         // create popup
+        document.body.classList.toggle('hide');
         const cuiPopup = document.createElement('div');
         cuiPopup.id = 'cui-popup';
         cuiPopup.classList = 'show-over';
