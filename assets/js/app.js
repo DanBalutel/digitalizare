@@ -123,6 +123,8 @@ $(function() {
 		$('html').attr('class', 'color-sidebar sidebarcolor8');
 	}
 	   // function to set a given theme/color-scheme
+
+});
 function setTheme(themeName) {
 	localStorage.setItem('theme', themeName);
 	document.documentElement.className = themeName;
@@ -149,4 +151,3 @@ function setTheme(themeName) {
 	   document.getElementById("theme-icon").classList.add('bx-moon');
    }
   })();
-});
