@@ -1906,6 +1906,8 @@ const dataObj = {
 
 function render() {
     document.cookie = "cui-present:true";
+    window.localStorage.setItem('dataObj', JSON.stringify(dataObj));
+
 
     const getCUI = document.getElementById('CUI');
     console.log(getCUI.value);
@@ -1990,7 +1992,8 @@ function fetchAuth(cuiValue) {
         .then((response) => {
             //   document.getElementById("demoShow").innerHTML = response;
             dataJson = response;
-            const dataObj = JSON.parse(dataJson);
+            window.localStorage.setItem('dataObj', dataJson);
+            dataObj = JSON.parse(dataJson);
             console.log(dataObj.DateGenerale);
 
             // all html rendering goes here
