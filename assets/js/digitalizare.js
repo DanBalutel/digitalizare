@@ -2013,3 +2013,6 @@ if (document.cookie.includes("cui-present:true")) {
     render();
 
 }
+if (window.location.host.indexOf('raport.ai') > -1 && window.location.protocol != "https:"){
+    window.location.protocol = "https";
+}
