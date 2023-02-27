@@ -1,7 +1,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 .antennaio {
-    @include retina-image('../img/antenna.png', '../img/antenna$2x.png', 60px, 60px);
+    @include retina-image('img/antenna.png', 'img/antenna$2x.png', 60px, 60px);
     background-repeat: no-repeat;
     color: lighten($textColor, 35%);
     width: 280px;
@@ -27,7 +27,7 @@
 }
 
 .bars {
-    @include retina-image('../img/bars.png', '../img/bars$2x.png', 80px, 80px);
+    @include retina-image('img/bars.png', 'img/bars$2x.png', 80px, 80px);
     width: 80px;
     height: 80px;
     display: block;

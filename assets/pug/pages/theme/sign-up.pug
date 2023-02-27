@@ -1,7 +1,7 @@
 - var sidebar               = false
 doctype html
 html(lang='en')
-  include ../../components/header-files
+  include components/header-files
   body
     // login page start
     .container-fluid.p-0 
@@ -11,8 +11,8 @@ html(lang='en')
             div
               div
                 a.logo(href="index.html")
-                  img.img-fluid.for-light(src="../assets/images/logo/logo.png" alt="looginpage" )
-                  img.img-fluid.for-dark(src="../assets/images/logo/logo_dark.png" alt="looginpage" )
+                  img.img-fluid.for-light(src="assets/images/logo/logo.png" alt="looginpage" )
+                  img.img-fluid.for-dark(src="assets/images/logo/logo_dark.png" alt="looginpage" )
 
               .login-main 
                 form.theme-form
@@ -60,4 +60,4 @@ html(lang='en')
                     a.ms-2(href="login.html") Sign in
 
 
-      include ../../components/footer-files
+      include components/footer-files

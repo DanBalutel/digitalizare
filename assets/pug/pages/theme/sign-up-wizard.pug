@@ -5,7 +5,7 @@
 - var sidebar               = false
 doctype html
 html(lang='en')
-  include ../../components/header-files
+  include components/header-files
   body
     // login page start
     .container-fluid
@@ -17,8 +17,8 @@ html(lang='en')
                 ul
                   li
                     a.logo.text-start.ps-0(href="index.html")
-                      img.img-fluid.for-light(src="../assets/images/logo/logo.png" alt="looginpage" )
-                      img.img-fluid.for-dark(src="../assets/images/logo/logo_dark.png" alt="looginpage" )
+                      img.img-fluid.for-light(src="assets/images/logo/logo.png" alt="looginpage" )
+                      img.img-fluid.for-dark(src="assets/images/logo/logo_dark.png" alt="looginpage" )
                   li
                     a(href='#step-1')
                       h4 1
@@ -41,7 +41,7 @@ html(lang='en')
                         i.fa.fa-thumbs-o-up
                       small Complete.. !
                   li                            
-                    img(src="../assets/images/login/icon.png" alt="looginpage" )       
+                    img(src="assets/images/login/icon.png" alt="looginpage" )       
 
                 #step-1
                   .wizard-title
@@ -108,4 +108,4 @@ html(lang='en')
                         input.form-control.mt-1(type='text', placeholder='City', required='required')
                         // Smart Wizard Ends
 
-      include ../../components/footer-files
+      include components/footer-files

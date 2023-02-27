@@ -10,16 +10,16 @@
 - var customcard            = true;
 doctype html
 html(lang='en')
-  include ../../components/header-files
+  include components/header-files
   body
-    include ../../components/loader
-    include ../../components/taptop
+    include components/loader
+    include components/taptop
     // page-wrapper Start
     #pageWrapper.page-wrapper.compact-wrapper
-      include ../../components/header
+      include components/header
       // Page Body Start
       .page-body-wrapper
-        include ../../components/sidebar
+        include components/sidebar
         .page-body
           .container-fluid
             .page-title
@@ -32,7 +32,7 @@ html(lang='en')
                     li.breadcrumb-item
                       a(href='index.html')                                        
                         svg.stroke-icon
-                          use(href='../assets/svg/icon-sprite.svg#stroke-home')
+                          use(href='assets/svg/icon-sprite.svg#stroke-home')
                     li.breadcrumb-item Ui Kits
                     li.breadcrumb-item.active Tooltip
           // Container-fluid starts
@@ -265,5 +265,5 @@ html(lang='en')
                                 | &lt;button class="btn btn-outline-success mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="Tooltip Success"&gt;Tooltip Success&lt;/button&gt;
                                 | &lt;button class="btn btn-outline-info mb-0 me-0" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="Tooltip Info"&gt;Tooltip Info&lt;/button&gt;
           // Container-fluid Ends
-        include ../../components/footer
-    include ../../components/footer-files
+        include components/footer
+    include components/footer-files

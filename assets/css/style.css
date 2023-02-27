@@ -5581,7 +5581,7 @@ body.modal-open .select2-container--open .select2-dropdown {
 
 .social-profile {
   text-align: center;
-  background-image: url(../images/dashboard-5/profile-bg.png);
+  background-image: url(images/dashboard-5/profile-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -6003,12 +6003,12 @@ td.highlight {
 }
 
 td.details-control {
-  background: url("../images/details_open.png") no-repeat center center;
+  background: url("images/details_open.png") no-repeat center center;
   cursor: pointer;
 }
 
 tr.shown td.details-control {
-  background: url("../images/details_close.png") no-repeat center center;
+  background: url("images/details_close.png") no-repeat center center;
 }
 
 .dataTables_scroll ~ .dataTables_paginate {
@@ -12500,7 +12500,7 @@ p.data-attributes svg {
     3.7 Comingsoon CSS Start
 ==========================**/
 .comingsoon-bgimg {
-  background: url(../images/other-images/coming-soon-bg.jpg);
+  background: url(images/other-images/coming-soon-bg.jpg);
   background-position: bottom;
   background-size: cover;
 }
@@ -12853,7 +12853,7 @@ p.data-attributes svg {
 }
 
 .balance-widget {
-  background-image: url(../images/dashboard-2/balance-bg.png);
+  background-image: url(images/dashboard-2/balance-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -13564,7 +13564,7 @@ p.data-attributes svg {
   }
 }
 .welcome-card {
-  background-image: url(../images/dashboard-3/bg.jpg);
+  background-image: url(images/dashboard-3/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -14639,7 +14639,7 @@ select.crypto-select.primary {
 
 .balance-box {
   text-align: center;
-  background-image: url(../images/dashboard-4/bg-balance.png);
+  background-image: url(images/dashboard-4/bg-balance.png);
   background-position: right;
   background-size: cover;
 }
@@ -15369,7 +15369,7 @@ select.crypto-select.primary {
 }
 
 .widget-1 {
-  background-image: url(../images/dashboard/widget-bg.png);
+  background-image: url(images/dashboard/widget-bg.png);
   background-size: cover;
   margin-bottom: 25px;
 }
@@ -17787,7 +17787,7 @@ footer.blockquote-footer {
   text-align: center;
 }
 .error-wrapper.maintenance-bg {
-  background-image: url(../images/other-images/maintenance-bg.jpg);
+  background-image: url(images/other-images/maintenance-bg.jpg);
   background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: overlay;
 }
@@ -19533,7 +19533,7 @@ footer {
   left: 0;
   transform: translateY(-50%);
   margin-left: 0;
-  background-image: url(../images/landing/icon/plus.svg);
+  background-image: url(images/landing/icon/plus.svg);
   background-position: center;
   background-size: 16px;
 }
@@ -19544,7 +19544,7 @@ footer {
   background-color: transparent;
 }
 .landing-page .customization-accordion .accordion-button:not(.collapsed)::after {
-  background-image: url(../images/landing/icon/minus.svg);
+  background-image: url(images/landing/icon/minus.svg);
 }
 .landing-page .customization-accordion .accordion-body {
   padding-top: 0;
@@ -20436,7 +20436,7 @@ footer {
   position: relative;
   background-position: bottom;
   background-size: cover;
-  background-image: url(../images/landing/home-bg.jpg);
+  background-image: url(images/landing/home-bg.jpg);
   background-color: #1b1c21;
 }
 .landing-home .sub-title {
@@ -21370,7 +21370,7 @@ footer {
 .footer-bg {
   position: relative;
   text-align: center;
-  background: url(../images/landing/footer.jpg);
+  background: url(images/landing/footer.jpg);
   margin-left: 0;
   color: #fff;
 }
@@ -22427,7 +22427,7 @@ ul.dot-group li {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  background: url("../images/login/login_bg.jpg");
+  background: url("images/login/login_bg.jpg");
   background-position: center;
   padding: 30px 12px;
 }
@@ -23779,7 +23779,7 @@ html {
     3.37 Social-app CSS start
 ==========================**/
 .user-profile .hovercard .socialheader {
-  background: url(../images/social-app/social-image.png);
+  background: url(images/social-app/social-image.png);
 }
 .user-profile .hovercard .user-image .share-icons {
   position: absolute;
@@ -24843,7 +24843,7 @@ html {
   margin: 30px 0;
 }
 .user-profile .hovercard .cardheader {
-  background: url(../images/other-images/bg-profile.png);
+  background: url(images/other-images/bg-profile.png);
   background-size: cover;
   background-position: 10%;
   height: 470px;
@@ -32758,7 +32758,7 @@ button[data-toggle=dropdown]:hover ~ .dropdown-menu {
   }
 }
 .page-wrapper.material-type .page-body-wrapper {
-  background-image: url(../images/other-images/boxbg.jpg);
+  background-image: url(images/other-images/boxbg.jpg);
   background-blend-mode: overlay;
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -35959,7 +35959,7 @@ html[dir=rtl] body.dark-only .page-wrapper .page-body-wrapper .page-body .card:n
   5.9 Box-layout CSS start
 ==========================**/
 .box-layout {
-  background-image: url(../images/other-images/boxbg.jpg);
+  background-image: url(images/other-images/boxbg.jpg);
   background-blend-mode: overlay;
   background-color: rgba(255, 255, 255, 0.5);
 }

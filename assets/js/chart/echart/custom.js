@@ -935,7 +935,7 @@ require([
                     if (!env.browser.ie || env.browser.ie.version > 8) {
 
                         var scr = document.createElement('script');
-                        scr.src = '../assets/js/chart/echart/lib/dat.gui.min.js';
+                        scr.src = 'assets/js/chart/echart/lib/dat.gui.min.js';
                         scr.onload = function () {
                             var gui = new dat.GUI();
                             var config = {

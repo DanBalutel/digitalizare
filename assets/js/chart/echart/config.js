@@ -20,7 +20,7 @@
 
 (function () {
 
-    var baseUrl = window.AMD_BASE_URL || '../';
+    var baseUrl = window.AMD_BASE_URL || '';
     var sourceMap = window.AMD_ENABLE_SOURCE_MAP;
     // `true` by default for debugging.
     sourceMap == null && (sourceMap = true);
@@ -43,10 +43,10 @@
     var ecDistPath;
     if (params.__ECDIST__) {
         ecDistPath = ({
-            'webpack-req-ec': '../echarts-boilerplate/echarts-webpack/dist/webpack-req-ec',
-            'webpack-req-eclibec': '../echarts-boilerplate/echarts-webpack/dist/webpack-req-eclibec',
-            'webpackold-req-ec': '../echarts-boilerplate/echarts-webpackold/dist/webpackold-req-ec',
-            'webpackold-req-eclibec': '../echarts-boilerplate/echarts-webpackold/dist/webpackold-req-eclibec'
+            'webpack-req-ec': 'echarts-boilerplate/echarts-webpack/dist/webpack-req-ec',
+            'webpack-req-eclibec': 'echarts-boilerplate/echarts-webpack/dist/webpack-req-eclibec',
+            'webpackold-req-ec': 'echarts-boilerplate/echarts-webpackold/dist/webpackold-req-ec',
+            'webpackold-req-eclibec': 'echarts-boilerplate/echarts-webpackold/dist/webpackold-req-eclibec'
         })[params.__ECDIST__];
         if (!ecDistPath && params.__ECDIST__.match(/[0-9.]/)) {
             // Version number
@@ -66,7 +66,7 @@
                 'ecStat': 'test/lib/ecStat.min',
                 'myTransform': 'test/lib/myTransform/dist/myTransform',
                 // 'ecStat': 'http://localhost:8001/echarts/echarts-stat/dist/ecStat',
-                'geoJson': '../geoData/geoJson',
+                'geoJson': 'geoData/geoJson',
                 'theme': 'theme',
                 'data': 'test/data',
                 'map': 'test/data/map',

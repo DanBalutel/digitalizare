@@ -111,7 +111,7 @@ var followeroptions = {
             hollow: {
                 margin: 5,
                 size: '70%',
-                image: '../assets/images/dashboard-5/follower.png',
+                image: 'assets/images/dashboard-5/follower.png',
                 imageWidth: 50,
                 imageHeight: 50,
                 imageClipped: false,
