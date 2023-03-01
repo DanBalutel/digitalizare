@@ -90,12 +90,12 @@ askGpt.addEventListener('keypress', function (e) {
         addLoading();
     }
 });
-document.getElementById('trimite').onclick = function() {
+askGpt.getElementById('trimite').onclick = function() {
     console.log('asked GPT: ' + askGpt.value);
     renderAnswer(askGpt.value);
     addMessage('right', askGpt.value)
     addLoading();
- }​;​
+}
 
 const aiQuestion1 = document.getElementById('ai-question-1');
 aiQuestion1.addEventListener('click', function () {
