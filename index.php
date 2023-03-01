@@ -143,18 +143,18 @@
           </div>
         </div>
 
-        <div class="col-xl-6 col-lg-12 box-col-6 xl-50">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Skill Status</h5>
-                            </div>
-                            <div class="card-body">
-                                <div class="chart-container skill-chart">
-                                    <div id="circlechart"></div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="col-md-6 col-sm-12 box-col-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Skill Status</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <div id="circlechart"></div>
                     </div>
+                </div>
+            </div>
+        </div>
 
 
       </div>
