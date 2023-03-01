@@ -41,7 +41,6 @@ function renderAnswer(question) {
         .catch(error => console.log(error));
 }
 
-// add answer loading animation
 function addLoading() {
     const loadingChild = document.createElement('div');
     loadingChild.classList = 'chat-content-leftside';
