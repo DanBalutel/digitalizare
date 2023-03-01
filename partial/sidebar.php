@@ -115,8 +115,8 @@
                   <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                 <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                 <ul class="sidebar-submenu" style="display: none;">
-                  <li><a href="learning-list-view.html">Calendar</a></li>
-                  <li><a href="learning-detailed.html">Proiecte</a></li>
+                  <li><a href="calendar-basic.php">Calendar</a></li>
+                  <li><a href="projects.php">Proiecte</a></li>
                   <li><a href="learning-detailed.html">Intalniri/Evenimente</a></li>
                   <li><a href="learning-detailed.html">Mijloace fixe</a></li>
                   <li><a href="learning-detailed.html">Materii prime</a></li>
@@ -149,9 +149,9 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="product.html">Produse</a></li>
-                     <li><a href="product-page.html">Comenzi</a></li>
-                     <li><a href="list-products.html">Setari</a></li>
+                     <li><a href="product.php">Produse</a></li>
+                     <li><a href="order-historyphp">Comenzi</a></li>
+                     <li><a href="list-products.php">Setari</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
