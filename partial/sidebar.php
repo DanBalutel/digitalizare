@@ -86,7 +86,7 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="echarts.html">Documente</a></li>
+                     <li><a href="file-manager.php">Documente</a></li>
                      <li><a href="chart-apex.html">Fisiere</a></li>
                   </ul>
                </li>
