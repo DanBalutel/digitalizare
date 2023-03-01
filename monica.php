@@ -84,7 +84,7 @@
                         <div class="col-xl-12 d-flex">
                           <div class="input-group text-box">
                             <input class="form-control input-txt-bx" id="askGPT" type="text" name="message-to-send" placeholder="Scrie un mesaj.....">
-                            <button class="input-group-text btn btn-primary text-white fw-bold" type="button">Trimite</button>
+                            <button class="input-group-text btn btn-primary text-white fw-bold" id="trimite" type="button">Trimite</button>
                           </div>
                         </div>
                       </div>
