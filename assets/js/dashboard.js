@@ -54,9 +54,9 @@ function populatePage() {
     const blockProfit = document.getElementById('profit-actual');
     blockProfit.innerHTML = parseInt(dataObj.detalii_grafice.grafice_profit_pierdere.data.pop().y);
 
-    // const mapAnaf = document.getElementById('mapAnaf');
-    // const addresAnaf = encodeURIComponent(dataObj.DateGenerale.adresa);
-    // mapAnaf.innerHTML = '<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=' + addresAnaf + '&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>';
+    const mapAnaf = document.getElementById('mapAnaf');
+    const addresAnaf = encodeURIComponent(dataObj.DateGenerale.adresa);
+    mapAnaf.innerHTML = '<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=' + addresAnaf + '&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>';
 
     const locuriMunca = document.getElementById('locuri-munca');
     locuriMunca.innerHTML = dataObj.Bilanturi[0].numar_mediu_angajati;
@@ -76,4 +76,69 @@ function populatePage() {
     const capitalTotal = document.getElementById('capital-total');
     capitalTotal.innerHTML = dataObj.Bilanturi[0].capital_total;
     console.log(`capital Total: ${dataObj.Bilanturi[0].capital_total}`)
+
+    var optionsCircle = {
+        chart: {
+          type: "radialBar",
+          height: 375,
+          offsetY: -30,
+          offsetX: 20,
+        },
+        plotOptions: {
+          radialBar: {
+            size: undefined,
+            inverseOrder: false,
+            hollow: {
+              margin: 10,
+              size: "30%",
+              background: "transparent",
+            },
+            track: {
+              show: true,
+              background: "#f2f2f2",
+              strokeWidth: "10%",
+              opacity: 1,
+              margin: 3,
+            },
+          },
+        },
+        series: [90, 63, 50],
+        labels: ["Skill 01", "Skill 02", "Skill 03"],
+        legend: {
+          show: true,
+          fontSize: "16px",
+          fontFamily: "Roboto, sans-serif",
+          fontWeight: 500,
+          labels: {
+            colors: "#2C323F",
+          },
+          markers: {
+            width: 86,
+            height: 18,
+            radius: 3,
+          },
+        },
+        colors: [CubaAdminConfig.secondary, CubaAdminConfig.primary, "#51bb25"],
+        responsive: [{
+          breakpoint: 767,
+          options: {
+            title: {
+              style: {
+                fontSize: "16px",
+              },
+            },
+          },
+        }]
+      };
+    
+      var chartCircle = new ApexCharts(
+        document.querySelector("#circlechart"),
+        optionsCircle
+      );
+      chartCircle.render();
+
+
+
+
+      
 }
