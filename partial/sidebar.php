@@ -134,8 +134,8 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="learning-list-view">Smart building</a></li>
-                     <li><a href="learning-detailed">Echipamente</a></li>
+                     <li><a href="smart-building">Smart building</a></li>
+                     <li><a href="echipamente">Echipamente</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
