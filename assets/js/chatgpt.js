@@ -91,7 +91,7 @@ askGpt.addEventListener('keypress', function (e) {
     }
 });
 
-askGpt.getElementById('trimite').addEventListener("click", function() {
+document.getElementById('trimite').addEventListener("click", function() {
     console.log('asked GPT: ' + askGpt.value);
     renderAnswer(askGpt.value);
     addMessage('right', askGpt.value)
