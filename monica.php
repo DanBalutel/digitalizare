@@ -1,4 +1,5 @@
 <?php include('partial/header.php') ?>
+<script src="assets/js/chatgpt.js" defer></script>
 <?php include('partial/loader.php') ?>
 <!-- page-wrapper Start-->
 <div class="page-wrapper compact-wrapper" id="pageWrapper">
@@ -20,27 +21,27 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-4">
-            <a style="cursor: pointer;" id="ai-question-1">
+            <a style="cursor: pointer;" >
                 <div class="card">
-                    <div class="card-body p-3">
+                    <div id="ai-question-1" class="card-body p-3">
                         Ce inseamna un CRM si care sunt beneficiile acestuia
                     </div>
                 </div>
             </a>
         </div>
         <div class="col-md-4">
-            <a style="cursor: pointer;" id="ai-question-2">
+            <a style="cursor: pointer;" >
                 <div class="card">
-                    <div class="card-body p-3">
+                    <div id="ai-question-2" class="card-body p-3">
                         Ce inseamna un CRM si care sunt beneficiile acestuia
                     </div>
                 </div>
             </a>
         </div>
         <div class="col-md-4">
-            <a style="cursor: pointer;" id="ai-question-3">
+            <a style="cursor: pointer;" >
                 <div class="card">
-                    <div class="card-body p-3">
+                    <div id="ai-question-3" class="card-body p-3">
                         Ce inseamna un CRM si care sunt beneficiile acestuia
                     </div>
                 </div>
@@ -74,9 +75,7 @@
                                 Salut, adreseaza-mi o intrebare, sau fa click pe o intrebare de mai sus.
                             </div>
                         </li>
-                        <div class="message">
-                                                                        
-                        </div>
+
                       </ul>
                     </div>
                     <!-- end chat-history-->
