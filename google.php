@@ -14,7 +14,7 @@
     <div class="page-body">
     
       <?php 
-        $title = 'Fonduri UE';
+        $title = 'Google Apps';
         include('partial/breadcrumb.php') 
       ?>
       
