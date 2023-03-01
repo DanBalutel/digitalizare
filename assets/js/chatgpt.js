@@ -96,10 +96,8 @@ askGpt.addEventListener('keypress', function (e) {
 
 const aiQuestion1 = document.getElementById('ai-question-1');
 aiQuestion1.addEventListener('click', function () {
-   
-    aiQuestion1.innerHTML = ` Raspuns: CRM (Customer Relationship Management) este o strategie si un set de tehnologii folosite pentru a gestiona relatiile cu clientii si interacionarea cu acestia. CRM-ul ofera o imagine de ansamblu asupra tuturor interacionarilor cu clientii, inclusiv vanzarile, marketingul, suportul tehnic si comunicarile cu clientii.Beneficiile unui CRM includ: 1. O mai buna comunicare cu clientii - CRM-ul permite companiilor sa interacioneze cu clientii prin mai multe canale, cum ar fi e-mail, telefon sau social media. 2. Automatizarea proceselor de vanzare - CRM-ul foloseste o serie de procese automatizate pentru a asista utilizatorii in vanzarea produselor si serviciilor. 3. Cresterea vanzarilor - CRM-ul ofera companiilor informatii despre potentialii clienti si le permite sa se concentreze mai bine pe vanzari. 4. Reducerea costurilor - CRM-ul reduce timpul si costurile necesare pentru a gestiona relatiile cu clientii. 5. Analiza informatiilor - CRM-ul permite companiilor sa analizeze rapid informatiile despre clienti si sa ia decizii bazate pe aceste informatii.
-    `;
-    addMessage('left', aiQuestion1.innerHTML)
+    renderAnswer(aiQuestion1.innerHTML);
+    addMessage('right', aiQuestion1.innerHTML)
     addLoading();
 })
 const aiQuestion2 = document.getElementById('ai-question-2');
