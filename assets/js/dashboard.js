@@ -1,8 +1,27 @@
-console.log('I am here !!!');
-
-
 let dataJson;
 let dataObj;
+
+var request = {};
+var pairs = location.search.substring(1).split('&');
+for (var i = 0; i < pairs.length; i++) {
+  var pair = pairs[i].split('=');
+  request[pair[0]] = pair[1];
+}
+
+if (window.localStorage.dataObj) {
+    dataObj = JSON.parse(window.localStorage.dataObj);
+    populatePage();
+
+} else if (request['cui']) {
+    fetchAuth(request['cui']);
+} else {
+    alert('Introdu codul CUI');
+}
+
+
+console.log(request['cui']);
+
+
 // CUI 38911092
 function fetchAuth(cuiValue) {
     // (A) URL & CREDENTIALS
@@ -22,7 +41,7 @@ function fetchAuth(cuiValue) {
             dataObj = JSON.parse(dataJson);
             console.log(dataObj);
 
-            document.addEventListener( "DOMContentLoaded", function() {
+            document.addEventListener("DOMContentLoaded", function () {
                 console.log('loaded!');
             });
 
@@ -37,8 +56,6 @@ function fetchAuth(cuiValue) {
         // (D) HANDLE ERRORS (OPTIONAL)
         .catch((error) => { console.log(error); });
 }
-
-fetchAuth(38911092);
 
 function populatePage() {
     // temp we render here all DOOM elements
@@ -77,68 +94,80 @@ function populatePage() {
     capitalTotal.innerHTML = dataObj.Bilanturi[0].capital_total;
     console.log(`capital Total: ${dataObj.Bilanturi[0].capital_total}`)
 
+
+    const chartAsociati = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.asociati;
+    const listNameAsociati = [];
+    const listCotaAsociati = [];
+
+    for (const asoc in chartAsociati) {
+        listNameAsociati.push(chartAsociati[asoc].nume);
+        listCotaAsociati.push(chartAsociati[asoc].procentaj);
+
+    };
+
+
     var optionsCircle = {
         chart: {
-          type: "radialBar",
-          height: 375,
-          offsetY: -30,
-          offsetX: 20,
+            type: "radialBar",
+            height: 375,
+            offsetY: -30,
+            offsetX: 20,
         },
         plotOptions: {
-          radialBar: {
-            size: undefined,
-            inverseOrder: false,
-            hollow: {
-              margin: 10,
-              size: "30%",
-              background: "transparent",
+            radialBar: {
+                size: undefined,
+                inverseOrder: false,
+                hollow: {
+                    margin: 10,
+                    size: "30%",
+                    background: "transparent",
+                },
+                track: {
+                    show: true,
+                    background: "#f2f2f2",
+                    strokeWidth: "10%",
+                    opacity: 1,
+                    margin: 3,
+                },
             },
-            track: {
-              show: true,
-              background: "#f2f2f2",
-              strokeWidth: "10%",
-              opacity: 1,
-              margin: 3,
-            },
-          },
         },
-        series: [90, 63, 50],
-        labels: ["Skill 01", "Skill 02", "Skill 03"],
+        series: listCotaAsociati,
+        labels: listNameAsociati,
         legend: {
-          show: true,
-          fontSize: "16px",
-          fontFamily: "Roboto, sans-serif",
-          fontWeight: 500,
-          labels: {
-            colors: "#2C323F",
-          },
-          markers: {
-            width: 86,
-            height: 18,
-            radius: 3,
-          },
+            show: true,
+            fontSize: "16px",
+            fontFamily: "Roboto, sans-serif",
+            fontWeight: 500,
+            labels: {
+                colors: "#2C323F",
+            },
+            markers: {
+                width: 86,
+                height: 18,
+                radius: 3,
+            },
         },
         colors: [CubaAdminConfig.secondary, CubaAdminConfig.primary, "#51bb25"],
         responsive: [{
-          breakpoint: 767,
-          options: {
-            title: {
-              style: {
-                fontSize: "16px",
-              },
+            breakpoint: 767,
+            options: {
+                title: {
+                    style: {
+                        fontSize: "16px",
+                    },
+                },
             },
-          },
         }]
-      };
-    
-      var chartCircle = new ApexCharts(
+    };
+
+    var chartCircle = new ApexCharts(
         document.querySelector("#circlechart"),
         optionsCircle
-      );
-      chartCircle.render();
+    );
+    chartCircle.render();
 
 
 
 
-      
+
 }
