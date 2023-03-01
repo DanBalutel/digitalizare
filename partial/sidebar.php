@@ -150,7 +150,7 @@
                   <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="product.php">Produse</a></li>
-                     <li><a href="order-historyphp">Comenzi</a></li>
+                     <li><a href="order-history.php">Comenzi</a></li>
                      <li><a href="list-products.php">Setari</a></li>
                   </ul>
                </li>
