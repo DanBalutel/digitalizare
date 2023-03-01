@@ -4,8 +4,8 @@ let dataObj;
 var request = {};
 var pairs = location.search.substring(1).split('&');
 for (var i = 0; i < pairs.length; i++) {
-  var pair = pairs[i].split('=');
-  request[pair[0]] = pair[1];
+    var pair = pairs[i].split('=');
+    request[pair[0]] = pair[1];
 }
 
 if (window.localStorage.dataObj) {
@@ -15,7 +15,13 @@ if (window.localStorage.dataObj) {
 } else if (request['cui']) {
     fetchAuth(request['cui']);
 } else {
-    alert('Introdu codul CUI');
+
+    let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
+    if (codulCUI == null || codulCUI == "") {
+        window.location.href = window.location.href;
+    } else {
+        window.location.href = window.location.href + `?cui=${codulCUI}`;
+    }
 }
 
 
