@@ -197,7 +197,7 @@
                   <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="product">Facebook</a></li>
-                     <li><a href="product-page">Instegram</a></li>
+                     <li><a href="product-page">Instagram</a></li>
                      <li><a href="list-products">LinkedIn</a></li>
                      <li><a href="product">YouTube</a></li>
                      <li><a href="product-page">Pinterest</a></li>
