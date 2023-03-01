@@ -47,10 +47,8 @@ function addLoading() {
     loadingChild.classList = 'chat-content-leftside';
     loadingChild.id = 'loading-child'
     loadingChild.innerHTML = `
-        <div class="d-flex">
-            <div class="flex-grow-1 ms-2">
-                <p class="mb-0 chat-time">Tasteaza...</p>
-            </div>
+        <div class="message other-message pull-right"><img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
+            <div class="message-data"><span class="message-data-time">10:14 am</span></div>Tastează...
         </div>
     `;
     chatBox.appendChild(loadingChild);
@@ -73,8 +71,8 @@ function addMessage(msgLoc, msgText) {
     if (msgLoc === 'right') {
         msgChild.innerHTML = `
             <div class="message other-message pull-right"><img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
-            <div class="message-data"><span class="message-data-time">10:14 am</span></div>${msgText}
-        </div>
+                <div class="message-data"><span class="message-data-time">10:14 am</span></div>${msgText}
+            </div>
         `;
     } else {
         msgChild.innerHTML = `
