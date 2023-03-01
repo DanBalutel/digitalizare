@@ -23,7 +23,7 @@
         <div class="col-sm-12"> 
           <div class="card small-widget mb-sm-0"> 
             <div class="card-body success d-flex align-items-center justify-content-center">
-                <img class="" src="assets/images/only1/iot1.jpeg" alt="">
+                <img class="w-100" src="assets/images/only1/iot1.jpeg" alt="">
             </div>
           </div>
         </div>
