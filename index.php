@@ -67,7 +67,7 @@
           <div class="card small-widget mb-sm-0"> 
             <div class="card-body success"><span class="f-light">Cod CAEN</span>
               <div class="d-flex align-items-end gap-1">
-                <h4>$3,908</h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+80%</span></span>
+                <h4>2730</h4><span class="font-success f-12 f-w-500"></span>
               </div>
               <div class="bg-gradient"> 
                 <svg class="stroke-icon svg-fill">

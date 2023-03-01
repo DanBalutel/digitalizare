@@ -41,14 +41,13 @@ function renderAnswer(question) {
         .catch(error => console.log(error));
 }
 
-// add answer loading animation
 function addLoading() {
     const loadingChild = document.createElement('div');
     loadingChild.classList = 'chat-content-leftside';
     loadingChild.id = 'loading-child'
     loadingChild.innerHTML = `
     <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
-    <div class="message-data text-end"><span class="message-data-time">10:12 am</span></div>Tasteaza...</div>
+    <div class="message-data text-end"></div>Se genereaza raspunsul <img src="https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif" width="80"></div>
     `;
     chatBox.appendChild(loadingChild);
     askGpt.value = '';
@@ -70,13 +69,13 @@ function addMessage(msgLoc, msgText) {
     if (msgLoc === 'right') {
         msgChild.innerHTML = `
             <div class="message other-message pull-right"><img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
-                <div class="message-data"><span class="message-data-time">10:14 am</span></div>${msgText}
+                <div class="message-data"></div>${msgText}
             </div>
         `;
     } else {
         msgChild.innerHTML = `
         <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
-        <div class="message-data text-end"><span class="message-data-time">10:12 am</span></div>${msgText}</div>
+        <div class="message-data text-end"></div>${msgText}</div>
         `;
     }
     chatBox.appendChild(msgChild);
@@ -92,6 +91,12 @@ askGpt.addEventListener('keypress', function (e) {
     }
 });
 
+document.getElementById('trimite').addEventListener("click", function() {
+    console.log('asked GPT: ' + askGpt.value);
+    renderAnswer(askGpt.value);
+    addMessage('right', askGpt.value)
+    addLoading();
+})
 
 const aiQuestion1 = document.getElementById('ai-question-1');
 aiQuestion1.addEventListener('click', function () {
