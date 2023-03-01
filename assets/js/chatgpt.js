@@ -47,7 +47,7 @@ function addLoading() {
     loadingChild.id = 'loading-child'
     loadingChild.innerHTML = `
     <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
-    <div class="message-data text-end"><span class="message-data-time">10:12 am</span></div>Tasteaza...</div>
+    <div class="message-data text-end"><span class="message-data-time">10:12 am</span></div>Se genereaza raspunsul <img src="https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif" width="20"></div>
     `;
     chatBox.appendChild(loadingChild);
     askGpt.value = '';
