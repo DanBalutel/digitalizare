@@ -214,7 +214,7 @@
                      <div class="according-menu"><i class="fa fa-angle-down"></i></div>
                   <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="product.html">Office 365</a></li>
+                     <li><a href="office.php">Office 365</a></li>
                      <li><a href="product-page.html">Google apps</a></li>
                      <li><a href="list-products.html">MailChimp</a></li>
                   </ul>
