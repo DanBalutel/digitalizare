@@ -1,4 +1,5 @@
 <?php include('partial/header.php') ?>
+<script src="assets/js/dashboard.js" defer></script>
 <?php include('partial/loader.php') ?>
 <!-- page-wrapper Start-->
 <div class="page-wrapper compact-wrapper" id="pageWrapper">

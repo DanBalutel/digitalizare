@@ -28,12 +28,12 @@ function renderAnswer(question) {
             return result.text();
         })
         .then((response) => {
-            ansText = response;
+            ansText = JSON.parse(response);
             console.log(ansText);
 
             // all html rendering goes here
             removeLoading();
-            addMessage('left', ansText)
+            addMessage('left', ansText.message)
             chatBox.scrollTop = chatBox.scrollHeight;
 
 
