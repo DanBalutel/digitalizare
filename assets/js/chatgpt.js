@@ -47,9 +47,8 @@ function addLoading() {
     loadingChild.classList = 'chat-content-leftside';
     loadingChild.id = 'loading-child'
     loadingChild.innerHTML = `
-        <div class="message other-message pull-left"><img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/3.png" alt="">
-            <div class="message-data"><span class="message-data-time">10:14 am</span></div>Tastează...
-        </div>
+    <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
+    <div class="message-data text-end"><span class="message-data-time">10:12 am</span></div>Tasteaza...</div>
     `;
     chatBox.appendChild(loadingChild);
     askGpt.value = '';
