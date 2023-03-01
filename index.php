@@ -20,12 +20,12 @@
       <!-- Container-fluid starts-->
 <div class="container-fluid">
     <div class="row g-sm-3 height-equal-2 widget-charts">
-        <h3>Termene Just SRL</h3>
+        <h3 id="name"></h3>
         <div class="col-sm-3"> 
           <div class="card small-widget mb-sm-0">
             <div class="card-body primary"> <span class="f-light">Cifra de afaceri</span>
               <div class="d-flex align-items-end gap-1">
-                <h4>2,435</h4><span class="font-primary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
+                <h4 id="cifra-de-afaceri"></h4><span class="font-primary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
               </div>
               <div class="bg-gradient"> 
                 <svg class="stroke-icon svg-fill">
@@ -39,7 +39,7 @@
           <div class="card small-widget mb-sm-0"> 
             <div class="card-body success"><span class="f-light">Profit</span>
               <div class="d-flex align-items-end gap-1">
-                <h4>$2,908</h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
+                <h4 id="profit-actual"></h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
               </div>
               <div class="bg-gradient"> 
                 <svg class="stroke-icon svg-fill">
@@ -53,7 +53,7 @@
           <div class="card small-widget mb-sm-0"> 
             <div class="card-body secondary"><span class="f-light">Angajați</span>
               <div class="d-flex align-items-end gap-1">
-                <h4>10</h4><span class="font-secondary f-12 f-w-500"></span>
+                <h4 id="locuri-munca" ></h4><span class="font-secondary f-12 f-w-500"></span>
               </div>
               <div class="bg-gradient"> 
                 <svg class="stroke-icon svg-fill">
@@ -67,7 +67,7 @@
           <div class="card small-widget mb-sm-0"> 
             <div class="card-body success"><span class="f-light">Cod CAEN</span>
               <div class="d-flex align-items-end gap-1">
-                <h4>2730</h4><span class="font-success f-12 f-w-500"></span>
+                <h4 id="cod-caen" ></h4><span class="font-success f-12 f-w-500"></span>
               </div>
               <div class="bg-gradient"> 
                 <svg class="stroke-icon svg-fill">
@@ -81,7 +81,7 @@
           <div class="card small-widget mb-sm-0">
             <div class="card-body secondary"> <span class="f-light">Active Totale</span>
               <div class="d-flex align-items-end gap-1">
-                <h4>2,435</h4><span class="font-secondary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
+                <h4 id="active-totale" ></h4><span class="font-secondary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
               </div>
               <div class="bg-gradient"> 
                 <svg class="stroke-icon svg-fill">
@@ -95,7 +95,7 @@
           <div class="card small-widget mb-sm-0"> 
             <div class="card-body warning"><span class="f-light">Stocuri</span>
               <div class="d-flex align-items-end gap-1">
-                <h4>2,908</h4><span class="font-warning f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
+                <h4 id="nr-stocuri" ></h4><span class="font-warning f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
               </div>
               <div class="bg-gradient"> 
                 <svg class="stroke-icon svg-fill">
@@ -109,7 +109,7 @@
           <div class="card small-widget mb-sm-0"> 
             <div class="card-body secondary"><span class="f-light">Casa si conturi in banci</span>
               <div class="d-flex align-items-end gap-1">
-                <h4>$389k</h4><span class="font-secondary f-12 f-w-500"><i class="icon-arrow-down"></i><span>-10%</span></span>
+                <h4 id="casa-conturi"></h4><span class="font-secondary f-12 f-w-500"><i class="icon-arrow-down"></i><span>-10%</span></span>
               </div>
               <div class="bg-gradient"> 
                 <svg class="stroke-icon svg-fill">
@@ -123,7 +123,7 @@
           <div class="card small-widget mb-sm-0"> 
             <div class="card-body success"><span class="f-light">Capital total</span>
               <div class="d-flex align-items-end gap-1">
-                <h4>$3,908</h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+80%</span></span>
+                <h4 id="capital-total"></h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+80%</span></span>
               </div>
               <div class="bg-gradient"> 
                 <svg class="stroke-icon svg-fill">
