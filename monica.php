@@ -19,6 +19,7 @@
       ?>
       
 <div class="container-fluid">
+    <h3>Exemple de intrebari (personalizati in functie de nevoile dumneavoastra)</h3>
     <div class="row">
         <div class="col-md-4">
             <a style="cursor: pointer;" >
