@@ -41,7 +41,6 @@ function renderAnswer(question) {
         .catch(error => console.log(error));
 }
 
-const el = document.getElementById('chat-feed');
 function addLoading() {
     const loadingChild = document.createElement('div');
     loadingChild.classList = 'chat-content-leftside';
@@ -52,6 +51,7 @@ function addLoading() {
     `;
     chatBox.appendChild(loadingChild);
     askGpt.value = '';
+    loadingChild.scrollTop = loadingChild.scrollHeight;
     chatBox.scrollTop = chatBox.scrollHeight;
 };
 
@@ -79,13 +79,11 @@ function addMessage(msgLoc, msgText) {
         <div class="message-data text-end"></div>${msgText}</div>
         `;
     }
+    msgChild.scrollTop = msgChild.scrollHeight;
     chatBox.appendChild(msgChild);
 };
 
-    // id of the chat container ---------- ^^^
-    if (el) {
-        el.scrollTop = el.scrollHeight;
-        }
+    
 // run when user press enter on chat input box
 askGpt.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
