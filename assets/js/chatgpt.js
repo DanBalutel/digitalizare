@@ -51,7 +51,6 @@ function addLoading() {
     `;
     chatBox.appendChild(loadingChild);
     askGpt.value = '';
-    loadingChild.scrollTop = loadingChild.scrollHeight;
     chatBox.scrollTop = chatBox.scrollHeight;
 };
 
@@ -79,8 +78,8 @@ function addMessage(msgLoc, msgText) {
         <div class="message-data text-end"></div>${msgText}</div>
         `;
     }
-    msgChild.scrollTop = msgChild.scrollHeight;
     chatBox.appendChild(msgChild);
+    chatBox.scrollTop = chatBox.scrollHeight;
 };
 
     
