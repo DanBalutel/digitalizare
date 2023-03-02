@@ -227,9 +227,10 @@
                      </svg><span>Vinde / Cumpara</span>
                   <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="https://www.emag.ro"><img src="assets/images/meniu/emag.png" height="20" alt=""></a></li>
-                     <li><a href="https://www.alibaba.com"><img src="assets/images/meniu/alibaba.png" height="20" alt=""></a></li>
-                     <li><a href="https://www.olx.ro"><img src="assets/images/meniu/olx.png" height="20" alt=""> OLX</a></li>
+                     <li><a target="_blank" href="https://www.emag.ro"><img src="assets/images/meniu/emag.png" height="20" alt=""></a></li>
+                     <li><a target="_blank" href="https://www.alibaba.com"><img src="assets/images/meniu/alibaba.png" height="20" alt=""></a></li>
+                     <li><a target="_blank" href="https://www.olx.ro"><img src="assets/images/meniu/olx.png" height="20" alt=""> OLX</a></li>
+                     <li><a target="_blank" href="https://www.olx.ro"><img src="assets/images/meniu/olx.png" height="20" alt=""> OLX</a></li>
                   </ul>
                </li>
             </ul>
