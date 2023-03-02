@@ -100,10 +100,9 @@ document.getElementById('trimite').addEventListener("click", function() {
 
 const aiQuestion1 = document.getElementById('ai-question-1');
 aiQuestion1.addEventListener('click', function () {
-    renderAnswer(`
-        Ce inseamna un CRM si care sunt beneficiile acestuia
-    `);
+    renderAnswer(aiQuestion1.innerHTML);
     addMessage('right', aiQuestion1.innerHTML)
+    addLoading();
 })
 const aiQuestion2 = document.getElementById('ai-question-2');
 aiQuestion2.addEventListener('click', function () {
