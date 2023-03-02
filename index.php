@@ -191,6 +191,298 @@
 
 
         </div>
+
+
+
+        <h3><img src="/assets/images/logo/logo.png" width="50" height="50" class="rounded-circle shadow"
+            alt="experti"><b>ECHIPA DE VANZARI</b>
+        </h3>
+        <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15" data-bs-original-title=""
+            title="">Scrie mesaj la toata echipa de vanzari</a>
+        </div>
+
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4">
+          <div class="col-md-4">
+            <div class="card radius-15">
+              <div class="card-body text-center">
+                <div class="p-4 border radius-15">
+                  <img
+                    src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg"
+                    width="110" height="110" class="rounded-circle shadow" alt="">
+                  <h5 class="mb-0 mt-5">Alexandru Irimescu</h5>
+                  <p class="mb-3">Expert Fonduri Europene</p>
+                  <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a>
+                  </div>
+                  <div class="chat-tab-menu mt-3">
+                    <div class="row">
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-wechat f-24"></i><br>
+                          <span>Chat</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-video-camera f-24"></i><br>
+                          <span>Zoom</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-inbox f-24"></i><br>
+                          <span>Email</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-bell f-24"></i><br>
+                          <span>Notifica-l</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card radius-15">
+              <div class="card-body text-center">
+
+                <div class="p-4 border radius-15">
+                  <img
+                    src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg"
+                    width="110" height="110" class="rounded-circle shadow" alt="">
+                  <h5 class="mb-0 mt-5">Razvan Ionut Rusu</h5>
+                  <p class="mb-3">Expert Fonduri Europene</p>
+                  <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a>
+                  </div>
+                  <div class="chat-tab-menu mt-3">
+                    <div class="row">
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-wechat f-24"></i><br>
+                          <span>Chat</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-video-camera f-24"></i><br>
+                          <span>Zoom</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-inbox f-24"></i><br>
+                          <span>Email</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-bell f-24"></i><br>
+                          <span>Notifica-l</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card radius-15">
+              <div class="card-body text-center">
+                <div class="p-4 border radius-15">
+                  <img
+                    src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.31-300x300.jpg"
+                    width="110" height="110" class="rounded-circle shadow" alt="">
+                  <h5 class="mb-0 mt-5">Iordache Mihaela</h5>
+                  <p class="mb-3">Expert Fonduri Europene</p>
+
+                  <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                  <div class="chat-tab-menu mt-3">
+                    <div class="row">
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-wechat f-24"></i><br>
+                          <span>Chat</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-video-camera f-24"></i><br>
+                          <span>Zoom</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-inbox f-24"></i><br>
+                          <span>Email</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-bell f-24"></i><br>
+                          <span>Notifica-l</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+        <h3><img src="/assets/images/logo/logo.png" width="50" height="50" class="rounded-circle shadow"
+            alt="experti"><b>ECHIPA DE MANAGEMENT</b>
+        </h3>
+        <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15" data-bs-original-title=""
+            title="">Scrie mesaj la toata echipa de management</a>
+        </div>
+
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4">
+          <div class="col-md-4">
+            <div class="card radius-15">
+              <div class="card-body text-center">
+                <div class="p-4 border radius-15">
+                  <img
+                    src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg"
+                    width="110" height="110" class="rounded-circle shadow" alt="">
+                  <h5 class="mb-0 mt-5">Alexandru Irimescu</h5>
+                  <p class="mb-3">Expert Fonduri Europene</p>
+                  <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a>
+                  </div>
+                  <div class="chat-tab-menu mt-3">
+                    <div class="row">
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-wechat f-24"></i><br>
+                          <span>Chat</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-video-camera f-24"></i><br>
+                          <span>Zoom</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-inbox f-24"></i><br>
+                          <span>Email</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-bell f-24"></i><br>
+                          <span>Notifica-l</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card radius-15">
+              <div class="card-body text-center">
+
+                <div class="p-4 border radius-15">
+                  <img
+                    src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg"
+                    width="110" height="110" class="rounded-circle shadow" alt="">
+                  <h5 class="mb-0 mt-5">Razvan Ionut Rusu</h5>
+                  <p class="mb-3">Expert Fonduri Europene</p>
+                  <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a>
+                  </div>
+                  <div class="chat-tab-menu mt-3">
+                    <div class="row">
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-wechat f-24"></i><br>
+                          <span>Chat</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-video-camera f-24"></i><br>
+                          <span>Zoom</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-inbox f-24"></i><br>
+                          <span>Email</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-bell f-24"></i><br>
+                          <span>Notifica-l</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card radius-15">
+              <div class="card-body text-center">
+                <div class="p-4 border radius-15">
+                  <img
+                    src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.31-300x300.jpg"
+                    width="110" height="110" class="rounded-circle shadow" alt="">
+                  <h5 class="mb-0 mt-5">Iordache Mihaela</h5>
+                  <p class="mb-3">Expert Fonduri Europene</p>
+
+                  <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                  <div class="chat-tab-menu mt-3">
+                    <div class="row">
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-wechat f-24"></i><br>
+                          <span>Chat</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-video-camera f-24"></i><br>
+                          <span>Zoom</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-inbox f-24"></i><br>
+                          <span>Email</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-bell f-24"></i><br>
+                          <span>Notifica-l</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
       </div>
       <!-- Container-fluid Ends-->
     </div>

@@ -1,14 +1,15 @@
 <div class="sidebar-wrapper" sidebar-layout="stroke-svg">
    <div>
       <div class="logo-wrapper">
-          <a href="index">
-             <img class="img-fluid for-light" src="/assets/images/logo/logo_mare.png" width="170" alt="">
-             <img class="img-fluid for-dark" src="/assets/images/logo/logo_mare.png" width="170" alt="">
-          </a>
+         <a href="index">
+            <img class="img-fluid for-light" src="/assets/images/logo/logo_mare.png" width="170" alt="">
+            <img class="img-fluid for-dark" src="/assets/images/logo/logo_mare.png" width="170" alt="">
+         </a>
          <div class="back-btn"><i class="fa fa-angle-left"></i></div>
          <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
       </div>
-      <div class="logo-icon-wrapper"><a href="index"><img class="img-fluid" width="40" src="/assets/images/logo/logo.png" alt=""></a></div>
+      <div class="logo-icon-wrapper"><a href="index"><img class="img-fluid" width="40"
+               src="/assets/images/logo/logo.png" alt=""></a></div>
       <nav class="sidebar-main">
          <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
          <div id="sidebar-menu">
@@ -16,49 +17,55 @@
                <li class="back-btn">
                   <a href="index">
                      <img class="img-fluid" src="/assets/images/logo/logo.png" width="40" alt=""></a>
-                     <div class="mobile-back text-end">
-                        <span>Back</span>
-                        <i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
-                     </div>
+                  <div class="mobile-back text-end">
+                     <span>Back</span>
+                     <i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
+                  </div>
                </li>
                <li class="sidebar-main-title">
                   <div>
                      <h6>General</h6>
                   </div>
                </li>
-               
-                  <li class="sidebar-list">
-                     <a class="sidebar-link sidebar-title link-nav" href="index">
-                        <svg class="stroke-icon">
-                           <use href="/assets/svg/icon-sprite.svg#stroke-home"></use>
-                        </svg>
-                        <svg class="fill-icon">
-                           <use href="/assets/svg/icon-sprite.svg#fill-home"></use>
-                        </svg><span>Dashboard</span>
-                     </a>
-                  </li>
-                  <li class="sidebar-list">
-                     <a class="sidebar-link sidebar-title" href="#">
+
+               <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title link-nav" href="index">
                      <svg class="stroke-icon">
-                     <use href="assets/svg/icon-sprite.svg#stroke-chat"></use>
+                        <use href="/assets/svg/icon-sprite.svg#stroke-home"></use>
                      </svg>
                      <svg class="fill-icon">
-                     <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
-                     </svg><span>Chat</span></a>
-                  <ul class="sidebar-submenu">
-                     <li><a href="chat">Chat</a></li>
-                     <li><a href="monica">Raport AI</a></li>
-                  </ul>
+                        <use href="/assets/svg/icon-sprite.svg#fill-home"></use>
+                     </svg><span>Dashboard</span>
+                  </a>
                </li>
-              <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+               <li class="sidebar-list">
+                  <a class="sidebar-link" href="chat">
                      <svg class="stroke-icon">
-                     <use href="assets/svg/icon-sprite.svg#stroke-charts"></use>
+                        <use href="assets/svg/icon-sprite.svg#stroke-chat"></use>
                      </svg>
                      <svg class="fill-icon">
-                     <use href="assets/svg/icon-sprite.svg#fill-charts"></use>
+                        <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
+                     </svg><span>Chat</span></a>
+               </li>
+               <li class="sidebar-list">
+                  <a class="sidebar-link" href="monica">
+                     <svg class="stroke-icon">
+                        <use href="assets/svg/icon-sprite.svg#stroke-chat"></use>
+                     </svg>
+                     <svg class="fill-icon">
+                        <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
+                     </svg><span>Raport AI</span></a>
+               </li>
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+                     <svg class="stroke-icon">
+                        <use href="assets/svg/icon-sprite.svg#stroke-charts"></use>
+                     </svg>
+                     <svg class="fill-icon">
+                        <use href="assets/svg/icon-sprite.svg#fill-charts"></use>
                      </svg><span>Investitii</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                  <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="echarts">SEAP/SICAP</a></li>
                      <li><a href="credite">Credite</a></li>
@@ -69,22 +76,23 @@
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link" href="expert">
-                  <svg class="stroke-icon">
-                  <use href="assets/svg/icon-sprite.svg#stroke-user"></use>
-                  </svg>
-                  <svg class="fill-icon">
-                  <use href="assets/svg/icon-sprite.svg#fill-user"></use>
-                  </svg><span>Expert</span></a>
+                     <svg class="stroke-icon">
+                        <use href="assets/svg/icon-sprite.svg#stroke-user"></use>
+                     </svg>
+                     <svg class="fill-icon">
+                        <use href="assets/svg/icon-sprite.svg#fill-user"></use>
+                     </svg><span>Expert</span></a>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
-                     <use href="assets/svg/icon-sprite.svg#stroke-file"></use>
+                        <use href="assets/svg/icon-sprite.svg#stroke-file"></use>
                      </svg>
                      <svg class="fill-icon">
-                     <use href="assets/svg/icon-sprite.svg#fill-file"></use>
+                        <use href="assets/svg/icon-sprite.svg#fill-file"></use>
                      </svg><span>Arhivare cloud</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                  <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="file-manager">Documente</a></li>
                      <li><a href="chart-apex">Fisiere</a></li>
@@ -92,13 +100,14 @@
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
-                     <use href="assets/svg/icon-sprite.svg#stroke-user"></use>
+                        <use href="assets/svg/icon-sprite.svg#stroke-user"></use>
                      </svg>
                      <svg class="fill-icon">
-                     <use href="assets/svg/icon-sprite.svg#fill-user"></use>
+                        <use href="assets/svg/icon-sprite.svg#fill-user"></use>
                      </svg><span>CRM</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                  <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="user-profile">Leads</a></li>
                      <li><a href="edit-profile">Clienti</a></li>
@@ -106,48 +115,51 @@
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
-                  <svg class="stroke-icon">
-                    <use href="assets/svg/icon-sprite.svg#stroke-learning"></use>
-                  </svg>
-                  <svg class="fill-icon">
-                    <use href="assets/svg/icon-sprite.svg#fill-learning"></use>
-                  </svg><span>ERP</span>
-                  <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
-                <ul class="sidebar-submenu" style="display: none;">
-                  <li><a href="calendar-basic">Calendar</a></li>
-                  <li><a href="projects">Proiecte</a></li>
-                  <li><a href="learning-detailed">Intalniri/Evenimente</a></li>
-                  <li><a href="learning-detailed">Mijloace fixe</a></li>
-                  <li><a href="learning-detailed">Materii prime</a></li>
-                  <li><a href="learning-detailed">Consumabile</a></li>
-                </ul>
-              </li>
-              <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
-                     <use href="assets/svg/icon-sprite.svg#stroke-others"></use>
+                        <use href="assets/svg/icon-sprite.svg#stroke-learning"></use>
                      </svg>
                      <svg class="fill-icon">
-                     <use href="assets/svg/icon-sprite.svg#fill-others"></use>
+                        <use href="assets/svg/icon-sprite.svg#fill-learning"></use>
+                     </svg><span>ERP</span>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
+                  <ul class="sidebar-submenu" style="display: none;">
+                     <li><a href="calendar-basic">Calendar</a></li>
+                     <li><a href="projects">Proiecte</a></li>
+                     <li><a href="learning-detailed">Intalniri/Evenimente</a></li>
+                     <li><a href="learning-detailed">Mijloace fixe</a></li>
+                     <li><a href="learning-detailed">Materii prime</a></li>
+                     <li><a href="learning-detailed">Consumabile</a></li>
+                  </ul>
+               </li>
+               <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="#">
+                     <svg class="stroke-icon">
+                        <use href="assets/svg/icon-sprite.svg#stroke-others"></use>
+                     </svg>
+                     <svg class="fill-icon">
+                        <use href="assets/svg/icon-sprite.svg#fill-others"></use>
                      </svg><span>IoT</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                  <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="smart-building">Smart building</a></li>
                      <li><a href="echipamente">Echipamente</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
-                     <a class="sidebar-link sidebar-title" href="#">
+                  <a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
-                     <use href="assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
+                        <use href="assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
                      </svg>
                      <svg class="fill-icon">
-                     <use href="assets/svg/icon-sprite.svg#fill-ecommerce"></use>
+                        <use href="assets/svg/icon-sprite.svg#fill-ecommerce"></use>
                      </svg><span>Ecommerce</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                  <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="product">Produse</a></li>
                      <li><a href="order-history">Comenzi</a></li>
@@ -155,15 +167,16 @@
                   </ul>
                </li>
                <li class="sidebar-list">
-                     <a class="sidebar-link sidebar-title" href="#">
+                  <a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
-                     <use href="assets/svg/icon-sprite.svg#stroke-form"></use>
+                        <use href="assets/svg/icon-sprite.svg#stroke-form"></use>
                      </svg>
                      <svg class="fill-icon">
-                     <use href="assets/svg/icon-sprite.svg#fill-form"> </use>
+                        <use href="assets/svg/icon-sprite.svg#fill-form"> </use>
                      </svg><span>Contabilitate</span>
                      <div class="according-menu"><i class="fa fa-angle-down"></i></div>
-                  <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="product">Emite oferta (ProForma)</a></li>
                      <li><a href="product-page">Incasari</a></li>
@@ -186,14 +199,15 @@
                   </ul>
                </li>
                <li class="sidebar-list">
-                     <a class="sidebar-link sidebar-title" href="#">
+                  <a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
-                     <use href="assets/svg/icon-sprite.svg#stroke-social"></use>
+                        <use href="assets/svg/icon-sprite.svg#stroke-social"></use>
                      </svg>
                      <svg class="fill-icon">
-                     <use href="assets/svg/icon-sprite.svg#fill-social"> </use>
+                        <use href="assets/svg/icon-sprite.svg#fill-social"> </use>
                      </svg><span>Social Media</span>
-                  <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="product">Facebook</a></li>
                      <li><a href="product-page">Instagram</a></li>
@@ -203,14 +217,15 @@
                   </ul>
                </li>
                <li class="sidebar-list">
-                     <a class="sidebar-link sidebar-title" href="#">
+                  <a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
-                     <use href="assets/svg/icon-sprite.svg#stroke-board"></use>
+                        <use href="assets/svg/icon-sprite.svg#stroke-board"></use>
                      </svg>
                      <svg class="fill-icon">
-                     <use href="assets/svg/icon-sprite.svg#fill-board"> </use>
+                        <use href="assets/svg/icon-sprite.svg#fill-board"> </use>
                      </svg><span>SaaS</span>
-                  <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="office">Office 365</a></li>
                      <li><a href="google">Google apps</a></li>
@@ -218,19 +233,24 @@
                   </ul>
                </li>
                <li class="sidebar-list">
-                     <a class="sidebar-link sidebar-title" href="#">
+                  <a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
-                     <use href="assets/svg/icon-sprite.svg#cart"></use>
+                        <use href="assets/svg/icon-sprite.svg#cart"></use>
                      </svg>
                      <svg class="fill-icon">
-                     <use href="assets/svg/icon-sprite.svg#cart"> </use>
+                        <use href="assets/svg/icon-sprite.svg#cart"> </use>
                      </svg><span>Vinde / Cumpara</span>
-                  <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a target="_blank" href="https://www.emag.ro"><img src="assets/images/meniu/emag.png" height="20" alt=""></a></li>
-                     <li><a target="_blank" href="https://www.alibaba.com"><img src="assets/images/meniu/alibaba.png" height="20" alt=""></a></li>
-                     <li><a target="_blank" href="https://www.olx.ro"><img src="assets/images/meniu/olx.png" height="20" alt=""> OLX</a></li>
-                     <li><a target="_blank" href="https://www.shopify.com"><img src="assets/images/meniu/shopify.png" height="20" alt=""> </a></li>
+                     <li><a target="_blank" href="https://www.emag.ro"><img src="assets/images/meniu/emag.png"
+                              height="20" alt=""></a></li>
+                     <li><a target="_blank" href="https://www.alibaba.com"><img src="assets/images/meniu/alibaba.png"
+                              height="20" alt=""></a></li>
+                     <li><a target="_blank" href="https://www.olx.ro"><img src="assets/images/meniu/olx.png" height="20"
+                              alt=""> OLX</a></li>
+                     <li><a target="_blank" href="https://www.shopify.com"><img src="assets/images/meniu/shopify.png"
+                              height="20" alt=""> </a></li>
                   </ul>
                </li>
             </ul>
