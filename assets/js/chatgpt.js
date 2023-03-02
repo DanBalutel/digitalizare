@@ -116,3 +116,21 @@ aiQuestion3.addEventListener('click', function () {
     addMessage('right', aiQuestion3.innerHTML)
     addLoading();
 })
+const aiQuestion4 = document.getElementById('ai-question-4');
+aiQuestion4.addEventListener('click', function () {
+    renderAnswer(aiQuestion4.innerHTML);
+    addMessage('right', aiQuestion4.innerHTML)
+    addLoading();
+})
+const aiQuestion5 = document.getElementById('ai-question-5');
+aiQuestion5.addEventListener('click', function () {
+    renderAnswer(aiQuestion5.innerHTML);
+    addMessage('right', aiQuestion5.innerHTML)
+    addLoading();
+})
+const aiQuestion6 = document.getElementById('ai-question-6');
+aiQuestion6.addEventListener('click', function () {
+    renderAnswer(aiQuestion6.innerHTML);
+    addMessage('right', aiQuestion6.innerHTML)
+    addLoading();
+})
