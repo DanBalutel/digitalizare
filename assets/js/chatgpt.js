@@ -29,7 +29,6 @@ function renderAnswer(question) {
         })
         .then((response) => {
             ansText = JSON.parse(response);
-            console.log(ansText);
 
             // all html rendering goes here
             removeLoading();
@@ -86,7 +85,6 @@ function addMessage(msgLoc, msgText) {
 // run when user press enter on chat input box
 askGpt.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-        console.log('asked GPT: ' + askGpt.value);
         renderAnswer(askGpt.value);
         addMessage('right', askGpt.value)
         addLoading();
@@ -94,7 +92,6 @@ askGpt.addEventListener('keypress', function (e) {
 });
 
 document.getElementById('trimite').addEventListener("click", function() {
-    console.log('asked GPT: ' + askGpt.value);
     renderAnswer(askGpt.value);
     addMessage('right', askGpt.value)
     addLoading();
