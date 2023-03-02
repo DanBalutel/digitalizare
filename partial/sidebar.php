@@ -193,7 +193,6 @@
                      <svg class="fill-icon">
                      <use href="assets/svg/icon-sprite.svg#fill-social"> </use>
                      </svg><span>Social Media</span>
-                     <div class="according-menu"><i class="fa fa-angle-down"></i></div>
                   <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="product">Facebook</a></li>
@@ -211,12 +210,24 @@
                      <svg class="fill-icon">
                      <use href="assets/svg/icon-sprite.svg#fill-board"> </use>
                      </svg><span>SaaS</span>
-                     <div class="according-menu"><i class="fa fa-angle-down"></i></div>
                   <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="office">Office 365</a></li>
                      <li><a href="google">Google apps</a></li>
                      <li><a href="list-products">MailChimp</a></li>
+                  </ul>
+               </li>
+               <li class="sidebar-list">
+                     <a class="sidebar-link sidebar-title" href="#">
+                     <svg class="stroke-icon">
+                     <use href="assets/svg/icon-sprite.svg#stroke-board"></use>
+                     </svg>
+                     <svg class="fill-icon">
+                     <use href="assets/svg/icon-sprite.svg#fill-board"> </use>
+                     </svg><span>Vinde / Cumpara</span>
+                  <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                  <ul class="sidebar-submenu" style="display: none;">
+                     <li><a href="office"><img src="assets/images/meniu/emag.png" height="30" alt=""></a></li>
                   </ul>
                </li>
             </ul>
