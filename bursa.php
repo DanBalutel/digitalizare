@@ -18,7 +18,7 @@
       ?>
       <!-- Container-fluid starts-->
         <div class="container-fluid">
-          <iframe src="https://emag.ro" width="100%" style="height: 100vh;" frameborder="0"></iframe>
+          <iframe src="https://emag.ro" crossorigin="anonymous" width="100%" style="height: 100vh;" frameborder="0"></iframe>
         </div>
       <!-- Container-fluid Ends-->
     </div>
