@@ -78,6 +78,10 @@ function addMessage(msgLoc, msgText) {
         <div class="message-data text-end"></div>${msgText}</div>
         `;
     }
+    // id of the chat container ---------- ^^^
+    if (msgChild) {
+        msgChild.scrollTop = msgChild.scrollHeight;
+    }
     chatBox.appendChild(msgChild);
 };
 
