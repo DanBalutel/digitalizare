@@ -52,7 +52,7 @@
             <a style="cursor: pointer;" >
                 <div class="card" style="min-height: 4rem;">
                     <div id="ai-question-4" class="card-body p-3">
-                    Enuma cu liniuta toti pasii pe care trebuie sa ii parcurg pentru a digitaliza afacerea mea de servicii de arhitectura.
+                    Enumera cu liniuta toti pasii pe care trebuie sa ii parcurg pentru a digitaliza afacerea mea de servicii de arhitectura.
                     </div>
                 </div>
             </a>
