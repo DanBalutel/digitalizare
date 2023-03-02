@@ -20,6 +20,8 @@
 <div class="container-fluid">
     <div class="row g-sm-3 height-equal-2 widget-charts">
 
+    <h3>Dispozitive care se pot conecta la PC sau telefon pentru a le controla in timp real</h3>
+
         <div class="col-sm-12"> 
           <div class="card small-widget mb-sm-0"> 
             <div class="card-body success d-flex align-items-center justify-content-center">

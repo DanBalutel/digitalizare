@@ -72,10 +72,10 @@ function populatePage() {
     // chartSituatieFianciara.innerHTML = `Situatie finaciara ${dataObj.DateGenerale.nume}`;
 
     const blockCA = document.getElementById('cifra-de-afaceri');
-    blockCA.innerHTML = parseInt(dataObj.detalii_grafice.grafice_cifra_de_afaceri.data.pop().y);
+    blockCA.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_cifra_de_afaceri.data.pop().y).toLocaleString('en-US');    ;
 
     const blockProfit = document.getElementById('profit-actual');
-    blockProfit.innerHTML = parseInt(dataObj.detalii_grafice.grafice_profit_pierdere.data.pop().y);
+    blockProfit.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_profit_pierdere.data.pop().y).toLocaleString('en-US');
 
     const mapAnaf = document.getElementById('mapAnaf');
     const addresAnaf = encodeURIComponent(dataObj.DateGenerale.adresa);
@@ -88,17 +88,18 @@ function populatePage() {
     codCAEN.innerHTML = dataObj.Bilanturi[0].cod_caen;
 
     const activeTotale = document.getElementById('active-totale');
-    activeTotale.innerHTML = parseInt(dataObj.Bilanturi[0].active_circulante) + parseInt(dataObj.Bilanturi[0].active_imobilizate);
+    const activeTotaleData = parseFloat(dataObj.Bilanturi[0].active_circulante) + parseFloat(dataObj.Bilanturi[0].active_imobilizate);
+    activeTotale.innerHTML = activeTotaleData.toLocaleString('en-US')
+
 
     const nrStocuri = document.getElementById('nr-stocuri');
-    nrStocuri.innerHTML = dataObj.Bilanturi[0].stocuri;
+    nrStocuri.innerHTML = parseFloat(dataObj.Bilanturi[0].stocuri).toLocaleString('en-US');
 
     const casaConturi = document.getElementById('casa-conturi');
-    casaConturi.innerHTML = dataObj.Bilanturi[0].casa_si_conturi_la_banci;
+    casaConturi.innerHTML = parseFloat(dataObj.Bilanturi[0].casa_si_conturi_la_banci).toLocaleString('en-US');
 
     const capitalTotal = document.getElementById('capital-total');
-    capitalTotal.innerHTML = dataObj.Bilanturi[0].capital_total;
-    console.log(`capital Total: ${dataObj.Bilanturi[0].capital_total}`)
+    capitalTotal.innerHTML = parseFloat(dataObj.Bilanturi[0].capital_total).toLocaleString('en-US');
 
 
     const chartAsociati = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.asociati;
