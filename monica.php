@@ -24,7 +24,7 @@
             <a style="cursor: pointer;" >
                 <div class="card">
                     <div id="ai-question-1" class="card-body p-3">
-                        Ce inseamna un CRM si care sunt beneficiile acestuia
+                        Ce inseamna un CRM si care sunt beneficiile acestuia?
                     </div>
                 </div>
             </a>
@@ -33,7 +33,7 @@
             <a style="cursor: pointer;" >
                 <div class="card">
                     <div id="ai-question-2" class="card-body p-3">
-                        Ce inseamna un CRM si care sunt beneficiile acestuia
+                    Cum pot genera noi clienti pentru afacerea mea din domeniul constructiilor in judetul Bucuresti?
                     </div>
                 </div>
             </a>
@@ -42,7 +42,34 @@
             <a style="cursor: pointer;" >
                 <div class="card">
                     <div id="ai-question-3" class="card-body p-3">
-                        Ce inseamna un CRM si care sunt beneficiile acestuia
+                      Scrie un email profesional catre toti clientii mei ca voi avea un discount de 20% in luna martie pentru servicii de arhitectura.
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a style="cursor: pointer;" >
+                <div class="card">
+                    <div id="ai-question-3" class="card-body p-3">
+                    Enuma cu liniuta toti pasii pe care trebuie sa ii parcurg pentru a digitaliza afacerea mea de servicii de arhitectura.
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a style="cursor: pointer;" >
+                <div class="card">
+                    <div id="ai-question-3" class="card-body p-3">
+                    Daca digitalizezi o afacere cat timp pe an salveaza o companie de 50 de angajati, calculeaza individual pentru fiecare angajat si da-mi rezultatul pentru toata compania calculata in zile.
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a style="cursor: pointer;" >
+                <div class="card">
+                    <div id="ai-question-3" class="card-body p-3">
+                    Ofera-mi consultanta privind servicii inovatoare care sunt în prezent în cerere și la modă pe internet, din care pot incepe o afacere in Bucuresti.
                     </div>
                 </div>
             </a>
