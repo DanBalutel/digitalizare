@@ -220,15 +220,15 @@
                <li class="sidebar-list">
                      <a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
-                     <use href="assets/svg/icon-sprite.svg#stroke-cart"></use>
+                     <use href="assets/svg/icon-sprite.svg#cart"></use>
                      </svg>
                      <svg class="fill-icon">
-                     <use href="assets/svg/icon-sprite.svg#fill-cart"> </use>
+                     <use href="assets/svg/icon-sprite.svg#cart"> </use>
                      </svg><span>Vinde / Cumpara</span>
                   <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="office"><img src="assets/images/meniu/emag.png" height="30" alt=""></a></li>
-                     <li><a href="office"><img src="assets/images/meniu/alibaba.png" height="30" alt=""></a></li>
+                     <li><a href="office"><img src="assets/images/meniu/emag.png" height="20" alt=""></a></li>
+                     <li><a href="office"><img src="assets/images/meniu/alibaba.png" height="20" alt=""></a></li>
                   </ul>
                </li>
             </ul>
