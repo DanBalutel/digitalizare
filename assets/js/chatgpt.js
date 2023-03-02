@@ -29,7 +29,6 @@ function renderAnswer(question) {
         })
         .then((response) => {
             ansText = JSON.parse(response);
-            console.log(ansText);
 
             // all html rendering goes here
             removeLoading();
@@ -46,12 +45,12 @@ function addLoading() {
     loadingChild.classList = 'chat-content-leftside';
     loadingChild.id = 'loading-child'
     loadingChild.innerHTML = `
-    <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
+    <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
     <div class="message-data text-end"></div>Se genereaza raspunsul <img src="https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif" width="80"></div>
     `;
     chatBox.appendChild(loadingChild);
     askGpt.value = '';
-    chatBox.scrollTop = chatBox.scrollHeight;
+    loadingChild.scrollTop = loadingChild.scrollHeight;
 };
 
 // remove answer loading animation
@@ -68,23 +67,24 @@ function addMessage(msgLoc, msgText) {
 
     if (msgLoc === 'right') {
         msgChild.innerHTML = `
-            <div class="message other-message pull-right"><img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
+            <div id="chat-feed" class="message other-message pull-right"><img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
                 <div class="message-data"></div>${msgText}
             </div>
         `;
     } else {
         msgChild.innerHTML = `
-        <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
+        <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
         <div class="message-data text-end"></div>${msgText}</div>
         `;
     }
     chatBox.appendChild(msgChild);
+    msgChild.scrollTop = msgChild.scrollHeight;
 };
 
+    
 // run when user press enter on chat input box
 askGpt.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-        console.log('asked GPT: ' + askGpt.value);
         renderAnswer(askGpt.value);
         addMessage('right', askGpt.value)
         addLoading();
@@ -92,7 +92,6 @@ askGpt.addEventListener('keypress', function (e) {
 });
 
 document.getElementById('trimite').addEventListener("click", function() {
-    console.log('asked GPT: ' + askGpt.value);
     renderAnswer(askGpt.value);
     addMessage('right', askGpt.value)
     addLoading();
