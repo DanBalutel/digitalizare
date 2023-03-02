@@ -63,10 +63,10 @@
             </div>
           </div>
           <ul class="profile-dropdown onhover-show-div">
-            <li><a href="user-profile.php"><i data-feather="user"></i><span>Cont </span></a></li>
-            <li><a href="email-application.php"><i data-feather="mail"></i><span>Inbox</span></a></li>
-            <li><a href="to-do.php"><i data-feather="file-text"></i><span>Taskboard</span></a></li>
-            <li><a href="edit-profile.php"><i data-feather="settings"></i><span>Settings</span></a></li>
+            <li><a href="user-profile"><i data-feather="user"></i><span>Cont </span></a></li>
+            <li><a href="email-application"><i data-feather="mail"></i><span>Inbox</span></a></li>
+            <li><a href="to-do"><i data-feather="file-text"></i><span>Taskboard</span></a></li>
+            <li><a href="edit-profile"><i data-feather="settings"></i><span>Settings</span></a></li>
           </ul>
         </li>
       </ul>
