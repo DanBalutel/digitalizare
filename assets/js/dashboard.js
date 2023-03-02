@@ -802,11 +802,6 @@ function populatePage() {
             name: "STOCK ABC",
             data: listNrAngaj
         }],
-        title: {
-            text: 'Rentabilitatea afacerii',
-            align: 'left'
-        },
-
         labels: listAni,
         xaxis: {
             type: 'yeartime',
@@ -827,10 +822,6 @@ function populatePage() {
     );
 
     chart.render();
-
-console.log(series.monthDataSeries1.prices);
-console.log(series.monthDataSeries1.dates);
-
 
 };
 

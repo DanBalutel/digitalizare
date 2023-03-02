@@ -144,11 +144,13 @@
           <!-- MAP -->
           <div class="col-sm-6">
             <div class="card small-widget mb-sm-0">
-              <div class="card-body"><span class="f-light">Adresa fiscala</span>
-                <div id="mapAnaf"></div>
+              <div class="card-header">
+                <h5>Adresa fiscala</h5>
               </div>
+              <div id="mapAnaf"></div>
             </div>
           </div>
+
 
           <div class="col-sm-12 col-xl-6 box-col-6">
             <div class="card min-h-30">
@@ -164,20 +166,27 @@
 
           <div class="col-sm-12 col-xl-6 box-col-6">
             <div class="card">
+              <div class="card-header">
+                <h5>Rentabilitatea afacerii</h5>
+              </div>
               <div class="card-body">
                 <div id="basic-apex"></div>
               </div>
             </div>
           </div>
 
-
         </div>
+
+
+
+
       </div>
-      <!-- Container-fluid Ends-->
     </div>
-    <!-- footer start-->
-    <?php include('partial/footer.php') ?>
+    <!-- Container-fluid Ends-->
   </div>
+  <!-- footer start-->
+  <?php include('partial/footer.php') ?>
+</div>
 </div>
 <?php include('partial/scripts.php') ?>
 <!-- Plugins JS start-->
