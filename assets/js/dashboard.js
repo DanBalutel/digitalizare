@@ -686,8 +686,8 @@ function populatePage() {
     const name = document.getElementById('name');
     name.innerHTML = dataObj.DateGenerale.nume;
 
-    // const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
-    // chartSituatieFianciara.innerHTML = `Situatie finaciara ${dataObj.DateGenerale.nume}`;
+    const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
+    chartSituatieFianciara.innerHTML = `Situatie finaciara ${dataObj.DateGenerale.nume}`;
 
     const blockCA = document.getElementById('cifra-de-afaceri');
     blockCA.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_cifra_de_afaceri.data.pop().y).toLocaleString('en-US');;
@@ -762,10 +762,6 @@ function populatePage() {
     chart8.render();
 
     // basic area chart
-
-    const rentabilitateaPrices = [];
-    const rentabilitateLabels =[];
-
     const chartProdMunc = dataObj.Bilanturi;
     const listNrAngaj = [];
     const listAni = [];
@@ -773,12 +769,6 @@ function populatePage() {
     for (const prod in chartProdMunc) {
         listNrAngaj.unshift(parseInt(chartProdMunc[prod].cifra_de_afaceri_neta) / parseInt(chartProdMunc[prod].numar_mediu_angajati));
         listAni.unshift(chartProdMunc[prod].an);
-
-        // const asociat = document.createElement('li');
-        // asociat.classList = 'list-group-item d-flex bg-transparent justify-content-between align-items-center';
-        // asociat.innerHTML = `${chartAsociati[asoc].nume} <span class="badge bg-success rounded-pill">${chartAsociati[asoc].procentaj}%</span>`;
-        // listaAsociati.appendChild(asociat);
-
     };
 
     var options = {
@@ -823,5 +813,69 @@ function populatePage() {
 
     chart.render();
 
+
+    // situatiile financiare
+    constSitFin = [];
+    const chartDataCA = dataObj.detalii_grafice.grafice_cifra_de_afaceri.data;
+    const chartDataPP = dataObj.detalii_grafice.grafice_profit_pierdere.data;
+    const chartDataDa = dataObj.detalii_grafice.grafice_datorii.data;
+
+    for (const cA in chartDataCA) {
+        console.log(chartDataCA);
+        const temp = {
+            x: `'${chartDataCA[cA].an}'`,
+            y: parseInt(chartDataCA[cA].y),
+            z: parseInt(chartDataPP[cA].y),
+            a: parseInt(chartDataDa[cA].y)
+        };
+
+        constSitFin.push(temp);
+        
+
+    };
+
+
+    "use strict";
+    var morris_chart = {
+        init: function () {
+            Morris.Bar({
+                element: "morris-simple-bar-chart",
+                data: constSitFin,
+                xkey: "x",
+                ykeys: ["y", "z", "a"],
+                barColors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, "#51bb25"],
+                labels: ["Cifra de afaceri", "Profit", "Datorii"]
+            })
+        }
+    };
+    (function ($) {
+        "use strict";
+        morris_chart.init()
+    })(jQuery);
+
+
 };
 
+
+
+
+// datasets: [{
+//     label: 'Cifra de afaceri',
+//     data: [chartDataCA[0].y, chartDataCA[1].y, chartDataCA[2].y, chartDataCA[3].y, chartDataCA[4].y, chartDataCA[5].y, chartDataCA[6].y],
+//     borderColor: gradientStroke1,
+//     backgroundColor: gradientStroke1,
+//     hoverBackgroundColor: gradientStroke1,
+//     pointRadius: 0,
+//     fill: true,
+//     borderWidth: 0
+// }, {
+//     label: 'Profit',
+//     data: [chartDataPP[0].y, chartDataPP[1].y, chartDataPP[2].y, chartDataPP[3].y, chartDataPP[4].y, chartDataPP[5].y, chartDataPP[6].y],
+//     borderColor: gradientStroke2,
+//     backgroundColor: gradientStroke2,
+//     hoverBackgroundColor: gradientStroke2,
+//     pointRadius: 0,
+//     fill: false,
+//     borderWidth: 0
+// }]
+// },
