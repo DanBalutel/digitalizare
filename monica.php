@@ -99,7 +99,7 @@
                         
                         <li>
                             <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/user/3.png" alt="">
-                                Salut, adreseaza-mi o intrebare, sau fa click pe o intrebare de mai sus.
+                                Salut, adreseaza-mi o intrebare, sau click pe o intrebare de mai sus.
                             </div>
                         </li>
 
