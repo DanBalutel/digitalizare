@@ -14,7 +14,7 @@
     <div class="page-body">
     
       <?php 
-        $title = 'Fonduri UE';
+        $title = 'AI';
         include('partial/breadcrumb.php') 
       ?>
       
