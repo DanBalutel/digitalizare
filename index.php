@@ -1,5 +1,4 @@
 <?php include('partial/header.php') ?>
-<script src="assets/js/dashboard.js" defer></script>
 <?php include('partial/loader.php') ?>
 <!-- page-wrapper Start-->
 <div class="page-wrapper compact-wrapper" id="pageWrapper">
@@ -174,12 +173,29 @@
               </div>
             </div>
           </div>
-        </div>  
+
+          <div class="col-lg-6 col-sm-12 box-col-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 id="grafic-situatie-financiara"></h5>
+              </div>
+              <div class="card-body chart-block">
+                <div class="flot-chart-container">
+                  <div class="flot-chart-placeholder" id="morris-simple-bar-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
       </div>
-    <!-- Container-fluid Ends-->
-  </div>
-  <!-- footer start-->
-  <?php include('partial/footer.php') ?>
+      <!-- Container-fluid Ends-->
+    </div>
+    <!-- footer start-->
+    <?php include('partial/footer.php') ?>
   </div>
 </div>
 <?php include('partial/scripts.php') ?>
@@ -196,6 +212,11 @@
 <script src="assets/js/typeahead-search/typeahead-custom.js"></script>
 <script src="assets/js/height-equal.js"></script>
 <script src="assets/js/animation/wow/wow.min.js"></script>
+<script src="assets/js/chart/morris-chart/raphael.js"></script>
+<script src="assets/js/chart/morris-chart/morris.js"> </script>
+<script src="assets/js/chart/morris-chart/prettify.min.js"></script>
+<script src="assets/js/chart/morris-chart/morris-script.js"></script>
+<script src="assets/js/tooltip-init.js"></script>
 <!-- Plugins JS Ends-->
 <script>
   new WOW().init();
