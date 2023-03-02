@@ -21,7 +21,7 @@
       <div class="container-fluid">
         <div class="row g-sm-3 height-equal-2 widget-charts">
           <h3 id="name"></h3>
-          <div class="col-sm-3">
+          <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
               <div class="card-body primary min-h-9"> <span class="f-light">Cifra de afaceri</span>
                 <div class="d-flex align-items-end gap-1">
@@ -36,7 +36,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
               <div class="card-body success min-h-9"><span class="f-light">Profit</span>
                 <div class="d-flex align-items-end gap-1">
@@ -51,7 +51,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
               <div class="card-body secondary min-h-9"><span class="f-light">Angajați</span>
                 <div class="d-flex align-items-end gap-1">
@@ -65,7 +65,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
               <div class="card-body success min-h-9"><span class="f-light">Cod CAEN</span>
                 <div class="flex-wrap d-flex align-items-end gap-1">
@@ -80,7 +80,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
               <div class="card-body secondary"> <span class="f-light">Active Totale</span>
                 <div class="d-flex align-items-end gap-1">
@@ -95,7 +95,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
               <div class="card-body warning"><span class="f-light">Stocuri</span>
                 <div class="d-flex align-items-end gap-1">
@@ -110,7 +110,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
               <div class="card-body secondary"><span class="f-light">Casa si conturi in banci</span>
                 <div class="d-flex align-items-end gap-1">
@@ -125,7 +125,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
               <div class="card-body success"><span class="f-light">Capital total</span>
                 <div class="d-flex align-items-end gap-1">
@@ -142,7 +142,7 @@
           </div>
 
           <!-- MAP -->
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <div class="card small-widget mb-sm-0">
               <div class="card-header">
                 <h5>Adresa fiscala</h5>
@@ -174,19 +174,13 @@
               </div>
             </div>
           </div>
-
-        </div>
-
-
-
-
+        </div>  
       </div>
-    </div>
     <!-- Container-fluid Ends-->
   </div>
   <!-- footer start-->
   <?php include('partial/footer.php') ?>
-</div>
+  </div>
 </div>
 <?php include('partial/scripts.php') ?>
 <!-- Plugins JS start-->
