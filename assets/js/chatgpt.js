@@ -41,12 +41,13 @@ function renderAnswer(question) {
         .catch(error => console.log(error));
 }
 
+const el = document.getElementById('chat-feed');
 function addLoading() {
     const loadingChild = document.createElement('div');
     loadingChild.classList = 'chat-content-leftside';
     loadingChild.id = 'loading-child'
     loadingChild.innerHTML = `
-    <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
+    <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
     <div class="message-data text-end"></div>Se genereaza raspunsul <img src="https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif" width="80"></div>
     `;
     chatBox.appendChild(loadingChild);
@@ -68,23 +69,23 @@ function addMessage(msgLoc, msgText) {
 
     if (msgLoc === 'right') {
         msgChild.innerHTML = `
-            <div class="message other-message pull-right"><img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
+            <div id="chat-feed" class="message other-message pull-right"><img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
                 <div class="message-data"></div>${msgText}
             </div>
         `;
     } else {
         msgChild.innerHTML = `
-        <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
+        <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
         <div class="message-data text-end"></div>${msgText}</div>
         `;
-    }
-    // id of the chat container ---------- ^^^
-    if (msgChild) {
-        msgChild.scrollTop = msgChild.scrollHeight;
     }
     chatBox.appendChild(msgChild);
 };
 
+    // id of the chat container ---------- ^^^
+    if (el) {
+        el.scrollTop = el.scrollHeight;
+        }
 // run when user press enter on chat input box
 askGpt.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
