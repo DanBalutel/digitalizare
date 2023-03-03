@@ -56,22 +56,6 @@
                         <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
                      </svg><span>Chat AI</span></a>
                </li>
-               <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="#">
-                     <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#stroke-email"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-email"> </use>
-                     </svg><span>Mail</span>
-                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                  </a>
-                  <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="">Gmail</a></li>
-                     <li><a href="">Yahoo</a></li>
-                     <li><a href="">OUTLOOK</a></li>
-                  </ul>
-               </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-charts"></use>
