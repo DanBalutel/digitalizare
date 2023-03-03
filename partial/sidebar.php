@@ -241,7 +241,7 @@
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="https://termene.ro"><img src="assets/images/meniu/termene.png" height="20" alt=""></a></li>
                      <li><a href="https://adobe.com"><img src="assets/images/meniu/adobe.png" height="20" alt=""></a></li>
-                     <li><a href="office">Office 365</a></li>
+                     <li><a href="office"><img src="assets/images/meniu/office.png" height="20" alt=""></a></li>
                      <li><a href="google">Google apps</a></li>
                      <li><a href="list-products">MailChimp</a></li>
                   </ul>
