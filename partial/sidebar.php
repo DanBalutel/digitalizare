@@ -63,7 +63,7 @@
                      </svg>
                      <svg class="fill-icon">
                         <use href="assets/svg/icon-sprite.svg#fill-email"> </use>
-                     </svg><span>Mail/span>
+                     </svg><span>Mail</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
