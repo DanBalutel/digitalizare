@@ -50,7 +50,7 @@ function addLoading() {
     `;
     chatBox.appendChild(loadingChild);
     askGpt.value = '';
-    loadingChild.scrollTop = loadingChild.scrollHeight;
+    loadingChild.scrollIntoView()
 };
 
 // remove answer loading animation
@@ -78,7 +78,7 @@ function addMessage(msgLoc, msgText) {
         `;
     }
     chatBox.appendChild(msgChild);
-    msgChild.scrollTop = msgChild.scrollHeight;
+    msgChild.scrollIntoView()
 };
 
     
