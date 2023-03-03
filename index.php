@@ -217,8 +217,14 @@
                     <div class="row">
                       <div class="col-3">
                         <a href="#">
-                          <i class="fa fa-wechat f-24"></i><br>
-                          <span>Chat</span>
+                          <i class="fa fa-phone f-24"></i><br>
+                          <span>Apel</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-paper-plane f-24"></i><br>
+                          <span>Mesaj</span>
                         </a>
                       </div>
                       <div class="col-3">
@@ -231,12 +237,6 @@
                         <a href="#">
                           <i class="fa fa-inbox f-24"></i><br>
                           <span>Email</span>
-                        </a>
-                      </div>
-                      <div class="col-3">
-                        <a href="#">
-                          <i class="fa fa-bell f-24"></i><br>
-                          <span>Notifica-l</span>
                         </a>
                       </div>
                     </div>
@@ -261,8 +261,14 @@
                     <div class="row">
                       <div class="col-3">
                         <a href="#">
-                          <i class="fa fa-wechat f-24"></i><br>
-                          <span>Chat</span>
+                          <i class="fa fa-phone f-24"></i><br>
+                          <span>Apel</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-paper-plane f-24"></i><br>
+                          <span>Mesaj</span>
                         </a>
                       </div>
                       <div class="col-3">
@@ -275,12 +281,6 @@
                         <a href="#">
                           <i class="fa fa-inbox f-24"></i><br>
                           <span>Email</span>
-                        </a>
-                      </div>
-                      <div class="col-3">
-                        <a href="#">
-                          <i class="fa fa-bell f-24"></i><br>
-                          <span>Notifica-l</span>
                         </a>
                       </div>
                     </div>
@@ -304,8 +304,14 @@
                     <div class="row">
                       <div class="col-3">
                         <a href="#">
-                          <i class="fa fa-wechat f-24"></i><br>
-                          <span>Chat</span>
+                          <i class="fa fa-phone f-24"></i><br>
+                          <span>Apel</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-paper-plane f-24"></i><br>
+                          <span>Mesaj</span>
                         </a>
                       </div>
                       <div class="col-3">
@@ -318,12 +324,6 @@
                         <a href="#">
                           <i class="fa fa-inbox f-24"></i><br>
                           <span>Email</span>
-                        </a>
-                      </div>
-                      <div class="col-3">
-                        <a href="#">
-                          <i class="fa fa-bell f-24"></i><br>
-                          <span>Notifica-l</span>
                         </a>
                       </div>
                     </div>
@@ -361,8 +361,14 @@
                     <div class="row">
                       <div class="col-3">
                         <a href="#">
-                          <i class="fa fa-wechat f-24"></i><br>
-                          <span>Chat</span>
+                          <i class="fa fa-phone f-24"></i><br>
+                          <span>Apel</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-paper-plane f-24"></i><br>
+                          <span>Mesaj</span>
                         </a>
                       </div>
                       <div class="col-3">
@@ -375,12 +381,6 @@
                         <a href="#">
                           <i class="fa fa-inbox f-24"></i><br>
                           <span>Email</span>
-                        </a>
-                      </div>
-                      <div class="col-3">
-                        <a href="#">
-                          <i class="fa fa-bell f-24"></i><br>
-                          <span>Notifica-l</span>
                         </a>
                       </div>
                     </div>
@@ -405,8 +405,14 @@
                     <div class="row">
                       <div class="col-3">
                         <a href="#">
-                          <i class="fa fa-wechat f-24"></i><br>
-                          <span>Chat</span>
+                          <i class="fa fa-phone f-24"></i><br>
+                          <span>Apel</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-paper-plane f-24"></i><br>
+                          <span>Mesaj</span>
                         </a>
                       </div>
                       <div class="col-3">
@@ -419,12 +425,6 @@
                         <a href="#">
                           <i class="fa fa-inbox f-24"></i><br>
                           <span>Email</span>
-                        </a>
-                      </div>
-                      <div class="col-3">
-                        <a href="#">
-                          <i class="fa fa-bell f-24"></i><br>
-                          <span>Notifica-l</span>
                         </a>
                       </div>
                     </div>
@@ -448,8 +448,14 @@
                     <div class="row">
                       <div class="col-3">
                         <a href="#">
-                          <i class="fa fa-wechat f-24"></i><br>
-                          <span>Chat</span>
+                          <i class="fa fa-phone f-24"></i><br>
+                          <span>Apel</span>
+                        </a>
+                      </div>
+                      <div class="col-3">
+                        <a href="#">
+                          <i class="fa fa-paper-plane f-24"></i><br>
+                          <span>Mesaj</span>
                         </a>
                       </div>
                       <div class="col-3">
@@ -462,12 +468,6 @@
                         <a href="#">
                           <i class="fa fa-inbox f-24"></i><br>
                           <span>Email</span>
-                        </a>
-                      </div>
-                      <div class="col-3">
-                        <a href="#">
-                          <i class="fa fa-bell f-24"></i><br>
-                          <span>Notifica-l</span>
                         </a>
                       </div>
                     </div>
