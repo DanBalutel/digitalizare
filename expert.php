@@ -78,7 +78,7 @@
                     <div class="card-body text-center">
                         <div class="p-4 border radius-15">
                             <img src="http://mirsanu.ro/wp-content/uploads/2015/09/noerr-fernbach.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                            <h5 class="mb-0 mt-5">Cristian Radulescu</h5>
+                            <h5 class="mb-0 mt-5">Cristina Radulescu</h5>
                             <p class="mb-3">Avocat</p>
                             <div class="list-inline contacts-social mt-3 mb-3"> 
                                 <a href="javascript:;" class="list-inline-item bg-facebook text-white border-0"><i class="fa fa-facebook"></i></a>
