@@ -57,7 +57,7 @@
                      </svg><span>Chat AI</span></a>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="email">
+                  <a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-email"></use>
                      </svg>
