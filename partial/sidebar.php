@@ -59,10 +59,10 @@
                <li class="sidebar-list">
                   <a class="sidebar-link" href="monica">
                      <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#stroke-inbox"></use>
+                        <use href="assets/svg/icon-sprite.svg#stroke-email"></use>
                      </svg>
                      <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-inbox"></use>
+                        <use href="assets/svg/icon-sprite.svg#fill-email"></use>
                      </svg><span>Mail</span></a>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
