@@ -179,6 +179,8 @@
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="#"><img src="assets/images/meniu/e-factura.png" height="50" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/meniu/smartbill.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/meniu/software.png" height="20" alt=""></a></li>
                      <li><a href="product">Emite oferta (ProForma)</a></li>
                      <li><a href="product-page">Incasari</a></li>
                      <li><a href="list-products">Plati</a></li>
@@ -229,6 +231,7 @@
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="https://termene.ro"><img src="assets/images/meniu/termene.png" height="20" alt=""></a></li>
+                     <li><a href="https://adobe.com"><img src="assets/images/meniu/adobe.png" height="20" alt=""></a></li>
                      <li><a href="office">Office 365</a></li>
                      <li><a href="google">Google apps</a></li>
                      <li><a href="list-products">MailChimp</a></li>
