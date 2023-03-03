@@ -1,7 +1,7 @@
 <div class="sidebar-wrapper" sidebar-layout="stroke-svg">
    <div>
       <div class="logo-wrapper">
-         <a href="index">
+         <a href="index" class="text-center">
             <img class="img-fluid for-light" src="/assets/images/logo/logo.png" width="50" alt="">
             <img class="img-fluid for-dark" src="/assets/images/logo/logo.png" width="50" alt="">
          </a>
