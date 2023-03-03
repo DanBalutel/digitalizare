@@ -121,6 +121,7 @@
                      <li><a href="user-profile">Leads</a></li>
                      <li><a href="edit-profile">Clienti</a></li>
                      <li><a href="user-cards">Colaboratori</a></li>
+                     <li><a href="https://saleforce.com"><img src="assets/images/meniu/saleforce.png" height="20" alt=""></a></li>
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
@@ -140,6 +141,8 @@
                      <li><a href="learning-detailed">Mijloace fixe</a></li>
                      <li><a href="learning-detailed">Materii prime</a></li>
                      <li><a href="learning-detailed">Consumabile</a></li>
+                     <li><a href="https://asana.com"><img src="assets/images/meniu/asana.png" height="20" alt=""></a></li>
+                     <li><a href="https://monday.com"><img src="assets/images/meniu/monday.png" height="20" alt=""></a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
