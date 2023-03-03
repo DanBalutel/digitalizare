@@ -21,16 +21,16 @@
     <div class="container-fluid">
         <div class="row text-center">
             <div class="col-md-6">
-                Gmail
+                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gmail.max-1440x810.format-webp.webp" class="img-fluid" alt="">
             </div>
             <div class="col-md-6">
-                Yahoo
+                <img src="https://logos-world.net/wp-content/uploads/2020/10/Yahoo-Logo.png" class="img-fluid" alt="">
             </div>
             <div class="col-md-6">
-                Outlook
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg/1101px-Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg.png" class="img-fluid" alt="">
             </div>
             <div class="col-md-6">
-                Outlook
+                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gmail.max-1440x810.format-webp.webp" class="img-fluid" alt="">
             </div>
         </div>
     </div>
