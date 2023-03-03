@@ -728,7 +728,7 @@ function populatePage() {
 
     for (const asoc in chartAsociati) {
         listNameAsociati.push(chartAsociati[asoc].nume);
-        listCotaAsociati.push(chartAsociati[asoc].procentaj);
+        listCotaAsociati.push(parseFloat(chartAsociati[asoc].procentaj));
 
     };
 
@@ -820,13 +820,13 @@ function populatePage() {
     const chartDataPP = dataObj.detalii_grafice.grafice_profit_pierdere.data;
     const chartDataDa = dataObj.detalii_grafice.grafice_datorii.data;
 
-    for (const cA in chartDataCA) {
-        console.log(chartDataCA);
+    for (const pP in chartDataPP) {
+        // console.log(chartDataCA);
         const temp = {
-            x: `'${chartDataCA[cA].an}'`,
-            y: parseInt(chartDataCA[cA].y),
-            z: parseInt(chartDataPP[cA].y),
-            a: parseInt(chartDataDa[cA].y)
+            x: `'${chartDataCA[pP].an}'`,
+            y: parseInt(chartDataCA[pP].y),
+            z: parseInt(chartDataPP[pP].y),
+            a: parseInt(chartDataDa[pP].y)
         };
 
         constSitFin.push(temp);
