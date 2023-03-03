@@ -54,7 +54,7 @@
                      </svg>
                      <svg class="fill-icon">
                         <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
-                     </svg><span>Raport AI</span></a>
+                     </svg><span>Chat AI</span></a>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
@@ -179,8 +179,8 @@
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="#"><img src="assets/images/meniu/e-factura.png" height="50" alt=""></a></li>
-                     <li><a href="#"><img src="assets/images/meniu/smartbill.png" height="30" alt=""></a></li>
-                     <li><a href="#"><img src="assets/images/meniu/software.png" height="30" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/meniu/smartbill.png" height="50" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/meniu/software.png" height="20" alt=""></a></li>
                      <li><a href="product">Emite oferta (ProForma)</a></li>
                      <li><a href="product-page">Incasari</a></li>
                      <li><a href="list-products">Plati</a></li>
