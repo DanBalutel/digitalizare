@@ -2,8 +2,8 @@
    <div>
       <div class="logo-wrapper">
          <a href="index">
-            <img class="img-fluid for-light" src="/assets/images/logo/logo_mare.png" width="170" alt="">
-            <img class="img-fluid for-dark" src="/assets/images/logo/logo_mare.png" width="170" alt="">
+            <img class="img-fluid for-light" src="/assets/images/logo/logo.png" width="170" alt="">
+            <img class="img-fluid for-dark" src="/assets/images/logo/logo.png" width="170" alt="">
          </a>
          <div class="back-btn"><i class="fa fa-angle-left"></i></div>
          <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
