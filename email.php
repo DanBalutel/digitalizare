@@ -14,12 +14,12 @@
     <div class="page-body">
     
       <?php 
-        $title = 'AI';
+        $title = 'Email';
         include('partial/breadcrumb.php') 
       ?>
       
     <div class="container-fluid">
-        <div class="row">
+        <div class="row text-center">
             <div class="col-md-6">
                 Gmail
             </div>
