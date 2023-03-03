@@ -1129,7 +1129,7 @@
                 <div class="card radius-15">
                     <div class="card-body text-center">
                         <div class="p-4 border radius-15">
-                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                            <img src="https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                             <h5 class="mb-0 mt-5">Daniel Simulescu</h5>
                             <p class="mb-3">Piese și accesorii pentru autovehicule</p>
                             <div class="list-inline contacts-social mt-3 mb-3"> 
@@ -1177,7 +1177,7 @@
                     <div class="card-body text-center">
 
                         <div class="p-4 border radius-15">
-                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaOfe266Ut8YnInbsZC-C-DNEpQxgyYfKBPSJSMO7ZJ9lqdxSwQ3u2j4GHbtR7PwQX0kY&usqp=CAU" width="110" height="110" class="rounded-circle shadow" alt="">
                             <h5 class="mb-0 mt-5">Adrian Nachiu</h5>
                             <p class="mb-3">Tuning</p>
                             <div class="list-inline contacts-social mt-3 mb-3"> 
@@ -1225,7 +1225,7 @@
                 <div class="card radius-15">
                     <div class="card-body text-center">
                         <div class="p-4 border radius-15">
-                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdtnA-rZT7d3lB_NGyqNkVGBoNOh9QSTrm6ou3gbNxOvFhZ2kg1FctQDwiP8VE5ZtZa5w&usqp=CAU" width="110" height="110" class="rounded-circle shadow" alt="">
                             <h5 class="mb-0 mt-5">Gheoghe Sorin</h5>
                             <p class="mb-3">Reparații autovehicule / Revizii și întreținere autovehicule</p>
                             <div class="list-inline contacts-social mt-3 mb-3"> 
@@ -1278,7 +1278,7 @@
                 <div class="card radius-15">
                     <div class="card-body text-center">
                         <div class="p-4 border radius-15">
-                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                            <img src="https://francizare.ro/storage/imagini/constantin-anton-1.webp" width="110" height="110" class="rounded-circle shadow" alt="">
                             <h5 class="mb-0 mt-5">Constantin Anton</h5>
                             <p class="mb-3">Expert Audit și controale fiscale ANAF</p>
                             <div class="list-inline contacts-social mt-3 mb-3"> 
@@ -1327,7 +1327,7 @@
                 <div class="card radius-15">
                     <div class="card-body text-center">
                         <div class="p-4 border radius-15">
-                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRToBjgS8WUhmLYFGpBPtMrJqY90jBfJUBO1Z0lXKHD-fZAPGED_BNbWf0KWTZbvYgmOqQ&usqp=CAU" width="110" height="110" class="rounded-circle shadow" alt="">
                             <h5 class="mb-0 mt-5">Popescu Viorel</h5>
                             <p class="mb-3">Consultant fiscal</p>
                             <div class="list-inline contacts-social mt-3 mb-3"> 
@@ -1376,7 +1376,7 @@
                     <div class="card-body text-center">
 
                         <div class="p-4 border radius-15">
-                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkrDc261mzJDizc0Xu-u3_GdGXl2v198Pm3dNz1e1rFxLHHzuTd1lqAjc96q4RJtSH8Ck&usqp=CAU" width="110" height="110" class="rounded-circle shadow" alt="">
                             <h5 class="mb-0 mt-5">Razvan Dragomir</h5>
                             <p class="mb-3">Expert Contabil</p>
                             <div class="list-inline contacts-social mt-3 mb-3"> 
@@ -1424,7 +1424,7 @@
                 <div class="card radius-15">
                     <div class="card-body text-center">
                         <div class="p-4 border radius-15">
-                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6o_ux9YvJdyomS4mB8Za453Df1TNVvOncOf66gRH9L6YM7V9xB6xLOEjnBEfHCGbwIaM&usqp=CAU" width="110" height="110" class="rounded-circle shadow" alt="">
                             <h5 class="mb-0 mt-5">Mihaela Orbisor</h5>
                             <p class="mb-3">Consultant în afaceri</p>
                             <div class="list-inline contacts-social mt-3 mb-3"> 
