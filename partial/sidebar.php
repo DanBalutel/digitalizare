@@ -56,6 +56,15 @@
                         <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
                      </svg><span>Chat AI</span></a>
                </li>
+               <li class="sidebar-list">
+                  <a class="sidebar-link" href="monica">
+                     <svg class="stroke-icon">
+                        <use href="assets/svg/icon-sprite.svg#stroke-inbox"></use>
+                     </svg>
+                     <svg class="fill-icon">
+                        <use href="assets/svg/icon-sprite.svg#fill-inbox"></use>
+                     </svg><span>Mail</span></a>
+               </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-charts"></use>
