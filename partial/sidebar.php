@@ -54,7 +54,16 @@
                      </svg>
                      <svg class="fill-icon">
                         <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
-                     </svg><span>Raport AI</span></a>
+                     </svg><span>Chat AI</span></a>
+               </li>
+               <li class="sidebar-list">
+                  <a class="sidebar-link" href="email">
+                     <svg class="stroke-icon">
+                        <use href="assets/svg/icon-sprite.svg#stroke-email"></use>
+                     </svg>
+                     <svg class="fill-icon">
+                        <use href="assets/svg/icon-sprite.svg#fill-email"></use>
+                     </svg><span>Mail</span></a>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
@@ -178,6 +187,9 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
+                     <li><a href="#"><img src="assets/images/meniu/e-factura.png" height="50" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/meniu/smartbill.png" height="50" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/meniu/software.png" height="20" alt=""></a></li>
                      <li><a href="product">Emite oferta (ProForma)</a></li>
                      <li><a href="product-page">Incasari</a></li>
                      <li><a href="list-products">Plati</a></li>
@@ -227,7 +239,9 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="office">Office 365</a></li>
+                     <li><a href="https://termene.ro"><img src="assets/images/meniu/termene.png" height="20" alt=""></a></li>
+                     <li><a href="https://adobe.com"><img src="assets/images/meniu/adobe.png" height="20" alt=""></a></li>
+                     <li><a href="office"><img src="assets/images/meniu/office.png" height="20" alt=""></a></li>
                      <li><a href="google">Google apps</a></li>
                      <li><a href="list-products">MailChimp</a></li>
                   </ul>
