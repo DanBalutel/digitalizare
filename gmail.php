@@ -33,7 +33,7 @@
                             <label for="password">Password</label>
                             <input type="password" placeholder="*******" class="form-control">
                             <br>
-                            <button class="btn btn-primary w-100">Login</button>
+                            <button class="btn btn-success w-100">Login</button>
                         </div>
                     </div>
                 </form>
