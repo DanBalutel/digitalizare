@@ -639,10 +639,8 @@ if (window.localStorage.dataObj) {
     document.getElementById('cuiModal').classList.add('show')
     if (codulCUI == null || codulCUI == "") {
         window.location.href = window.location.href;
-        document.getElementById('cuiModal').classList.remove('show')
     } else {
         window.location.href = window.location.href + `?cui=${codulCUI}`;
-        document.getElementById('cuiModal').classList.remove('show')
     }
 }
 
