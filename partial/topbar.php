@@ -50,15 +50,12 @@
           </div>
         </li>
         <li class="profile-nav onhover-dropdown pe-0 py-0">
-<<<<<<< HEAD
           <div class="media profile-media"><img class="b-r-10" src="/assets/images/user.jpg" alt="">
             <div class="media-body"><span id="loggedName"></span>
               <p class="mb-0 font-roboto" id="loggedPosition"><i class="middle fa fa-angle-down"></i></p>
-=======
           <div class="media profile-media"><img class="b-r-10" width="50" heigth="50" src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg" alt="">
             <div class="media-body"><span>Alexandru Irimescu</span>
               <p class="mb-0 font-roboto">Manager <i class="middle fa fa-angle-down"></i></p>
->>>>>>> 90dc989baf592a660d07e14c34574ca29127f952
             </div>
           </div>
           <ul class="profile-dropdown onhover-show-div">
