@@ -21,9 +21,9 @@
           <div class="card">
             <div class="card-body ">
                 <form action="">
-                    <img src="assets/images/meniu/gmail.png" width="100" alt="">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-md-4 ">
+                        <img src="assets/images/meniu/gmail.png" width="100" alt="">
                             <label for="login">Login</label>
                             <input type="text" class="form-control">
                             <br>
