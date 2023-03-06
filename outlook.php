@@ -13,7 +13,7 @@
     <div class="page-body">
     
       <?php 
-        $title = 'GMAIL';
+        $title = 'Outlook';
         include('partial/breadcrumb.php') 
       ?>
       <!-- Container-fluid starts-->
@@ -24,11 +24,11 @@
                     <div class="row justify-content-center align-items-center text">
                         <div class="col-md-4 ">
                             <div class="text-center">
-                                <img  src="assets/images/meniu/gmail.png" width="150" alt="">
+                                <img  src="assets/images/meniu/outlook.png" width="150" alt="">
                             </div>
                             <br>
                             <label for="login">Email</label>
-                            <input type="email" placeholder="email@gmail.com" class="form-control">
+                            <input type="email" placeholder="email@outlook.com" class="form-control">
                             <br>
                             <label for="password">Password</label>
                             <input type="password" placeholder="*******" class="form-control">
