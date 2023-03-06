@@ -655,6 +655,7 @@ function fetchAuth(cuiValue) {
     // (A) URL & CREDENTIALS
     var url = `https://api.raport.ai/cui?cui=${cuiValue}`
     // (B) FETCH WITH HTTP AUTH
+
     fetch(url)
 
         // (C) SERVER RESPONSE
@@ -665,6 +666,14 @@ function fetchAuth(cuiValue) {
         .then((response) => {
             //   document.getElementById("demoShow").innerHTML = response;
             dataJson = response;
+            if(dataJson.DateGenerale == false) {
+                let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
+                if (codulCUI == null || codulCUI == "") {
+                    window.location.href = window.location.href;
+                } else {
+                    window.location.href = window.location.href + `?cui=${codulCUI}`;
+                }
+            }
             window.localStorage.setItem('dataObj', dataJson);
             dataObj = JSON.parse(dataJson);
             console.log(dataObj);
