@@ -68,8 +68,8 @@
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="gmail"><img src="assets/images/meniu/gmail.png" height="20" alt=""></a></li>
-                     <li><a href=""><img src="assets/images/meniu/yahoo.png" height="20" alt=""></a></li>
-                     <li><a href=""><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
+                     <li><a href="yahoo"><img src="assets/images/meniu/yahoo.png" height="20" alt=""></a></li>
+                     <li><a href="outlook"><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
