@@ -1181,7 +1181,7 @@
 
                         <div class="p-4 border radius-15">
                             <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                            <h5 class="mb-0 mt-5">Razvan Ionut Rusu</h5>
+                            <h5 class="mb-0 mt-5">Ionut Rusu</h5>
                             <p class="mb-3">Expert Fonduri Europene</p>
                             <div class="list-inline contacts-social mt-3 mb-3"> 
                                 <a href="javascript:;" class="list-inline-item bg-facebook text-white border-0"><i class="fa fa-facebook"></i></a>
