@@ -13,17 +13,10 @@
     </form>
     <div class="header-logo-wrapper col-auto p-0">
       <div class="logo-wrapper"><a href="index"><img class="img-fluid" src="/assets/images/logo/logo.png" alt=""></a></div>
-      <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i></div>
+      <div class="toggle-sidebar"><img class="img-fluid" src="/assets/images/logo/logo.png" width="50" alt=""></a></div>
     </div>
     <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
       <ul class="nav-menus">
-        <li> 
-          <span class="header-search">
-            <svg>
-              <use href="/assets/svg/icon-sprite.svg#search"></use>
-            </svg>
-          </span>
-        </li>
         <li>
           <div class="mode">
             <svg>
@@ -57,9 +50,15 @@
           </div>
         </li>
         <li class="profile-nav onhover-dropdown pe-0 py-0">
+<<<<<<< HEAD
           <div class="media profile-media"><img class="b-r-10" src="/assets/images/user.jpg" alt="">
             <div class="media-body"><span id="loggedName"></span>
               <p class="mb-0 font-roboto" id="loggedPosition"><i class="middle fa fa-angle-down"></i></p>
+=======
+          <div class="media profile-media"><img class="b-r-10" width="50" heigth="50" src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg" alt="">
+            <div class="media-body"><span>Alexandru Irimescu</span>
+              <p class="mb-0 font-roboto">Manager <i class="middle fa fa-angle-down"></i></p>
+>>>>>>> 90dc989baf592a660d07e14c34574ca29127f952
             </div>
           </div>
           <ul class="profile-dropdown onhover-show-div">

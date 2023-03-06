@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
     $url = $_SERVER['REQUEST_URI'];
     $items = explode('/', $url);
 ?>
@@ -13,11 +13,12 @@
                     <li class="breadcrumb-item"><a href="index.php"><svg class="stroke-icon">
                       <use href="assets/svg/icon-sprite.svg#stroke-home"></use>
                     </svg></a></li>
-                    <!--<li class="breadcrumb-item"><?php echo $items[sizeof($items) - 2]; ?></li>-->
                     <li class="breadcrumb-item active"><?php echo $title ?? '' ?></li>
                 </ol>
             </div>
         </div>
     </div>
 </div>
-
+ -->
+ <br />
+ <br />

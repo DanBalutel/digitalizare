@@ -30,7 +30,7 @@
                   Smart Office: Controlati de pe telefon <br>
                   <ul class="f-w-300">
                     <li>- Lumini</li>
-                    <li>- Camera de Securitate cu sensor de miscare</li>
+                    <li>- Camera de Securitate cu senzor de miscare</li>
                     <li>- Climatizare</li>
                     <li>- Porti si Usi</li>
 

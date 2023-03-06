@@ -11477,7 +11477,7 @@ p.data-attributes svg {
   padding: 20px;
   line-height: 1.9;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 17px;
   margin-bottom: 30px;
   width: 50%;
   position: relative;
@@ -28825,8 +28825,8 @@ button[data-toggle=dropdown]:hover ~ .dropdown-menu {
 }
 .page-wrapper .page-header .header-wrapper .nav-right ul li svg {
   vertical-align: middle;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   stroke: rgba(47, 47, 59, 0.9);
   fill: none;
 }
