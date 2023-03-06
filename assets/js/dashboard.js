@@ -635,8 +635,7 @@ if (window.localStorage.dataObj) {
     fetchAuth(request['cui']);
 } else {
 
-    let codulCUI = document.getElementById('cui').value
-    document.getElementById('cuiModal').classList.add('show')
+    let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
     if (codulCUI == null || codulCUI == "") {
         window.location.href = window.location.href;
     } else {
