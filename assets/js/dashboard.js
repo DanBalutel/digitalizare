@@ -687,6 +687,7 @@ function fetchAuth(cuiValue) {
 
 function populatePage() {
 
+    removeLoadingModal();
 
     
     // temp we render here all DOOM elements
