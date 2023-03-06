@@ -666,7 +666,7 @@ function fetchAuth(cuiValue) {
         .then((response) => {
             //   document.getElementById("demoShow").innerHTML = response;
             dataJson = response;
-            if(dataJson.DateGenerale.nume = null) {
+            if(dataJson.DateGenerale = false) {
                 let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
                 if (codulCUI == null || codulCUI == "") {
                     window.location.href = window.location.href;
