@@ -23,7 +23,9 @@
                 <form action="">
                     <div class="row justify-content-center align-items-center text">
                         <div class="col-md-4 ">
-                            <img class="text-center" src="assets/images/meniu/gmail.png" width="100" alt="">
+                            <div class="text-center">
+                                <img  src="assets/images/meniu/gmail.png" width="150" alt="">
+                            </div>
                             <br>
                             <label for="login">Login</label>
                             <input type="text" class="form-control">
