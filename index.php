@@ -197,8 +197,8 @@
         <h3><img src="/assets/images/logo/logo.png" width="50" height="50" class="rounded-circle shadow"
             alt="experti"><b>ECHIPA DE VANZARI</b>
         </h3>
-        <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15" data-bs-original-title=""
-            title="">Scrie mesaj la toata echipa de vanzari</a>
+        <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15"
+            data-bs-original-title="" title="">Scrie mesaj la toata echipa de vanzari</a>
         </div>
 
         <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4">
@@ -341,8 +341,8 @@
         <h3><img src="/assets/images/logo/logo.png" width="50" height="50" class="rounded-circle shadow"
             alt="experti"><b>ECHIPA DE MANAGEMENT</b>
         </h3>
-        <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15" data-bs-original-title=""
-            title="">Scrie mesaj la toata echipa de management</a>
+        <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15"
+            data-bs-original-title="" title="">Scrie mesaj la toata echipa de management</a>
         </div>
 
         <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4">
@@ -485,6 +485,32 @@
 
       </div>
       <!-- Container-fluid Ends-->
+
+
+      <!-- Modal loading-->
+      <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1"
+        aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true"
+        role="dialog">
+        <div class="mt-5 modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-body dark-modal">
+
+
+              <h6 id="loadingLabel" class="w-100 d-flex justify-content-center">text here</h6>
+
+              <div class="progress">
+                <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar"
+                  style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
     <!-- footer start-->
     <?php include('partial/footer.php') ?>

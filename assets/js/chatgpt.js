@@ -51,12 +51,15 @@ function addLoading() {
     chatBox.appendChild(loadingChild);
     askGpt.value = '';
     loadingChild.scrollTop = loadingChild.scrollHeight;
+    renderLoadingModal('Raspunsul se proceseaza...');
+
 };
 
 // remove answer loading animation
 function removeLoading() {
     const loadingChild = document.getElementById('loading-child');
     loadingChild.remove()
+    removeLoadingModal();
 
 }
 
@@ -81,7 +84,7 @@ function addMessage(msgLoc, msgText) {
     msgChild.scrollTop = msgChild.scrollHeight;
 };
 
-    
+
 // run when user press enter on chat input box
 askGpt.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
@@ -91,7 +94,7 @@ askGpt.addEventListener('keypress', function (e) {
     }
 });
 
-document.getElementById('trimite').addEventListener("click", function() {
+document.getElementById('trimite').addEventListener("click", function () {
     renderAnswer(askGpt.value);
     addMessage('right', askGpt.value)
     addLoading();

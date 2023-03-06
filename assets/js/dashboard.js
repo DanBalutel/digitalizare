@@ -626,6 +626,7 @@ for (var i = 0; i < pairs.length; i++) {
     request[pair[0]] = pair[1];
 }
 
+
 if (window.localStorage.dataObj) {
     dataObj = JSON.parse(window.localStorage.dataObj);
     populatePage();
@@ -648,6 +649,9 @@ console.log(request['cui']);
 
 // CUI 38911092
 function fetchAuth(cuiValue) {
+
+    renderLoadingModal('Datele se incarca...');
+ 
     // (A) URL & CREDENTIALS
     var url = `https://api.raport.ai/cui?cui=${cuiValue}`
     // (B) FETCH WITH HTTP AUTH
@@ -682,6 +686,10 @@ function fetchAuth(cuiValue) {
 }
 
 function populatePage() {
+
+    removeLoadingModal();
+
+    
     // temp we render here all DOOM elements
     const name = document.getElementById('name');
     name.innerHTML = dataObj.DateGenerale.nume;
@@ -830,7 +838,7 @@ function populatePage() {
         };
 
         constSitFin.push(temp);
-        
+
 
     };
 
@@ -855,27 +863,3 @@ function populatePage() {
 
 
 };
-
-
-
-
-// datasets: [{
-//     label: 'Cifra de afaceri',
-//     data: [chartDataCA[0].y, chartDataCA[1].y, chartDataCA[2].y, chartDataCA[3].y, chartDataCA[4].y, chartDataCA[5].y, chartDataCA[6].y],
-//     borderColor: gradientStroke1,
-//     backgroundColor: gradientStroke1,
-//     hoverBackgroundColor: gradientStroke1,
-//     pointRadius: 0,
-//     fill: true,
-//     borderWidth: 0
-// }, {
-//     label: 'Profit',
-//     data: [chartDataPP[0].y, chartDataPP[1].y, chartDataPP[2].y, chartDataPP[3].y, chartDataPP[4].y, chartDataPP[5].y, chartDataPP[6].y],
-//     borderColor: gradientStroke2,
-//     backgroundColor: gradientStroke2,
-//     hoverBackgroundColor: gradientStroke2,
-//     pointRadius: 0,
-//     fill: false,
-//     borderWidth: 0
-// }]
-// },
