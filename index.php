@@ -524,7 +524,9 @@
 
         </div>
 
-
+        <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15"
+            data-bs-original-title="" title="">Scrie mesaj la toata compania</a>
+        </div>
 
       </div>
       <!-- Container-fluid Ends-->
