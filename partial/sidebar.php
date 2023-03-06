@@ -57,7 +57,7 @@
                      </svg><span>Chat AI</span></a>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link" href="email-application">
+                  <a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-email"></use>
                      </svg>
@@ -67,9 +67,9 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href=""><img src="assets/images/meniu/gmail.png" height="20" alt=""></a></li>
-                     <li><a href=""><img src="assets/images/meniu/yahoo.png" height="20" alt=""></a></li>
-                     <li><a href=""><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
+                     <li><a href="gmail"><img src="assets/images/meniu/gmail.png" height="20" alt=""></a></li>
+                     <li><a href="yahoo"><img src="assets/images/meniu/yahoo.png" height="20" alt=""></a></li>
+                     <li><a href="outlook"><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
