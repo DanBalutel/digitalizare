@@ -138,8 +138,8 @@
         }
 
     })
-    $("body").addClass(localStorage.getItem("mode") ? localStorage.getItem("mode") : "light")
-    $(".mode").addClass(localStorage.getItem("mode") === "dark-only" ? "active" : " ")
+    $("body").addClass(localStorage.getItem("mode") ? localStorage.getItem("mode") : "dark-only")
+    $(".mode").addClass(localStorage.getItem("mode") === "light" ? "active" : " ")
 
     // sidebar filter
     $('.md-sidebar .md-sidebar-toggle ').on('click', function(e) {

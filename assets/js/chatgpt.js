@@ -50,9 +50,13 @@ function addLoading() {
     `;
     chatBox.appendChild(loadingChild);
     askGpt.value = '';
+<<<<<<< HEAD
     loadingChild.scrollTop = loadingChild.scrollHeight;
     renderLoadingModal('Raspunsul se proceseaza...');
 
+=======
+    loadingChild.scrollIntoView()
+>>>>>>> 19269d9680fdb9515d5628d7304658cb2d01add7
 };
 
 // remove answer loading animation
@@ -81,7 +85,7 @@ function addMessage(msgLoc, msgText) {
         `;
     }
     chatBox.appendChild(msgChild);
-    msgChild.scrollTop = msgChild.scrollHeight;
+    msgChild.scrollIntoView()
 };
 
 

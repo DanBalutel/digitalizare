@@ -1,9 +1,9 @@
 <div class="sidebar-wrapper" sidebar-layout="stroke-svg">
    <div>
       <div class="logo-wrapper">
-         <a href="index">
-            <img class="img-fluid for-light" src="/assets/images/logo/logo_mare.png" width="170" alt="">
-            <img class="img-fluid for-dark" src="/assets/images/logo/logo_mare.png" width="170" alt="">
+         <a href="index" class="text-center">
+            <img class="img-fluid for-light" src="/assets/images/logo/logo.png" width="50" alt="">
+            <img class="img-fluid for-dark" src="/assets/images/logo/logo.png" width="50" alt="">
          </a>
          <div class="back-btn"><i class="fa fa-angle-left"></i></div>
          <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
@@ -62,8 +62,15 @@
                         <use href="assets/svg/icon-sprite.svg#stroke-email"></use>
                      </svg>
                      <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-email"></use>
-                     </svg><span>Mail</span></a>
+                        <use href="assets/svg/icon-sprite.svg#fill-email"> </use>
+                     </svg><span>Mail</span>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
+                  <ul class="sidebar-submenu" style="display: none;">
+                     <li><a href=""><img src="assets/images/meniu/gmail.png" height="20" alt=""></a></li>
+                     <li><a href=""><img src="assets/images/meniu/yahoo.png" height="20" alt=""></a></li>
+                     <li><a href=""><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
+                  </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
