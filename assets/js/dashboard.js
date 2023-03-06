@@ -667,7 +667,7 @@ function fetchAuth(cuiValue) {
             //   document.getElementById("demoShow").innerHTML = response;
             dataJson = response;
            
-            return console.log(dataJson)
+            return console.log(dataJson.DateGenerale)
             window.localStorage.setItem('dataObj', dataJson);
             dataObj = JSON.parse(dataJson);
             console.log(dataObj);
