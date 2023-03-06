@@ -50,7 +50,7 @@
           </div>
         </li>
         <li class="profile-nav onhover-dropdown pe-0 py-0">
-          <div class="media profile-media"><img class="b-r-10" src="/assets/images/user.jpg" alt="">
+          <div class="media profile-media"><img class="b-r-10" src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg" alt="">
             <div class="media-body"><span>Cristina Popescu</span>
               <p class="mb-0 font-roboto">Responsabil Vanzari <i class="middle fa fa-angle-down"></i></p>
             </div>
