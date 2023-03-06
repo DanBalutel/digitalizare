@@ -97,7 +97,7 @@
                      </svg>
                      <svg class="fill-icon">
                         <use href="assets/svg/icon-sprite.svg#fill-user"></use>
-                     </svg><span>Expert</span></a>
+                     </svg><span>Experti</span></a>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">

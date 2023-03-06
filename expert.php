@@ -13,7 +13,7 @@
     <div class="page-body">
     
       <?php 
-        $title = 'Expert';
+        $title = 'Experti';
         include('partial/breadcrumb.php') 
       ?>
       <!-- Container-fluid starts-->
