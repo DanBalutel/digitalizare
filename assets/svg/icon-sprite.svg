@@ -4,7 +4,7 @@
         <path opacity="0.4" d="M15.775 18.2415C16.2167 19.5748 17.225 19.7081 18 18.5415C18.7084 17.4748 18.2417 16.5998 16.9584 16.5998C16.0084 16.5915 15.475 17.3331 15.775 18.2415Z" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
-    <symbol id="moon" viewBox="0 0 28 32" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="moon" viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg">
         <path d="M5.18916 17.0409V15.8811C2.88962 14.4914 1 11.7819 1 8.9025C1 3.95349 5.54909 0.0742673 10.6881 1.19404C12.9476 1.69394 14.9272 3.19364 15.957 5.26323C18.0466 9.46239 15.847 13.9215 12.6177 15.8711V17.0309C12.6177 17.3208 12.7276 17.9907 11.6579 17.9907H6.14897C5.04919 18.0007 5.18916 17.5708 5.18916 17.0409Z" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         <path opacity="0.4" d="M5.38867 21.0001C7.67821 20.3502 10.0977 20.3502 12.3873 21.0001" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
