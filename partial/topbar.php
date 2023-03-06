@@ -26,7 +26,7 @@
         </li>
         <li class="onhover-dropdown">
           <div class="notification-box">
-            <svg width="50px" height="50px">
+            <svg>
               <use href="/assets/svg/icon-sprite.svg#notification"></use>
             </svg><span class="badge rounded-pill badge-secondary">4 </span>
           </div>
