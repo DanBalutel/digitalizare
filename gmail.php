@@ -19,7 +19,7 @@
       <!-- Container-fluid starts-->
         <div class="container-fluid">
           <div class="card">
-            <div class="card-body justify-content-center align-items-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
                 <form action="">
                     <img src="assets/images/meniu/gmail.png" width="100" alt="">
                     <div class="row">
