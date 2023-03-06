@@ -28,10 +28,10 @@
                             </div>
                             <br>
                             <label for="login">Email</label>
-                            <input type="email" class="form-control">
+                            <input type="email" placeholder="email@gmail.com" class="form-control">
                             <br>
                             <label for="password">Password</label>
-                            <input type="password" class="form-control">
+                            <input type="password" placeholder="*******" class="form-control">
                             <br>
                             <button class="btn btn-primary w-100">Login</button>
                         </div>
