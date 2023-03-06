@@ -24,7 +24,7 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3>Breckpoint Specific</h3><span>Use
+                                <h3>Achizitii</h3>
 
                             </div>
                             <div class="card-block row">
