@@ -636,13 +636,13 @@ if (window.localStorage.dataObj) {
 } else {
 
     let codulCUI = document.getElementById('cui').value
-    document.getElementById('cuiModal').classList.add('show')
+    document.getElementById('cuiModal').addClass('show')
     if (codulCUI == null || codulCUI == "") {
         window.location.href = window.location.href;
-        document.getElementById('cuiModal').classList.remove('show')
+        document.getElementById('cuiModal').removeClass('show')
     } else {
         window.location.href = window.location.href + `?cui=${codulCUI}`;
-        document.getElementById('cuiModal').classList.remove('show')
+        document.getElementById('cuiModal').removeClass('show')
     }
 }
 
