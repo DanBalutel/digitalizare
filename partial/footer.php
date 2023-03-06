@@ -7,7 +7,7 @@
         </div>
     </div>
 </footer>
-<div class="modal fade" id="tooltipmodal" tabindex="-1" id="cuiModal" aria-labelledby="tooltipmodal" style="display: block; padding-right: 0px;" aria-modal="true" role="dialog">
+<div class="modal fade" id="cuiModal" tabindex="-1" aria-labelledby="tooltipmodal" style="display: block; padding-right: 0px;" aria-modal="true" role="dialog">
     <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
         <div class="modal-header">
