@@ -83,7 +83,7 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="echarts">SEAP/SICAP</a></li>
+                     <li><a href="seap">SEAP/SICAP</a></li>
                      <li><a href="credite">Credite</a></li>
                      <li><a href="depozite">Depozite</a></li>
                      <li><a href="fonduri">Fonduri EU</a></li>
