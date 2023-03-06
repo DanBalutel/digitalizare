@@ -58,8 +58,8 @@
         </li>
         <li class="profile-nav onhover-dropdown pe-0 py-0">
           <div class="media profile-media"><img class="b-r-10" src="/assets/images/user.jpg" alt="">
-            <div class="media-body"><span>Cristina Popescu</span>
-              <p class="mb-0 font-roboto">Responsabil Vanzari <i class="middle fa fa-angle-down"></i></p>
+            <div class="media-body"><span id="loggedName"></span>
+              <p class="mb-0 font-roboto" id="loggedPosition"><i class="middle fa fa-angle-down"></i></p>
             </div>
           </div>
           <ul class="profile-dropdown onhover-show-div">

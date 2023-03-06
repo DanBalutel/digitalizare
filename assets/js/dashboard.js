@@ -651,7 +651,7 @@ console.log(request['cui']);
 function fetchAuth(cuiValue) {
 
     renderLoadingModal('Datele se incarca...');
- 
+
     // (A) URL & CREDENTIALS
     var url = `https://api.raport.ai/cui?cui=${cuiValue}`
     // (B) FETCH WITH HTTP AUTH
@@ -689,10 +689,28 @@ function populatePage() {
 
     removeLoadingModal();
 
-    
+    function findAdministrator(id) {
+        const positionName = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.administratori[id].functie;
+        if (positionName === 'administrator') {
+            return dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.administratori[id].nume;
+        } else {
+            const idplus = id + 1; // increment id by 1 using the + operator instead of ++ 
+            console.log(idplus);
+            return findAdministrator(idplus); // add return statement to ensure the function returns a value
+        }
+    };
+
+
+    const administratorName = findAdministrator(0);
+    const loggedName = document.getElementById('loggedName');
+    loggedName.innerHTML = administratorName;
+    const loggedPosition = document.getElementById('loggedPosition');
+    loggedPosition.innerHTML = 'Administrator';
+
+
     // temp we render here all DOOM elements
     const name = document.getElementById('name');
-    name.innerHTML = dataObj.DateGenerale.nume;
+    name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: ${administratorName}`;
 
     const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
     chartSituatieFianciara.innerHTML = `Situatie finaciara ${dataObj.DateGenerale.nume}`;

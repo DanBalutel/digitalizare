@@ -5,3 +5,7 @@
 .min-h-30 {
     min-height: 30rem;
 }
+
+img.rounded-circle.shadow {
+    object-fit: cover;
+}
