@@ -635,11 +635,14 @@ if (window.localStorage.dataObj) {
     fetchAuth(request['cui']);
 } else {
 
-    let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
+    let codulCUI = document.getElementById('cui').value
+    document.getElementById('cuiModal').classList.add('show')
     if (codulCUI == null || codulCUI == "") {
         window.location.href = window.location.href;
+        document.getElementById('cuiModal').classList.remove('show')
     } else {
         window.location.href = window.location.href + `?cui=${codulCUI}`;
+        document.getElementById('cuiModal').classList.remove('show')
     }
 }
 
