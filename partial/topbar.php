@@ -13,7 +13,7 @@
     </form>
     <div class="header-logo-wrapper col-auto p-0">
       <div class="logo-wrapper"><a href="index"><img class="img-fluid" src="/assets/images/logo/logo.png" alt=""></a></div>
-      <div class="toggle-sidebar"><img class="img-fluid" src="/assets/images/logo/logo.png" alt=""></a></div>
+      <div class="toggle-sidebar"><img class="img-fluid" src="/assets/images/logo/logo.png" width="30" alt=""></a></div>
     </div>
     <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
       <ul class="nav-menus">
