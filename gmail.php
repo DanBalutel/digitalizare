@@ -27,11 +27,13 @@
                                 <img  src="assets/images/meniu/gmail.png" width="150" alt="">
                             </div>
                             <br>
-                            <label for="login">Login</label>
-                            <input type="text" class="form-control">
+                            <label for="login">Email</label>
+                            <input type="email" class="form-control">
                             <br>
                             <label for="password">Password</label>
                             <input type="password" class="form-control">
+                            <br>
+                            <button class="btn btn-primary w-100">Login</button>
                         </div>
                     </div>
                 </form>
