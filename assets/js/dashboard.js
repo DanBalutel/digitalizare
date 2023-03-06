@@ -666,14 +666,8 @@ function fetchAuth(cuiValue) {
         .then((response) => {
             //   document.getElementById("demoShow").innerHTML = response;
             dataJson = response;
-            if(dataJson.DateGenerale = false) {
-                let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
-                if (codulCUI == null || codulCUI == "") {
-                    window.location.href = window.location.href;
-                } else {
-                    window.location.href = window.location.href + `?cui=${codulCUI}`;
-                }
-            }
+           
+            return console.log(dataJson)
             window.localStorage.setItem('dataObj', dataJson);
             dataObj = JSON.parse(dataJson);
             console.log(dataObj);
