@@ -18,7 +18,7 @@
       ?>
       <!-- Container-fluid starts-->
         <div class="container-fluid">
-          <div class="card">
+          <div class="card h-100">
             <div class="card-body ">
                 <form action="">
                     <div class="row justify-content-center align-items-center text">
