@@ -125,10 +125,12 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="user-profile.php">Leads</a></li>
-                     <li><a href="edit-profile.php">Clienti</a></li>
-                     <li><a href="user-cards.php">Colaboratori</a></li>
-                     <li><a href="https://saleforce.com"><img src="assets/images/meniu/saleforce.png" height="20" alt=""></a></li>
+                     <li><a href="crm.php">CRM</a></li>
+                     <li><a href="leads.php">Leads</a></li>
+                     <li><a href="clienti.php">Clienti</a></li>
+                     <li><a href="colaboratori.php">Colaboratori</a></li>
+                     <li><a href="https://saleforce.com"><img src="assets/images/meniu/saleforce.png" height="20"
+                              alt=""></a></li>
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
@@ -148,8 +150,10 @@
                      <li><a href="learning-detailed.php">Mijloace fixe</a></li>
                      <li><a href="learning-detailed.php">Materii prime</a></li>
                      <li><a href="learning-detailed.php">Consumabile</a></li>
-                     <li><a href="https://asana.com"><img src="assets/images/meniu/asana.png" height="20" alt=""></a></li>
-                     <li><a href="https://monday.com"><img src="assets/images/meniu/monday.png" height="20" alt=""></a></li>
+                     <li><a href="https://asana.com"><img src="assets/images/meniu/asana.png" height="20" alt=""></a>
+                     </li>
+                     <li><a href="https://monday.com"><img src="assets/images/meniu/monday.png" height="20" alt=""></a>
+                     </li>
                   </ul>
                </li>
                <li class="sidebar-list">
@@ -249,10 +253,13 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="https://termene.ro"><img src="assets/images/meniu/termene.png" height="20" alt=""></a></li>
-                     <li><a href="https://adobe.com"><img src="assets/images/meniu/adobe.png" height="20" alt=""></a></li>
+                     <li><a href="https://termene.ro"><img src="assets/images/meniu/termene.png" height="20" alt=""></a>
+                     </li>
+                     <li><a href="https://adobe.com"><img src="assets/images/meniu/adobe.png" height="20" alt=""></a>
+                     </li>
                      <li><a href="office.php"><img src="assets/images/meniu/office.png" height="20" alt=""></a></li>
-                     <li><a href="https://workspace.google.com"><img src="assets/images/meniu/workspace.png" height="20" alt=""></a></li>
+                     <li><a href="https://workspace.google.com"><img src="assets/images/meniu/workspace.png" height="20"
+                              alt=""></a></li>
                      <li><a href="google.php">Google apps</a></li>
                      <li><a href="list-products.php">MailChimp</a></li>
                   </ul>
