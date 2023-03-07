@@ -757,6 +757,22 @@ function populatePage() {
     const capitalTotal = document.getElementById('capital-total');
     capitalTotal.innerHTML = parseFloat(dataObj.Bilanturi[0].capital_total).toLocaleString('en-US');
 
+    const dateGenerale = document.getElementById('dateGenerale');
+    dateGenerale.innerHTML = `
+    <span>
+    <h3>Detalii generale</h3><br>
+    CUI: <h4>${dataObj.DateGenerale.cui}</h4><br>
+    Nr. de înmatriculare: <h4>${dataObj.DateGenerale.cod_inmatriculare}</h4><br>
+    Obiect activitate MFINANȚE: <h4>${dataObj.Bilanturi[0].cod_caen} - ${listCaen[codCAEN.innerHTML]}</h4> <br><br>
+
+    <h3>Adresă</h3>
+    Localitate: <h4>${dataObj.DateGenerale.localitate}</h4>
+    Județ: <h4>${dataObj.DateGenerale.judet}</h4>
+    Sediu social (RECOM/MFINANȚE): <h4>${dataObj.DateGenerale.adresa}</h4>
+    Domiciliu fiscal (ANAF): <h4>${dataObj.DateGenerale.adresa_anaf}</h4>
+
+    </span>
+    `;
 
     const chartAsociati = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.asociati;
     const listNameAsociati = [];

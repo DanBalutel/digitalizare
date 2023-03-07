@@ -142,9 +142,9 @@
             </div>
           </div>
 
-          <div class="col-md-12">
+          <div class="col-md-6 col-xs-12">
             <div class="card small-widget mb-sm-0">
-              <div class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light">🟡Situație contabila in TIMP REAL</span>
+              <div class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"><u>🟡Situație contabila in TIMP REAL</u></span>
 
                 <div class="row d-flex">
                   <div class="col-md-6">
@@ -155,11 +155,11 @@
 
                     Proforme:<br>
                     <h4>100.000 Lei</h4>
-                    Încasați: 80.000 Lei<br>
+                    Încasați:<br>
                     <h4>80.000 Lei</h4>
-                    Cheltuieli: 40.000 lei<br>
+                    Cheltuieli:<br>
                     <h4>40.000 Lei</h4>
-                    Număr angajați: 8<br>
+                    Număr angajați:<br>
                     <h4>8</h4>
                   </div>
 
@@ -177,8 +177,25 @@
           </div>
 
 
+
+          <div class="col-md-6 col-xs-12">
+            <div class="card small-widget mb-sm-0">
+              <div class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"></span>
+
+                <div class="row d-flex">
+                  <div class="col-md-12" id="dateGenerale">
+         
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
           <!-- MAP -->
-          <div class="col-md-6">
+          <div class="col-md-6 col-xs-12">
             <div class="card small-widget mb-sm-0">
               <div class="card-header">
                 <h5>Adresa fiscala</h5>
