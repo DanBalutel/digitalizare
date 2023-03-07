@@ -57,7 +57,7 @@
                      </svg><span>Chat AI</span></a>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="#">
+                  <a class="sidebar-link sidebar-title" href="gmail.php">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-email"></use>
                      </svg>
@@ -72,7 +72,7 @@
                      <li><a href="outlook.php"><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
                   </ul>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="seap.php">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-charts"></use>
                      </svg>
@@ -112,7 +112,7 @@
                         <use href="assets/svg/icon-sprite.svg#fill-user"></use>
                      </svg><span>Experti</span></a>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="file-manager.php">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-file"></use>
                      </svg>
@@ -171,7 +171,7 @@
                   </ul>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="#">
+                  <a class="sidebar-link sidebar-title" href="smart-building.php">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-others"></use>
                      </svg>
@@ -198,9 +198,9 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="product.php">Produse</a></li>
+                     <li><a href="list-products.php">Produse</a></li>
                      <li><a href="order-history.php">Comenzi</a></li>
-                     <li><a href="list-products.php">Setari</a></li>
+                     <li><a href="edit-profile.php">Setari</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
@@ -239,7 +239,7 @@
                   </ul>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="#">
+                  <a class="sidebar-link sidebar-title" href="dashboard-05.php">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-social"></use>
                      </svg>
@@ -249,11 +249,12 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="product.php">Facebook</a></li>
-                     <li><a href="product-page.php">Instagram</a></li>
-                     <li><a href="list-products.php">LinkedIn</a></li>
-                     <li><a href="product.php">YouTube</a></li>
-                     <li><a href="product-page.php">Pinterest</a></li>
+                     <li><a href="social.php">Social Media</a></li>
+                     <li><a href="facebook.php">Facebook</a></li>
+                     <li><a href="instagram.php">Instagram</a></li>
+                     <li><a href="linkedin.php">LinkedIn</a></li>
+                     <li><a href="youtube">YouTube</a></li>
+                     <li><a href="pinterest.php">Pinterest</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
@@ -275,7 +276,7 @@
                      <li><a href="https://workspace.google.com"><img src="assets/images/meniu/workspace.png" height="20"
                               alt=""></a></li>
                      <li><a href="google.php">Google apps</a></li>
-                     <li><a href="list-products.php">MailChimp</a></li>
+                     <li><a href="mailchimp.php">MailChimp</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
