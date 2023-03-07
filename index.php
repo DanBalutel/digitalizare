@@ -20,35 +20,7 @@
       <div class="container-fluid">
         <div class="row g-sm-3 height-equal-2 widget-charts">
           <h3 id="name"></h3>
-          <div class="col-md-12">
-            <div class="card small-widget mb-sm-0">
-              <div class="card-body primary min-h-9"> <span class="f-w-700 f-light">Situație contabila in TIMP REAL</span>
 
-                <div class="row d-flex">
-                  <div class="col-md-6">
-                    (Exemplu) Situație Martie 2023:
-                    <br><br>
-
-                    Proforme: 100.000 Lei<br>
-                    Încasați: 80.000 Lei<br>
-                    Cheltuieli: 40.000 lei<br>
-                    Număr angajați: 8
-                  </div>
-
-                  <div class="col-md-6">
-                    Tot ce lucrează persoana/ firma de contabilitate se va putea migra in timp real (migrare automata
-                    din SAGA/ SmartBill/ orice soft de contabilitate)<br>
-                    Astfel veți știi situația contabila in timp real.
-                  </div>
-
-
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <h3 id="name"></h3>
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
               <div class="card-body primary min-h-9"> <span class="f-light">Cifra de afaceri</span>
@@ -169,6 +141,41 @@
               </div>
             </div>
           </div>
+
+          <div class="col-md-12">
+            <div class="card small-widget mb-sm-0">
+              <div class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light">🟡Situație contabila in TIMP REAL</span>
+
+                <div class="row d-flex">
+                  <div class="col-md-6">
+                    <div class="f-w-700 col-md-6" style="font-size: 1.7rem;">
+                      (Exemplu) Situație Martie 2023:
+                    </div>
+                    <br><br>
+
+                    Proforme:<br>
+                    <h4>100.000 Lei</h4>
+                    Încasați: 80.000 Lei<br>
+                    <h4>80.000 Lei</h4>
+                    Cheltuieli: 40.000 lei<br>
+                    <h4>40.000 Lei</h4>
+                    Număr angajați: 8<br>
+                    <h4>8</h4>
+                  </div>
+
+                  <div class="f-w-700 col-md-6" style="font-size: 1.7rem;">
+                    Tot ce lucrează persoana/ firma de contabilitate se va putea migra in timp real (migrare automata
+                    din SAGA/ SmartBill/ orice soft de contabilitate)<br>
+                    Astfel veți știi situația contabila in timp real.
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
 
           <!-- MAP -->
           <div class="col-md-6">

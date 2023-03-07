@@ -82,6 +82,7 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
+                     <li><a href="investitii.php">Investitii</a></li>
                      <li><a href="seap.php">SEAP/SICAP</a></li>
                      <li><a href="credite.php">Credite</a></li>
                      <li><a href="depozite.php">Depozite</a></li>
@@ -187,7 +188,7 @@
                   </ul>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="#">
+                  <a class="sidebar-link sidebar-title" href="list-products.php">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
                      </svg>
@@ -239,7 +240,7 @@
                   </ul>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="dashboard-05.php">
+                  <a class="sidebar-link sidebar-title" href="social.php">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-social"></use>
                      </svg>
