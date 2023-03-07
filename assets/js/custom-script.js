@@ -11,7 +11,6 @@ function renderLoadingModal(label) {
 
     for (let i = 0; i < 100; i++) {
         setTimeout(function () {
-            console.log(i);
             loadingLoader.style = `width: ${i}%`;
         }, i * 300);
     }
