@@ -103,6 +103,7 @@
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="">Avize online </a></li>
+                     <li><a href="">Auto DOC </a></li>
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link" href="expert.php">
