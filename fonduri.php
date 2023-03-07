@@ -79,7 +79,7 @@
             <div class="card-body">
                 <div class="row align-items-center">
                     <div class="col-md-3 border-1">
-                        <img style="height: 15rem; width: 23rem;" src="assets/images/fonduri/granturi.jpg" class="img-fluid" alt="">
+                        <img style="height: 15rem; width: 23rem;" src="assets/images/fonduri/capital.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-md-6 border-1">
                         <div class="text-center">
@@ -100,7 +100,7 @@
             <div class="card-body">
                 <div class="row align-items-center">
                     <div class="col-md-3 border-1">
-                        <img style="height: 15rem; width: 23rem;" src="assets/images/fonduri/invest.jpg" class="img-fluid" alt="">
+                        <img style="height: 15rem; width: 23rem;" src="assets/images/fonduri/invest.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-md-6 border-1">
                         <div class="text-center">
