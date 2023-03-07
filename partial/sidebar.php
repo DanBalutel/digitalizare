@@ -133,7 +133,7 @@
                               alt=""></a></li>
                   </ul>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="erp.php">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-learning"></use>
                      </svg>
@@ -144,12 +144,13 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
+                     <li><a href="erp.php">ERP</a></li>
                      <li><a href="calendar-basic.php">Calendar</a></li>
                      <li><a href="projects.php">Proiecte</a></li>
-                     <li><a href="learning-detailed.php">Intalniri/Evenimente</a></li>
-                     <li><a href="learning-detailed.php">Mijloace fixe</a></li>
-                     <li><a href="learning-detailed.php">Materii prime</a></li>
-                     <li><a href="learning-detailed.php">Consumabile</a></li>
+                     <li><a href="meetings.php">Intalniri/Evenimente</a></li>
+                     <li><a href="mijfixe.php">Mijloace fixe</a></li>
+                     <li><a href="matprime.php">Materii prime</a></li>
+                     <li><a href="consumabile.php">Consumabile</a></li>
                      <li><a href="https://asana.com"><img src="assets/images/meniu/asana.png" height="20" alt=""></a>
                      </li>
                      <li><a href="https://monday.com"><img src="assets/images/meniu/monday.png" height="20" alt=""></a>
