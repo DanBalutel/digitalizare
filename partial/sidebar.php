@@ -29,7 +29,7 @@
                </li>
 
                <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title link-nav" href="index.php">
+                  <a class="sidebar-link sidebar-title link-nav" href="index">
                      <svg class="stroke-icon">
                         <use href="/assets/svg/icon-sprite.svg#stroke-home"></use>
                      </svg>
@@ -39,7 +39,7 @@
                   </a>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link" href="chat.php">
+                  <a class="sidebar-link" href="chat">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-chat"></use>
                      </svg>
@@ -48,7 +48,7 @@
                      </svg><span>Chat</span></a>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link" href="monica.php">
+                  <a class="sidebar-link" href="monica">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-chat"></use>
                      </svg>
@@ -67,9 +67,9 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="gmail.php"><img src="assets/images/meniu/gmail.png" height="20" alt=""></a></li>
-                     <li><a href="yahoo.php"><img src="assets/images/meniu/yahoo.png" height="20" alt=""></a></li>
-                     <li><a href="outlook.php"><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
+                     <li><a href="gmail"><img src="assets/images/meniu/gmail.png" height="20" alt=""></a></li>
+                     <li><a href="yahoo"><img src="assets/images/meniu/yahoo.png" height="20" alt=""></a></li>
+                     <li><a href="outlook"><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
@@ -83,15 +83,15 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="seap.php">SEAP/SICAP</a></li>
-                     <li><a href="credite.php">Credite</a></li>
-                     <li><a href="depozite.php">Depozite</a></li>
-                     <li><a href="fonduri.php">Fonduri EU</a></li>
-                     <li><a href="bursa.php">Bursa</a></li>
-                     <li><a href="echipa.php">Externalizare</a></li>
+                     <li><a href="seap">SEAP/SICAP</a></li>
+                     <li><a href="credite">Credite</a></li>
+                     <li><a href="depozite">Depozite</a></li>
+                     <li><a href="fonduri">Fonduri EU</a></li>
+                     <li><a href="bursa">Bursa</a></li>
+                     <li><a href="echipa">Externalizare</a></li>
                   </ul>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link" href="expert.php">
+               <li class="sidebar-list"><a class="sidebar-link" href="expert">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-user"></use>
                      </svg>
@@ -110,11 +110,11 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="doc-manager.php">Documente</a></li>
-                     <li><a href="file-manager.php">Fisiere</a></li>
+                     <li><a href="doc-manager">Documente</a></li>
+                     <li><a href="file-manager">Fisiere</a></li>
                   </ul>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="crm.php">
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="crm">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-user"></use>
                      </svg>
@@ -125,9 +125,9 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="user-profile.php">Leads</a></li>
-                     <li><a href="edit-profile.php">Clienti</a></li>
-                     <li><a href="user-cards.php">Colaboratori</a></li>
+                     <li><a href="user-profile">Leads</a></li>
+                     <li><a href="edit-profile">Clienti</a></li>
+                     <li><a href="user-cards">Colaboratori</a></li>
                      <li><a href="https://saleforce.com"><img src="assets/images/meniu/saleforce.png" height="20" alt=""></a></li>
                   </ul>
                </li>
@@ -142,12 +142,12 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="calendar-basic.php">Calendar</a></li>
-                     <li><a href="projects.php">Proiecte</a></li>
-                     <li><a href="learning-detailed.php">Intalniri/Evenimente</a></li>
-                     <li><a href="learning-detailed.php">Mijloace fixe</a></li>
-                     <li><a href="learning-detailed.php">Materii prime</a></li>
-                     <li><a href="learning-detailed.php">Consumabile</a></li>
+                     <li><a href="calendar-basic">Calendar</a></li>
+                     <li><a href="projects">Proiecte</a></li>
+                     <li><a href="learning-detailed">Intalniri/Evenimente</a></li>
+                     <li><a href="learning-detailed">Mijloace fixe</a></li>
+                     <li><a href="learning-detailed">Materii prime</a></li>
+                     <li><a href="learning-detailed">Consumabile</a></li>
                      <li><a href="https://asana.com"><img src="assets/images/meniu/asana.png" height="20" alt=""></a></li>
                      <li><a href="https://monday.com"><img src="assets/images/meniu/monday.png" height="20" alt=""></a></li>
                   </ul>
@@ -164,8 +164,8 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="smart-building.php">Smart building</a></li>
-                     <li><a href="echipamente.php">Echipamente</a></li>
+                     <li><a href="smart-building">Smart building</a></li>
+                     <li><a href="echipamente">Echipamente</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
@@ -180,9 +180,9 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="product.php">Produse</a></li>
-                     <li><a href="order-history.php">Comenzi</a></li>
-                     <li><a href="list-products.php">Setari</a></li>
+                     <li><a href="product">Produse</a></li>
+                     <li><a href="order-history">Comenzi</a></li>
+                     <li><a href="list-products">Setari</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
@@ -200,24 +200,24 @@
                      <li><a href="#"><img src="assets/images/meniu/e-factura.png" height="50" alt=""></a></li>
                      <li><a href="#"><img src="assets/images/meniu/smartbill.png" height="50" alt=""></a></li>
                      <li><a href="#"><img src="assets/images/meniu/software.png" height="20" alt=""></a></li>
-                     <li><a href="product.php">Emite oferta (ProForma)</a></li>
-                     <li><a href="product-page.php">Incasari</a></li>
-                     <li><a href="list-products.php">Plati</a></li>
-                     <li><a href="product.php">Rapoarte</a></li>
-                     <li><a href="product-page.php">Alerte facturi restante</a></li>
-                     <li><a href="list-products.php">TVA de platit</a></li>
-                     <li><a href="product.php">TVA de recuperat</a></li>
-                     <li><a href="product-page.php">BUGETELE ASIG.SOC. SI FD.SPEC.</a></li>
-                     <li><a href="list-products.php">BUGETUL DE STAT CONT. ASIG.</a></li>
-                     <li><a href="product.php">Incarca facturi electronice de la clienti</a></li>
-                     <li><a href="product-page.php">Registru de casa</a></li>
-                     <li><a href="list-products.php">Rapoarte Facturi</a></li>
-                     <li><a href="product.php">Serii documente</a></li>
-                     <li><a href="product-page.php">Jurnal banca</a></li>
-                     <li><a href="list-products.php">Rapoarte Avize</a></li>
-                     <li><a href="product.php">Rapoarte Proforme</a></li>
-                     <li><a href="product-page.php">Exporta Factura</a></li>
-                     <li><a href="list-products.php">Exporta E-factura</a></li>
+                     <li><a href="product">Emite oferta (ProForma)</a></li>
+                     <li><a href="product-page">Incasari</a></li>
+                     <li><a href="list-products">Plati</a></li>
+                     <li><a href="product">Rapoarte</a></li>
+                     <li><a href="product-page">Alerte facturi restante</a></li>
+                     <li><a href="list-products">TVA de platit</a></li>
+                     <li><a href="product">TVA de recuperat</a></li>
+                     <li><a href="product-page">BUGETELE ASIG.SOC. SI FD.SPEC.</a></li>
+                     <li><a href="list-products">BUGETUL DE STAT CONT. ASIG.</a></li>
+                     <li><a href="product">Incarca facturi electronice de la clienti</a></li>
+                     <li><a href="product-page">Registru de casa</a></li>
+                     <li><a href="list-products">Rapoarte Facturi</a></li>
+                     <li><a href="product">Serii documente</a></li>
+                     <li><a href="product-page">Jurnal banca</a></li>
+                     <li><a href="list-products">Rapoarte Avize</a></li>
+                     <li><a href="product">Rapoarte Proforme</a></li>
+                     <li><a href="product-page">Exporta Factura</a></li>
+                     <li><a href="list-products">Exporta E-factura</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
@@ -231,11 +231,11 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="product.php">Facebook</a></li>
-                     <li><a href="product-page.php">Instagram</a></li>
-                     <li><a href="list-products.php">LinkedIn</a></li>
-                     <li><a href="product.php">YouTube</a></li>
-                     <li><a href="product-page.php">Pinterest</a></li>
+                     <li><a href="product">Facebook</a></li>
+                     <li><a href="product-page">Instagram</a></li>
+                     <li><a href="list-products">LinkedIn</a></li>
+                     <li><a href="product">YouTube</a></li>
+                     <li><a href="product-page">Pinterest</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
@@ -251,10 +251,10 @@
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="https://termene.ro"><img src="assets/images/meniu/termene.png" height="20" alt=""></a></li>
                      <li><a href="https://adobe.com"><img src="assets/images/meniu/adobe.png" height="20" alt=""></a></li>
-                     <li><a href="office.php"><img src="assets/images/meniu/office.png" height="20" alt=""></a></li>
+                     <li><a href="office"><img src="assets/images/meniu/office.png" height="20" alt=""></a></li>
                      <li><a href="https://workspace.google.com"><img src="assets/images/meniu/workspace.png" height="20" alt=""></a></li>
-                     <li><a href="google.php">Google apps</a></li>
-                     <li><a href="list-products.php">MailChimp</a></li>
+                     <li><a href="google">Google apps</a></li>
+                     <li><a href="list-products">MailChimp</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
