@@ -8,7 +8,7 @@ $page = end($items);
 if($page == 'button-builder.php'){
   echo '<body class="button-builder">';
 }else{
-  echo '<body>';
+  echo '<body onload="startTimer()">';
 }
 ?>
   <!-- loader starts-->

@@ -1,4 +1,5 @@
 <?php include('partial/header.php') ?>
+<script src="assets/js/custom-script.js"></script>
 <?php include('partial/loader.php') ?>
 <!-- page-wrapper Start-->
 <div class="page-wrapper compact-wrapper" id="pageWrapper">
@@ -23,7 +24,7 @@
 
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
-              <div class="card-body primary min-h-9"> <span class="f-light">Cifra de afaceri</span>
+              <div id="card1" class="card-body primary min-h-9"> <span class="f-light">Cifra de afaceri</span>
                 <div class="d-flex align-items-end gap-1">
                   <h4 id="cifra-de-afaceri"></h4><span class="font-primary f-12 f-w-500"><i
                       class="icon-arrow-up"></i><span>+50%</span></span>
@@ -39,7 +40,7 @@
 
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
-              <div class="card-body success min-h-9"><span class="f-light">Profit</span>
+              <div id="card2" class="card-body success min-h-9"><span class="f-light">Profit</span>
                 <div class="d-flex align-items-end gap-1">
                   <h4 id="profit-actual"></h4><span class="font-success f-12 f-w-500"><i
                       class="icon-arrow-up"></i><span>+20%</span></span>
@@ -54,7 +55,7 @@
           </div>
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
-              <div class="card-body secondary min-h-9"><span class="f-light">Angajați</span>
+              <div id="card3" class="card-body secondary min-h-9"><span class="f-light">Angajați</span>
                 <div class="d-flex align-items-end gap-1">
                   <h4 id="locuri-munca"></h4><span class="font-secondary f-12 f-w-500"></span>
                 </div>
@@ -68,7 +69,7 @@
           </div>
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
-              <div class="card-body success min-h-9"><span class="f-light">Cod CAEN</span>
+              <div id="card4" class="card-body success min-h-9"><span class="f-light">Cod CAEN</span>
                 <div class="flex-wrap d-flex align-items-end gap-1">
                   <h4 id="cod-caen"></h4><span class="font-success f-12 f-w-500"></span>
                   <div id="nume-caen" class="f-14 f-s-normal">denumire CAEN</div>
@@ -144,26 +145,26 @@
 
           <div class="col-md-6 col-xs-12">
             <div class="card small-widget mb-sm-0">
-              <div class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"><u>🟡Situație contabila in TIMP REAL</u></span>
+              <div id="cardExemplu" class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"><u>🟡Situație contabila in TIMP REAL</u></span>
 
                 <div class="row d-flex">
                   <div class="col-md-6">
-                    <div class="f-w-700 col-md-6" style="font-size: 1.7rem;">
+                    <div class="f-w-700 col-md-6" style="font-size: 1.1rem;">
                       (Exemplu) Situație Martie 2023:
                     </div>
                     <br><br>
 
                     Proforme:<br>
-                    <h4>100.000 Lei</h4>
+                    <h6>100.000 Lei</h6>
                     Încasați:<br>
-                    <h4>80.000 Lei</h4>
+                    <h6>80.000 Lei</h6>
                     Cheltuieli:<br>
-                    <h4>40.000 Lei</h4>
+                    <h6>40.000 Lei</h6>
                     Număr angajați:<br>
-                    <h4>8</h4>
+                    <h6>8</h6>
                   </div>
 
-                  <div class="f-w-700 col-md-6" style="font-size: 1.7rem;">
+                  <div class="f-w-700 col-md-6" style="font-size: 1.1rem;">
                     Tot ce lucrează persoana/ firma de contabilitate se va putea migra in timp real (migrare automata
                     din SAGA/ SmartBill/ orice soft de contabilitate)<br>
                     Astfel veți știi situația contabila in timp real.
@@ -180,7 +181,7 @@
 
           <div class="col-md-6 col-xs-12">
             <div class="card small-widget mb-sm-0">
-              <div class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"></span>
+              <div id="cardDateGenerale" class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"></span>
 
                 <div class="row d-flex">
                   <div class="col-md-12" id="dateGenerale">
@@ -196,7 +197,7 @@
 
           <!-- MAP -->
           <div class="col-md-6 col-xs-12">
-            <div class="card small-widget mb-sm-0">
+            <div id="cardAF" class="card small-widget mb-sm-0">
               <div class="card-header">
                 <h5>Adresa fiscala</h5>
               </div>
@@ -206,7 +207,7 @@
 
 
           <div class="col-sm-12 col-xl-6 box-col-6">
-            <div class="card min-h-30">
+            <div id="cardAsoc" class="card min-h-30">
               <div class="card-header">
                 <h5>Asociatii</h5>
               </div>
@@ -218,7 +219,7 @@
 
 
           <div class="col-sm-12 col-xl-6 box-col-6">
-            <div class="card">
+            <div id="cardRA" class="card">
               <div class="card-header">
                 <h5>Rentabilitatea afacerii</h5>
               </div>
@@ -229,7 +230,7 @@
           </div>
 
           <div class="col-lg-6 col-sm-12 box-col-12">
-            <div class="card">
+            <div id="cardSF" class="card">
               <div class="card-header">
                 <h5 id="grafic-situatie-financiara"></h5>
               </div>

@@ -619,6 +619,50 @@ const listCaen = {
 };
 
 
+function setMaxHeight(ids) {
+    // initialize max height to 0
+    let maxHeight = 0;
+
+    // loop through each id and get its height
+    ids.forEach((id) => {
+        const element = document.getElementById(id);
+        const height = element.clientHeight;
+
+        // update max height if current element is taller
+        if (height > maxHeight) {
+            maxHeight = height;
+        }
+    });
+
+    // set all elements' height to max height
+    ids.forEach((id) => {
+        const element = document.getElementById(id);
+        element.style.height = maxHeight + "px";
+    });
+}
+
+function startTimer() {
+    // check if local storage has a previous time value
+    let prevTime = localStorage.getItem("timeOnPage") || 0;
+
+    // convert previous time to number and start timer
+    let time = Number(prevTime);
+    let timer = setInterval(() => {
+        // increment time and format display
+        time++;
+        const hours = Math.floor(time / 3600);
+        const minutes = Math.floor((time % 3600) / 60);
+        const seconds = time % 60;
+        const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        document.getElementById("timer").innerHTML = formattedTime;
+
+        // save current time to local storage
+        localStorage.setItem("timeOnPage", time);
+    }, 1000);
+}
+
+
+
 var request = {};
 var pairs = location.search.substring(1).split('&');
 for (var i = 0; i < pairs.length; i++) {
@@ -666,7 +710,7 @@ function fetchAuth(cuiValue) {
         .then((response) => {
             //   document.getElementById("demoShow").innerHTML = response;
             dataJson = response;
-            if(dataJson.DateGenerale = undefined) {
+            if (dataJson.DateGenerale = undefined) {
                 let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
                 if (codulCUI == null || codulCUI == "") {
                     window.location.href = window.location.href;
@@ -760,19 +804,46 @@ function populatePage() {
     const dateGenerale = document.getElementById('dateGenerale');
     dateGenerale.innerHTML = `
     <span>
-    <h3>Detalii generale</h3><br>
-    CUI: <h4>${dataObj.DateGenerale.cui}</h4><br>
-    Nr. de înmatriculare: <h4>${dataObj.DateGenerale.cod_inmatriculare}</h4><br>
-    Obiect activitate MFINANȚE: <h4>${dataObj.Bilanturi[0].cod_caen} - ${listCaen[codCAEN.innerHTML]}</h4> <br><br>
+    <h4>Detalii generale</h4><br>
+    CUI: <h6>${dataObj.DateGenerale.cui}</h6><br>
+    Nr. de înmatriculare: <h6>${dataObj.DateGenerale.cod_inmatriculare}</h6><br>
+    Obiect activitate MFINANȚE: <h6>${dataObj.Bilanturi[0].cod_caen} - ${listCaen[codCAEN.innerHTML]}</h6> <br><br>
 
-    <h3>Adresă</h3>
-    Localitate: <h4>${dataObj.DateGenerale.localitate}</h4>
-    Județ: <h4>${dataObj.DateGenerale.judet}</h4>
-    Sediu social (RECOM/MFINANȚE): <h4>${dataObj.DateGenerale.adresa}</h4>
-    Domiciliu fiscal (ANAF): <h4>${dataObj.DateGenerale.adresa_anaf}</h4>
+    <h4>Adresă</h4>
+    Localitate: <h6>${dataObj.DateGenerale.localitate}</h6>
+    Județ: <h6>${dataObj.DateGenerale.judet}</h6>
+    Sediu social (RECOM/MFINANȚE): <h6>${dataObj.DateGenerale.adresa}</h6>
+    Domiciliu fiscal (ANAF): <h6>${dataObj.DateGenerale.adresa_anaf}</h6>
 
     </span>
     `;
+
+    const dateNow = document.getElementById('dateNow');
+    const today = new Date();
+    const day = today.getDate().toString().padStart(2, '0');
+    const month = (today.getMonth() + 1).toString().padStart(2, '0');
+    const year = today.getFullYear().toString();
+    dateNow.innerHTML = `${day}/${month}/${year}`;
+
+
+    // BLOCKS HEIGHT IN DASHBOARD
+
+    // carduri 4 prima linie
+    const ids0 = ["card1", "card2", "card3", "card4"];
+    // blocurile de exemplu date generale
+    const ids1 = ["cardExemplu", "cardDateGenerale"];
+    // harta si asociatii
+    const ids2 = ["cardAF", "cardAsoc"];
+    // rentabilitatea si situatia fnanciara
+    const ids3 = ["cardRA", "cardSF"];
+
+    setMaxHeight(ids0);
+    setMaxHeight(ids1);
+    setMaxHeight(ids2);
+    setMaxHeight(ids3);
+
+
+
 
     const chartAsociati = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.asociati;
     const listNameAsociati = [];

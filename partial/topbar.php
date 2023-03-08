@@ -4,19 +4,26 @@
       <div class="form-group w-100">
         <div class="Typeahead Typeahead--twitterUsers">
           <div class="u-posRelative">
-            <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Caută .." name="q" title="" autofocus>
-            <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+            <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Caută .."
+              name="q" title="" autofocus>
+            <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i
+              class="close-search" data-feather="x"></i>
           </div>
           <div class="Typeahead-menu"></div>
         </div>
       </div>
     </form>
     <div class="header-logo-wrapper col-auto p-0">
-      <div class="logo-wrapper"><a href="index"><img class="img-fluid" src="/assets/images/logo/logo.png" alt=""></a></div>
+      <div class="logo-wrapper"><a href="index"><img class="img-fluid" src="/assets/images/logo/logo.png" alt=""></a>
+      </div>
       <div class="toggle-sidebar"><img class="img-fluid" src="/assets/images/logo/logo.png" width="50" alt=""></a></div>
     </div>
     <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
       <ul class="nav-menus">
+        <li style="color: #57c07a">
+          <h6>Pontaj la <span id="dateNow"></span></h6>
+          <h6><span id="timer"></span></h1>
+        </li>
         <li>
           <div class="mode">
             <svg>
@@ -50,16 +57,19 @@
           </div>
         </li>
         <li class="profile-nav onhover-dropdown pe-0 py-0">
-          <div class="media profile-media"><img class="b-r-10" width="50" src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg" alt="">
+          <div class="media profile-media"><img class="b-r-10" width="50"
+              src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg"
+              alt="">
             <div class="media-body"><span id="loggedName"></span>
               <p class="mb-0 font-roboto" id="loggedPosition"><i class="middle fa fa-angle-down"></i></p>
-          </div>
-          <ul class="profile-dropdown onhover-show-div">
-            <li><a href="user-profile"><i data-feather="user"></i><span>Cont </span></a></li>
-            <li><a href="email-application"><i data-feather="mail"></i><span>Inbox</span></a></li>
-            <li><a href="to-do"><i data-feather="file-text"></i><span>Taskboard</span></a></li>
-            <li><a href="edit-profile"><i data-feather="settings"></i><span>Settings</span></a></li>
-          </ul>
+            </div>
+            <ul class="profile-dropdown onhover-show-div">
+              <li><a href="user-profile"><i data-feather="user"></i><span>Cont </span></a></li>
+              <li><a href="email-application"><i data-feather="mail"></i><span>Inbox</span></a></li>
+              <li><a href="to-do"><i data-feather="file-text"></i><span>Taskboard</span></a></li>
+              <li><a href="edit-profile"><i data-feather="settings"></i><span>Settings</span></a></li>
+              <li><a href="index.php"></i><span onclick="logOut();">Log out</span></a></li>
+            </ul>
         </li>
       </ul>
     </div>
@@ -71,6 +81,7 @@
             </div>
             </div>
           </script>
-    <script class="empty-template" type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
+    <script class="empty-template"
+      type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
   </div>
 </div>

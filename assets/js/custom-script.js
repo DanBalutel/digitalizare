@@ -24,3 +24,11 @@ function removeLoadingModal() {
 
 
 // renderLoading('Label goes here');
+
+
+// logOut function
+function logOut() {
+    localStorage.removeItem('timeOnPage');
+    localStorage.removeItem('dataObj');
+    console.log('removed');
+}
