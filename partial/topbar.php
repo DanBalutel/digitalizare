@@ -23,7 +23,7 @@
         <li class="mr-3 p-0" style="color: #57c07a; margin-right: 2rem;">
           <h6 class="mb-0" style="color: #01cdff;">Pontaj la</h6>
           <h6 class="mb-0" style="color: #08a8fd;" id="dateNow"></h6>
-          <h6 class="mb-0" style="color: #1971fd;" id="timer"></h6>
+          <h6 class="mb-0" style="color: #4286f1;" id="timer"></h6>
         </li>
         <li>
           <div class="mode">
