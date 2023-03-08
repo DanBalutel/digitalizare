@@ -20,7 +20,7 @@
     </div>
     <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
       <ul class="nav-menus">
-        <li class="p-0" style="color: #57c07a">
+        <li class="mr-3 p-0" style="color: #57c07a; margin-right: 2rem;">
           <h6 class="mb-0" style="color: #01cdff;">Pontaj la</h6>
           <h6 class="mb-0" style="color: #08a8fd;" id="dateNow"></h6>
           <h6 class="mb-0" style="color: #1971fd;" id="timer"></h6>
