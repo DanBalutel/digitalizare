@@ -301,6 +301,19 @@
                               height="20" alt=""> </a></li>
                   </ul>
                </li>
+
+               <li class="sidebar-list">
+                  <a class="sidebar-link" href="#">
+                     <svg class="stroke-icon">
+                        <use href="assets/svg/icon-sprite.svg#cart"></use>
+                     </svg>
+                     <svg class="fill-icon">
+                        <use href="assets/svg/icon-sprite.svg#cart"> </use>
+                     </svg><span>WhatsApp</span>
+                  </a>
+               </li>
+
+
             </ul>
          </div>
          <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>

@@ -20,9 +20,10 @@
     </div>
     <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
       <ul class="nav-menus">
-        <li style="color: #57c07a">
-          <h6>Pontaj la <span id="dateNow"></span></h6>
-          <h6><span id="timer"></span></h1>
+        <li class="p-0" style="color: #57c07a">
+          <h6 class="mb-0" style="color: #01cdff;">Pontaj la</h6>
+          <h6 class="mb-0" style="color: #08a8fd;" id="dateNow"></h6>
+          <h6 class="mb-0" style="color: #1971fd;" id="timer"></h6>
         </li>
         <li>
           <div class="mode">
