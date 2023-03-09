@@ -17,7 +17,7 @@
             <?php include('partial/breadcrumb.php'); ?>
             <!-- Container-fluid starts-->
             <div class="container-fluid">
-             
+
             </div>
             <!-- Container-fluid Ends-->
         </div>
@@ -28,7 +28,6 @@
 
 <?php include('partial/scripts.php'); ?>
 
-<script src="assets/js/fullscreen.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
 
 <?php include('partial/footer-end.php'); ?>
