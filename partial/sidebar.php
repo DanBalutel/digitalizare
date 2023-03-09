@@ -39,11 +39,10 @@
                   </a>
                </li>
 
-
                <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title link-nav d-flex justify-content-center align-items center" href="#">
-                     <i class="fa fa-plus-circle"></i>
-                     <span>Adauga firma</span>
+                  <a class="sidebar-link sidebar-title link-nav" href="#">
+                  <i class="fa fa-plus-circle"></i>  
+                  <span>Adauga firma</span>
                   </a>
                </li>
                
