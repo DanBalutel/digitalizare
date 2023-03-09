@@ -17,7 +17,17 @@
             <?php include('partial/breadcrumb.php'); ?>
             <!-- Container-fluid starts-->
             <div class="container-fluid">
-
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="https://constatator.digitalizarefirme.ro/index.html" class="">
+                                    <img src="https://constatator.digitalizarefirme.ro/media/content/hero-illustration.png" width="20" height="20" alt=""> Certificat constatator ONRC
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Container-fluid Ends-->
         </div>
