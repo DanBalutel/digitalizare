@@ -38,6 +38,7 @@
                      </svg><span id="dash"></span>
                   </a>
                </li>
+<<<<<<< HEAD
 
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title link-nav d-flex justify-content-center align-items center" href="#">
@@ -46,6 +47,17 @@
                   </a>
                </li>
                
+=======
+               <!-- <li class="sidebar-list">
+                  <a class="sidebar-link" href="chat.php">
+                     <svg class="stroke-icon">
+                        <use href="assets/svg/icon-sprite.svg#stroke-chat"></use>
+                     </svg>
+                     <svg class="fill-icon">
+                        <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
+                     </svg><span>Chat</span></a>
+               </li> -->
+>>>>>>> f0d829fa62f1eacd2a4ac1584d55e09c667cbf4c
                <li class="sidebar-list">
                   <a class="sidebar-link" href="monica.php">
                      <svg class="stroke-icon">
