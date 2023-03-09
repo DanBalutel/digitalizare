@@ -41,8 +41,13 @@
 
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title link-nav" href="#">
-                  <i class="fa fa-plus-circle"></i>  
-                  <span>Adauga firma</span>
+                     <svg class="stroke-icon">
+                        <use href="/assets/svg/icon-sprite.svg#stroke-home"></use>
+                     </svg>
+                     <svg class="fill-icon">
+                        <use href="/assets/svg/icon-sprite.svg#fill-home"></use>
+                     </svg>
+                     <span>Adauga firma</span>
                   </a>
                </li>
                
