@@ -20,7 +20,7 @@ img.rounded-circle.shadow {
 @media only screen and (max-width: 600px) {
     .timerWork {
         color: #57c07a;
-        margin-right: 35%;
+        margin-right: 25%;
     }
 
 }
