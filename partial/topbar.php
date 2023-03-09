@@ -18,7 +18,7 @@
       </div>
       <div class="toggle-sidebar"><img class="img-fluid" src="/assets/images/logo/logo.png" width="50" alt=""></a></div>
     </div>
-    <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto" style="width: 85%;">
+    <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
       <ul class="nav-menus">
         <li class="mr-3 p-0 timerWork">
           <h6 class="mb-0" style="color: #01cdff;" id="dateNow"></h6>
