@@ -1,55 +1,6 @@
 let dataJson;
 let dataObj;
 
-// helping class declared
-class ElementHandler {
-    constructor() {
-        this.elements = {};
-    }
-
-    // Add Element
-    ae(id) {
-        const element = document.getElementById(id);
-        if (element) {
-            this.elements[id] = element;
-        }
-    }
-
-    // Remove Element
-    re(id) {
-        const element = this.elements[id];
-        if (element) {
-            element.parentNode.removeChild(element);
-            delete this.elements[id];
-        }
-    }
-
-    // Create Event Handler
-    ceh(id, type, handler) {
-        const element = this.elements[id];
-        if (element) {
-            element.addEventListener(type, handler);
-        }
-    }
-
-    // Create Element from JSON
-    ce(json, parent) {
-        const element = document.createElement(json.tag);
-        for (const [attr, value] of Object.entries(json.attrs)) {
-            element.setAttribute(attr, value);
-        }
-        for (const childJSON of json.children) {
-            const childElement = this.createElementFromJSON(childJSON);
-            element.appendChild(childElement);
-        }
-        if (parent) {
-            parent.appendChild(element);
-        }
-        return element;
-    }
-}
-const dom = new ElementHandler();
-
 const listCaen = {
     '0111': 'Cultivarea cerealelor (exclusiv orez), plantelor leguminoase și a plantelor producătoare de semințe oleaginoase',
     '0112': 'Cultivarea orezului',
@@ -1025,6 +976,10 @@ function populatePage() {
         "use strict";
         morris_chart.init()
     })(jQuery);
+
+
+
+
 
 
 };
