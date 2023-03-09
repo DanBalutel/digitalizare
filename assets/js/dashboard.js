@@ -1,6 +1,83 @@
 let dataJson;
 let dataObj;
 
+
+class ElementHandler {
+    constructor() {
+        this.e = {};
+    }
+
+    // add Element
+    a(id) {
+        if (this.e[id]) {
+            console.log('element already added');
+            return element;
+        } else {
+            const element = document.getElementById(id);
+            this.e[id] = element;
+            console.log(`added new element with id: ${id}`);
+            return element;
+        }
+
+    }
+
+    // Remove Element
+    r(id) {
+        if (this.e[id]) {
+            const element = this.e[id];
+            if (element) {
+                element.parentNode.removeChild(element);
+                delete this.e[id];
+            }
+        } else {
+            const element = document.getElementById(id);
+            if (element) {
+                element.parentNode.removeChild(element);
+                delete this.e[id];
+            }
+        }
+
+    }
+
+    // Create Event Handler
+    ch(id, type, handler) {
+        if (this.e[id]) {
+            const element = this.e[id];
+            if (element) {
+                element.addEventListener(type, handler);
+            }
+        } else {
+            const element = this.addElement(id);
+            if (element) {
+                element.addEventListener(type, handler);
+            }
+        }
+    }
+
+    // Create Element from JSON
+    c(json, parent) {
+        const element = document.createElement(json.tag);
+        element.classList = (json.class);
+        element.id = (json.id);
+
+        // for (const [attr, value] of Object.entries(json.attrs)) {
+        //     element.setAttribute(attr, value);
+        // }
+        // for (const childJSON of json.children) {
+        //     const childElement = this.createElementFromJSON(childJSON);
+        //     element.appendChild(childElement);
+        // }
+        if (parent) {
+            parent.appendChild(element);
+        }
+        return element;
+    }
+}
+
+const d = new ElementHandler();
+
+
+
 const listCaen = {
     '0111': 'Cultivarea cerealelor (exclusiv orez), plantelor leguminoase și a plantelor producătoare de semințe oleaginoase',
     '0112': 'Cultivarea orezului',
@@ -742,7 +819,11 @@ function fetchAuth(cuiValue) {
 
 function populatePage() {
 
-    removeLoadingModal();
+    try {
+        removeLoadingModal();
+    } catch (e) {
+        console.log(e);
+    }
 
     function findAdministrator(id) {
         const positionName = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.administratori[id].functie;
@@ -765,6 +846,8 @@ function populatePage() {
 
     // temp we render here all DOOM elements
     const name = document.getElementById('name');
+    d.a('dash').innerHTML = dataObj.DateGenerale.nume;
+    d.a('nameAdmin').innerHTML = administratorName;
     name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: ${administratorName}`;
 
     const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
@@ -824,7 +907,7 @@ function populatePage() {
     const day = today.getDate().toString().padStart(2, '0');
     const month = (today.getMonth() + 1).toString().padStart(2, '0');
     const year = today.getFullYear().toString();
-    dateNow.innerHTML = `${day}/${month}/${year}`;
+    dateNow.innerHTML = `Log in ${day}/${month}/${year}`;
 
 
     // BLOCKS HEIGHT IN DASHBOARD

@@ -35,18 +35,17 @@
                      </svg>
                      <svg class="fill-icon">
                         <use href="/assets/svg/icon-sprite.svg#fill-home"></use>
-                     </svg><span>Dashboard</span>
+                     </svg><span id="dash"></span>
                   </a>
                </li>
+
                <li class="sidebar-list">
-                  <a class="sidebar-link" href="chat.php">
-                     <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#stroke-chat"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
-                     </svg><span>Chat</span></a>
+                  <a class="sidebar-link sidebar-title link-nav d-flex justify-content-center align-items center" href="#">
+                     <i class="fa fa-plus-circle"></i>
+                     <span>Adauga firma</span>
+                  </a>
                </li>
+               
                <li class="sidebar-list">
                   <a class="sidebar-link" href="monica.php">
                      <svg class="stroke-icon">

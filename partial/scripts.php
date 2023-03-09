@@ -17,13 +17,12 @@
 <script src="assets/js/slick/slick.min.js"></script>
 <script src="assets/js/slick/slick.js"></script>
 <script src="assets/js/header-slick.js"></script>
-<script src="assets/js/custom-script.js"></script>
 
 <!-- Plugins JS Ends-->
 <!-- Theme js-->
 <script src="assets/js/script.js"></script>
 <script src="assets/js/dashboard.js" defer></script>
-
+<script src="assets/js/custom-script.js" defer></script>
 
 
 

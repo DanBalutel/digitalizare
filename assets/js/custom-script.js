@@ -20,10 +20,10 @@ function renderLoadingModal(label) {
 function removeLoadingModal() {
     const modalLoading = document.getElementById('modal-loading');
     modalLoading.style = 'display: none;background: #000000a6;';
-}
+};
 
 
-// renderLoading('Label goes here');
+
 
 
 // logOut function
