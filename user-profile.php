@@ -33,11 +33,6 @@
                           <div class="row">
                             <div class="col-md-6">
                               <div class="ttl-info text-start">
-                                <h6><i class="fa fa-envelope"></i>   Email</h6><span>Marekjecno@yahoo.com</span>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="ttl-info text-start">
                                 <h6><i class="fa fa-calendar"></i>Data Nasterii</h6><span id="dataNastere"></span>
                               </div>
                             </div>
@@ -51,11 +46,6 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 order-sm-2 order-xl-2">
                           <div class="row">
-                            <div class="col-md-6">
-                              <div class="ttl-info text-start">
-                                <h6><i class="fa fa-phone"></i>   Contact Us</h6><span>India +91 123-456-7890</span>
-                              </div>
-                            </div>
                             <div class="col-md-6">
                               <div class="ttl-info text-start">
                                 <h6><i class="fa fa-location-arrow"></i>   Location</h6><span id="adresa"></span>
