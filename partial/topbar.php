@@ -24,14 +24,16 @@
       <ul class="nav-menus">
         <li class="onhover-dropdown">
           <i class="fa fa-camera"></i>
-        <ul>
-            <li>
-              <a href="#">Scan Factura</a>
-            </li>
-            <li>
-              <a href="#">Scan DOC</a>
-            </li>
-        </ul>
+          <div class="onhover-show-div">
+                <ul>
+                    <li>
+                      <a href="#">Scan Factura</a>
+                    </li>
+                    <li>
+                      <a href="#">Scan DOC</a>
+                    </li>
+                </ul>
+          </div>
         </li>
       </ul>
     </div>
