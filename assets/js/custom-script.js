@@ -113,3 +113,10 @@ function toggleSubmenu() {
     d.a('profileDropdown').classList.toggle("active");
 }
 d.ch('profileImg', 'click', toggleSubmenu);
+
+const dateNow = document.getElementById('dateNow');
+const today = new Date();
+const day = today.getDate().toString().padStart(2, '0');
+const month = (today.getMonth() + 1).toString().padStart(2, '0');
+const year = today.getFullYear().toString();
+dateNow.innerHTML = `Log in ${day}/${month}/${year}`;
