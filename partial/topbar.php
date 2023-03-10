@@ -24,7 +24,7 @@
       <ul class="nav-menus">
         <li class="onhover-dropdown text-center">
           <i class="fa fa-camera"></i><br>Scan
-          <div class="onhover-show-div notification-dropdown" style="background-color: #262932;">
+          <div class="onhover-show-div notification-dropdown" style="background-color: #262932; top: 40px">
               <ul>
                   <li class="nav-link border-4 text-white" style="cursor: pointer">
                   <label for="fileInput"> 
