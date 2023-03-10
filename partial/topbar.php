@@ -17,31 +17,13 @@
       <div class="logo-wrapper"><a href="index"><img class="img-fluid" src="/assets/images/logo/logo.png" alt=""></a>
       </div>
       <div class="toggle-sidebar"><img class="img-fluid" src="/assets/images/logo/logo.png" width="50" alt=""></a></div>
-      <li class="onhover-dropdown">
-          <div class="notification-box">
-            <svg>
-              <use href="/assets/svg/icon-sprite.svg#notification"></use>
-            </svg><span class="badge rounded-pill badge-secondary">4 </span>
-          </div>
-          <div class="onhover-show-div notification-dropdown">
-            <h6 class="f-18 mb-0 dropdown-title">Notificări </h6>
-            <ul>
-              <li class="b-l-primary border-4">
-                <p>Delivery processing <span class="font-danger">10 min.</span></p>
-              </li>
-              <li class="b-l-success border-4">
-                <p>Order Complete<span class="font-success">1 hr</span></p>
-              </li>
-              <li class="b-l-secondary border-4">
-                <p>Tickets Generated<span class="font-secondary">3 hr</span></p>
-              </li>
-              <li class="b-l-warning border-4">
-                <p>Delivery Complete<span class="font-warning">6 hr</span></p>
-              </li>
-              <li><a class="f-w-700" href="#">Marchează citite</a></li>
-            </ul>
-          </div>
-        </li>
+      
+    </div>
+    
+    <div class="nav-left col-2 pull-right left-header p-0 ms-auto">
+      <ul class="nav-menus">
+        <li>Scan</li>
+      </ul>
     </div>
     <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
       <ul class="nav-menus">
