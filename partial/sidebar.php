@@ -41,16 +41,16 @@
 
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title link-nav" href="#">
-                     <svg class="stroke-icon">
-                        <use href="/assets/svg/icon-sprite.svg#stroke-home"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="/assets/svg/icon-sprite.svg#fill-home"></use>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor"
+                        class="bi bi-plus" viewBox="0 0 16 16" id="IconChangeColor">
+                        <path
+                           d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                           id="mainIconPathAttribute" fill="#737373"></path>
                      </svg>
                      <span>Adauga firma</span>
                   </a>
                </li>
-               
+
 
                <!-- <li class="sidebar-list">
                   <a class="sidebar-link" href="chat.php">
