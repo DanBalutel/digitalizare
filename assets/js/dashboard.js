@@ -777,7 +777,7 @@ function populatePage() {
 
     
     const dataNastere = document.getElementById('dataNastere');
-    dataNastere.innerHTML = administrator.dataNastere.slice(0,4);
+    dataNastere.innerHTML = administrator.dataNastere.slice(5,7) + ' ' + administrator.dataNastere.slice(8,10) + ' '+administrator.dataNastere.slice(0,4);
 
 
     console.log(dataObj)
