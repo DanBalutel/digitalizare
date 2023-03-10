@@ -55,30 +55,30 @@
                                           <form action="#">
                                             <div class="row">
                                               <div class="col-md-6">
-                                                <label for="nume">Nume Prenume</label>
+                                                <label for="nume" class="form-label text-start">Nume Prenume</label>
                                                 <input type="text" class="form-control" id="numeBuletin">
                                               </div>
                                               <div class="col-md-6">
-                                                <label for="nume">CNP</label>
+                                                <label for="nume" class="form-label text-start">CNP</label>
                                                 <input type="number" class="form-control" max="13">
                                               </div>
                                               <div class="col-md-4">
-                                                <label for="nume">Seria</label>
+                                                <label for="nume" class="form-label text-start">Seria</label>
                                                 <input type="text" class="form-control">
                                               </div>
                                               <div class="col-md-8">
-                                                <label for="nume">Numar</label>
+                                                <label for="nume" class="form-label text-start">Numar</label>
                                                 <input type="number" class="form-control">
                                               </div>
-                                              <div class="col-md-6">
+                                              <div class="col-md-6" class="form-label text-start">
                                                 <label for="nume">Valabil Din</label>
                                                 <input type="date" class="form-control" >
                                               </div>
-                                              <div class="col-md-6">
+                                              <div class="col-md-6" class="form-label text-start">
                                                 <label for="nume">Valabil Pana La</label>
                                                 <input type="date" class="form-control" >
                                               </div>
-                                              <div class="col-md-12">
+                                              <div class="col-md-12" class="form-label text-start">
                                                 <label for="nume">Incarca Poza Buletin</label>
                                                 <input type="file" class="form-control">
                                               </div>
