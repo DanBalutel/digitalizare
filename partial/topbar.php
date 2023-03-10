@@ -27,7 +27,7 @@
           <div class="onhover-show-div notification-dropdown">
               <ul>
                   <li class="nav-link border-4">
-                    <a href="#">Scan Factura</a>
+                    <button id="cameraButton">Scan Factura</button>
                   </li>
                   <li class="nav-link border-4">
                     <a href="#">Scan DOC</a>
@@ -105,3 +105,4 @@
       type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
   </div>
 </div>
+<video id="videoElement" autoplay></video>
