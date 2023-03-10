@@ -27,7 +27,7 @@
           <div class="onhover-show-div notification-dropdown">
               <ul>
                   <li class="nav-link border-4">
-                    <button id="cameraButton">Scan Factura</button>
+                    <a id="cameraButton">Scan Factura</a>
                   </li>
                   <li class="nav-link border-4">
                     <a href="#">Scan DOC</a>
