@@ -773,11 +773,11 @@ function populatePage() {
     loggedPositionProfile.innerHTML = 'Administrator';
 
     const adresa = document.getElementById('adresa');
-    adresa.innerHTML = administratorName.adresa;
+    adresa.innerHTML = administrator.adresa;
 
     
     const dataNastere = document.getElementById('dataNastere');
-    dataNastere.innerHTML = administratorName.dataNastere;
+    dataNastere.innerHTML = administrator.dataNastere;
 
 
     console.log(dataObj)
