@@ -695,7 +695,7 @@ console.log(request['cui']);
 // CUI 38911092
 function fetchAuth(cuiValue) {
 
-    renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼');
+    renderLoadingModal('Datele se incarca...');
 
     // (A) URL & CREDENTIALS
     var url = `https://api.raport.ai/cui?cui=${cuiValue}`
@@ -705,11 +705,7 @@ function fetchAuth(cuiValue) {
 
         // (C) SERVER RESPONSE
         .then((result) => {
-            if (result.status != 200) {
-                renderLoadingModal('<strong>CUI gresit</strong>');
-                window.location.href = window.location.href;
-                throw new Error("Bad Server Response");
-            }
+            if (result.status != 200) { throw new Error("Bad Server Response"); }
             return result.text();
         })
         .then((response) => {
@@ -852,6 +848,13 @@ function populatePage() {
 
     </span>
     `;
+
+        const dateNow = document.getElementById('dateNow');
+        const today = new Date();
+        const day = today.getDate().toString().padStart(2, '0');
+        const month = (today.getMonth() + 1).toString().padStart(2, '0');
+        const year = today.getFullYear().toString();
+        dateNow.innerHTML = `Log in ${day}/${month}/${year}`;
 
 
         // BLOCKS HEIGHT IN DASHBOARD
