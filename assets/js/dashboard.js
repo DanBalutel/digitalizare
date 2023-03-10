@@ -706,9 +706,8 @@ function fetchAuth(cuiValue) {
         // (C) SERVER RESPONSE
         .then((result) => {
             if (result.status != 200) {
-                // renderLoadingModal('<strong>CUI gresit</strong>');
-                // window.location.href = window.location.href;
-                console.log(result)
+                renderLoadingModal('<strong>CUI gresit</strong>');
+                window.location.href = window.location.href;
                 throw new Error("Bad Server Response");
             }
             return result.text();
@@ -744,8 +743,8 @@ function fetchAuth(cuiValue) {
         // (D) HANDLE ERRORS (OPTIONAL)
         .catch((error) => {
             localStorage.removeItem('dataObj');
-            // alert('CUI gresit')
-            // window.location.href = window.location.origin;
+            alert('CUI gresit')
+            window.location.href = window.location.origin;
             console.log(error);
         });
 }
@@ -991,7 +990,7 @@ function populatePage() {
         for (const pP in chartDataPP) {
             // console.log(chartDataCA);
             const temp = {
-                x: `${chartDataCA[pP].an}`,
+                x: ``,
                 y: parseInt(chartDataCA[pP].y),
                 z: parseInt(chartDataPP[pP].y),
                 a: parseInt(chartDataDa[pP].y)
