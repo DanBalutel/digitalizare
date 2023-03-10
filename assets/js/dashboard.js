@@ -765,7 +765,13 @@ function populatePage() {
     loggedName.innerHTML = administratorName;
     const loggedPosition = document.getElementById('loggedPosition');
     loggedPosition.innerHTML = 'Administrator';
-
+    
+    const administratorNameProfile = findAdministrator(0);
+    const loggedNameProfile = document.getElementById('loggedNameProfile');
+    loggedNameProfile.innerHTML = administratorNameProfile;
+    const loggedPositionProfile = document.getElementById('loggedPositionProfile');
+    loggedPositionProfile.innerHTML = 'Administrator';
+    console.log(dataObj)
 
     // temp we render here all DOOM elements
     const name = document.getElementById('name');
