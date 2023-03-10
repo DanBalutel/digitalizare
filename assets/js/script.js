@@ -161,7 +161,7 @@ $(window).on('scroll', function () {
 });
 
 
-$('#cameraButton').addEventListener("click", function() {
+$('#cameraButton').bind("click", function() {
   navigator.mediaDevices.getUserMedia({ video: true })
     .then(function(stream) {
         $('#videoElement').srcObject = stream;
