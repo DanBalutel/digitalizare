@@ -974,7 +974,7 @@ function populatePage() {
     const listAni = [];
 
     for (const prod in chartProdMunc) {
-        listNrAngaj.unshift(parseInt(chartProdMunc[prod].cifra_de_afaceri_neta) / parseInt(chartProdMunc[prod].numar_mediu_angajati));
+        listNrAngaj.unshift(parseInt(chartProdMunc[prod].cifra_de_afaceri_neta.toFixed(2)) / parseInt(chartProdMunc[prod].numar_mediu_angajati.toFixed(2)));
         listAni.unshift(chartProdMunc[prod].an);
     };
 
@@ -1030,7 +1030,7 @@ function populatePage() {
     for (const pP in chartDataPP) {
         // console.log(chartDataCA);
         const temp = {
-            x: `'${chartDataCA[pP].an}'`,
+            x: `${chartDataCA[pP].an}`,
             y: parseInt(chartDataCA[pP].y),
             z: parseInt(chartDataPP[pP].y),
             a: parseInt(chartDataDa[pP].y)
