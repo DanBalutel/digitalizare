@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Open Camera Example</title>
+  </head>
+  <body>
+    <h1>Open Camera Example</h1>
+    <button id="cameraButton">Open Camera</button>
+    <video id="videoElement" autoplay></video>
+  </body>
+  <script>
+    const cameraButton = document.getElementById("cameraButton");
+    const videoElement = document.getElementById("videoElement");
+
+    // If the user clicks the "Open Camera" button, open the camera
+    cameraButton.addEventListener("click", function() {
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function(stream) {
+        videoElement.srcObject = stream;
+        })
+        .catch(function(error) {
+        console.log("Error accessing camera: " + error);
+        });
+    });
+
+  </script>
+</html>

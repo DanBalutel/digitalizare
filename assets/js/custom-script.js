@@ -33,16 +33,4 @@ function logOut() {
     console.log('removed');
 }
 
-const cameraButton = document.getElementById("cameraButton");
-const videoElement = document.getElementById("videoElement");
 
-// If the user clicks the "Open Camera" button, open the camera
-cameraButton.addEventListener("click", function() {
-  navigator.mediaDevices.getUserMedia({ video: true })
-    .then(function(stream) {
-      videoElement.srcObject = stream;
-    })
-    .catch(function(error) {
-      console.log("Error accessing camera: " + error);
-    });
-});
