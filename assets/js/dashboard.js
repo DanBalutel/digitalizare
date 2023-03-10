@@ -767,7 +767,22 @@ function populatePage() {
     const loggedPosition = document.getElementById('loggedPosition');
     loggedPosition.innerHTML = 'Administrator';
     
-   
+    const loggedNameProfile = document.getElementById('loggedNameProfile');
+    if(loggedNameProfile.length > 0)
+    {
+
+        loggedNameProfile.innerHTML = administrator.nume;
+        const loggedPositionProfile = document.getElementById('loggedPositionProfile');
+        loggedPositionProfile.innerHTML = 'Administrator';
+
+        const adresa = document.getElementById('adresa');
+        adresa.innerHTML = administrator.adresa;
+
+        
+        const dataNastere = document.getElementById('dataNastere');
+        dataNastere.innerHTML = administrator.dataNastere.slice(8,10) + '.' + administrator.dataNastere.slice(5,7) + '.'+administrator.dataNastere.slice(0,4);
+    }
+    
 
 
     console.log(dataObj)
