@@ -981,10 +981,10 @@ function populatePage() {
         }
         return n2 / Math.pow(10, p);
     }
-    
+
     for (const prod in chartProdMunc) {
         roundOf(listNrAngaj.unshift(parseInt(chartProdMunc[prod].cifra_de_afaceri_neta) / parseInt(chartProdMunc[prod].numar_mediu_angajati))).toFixed(2);
-        listAni.unshift(chartProdMunc[prod].an);
+        roundOf(listAni.unshift(chartProdMunc[prod].an)).toFixed(2);;
     };
 
     var options = {
