@@ -979,7 +979,19 @@ function populatePage() {
     const chartDataPP = dataObj.detalii_grafice.grafice_profit_pierdere.data;
     const chartDataDa = dataObj.detalii_grafice.grafice_datorii.data;
 
-   
+    for (const pP in chartDataPP) {
+        // console.log(chartDataCA);
+        const temp = {
+            x: `${chartDataCA[pP].an}`,
+            y: parseInt(chartDataCA[pP].y),
+            z: parseInt(chartDataPP[pP].y),
+            a: parseInt(chartDataDa[pP].y)
+        };
+
+        constSitFin.push(temp);
+
+
+    };
 
 
     "use strict";
