@@ -42,15 +42,9 @@
                           <div class="user-designation">
                             <div class="title"><a target="_blank" href="" ><span id="loggedNameProfile"></span></a></div>
                             <div class="desc" id="loggedPositionProfile"></div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 order-sm-2 order-xl-2">
-                          <div class="row text-center">
-                            <div class="col-md-12">
-                              <div class="ttl-info text-center">
-                                <h6><i class="fa fa-location-arrow"></i>Adresa</h6><span id="adresa"></span>
-                                <button class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#tooltipmodal" data-bs-original-title="" title="">Adauga Buletin</button>
-                                <div class="modal fade" id="tooltipmodal" tabindex="-1" aria-labelledby="tooltipmodal" style="display: none;" aria-hidden="true">
+                            <br>
+                            <button class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#tooltipmodal" data-bs-original-title="" title="">Adauga Buletin</button>
+                                  <div class="modal fade" id="tooltipmodal" tabindex="-1" aria-labelledby="tooltipmodal" style="display: none;" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                       <div class="modal-content">
                                         <div class="modal-header">
@@ -66,6 +60,14 @@
                                       </div>
                                     </div>
                                   </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 order-sm-2 order-xl-2">
+                          <div class="row text-center">
+                            <div class="col-md-12">
+                              <div class="ttl-info text-center">
+                                <h6><i class="fa fa-location-arrow"></i>Adresa</h6><span id="adresa"></span>
+                                  
                               </div>
                             </div>
                           </div>
