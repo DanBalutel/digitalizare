@@ -983,19 +983,26 @@ function populatePage() {
         const chartDataPP = dataObj.detalii_grafice.grafice_profit_pierdere.data;
         const chartDataDa = dataObj.detalii_grafice.grafice_datorii.data;
 
-        for (const pP in chartDataPP) {
-            // console.log(chartDataCA);
+        // for (const pP in chartDataPP) {
+
+
+
+        // };
+
+        const minLen = Math.min(chartDataCA.length, chartDataPP.length, chartDataDa.length);
+        console.log(`lungimea minima e de: ${minLen}`);
+
+        for (i = 0; i < minLen; i++) {
+            console.log(i);
             const temp = {
-                x: `${chartDataCA[pP].an}`,
-                y: parseInt(chartDataCA[pP].y),
-                z: parseInt(chartDataPP[pP].y),
-                a: parseInt(chartDataDa[pP].y)
+                x: `${chartDataCA[i].an}`,
+                y: parseInt(chartDataCA[i].y),
+                z: parseInt(chartDataPP[i].y),
+                a: parseInt(chartDataDa[i].y)
             };
 
             constSitFin.push(temp);
-
-
-        };
+        }
 
 
         "use strict";
