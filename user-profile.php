@@ -24,7 +24,7 @@
                   <div class="card hovercard text-center">
                     <div class="cardheader"></div>
                     <div class="user-image">
-                      <div class="avatar"><img alt="" src="assets/images/user/7.jpg"></div>
+                      <div class="avatar"><img alt="" src="assets/images/user-card/personCustom.jpeg"></div>
                       <div class="icon-wrapper"><i class="icofont icofont-pencil-alt-5"></i></div>
                     </div>
                     <div class="info">
