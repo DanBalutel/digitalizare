@@ -22,7 +22,17 @@
     
     <div class="nav-left col-1 pull-right p-0">
       <ul class="nav-menus">
-        <li>Scan</li>
+        <li class="onhover-dropdown">
+          <i class="fa fa-camera"></i>
+        <ul>
+            <li>
+              <a href="#">Scan Factura</a>
+            </li>
+            <li>
+              <a href="#">Scan DOC</a>
+            </li>
+        </ul>
+        </li>
       </ul>
     </div>
     <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
