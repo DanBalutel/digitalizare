@@ -26,13 +26,13 @@
           <i class="fa fa-camera"></i><br>Scan
           <div class="onhover-show-div notification-dropdown" style="background-color: #262932;">
               <ul>
-                  <li class="nav-link border-4 text-white">
+                  <li class="nav-link border-4 text-white pointer">
                   <label for="fileInput"> 
                     Scan Factura
                   </label>
                   <input id="fileInput" type="file" style="display: none;">
                   </li>
-                  <li class="nav-link border-4 text-white">
+                  <li class="nav-link border-4 text-white pointer">
                   <label for="fileInput2"> 
                     Scan DOC
                   </label>
