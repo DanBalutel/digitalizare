@@ -708,6 +708,7 @@ function fetchAuth(cuiValue) {
             if (result.status != 200) {
                 renderLoadingModal('<strong>CUI gresit</strong>');
                 window.location.href = window.location.href;
+                console.log(result)
                 throw new Error("Bad Server Response");
             }
             return result.text();
