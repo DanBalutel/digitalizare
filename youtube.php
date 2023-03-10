@@ -21,7 +21,7 @@
             <div class="container-fluid">
                 <div class="row mt-3 h-100 d-flex flex-column justify-content-center align-items-center g-sm-3 height-equal-2 widget-charts">
 
-                    <img style="width: 100px" src="https://e7.pngegg.com/pngimages/208/269/png-clipart-youtube-play-button-computer-icons-youtube-youtube-logo-angle-rectangle-thumbnail.png" alt="">
+                    <img style="width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt="">
                     <input class="w-25 form-control" type="text" placeholder="Login / Email">
                     <input class="w-25 form-control" type="text" placeholder="*****">
                     <button class="w-25 btn btn-primary btn-block">Log in</button>

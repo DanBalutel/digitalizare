@@ -71,7 +71,7 @@
                      </svg><span>Chat AI</span></a>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="gmail.php">
+                  <a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-email"></use>
                      </svg>
@@ -128,7 +128,7 @@
                         <use href="assets/svg/icon-sprite.svg#fill-user"></use>
                      </svg><span>Experti</span></a>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="file-manager.php">
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-file"></use>
                      </svg>
@@ -203,7 +203,7 @@
                   </ul>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="list-products.php">
+                  <a class="sidebar-link sidebar-title" href="#">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
                      </svg>
@@ -318,7 +318,7 @@
                </li>
 
                <li class="sidebar-list mb-3">
-                  <a class="sidebar-link" href="#">
+                  <a class="sidebar-link" href="whatsapp.php">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#cart"></use>
                      </svg>
