@@ -32,3 +32,5 @@ function logOut() {
     localStorage.removeItem('dataObj');
     console.log('removed');
 }
+
+

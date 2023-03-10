@@ -1,5 +1,5 @@
 'use strict';
-var notify = $.notify('<i class="fa fa-bell-o"></i><strong>Loading</strong> page Do not close this page...', {
+var notify = $.notify('<i class="fa fa-bell-o"></i><strong>Se încarc datele </strong> svă rugăm să nu închideți pagina...', {
     type: 'theme',
     allow_dismiss: true,
     delay: 2000,
@@ -12,5 +12,5 @@ var notify = $.notify('<i class="fa fa-bell-o"></i><strong>Loading</strong> page
 });
 
 setTimeout(function() {
-    notify.update('message', '<i class="fa fa-bell-o"></i><strong>Loading</strong> Inner Data.');
+    notify.update('message', '<i class="fa fa-bell-o"></i><strong>Se încarc datele</strong> vă rugăm să așteptați.');
 }, 1000);

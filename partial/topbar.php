@@ -17,6 +17,25 @@
       <div class="logo-wrapper"><a href="index"><img class="img-fluid" src="/assets/images/logo/logo.png" alt=""></a>
       </div>
       <div class="toggle-sidebar"><img class="img-fluid" src="/assets/images/logo/logo.png" width="50" alt=""></a></div>
+      
+    </div>
+    
+    <div class="nav-left col-1 pull-right p-0">
+      <ul class="nav-menus">
+        <li class="onhover-dropdown">
+          <i class="fa fa-camera"></i>
+          <div class="onhover-show-div notification-dropdown">
+              <ul>
+                  <li class="nav-link border-4">
+                    <a id="cameraButton">Scan Factura</a>
+                  </li>
+                  <li class="nav-link border-4">
+                    <a href="#">Scan DOC</a>
+                  </li>
+              </ul>
+          </div>
+        </li>
+      </ul>
     </div>
     <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
       <ul class="nav-menus">
@@ -86,3 +105,4 @@
       type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
   </div>
 </div>
+<video id="videoElement" autoplay></video>
