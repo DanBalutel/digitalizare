@@ -969,7 +969,7 @@ function populatePage() {
     chart8.render();
 
     // basic area chart
-    const chartProdMunc = dataObj.Bilanturi.toFixed(2);
+    const chartProdMunc = dataObj.Bilanturi;
     const listNrAngaj = [];
     const listAni = [];
 
