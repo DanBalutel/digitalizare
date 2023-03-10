@@ -52,8 +52,39 @@
                                           <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
                                         </div>
                                         <div class="modal-body">
-                                         
-                                       </div>
+                                          <form action="#">
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <label for="nume">Nume Prenume</label>
+                                                <input type="text" class="form-control" id="loggedNameProfile">
+                                              </div>
+                                              <div class="col-md-6">
+                                                <label for="nume">CNP</label>
+                                                <input type="number" class="form-control" max="13">
+                                              </div>
+                                              <div class="col-md-4">
+                                                <label for="nume">Seria</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+                                              <div class="col-md-8">
+                                                <label for="nume">Numar</label>
+                                                <input type="number" class="form-control">
+                                              </div>
+                                              <div class="col-md-6">
+                                                <label for="nume">Valabil Din</label>
+                                                <input type="date" class="form-control" >
+                                              </div>
+                                              <div class="col-md-6">
+                                                <label for="nume">Valabil Pana La</label>
+                                                <input type="date" class="form-control" >
+                                              </div>
+                                              <div class="col-md-12">
+                                                <label for="nume">Incarca Poza Buletin</label>
+                                                <input type="file" class="form-control">
+                                              </div>
+                                            </div>
+                                          </form>
+                                        </div>
                                         <div class="modal-footer">
                                           <button class="btn btn-primary" type="button" data-bs-original-title="" title="">Salveaza</button>
                                         </div>
