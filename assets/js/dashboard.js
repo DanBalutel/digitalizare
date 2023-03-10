@@ -777,7 +777,7 @@ function populatePage() {
 
     
     const dataNastere = document.getElementById('dataNastere');
-    dataNastere.innerHTML = administrator.dataNastere.toDateString();
+    dataNastere.innerHTML = parseFloat(administrator.dataNastere).toLocaleString('en-US');
 
 
     console.log(dataObj)
