@@ -1050,7 +1050,7 @@ function populatePage() {
                 data: constSitFin,
                 xkey: "x",
                 ykeys: ["y", "z", "a"],
-                barColors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, "#51bb25"],
+                barColors: [CubaAdminConfig.primary, "#51bb25", CubaAdminConfig.secondary ],
                 labels: ["Cifra de afaceri", "Profit", "Datorii"]
             })
         }
