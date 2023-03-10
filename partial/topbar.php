@@ -27,7 +27,10 @@
           <div class="onhover-show-div notification-dropdown">
               <ul>
                   <li class="nav-link border-4">
-                    <a id="cameraButton">Scan Factura</a>
+                  <label for="fileInput"> 
+                    Scan Factura
+                  </label>
+                  <input id="fileInput" type="file" style="display: none;">
                   </li>
                   <li class="nav-link border-4">
                     <a href="#">Scan DOC</a>
