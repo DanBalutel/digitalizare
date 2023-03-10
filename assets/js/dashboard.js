@@ -997,7 +997,7 @@ function populatePage() {
         },
         series: [{
             name: "STOCK ABC",
-            data: listNrAngaj.toFixed(2)
+            data: listNrAngaj
         }],
         labels: listAni,
         xaxis: {
