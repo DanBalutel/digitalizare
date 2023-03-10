@@ -317,7 +317,7 @@
                   </ul>
                </li>
 
-               <li class="sidebar-list">
+               <li class="sidebar-list mb-3">
                   <a class="sidebar-link" href="#">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#cart"></use>
