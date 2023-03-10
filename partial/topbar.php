@@ -22,8 +22,8 @@
     
     <div class="nav-left col-1 pull-right p-0">
       <ul class="nav-menus">
-        <li class="onhover-dropdown">
-          <i class="fa fa-camera"></i>
+        <li class="onhover-dropdown text-center">
+          <i class="fa fa-camera"></i><br>Scan
           <div class="onhover-show-div notification-dropdown">
               <ul>
                   <li class="nav-link border-4">
