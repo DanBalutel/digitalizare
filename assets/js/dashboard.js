@@ -745,7 +745,7 @@ function fetchAuth(cuiValue) {
         .catch((error) => {
             localStorage.removeItem('dataObj');
             // alert('CUI gresit')
-            window.location.href = window.location.origin;
+            // window.location.href = window.location.origin;
             console.log(error);
         });
 }
