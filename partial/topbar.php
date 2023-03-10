@@ -24,7 +24,7 @@
       <ul class="nav-menus">
         <li class="onhover-dropdown">
           <i class="fa fa-camera"></i>
-          <div class="onhover-show-div">
+          <div class="onhover-show-div notification-dropdown">
                 <ul>
                     <li>
                       <a href="#">Scan Factura</a>
