@@ -768,16 +768,21 @@ function populatePage() {
     loggedPosition.innerHTML = 'Administrator';
     
     const loggedNameProfile = document.getElementById('loggedNameProfile');
-    loggedNameProfile.innerHTML = administrator.nume;
-    const loggedPositionProfile = document.getElementById('loggedPositionProfile');
-    loggedPositionProfile.innerHTML = 'Administrator';
+    if(loggedNameProfile)
+    {
 
-    const adresa = document.getElementById('adresa');
-    adresa.innerHTML = administrator.adresa;
+        loggedNameProfile.innerHTML = administrator.nume;
+        const loggedPositionProfile = document.getElementById('loggedPositionProfile');
+        loggedPositionProfile.innerHTML = 'Administrator';
 
+        const adresa = document.getElementById('adresa');
+        adresa.innerHTML = administrator.adresa;
+
+        
+        const dataNastere = document.getElementById('dataNastere');
+        dataNastere.innerHTML = administrator.dataNastere.slice(8,10) + '.' + administrator.dataNastere.slice(5,7) + '.'+administrator.dataNastere.slice(0,4);
+    }
     
-    const dataNastere = document.getElementById('dataNastere');
-    dataNastere.innerHTML = administrator.dataNastere.slice(0,4);
 
 
     console.log(dataObj)
@@ -786,9 +791,9 @@ function populatePage() {
     const name = document.getElementById('name');
     d.a('dash').innerHTML = dataObj.DateGenerale.nume;
     d.a('nameAdmin').innerHTML = administrator.nume;
-    name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: ${administrator.nume}`;
-
-    const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
+    if(name){ 
+           name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: ${administrator.nume}`;
+           const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
     chartSituatieFianciara.innerHTML = `Situatie finaciara ${dataObj.DateGenerale.nume}`;
 
     const blockCA = document.getElementById('cifra-de-afaceri');
@@ -1006,6 +1011,9 @@ function populatePage() {
         "use strict";
         morris_chart.init()
     })(jQuery);
+    }
+
+    
 
 
 
