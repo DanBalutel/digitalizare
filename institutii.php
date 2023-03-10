@@ -63,11 +63,9 @@
                             <a href="https://taxatimbru.ro/plateste-taxa-timbru-persoana-juridica.html" class="h5 text-uppercase">
                                 <img src="https://taxatimbru.ro/assets/img/favicon/favicon-32x32.png" width="40" height="40" alt=""> Plateste taxă timbru judiciar online persoana judiciar
                             </a>
-                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Container-fluid Ends-->
         </div>
         
         <?php include('partial/footer.php');?>
