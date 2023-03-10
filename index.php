@@ -640,7 +640,6 @@
               data-bs-original-title="" title="">Scrie mesaj la toata compania</a>
           </div>
 
-        </div>
         <!-- Container-fluid Ends-->
 
 
