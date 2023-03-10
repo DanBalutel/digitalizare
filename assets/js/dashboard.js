@@ -785,8 +785,8 @@ function populatePage() {
     // temp we render here all DOOM elements
     const name = document.getElementById('name');
     d.a('dash').innerHTML = dataObj.DateGenerale.nume;
-    d.a('nameAdmin').innerHTML = administratorName;
-    name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: ${administratorName}`;
+    d.a('nameAdmin').innerHTML = administrator.name;
+    name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: ${administrator.name}`;
 
     const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
     chartSituatieFianciara.innerHTML = `Situatie finaciara ${dataObj.DateGenerale.nume}`;
