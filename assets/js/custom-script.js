@@ -75,25 +75,37 @@ const d = new ElementHandler();
 
 
 function renderLoadingModal(label) {
-    const modalLoading = document.getElementById('modal-loading');
-    const loadingLabel = document.getElementById('loadingLabel');
-    const loadingLoader = document.getElementById('loadingLoader')
+    // const modalLoading = document.getElementById('modal-loading');
+    // const loadingLabel = document.getElementById('loadingLabel');
+    // const loadingLoader = document.getElementById('loadingLoader')
 
-    loadingLabel.innerHTML = label;
-    modalLoading.style = 'display: block;background: #000000a6;';
-    loadingLoader.style = "width: 0%"
+    // loadingLabel.innerHTML = label;
+    // modalLoading.style = 'display: block;background: #000000a6;';
+    // loadingLoader.style = "width: 0%"
 
-    for (let i = 0; i < 100; i++) {
-        setTimeout(function () {
-            loadingLoader.style = `width: ${i}%`;
-        }, i * 300);
-    }
+    // for (let i = 0; i < 100; i++) {
+    //     setTimeout(function () {
+    //         loadingLoader.style = `width: ${i}%`;
+    //     }, i * 300);
+    // }
 
+    var notify = $.notify('<i class="fa fa-bell-o"></i><strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼', {
+        type: 'theme',
+        allow_dismiss: true,
+        delay: 1000000,
+        showProgressbar: true,
+        timer: 300,
+        animate:{
+            enter:'animated fadeInDown',
+            exit:'animated fadeOutUp'
+        }
+    });
 
 }
 function removeLoadingModal() {
-    const modalLoading = document.getElementById('modal-loading');
-    modalLoading.style = 'display: none;background: #000000a6;';
+    // const modalLoading = document.getElementById('modal-loading');
+    // modalLoading.style = 'display: none;background: #000000a6;';
+    $.notifyClose();
 };
 
 

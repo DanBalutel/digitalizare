@@ -2,6 +2,7 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
  <!-- Bootstrap js-->
 <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/js/notify/bootstrap-notify.min.js"></script>
 <!-- feather icon js-->
 <script src="assets/js/icons/feather-icon/feather.min.js"></script>
 <script src="assets/js/icons/feather-icon/feather-icon.js"></script>

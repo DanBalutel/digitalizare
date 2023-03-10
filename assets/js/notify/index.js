@@ -1,8 +1,8 @@
 'use strict';
-var notify = $.notify('<i class="fa fa-bell-o"></i><strong>Se încarc datele </strong> svă rugăm să nu închideți pagina...', {
+var notify = $.notify('<i class="fa fa-bell-o"></i><strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼', {
     type: 'theme',
     allow_dismiss: true,
-    delay: 2000,
+    delay: 13000,
     showProgressbar: true,
     timer: 300,
     animate:{
@@ -11,6 +11,6 @@ var notify = $.notify('<i class="fa fa-bell-o"></i><strong>Se încarc datele </s
     }
 });
 
-setTimeout(function() {
-    notify.update('message', '<i class="fa fa-bell-o"></i><strong>Se încarc datele</strong> vă rugăm să așteptați.');
-}, 1000);
+// setTimeout(function() {
+//     notify.update('message', '<i class="fa fa-bell-o"></i><strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼');
+// }, 10000);
