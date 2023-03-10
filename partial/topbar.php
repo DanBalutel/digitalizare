@@ -108,4 +108,3 @@
       type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
   </div>
 </div>
-<video id="videoElement" autoplay></video>
