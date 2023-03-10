@@ -26,10 +26,10 @@
           <i class="fa fa-camera"></i>
           <div class="onhover-show-div notification-dropdown">
               <ul>
-                  <li class="b-l-primary border-4">
+                  <li class="nav-link border-4">
                     <a href="#">Scan Factura</a>
                   </li>
-                  <li class="b-l-primary border-4">
+                  <li class="nav-link border-4">
                     <a href="#">Scan DOC</a>
                   </li>
               </ul>
