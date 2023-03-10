@@ -669,13 +669,14 @@
 
       </div>
       <!-- footer start-->
+  </div>
       <?php include('partial/footer.php') ?>
     </div>
   </div>
   <?php include('partial/scripts.php') ?>
   <!-- Plugins JS start-->
-  <script src="assets/js/clock.js"></script>
-  <script src="assets/js/chart/apex-chart/moment.min.js"></script>
+<script src="assets/js/chart/apex-chart/apex-chart.js"></script>
+<script src="assets/js/chart/apex-chart/stock-prices.js"></script>
   <script src="assets/js/notify/bootstrap-notify.min.js"></script>
   <script src="assets/js/dashboard/default.js"></script>
   <script src="assets/js/notify/index.js"></script>

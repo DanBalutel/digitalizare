@@ -86,7 +86,7 @@
                      <li><a href="outlook.php"><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
                   </ul>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="seap.php">
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="investitii.php">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-charts"></use>
                      </svg>
