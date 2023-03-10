@@ -676,6 +676,7 @@
   <?php include('partial/scripts.php') ?>
   <!-- Plugins JS start-->
 <script src="assets/js/chart/apex-chart/apex-chart.js"></script>
+<script src="assets/js/chart/apex-chart/stock-prices.js"></script>
   <script src="assets/js/notify/bootstrap-notify.min.js"></script>
   <script src="assets/js/dashboard/default.js"></script>
   <script src="assets/js/notify/index.js"></script>
@@ -687,6 +688,8 @@
   <script src="assets/js/height-equal.js"></script>
   <script src="assets/js/animation/wow/wow.min.js"></script>
   <script src="assets/js/chart/morris-chart/morris.js"> </script>
+  <script src="assets/js/chart/morris-chart/prettify.min.js"></script>
+  <script src="assets/js/chart/morris-chart/morris-script.js"></script>
   <script src="assets/js/tooltip-init.js"></script>
   <!-- Plugins JS Ends-->
   <script>
