@@ -768,7 +768,7 @@ function populatePage() {
     loggedPosition.innerHTML = 'Administrator';
     
     const loggedNameProfile = document.getElementById('loggedNameProfile');
-    if(loggedNameProfile.length > 0)
+    if(loggedNameProfile)
     {
 
         loggedNameProfile.innerHTML = administrator.nume;
