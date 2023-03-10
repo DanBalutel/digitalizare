@@ -687,6 +687,7 @@
   <script src="assets/js/typeahead-search/typeahead-custom.js"></script>
   <script src="assets/js/height-equal.js"></script>
   <script src="assets/js/animation/wow/wow.min.js"></script>
+  <script src="assets/js/chart/morris-chart/raphael.js"></script>
   <script src="assets/js/chart/morris-chart/morris.js"> </script>
   <script src="assets/js/chart/morris-chart/prettify.min.js"></script>
   <script src="assets/js/chart/morris-chart/morris-script.js"></script>
