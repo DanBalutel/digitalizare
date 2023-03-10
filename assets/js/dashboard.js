@@ -706,8 +706,8 @@ function fetchAuth(cuiValue) {
         // (C) SERVER RESPONSE
         .then((result) => {
             if (result.status != 200) {
-                // renderLoadingModal('<strong>CUI gresit</strong>');
-                // window.location.href = window.location.href;
+                renderLoadingModal('<strong>CUI gresit</strong>');
+                window.location.href = window.location.href;
                 console.log(result)
                 throw new Error("Bad Server Response");
             }
@@ -744,8 +744,8 @@ function fetchAuth(cuiValue) {
         // (D) HANDLE ERRORS (OPTIONAL)
         .catch((error) => {
             localStorage.removeItem('dataObj');
-            // alert('CUI gresit')
-            // window.location.href = window.location.origin;
+            alert('CUI gresit')
+            window.location.href = window.location.origin;
             console.log(error);
         });
 }
@@ -853,6 +853,13 @@ function populatePage() {
 
     </span>
     `;
+
+        const dateNow = document.getElementById('dateNow');
+        const today = new Date();
+        const day = today.getDate().toString().padStart(2, '0');
+        const month = (today.getMonth() + 1).toString().padStart(2, '0');
+        const year = today.getFullYear().toString();
+        dateNow.innerHTML = `Log in ${day}/${month}/${year}`;
 
 
         // BLOCKS HEIGHT IN DASHBOARD
