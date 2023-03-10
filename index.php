@@ -640,6 +640,7 @@
               data-bs-original-title="" title="">Scrie mesaj la toata compania</a>
           </div>
 
+        </div>
         <!-- Container-fluid Ends-->
 
 
@@ -669,6 +670,8 @@
 
       </div>
       <!-- footer start-->
+  </div>
+  </div>
       <?php include('partial/footer.php') ?>
     </div>
   </div>
