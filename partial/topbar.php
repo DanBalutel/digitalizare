@@ -25,14 +25,14 @@
         <li class="onhover-dropdown">
           <i class="fa fa-camera"></i>
           <div class="onhover-show-div notification-dropdown">
-                <ul>
-                    <li>
-                      <a href="#">Scan Factura</a>
-                    </li>
-                    <li>
-                      <a href="#">Scan DOC</a>
-                    </li>
-                </ul>
+              <ul>
+                  <li class="b-l-primary border-4">
+                    <a href="#">Scan Factura</a>
+                  </li>
+                  <li class="b-l-primary border-4">
+                    <a href="#">Scan DOC</a>
+                  </li>
+              </ul>
           </div>
         </li>
       </ul>
