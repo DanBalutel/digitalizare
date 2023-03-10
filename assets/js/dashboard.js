@@ -979,7 +979,7 @@ function populatePage() {
     const chartDataPP = dataObj.detalii_grafice.grafice_profit_pierdere.data;
     const chartDataDa = dataObj.detalii_grafice.grafice_datorii.data;
 
-    for (const pP in chartDataPP) {
+    for (const pP in chartDataCA) {
         // console.log(chartDataCA);
         const temp = {
             x: `${chartDataCA[pP].an}`,
