@@ -22,18 +22,21 @@
 
     <div class="nav-left col-1 pull-right p-0">
       <ul class="nav-menus">
-            <li class="onhover-dropdown text-center">
-              <i class="fa fa-camera"></i><br>Scan
-              <div class="onhover-show-div notification-dropdown" style="background-color: #262932;">
-                <ul>
-                  <li class="nav-link border-4 text-white">
-                    <label for="fileInput">
-                      Scan Factura
-                    </label>
-                    <input id="fileInput" type="file" style="display: none;">
+        <li class="onhover-dropdown text-center">
+          <i class="fa fa-camera"></i><br>Scan
+          <div class="onhover-show-div notification-dropdown" style="background-color: #262932; top: 40px">
+              <ul>
+                  <li class="nav-link border-4 text-white" style="cursor: pointer">
+                  <label for="fileInput"> 
+                    Scan Factura
+                  </label>
+                  <input id="fileInput" type="file" style="display: none;">
                   </li>
-                  <li class="nav-link border-4 text-white">
-                    <a href="#">Scan DOC</a>
+                  <li class="nav-link border-4 text-white" style="cursor: pointer">
+                  <label for="fileInput2"> 
+                    Scan DOC
+                  </label>
+                  <input id="fileInput2" type="file" style="display: none;">
                   </li>
                   <li class="mr-3 p-0 timerWork">
                     <h6 class="mb-0" style="color: #01cdff;" id="dateNow"></h6>
