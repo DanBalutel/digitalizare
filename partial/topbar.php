@@ -33,7 +33,10 @@
                   <input id="fileInput" type="file" style="display: none;">
                   </li>
                   <li class="nav-link border-4 text-white">
-                    <a href="#">Scan DOC</a>
+                  <label for="fileInput2"> 
+                    Scan DOC
+                  </label>
+                  <input id="fileInput2" type="file" style="display: none;">
                   </li>
               </ul>
           </div>
