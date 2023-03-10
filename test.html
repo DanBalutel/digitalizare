@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Open Camera Example</title>
+
+    <!-- These meta tags are not necessary for the camera to work -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Camera in browsers - pixo</title>
+
+    <!-- imports the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- imports the webpage's javascript file -->
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>Open Camera Example</h1>
-    <button id="cameraButton">Open Camera</button>
-    <video id="videoElement" autoplay></video>
+    <h1>Demo - Native camera in browsers</h1>
+
+    <!-- The `label` is attached to the hidden file input -->
+    <label for="cameraFileInput">
+      <span class="btn">Open camera</span>
+
+      <!-- The hidden file `input` for opening the native camera -->
+      <input
+        id="cameraFileInput"
+        type="file"
+        accept="image/*"
+        capture="environment"
+      />
+    </label>
+
+    <!-- displays the picture uploaded from the native camera -->
+    <img id="pictureFromCamera" />
   </body>
-  <script>
-    const cameraButton = document.getElementById("cameraButton");
-    const videoElement = document.getElementById("videoElement");
-
-    // If the user clicks the "Open Camera" button, open the camera
-    cameraButton.addEventListener("click", function() {
-    navigator.mediaDevices.getUserMedia({ video: true })
-        .then(function(stream) {
-        videoElement.srcObject = stream;
-        })
-        .catch(function(error) {
-        console.log("Error accessing camera: " + error);
-        });
-    });
-
-  </script>
-</html>
+</html> 
