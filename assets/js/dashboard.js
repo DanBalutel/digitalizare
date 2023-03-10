@@ -793,9 +793,7 @@ function populatePage() {
     d.a('nameAdmin').innerHTML = administrator.nume;
     if(name){ 
            name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: ${administrator.nume}`;
-    }
-
-    const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
+           const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
     chartSituatieFianciara.innerHTML = `Situatie finaciara ${dataObj.DateGenerale.nume}`;
 
     const blockCA = document.getElementById('cifra-de-afaceri');
@@ -1013,6 +1011,9 @@ function populatePage() {
         "use strict";
         morris_chart.init()
     })(jQuery);
+    }
+
+    
 
 
 
