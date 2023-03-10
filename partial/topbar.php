@@ -20,7 +20,7 @@
       
     </div>
     
-    <div class="nav-left col-2 pull-right left-header p-0">
+    <div class="nav-left col-1 pull-right p-0">
       <ul class="nav-menus">
         <li>Scan</li>
       </ul>
