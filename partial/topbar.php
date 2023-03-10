@@ -81,14 +81,14 @@
             </ul>
           </div>
         </li>
-        <li class="profile-nav onhover-dropdown pe-0 py-0">
+        <li id="profileImg" class="profile-nav onhover-dropdown pe-0 py-0">
           <div class="media profile-media"><img class="b-r-10" width="50"
               src="assets/images/user-card/personCustom.jpeg"
               alt="">
             <div class="media-body"><span id="loggedName"></span>
               <p class="mb-0 font-roboto" id="loggedPosition"><i class="middle fa fa-angle-down"></i></p>
             </div>
-            <ul class="profile-dropdown onhover-show-div">
+            <ul id="profileDropdown" class="profile-dropdown onhover-show-div">
               <li><a href="user-profile"><i data-feather="user"></i><span>Cont </span></a></li>
               <li><a href="email-application"><i data-feather="mail"></i><span>Inbox</span></a></li>
               <li><a href="to-do"><i data-feather="file-text"></i><span>Taskboard</span></a></li>
