@@ -777,7 +777,7 @@ function populatePage() {
 
     
     const dataNastere = document.getElementById('dataNastere');
-    dataNastere.innerHTML = administrator.dataNastere.toLocaleDateString("ro-RO");
+    dataNastere.innerHTML = administrator.dataNastere;
 
 
     console.log(dataObj)
