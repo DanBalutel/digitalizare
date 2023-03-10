@@ -25,27 +25,27 @@
         <li class="onhover-dropdown text-center">
           Scan<br><i class="fa fa-camera"></i>
           <div class="onhover-show-div notification-dropdown" style="background-color: #262932; top: 40px">
-              <ul>
-                  <li class="nav-link border-4 text-white" style="cursor: pointer">
-                  <label for="fileInput"> 
-                    Scan Factura
-                  </label>
-                  <input id="fileInput" type="file" style="display: none;">
-                  </li>
-                  <li class="nav-link border-4 text-white" style="cursor: pointer">
-                  <label for="fileInput2"> 
-                    Scan DOC
-                  </label>
-                  <input id="fileInput2" type="file" style="display: none;">
-                  </li>
-                  <li class="mr-3 p-0 timerWork">
-                    <h6 class="mb-0" style="color: #01cdff;" id="dateNow"></h6>
-                    <h6 class="mb-0" style="color: #08a8fd;" id="timer"></h6>
-                    <h6 class="mb-0" style="color: #4286f1;" id="nameAdmin"></h6>
-                  </li>
-                </ul>
-              </div>
-            </li>
+            <ul>
+              <li class="nav-link border-4 text-white" style="cursor: pointer">
+                <label for="fileInput">
+                  Scan Factura
+                </label>
+                <input id="fileInput" type="file" style="display: none;">
+              </li>
+              <li class="nav-link border-4 text-white" style="cursor: pointer">
+                <label for="fileInput2">
+                  Scan DOC
+                </label>
+                <input id="fileInput2" type="file" style="display: none;">
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="mr-3 p-0 timerWork">
+          <h6 class="mb-0" style="color: #01cdff;" id="dateNow"></h6>
+          <h6 class="mb-0" style="color: #08a8fd;" id="timer"></h6>
+          <h6 class="mb-0" style="color: #4286f1;" id="nameAdmin"></h6>
+        </li>
       </ul>
     </div>
     <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
