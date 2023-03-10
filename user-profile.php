@@ -48,7 +48,24 @@
                           <div class="row text-center">
                             <div class="col-md-12">
                               <div class="ttl-info text-center">
-                                <h6><i class="fa fa-location-arrow"></i>   Location</h6><span id="adresa"></span>
+                                <h6><i class="fa fa-location-arrow"></i>Adresa</h6><span id="adresa"></span>
+                                <button class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#tooltipmodal" data-bs-original-title="" title="">Adauga Buletin</button>
+                                <div class="modal fade" id="tooltipmodal" tabindex="-1" aria-labelledby="tooltipmodal" style="display: none;" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title">Introdu Datele Din Buletin</h5>
+                                          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+                                        </div>
+                                        <div class="modal-body">
+                                         
+                                       </div>
+                                        <div class="modal-footer">
+                                          <button class="btn btn-primary" type="button" data-bs-original-title="" title="">Salveaza</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                               </div>
                             </div>
                           </div>
