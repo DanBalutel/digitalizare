@@ -767,9 +767,9 @@ function populatePage() {
     loggedPosition.innerHTML = 'Administrator';
     
     const administratorNameProfile = findAdministrator(0);
-    const loggedNameProfile = document.getElementById('loggedName');
+    const loggedNameProfile = document.getElementById('loggedNameProfile');
     loggedNameProfile.innerHTML = administratorNameProfile;
-    const loggedPositionProfile = document.getElementById('loggedPosition');
+    const loggedPositionProfile = document.getElementById('loggedPositionProfile');
     loggedPositionProfile.innerHTML = 'Administrator';
 
 
