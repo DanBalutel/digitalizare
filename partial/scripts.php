@@ -11,8 +11,6 @@
 <!-- Sidebar jquery-->
 <script src="assets/js/config.js"></script>
 <!-- Plugins JS start-->
-<script src="assets/js/chart/apex-chart/apex-chart.js"></script>
-<script src="assets/js/chart/apex-chart/stock-prices.js"></script>
 <script id="menu" src="assets/js/sidebar-menu.js"></script>
 <script src="assets/js/slick/slick.min.js"></script>
 <script src="assets/js/slick/slick.js"></script>
