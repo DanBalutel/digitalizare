@@ -70,16 +70,16 @@
                                                 <label for="nume" class="form-label text-start">Numar</label>
                                                 <input type="number" class="form-control">
                                               </div>
-                                              <div class="col-md-6" class="form-label text-start">
-                                                <label for="nume">Valabil Din</label>
+                                              <div class="col-md-6">
+                                                <label for="nume" class="form-label text-start">Valabil Din</label>
                                                 <input type="date" class="form-control" >
                                               </div>
-                                              <div class="col-md-6" class="form-label text-start">
-                                                <label for="nume">Valabil Pana La</label>
+                                              <div class="col-md-6">
+                                                <label for="nume" class="form-label text-start">Valabil Pana La</label>
                                                 <input type="date" class="form-control" >
                                               </div>
-                                              <div class="col-md-12" class="form-label text-start">
-                                                <label for="nume">Incarca Poza Buletin</label>
+                                              <div class="col-md-12">
+                                                <label for="nume" class="form-label text-start">Incarca Poza Buletin</label>
                                                 <input type="file" class="form-control">
                                               </div>
                                             </div>
