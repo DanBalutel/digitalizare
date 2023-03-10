@@ -706,8 +706,8 @@ function fetchAuth(cuiValue) {
         // (C) SERVER RESPONSE
         .then((result) => {
             if (result.status != 200) {
-                renderLoadingModal('<strong>CUI gresit</strong>');
-                window.location.href = window.location.href;
+                // renderLoadingModal('<strong>CUI gresit</strong>');
+                // window.location.href = window.location.href;
                 console.log(result)
                 throw new Error("Bad Server Response");
             }
