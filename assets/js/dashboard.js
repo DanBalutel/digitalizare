@@ -751,7 +751,7 @@ function populatePage() {
     function findAdministrator(id) {
         const positionName = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.administratori[id].functie;
         if (positionName === 'administrator') {
-            return dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.administratori[id].nume;
+            return dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.administratori[id];
         } else {
             const idplus = id + 1; // increment id by 1 using the + operator instead of ++ 
             console.log(idplus);
@@ -760,17 +760,26 @@ function populatePage() {
     };
 
 
-    const administratorName = findAdministrator(0);
+    const administrator = findAdministrator(0);
+
     const loggedName = document.getElementById('loggedName');
-    loggedName.innerHTML = administratorName;
+    loggedName.innerHTML = administrator.nume;
     const loggedPosition = document.getElementById('loggedPosition');
     loggedPosition.innerHTML = 'Administrator';
     
-    const administratorNameProfile = findAdministrator(0);
     const loggedNameProfile = document.getElementById('loggedNameProfile');
-    loggedNameProfile.innerHTML = administratorNameProfile;
+    loggedNameProfile.innerHTML = administrator.nume;
     const loggedPositionProfile = document.getElementById('loggedPositionProfile');
     loggedPositionProfile.innerHTML = 'Administrator';
+
+    const adresa = document.getElementById('adresa');
+    adresa.innerHTML = administratorName.adresa;
+
+    
+    const dataNastere = document.getElementById('dataNastere');
+    dataNastere.innerHTML = administratorName.dataNastere;
+
+
     console.log(dataObj)
 
     // temp we render here all DOOM elements

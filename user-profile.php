@@ -38,7 +38,7 @@
                             </div>
                             <div class="col-md-6">
                               <div class="ttl-info text-start">
-                                <h6><i class="fa fa-calendar"></i>Data Nasterii</h6><span>02 Ianuarie 1988</span>
+                                <h6><i class="fa fa-calendar"></i>Data Nasterii</h6><span id="dataNastere"></span>
                               </div>
                             </div>
                           </div>
@@ -58,7 +58,7 @@
                             </div>
                             <div class="col-md-6">
                               <div class="ttl-info text-start">
-                                <h6><i class="fa fa-location-arrow"></i>   Location</h6><span>B69 Near Schoool Demo Home</span>
+                                <h6><i class="fa fa-location-arrow"></i>   Location</h6><span id="adresa"></span>
                               </div>
                             </div>
                           </div>
