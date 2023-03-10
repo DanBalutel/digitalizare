@@ -23,6 +23,7 @@
                             <a href="https://b.politiaromana.ro/files/pages_files/Cerere_eliberare_certificat_cazier_persoane_fizice_anexa_7-modif.22-21.06.2022.pdf" class="">
                                 <img src="https://b.politiaromana.ro/favicon.ico" width="20" height="20" alt=""> Cazier judiciar
                             </a>
+                            <br>
                             <a href="https://b.politiaromana.ro/files/pages_files/Cerere_eliberare_certificat_integritate_anexa_1.pdf" class="">
                                 <img src="https://b.politiaromana.ro/favicon.ico" width="20" height="20" alt=""> CERTIFICAT DE INTEGRITATE COMPORTAMENTALĂ
                             </a>
@@ -30,6 +31,7 @@
                             <a href="https://static.anaf.ro/static/10/Anaf/Declaratii_R/descarcare_declaratii.htm" class="">
                                 <img src="https://www.afacerist.ro/stiri/wp-content/uploads/2020/01/ANAF_logo_transparent_PNG.png"  height="20" alt=""> Descarca Declaratii
                             </a>
+                            <br>
                             <a href="https://chat.anaf.ro/cod_tva.nsf/solicitare_tva" class="">
                                 <img src="https://www.afacerist.ro/stiri/wp-content/uploads/2020/01/ANAF_logo_transparent_PNG.png"  height="20" alt=""> Solicita Cod TVA
                             </a>
@@ -37,9 +39,11 @@
                             <a href="https://constatator.digitalizarefirme.ro/index.html" class="">
                                 <img src="https://constatator.digitalizarefirme.ro/media/content/hero-illustration.png" width="20" height="20" alt=""> Certificat constatator ONRC
                             </a>
+                            <br>
                             <a href="https://portal.just.ro/SitePages/acasa.aspx" class="">
                                 <img src="https://portal.just.ro/_layouts/images/favicon.ico" width="20" height="20" alt=""> Portalul instantelor de judecata
                             </a>
+                            <br>
                             <a href="https://legislatie.just.ro" class="">
                                 <img src="https://legislatie.just.ro/Content/Images/Site/temanoua/favicon.ico" width="20" height="20" alt=""> PORTAL LEGISLATIV
                             </a>
@@ -51,9 +55,11 @@
                             <a href="https://taxatimbru.ro/calculator-taxa.html" class="">
                                 <img src="https://taxatimbru.ro/assets/img/favicon/favicon-32x32.png" width="20" height="20" alt=""> Calculator taxă timbru judiciar online
                             </a>
+                            <br>
                             <a href="https://taxatimbru.ro/plateste-taxa-timbru-persoana-fizica.html" class="">
                                 <img src="https://taxatimbru.ro/assets/img/favicon/favicon-32x32.png" width="20" height="20" alt=""> Plateste taxă timbru judiciar online persoana fizica
                             </a>
+                            <br>
                             <a href="https://taxatimbru.ro/plateste-taxa-timbru-persoana-juridica.html" class="">
                                 <img src="https://taxatimbru.ro/assets/img/favicon/favicon-32x32.png" width="20" height="20" alt=""> Plateste taxă timbru judiciar online persoana judiciar
                             </a>
