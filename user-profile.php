@@ -32,7 +32,7 @@
                         <div class="col-sm-6 col-lg-4 order-sm-1 order-xl-0">
                           <div class="row text-center">
                             <div class="col-md-12">
-                              <div class="ttl-info text-start">
+                              <div class="ttl-info text-center">
                                 <h6><i class="fa fa-calendar"></i>Data Nasterii</h6><span id="dataNastere"></span>
                               </div>
                             </div>
@@ -47,7 +47,7 @@
                         <div class="col-sm-6 col-lg-4 order-sm-2 order-xl-2">
                           <div class="row text-center">
                             <div class="col-md-12">
-                              <div class="ttl-info text-start">
+                              <div class="ttl-info text-center">
                                 <h6><i class="fa fa-location-arrow"></i>   Location</h6><span id="adresa"></span>
                               </div>
                             </div>
