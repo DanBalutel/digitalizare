@@ -56,7 +56,7 @@
                                             <div class="row">
                                               <div class="col-md-6">
                                                 <label for="nume">Nume Prenume</label>
-                                                <input type="text" class="form-control" id="loggedNameProfile">
+                                                <input type="text" class="form-control" id="numeBuletin">
                                               </div>
                                               <div class="col-md-6">
                                                 <label for="nume">CNP</label>
