@@ -20,7 +20,7 @@
 
     </div>
 
-    <div class="nav-left col-4 pull-right p-0">
+    <div class="nav-left col-1 pull-right p-0">
       <ul class="nav-menus">
         <li class="onhover-dropdown text-center">
           Scan<br><i class="fa fa-camera"></i>
@@ -48,7 +48,7 @@
         </li>
       </ul>
     </div>
-    <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-5 pull-right right-header p-0 ms-auto">
+    <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
       <ul class="nav-menus">
         <li>
           <div class="mode">
