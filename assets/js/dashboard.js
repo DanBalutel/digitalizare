@@ -1030,7 +1030,7 @@ function populatePage() {
     for (const pP in chartDataPP) {
         // console.log(chartDataCA);
         const temp = {
-            x: `'${chartDataCA[pP].an}'`,
+            x: `${chartDataCA[pP].an}`,
             y: parseInt(chartDataCA[pP].y),
             z: parseInt(chartDataPP[pP].y),
             a: parseInt(chartDataDa[pP].y)
