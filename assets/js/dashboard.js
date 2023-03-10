@@ -695,7 +695,7 @@ console.log(request['cui']);
 // CUI 38911092
 function fetchAuth(cuiValue) {
 
-    renderLoadingModal('Datele se incarca...');
+    renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼');
 
     // (A) URL & CREDENTIALS
     var url = `https://api.raport.ai/cui?cui=${cuiValue}`

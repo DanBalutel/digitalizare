@@ -89,10 +89,10 @@ function renderLoadingModal(label) {
     //     }, i * 300);
     // }
 
-    var notify = $.notify('<i class="fa fa-bell-o"></i><strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼', {
+    var notify = $.notify(`<i class="fa fa-bell-o"></i>${label}`, {
         type: 'theme',
         allow_dismiss: true,
-        delay: 1000000,
+        delay: 13000,
         showProgressbar: true,
         timer: 300,
         animate:{
