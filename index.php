@@ -671,7 +671,6 @@
       </div>
       <!-- footer start-->
   </div>
-  </div>
       <?php include('partial/footer.php') ?>
     </div>
   </div>
