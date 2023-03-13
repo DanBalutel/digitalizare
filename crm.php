@@ -48,7 +48,7 @@
                                                     <td>Gigi Popescu</td>
                                                     <td>0729 229 599</td>
                                                     <td>ai@area4u.ro</td>
-                                                    <td> <span class="badge badge-success">Resolved</span></td>
+                                                    <td> <span class="badge badge-success">Interesat</span></td>
 
                                                 </tr>
 
@@ -57,7 +57,7 @@
                                                     <td>Gigi Popescu</td>
                                                     <td>0729 229 599</td>
                                                     <td>ai@area4u.ro</td>
-                                                    <td> <span class="badge badge-danger">Resolved</span></td>
+                                                    <td> <span class="badge badge-danger">Ne interesat</span></td>
 
                                                 </tr>
 
@@ -66,7 +66,7 @@
                                                     <td>Gigi Popescu</td>
                                                     <td>0729 229 599</td>
                                                     <td>ai@area4u.ro</td>
-                                                    <td> <span class="badge badge-custom">Resolved</span></td>
+                                                    <td> <span class="badge badge-custom">Nu stie</span></td>
 
                                                 </tr>
 
