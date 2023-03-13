@@ -51,7 +51,7 @@ function addLoading() {
     chatBox.appendChild(loadingChild);
     askGpt.value = '';
     loadingChild.scrollTop = loadingChild.scrollHeight;
-    renderLoadingModal('<strong>Se încarcă datele</strong>,<br> va rugam așteptați 😌🙏🏼.');
+    renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
     loadingChild.scrollIntoView()
 };
 
