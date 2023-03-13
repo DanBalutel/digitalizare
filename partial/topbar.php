@@ -44,7 +44,7 @@
     </div>
     <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
       <ul class="nav-menus">
-        <li class="mr-3 p-0 timerWork">
+        <li id="timerWork" class="mr-3 p-0 timerWork">
           <h6 class="mb-0" style="color: #01cdff;" id="dateNow"></h6>
           <h6 class="mb-0" style="color: #08a8fd;" id="timer"></h6>
           <h6 class="mb-0" style="color: #4286f1;" id="nameAdmin"></h6>

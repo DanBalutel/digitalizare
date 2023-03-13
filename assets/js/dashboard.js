@@ -655,7 +655,9 @@ function startTimer() {
         const minutes = Math.floor((time % 3600) / 60);
         const seconds = time % 60;
         const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-        document.getElementById("timer").innerHTML = formattedTime;
+        if (document.getElementById("timer")) {
+            document.getElementById("timer").innerHTML = formattedTime;
+        }
 
         // save current time to local storage
         localStorage.setItem("timeOnPage", time);
