@@ -24,7 +24,7 @@
             <div class="card small-widget mb-sm-0">
               <div class="card-body success d-flex align-items-center justify-content-center">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 mb-2">
                     <img class="w-100" src="assets/images/1.jpg" alt="">
                   </div>
                   <div class="col-md-6">
