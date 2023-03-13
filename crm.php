@@ -38,7 +38,7 @@
                                                 <th scope="col">Nume/Prenume</th>
                                                 <th scope="col">Telefon/Email</th>
                                                 <th scope="col">Site</th>
-                                                <th scope="col">Servicii</th>
+                                                <th scope="col">Trimis oferta</th>
                                                 <th scope="col">Actiuni</th>
 
                                             </tr>
@@ -50,7 +50,7 @@
                                                 <td>Cristina Popescu</td>
                                                 <td>07265555555 <br> email@gmail.com</td>
                                                 <td>site.ro </td>
-                                                <td>...</td>
+                                                <td>Interesat</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
                                                         data-bs-toggle="dropdown" aria-haspopup="true"
@@ -72,7 +72,7 @@
                                                 <td>Cristina Popescu</td>
                                                 <td>07265555555 <br> email@gmail.com</td>
                                                 <td>site.ro </td>
-                                                <td>...</td>
+                                                <td>Interesat</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
                                                         data-bs-toggle="dropdown" aria-haspopup="true"
@@ -96,30 +96,7 @@
                                                 <td>Cristina Popescu</td>
                                                 <td>07265555555 <br> email@gmail.com</td>
                                                 <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
+                                                <td>Refuzat</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
                                                         data-bs-toggle="dropdown" aria-haspopup="true"
@@ -142,7 +119,7 @@
                                                 <td>Cristina Popescu</td>
                                                 <td>07265555555 <br> email@gmail.com</td>
                                                 <td>site.ro </td>
-                                                <td>...</td>
+                                                <td>Nu am trimis</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
                                                         data-bs-toggle="dropdown" aria-haspopup="true"
@@ -165,7 +142,30 @@
                                                 <td>Cristina Popescu</td>
                                                 <td>07265555555 <br> email@gmail.com</td>
                                                 <td>site.ro </td>
-                                                <td>...</td>
+                                                <td>Nu am trimis</td>
+                                                <td>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button"
+                                                        data-bs-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">Seteaza</button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a
+                                                            class="dropdown-item" href="?test=1">Action</a><a
+                                                            class="dropdown-item" href="#">Another action</a><a
+                                                            class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
+                                                            href="#">Separated link</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Cristina Popescu</td>
+                                                <td>07265555555 <br> email@gmail.com</td>
+                                                <td>site.ro </td>
+                                                <td>Acceptat</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
                                                         data-bs-toggle="dropdown" aria-haspopup="true"
