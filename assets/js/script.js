@@ -34,17 +34,10 @@
       }
       
       $(document).ready(function() {
-        $('#fileInput').bind("click",function() 
-        { 
-            var imgVal = $('#fileInput').val(); 
-            if(imgVal=='') 
-            { 
-                alert("empty input file"); 
-    
-            } 
-            return false; 
-    
-        }); 
+        $('input[type=file]').change(function(e){
+            $in=$(this);
+            $in.next().html($in.val());
+          });
     });
     /*----------------------------------------
      passward show hide
