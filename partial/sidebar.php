@@ -51,16 +51,6 @@
                   </a>
                </li>
 
-
-               <!-- <li class="sidebar-list">
-                  <a class="sidebar-link" href="chat.php">
-                     <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#stroke-chat"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
-                     </svg><span>Chat</span></a>
-               </li> -->
                <li class="sidebar-list">
                   <a class="sidebar-link" href="monica.php">
                      <svg class="stroke-icon">
