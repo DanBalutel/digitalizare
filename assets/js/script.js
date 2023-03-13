@@ -35,7 +35,7 @@
       
       $(document).ready(function() {
         $('input[type=file]').change(function(e){
-            swal("Succes!", "Documentul a fost trimis in cloud!", "warning");
+            swal("Succes!", "Documentul a fost trimis in cloud!", "success");
           });
     });
     /*----------------------------------------
