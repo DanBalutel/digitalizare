@@ -52,6 +52,24 @@
 
                                                 </tr>
 
+                                                <tr role="row" class="odd">
+                                                    <td class="sorting_1">#1</td>
+                                                    <td>Gigi Popescu</td>
+                                                    <td>0729 229 599</td>
+                                                    <td>ai@area4u.ro</td>
+                                                    <td> <span class="badge badge-danger">Resolved</span></td>
+
+                                                </tr>
+
+                                                <tr role="row" class="odd">
+                                                    <td class="sorting_1">#1</td>
+                                                    <td>Gigi Popescu</td>
+                                                    <td>0729 229 599</td>
+                                                    <td>ai@area4u.ro</td>
+                                                    <td> <span class="badge badge-custom">Resolved</span></td>
+
+                                                </tr>
+
                                             </tbody>
 
                                         </table>

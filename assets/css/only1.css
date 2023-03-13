@@ -56,3 +56,12 @@ img.rounded-circle.shadow {
         opacity: 1;
     }
 }
+
+
+.badge-custom {
+    background: #a97500
+}
+
+.badge {
+    padding: 0.7rem;
+}
