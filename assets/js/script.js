@@ -35,8 +35,7 @@
       
       $(document).ready(function() {
         $('input[type=file]').change(function(e){
-            $in=$(this);
-            $in.next().html($in.val());
+            alert('hueta');
           });
     });
     /*----------------------------------------
