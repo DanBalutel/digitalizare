@@ -33,10 +33,10 @@
         });   
       }
       
-      $(document).ready(function() {
+    $(document).ready(function() {
         $('input[type=file]').change(function(e){
             swal("Succes!", "Documentul a fost trimis in cloud!", "success");
-          });
+        });
     });
     /*----------------------------------------
      passward show hide

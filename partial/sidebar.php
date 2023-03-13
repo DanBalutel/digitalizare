@@ -76,6 +76,22 @@
                      <li><a href="outlook.php"><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
                   </ul>
                </li>
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+                     <i data-feather="dollar-sign"></i>
+                     <span>Banci</span>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
+                  <ul class="sidebar-submenu" style="display: none;">
+                     <li><a href="#"><img src="assets/images/banci/revolut.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/bcr.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/brd.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/bt.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/cec.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/ing.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/unicredit.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/raiffeisen.png" height="20" alt=""></a></li>
+                  </ul>
+               </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="investitii.php">
                      <svg class="stroke-icon">
                         <use href="assets/svg/icon-sprite.svg#stroke-charts"></use>
