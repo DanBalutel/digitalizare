@@ -73,7 +73,7 @@
           </div>
         </div>
       </div>
-      <h3>Exemple de intrebari (personalizati in functie de nevoile dumneavoastra)</h3>
+      <h3>Sau da apasa pe exemplele de mai jos</h3>
         <div class="row">
           <div class="col-md-4">
             <a style="cursor: pointer;">
