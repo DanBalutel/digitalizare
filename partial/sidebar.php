@@ -158,7 +158,7 @@
                      <li><a href="leads.php">Leads</a></li>
                      <li><a href="clienti.php">Clienti</a></li>
                      <li><a href="colaboratori.php">Colaboratori</a></li>
-                     <li><a href="https://saleforce.com"><img src="assets/images/meniu/saleforce.png" height="20"
+                     <li><a target="_blank" href="https://saleforce.com"><img src="assets/images/meniu/saleforce.png" height="20"
                               alt=""></a></li>
                   </ul>
                </li>
@@ -180,9 +180,9 @@
                      <li><a href="mijfixe.php">Mijloace fixe</a></li>
                      <li><a href="matprime.php">Materii prime</a></li>
                      <li><a href="consumabile.php">Consumabile</a></li>
-                     <li><a href="https://asana.com"><img src="assets/images/meniu/asana.png" height="20" alt=""></a>
+                     <li><a target="_blank" href="https://asana.com"><img src="assets/images/meniu/asana.png" height="20" alt=""></a>
                      </li>
-                     <li><a href="https://monday.com"><img src="assets/images/meniu/monday.png" height="20" alt=""></a>
+                     <li><a target="_blank" href="https://monday.com"><img src="assets/images/meniu/monday.png" height="20" alt=""></a>
                      </li>
                   </ul>
                </li>
@@ -284,12 +284,12 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="https://termene.ro"><img src="assets/images/meniu/termene.png" height="20" alt=""></a>
+                     <li><a target="_blank" href="https://termene.ro"><img src="assets/images/meniu/termene.png" height="20" alt=""></a>
                      </li>
-                     <li><a href="https://adobe.com"><img src="assets/images/meniu/adobe.png" height="20" alt=""></a>
+                     <li><a target="_blank" href="https://adobe.com"><img src="assets/images/meniu/adobe.png" height="20" alt=""></a>
                      </li>
                      <li><a href="office.php"><img src="assets/images/meniu/office.png" height="20" alt=""></a></li>
-                     <li><a href="https://workspace.google.com"><img src="assets/images/meniu/workspace.png" height="20"
+                     <li><a target="_blank" href="https://workspace.google.com"><img src="assets/images/meniu/workspace.png" height="20"
                               alt=""></a></li>
                      <li><a href="google.php">Google apps</a></li>
                      <li><a href="mailchimp.php">MailChimp</a></li>
@@ -306,13 +306,13 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a target="_blank" href="https://www.emag.ro"><img src="assets/images/meniu/emag.png"
+                     <li><a target="_blank" target="_blank" href="https://www.emag.ro"><img src="assets/images/meniu/emag.png"
                               height="20" alt=""></a></li>
-                     <li><a target="_blank" href="https://www.alibaba.com"><img src="assets/images/meniu/alibaba.png"
+                     <li><a target="_blank" target="_blank" href="https://www.alibaba.com"><img src="assets/images/meniu/alibaba.png"
                               height="20" alt=""></a></li>
-                     <li><a target="_blank" href="https://www.olx.ro"><img src="assets/images/meniu/olx.png" height="20"
+                     <li><a target="_blank" target="_blank" href="https://www.olx.ro"><img src="assets/images/meniu/olx.png" height="20"
                               alt=""> OLX</a></li>
-                     <li><a target="_blank" href="https://www.shopify.com"><img src="assets/images/meniu/shopify.png"
+                     <li><a target="_blank" target="_blank" href="https://www.shopify.com"><img src="assets/images/meniu/shopify.png"
                               height="20" alt=""> </a></li>
                   </ul>
                </li>
