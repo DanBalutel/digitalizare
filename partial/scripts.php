@@ -16,7 +16,7 @@
 <script src="assets/js/slick/slick.min.js"></script>
 <script src="assets/js/slick/slick.js"></script>
 <script src="assets/js/header-slick.js"></script>
-
+<script src="assets/js/sweet-alert/sweetalert.min.js"></script>
 <!-- Plugins JS Ends-->
 <!-- Theme js-->
 <script src="assets/js/custom-script.js"></script>
