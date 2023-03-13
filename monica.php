@@ -19,7 +19,61 @@
         ?>
 
       <div class="container-fluid">
-        <h3>Exemple de intrebari (personalizati in functie de nevoile dumneavoastra)</h3>
+     
+        <div class="row">
+          <div class="col call-chat-body">
+            <div class="card">
+              <div class="card-body p-0">
+                <div class="row chat-box">
+                  <!-- Chat right side start-->
+                  <div class="col pe-0 chat-right-aside">
+                    <!-- chat start-->
+                    <div class="chat">
+                      <!-- chat-header start-->
+                      <div class="chat-header clearfix"><img class="rounded-circle" src="../assets/images/user/3.png"
+                          alt="">
+                        <div class="about">
+                          <div class="name">Mony AI</div>
+                          <div class="status font-success">Online</div>
+                        </div>
+                        <ul class="list-inline float-start float-sm-end chat-menu-icons">
+                        </ul>
+                      </div>
+                      <!-- chat-header end-->
+                      <div class="chat-history chat-msg-box custom-scrollbar">
+                        <ul id="chatBox">
+
+                          <li>
+                            <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30"
+                                src="../assets/images/user/3.png" alt="">
+                              Salut, adreseaza-mi o intrebare, sau click pe o intrebare de mai sus.
+                            </div>
+                          </li>
+
+                        </ul>
+                      </div>
+                      <!-- end chat-history-->
+                      <div class="chat-message clearfix">
+                        <div class="row">
+                          <div class="col-xl-12 d-flex">
+                            <div class="input-group text-box">
+                              <input class="form-control input-txt-bx" id="askGPT" type="text" name="message-to-send"
+                                placeholder="Scrie aici .....">
+                              <button class="input-group-text btn btn-primary text-white fw-bold" id="trimite"
+                                type="button">Trimite</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Exemple de intrebari (personalizati in functie de nevoile dumneavoastra)</h3>
         <div class="row">
           <div class="col-md-4">
             <a style="cursor: pointer;">
@@ -80,60 +134,6 @@
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col call-chat-body">
-            <div class="card">
-              <div class="card-body p-0">
-                <div class="row chat-box">
-                  <!-- Chat right side start-->
-                  <div class="col pe-0 chat-right-aside">
-                    <!-- chat start-->
-                    <div class="chat">
-                      <!-- chat-header start-->
-                      <div class="chat-header clearfix"><img class="rounded-circle" src="../assets/images/user/3.png"
-                          alt="">
-                        <div class="about">
-                          <div class="name">Mony AI</div>
-                          <div class="status font-success">Online</div>
-                        </div>
-                        <ul class="list-inline float-start float-sm-end chat-menu-icons">
-                        </ul>
-                      </div>
-                      <!-- chat-header end-->
-                      <div class="chat-history chat-msg-box custom-scrollbar">
-                        <ul id="chatBox">
-
-                          <li>
-                            <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30"
-                                src="../assets/images/user/3.png" alt="">
-                              Salut, adreseaza-mi o intrebare, sau click pe o intrebare de mai sus.
-                            </div>
-                          </li>
-
-                        </ul>
-                      </div>
-                      <!-- end chat-history-->
-                      <div class="chat-message clearfix">
-                        <div class="row">
-                          <div class="col-xl-12 d-flex">
-                            <div class="input-group text-box">
-                              <input class="form-control input-txt-bx" id="askGPT" type="text" name="message-to-send"
-                                placeholder="Scrie un mesaj.....">
-                              <button class="input-group-text btn btn-primary text-white fw-bold" id="trimite"
-                                type="button">Trimite</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
 
       <!-- Modal loading-->
       <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1"
