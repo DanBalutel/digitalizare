@@ -68,7 +68,7 @@
                      </svg>
                      <svg class="fill-icon">
                         <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
-                     </svg><span>Chat AI</span></a>
+                     </svg><span>Mony AI</span></a>
                </li>
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="#">

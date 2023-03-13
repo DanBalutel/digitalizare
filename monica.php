@@ -93,7 +93,7 @@
                       <div class="chat-header clearfix"><img class="rounded-circle" src="../assets/images/user/3.png"
                           alt="">
                         <div class="about">
-                          <div class="name">Monica AI</div>
+                          <div class="name">Mony AI</div>
                           <div class="status font-success">Online</div>
                         </div>
                         <ul class="list-inline float-start float-sm-end chat-menu-icons">
