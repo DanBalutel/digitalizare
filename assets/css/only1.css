@@ -36,26 +36,7 @@ img.rounded-circle.shadow {
     cursor: pointer;
 }
 
-.timerBlink {
-    opacity: 1;
-    animation-name: opacity-transition;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
 
-@keyframes opacity-transition {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 
 
 .badge-custom {
