@@ -156,7 +156,7 @@
                           <div class="col-sm-6 mb-2">
                             <h4>Mail</h4>
                             <p>46 minute</p>
-                          </div>
+                          </div> 
                         </div>
                       </div>
                   </div>
