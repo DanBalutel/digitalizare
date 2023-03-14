@@ -46,7 +46,7 @@
                           <li>
                             <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30"
                                 src="../assets/images/user/3.png" alt="">
-                                Bună ziua! Numele meu este Mony, sunt un robot cu inteligență artificială care poate răspunde la întrebări generale, explica lucruri, sugereaza idei, traduce, scrie e-mailuri și cod programare.
+                                Bună ziua! Numele meu este Mony, sunt un robot cu inteligență artificială care poate răspunde la întrebări generale, explica lucruri, sugereaza idei, traduce, scrie e-mailuri și cod programare. 
                             </div>
                           </li>
 
