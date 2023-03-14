@@ -20,19 +20,19 @@ class ElementHandler {
     }
 
     // Remove Element
-    r(id) {
-        if (this.e[id]) {
-            this.e[id].parentNode.removeChild(element);
-            delete this.e[id];
-        } else {
-            const element = document.getElementById(id);
-            if (element) {
-                element.parentNode.removeChild(element);
-                delete this.e[id];
-            }
-        }
+    // r(id) {
+    //     if (this.e[id]) {
+    //         this.e[id].parentNode.removeChild(element);
+    //         delete this.e[id];
+    //     } else {
+    //         const element = document.getElementById(id);
+    //         if (element) {
+    //             element.parentNode.removeChild(element);
+    //             delete this.e[id];
+    //         }
+    //     }
 
-    }
+    // }
 
     // Create Event Handler
     ch(id, type, handler) {
