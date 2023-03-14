@@ -130,7 +130,7 @@
                 <div class="col-md-6">
                   <div class="card hovercard">
                       <div class="card-body">
-                        <h2><i data-feather="clock"></i> 5h 10m</h2>
+                        <h2>Activitatea pe aplicatie - <i data-feather="clock"></i> 5h 10m</h2>
                         <hr>
                         <div class="row">
                           <div class="col-sm-6 mb-2">
