@@ -127,6 +127,20 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-md-6">
+                  <div class="card hovercard">
+                      <div class="card-body">
+                        <h2><i data-feather="clock"></i> 5h 10m</h2>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-6">Google</div>
+                          <div class="col-sm-6">CRM</div>
+                          <div class="col-sm-6">Facebook</div>
+                          <div class="col-sm-6">ERP</div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
                 <!-- user profile fifth-style end-->
                 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="pswp__bg"></div>
