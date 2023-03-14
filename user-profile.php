@@ -133,10 +133,22 @@
                         <h2><i data-feather="clock"></i> 5h 10m</h2>
                         <hr>
                         <div class="row">
-                          <div class="col-sm-6">Google</div>
-                          <div class="col-sm-6">CRM</div>
-                          <div class="col-sm-6">Facebook</div>
-                          <div class="col-sm-6">ERP</div>
+                          <div class="col-sm-4">
+                            <h4>Google</h4>
+                            <p>10 minute</p>
+                          </div>
+                          <div class="col-sm-4">
+                            <h4>Facebook</h4>
+                            <p>20 minute</p>
+                          </div>
+                          <div class="col-sm-4">
+                            <h4>CRM</h4>
+                            <p>50 minute</p>
+                          </div>
+                          <div class="col-sm-4">
+                            <h4>ERP</h4>
+                            <p>20 minute</p>
+                          </div>
                         </div>
                       </div>
                   </div>
