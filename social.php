@@ -170,7 +170,7 @@
                         </div>
 
                         <div class="col">
-                        <div class="card social-widget">
+                            <div class="card social-widget">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center gap-2">
