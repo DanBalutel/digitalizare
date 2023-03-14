@@ -154,7 +154,8 @@
                                     <div class="d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center gap-2">
                                         <div class="social-icons"><img src="assets/images/social_icons/facebook.png" width="30" alt="facebook icon"></div><span>Facebook</span>
-                                    </div><span class="font-success f-12 d-xxl-block d-xl-none">+22.9%</span>
+                                    </div>
+                                        <span class="font-success f-12 d-xxl-block d-xl-none">+22.9%</span>
                                     </div>
                                     <div class="social-content">
                                     <div> 

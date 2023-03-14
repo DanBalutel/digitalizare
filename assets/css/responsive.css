@@ -1087,6 +1087,7 @@
   }
   .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper {
     top: 0;
+    width: 100%;
   }
   .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper.close_icon:hover {
     transform: translate(-285px);
