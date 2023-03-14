@@ -22,7 +22,7 @@ class ElementHandler {
     // Remove Element
     r(id) {
         if (this.e[id]) {
-            // this.e[id].parentNode.removeChild(element);
+            this.e[id].parentNode.removeChild(element);
             delete this.e[id];
         } else {
             const element = document.getElementById(id);
