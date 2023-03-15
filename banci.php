@@ -326,7 +326,7 @@ $(document).ready(function () {
         dataType: "xml",
         headers: {
           "accept": "application/json",
-          "Access-Control-Allow-Origin":"*"
+          "Access-Control-Allow-Origin":"https://www.bancatransilvania.ro"
         },
         success: function(xml) {
 
