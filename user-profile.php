@@ -223,4 +223,7 @@
 <script src="assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
 <script src="assets/js/photoswipe/photoswipe.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
+    <script src="assets/js/datepicker/date-picker/datepicker.js"></script>
+    <script src="assets/js/datepicker/date-picker/datepicker.en.js"></script>
+    <script src="assets/js/datepicker/date-picker/datepicker.custom.js"></script>
 <?php include('partial/footer-end.php'); ?>
