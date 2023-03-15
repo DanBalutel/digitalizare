@@ -141,7 +141,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12 box-col-6"> 
+          <div class="col-md-4 col-sm-12 box-col-6"> 
               <div class="card balance-box" style="min-height: 20rem;">
                   <div class="card-body d-flex align-items-center justify-content-center">
                       <div class="balance-profile">
@@ -176,7 +176,7 @@
                   </div>
               </div>
           </div>
-          <div class="col-md-6 col-sm-12 box-col-6"> 
+          <div class="col-md-4 col-sm-12 box-col-6"> 
               <div class="card balance-box" style="min-height: 20rem;">
                   <div class="card-body d-flex align-items-center justify-content-center">
                       <div class="balance-profile">
@@ -211,6 +211,16 @@
                   </div>
               </div>
           </div>
+          <div class="col-md-4 col-sm-12 box-col-6"> 
+              <div class="card balance-box" style="min-height: 20rem;">
+                  <div class="card-body align-items-center">
+                     <img src="" alt=""> EUR <span id="curs-valutar2"></span><b>
+                      
+                     <img src="" alt=""> USD <span id="curs-valutar"></span>
+                  </div>
+              </div>
+          </div>
+
 
           <div class="col-md-6 col-xs-12">
             <div class="card small-widget mb-sm-0">
@@ -745,6 +755,37 @@
   </div>
   <?php include('partial/scripts.php') ?>
   <!-- Plugins JS start-->
+  <script>
+        const eur = 'https://v6.exchangerate-api.com/v6/6bed73cc5781700181dd7edf/latest/EUR';
+
+        fetch(eur)
+        .then(response => response.json())
+        .then(data => {
+            if (data.result === 'success') {
+            const rates = data.conversion_rates;
+            const cursValutar2 = document.getElementById('curs-valutar2').innerText = `${rates.RON.toFixed(4)}`;
+            } else {
+            console.error('Eroare:', data['error-type']);
+            }
+        })
+        .catch(error => console.error('Eroare:', error));
+
+        const usd = 'https://v6.exchangerate-api.com/v6/6bed73cc5781700181dd7edf/latest/USD';
+
+        fetch(usd)
+        .then(response => response.json())
+        .then(data => {
+            if (data.result === 'success') {
+            const rates = data.conversion_rates;
+            const cursValutar = document.getElementById('curs-valutar').innerText = `${rates.RON.toFixed(4)}`;
+            } else {
+            console.error('Eroare:', data['error-type']);
+            }
+        })
+        .catch(error => console.error('Eroare:', error));
+
+
+    </script>
 <script src="assets/js/chart/apex-chart/apex-chart.js"></script>
 <script src="assets/js/chart/apex-chart/stock-prices.js"></script>
   <script src="assets/js/dashboard/default.js"></script>
