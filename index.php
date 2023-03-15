@@ -218,7 +218,9 @@
                     <hr>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqtnkrZxsLPVsbliZJV2F7hm4H3nISPDhGgJ0XNwARw&s" width="50" alt=""> EUR <span id="curs-valutar2"></span><br><br>
                       
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/US_flag_large_51_stars.png/1024px-US_flag_large_51_stars.png" width="50" alt=""> USD <span id="curs-valutar"></span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/US_flag_large_51_stars.png/1024px-US_flag_large_51_stars.png" width="50" alt=""> USD <span id="curs-valutar"></span><br><br>
+                      
+                      <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/gbp.svg" width="50" alt=""> GBP <span id="curs-valutar3"></span>
                   </div>
               </div>
           </div>
@@ -780,6 +782,19 @@
             if (data.result === 'success') {
             const rates = data.conversion_rates;
             const cursValutar = document.getElementById('curs-valutar').innerText = `${rates.RON.toFixed(4)}`;
+            } else {
+            console.error('Eroare:', data['error-type']);
+            }
+        })
+        .catch(error => console.error('Eroare:', error));
+        const GBP = 'https://v6.exchangerate-api.com/v6/6bed73cc5781700181dd7edf/latest/GBP';
+
+        fetch(GBP)
+        .then(response => response.json())
+        .then(data => {
+            if (data.result === 'success') {
+            const rates = data.conversion_rates;
+            const cursValutar = document.getElementById('curs-valutar3').innerText = `${rates.RON.toFixed(4)}`;
             } else {
             console.error('Eroare:', data['error-type']);
             }
