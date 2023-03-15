@@ -142,7 +142,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box  min-h-9">
+              <div class="card balance-box" style="min-height: 20rem;">
                   <div class="card-body d-flex align-items-center justify-content-center">
                       <div class="balance-profile">
                       <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
@@ -177,7 +177,7 @@
               </div>
           </div>
           <div class="col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box  min-h-9">
+              <div class="card balance-box" style="min-height: 20rem;">
                   <div class="card-body d-flex align-items-center justify-content-center">
                       <div class="balance-profile">
                       <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
