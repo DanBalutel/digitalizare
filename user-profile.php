@@ -166,7 +166,7 @@
                 <div class="card height-equal-2"> 
                   <div class="card-body">
                     <div class="default-datepicker">
-                      <div class="datepicker-here" data-language="ro"></div>
+                      <div class="datepicker-here" data-language="en"></div>
                     </div>
                   </div>
                 </div>
