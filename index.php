@@ -146,7 +146,7 @@
                   <div class="card-body d-flex align-items-center justify-content-center">
                       <div class="balance-profile">
                       <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
-                          <img src="assets/images/banci/bt.png" style="width: 14rem" alt="user vector">
+                          <img src="assets/images/banci/bt.png" style="width: 10rem" alt="user vector">
                       </div>
                       <span class="f-light d-block mt-2">Soldul </span>
                       <h5 class="mt-1">1,987,500.90 LEI</h5>
@@ -181,7 +181,7 @@
                   <div class="card-body d-flex align-items-center justify-content-center">
                       <div class="balance-profile">
                       <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
-                          <img src="assets/images/banci/revolut.png"style="width: 14rem" alt="user vector">
+                          <img src="assets/images/banci/revolut.png"style="width: 10rem" alt="user vector">
                       </div>
                       <span class="f-light d-block mt-2">Soldul </span>
                       <h5 class="mt-1">87,500.90 LEI</h5>
