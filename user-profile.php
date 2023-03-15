@@ -163,7 +163,7 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                <div class="card"> 
+                <div class="card height-equal-2"> 
                   <div class="card-body">
                     <div class="default-datepicker">
                       <div class="datepicker-here" data-language="en"></div>
