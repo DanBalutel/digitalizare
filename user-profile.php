@@ -161,6 +161,15 @@
                       </div>
                   </div>
                 </div>
+                <div class="col-md-6">
+                <div class="card height-equal-2"> 
+                  <div class="card-body">
+                    <div class="default-datepicker">
+                      <div class="datepicker-here" data-language="en"></div>
+                    </div>
+                  </div>
+                </div>
+                </div>
                 <!-- user profile fifth-style end-->
                 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="pswp__bg"></div>
