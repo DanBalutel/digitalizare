@@ -24,9 +24,7 @@
                 <div class="card balance-box height-equal-2">
                     <div class="card-body d-flex align-items-center justify-content-center">
                         <div class="balance-profile">
-                        <div class="balance-img">
-                            <img src="assets/images/banci/brd.png" alt="user vector">
-                        </div>
+                        <img src="assets/images/banci/brd.png" width="100" alt="user vector">
                         <span class="f-light d-block">Soldul </span>
                         <h5 class="mt-1">1,987,500.90 LEI</h5>
                         <ul> 
