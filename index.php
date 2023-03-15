@@ -213,7 +213,7 @@
           </div>
           <div class="col-md-4 col-sm-12 box-col-6"> 
               <div class="card balance-box" style="min-height: 20rem;">
-                  <div class="card-body df-flex align-items-center justify-content-center">
+                  <div class="card-body df-flex align-items-center justify-content-center"> 
                     <h3>CURS VALUTAR</h3>
                     <hr>
                     <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/eur.svg" width="50" alt=""> EUR <span id="curs-valutar2"></span><br><br>
