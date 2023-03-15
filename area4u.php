@@ -22,6 +22,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <?php include('partial/header.php'); ?>
 
+<script>
+  localStorage.removeItem('dataObj');
+</script>
+
 <div class="container-fluid p-0">
   <div class="row m-0">
     <div class="col-12 p-0">
