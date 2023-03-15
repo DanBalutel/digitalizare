@@ -216,13 +216,13 @@
                   <div class="card-body df-flex align-items-center justify-content-center"> 
                     <h3>CURS VALUTAR</h3>
                     <hr>
-                    <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/eur.svg" width="50" alt=""> EUR <span id="curs-valutar2"></span><br><br>
+                    <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/eur.svg" width="50" alt=""> EUR <b id="curs-valutar2"></b><br><br>
                       
-                    <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/usd.svg" width="50" alt=""> USD <span id="curs-valutar"></span><br><br>
+                    <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/usd.svg" width="50" alt=""> USD <b id="curs-valutar"></b><br><br>
                       
-                    <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/gbp.svg" width="50" alt=""> GBP <span id="curs-valutar3"></span><br><br>
+                    <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/gbp.svg" width="50" alt=""> GBP <b id="curs-valutar3"></b><br><br>
                       
-                    <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/chf.svg" width="50" alt=""> CHF <span id="curs-valutar4"></span>
+                    <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/chf.svg" width="50" alt=""> CHF <b id="curs-valutar4"></b>
                   </div>
               </div>
           </div>
