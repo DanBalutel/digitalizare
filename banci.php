@@ -321,13 +321,9 @@
 $(document).ready(function () {
     $.ajax({
         type: "GET",
-        url: "https://www.bancatransilvania.ro/jsn/exchange.php",
+        url: "https://www.bnr.ro/nbrfxrates.xml",
         cache: false,
         dataType: "xml",
-        headers: {
-          "accept": "application/json",
-          "Access-Control-Allow-Origin":"https://www.bancatransilvania.ro"
-        },
         success: function(xml) {
 
             console.log(xml)
