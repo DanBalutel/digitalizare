@@ -76,12 +76,13 @@
                      <li><a href="outlook.php"><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
                   </ul>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="banci.php">
                      <i data-feather="dollar-sign" style="color: rgba(82, 82, 108, 0.8)"></i>
                      <span>Banci</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
+                     <li><a href="banci.php">Dashboard</a></li>
                      <li><a href="#"><img src="assets/images/banci/revolut.png" height="20" alt=""></a></li>
                      <li><a href="#"><img src="assets/images/banci/bcr.png" height="20" alt=""></a></li>
                      <li><a href="#"><img src="assets/images/banci/brd.png" height="20" alt=""></a></li>
