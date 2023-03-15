@@ -229,7 +229,7 @@
           <div class="col-md-3 col-sm-12 box-col-6"> 
               <div class="card balance-box" style="min-height: 20rem;">
                   <div class="card-body df-flex align-items-center justify-content-center"> 
-                  <div id="ww_08791112f39a9" v='1.3' loc='id' a='{"t":"horizontal","lang":"ro","sl_lpl":1,"ids":["wl10374"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Weather Data Source: <a href="https://weerlabs.nl/weer_boekarest/morgen/" id="ww_08791112f39a9_u" target="_blank">weersverwachting morgen Boekarest</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_08791112f39a9"></script>
+                  <div id="ww_08791112f39a9" v='1.3' loc='id' a='{"t":"horizontal","lang":"ro","sl_lpl":1,"ids":["wl10374"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'></div><script async src="https://app1.weatherwidget.org/js/?id=ww_08791112f39a9"></script>
                   </div>
               </div>
           </div>
