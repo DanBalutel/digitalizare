@@ -213,10 +213,10 @@
           </div>
           <div class="col-md-4 col-sm-12 box-col-6"> 
               <div class="card balance-box" style="min-height: 20rem;">
-                  <div class="card-body align-items-center">
-                     <img src="" alt=""> EUR <span id="curs-valutar2"></span><b>
+                  <div class="card-body df-flex align-items-center justify-content-center">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqtnkrZxsLPVsbliZJV2F7hm4H3nISPDhGgJ0XNwARw&s" width="50" alt=""> EUR <span id="curs-valutar2"></span><br>
                       
-                     <img src="" alt=""> USD <span id="curs-valutar"></span>
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/US_flag_large_51_stars.png/1024px-US_flag_large_51_stars.png" width="50" alt=""> USD <span id="curs-valutar"></span>
                   </div>
               </div>
           </div>
