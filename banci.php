@@ -20,42 +20,41 @@
 
       <div class="container-fluid">
         <div class="row">
-        <div class="col-xxl-3 col-xl-4 col-sm-6 box-col-6"> 
+            <div class="col-xxl-3 col-xl-4 col-sm-6 box-col-6"> 
                 <div class="card balance-box height-equal-2">
-                  <div class="card-body d-flex align-items-center justify-content-center">
-                    <div class="balance-profile">
-                      <div class="balance-img">
-                        <img src="../assets/images/dashboard-4/user.png" alt="user vector"><a class="edit-icon" href="user-profile.html">
-                          <svg>
-                            <use href="../assets/svg/icon-sprite.svg#pencil"></use>
-                          </svg></a></div><span class="f-light d-block">Your Balance </span>
-                      <h5 class="mt-1">$768,987.90</h5>
-                      <ul> 
-                        <li>
-                          <div class="balance-item danger"> 
-                            <div class="balance-icon-wrap"> 
-                              <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-right"><line x1="7" y1="7" x2="17" y2="17"></line><polyline points="17 7 17 17 7 17"></polyline></svg></div>
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                        <div class="balance-profile">
+                        <div class="balance-img">
+                            <img src="assets/images/banci/brd.png" alt="user vector">
+                        </div>
+                        <span class="f-light d-block">Soldul </span>
+                        <h5 class="mt-1">1,987,500.90 LEI</h5>
+                        <ul> 
+                            <li>
+                            <div class="balance-item danger"> 
+                                <div class="balance-icon-wrap"> 
+                                <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-right"><line x1="7" y1="7" x2="17" y2="17"></line><polyline points="17 7 17 17 7 17"></polyline></svg></div>
+                                </div>
+                                <div> <span class="f-12 f-light">Cheltuieli  </span>
+                                <h5>78.8K</h5><span class="badge badge-light-danger rounded-pill">-11.67%</span>
+                                </div>
                             </div>
-                            <div> <span class="f-12 f-light">Investment  </span>
-                              <h5>78.8K</h5><span class="badge badge-light-danger rounded-pill">-11.67%</span>
+                            </li>
+                            <li>
+                            <div class="balance-item success">
+                                <div class="balance-icon-wrap"> 
+                                <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+                                </div>
+                                <div> <span class="f-12 f-light">Venituri</span>
+                                <h5>19.7K</h5><span class="badge badge-light-success rounded-pill">+10.67%</span>
+                                </div>
                             </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="balance-item success">
-                            <div class="balance-icon-wrap"> 
-                              <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
-                            </div>
-                            <div> <span class="f-12 f-light">Cash Back</span>
-                              <h5>19.7K</h5><span class="badge badge-light-success rounded-pill">+10.67%</span>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
+                            </li>
+                        </ul>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
         </div>
       </div>
 
