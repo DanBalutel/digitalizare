@@ -127,7 +127,6 @@ function hideTime() {
         d.a('timer')
         d.e.timerWork.innerHTML = "🟢"
         d.e.timerWork.classList.toggle('timerBlink');
-        d.r('timer');
     }, 5000);
 }
 window.addEventListener('load', hideTime);

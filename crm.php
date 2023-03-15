@@ -48,7 +48,14 @@
                                                     <td>Gigi Popescu</td>
                                                     <td>0729 229 599</td>
                                                     <td>ai@area4u.ro</td>
-                                                    <td> <span class="badge badge-success">Interesat</span></td>
+                                                    <td>
+                                                        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Interesat</button>
+                                                        <div class="dropdown-menu" style="">
+                                                            <a class="dropdown-item btn btn-success" href="#">Interesat</a>
+                                                            <a class="dropdown-item btn btn-danger" href="#">Neinteresat</a>
+                                                            <a class="dropdown-item btn btn-warning" href="#">Nu stie</a>
+                                                        </div>
+                                                    </td>
 
                                                 </tr>
 

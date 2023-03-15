@@ -676,17 +676,25 @@ for (var i = 0; i < pairs.length; i++) {
 
 if (window.localStorage.dataObj) {
     dataObj = JSON.parse(window.localStorage.dataObj);
-    populatePage();
+
+    // temp we add if check for login
+    if (window.location.pathname !== "/area4u.php") {
+        populatePage();
+    }
 
 } else if (request['cui']) {
     fetchAuth(request['cui']);
 } else {
 
-    let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
-    if (codulCUI == null || codulCUI == "") {
-        window.location.href = window.location.href;
-    } else {
-        window.location.href = window.location.href + `?cui=${codulCUI}`;
+    // temp we add if check for login
+    if (window.location.pathname !== "/area4u.php") {
+
+        let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
+        if (codulCUI == null || codulCUI == "") {
+            window.location.href = window.location.href;
+        } else {
+            window.location.href = window.location.href + `?cui=${codulCUI}`;
+        }
     }
 }
 
@@ -713,7 +721,7 @@ function fetchAuth(cuiValue) {
         .then((response) => {
             //   document.getElementById("demoShow").innerHTML = response;
             dataJson = response;
-            if (dataJson.DateGenerale = undefined) {
+            if (dataJson.DateGenerale = undefined && window.location.pathname !== "/area4u.php") {
                 let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
                 if (codulCUI == null || codulCUI == "") {
                     window.location.href = window.location.href;
@@ -730,8 +738,10 @@ function fetchAuth(cuiValue) {
                 console.log('loaded!');
             });
 
-            populatePage();
-
+            // temp we add if check for login
+            if (window.location.pathname !== "/area4u.php") {
+                populatePage();
+            }
 
             // all html rendering goes here
             // populatePage();

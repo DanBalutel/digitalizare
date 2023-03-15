@@ -1,6 +1,6 @@
- <!-- latest jquery-->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <!-- Bootstrap js-->
+<!-- latest jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Bootstrap js-->
 <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="assets/js/notify/bootstrap-notify.min.js"></script>
 <!-- feather icon js-->
@@ -22,6 +22,3 @@
 <script src="assets/js/custom-script.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/dashboard.js" defer></script>
-
-
-
