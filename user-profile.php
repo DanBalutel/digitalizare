@@ -1,6 +1,7 @@
 <?php include('partial/header.php');?>
 
 <link rel="stylesheet" type="text/css" href="assets/css/vendors/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/date-picker.css">
 
 <?php include('partial/loader.php'); ?>
 
@@ -162,7 +163,7 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                <div class="card height-equal-2"> 
+                <div class="card"> 
                   <div class="card-body">
                     <div class="default-datepicker">
                       <div class="datepicker-here" data-language="en"></div>
