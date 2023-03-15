@@ -315,6 +315,27 @@
 </div>
 <?php include('partial/scripts.php') ?>
 <!-- Plugins JS start-->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script>
+  
+$(document).ready(function () {
+    $.ajax({
+        type: "GET",
+        url: "https://www.bancatransilvania.ro/jsn/exchange.php",
+        cache: false,
+        dataType: "xml",
+        headers: {
+          "accept": "application/json",
+          "Access-Control-Allow-Origin":"*"
+        },
+        success: function(xml) {
+
+            console.log(xml)
+        }
+    });
+});
+
+</script>
 <script src="assets/js/notify/index.js"></script>
 <script src="assets/js/typeahead/handlebars.js"></script>
 <script src="assets/js/typeahead/typeahead.bundle.js"></script>
