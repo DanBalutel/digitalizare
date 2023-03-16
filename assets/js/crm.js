@@ -156,13 +156,10 @@ function addcrmTable1Row(id, name, phone, email, status) {
                 "class": "position-relative",
                 "children": [
                     {
-                        "tag": "button",
+                        "tag": "div",
                         "class": `btn ${returnStatus(status)}`,
                         "innerHTML": status,
-                        "id": `cT1status${id}`,
-                        "attrs": {
-                            "type": "button"
-                        }
+                        "id": `cT1status${id}`
                     },
                     {
                         "tag": "div",
