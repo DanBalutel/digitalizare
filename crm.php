@@ -67,36 +67,37 @@
                         </div>
                     </div>
                 </div>
-                <!-- footer start-->
-                <?php include('partial/footer.php') ?>
+
             </div>
+
         </div>
-        <?php include('partial/scripts.php') ?>
-        <!-- Plugins JS start-->
-        <script src="assets/js/clock.js"></script>
-        <script src="assets/js/chart/apex-chart/moment.min.js"></script>
-        <script src="assets/js/notify/bootstrap-notify.min.js"></script>
-        <script src="assets/js/dashboard/default.js"></script>
-        <script src="assets/js/notify/index.js"></script>
-        <script src="assets/js/typeahead/handlebars.js"></script>
-        <script src="assets/js/typeahead/typeahead.bundle.js"></script>
-        <script src="assets/js/typeahead/typeahead.custom.js"></script>
-        <script src="assets/js/typeahead-search/handlebars.js"></script>
-        <script src="assets/js/typeahead-search/typeahead-custom.js"></script>
-        <script src="assets/js/height-equal.js"></script>
-        <script src="assets/js/animation/wow/wow.min.js"></script>
-        <script src="assets/js/chart/morris-chart/raphael.js"></script>
-        <script src="assets/js/chart/morris-chart/morris.js"> </script>
-        <script src="assets/js/chart/morris-chart/prettify.min.js"></script>
-        <script src="assets/js/chart/morris-chart/morris-script.js"></script>
-        <script src="assets/js/tooltip-init.js"></script>
+        <!-- footer start-->
+        <?php include('partial/footer.php') ?>
+    </div>
+</div>
+<?php include('partial/scripts.php') ?>
+<!-- Plugins JS start-->
+<script src="assets/js/clock.js"></script>
+<script src="assets/js/chart/apex-chart/moment.min.js"></script>
+<script src="assets/js/notify/bootstrap-notify.min.js"></script>
+<script src="assets/js/dashboard/default.js"></script>
+<script src="assets/js/notify/index.js"></script>
+<script src="assets/js/typeahead/handlebars.js"></script>
+<script src="assets/js/typeahead/typeahead.bundle.js"></script>
+<script src="assets/js/typeahead/typeahead.custom.js"></script>
+<script src="assets/js/typeahead-search/handlebars.js"></script>
+<script src="assets/js/typeahead-search/typeahead-custom.js"></script>
+<script src="assets/js/height-equal.js"></script>
+<script src="assets/js/animation/wow/wow.min.js"></script>
+<script src="assets/js/chart/morris-chart/raphael.js"></script>
+<script src="assets/js/chart/morris-chart/morris.js"> </script>
+<script src="assets/js/chart/morris-chart/prettify.min.js"></script>
+<script src="assets/js/chart/morris-chart/morris-script.js"></script>
+<script src="assets/js/tooltip-init.js"></script>
 
-        <script src="assets/js/crm.js"></script>
-        <!-- Plugins JS Ends-->
-        <script>
-         
-
-
-            new WOW().init();
-        </script>
-        <?php include('partial/footer-end.php') ?>
+<script src="assets/js/crm.js"></script>
+<!-- Plugins JS Ends-->
+<script>
+    new WOW().init();
+</script>
+<?php include('partial/footer-end.php') ?>
