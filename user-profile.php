@@ -269,6 +269,7 @@
         calendar.render();
       });
 </script>
+  <script src="assets/js/notify/index.js"></script>
 <script src="assets/js/counter/jquery.waypoints.min.js"></script>
 <script src="assets/js/counter/jquery.counterup.min.js"></script>
 <script src="assets/js/counter/counter-custom.js"></script>
