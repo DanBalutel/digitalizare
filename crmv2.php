@@ -1,5 +1,5 @@
 <?php include('partial/header.php') ?>
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors/datatables.css">
+<link rel="stylesheet" type="text/css" href="assets/css/vendors/datatables.css">
 <?php include('partial/loader.php') ?>
 <!-- page-wrapper Start-->
 <div class="page-wrapper compact-wrapper" id="pageWrapper">
@@ -23,13 +23,9 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-body">
-                                
-                                <!-- Zero Configuration  Starts-->
                                 <div class="col-sm-12">
                                     <div class="card">
-                                    <div class="card-header pb-0 card-no-border">
-                                        <h3>Zero Configuration</h3><span>DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function:<code>$().DataTable();</code>.</span><span>Searching, ordering and paging goodness will be immediately added to the table, as shown in this example.</span>
-                                    </div>
+                                        
                                     <div class="card-body">
                                         <div class="table-responsive">
                                         <table class="display" id="basic-1">
@@ -247,7 +243,6 @@
                                     </div>
                                     </div>
                                 </div>
-                                <!-- Zero Configuration  Ends-->
                             </div>
                         </div>
                     </div>
@@ -270,10 +265,6 @@
 <script src="assets/js/typeahead-search/typeahead-custom.js"></script>
 <script src="assets/js/height-equal.js"></script>
 <script src="assets/js/animation/wow/wow.min.js"></script>
-<script src="assets/js/chart/morris-chart/raphael.js"></script>
-<script src="assets/js/chart/morris-chart/morris.js"> </script>
-<script src="assets/js/chart/morris-chart/prettify.min.js"></script>
-<script src="assets/js/chart/morris-chart/morris-script.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
 <script src="assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
 <script src="assets/js/datatable/datatables/datatable.custom.js"></script>

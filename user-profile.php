@@ -2,7 +2,6 @@
 
 <link rel="stylesheet" type="text/css" href="assets/css/vendors/photoswipe.css">
 <link rel="stylesheet" type="text/css" href="assets/css/vendors/calendar.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors/date-picker.css">
 
 <?php include('partial/loader.php'); ?>
 
