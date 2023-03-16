@@ -231,6 +231,7 @@
             title: 'Task IT',
             start: '2023-03-12T10:30:00',
             end: '2023-03-21T11:30:00',
+            display: 'background',
             extendedProps: {
               department: 'BioChemistry'
             },
@@ -241,6 +242,8 @@
             title: 'Task Consulanti',
             start: '2023-03-16T10:30:00',
             end: '2023-03-22T11:30:00',
+            display: 'background',
+            backgroundColor: yellow,
             extendedProps: {
               department: 'BioChemistry'
             },
