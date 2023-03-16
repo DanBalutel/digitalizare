@@ -883,10 +883,13 @@ function populatePage() {
             // rentabilitatea si situatia fnanciara
             const ids3 = ["cardRA", "cardSF"];
 
+            const ids4 =['card-1', 'card-2', 'card-3', 'card-4']
+
             setMaxHeight(ids0);
             setMaxHeight(ids1);
             setMaxHeight(ids2);
             setMaxHeight(ids3);
+            setMaxHeight(ids4);
 
 
 
