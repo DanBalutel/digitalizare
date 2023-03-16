@@ -134,6 +134,10 @@
                       <div class="card-body">
                         <h2>Activitatea pe aplicatie - <i data-feather="clock"></i> 5h 10m</h2>
                         <hr>
+
+                        <div class="flot-chart-container">
+                          <div class="flot-chart-placeholder" id="morris-simple-bar-chart"></div>
+                        </div>
                         <div class="row">
                           <div class="col-sm-6 mb-2">
                             <h4>Google</h4>
@@ -216,6 +220,8 @@
         <?php include('partial/footer.php');?>
     </div>
 </div>
+  <script src="assets/js/chart/morris-chart/morris.js"> </script>
+  <script src="assets/js/chart/morris-chart/morris-script.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.9.1/lang-all.js"></script>
 <script>
   
