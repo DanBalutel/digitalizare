@@ -231,7 +231,45 @@
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
               <div class="card balance-box" style="min-height: 23rem;">
                   <div class="card-body df-flex align-items-center justify-content-center"> 
-                  <div id="ww_ecba33ad26dc4" v='1.3' loc='id' a='{"t":"horizontal","lang":"ro","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Weather Data Source: <a href="https://meteolongue.com/paris_meteo_25_jours/" id="ww_ecba33ad26dc4_u" target="_blank">meteo a 25 jours Paris</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_ecba33ad26dc4"></script>
+                  <script>
+        (function(d, s, id) {
+            if (d.getElementById(id)) {
+                if (window.__TOMORROW__) {
+                    window.__TOMORROW__.renderWidget();
+                }
+                return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div class="tomorrow"
+           data-location-id=""
+           data-language="RO"
+           data-unit-system="METRIC"
+           data-skin="dark"
+           data-widget-type="aqiMini"
+           style="padding-bottom:22px;position:relative;"
+        >
+          <a
+            href="https://www.tomorrow.io/weather-api/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+          >
+            <img
+              alt="Powered by the Tomorrow.io Weather API"
+              src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+              width="250"
+              height="18"
+            />
+          </a>
+        </div>
                   </div>
               </div>
           </div>
