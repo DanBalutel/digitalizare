@@ -224,6 +224,7 @@
         
         var calendar = new FullCalendar.Calendar(calendarEl, {
           lang: 'ro',
+          locale: 'ro',
           initialView: 'dayGridMonth',
           headerToolbar: {
               left: "prev,next today",
