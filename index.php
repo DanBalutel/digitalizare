@@ -768,7 +768,7 @@
   </div>
   <?php include('partial/scripts.php') ?>
   <!-- Plugins JS start-->
-  <script>
+  <script defer>
         const eur = 'https://v6.exchangerate-api.com/v6/294b62fff8f9419cf09b6825/latest/EUR';
 
         fetch(eur)
