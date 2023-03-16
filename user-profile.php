@@ -220,8 +220,6 @@
         <?php include('partial/footer.php');?>
     </div>
 </div>
-  <script src="assets/js/chart/morris-chart/morris.js"> </script>
-  <script src="assets/js/chart/morris-chart/morris-script.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.9.1/lang-all.js"></script>
 <script>
   
@@ -280,4 +278,6 @@
 <script src="assets/js/datepicker/date-picker/datepicker.js"></script>
 <script src="assets/js/datepicker/date-picker/datepicker.en.js"></script>
 <script src="assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+  <script src="assets/js/chart/morris-chart/morris.js"> </script>
+  <script src="assets/js/chart/morris-chart/morris-script.js"></script>
 <?php include('partial/footer-end.php'); ?>
