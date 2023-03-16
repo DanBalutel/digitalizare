@@ -166,6 +166,8 @@
                 <div class="col-md-6">
                 <div class="card height-equal-2"> 
                   <div class="card-body">
+                    <h2>Taskuri</h2>
+                    <hr>
                     <div id="calendar"></div>
                   </div>
                 </div>
