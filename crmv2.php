@@ -1,5 +1,4 @@
 <?php include('partial/header.php') ?>
-<link rel="stylesheet" type="text/css" href="assets/css/vendors/datatables.css">
 <?php include('partial/loader.php') ?>
 <!-- page-wrapper Start-->
 <div class="page-wrapper compact-wrapper" id="pageWrapper">
