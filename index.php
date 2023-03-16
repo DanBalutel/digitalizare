@@ -216,7 +216,7 @@
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
               <div class="card balance-box" style="min-height: 23rem;">
                   <div class="card-body df-flex align-items-center justify-content-center"> 
-                    <h3>CURS VALUTAR</h3>
+                    <h3>CURS VALUTAR - <span id="curs-data"></span></h3>
                     <hr>
                     <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/eur.svg" width="50" alt=""> EUR <b id="curs-valutar2"></b><br><br>
                       
@@ -857,7 +857,9 @@
             if (data.result === 'success') {
             const rates = data.conversion_rates;
             const cursValutar = document.getElementById('curs-valutar4').innerText = `${rates.RON.toFixed(4)}`;
-            console.log(data)
+            document.getElementById('curs-data').innerText = data.time_last_update_utc;
+
+
             } else {
             console.error('Eroare:', data['error-type']);
             }
