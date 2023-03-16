@@ -156,10 +156,15 @@ function addcrmTable1Row(id, name, phone, email, status) {
                 "class": "position-relative",
                 "children": [
                     {
-                        "tag": "div",
-                        "class": `btn ${returnStatus(status)}`,
+                        "tag": "button",
+                        "class": `btn dropdown-toggle ${returnStatus(status)}`,
                         "innerHTML": status,
-                        "id": `cT1status${id}`
+                        "id": `cT1status${id}`,
+                        "attrs": {
+                            "type": "button",
+                            "data-bs-toggle": "dropdown",
+                            "aria-expanded": "false"
+                        }
                     },
                     {
                         "tag": "div",
@@ -223,7 +228,7 @@ for (i in crmTable1) {
         }
         d.element(`cT1dm${id}`).classList.toggle("show");
         d.element(`cT1status${id}`).innerHTML = status;
-        d.element(`cT1status${id}`).classList = `btn ${returnStatus(status)}`;
+        d.element(`cT1status${id}`).classList = `btn dropdown-toggle ${returnStatus(status)}`;
 
     }
     d.createHandler(`cT1s${id}`, "click", (event) => changeStatusCrmDropdown1(event, id, `cT1s${id}`));
