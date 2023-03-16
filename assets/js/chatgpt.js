@@ -92,6 +92,8 @@ function copyElementText(id) {
     elem.select();
     document.execCommand("copy");
     document.body.removeChild(elem);
+    
+    swal("Succes!", "Textul a fost copiat!", "success");
 }
 // run when user press enter on chat input box
 askGpt.addEventListener('keypress', function (e) {
