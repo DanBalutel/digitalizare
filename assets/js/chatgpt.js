@@ -71,20 +71,29 @@ function addMessage(msgLoc, msgText) {
     if (msgLoc === 'right') {
         msgChild.innerHTML = `
             <div id="chat-feed" class="message other-message pull-right"><img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
-                <div class="message-data"></div>${msgText}
+                <div class="message-data" id="text"></div>${msgText}
             </div>
         `;
     } else {
         msgChild.innerHTML = `
         <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
-        <div class="message-data text-end"></div>${msgText}</div>
+        <button type="button" class="btn btn-primary" onclick="copyElementText(this.id)">Copy</button>
+        <div class="message-data text-end" id="text"></div>${msgText}</div>
         `;
     }
     chatBox.appendChild(msgChild);
     msgChild.scrollIntoView()
 };
 
-
+function copyElementText(id) {
+    var text = document.getElementById(id).innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+}
 // run when user press enter on chat input box
 askGpt.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
