@@ -276,10 +276,9 @@
 <script src="assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
 <script src="assets/js/photoswipe/photoswipe.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
-<script src="assets/js/datepicker/date-picker/datepicker.js"></script>
-<script src="assets/js/datepicker/date-picker/datepicker.en.js"></script>
-<script src="assets/js/datepicker/date-picker/datepicker.custom.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+
+<script src="assets/js/height-equal.js"></script>
+<script src="assets/js/chart/morris-chart/raphael.js"></script>
   <script src="assets/js/chart/morris-chart/morris.js"> </script>
   <script src="assets/js/chart/morris-chart/morris-script.js"></script>
 <?php include('partial/footer-end.php'); ?>
