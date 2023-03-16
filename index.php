@@ -142,10 +142,10 @@
             </div>
           </div>
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box" style="min-height: 23rem;">
+              <div class="card balance-box height-equal-2">
                   <div class="card-body d-flex align-items-center justify-content-center">
                       <div class="balance-profile">
-                      <h6>Afisare sold/debit cont bancar in timp real</h6>
+                      <h5>Afisare sold/debit cont bancar in timp real</h5>
                       <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
                           <img src="assets/images/banci/bt.png" style="width: 10rem" alt="user vector">
                       </div>
@@ -178,10 +178,10 @@
               </div>
           </div>
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box" style="min-height: 23rem;">
+              <div class="card balance-box height-equal-2">
                   <div class="card-body d-flex align-items-center justify-content-center">
                       <div class="balance-profile">
-                      <h6>Afisare sold/debit cont bancar in timp real</h6>
+                      <h5>Afisare sold/debit cont bancar in timp real</h5>
                       <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
                           <img src="assets/images/banci/revolut.png"style="width: 10rem" alt="user vector">
                       </div>
@@ -214,7 +214,7 @@
               </div>
           </div>
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box" style="min-height: 23rem;">
+              <div class="card balance-box height-equal-2">
                   <div class="card-body df-flex align-items-center justify-content-center"> 
                     <h3>CURS VALUTAR - <span id="curs-data"></span></h3>
                     <hr>
@@ -229,7 +229,7 @@
               </div>
           </div>
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box" style="min-height: 23rem;">
+              <div class="card balance-box height-equal-2">
                   <div class="card-body df-flex align-items-center justify-content-center"> 
                     <script>
                       (function(d, s, id) {
