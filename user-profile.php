@@ -228,6 +228,7 @@
               center: "title",
               right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth"
           },
+          lang: 'ro',
           events: [
           {
             title: 'Task IT',
