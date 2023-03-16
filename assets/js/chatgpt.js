@@ -77,7 +77,7 @@ function addMessage(msgLoc, msgText) {
     } else {
         msgChild.innerHTML = `
         <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
-        <div class="message-data" style="cursor:pointer" title="Copiaza" id="text" onclick="copyElementText(this.id)">${msgText}</div>
+        <div class="message-data" style="cursor:pointer" title="Copiaza"  onclick="copyElementText(this.id)">${msgText}</div>
         `;
     }
     chatBox.appendChild(msgChild);
