@@ -221,9 +221,19 @@
           initialView: 'dayGridMonth',
           events: [
           {
-            title: 'BCH237',
+            title: 'Task IT',
             start: '2023-03-12T10:30:00',
             end: '2023-03-21T11:30:00',
+            extendedProps: {
+              department: 'BioChemistry'
+            },
+            description: 'Lecture'
+          },
+          
+          {
+            title: 'Task Consulanti',
+            start: '2023-03-16T10:30:00',
+            end: '2023-03-22T11:30:00',
             extendedProps: {
               department: 'BioChemistry'
             },
