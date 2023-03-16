@@ -165,9 +165,7 @@
                 <div class="col-md-6">
                 <div class="card height-equal-2"> 
                   <div class="card-body">
-                    <div class="default-datepicker">
-                      <div class="datepicker-here" data-language="en"></div>
-                    </div>
+                    <div id="calendar"></div>
                   </div>
                 </div>
                 </div>
@@ -215,16 +213,25 @@
         <?php include('partial/footer.php');?>
     </div>
 </div>
-
+<script defer>
+  document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+</script>
 <?php include('partial/scripts.php'); ?>
 <script src="assets/js/counter/jquery.waypoints.min.js"></script>
 <script src="assets/js/counter/jquery.counterup.min.js"></script>
 <script src="assets/js/counter/counter-custom.js"></script>
+<script src="assets/js/calendar/fullcalendar.min.js"></script>
 <script src="assets/js/photoswipe/photoswipe.min.js"></script>
 <script src="assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
 <script src="assets/js/photoswipe/photoswipe.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
-    <script src="assets/js/datepicker/date-picker/datepicker.js"></script>
-    <script src="assets/js/datepicker/date-picker/datepicker.en.js"></script>
-    <script src="assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+<script src="assets/js/datepicker/date-picker/datepicker.js"></script>
+<script src="assets/js/datepicker/date-picker/datepicker.en.js"></script>
+<script src="assets/js/datepicker/date-picker/datepicker.custom.js"></script>
 <?php include('partial/footer-end.php'); ?>
