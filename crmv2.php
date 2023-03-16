@@ -276,6 +276,7 @@
         <script src="assets/js/chart/morris-chart/morris-script.js"></script>
         <script src="assets/js/tooltip-init.js"></script>
         <script src="assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/js/datatable/datatables/datatable.custom.js"></script>
 
         <!-- Plugins JS Ends-->
         <script>
