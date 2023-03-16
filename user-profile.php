@@ -216,6 +216,7 @@
         <?php include('partial/footer.php');?>
     </div>
 </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.9.1/lang-all.js"></script>
 <script defer>
   
   document.addEventListener('DOMContentLoaded', function() {
