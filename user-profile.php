@@ -217,19 +217,19 @@
     </div>
 </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.9.1/lang-all.js"></script>
-<script defer>
+<script>
   
   document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
         
         var calendar = new FullCalendar.Calendar(calendarEl, {
+          lang: 'ro',
           initialView: 'dayGridMonth',
           headerToolbar: {
               left: "prev,next today",
               center: "title",
               right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth"
           },
-          lang: 'ro',
           events: [
           {
             title: 'Task IT',
