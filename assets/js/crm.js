@@ -153,6 +153,7 @@ function addcrmTable1Row(id, name, phone, email, status) {
                 "innerHTML": email
             }, {
                 "tag": "td",
+                "class": "position-relative",
                 "children": [
                     {
                         "tag": "button",
