@@ -819,6 +819,7 @@
             if (data.result === 'success') {
             const rates = data.conversion_rates;
             const cursValutar = document.getElementById('curs-valutar4').innerText = `${rates.RON.toFixed(4)}`;
+            console.log(rates)
             } else {
             console.error('Eroare:', data['error-type']);
             }
