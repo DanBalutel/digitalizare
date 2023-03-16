@@ -241,24 +241,24 @@
                      <li><a href="#"><img src="assets/images/meniu/e-factura.png" height="50" alt=""></a></li>
                      <li><a href="#"><img src="assets/images/meniu/smartbill.png" height="50" alt=""></a></li>
                      <li><a href="#"><img src="assets/images/meniu/software.png" height="20" alt=""></a></li>
-                     <li><a href="product.php">Emite oferta (ProForma)</a></li>
-                     <li><a href="product-page.php">Incasari</a></li>
-                     <li><a href="list-products.php">Plati</a></li>
-                     <li><a href="product.php">Rapoarte</a></li>
-                     <li><a href="product-page.php">Alerte facturi restante</a></li>
-                     <li><a href="list-products.php">TVA de platit</a></li>
-                     <li><a href="product.php">TVA de recuperat</a></li>
-                     <li><a href="product-page.php">BUGETELE ASIG.SOC. SI FD.SPEC.</a></li>
-                     <li><a href="list-products.php">BUGETUL DE STAT CONT. ASIG.</a></li>
-                     <li><a href="product.php">Incarca facturi electronice de la clienti</a></li>
-                     <li><a href="product-page.php">Registru de casa</a></li>
-                     <li><a href="list-products.php">Rapoarte Facturi</a></li>
-                     <li><a href="product.php">Serii documente</a></li>
-                     <li><a href="product-page.php">Jurnal banca</a></li>
-                     <li><a href="list-products.php">Rapoarte Avize</a></li>
-                     <li><a href="product.php">Rapoarte Proforme</a></li>
-                     <li><a href="product-page.php">Exporta Factura</a></li>
-                     <li><a href="list-products.php">Exporta E-factura</a></li>
+                     <li><a href="#">Emite oferta (ProForma)</a></li>
+                     <li><a href="#">Incasari</a></li>
+                     <li><a href="#">Plati</a></li>
+                     <li><a href="#">Rapoarte</a></li>
+                     <li><a href="#">Alerte facturi restante</a></li>
+                     <li><a href="#">TVA de platit</a></li>
+                     <li><a href="#">TVA de recuperat</a></li>
+                     <li><a href="#">BUGETELE ASIG.SOC. SI FD.SPEC.</a></li>
+                     <li><a href="#">BUGETUL DE STAT CONT. ASIG.</a></li>
+                     <li><a href="#">Incarca facturi electronice de la clienti</a></li>
+                     <li><a href="#">Registru de casa</a></li>
+                     <li><a href="#">Rapoarte Facturi</a></li>
+                     <li><a href="#">Serii documente</a></li>
+                     <li><a href="#">Jurnal banca</a></li>
+                     <li><a href="#">Rapoarte Avize</a></li>
+                     <li><a href="#">Rapoarte Proforme</a></li>
+                     <li><a href="#">Exporta Factura</a></li>
+                     <li><a href="#">Exporta E-factura</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
