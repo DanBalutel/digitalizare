@@ -279,6 +279,7 @@
 <script src="assets/js/datepicker/date-picker/datepicker.js"></script>
 <script src="assets/js/datepicker/date-picker/datepicker.en.js"></script>
 <script src="assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
   <script src="assets/js/chart/morris-chart/morris.js"> </script>
   <script src="assets/js/chart/morris-chart/morris-script.js"></script>
 <?php include('partial/footer-end.php'); ?>
