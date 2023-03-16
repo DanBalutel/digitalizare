@@ -6,7 +6,7 @@ class ElementHandler {
     }
 
     // add Element
-    a(id) {
+    element(id) {
         if (this.e[id]) {
             console.log('element already added');
             return this.e[id];
@@ -20,7 +20,7 @@ class ElementHandler {
     }
 
     // Remove Element
-    r(id) {
+    remove(id) {
         if (this.e[id]) {
             this.e[id].parentNode.removeChild(element);
             delete this.e[id];
@@ -35,7 +35,7 @@ class ElementHandler {
     }
 
     // Create Event Handler
-    ch(id, type, handler) {
+    createHandler(id, type, handler) {
         if (this.e[id]) {
             const element = this.e[id];
             if (element) {
@@ -50,18 +50,18 @@ class ElementHandler {
     }
 
     // Create Element from JSON
-    c(json, parent) {
+    createElement(json, parent) {
         const element = document.createElement(json.tag);
         element.classList = (json.class);
         element.id = (json.id);
 
-        // for (const [attr, value] of Object.entries(json.attrs)) {
-        //     element.setAttribute(attr, value);
-        // }
-        // for (const childJSON of json.children) {
-        //     const childElement = this.createElementFromJSON(childJSON);
-        //     element.appendChild(childElement);
-        // }
+        for (const [attr, value] of Object.entries(json.attrs)) {
+            element.setAttribute(attr, value);
+        }
+        for (const childJSON of json.children) {
+            const childElement = this.createElementFromJSON(childJSON);
+            element.appendChild(childElement);
+        }
         if (parent) {
             parent.appendChild(element);
         }
@@ -107,12 +107,12 @@ function logOut() {
 console.log('test');
 
 
-d.a('profileImg');
-d.a('profileDropdown');
+d.element('profileImg');
+d.element('profileDropdown');
 function toggleSubmenu() {
-    d.a('profileDropdown').classList.toggle("active");
+    d.element('profileDropdown').classList.toggle("active");
 }
-d.ch('profileImg', 'click', toggleSubmenu);
+d.createHandler('profileImg', 'click', toggleSubmenu);
 
 const dateNow = document.getElementById('dateNow');
 const today = new Date();
@@ -121,10 +121,10 @@ const month = (today.getMonth() + 1).toString().padStart(2, '0');
 const year = today.getFullYear().toString();
 dateNow.innerHTML = `Log in ${day}/${month}/${year}`;
 
-d.a('timerWork')
+d.element('timerWork')
 function hideTime() {
     setTimeout(function () {
-        d.a('timer')
+        d.element('timer')
         d.e.timerWork.innerHTML = "🟢"
         d.e.timerWork.classList.toggle('timerBlink');
     }, 5000);
@@ -137,4 +137,4 @@ function showTimeOnClick() {
     d.e.timerWork.innerHTML = `🟢 <span id="timer"></span>`;
     hideTime();
 }
-d.ch('timerWork', 'click', showTimeOnClick)
+d.createHandler('timerWork', 'click', showTimeOnClick);
