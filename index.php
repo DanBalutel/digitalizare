@@ -857,7 +857,7 @@
             if (data.result === 'success') {
             const rates = data.conversion_rates;
             const cursValutar = document.getElementById('curs-valutar4').innerText = `${rates.RON.toFixed(4)}`;
-            document.getElementById('curs-data').innerText = data.time_last_update_utc;
+            document.getElementById('curs-data').innerText = data.time_last_update_utc.toLocaleDateString("en-US", { day: 'numeric', month: 'short', year: 'numeric' });;
 
 
             } else {
