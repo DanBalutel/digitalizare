@@ -210,6 +210,7 @@ for (i in crmTable1) {
     // toggle button
     function toggleCrmDropdown1() {
         d.element(`cT1dm${id}`).classList.toggle("show");
+        alert("debug");
     }
     d.createHandler(`cT1status${id}`, "click", toggleCrmDropdown1);
 
