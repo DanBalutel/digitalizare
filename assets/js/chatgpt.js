@@ -71,7 +71,7 @@ function addMessage(msgLoc, msgText) {
     if (msgLoc === 'right') {
         msgChild.innerHTML = `
             <div id="chat-feed" class="message other-message pull-right"><img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
-                <div class="message-data" id="text">${msgText}
+                <div class="message-data">${msgText}
             </div>
         `;
     } else {
