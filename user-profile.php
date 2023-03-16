@@ -243,7 +243,6 @@
             title: 'Task Consulanti',
             start: '2023-03-16T10:30:00',
             end: '2023-03-22T11:30:00',
-            backgroundColor: '#0000ff',
             extendedProps: {
               department: 'Consultanti'
             },
