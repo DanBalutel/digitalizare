@@ -142,10 +142,10 @@
             </div>
           </div>
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box" id="card-4">
+              <div class="card balance-box" style="min-height: 26rem;">
                   <div class="card-body d-flex align-items-center justify-content-center">
                       <div class="balance-profile">
-                      <h5>Afisare sold/debit cont bancar in timp real</h5>
+                      <h6>Afisare sold/debit cont bancar in timp real</h5>
                       <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
                           <img src="assets/images/banci/bt.png" style="width: 10rem" alt="user vector">
                       </div>
@@ -178,10 +178,10 @@
               </div>
           </div>
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box " id="card-1">
+              <div class="card balance-box" style="min-height: 26rem;">
                   <div class="card-body d-flex align-items-center justify-content-center">
                       <div class="balance-profile">
-                      <h5>Afisare sold/debit cont bancar in timp real</h5>
+                      <h6>Afisare sold/debit cont bancar in timp real</h6>
                       <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
                           <img src="assets/images/banci/revolut.png"style="width: 10rem" alt="user vector">
                       </div>
@@ -214,7 +214,7 @@
               </div>
           </div>
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box" id="card-2">
+              <div class="card balance-box" style="min-height: 26rem;">
                   <div class="card-body df-flex align-items-center justify-content-center"> 
                     <h3>CURS VALUTAR - <span id="curs-data"></span></h3>
                     <hr>
@@ -229,7 +229,7 @@
               </div>
           </div>
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box"  id="card-3">
+              <div class="card balance-box" style="min-height: 26rem;">
                   <div class="card-body df-flex align-items-center justify-content-center"> 
                     <script>
                       (function(d, s, id) {
@@ -265,7 +265,8 @@
                         <img
                           alt="Powered by the Tomorrow.io Weather API"
                           src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-                          style="width: 10rem; heigth: 20rem"
+                          width="250"
+                          height="18"
                         />
                       </a>
                     </div>
