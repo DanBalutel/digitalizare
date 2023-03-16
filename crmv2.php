@@ -180,9 +180,9 @@
                                                 <td>john@example.com</td>
                                                 <td> 
                                                 <div class="btn-group" role="group">
-                                                    <button class="btn btn-success dropdown-toggle" id="btnGroupVerticalDrop1" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Interesat</button>
+                                                    <button class="btn btn-danger dropdown-toggle" id="btnGroupVerticalDrop1" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Neinteresat</button>
                                                     <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1" style="">
-                                                        <a class="dropdown-item btn btn-danger" href="#">Neinteresat</a>
+                                                        <a class="dropdown-item btn btn-danger" href="#">Interesat</a>
                                                         <a class="dropdown-item btn btn-warning" href="#">Nu stie</a>
                                                     </div>
                                                 </div>
