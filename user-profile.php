@@ -218,7 +218,23 @@
   document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth'
+          initialView: 'dayGridMonth',
+          events: [
+          {
+            title: 'BCH237',
+            start: '2023-03-12T10:30:00',
+            end: '2023-03-21T11:30:00',
+            extendedProps: {
+              department: 'BioChemistry'
+            },
+            description: 'Lecture'
+          }
+          // more events ...
+        ],
+        eventDidMount: function(info) {
+          console.log(info.event.extendedProps);
+          // {description: "Lecture", department: "BioChemistry"}
+        }
         });
         calendar.render();
       });
