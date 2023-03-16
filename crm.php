@@ -32,7 +32,11 @@
 
 
 
-                                        <div class="btn btn-primary mb-3">descarca model CSV</div>
+                                        <button class="btn btn-primary mb-3" id="downloadExcel">Exporta in Excel</button>
+
+                                        <input class="form-control" type="file" id="uploadExcel" accept=".xlsx" />
+                                        <button class="btn btn-primary mb-3" id="processExcel">Importa din Excel</button>
+
 
                                         <table class="display dataTable" id="multilevel-btn" role="grid" aria-describedby="multilevel-btn_info">
                                             <thead>
@@ -95,6 +99,7 @@
 <script src="assets/js/chart/morris-chart/morris-script.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
 <script src="assets/js/crm.js"></script>
 <!-- Plugins JS Ends-->
 <script>
