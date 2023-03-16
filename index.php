@@ -265,8 +265,7 @@
                         <img
                           alt="Powered by the Tomorrow.io Weather API"
                           src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-                          width="250"
-                          height="18"
+                          style="width: 10rem; heigth: 20rem"
                         />
                       </a>
                     </div>
