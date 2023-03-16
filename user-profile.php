@@ -234,7 +234,7 @@
             start: '2023-03-12T10:30:00',
             end: '2023-03-21T11:30:00',
             extendedProps: {
-              department: 'BioChemistry'
+              department: 'IT'
             },
             description: 'Lecture'
           },
@@ -245,7 +245,7 @@
             end: '2023-03-22T11:30:00',
             backgroundColor: '#0000ff',
             extendedProps: {
-              department: 'BioChemistry'
+              department: 'Consultanti'
             },
             description: 'Lecture'
           }
@@ -253,7 +253,7 @@
         ],
         eventDidMount: function(info) {
           console.log(info.event.extendedProps);
-          // {description: "Lecture", department: "BioChemistry"}
+          {description: "Lecture", department: "IT"}
         }
         });
         calendar.render();
