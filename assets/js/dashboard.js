@@ -678,7 +678,7 @@ if (window.localStorage.dataObj) {
     dataObj = JSON.parse(window.localStorage.dataObj);
 
     // temp we add if check for login
-    if (window.location.pathname !== "/area4u") {
+    if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
         populatePage();
     }
 
@@ -687,7 +687,7 @@ if (window.localStorage.dataObj) {
 } else {
 
     // temp we add if check for login
-    if (window.location.pathname !== "/area4u") {
+    if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
 
         let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
         if (codulCUI == null || codulCUI == "") {
@@ -695,6 +695,7 @@ if (window.localStorage.dataObj) {
         } else {
             window.location.href = window.location.href + `?cui=${codulCUI}`;
         }
+        console.log(window.location.pathname);
     }
 }
 
@@ -721,7 +722,7 @@ function fetchAuth(cuiValue) {
         .then((response) => {
             //   document.getElementById("demoShow").innerHTML = response;
             dataJson = response;
-            if (dataJson.DateGenerale = undefined && window.location.pathname !== "/area4u") {
+            if (dataJson.DateGenerale = undefined && (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php")) {
                 let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
                 if (codulCUI == null || codulCUI == "") {
                     window.location.href = window.location.href;
@@ -739,7 +740,7 @@ function fetchAuth(cuiValue) {
             });
 
             // temp we add if check for login
-            if (window.location.pathname !== "/area4u") {
+            if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
                 populatePage();
             }
 
@@ -767,7 +768,7 @@ function populatePage() {
 
     function findAdministrator(id) {
         const positionName = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.administratori[id].functie;
-        if (positionName === 'administrator') {
+        if (positionName.includes('administrator')) {
             return dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.administratori[id];
         } else {
             const idplus = id + 1; // increment id by 1 using the + operator instead of ++ 
@@ -777,75 +778,77 @@ function populatePage() {
     };
 
 
-    const administrator = findAdministrator(0);
+    try {
 
-    const loggedName = document.getElementById('loggedName');
-    loggedName.innerHTML = administrator.nume;
-    const loggedPosition = document.getElementById('loggedPosition');
-    loggedPosition.innerHTML = 'Administrator';
+        const administrator = findAdministrator(0);
 
-    const loggedNameProfile = document.getElementById('loggedNameProfile');
-    if (loggedNameProfile) {
+        const loggedName = document.getElementById('loggedName');
+        loggedName.innerHTML = administrator.nume;
+        const loggedPosition = document.getElementById('loggedPosition');
+        loggedPosition.innerHTML = 'Administrator';
 
-        loggedNameProfile.innerHTML = administrator.nume;
-        const loggedPositionProfile = document.getElementById('loggedPositionProfile');
-        loggedPositionProfile.innerHTML = 'Administrator';
+        const loggedNameProfile = document.getElementById('loggedNameProfile');
+        if (loggedNameProfile) {
 
-        const adresa = document.getElementById('adresa');
-        adresa.innerHTML = administrator.adresa;
-        document.getElementById('numeBuletin').value = administrator.nume;
+            loggedNameProfile.innerHTML = administrator.nume;
+            const loggedPositionProfile = document.getElementById('loggedPositionProfile');
+            loggedPositionProfile.innerHTML = 'Administrator';
 
-        const dataNastere = document.getElementById('dataNastere');
-        dataNastere.innerHTML = administrator.dataNastere.slice(8, 10) + '.' + administrator.dataNastere.slice(5, 7) + '.' + administrator.dataNastere.slice(0, 4);
-    }
+            const adresa = document.getElementById('adresa');
+            adresa.innerHTML = administrator.adresa;
+            document.getElementById('numeBuletin').value = administrator.nume;
 
-
-
-    console.log(dataObj)
-
-    // temp we render here all DOOM elements
-    const name = document.getElementById('name');
-    d.a('dash').innerHTML = dataObj.DateGenerale.nume;
-    d.a('nameAdmin').innerHTML = administrator.nume;
-    if (name) {
-        name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: ${administrator.nume}`;
-        const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
-        chartSituatieFianciara.innerHTML = `Situatie finaciara ${dataObj.DateGenerale.nume}`;
-
-        const blockCA = document.getElementById('cifra-de-afaceri');
-        blockCA.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_cifra_de_afaceri.data.pop().y).toLocaleString('en-US');;
-
-        const blockProfit = document.getElementById('profit-actual');
-        blockProfit.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_profit_pierdere.data.pop().y).toLocaleString('en-US');
-
-        const mapAnaf = document.getElementById('mapAnaf');
-        const addresAnaf = encodeURIComponent(dataObj.DateGenerale.adresa);
-        mapAnaf.innerHTML = '<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=' + addresAnaf + '&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>';
-
-        const locuriMunca = document.getElementById('locuri-munca');
-        locuriMunca.innerHTML = dataObj.Bilanturi[0].numar_mediu_angajati;
-
-        const codCAEN = document.getElementById('cod-caen');
-        codCAEN.innerHTML = dataObj.Bilanturi[0].cod_caen;
-        const numeCAEN = document.getElementById('nume-caen');
-        numeCAEN.innerHTML = listCaen[codCAEN.innerHTML];
-
-        const activeTotale = document.getElementById('active-totale');
-        const activeTotaleData = parseFloat(dataObj.Bilanturi[0].active_circulante) + parseFloat(dataObj.Bilanturi[0].active_imobilizate);
-        activeTotale.innerHTML = activeTotaleData.toLocaleString('en-US')
+            const dataNastere = document.getElementById('dataNastere');
+            dataNastere.innerHTML = administrator.dataNastere.slice(8, 10) + '.' + administrator.dataNastere.slice(5, 7) + '.' + administrator.dataNastere.slice(0, 4);
+        }
 
 
-        const nrStocuri = document.getElementById('nr-stocuri');
-        nrStocuri.innerHTML = parseFloat(dataObj.Bilanturi[0].stocuri).toLocaleString('en-US');
+        // debug
+        console.log(dataObj)
 
-        const casaConturi = document.getElementById('casa-conturi');
-        casaConturi.innerHTML = parseFloat(dataObj.Bilanturi[0].casa_si_conturi_la_banci).toLocaleString('en-US');
+        // temp we render here all DOOM elements
+        const name = document.getElementById('name');
+        d.element('dash').innerHTML = dataObj.DateGenerale.nume;
+        d.element('nameAdmin').innerHTML = administrator.nume;
+        if (name) {
+            name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: ${administrator.nume}`;
+            const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
+            chartSituatieFianciara.innerHTML = `Situatie finaciara ${dataObj.DateGenerale.nume}`;
 
-        const capitalTotal = document.getElementById('capital-total');
-        capitalTotal.innerHTML = parseFloat(dataObj.Bilanturi[0].capital_total).toLocaleString('en-US');
+            const blockCA = document.getElementById('cifra-de-afaceri');
+            blockCA.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_cifra_de_afaceri.data.pop().y).toLocaleString('en-US');;
 
-        const dateGenerale = document.getElementById('dateGenerale');
-        dateGenerale.innerHTML = `
+            const blockProfit = document.getElementById('profit-actual');
+            blockProfit.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_profit_pierdere.data.pop().y).toLocaleString('en-US');
+
+            const mapAnaf = document.getElementById('mapAnaf');
+            const addresAnaf = encodeURIComponent(dataObj.DateGenerale.adresa);
+            mapAnaf.innerHTML = '<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=' + addresAnaf + '&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>';
+
+            const locuriMunca = document.getElementById('locuri-munca');
+            locuriMunca.innerHTML = dataObj.Bilanturi[0].numar_mediu_angajati;
+
+            const codCAEN = document.getElementById('cod-caen');
+            codCAEN.innerHTML = dataObj.Bilanturi[0].cod_caen;
+            const numeCAEN = document.getElementById('nume-caen');
+            numeCAEN.innerHTML = listCaen[codCAEN.innerHTML];
+
+            const activeTotale = document.getElementById('active-totale');
+            const activeTotaleData = parseFloat(dataObj.Bilanturi[0].active_circulante) + parseFloat(dataObj.Bilanturi[0].active_imobilizate);
+            activeTotale.innerHTML = activeTotaleData.toLocaleString('en-US')
+
+
+            const nrStocuri = document.getElementById('nr-stocuri');
+            nrStocuri.innerHTML = parseFloat(dataObj.Bilanturi[0].stocuri).toLocaleString('en-US');
+
+            const casaConturi = document.getElementById('casa-conturi');
+            casaConturi.innerHTML = parseFloat(dataObj.Bilanturi[0].casa_si_conturi_la_banci).toLocaleString('en-US');
+
+            const capitalTotal = document.getElementById('capital-total');
+            capitalTotal.innerHTML = parseFloat(dataObj.Bilanturi[0].capital_total).toLocaleString('en-US');
+
+            const dateGenerale = document.getElementById('dateGenerale');
+            dateGenerale.innerHTML = `
     <span>
     <h4>Detalii generale</h4><br>
     CUI: <h6>${dataObj.DateGenerale.cui}</h6><br>
@@ -861,182 +864,184 @@ function populatePage() {
     </span>
     `;
 
-        const dateNow = document.getElementById('dateNow');
-        const today = new Date();
-        const day = today.getDate().toString().padStart(2, '0');
-        const month = (today.getMonth() + 1).toString().padStart(2, '0');
-        const year = today.getFullYear().toString();
-        dateNow.innerHTML = `Log in ${day}/${month}/${year}`;
+            const dateNow = document.getElementById('dateNow');
+            const today = new Date();
+            const day = today.getDate().toString().padStart(2, '0');
+            const month = (today.getMonth() + 1).toString().padStart(2, '0');
+            const year = today.getFullYear().toString();
+            dateNow.innerHTML = `Log in ${day}/${month}/${year}`;
 
 
-        // BLOCKS HEIGHT IN DASHBOARD
+            // BLOCKS HEIGHT IN DASHBOARD
 
-        // carduri 4 prima linie
-        const ids0 = ["card1", "card2", "card3", "card4"];
-        // blocurile de exemplu date generale
-        const ids1 = ["cardExemplu", "cardDateGenerale"];
-        // harta si asociatii
-        const ids2 = ["cardAF", "cardAsoc"];
-        // rentabilitatea si situatia fnanciara
-        const ids3 = ["cardRA", "cardSF"];
+            // carduri 4 prima linie
+            const ids0 = ["card1", "card2", "card3", "card4"];
+            // blocurile de exemplu date generale
+            const ids1 = ["cardExemplu", "cardDateGenerale"];
+            // harta si asociatii
+            const ids2 = ["cardAF", "cardAsoc"];
+            // rentabilitatea si situatia fnanciara
+            const ids3 = ["cardRA", "cardSF"];
 
-        setMaxHeight(ids0);
-        setMaxHeight(ids1);
-        setMaxHeight(ids2);
-        setMaxHeight(ids3);
-
-
-
-
-        const chartAsociati = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.asociati;
-        const listNameAsociati = [];
-        const listCotaAsociati = [];
-
-        for (const asoc in chartAsociati) {
-            listNameAsociati.push(chartAsociati[asoc].nume);
-            listCotaAsociati.push(parseFloat(chartAsociati[asoc].procentaj));
-
-        };
-
-        // pie chart
-        var options8 = {
-            chart: {
-                width: 500,
-                type: 'pie',
-            },
-            series: listCotaAsociati,
-            labels: listNameAsociati,
-            responsive: [{
-                breakpoint: 480,
-                options: {
-                    chart: {
-                        width: 400
-                    },
-                    legend: {
-                        show: false
-                    }
-                }
-            }],
-            colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, '#51bb25', '#a927f9', '#f8d62b']
-        }
-
-        var chart8 = new ApexCharts(
-            document.querySelector("#piechart"),
-            options8
-        );
-
-        chart8.render();
-
-        // basic area chart
-        const chartProdMunc = dataObj.Bilanturi;
-        const listNrAngaj = [];
-        const listAni = [];
-
-        function roundOf(n, p) {
-            const n1 = n * Math.pow(10, p + 1);
-            const n2 = Math.floor(n1 / 10);
-            if (n1 >= (n2 * 10 + 5)) {
-                return (n2 + 1) / Math.pow(10, p);
-            }
-            return n2 / Math.pow(10, p);
-        }
-
-        for (const prod in chartProdMunc) {
-            roundOf(listNrAngaj.unshift(parseInt(chartProdMunc[prod].cifra_de_afaceri_neta) / parseInt(chartProdMunc[prod].numar_mediu_angajati))).toFixed(2);
-            roundOf(listAni.unshift(chartProdMunc[prod].an)).toFixed(2);;
-        };
-
-        var options = {
-            chart: {
-                height: 350,
-                type: 'area',
-                zoom: {
-                    enabled: false
-                },
-                toolbar: {
-                    show: false
-                }
-            },
-            dataLabels: {
-                enabled: false
-            },
-            stroke: {
-                curve: 'straight'
-            },
-            series: [{
-                name: "STOCK ABC",
-                data: listNrAngaj
-            }],
-            labels: listAni,
-            xaxis: {
-                type: 'yeartime',
-            },
-            yaxis: {
-                opposite: true
-            },
-            legend: {
-                horizontalAlign: 'left'
-            },
-            colors: [CubaAdminConfig.primary]
-
-        }
-
-        var chart = new ApexCharts(
-            document.querySelector("#basic-apex"),
-            options
-        );
-
-        chart.render();
-
-
-        // situatiile financiare
-        constSitFin = [];
-        const chartDataCA = dataObj.detalii_grafice.grafice_cifra_de_afaceri.data;
-        const chartDataPP = dataObj.detalii_grafice.grafice_profit_pierdere.data;
-        const chartDataDa = dataObj.detalii_grafice.grafice_datorii.data;
-
-        // for (const pP in chartDataPP) {
+            setMaxHeight(ids0);
+            setMaxHeight(ids1);
+            setMaxHeight(ids2);
+            setMaxHeight(ids3);
 
 
 
-        // };
 
-        const minLen = Math.min(chartDataCA.length, chartDataPP.length, chartDataDa.length);
-        console.log(`lungimea minima e de: ${minLen}`);
+            const chartAsociati = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.asociati;
+            const listNameAsociati = [];
+            const listCotaAsociati = [];
 
-        for (i = 0; i < minLen; i++) {
-            console.log(i);
-            const temp = {
-                x: `${chartDataCA[i].an}`,
-                y: parseInt(chartDataCA[i].y),
-                z: parseInt(chartDataPP[i].y),
-                a: parseInt(chartDataDa[i].y)
+            for (const asoc in chartAsociati) {
+                listNameAsociati.push(chartAsociati[asoc].nume);
+                listCotaAsociati.push(parseFloat(chartAsociati[asoc].procentaj));
+
             };
 
-            constSitFin.push(temp);
+            // pie chart
+            var options8 = {
+                chart: {
+                    width: 500,
+                    type: 'pie',
+                },
+                series: listCotaAsociati,
+                labels: listNameAsociati,
+                responsive: [{
+                    breakpoint: 480,
+                    options: {
+                        chart: {
+                            width: 400
+                        },
+                        legend: {
+                            show: false
+                        }
+                    }
+                }],
+                colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, '#51bb25', '#a927f9', '#f8d62b']
+            }
+
+            var chart8 = new ApexCharts(
+                document.querySelector("#piechart"),
+                options8
+            );
+
+            chart8.render();
+
+            // basic area chart
+            const chartProdMunc = dataObj.Bilanturi;
+            const listNrAngaj = [];
+            const listAni = [];
+
+            function roundOf(n, p) {
+                const n1 = n * Math.pow(10, p + 1);
+                const n2 = Math.floor(n1 / 10);
+                if (n1 >= (n2 * 10 + 5)) {
+                    return (n2 + 1) / Math.pow(10, p);
+                }
+                return n2 / Math.pow(10, p);
+            }
+
+            for (const prod in chartProdMunc) {
+                roundOf(listNrAngaj.unshift(parseInt(chartProdMunc[prod].cifra_de_afaceri_neta) / parseInt(chartProdMunc[prod].numar_mediu_angajati))).toFixed(2);
+                roundOf(listAni.unshift(chartProdMunc[prod].an)).toFixed(2);;
+            };
+
+            var options = {
+                chart: {
+                    height: 350,
+                    type: 'area',
+                    zoom: {
+                        enabled: false
+                    },
+                    toolbar: {
+                        show: false
+                    }
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                stroke: {
+                    curve: 'straight'
+                },
+                series: [{
+                    name: "STOCK ABC",
+                    data: listNrAngaj
+                }],
+                labels: listAni,
+                xaxis: {
+                    type: 'yeartime',
+                },
+                yaxis: {
+                    opposite: true
+                },
+                legend: {
+                    horizontalAlign: 'left'
+                },
+                colors: [CubaAdminConfig.primary]
+
+            }
+
+            var chart = new ApexCharts(
+                document.querySelector("#basic-apex"),
+                options
+            );
+
+            chart.render();
+
+
+            // situatiile financiare
+            constSitFin = [];
+            const chartDataCA = dataObj.detalii_grafice.grafice_cifra_de_afaceri.data;
+            const chartDataPP = dataObj.detalii_grafice.grafice_profit_pierdere.data;
+            const chartDataDa = dataObj.detalii_grafice.grafice_datorii.data;
+
+            // for (const pP in chartDataPP) {
+
+
+
+            // };
+
+            const minLen = Math.min(chartDataCA.length, chartDataPP.length, chartDataDa.length);
+            console.log(`lungimea minima e de: ${minLen}`);
+
+            for (i = 0; i < minLen; i++) {
+                console.log(i);
+                const temp = {
+                    x: `${chartDataCA[i].an}`,
+                    y: parseInt(chartDataCA[i].y),
+                    z: parseInt(chartDataPP[i].y),
+                    a: parseInt(chartDataDa[i].y)
+                };
+
+                constSitFin.push(temp);
+            }
+
+
+            "use strict";
+            var morris_chart = {
+                init: function () {
+                    Morris.Bar({
+                        element: "morris-simple-bar-chart",
+                        data: constSitFin,
+                        xkey: "x",
+                        ykeys: ["y", "z", "a"],
+                        barColors: [CubaAdminConfig.primary, "#51bb25", CubaAdminConfig.secondary],
+                        labels: ["Cifra de afaceri", "Profit", "Datorii"]
+                    })
+                }
+            };
+            (function ($) {
+                "use strict";
+                morris_chart.init()
+            })(jQuery);
         }
 
-
-        "use strict";
-        var morris_chart = {
-            init: function () {
-                Morris.Bar({
-                    element: "morris-simple-bar-chart",
-                    data: constSitFin,
-                    xkey: "x",
-                    ykeys: ["y", "z", "a"],
-                    barColors: [CubaAdminConfig.primary, "#51bb25", CubaAdminConfig.secondary],
-                    labels: ["Cifra de afaceri", "Profit", "Datorii"]
-                })
-            }
-        };
-        (function ($) {
-            "use strict";
-            morris_chart.init()
-        })(jQuery);
+    } catch (error) {
+        console.log(error);
     }
-
-
 
 
 
