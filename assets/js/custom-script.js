@@ -42,31 +42,42 @@ class ElementHandler {
                 element.addEventListener(type, handler);
             }
         } else {
-            const element = this.addElement(id);
+            const element = this.element(id);
             if (element) {
                 element.addEventListener(type, handler);
             }
         }
     }
 
-    // Create Element from JSON
     createElement(json, parent) {
         const element = document.createElement(json.tag);
-        element.classList = (json.class);
-        element.id = (json.id);
+        if (json.class) {
+            element.classList = (json.class);
+        }
 
-        for (const [attr, value] of Object.entries(json.attrs)) {
+        if (json.id) {
+            element.id = (json.id);
+        }
+
+        for (const [attr, value] of Object.entries(json.attrs || {})) {
             element.setAttribute(attr, value);
         }
-        for (const childJSON of json.children) {
-            const childElement = this.createElementFromJSON(childJSON);
-            element.appendChild(childElement);
+        if (json.innerHTML) {
+            element.innerHTML = json.innerHTML;
+        }
+        if (json.children) {
+            for (const childJSON of json.children) {
+                const childElement = this.createElement(childJSON);
+                element.appendChild(childElement);
+            }
         }
         if (parent) {
             parent.appendChild(element);
         }
         return element;
     }
+
+
 }
 
 const d = new ElementHandler();

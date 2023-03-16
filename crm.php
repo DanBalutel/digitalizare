@@ -32,7 +32,7 @@
 
 
 
-
+                                        <div class="btn btn-primary mb-3">descarca model CSV</div>
 
                                         <table class="display dataTable" id="multilevel-btn" role="grid" aria-describedby="multilevel-btn_info">
                                             <thead>
@@ -46,40 +46,6 @@
                                                 </tr>
                                             </thead>
                                             <tbody id="crmTable1">
-
-                                                <tr role="row" class="odd">
-                                                    <td class="sorting_1">#1</td>
-                                                    <td>Gigi Popescu</td>
-                                                    <td>0729 229 599</td>
-                                                    <td>ai@area4u.ro</td>
-                                                    <td>
-                                                        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Interesat</button>
-                                                        <div class="dropdown-menu" style="">
-                                                            <a class="dropdown-item btn btn-success" href="#">Interesat</a>
-                                                            <a class="dropdown-item btn btn-danger" href="#">Neinteresat</a>
-                                                            <a class="dropdown-item btn btn-warning" href="#">Nu stie</a>
-                                                        </div>
-                                                    </td>
-
-                                                </tr>
-
-                                                <tr role="row" class="odd">
-                                                    <td class="sorting_1">#1</td>
-                                                    <td>Gigi Popescu</td>
-                                                    <td>0729 229 599</td>
-                                                    <td>ai@area4u.ro</td>
-                                                    <td onclick="changetext()"> <span class="badge badge-danger">Ne interesat</span></td>
-
-                                                </tr>
-
-                                                <tr role="row" class="odd">
-                                                    <td class="sorting_1">#1</td>
-                                                    <td>Gigi Popescu</td>
-                                                    <td>0729 229 599</td>
-                                                    <td>ai@area4u.ro</td>
-                                                    <td> <span class="badge badge-custom">Nu stie</span></td>
-
-                                                </tr>
 
                                             </tbody>
 
