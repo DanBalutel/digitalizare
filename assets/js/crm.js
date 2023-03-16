@@ -230,6 +230,9 @@ for (i in crmTable1) {
         d.element(`cT1status${id}`).innerHTML = status;
         d.element(`cT1status${id}`).classList = `btn dropdown-toggle ${returnStatus(status)}`;
 
+        // update JSON
+        crmTable1[id-1].status = status;
+
     }
     d.createHandler(`cT1s${id}`, "click", (event) => changeStatusCrmDropdown1(event, id, `cT1s${id}`));
     d.createHandler(`cT1d${id}`, "click", (event) => changeStatusCrmDropdown1(event, id, `cT1d${id}`));
