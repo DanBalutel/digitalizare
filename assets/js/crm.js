@@ -170,31 +170,22 @@ function addcrmTable1Row(id, name, phone, email, status) {
                         "id": `cT1dm${id}`,
                         "children": [
                             {
-                                "tag": "a",
+                                "tag": "div",
                                 "class": "dropdown-item btn btn-success",
                                 "innerHTML": "Interesat",
-                                "id": `cT1s${id}`,
-                                "attrs": {
-                                    "href": "#"
-                                }
+                                "id": `cT1s${id}`
                             },
                             {
-                                "tag": "a",
+                                "tag": "div",
                                 "class": "dropdown-item btn btn-danger",
                                 "innerHTML": "Neinteresat",
-                                "id": `cT1d${id}`,
-                                "attrs": {
-                                    "href": "#"
-                                }
+                                "id": `cT1d${id}`
                             },
                             {
-                                "tag": "a",
+                                "tag": "div",
                                 "class": "dropdown-item btn btn-warning",
                                 "innerHTML": "Nu stie",
-                                "id": `cT1w${id}`,
-                                "attrs": {
-                                    "href": "#"
-                                }
+                                "id": `cT1w${id}`
                             }
                         ]
                     }
