@@ -245,7 +245,6 @@
             start: '2023-03-16T10:30:00',
             end: '2023-03-22T11:30:00',
             display: 'background',
-            backgroundColor: '#0000ff',
             extendedProps: {
               department: 'BioChemistry'
             },
