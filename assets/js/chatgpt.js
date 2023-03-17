@@ -3,6 +3,14 @@ const askGpt = document.getElementById('askGPT');
 const chatBox = document.getElementById('chatBox');
 
 
+if (localStorage.chatMoni) {
+    d.element('chatBox').innerHTML = localStorage.chatMoni
+} else {
+    localStorage.setItem('chatMoni', d.element('chatBox').innerHTML);
+}
+
+
+
 // functions
 
 // acces API with question
@@ -74,11 +82,13 @@ function addMessage(msgLoc, msgText) {
                 <div class="message-data">${msgText}
             </div>
         `;
+        localStorage.setItem('chatMoni', d.element('chatBox').innerHTML + msgChild.innerHTML);
     } else {
         msgChild.innerHTML = `
         <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
         <div class="message-data" style="cursor:pointer" title="Copiaza" id="text" onclick="copyElementText(this.innerHTML)">${msgText}</div>
         `;
+        localStorage.setItem('chatMoni', d.element('chatBox').innerHTML + msgChild.innerHTML);
     }
     chatBox.appendChild(msgChild);
     msgChild.scrollIntoView(false)
@@ -88,19 +98,19 @@ function addMessage(msgLoc, msgText) {
 function copyElementText(content) {
     const elem = document.createElement("textarea");
     document.body.appendChild(elem);
-    
+
     // Remove HTML tags from content if present
     const strippedContent = content.replace(/<[^>]+>/g, '');
-    
+
     elem.value = strippedContent;
     elem.select();
     document.execCommand("copy");
     document.body.removeChild(elem);
-    
-    swal("Succes!", "Textul a fost copiat!", "success");
-  }
 
-  
+    swal("Succes!", "Textul a fost copiat!", "success");
+}
+
+
 // run when user press enter on chat input box
 askGpt.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
