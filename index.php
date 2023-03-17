@@ -230,7 +230,7 @@
           </div>
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
               <div class="card balance-box" style="min-height: 26rem;">
-                  <div class="card-body df-flex align-items-center justify-content-center"> 
+                  <div id="card-4" class="card-body df-flex align-items-center justify-content-center"> 
                   <script>
         (function(d, s, id) {
             if (d.getElementById(id)) {

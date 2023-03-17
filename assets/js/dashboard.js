@@ -882,7 +882,7 @@ function populatePage() {
             const ids2 = ["cardAF", "cardAsoc"];
             // rentabilitatea si situatia fnanciara
             const ids3 = ["cardRA", "cardSF"];
-
+            // carduri cu banci si prognoza meteo
             const ids4 = ['card-1', 'card-2', 'card-3', 'card-4']
 
             setMaxHeight(ids0);
