@@ -883,16 +883,13 @@ function populatePage() {
             // rentabilitatea si situatia fnanciara
             const ids3 = ["cardRA", "cardSF"];
             // carduri cu banci si prognoza meteo
-            const ids4 = ['card-1', 'card-2', 'card-3', 'card-4']
+            const ids4 = ['card-1', 'card-2', 'card-3']
 
             setMaxHeight(ids0);
             setMaxHeight(ids1);
             setMaxHeight(ids2);
             setMaxHeight(ids3);
-            window.addEventListener('load', function () {
-                setMaxHeight(ids4);
-            });
-
+            setMaxHeight(ids4);
 
 
             const chartAsociati = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.asociati;

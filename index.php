@@ -15,7 +15,7 @@
       <?php
       $title = 'Dashboard';
       include('partial/breadcrumb.php')
-        ?>
+      ?>
       <!-- Container-fluid starts-->
       <div class="container-fluid">
         <div class="row g-sm-3 height-equal-2 widget-charts">
@@ -25,8 +25,7 @@
             <div class="card small-widget mb-sm-0">
               <div id="card1" class="card-body primary min-h-9"> <span class="f-light">Cifra de afaceri</span>
                 <div class="d-flex align-items-end gap-1">
-                  <h4 id="cifra-de-afaceri"></h4><span class="font-primary f-12 f-w-500"><i
-                      class="icon-arrow-up"></i><span>+50%</span></span>
+                  <h4 id="cifra-de-afaceri"></h4><span class="font-primary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
                 </div>
                 <div class="bg-gradient">
                   <svg class="stroke-icon svg-fill">
@@ -41,8 +40,7 @@
             <div class="card small-widget mb-sm-0">
               <div id="card2" class="card-body success min-h-9"><span class="f-light">Profit</span>
                 <div class="d-flex align-items-end gap-1">
-                  <h4 id="profit-actual"></h4><span class="font-success f-12 f-w-500"><i
-                      class="icon-arrow-up"></i><span>+20%</span></span>
+                  <h4 id="profit-actual"></h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
                 </div>
                 <div class="bg-gradient">
                   <svg class="stroke-icon svg-fill">
@@ -85,8 +83,7 @@
             <div class="card small-widget mb-sm-0">
               <div class="card-body secondary"> <span class="f-light">Active Totale</span>
                 <div class="d-flex align-items-end gap-1">
-                  <h4 id="active-totale"></h4><span class="font-secondary f-12 f-w-500"><i
-                      class="icon-arrow-up"></i><span>+50%</span></span>
+                  <h4 id="active-totale"></h4><span class="font-secondary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
                 </div>
                 <div class="bg-gradient">
                   <svg class="stroke-icon svg-fill">
@@ -100,8 +97,7 @@
             <div class="card small-widget mb-sm-0">
               <div class="card-body warning"><span class="f-light">Stocuri</span>
                 <div class="d-flex align-items-end gap-1">
-                  <h4 id="nr-stocuri"></h4><span class="font-warning f-12 f-w-500"><i
-                      class="icon-arrow-up"></i><span>+20%</span></span>
+                  <h4 id="nr-stocuri"></h4><span class="font-warning f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
                 </div>
                 <div class="bg-gradient">
                   <svg class="stroke-icon svg-fill">
@@ -115,8 +111,7 @@
             <div class="card small-widget mb-sm-0">
               <div class="card-body secondary"><span class="f-light">Casa si conturi in banci</span>
                 <div class="d-flex align-items-end gap-1">
-                  <h4 id="casa-conturi"></h4><span class="font-secondary f-12 f-w-500"><i
-                      class="icon-arrow-down"></i><span>-10%</span></span>
+                  <h4 id="casa-conturi"></h4><span class="font-secondary f-12 f-w-500"><i class="icon-arrow-down"></i><span>-10%</span></span>
                 </div>
                 <div class="bg-gradient">
                   <svg class="stroke-icon svg-fill">
@@ -130,8 +125,7 @@
             <div class="card small-widget mb-sm-0">
               <div class="card-body success"><span class="f-light">Capital total</span>
                 <div class="d-flex align-items-end gap-1">
-                  <h4 id="capital-total"></h4><span class="font-success f-12 f-w-500"><i
-                      class="icon-arrow-up"></i><span>+80%</span></span>
+                  <h4 id="capital-total"></h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+80%</span></span>
                 </div>
                 <div class="bg-gradient">
                   <svg class="stroke-icon svg-fill">
@@ -141,144 +135,140 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box" style="min-height: 26rem;">
-                  <div id="card-1" class="card-body d-flex justify-content-center">
-                      <div class="balance-profile">
-                      <h6>Afisare sold/debit cont bancar in timp real</h5>
-                      <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
-                          <img src="assets/images/banci/bt.png" style="width: 10rem" alt="user vector">
-                      </div>
-                      <span class="f-light d-block mt-2">Soldul </span>
-                      <h5 class="mt-1">1,987,500.90 LEI</h5>
-                      <ul> 
-                          <li>
-                          <div class="balance-item danger"> 
-                              <div class="balance-icon-wrap"> 
-                              <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-right"><line x1="7" y1="7" x2="17" y2="17"></line><polyline points="17 7 17 17 7 17"></polyline></svg></div>
-                              </div>
-                              <div> <span class="f-12 f-light">Cheltuieli  </span>
-                              <h5>78.8K</h5><span class="badge badge-light-danger rounded-pill">-11.67%</span>
-                              </div>
-                          </div>
-                          </li>
-                          <li>
-                          <div class="balance-item success">
-                              <div class="balance-icon-wrap"> 
-                              <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
-                              </div>
-                              <div> <span class="f-12 f-light">Venituri</span>
-                              <h5>19.7K</h5><span class="badge badge-light-success rounded-pill">+10.67%</span>
-                              </div>
-                          </div>
-                          </li>
-                      </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box" style="min-height: 26rem;">
-                  <div id="card-2" class="card-body d-flex justify-content-center">
-                      <div class="balance-profile">
-                      <h6>Afisare sold/debit cont bancar in timp real</h6>
-                      <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
-                          <img src="assets/images/banci/revolut.png"style="width: 10rem" alt="user vector">
-                      </div>
-                      <span class="f-light d-block mt-2">Soldul </span>
-                      <h5 class="mt-1">87,500.90 LEI</h5>
-                      <ul> 
-                          <li>
-                          <div class="balance-item danger"> 
-                              <div class="balance-icon-wrap"> 
-                              <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-right"><line x1="7" y1="7" x2="17" y2="17"></line><polyline points="17 7 17 17 7 17"></polyline></svg></div>
-                              </div>
-                              <div> <span class="f-12 f-light">Cheltuieli  </span>
-                              <h5>78.8K</h5><span class="badge badge-light-danger rounded-pill">-11.67%</span>
-                              </div>
-                          </div>
-                          </li>
-                          <li>
-                          <div class="balance-item success">
-                              <div class="balance-icon-wrap"> 
-                              <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
-                              </div>
-                              <div> <span class="f-12 f-light">Venituri</span>
-                              <h5>19.7K</h5><span class="badge badge-light-success rounded-pill">+10.67%</span>
-                              </div>
-                          </div>
-                          </li>
-                      </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box" style="min-height: 26rem;">
-                  <div id="card-3" class="card-body df-flex justify-content-center"> 
-                    <h3>CURS VALUTAR - <span id="curs-data"></span></h3>
-                    <hr>
-                    <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/eur.svg" width="50" alt=""> EUR <b id="curs-valutar2"></b><br><br>
-                      
-                    <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/usd.svg" width="50" alt=""> USD <b id="curs-valutar"></b><br><br>
-                      
-                    <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/gbp.svg" width="50" alt=""> GBP <b id="curs-valutar3"></b><br><br>
-                      
-                    <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/chf.svg" width="50" alt=""> CHF <b id="curs-valutar4"></b>
-                  </div>
-              </div>
-          </div>
-          <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
-              <div class="card balance-box" style="min-height: 26rem;">
-                  <div id="card-4" class="card-body df-flex align-items-center justify-content-center"> 
-                  <script>
-        (function(d, s, id) {
-            if (d.getElementById(id)) {
-                if (window.__TOMORROW__) {
-                    window.__TOMORROW__.renderWidget();
-                }
-                return;
-            }
-            const fjs = d.getElementsByTagName(s)[0];
-            const js = d.createElement(s);
-            js.id = id;
-            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
 
-            fjs.parentNode.insertBefore(js, fjs);
-        })(document, 'script', 'tomorrow-sdk');
-        </script>
+          <div class="col-xl-12 col-md-12 col-sm-12 box-col-12">
+            <div class="card balance-box">
+              <div class="card-body df-flex align-items-center justify-content-center">
+                <script>
+                  (function(d, s, id) {
+                    if (d.getElementById(id)) {
+                      if (window.__TOMORROW__) {
+                        window.__TOMORROW__.renderWidget();
+                      }
+                      return;
+                    }
+                    const fjs = d.getElementsByTagName(s)[0];
+                    const js = d.createElement(s);
+                    js.id = id;
+                    js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
 
-        <div class="tomorrow"
-           data-location-id=""
-           data-language="RO"
-           data-unit-system="METRIC"
-           data-skin="dark"
-           data-widget-type="aqiMini"
-           style="padding-bottom:22px;position:relative;"
-        >
-          <a
-            href="https://www.tomorrow.io/weather-api/"
-            rel="nofollow noopener noreferrer"
-            target="_blank"
-            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
-          >
-            <img
-              alt="Powered by the Tomorrow.io Weather API"
-              src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-              width="250"
-              height="18"
-            />
-          </a>
-        </div>
-                  </div>
+                    fjs.parentNode.insertBefore(js, fjs);
+                  })(document, 'script', 'tomorrow-sdk');
+                </script>
+
+                <div class="tomorrow" data-location-id="" data-language="RO" data-unit-system="METRIC" data-skin="dark" data-widget-type="aqiMini" style="padding-bottom:22px;position:relative;">
+                  <a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer" target="_blank" style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+                    <img alt="Powered by the Tomorrow.io Weather API" src="https://weather-website-client.tomorrow.io/img/powered-by.svg" width="250" height="18" />
+                  </a>
+                </div>
               </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6 col-sm-12 box-col-6">
+            <div class="card balance-box">
+              <div id="card-1" class="card-body d-flex justify-content-center">
+                <div class="balance-profile">
+                  <h6>Afisare sold/debit cont bancar in timp real</h5>
+                    <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
+                      <img src="assets/images/banci/bt.png" style="width: 10rem" alt="user vector">
+                    </div>
+                    <span class="f-light d-block mt-2">Soldul </span>
+                    <h5 class="mt-1">1,987,500.90 LEI</h5>
+                    <ul>
+                      <li>
+                        <div class="balance-item danger">
+                          <div class="balance-icon-wrap">
+                            <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-right">
+                                <line x1="7" y1="7" x2="17" y2="17"></line>
+                                <polyline points="17 7 17 17 7 17"></polyline>
+                              </svg></div>
+                          </div>
+                          <div> <span class="f-12 f-light">Cheltuieli </span>
+                            <h5>78.8K</h5><span class="badge badge-light-danger rounded-pill">-11.67%</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="balance-item success">
+                          <div class="balance-icon-wrap">
+                            <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                              </svg></div>
+                          </div>
+                          <div> <span class="f-12 f-light">Venituri</span>
+                            <h5>19.7K</h5><span class="badge badge-light-success rounded-pill">+10.67%</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 box-col-6">
+            <div class="card balance-box">
+              <div id="card-2" class="card-body d-flex justify-content-center">
+                <div class="balance-profile">
+                  <h6>Afisare sold/debit cont bancar in timp real</h6>
+                  <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
+                    <img src="assets/images/banci/revolut.png" style="width: 10rem" alt="user vector">
+                  </div>
+                  <span class="f-light d-block mt-2">Soldul </span>
+                  <h5 class="mt-1">87,500.90 LEI</h5>
+                  <ul>
+                    <li>
+                      <div class="balance-item danger">
+                        <div class="balance-icon-wrap">
+                          <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-right">
+                              <line x1="7" y1="7" x2="17" y2="17"></line>
+                              <polyline points="17 7 17 17 7 17"></polyline>
+                            </svg></div>
+                        </div>
+                        <div> <span class="f-12 f-light">Cheltuieli </span>
+                          <h5>78.8K</h5><span class="badge badge-light-danger rounded-pill">-11.67%</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="balance-item success">
+                        <div class="balance-icon-wrap">
+                          <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                              <line x1="7" y1="17" x2="17" y2="7"></line>
+                              <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg></div>
+                        </div>
+                        <div> <span class="f-12 f-light">Venituri</span>
+                          <h5>19.7K</h5><span class="badge badge-light-success rounded-pill">+10.67%</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 box-col-6">
+            <div class="card balance-box">
+              <div id="card-3" class="card-body df-flex justify-content-center">
+                <h3>CURS VALUTAR - <span id="curs-data"></span></h3>
+                <hr>
+                <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/eur.svg" width="50" alt=""> EUR <b id="curs-valutar2"></b><br><br>
+
+                <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/usd.svg" width="50" alt=""> USD <b id="curs-valutar"></b><br><br>
+
+                <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/gbp.svg" width="50" alt=""> GBP <b id="curs-valutar3"></b><br><br>
+
+                <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/chf.svg" width="50" alt=""> CHF <b id="curs-valutar4"></b>
+              </div>
+            </div>
           </div>
 
 
           <div class="col-md-6 col-xs-12">
             <div class="card small-widget mb-sm-0">
-              <div id="cardExemplu" class="card-body min-h-9"> <span style="font-size: 1.7rem;"
-                  class="f-w-700 f-light"><u>🟡Situație contabila in timp real</u></span>
+              <div id="cardExemplu" class="card-body min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"><u>🟡Situație contabila in timp real</u></span>
 
                 <div class="row d-flex">
                   <div class="col-md-6">
@@ -291,8 +281,7 @@
                       <div class="card small-widget mb-sm-0">
                         <div class="card-body primary"> <span class="f-light">Proforme</span>
                           <div class="d-flex align-items-end gap-1">
-                            <h4>100,000 lei</h4><span class="font-primary f-12 f-w-500"><i
-                                class="icon-arrow-up"></i><span>+50%</span></span>
+                            <h4>100,000 lei</h4><span class="font-primary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
                           </div>
                           <div class="bg-gradient">
                             <svg class="stroke-icon svg-fill">
@@ -307,8 +296,7 @@
                       <div class="card small-widget mb-sm-0">
                         <div class="card-body success"><span class="f-light">Încasați</span>
                           <div class="d-flex align-items-end gap-1">
-                            <h4>80,000 Lei</h4><span class="font-success f-12 f-w-500"><i
-                                class="icon-arrow-up"></i><span>+20%</span></span>
+                            <h4>80,000 Lei</h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
                           </div>
                           <div class="bg-gradient">
                             <svg class="stroke-icon svg-fill">
@@ -323,8 +311,7 @@
                       <div class="card small-widget mb-sm-0">
                         <div class="card-body warning"><span class="f-light">Cheltuieli</span>
                           <div class="d-flex align-items-end gap-1">
-                            <h4>40,000 Lei</h4><span class="font-warning f-12 f-w-500"><i
-                                class="icon-arrow-up"></i><span>+20%</span></span>
+                            <h4>40,000 Lei</h4><span class="font-warning f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
                           </div>
                           <div class="bg-gradient">
                             <svg class="stroke-icon svg-fill">
@@ -370,8 +357,7 @@
 
           <div class="col-md-6 col-xs-12">
             <div class="card small-widget mb-sm-0">
-              <div id="cardDateGenerale" class="card-body primary min-h-9"> <span style="font-size: 1.7rem;"
-                  class="f-w-700 f-light"></span>
+              <div id="cardDateGenerale" class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"></span>
 
                 <div class="row d-flex">
                   <div class="col-md-12" id="dateGenerale">
@@ -438,11 +424,9 @@
 
 
 
-          <h3><img src="/assets/images/logo/logo.png" width="50" height="50" class="rounded-circle shadow"
-              alt="experti"><b>ECHIPA DE VANZARI</b>
+          <h3><img src="/assets/images/logo/logo.png" width="50" height="50" class="rounded-circle shadow" alt="experti"><b>ECHIPA DE VANZARI</b>
           </h3>
-          <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15"
-              data-bs-original-title="" title="">Scrie mesaj la toata echipa de vanzari</a>
+          <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15" data-bs-original-title="" title="">Scrie mesaj la toata echipa de vanzari</a>
           </div>
 
           <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4">
@@ -450,9 +434,7 @@
               <div class="card radius-15">
                 <div class="card-body text-center">
                   <div class="p-4 border radius-15">
-                    <img
-                      src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.312-300x300.jpg"
-                      width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.312-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mb-0 mt-5">Daniela Irimescu</h5>
                     <p class="mb-3">Expert Fonduri Europene</p>
                     <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a>
@@ -494,9 +476,7 @@
                 <div class="card-body text-center">
 
                   <div class="p-4 border radius-15">
-                    <img
-                      src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.314-300x300.jpg"
-                      width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.314-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mb-0 mt-5">Andra B.</h5>
                     <p class="mb-3">Expert Fonduri Europene</p>
                     <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a>
@@ -537,9 +517,7 @@
               <div class="card radius-15">
                 <div class="card-body text-center">
                   <div class="p-4 border radius-15">
-                    <img
-                      src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.27.518-300x300.jpg"
-                      width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.27.518-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mb-0 mt-5">Stefania H.</h5>
                     <p class="mb-3">Expert Fonduri Europene</p>
 
@@ -580,9 +558,7 @@
               <div class="card radius-15">
                 <div class="card-body text-center">
                   <div class="p-4 border radius-15">
-                    <img
-                      src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg"
-                      width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mb-0 mt-5">Alexandra G.</h5>
                     <p class="mb-3">Expert Fonduri Europene</p>
 
@@ -625,11 +601,9 @@
           </div>
 
 
-          <h3><img src="/assets/images/logo/logo.png" width="50" height="50" class="rounded-circle shadow"
-              alt="experti"><b>ECHIPA DE MANAGEMENT</b>
+          <h3><img src="/assets/images/logo/logo.png" width="50" height="50" class="rounded-circle shadow" alt="experti"><b>ECHIPA DE MANAGEMENT</b>
           </h3>
-          <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15"
-              data-bs-original-title="" title="">Scrie mesaj la toata echipa de management</a>
+          <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15" data-bs-original-title="" title="">Scrie mesaj la toata echipa de management</a>
           </div>
 
           <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4">
@@ -637,9 +611,7 @@
               <div class="card radius-15">
                 <div class="card-body text-center">
                   <div class="p-4 border radius-15">
-                    <img
-                      src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg"
-                      width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mb-0 mt-5">Alexandru Irimescu</h5>
                     <p class="mb-3">Expert Fonduri Europene</p>
                     <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a>
@@ -681,9 +653,7 @@
                 <div class="card-body text-center">
 
                   <div class="p-4 border radius-15">
-                    <img
-                      src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg"
-                      width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mb-0 mt-5">Ionut Rusu</h5>
                     <p class="mb-3">Expert Fonduri Europene</p>
                     <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a>
@@ -724,9 +694,7 @@
               <div class="card radius-15">
                 <div class="card-body text-center">
                   <div class="p-4 border radius-15">
-                    <img
-                      src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.31-300x300.jpg"
-                      width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.31-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mb-0 mt-5">Iordache Mihaela</h5>
                     <p class="mb-3">Expert Fonduri Europene</p>
 
@@ -768,8 +736,7 @@
 
           </div>
 
-          <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15"
-              data-bs-original-title="" title="">Scrie mesaj la toata compania</a>
+          <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15" data-bs-original-title="" title="">Scrie mesaj la toata compania</a>
           </div>
 
         </div>
@@ -777,9 +744,7 @@
 
 
         <!-- Modal loading-->
-        <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1"
-          aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true"
-          role="dialog">
+        <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true" role="dialog">
           <div class="mt-5 modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-body dark-modal">
@@ -788,8 +753,7 @@
                 <h6 id="loadingLabel" class="w-100 d-flex justify-content-center">text here</h6>
 
                 <div class="progress">
-                  <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success"
-                    role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
 
 
@@ -802,92 +766,94 @@
 
       </div>
       <!-- footer start-->
-  </div>
-      <?php include('partial/footer.php') ?>
     </div>
+    <?php include('partial/footer.php') ?>
   </div>
-  <?php include('partial/scripts.php') ?>
-  <!-- Plugins JS start-->
-  <script defer>
-        const eur = 'https://v6.exchangerate-api.com/v6/99e3a41f63f8db71c5de318c/latest/EUR';
+</div>
+<?php include('partial/scripts.php') ?>
+<!-- Plugins JS start-->
+<script defer>
+  const eur = 'https://v6.exchangerate-api.com/v6/99e3a41f63f8db71c5de318c/latest/EUR';
 
-        fetch(eur)
-        .then(response => response.json())
-        .then(data => {
-            if (data.result === 'success') {
-            const rates = data.conversion_rates;
-            const cursValutar2 = document.getElementById('curs-valutar2').innerText = `${rates.RON.toFixed(4)}`;
-            } else {
-            console.error('Eroare:', data['error-type']);
-            }
-        })
-        .catch(error => console.error('Eroare:', error));
+  fetch(eur)
+    .then(response => response.json())
+    .then(data => {
+      if (data.result === 'success') {
+        const rates = data.conversion_rates;
+        const cursValutar2 = document.getElementById('curs-valutar2').innerText = `${rates.RON.toFixed(4)}`;
+      } else {
+        console.error('Eroare:', data['error-type']);
+      }
+    })
+    .catch(error => console.error('Eroare:', error));
 
-        const usd = 'https://v6.exchangerate-api.com/v6/99e3a41f63f8db71c5de318c/latest/USD';
+  const usd = 'https://v6.exchangerate-api.com/v6/99e3a41f63f8db71c5de318c/latest/USD';
 
-        fetch(usd)
-        .then(response => response.json())
-        .then(data => {
-            if (data.result === 'success') {
-            const rates = data.conversion_rates;
-            const cursValutar = document.getElementById('curs-valutar').innerText = `${rates.RON.toFixed(4)}`;
-            } else {
-            console.error('Eroare:', data['error-type']);
-            }
-        })
-        .catch(error => console.error('Eroare:', error));
-        const GBP = 'https://v6.exchangerate-api.com/v6/99e3a41f63f8db71c5de318c/latest/GBP';
+  fetch(usd)
+    .then(response => response.json())
+    .then(data => {
+      if (data.result === 'success') {
+        const rates = data.conversion_rates;
+        const cursValutar = document.getElementById('curs-valutar').innerText = `${rates.RON.toFixed(4)}`;
+      } else {
+        console.error('Eroare:', data['error-type']);
+      }
+    })
+    .catch(error => console.error('Eroare:', error));
+  const GBP = 'https://v6.exchangerate-api.com/v6/99e3a41f63f8db71c5de318c/latest/GBP';
 
-        fetch(GBP)
-        .then(response => response.json())
-        .then(data => {
-            if (data.result === 'success') {
-            const rates = data.conversion_rates;
-            const cursValutar = document.getElementById('curs-valutar3').innerText = `${rates.RON.toFixed(4)}`;
-            } else {
-            console.error('Eroare:', data['error-type']);
-            }
-        })
-        .catch(error => console.error('Eroare:', error));
-        const CHF = 'https://v6.exchangerate-api.com/v6/99e3a41f63f8db71c5de318c/latest/CHF';
+  fetch(GBP)
+    .then(response => response.json())
+    .then(data => {
+      if (data.result === 'success') {
+        const rates = data.conversion_rates;
+        const cursValutar = document.getElementById('curs-valutar3').innerText = `${rates.RON.toFixed(4)}`;
+      } else {
+        console.error('Eroare:', data['error-type']);
+      }
+    })
+    .catch(error => console.error('Eroare:', error));
+  const CHF = 'https://v6.exchangerate-api.com/v6/99e3a41f63f8db71c5de318c/latest/CHF';
 
-        fetch(CHF)
-        .then(response => response.json())
-        .then(data => {
-            if (data.result === 'success') {
-            const rates = data.conversion_rates;
-            const cursValutar = document.getElementById('curs-valutar4').innerText = `${rates.RON.toFixed(4)}`;
-            var date = new Date(data.time_last_update_utc);
-            var formattedDate = date.toLocaleDateString("ro-RO", { day: 'numeric', month: 'short', year: 'numeric' });
-            document.getElementById('curs-data').innerText = formattedDate
-
-
-            } else {
-            console.error('Eroare:', data['error-type']);
-            }
-        })
-        .catch(error => console.error('Eroare:', error));
+  fetch(CHF)
+    .then(response => response.json())
+    .then(data => {
+      if (data.result === 'success') {
+        const rates = data.conversion_rates;
+        const cursValutar = document.getElementById('curs-valutar4').innerText = `${rates.RON.toFixed(4)}`;
+        var date = new Date(data.time_last_update_utc);
+        var formattedDate = date.toLocaleDateString("ro-RO", {
+          day: 'numeric',
+          month: 'short',
+          year: 'numeric'
+        });
+        document.getElementById('curs-data').innerText = formattedDate
 
 
-    </script>
+      } else {
+        console.error('Eroare:', data['error-type']);
+      }
+    })
+    .catch(error => console.error('Eroare:', error));
+</script>
 <script src="assets/js/chart/apex-chart/apex-chart.js"></script>
 <script src="assets/js/chart/apex-chart/stock-prices.js"></script>
-  <script src="assets/js/dashboard/default.js"></script>
-  <script src="assets/js/notify/index.js"></script>
-  <script src="assets/js/typeahead/handlebars.js"></script>
-  <script src="assets/js/typeahead/typeahead.bundle.js"></script>
-  <script src="assets/js/typeahead/typeahead.custom.js"></script>
-  <script src="assets/js/typeahead-search/handlebars.js"></script>
-  <script src="assets/js/typeahead-search/typeahead-custom.js"></script>
-  <script src="assets/js/height-equal.js"></script>
-  <script src="assets/js/animation/wow/wow.min.js"></script>
-  <script src="assets/js/chart/morris-chart/raphael.js"></script>
-  <script src="assets/js/chart/morris-chart/morris.js"> </script>
-  <script src="assets/js/chart/morris-chart/prettify.min.js"></script>
-  <script src="assets/js/chart/morris-chart/morris-script.js"></script>
-  <script src="assets/js/tooltip-init.js"></script>
-  <!-- Plugins JS Ends-->
-  <script>
-    new WOW().init();
-  </script>
-  <?php include('partial/footer-end.php') ?>
+<script src="assets/js/dashboard/default.js"></script>
+<script src="assets/js/notify/index.js"></script>
+<script src="assets/js/typeahead/handlebars.js"></script>
+<script src="assets/js/typeahead/typeahead.bundle.js"></script>
+<script src="assets/js/typeahead/typeahead.custom.js"></script>
+<script src="assets/js/typeahead-search/handlebars.js"></script>
+<script src="assets/js/typeahead-search/typeahead-custom.js"></script>
+<script src="assets/js/height-equal.js"></script>
+<script src="assets/js/animation/wow/wow.min.js"></script>
+<script src="assets/js/chart/morris-chart/raphael.js"></script>
+<script src="assets/js/chart/morris-chart/morris.js"> </script>
+<script src="assets/js/chart/morris-chart/prettify.min.js"></script>
+<script src="assets/js/chart/morris-chart/morris-script.js"></script>
+<script src="assets/js/tooltip-init.js"></script>
+<!-- Plugins JS Ends-->
+<script>
+  new WOW().init();
+</script>
+<?php include('partial/footer-end.php') ?>
