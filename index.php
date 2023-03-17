@@ -809,7 +809,7 @@
   <?php include('partial/scripts.php') ?>
   <!-- Plugins JS start-->
   <script defer>
-        const eur = 'https://v6.exchangerate-api.com/v6/294b62fff8f9419cf09b6825/latest/EUR';
+        const eur = 'https://v6.exchangerate-api.com/v6/99e3a41f63f8db71c5de318c/latest/EUR';
 
         fetch(eur)
         .then(response => response.json())
@@ -823,7 +823,7 @@
         })
         .catch(error => console.error('Eroare:', error));
 
-        const usd = 'https://v6.exchangerate-api.com/v6/294b62fff8f9419cf09b6825/latest/USD';
+        const usd = 'https://v6.exchangerate-api.com/v6/99e3a41f63f8db71c5de318c/latest/USD';
 
         fetch(usd)
         .then(response => response.json())
@@ -836,7 +836,7 @@
             }
         })
         .catch(error => console.error('Eroare:', error));
-        const GBP = 'https://v6.exchangerate-api.com/v6/294b62fff8f9419cf09b6825/latest/GBP';
+        const GBP = 'https://v6.exchangerate-api.com/v6/99e3a41f63f8db71c5de318c/latest/GBP';
 
         fetch(GBP)
         .then(response => response.json())
@@ -849,7 +849,7 @@
             }
         })
         .catch(error => console.error('Eroare:', error));
-        const CHF = 'https://v6.exchangerate-api.com/v6/294b62fff8f9419cf09b6825/latest/CHF';
+        const CHF = 'https://v6.exchangerate-api.com/v6/99e3a41f63f8db71c5de318c/latest/CHF';
 
         fetch(CHF)
         .then(response => response.json())
