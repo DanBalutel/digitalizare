@@ -52,7 +52,7 @@ function addLoading() {
     askGpt.value = '';
     loadingChild.scrollTop = loadingChild.scrollHeight;
     renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
-    loadingChild.scrollIntoView()
+    loadingChild.scrollIntoView(false)
 };
 
 // remove answer loading animation
@@ -81,7 +81,7 @@ function addMessage(msgLoc, msgText) {
         `;
     }
     chatBox.appendChild(msgChild);
-    msgChild.scrollIntoView()
+    msgChild.scrollIntoView(false)
 };
 
 // copy message code to clipboard and clear it from html tags
