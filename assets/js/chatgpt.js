@@ -77,24 +77,30 @@ function addMessage(msgLoc, msgText) {
     } else {
         msgChild.innerHTML = `
         <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
-        <div class="message-data" style="cursor:pointer" title="Copiaza" id="text" onclick="copyElementText(this.id)">${msgText}</div>
+        <div class="message-data" style="cursor:pointer" title="Copiaza" id="text" onclick="copyElementText(this.innerHTML)">${msgText}</div>
         `;
     }
     chatBox.appendChild(msgChild);
     msgChild.scrollIntoView()
 };
 
-function copyElementText(id) {
-    var text = document.getElementById(id).innerText;
-    var elem = document.createElement("textarea");
+// copy message code to clipboard and clear it from html tags
+function copyElementText(content) {
+    const elem = document.createElement("textarea");
     document.body.appendChild(elem);
-    elem.value = text;
+    
+    // Remove HTML tags from content if present
+    const strippedContent = content.replace(/<[^>]+>/g, '');
+    
+    elem.value = strippedContent;
     elem.select();
     document.execCommand("copy");
     document.body.removeChild(elem);
     
     swal("Succes!", "Textul a fost copiat!", "success");
-}
+  }
+
+  
 // run when user press enter on chat input box
 askGpt.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
