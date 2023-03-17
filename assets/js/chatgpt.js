@@ -120,6 +120,12 @@ askGpt.addEventListener('keypress', function (e) {
     }
 });
 
+// clear chat history
+function clearChatHistory() {
+    localStorage.removeItem('chatMoni')
+    location.reload();
+}
+
 document.getElementById('trimite').addEventListener("click", function () {
     renderAnswer(askGpt.value);
     addMessage('right', askGpt.value)

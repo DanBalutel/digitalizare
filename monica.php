@@ -38,6 +38,7 @@
                         </div>
                         <ul class="list-inline float-start float-sm-end chat-menu-icons">
                         </ul>
+                        <div class="input-group-text btn btn-primary text-white fw-bold" onclick="clearChatHistory()">Sterge istoricul</div>
                       </div>
                       <!-- chat-header end-->
                       <div class="chat-history chat-msg-box custom-scrollbar">
