@@ -143,7 +143,7 @@
           </div>
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
               <div class="card balance-box" style="min-height: 26rem;">
-                  <div class="card-body d-flex align-items-center justify-content-center">
+                  <div id="card-1" class="card-body d-flex justify-content-center">
                       <div class="balance-profile">
                       <h6>Afisare sold/debit cont bancar in timp real</h5>
                       <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
@@ -179,7 +179,7 @@
           </div>
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
               <div class="card balance-box" style="min-height: 26rem;">
-                  <div class="card-body d-flex align-items-center justify-content-center">
+                  <div id="card-2" class="card-body d-flex justify-content-center">
                       <div class="balance-profile">
                       <h6>Afisare sold/debit cont bancar in timp real</h6>
                       <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
@@ -215,7 +215,7 @@
           </div>
           <div class="col-xl-3 col-md-6 col-sm-12 box-col-6"> 
               <div class="card balance-box" style="min-height: 26rem;">
-                  <div class="card-body df-flex align-items-center justify-content-center"> 
+                  <div id="card-3" class="card-body df-flex justify-content-center"> 
                     <h3>CURS VALUTAR - <span id="curs-data"></span></h3>
                     <hr>
                     <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/eur.svg" width="50" alt=""> EUR <b id="curs-valutar2"></b><br><br>
