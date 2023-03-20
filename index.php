@@ -762,7 +762,19 @@
           </div>
         </div>
 
-
+        <div class="modal fade bd-example-modal-xl" id='monica_video' tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: block; padding-right: 0px;" aria-modal="true" role="dialog">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myLargeModalLabel">Monica</h4>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+              </div>
+              <div class="modal-body dark-modal">
+                <video src="https://cdn.discordapp.com/attachments/1051098546281132052/1087391236182261812/Clip_video_WhatsApp_2023-03-20_la_16.55.53.mp4" controls="" style="width: 100%;"></video>
+              </div>
+            </div>
+          </div>
+        </div>             
 
       </div>
       <!-- footer start-->
