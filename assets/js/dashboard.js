@@ -1061,7 +1061,7 @@ function showVideoMonica(displayedModal1) {
             html: `
               <div id="monicaModal1" class="modal-content dark-mode">
                 <div class="modal-header">
-                  <h4 class="modal-title" id="myLargeModalLabel">Monica</h4>
+                  <h4 class="modal-title" id="myLargeModalLabel">Prezentare Only1.ai</h4>
                   <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
                 </div>
                 <div class="modal-body dark-modal">
