@@ -3,17 +3,24 @@
 class ElementHandler {
     constructor() {
         this.e = {};
+        this.debug = false;
+    }
+
+    lazyDebug(text) {
+        if (this.debug) {
+            console.log(text);
+        }
     }
 
     // add Element
     element(id) {
         if (this.e[id]) {
-            console.log('element already added');
+            this.lazyDebug('element already added');
             return this.e[id];
         } else {
             const element = document.getElementById(id);
             this.e[id] = element;
-            console.log(`added new element with id: ${id}`);
+            this.lazyDebug(`added new element with id: ${id}`);
             return element;
         }
 

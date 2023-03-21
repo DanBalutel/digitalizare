@@ -180,7 +180,7 @@
 </div>
 <?php include('partial/scripts.php') ?>
 <!-- Plugins JS start-->
-<script src="assets/js/clock.js"></script>
+
 <script src="assets/js/chart/apex-chart/moment.min.js"></script>
 <script src="assets/js/notify/bootstrap-notify.min.js"></script>
 <script src="assets/js/dashboard/default.js"></script>

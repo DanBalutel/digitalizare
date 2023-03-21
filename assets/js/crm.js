@@ -111,6 +111,119 @@ let crmTable1 = [{
     status: 'Neinteresat'
 }
 ];
+let crmTable2 = [{
+    id: 1,
+    name: 'Gigi Popescu',
+    phone: '0729 229 599',
+    email: 'john@example.com',
+    status: 'Platita'
+},
+{
+    id: 2,
+    name: 'Gigi Popescu 2',
+    phone: '0729 229 599',
+    email: 'jane@example.com',
+    status: 'Renunta'
+},
+{
+    id: 3,
+    name: 'Gigi Popescu 3',
+    phone: '0729 229 599',
+    email: 'smith@example.com',
+    status: 'Urmeaza'
+},
+{
+    id: 4,
+    name: 'Gigi Popescu 4',
+    phone: '0729 229 599',
+    email: 'jane@example.com',
+    status: 'Renunta'
+},
+{
+    id: 5,
+    name: 'Gigi Popescu 5',
+    phone: '0729 229 599',
+    email: 'jane@example.com',
+    status: 'Renunta'
+},
+{
+    id: 6,
+    name: 'Gigi Popescu 6',
+    phone: '0729 229 599',
+    email: 'jane@example.com',
+    status: 'Renunta'
+},
+{
+    id: 7,
+    name: 'Gigi Popescu 7',
+    phone: '0729 229 599',
+    email: 'jane@example.com',
+    status: 'Renunta'
+},
+{
+    id: 8,
+    name: 'Gigi Popescu 8',
+    phone: '0729 229 599',
+    email: 'jane@example.com',
+    status: 'Renunta'
+}, {
+    id: 9,
+    name: 'Gigi Popescu',
+    phone: '0729 229 599',
+    email: 'john@example.com',
+    status: 'Platita'
+},
+{
+    id: 10,
+    name: 'Gigi Popescu 2',
+    phone: '0729 229 599',
+    email: 'jane@example.com',
+    status: 'Renunta'
+},
+{
+    id: 11,
+    name: 'Gigi Popescu 3',
+    phone: '0729 229 599',
+    email: 'smith@example.com',
+    status: 'Urmeaza'
+},
+{
+    id: 12,
+    name: 'Gigi Popescu 4',
+    phone: '0729 229 599',
+    email: 'jane@example.com',
+    status: 'Renunta'
+},
+{
+    id: 13,
+    name: 'Gigi Popescu 5',
+    phone: '0729 229 599',
+    email: 'jane@example.com',
+    status: 'Renunta'
+},
+{
+    id: 14,
+    name: 'Gigi Popescu 6',
+    phone: '0729 229 599',
+    email: 'jane@example.com',
+    status: 'Renunta'
+},
+{
+    id: 15,
+    name: 'Gigi Popescu 7',
+    phone: '0729 229 599',
+    email: 'jane@example.com',
+    status: 'Renunta'
+},
+{
+    id: 16,
+    name: 'Gigi Popescu 8',
+    phone: '0729 229 599',
+    email: 'jane@example.com',
+    status: 'Renunta'
+}
+];
+
 
 
 
@@ -119,10 +232,22 @@ d.element('crmTable2')
 
 
 // return status css class for future use
-function returnStatus(status) {
-    if (status === "Interesat") {
+function returnStatus(status, tableId) {
+
+    let statList = [];
+    if (tableId === 1) {
+        statList[0] = "Interesat";
+        statList[1] = "Neinteresat";
+        statList[2] = "Nu stie";
+    } else if (tableId === 2) {
+        statList[0] = "Platita";
+        statList[1] = "Renunta";
+        statList[2] = "Urmeaza";
+    }
+
+    if (status === statList[0]) {
         return "btn-success";
-    } else if (status === "Neinteresat") {
+    } else if (status === statList[1]) {
         return "btn-danger";
     } else {
         return "btn-warning";
@@ -159,7 +284,7 @@ function addcrmTable1Row(id, name, phone, email, status) {
                 "children": [
                     {
                         "tag": "button",
-                        "class": `btn dropdown-toggle ${returnStatus(status)}`,
+                        "class": `btn dropdown-toggle ${returnStatus(status, 1)}`,
                         "innerHTML": status,
                         "id": `cT1status${id}`,
                         "attrs": {
@@ -202,7 +327,7 @@ function addcrmTable1Row(id, name, phone, email, status) {
 }
 
 // toggle button
-function toggleCrmDropdown(tableId) {
+function toggleCrmDropdown(event, tableId, id) {
     d.element(`cT${tableId}dm${id}`).classList.toggle("show");
 }
 
@@ -210,17 +335,28 @@ function toggleCrmDropdown(tableId) {
 // change status
 function changeStatusCrmDropdown(event, id, statusBtn, tableId) {
 
+    let statList = [];
+    if (tableId === 1) {
+        statList[0] = "Interesat";
+        statList[1] = "Neinteresat";
+        statList[2] = "Nu stie";
+    } else if (tableId === 2) {
+        statList[0] = "Platita";
+        statList[1] = "Renunta";
+        statList[2] = "Urmeaza";
+    }
+
     let status = '';
-    if (statusBtn === `cT1s${id}`) {
-        status = "Interesat";
+    if (statusBtn === `cT${tableId}s${id}`) {
+        status = statList[0];
     } else if (statusBtn === `cT${tableId}d${id}`) {
-        status = "Neinteresat";
+        status = statList[1];
     } else {
-        status = "Nu stie";
+        status = statList[2];
     }
     d.element(`cT${tableId}dm${id}`).classList.toggle("show");
     d.element(`cT${tableId}status${id}`).innerHTML = status;
-    d.element(`cT${tableId}status${id}`).classList = `btn dropdown-toggle ${returnStatus(status)}`;
+    d.element(`cT${tableId}status${id}`).classList = `btn dropdown-toggle ${returnStatus(status, tableId)}`;
 
     // update JSON
     crmTable1[id - 1].status = status;
@@ -254,13 +390,17 @@ function renderCrmTable(time, tableId, table) {
             const email = table[i].email;
             const status = table[i].status;
 
-            addcrmTable1Row(id, name, phone, email, status);
+            if (tableId === 1) {
+                addcrmTable1Row(id, name, phone, email, status);
+            } else if (tableId === 2) {
+                addcrmTable2Row(id, name, phone, email, status);
+            }
             d.element(`cT${tableId}status${id}`);
 
 
 
 
-            d.createHandler(`cT${tableId}status${id}`, "click", toggleCrmDropdown);
+            d.createHandler(`cT${tableId}status${id}`, "click", (event) => toggleCrmDropdown(event, tableId, id));
 
 
 
@@ -282,6 +422,7 @@ function renderCrmTable(time, tableId, table) {
 
 // value 0 because table is rendered without delay and second element is id of the table
 renderCrmTable(0, 1, crmTable1);
+renderCrmTable(0, 2, crmTable2);
 
 // excel data
 // Convert JSON to Excel
@@ -362,25 +503,95 @@ document.getElementById('processExcel1').addEventListener('click', () => {
 
 // ##########################
 
+function addcrmTable2Row(id, name, phone, email, status) {
 
-// // Set up button click event for table 2
-// document.getElementById('processExcel2').addEventListener('click', () => {
-//     const inputElement = document.getElementById('uploadExcel2');
-//     const file = inputElement.files[0];
+    // all schema of table line
+    const jsonData = {
+        "tag": "tr",
+        "id": `cT2id${id}`,
+        "class": "odd",
+        "attrs": {
+            "role": "row"
+        },
+        "children": [
+            {
+                "tag": "td",
+                "innerHTML": `#${id}`
+            }, {
+                "tag": "td",
+                "innerHTML": name
+            }, {
+                "tag": "td",
+                "innerHTML": phone
+            }, {
+                "tag": "td",
+                "innerHTML": email
+            }, {
+                "tag": "td",
+                "class": "position-relative",
+                "children": [
+                    {
+                        "tag": "button",
+                        "class": `btn dropdown-toggle ${returnStatus(status, 2)}`,
+                        "innerHTML": status,
+                        "id": `cT2status${id}`,
+                        "attrs": {
+                            "type": "button",
+                            "data-bs-toggle": "dropdown",
+                            "aria-expanded": "false"
+                        }
+                    },
+                    {
+                        "tag": "div",
+                        "class": "dropdown-menu",
+                        "id": `cT2dm${id}`,
+                        "children": [
+                            {
+                                "tag": "div",
+                                "class": "dropdown-item btn btn-success",
+                                "innerHTML": "Platita",
+                                "id": `cT2s${id}`
+                            },
+                            {
+                                "tag": "div",
+                                "class": "dropdown-item btn btn-danger",
+                                "innerHTML": "Renunta",
+                                "id": `cT2d${id}`
+                            },
+                            {
+                                "tag": "div",
+                                "class": "dropdown-item btn btn-warning",
+                                "innerHTML": "Urmeaza",
+                                "id": `cT2w${id}`
+                            }
+                        ]
+                    }
+                ]
+            },
+        ]
+    }
 
-//     removeCrmTableHandlers(crmTable2, 2);
-//     renderCrmTable(3000);
-//     renderLoadingModal('Tabelul se proceseaza');
+    d.createElement(jsonData, d.e.crmTable2);
+}
 
-//     if (file) {
-//         readExcelFile(file);
-//     } else {
-//         alert('Please select an Excel file to process.');
-//     }
-// });
+// Set up button click event for table 2
+document.getElementById('processExcel2').addEventListener('click', () => {
+    const inputElement = document.getElementById('uploadExcel2');
+    const file = inputElement.files[0];
 
-// // Set up button click event for table 2
-// document.getElementById('downloadExcel2').addEventListener('click', () => {
-//     const workbook = jsonToExcel(crmTable2);
-//     downloadExcelFile(workbook, 'example.xlsx');
-// });
+    removeCrmTableHandlers(crmTable2, 2);
+    renderCrmTable(3000);
+    renderLoadingModal('Tabelul se proceseaza');
+
+    if (file) {
+        readExcelFile(file);
+    } else {
+        alert('Please select an Excel file to process.');
+    }
+});
+
+// Set up button click event for table 2
+document.getElementById('downloadExcel2').addEventListener('click', () => {
+    const workbook = jsonToExcel(crmTable2);
+    downloadExcelFile(workbook, 'example.xlsx');
+});
