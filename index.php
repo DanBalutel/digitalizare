@@ -841,7 +841,7 @@
         const rates = data.conversion_rates;
         const cursValutar = document.getElementById('curs-valutar4').innerText = `${data.toFixed(4)}`;
         var date = new Date(data.time_last_update_utc);
-        var formattedDate = date.toLocaleDateString("ro-RO", {
+        var formattedDate = new Date().toLocaleDateString("ro-RO", {
           day: 'numeric',
           month: 'short',
           year: 'numeric'
