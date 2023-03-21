@@ -1057,12 +1057,9 @@ function populatePage() {
 function showVideoMonica(displayedModal1) {
     if (!displayedModal1) {
         localStorage.setItem("displayedModal1", true);
-        swal({
-            content: {
-                element: "div",
-                attributes: {
-                    innerHTML: `
-                <div id="monicaModal1" class="modal-content">
+        Swal.fire({
+            html: `
+              <div id="monicaModal1" class="modal-content dark-mode">
                 <div class="modal-header">
                   <h4 class="modal-title" id="myLargeModalLabel">Monica</h4>
                   <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
@@ -1071,20 +1068,28 @@ function showVideoMonica(displayedModal1) {
                   <video src="https://cdn.discordapp.com/attachments/1051098546281132052/1087391236182261812/Clip_video_WhatsApp_2023-03-20_la_16.55.53.mp4" controls="" style="width: 100%;"></video>
                 </div>
               </div>
-                `,
-                },
-            },
+            `,
+            width: '800px',
+            showConfirmButton: true,
+            confirmButtonText: 'Am inteles',
+            backdrop: 'rgba(0,0,0,0.4)',
             customClass: {
-                width: "90%",
-            },
-            buttons: {
-                confirm: "Am inteles",
+                container: 'dark-mode',
+                popup: 'dark-mode',
+                header: 'dark-mode-header',
+                title: 'dark-mode-header',
+                closeButton: 'dark-mode-close',
+                content: 'dark-mode',
+                confirmButton: 'dark-mode-confirm',
+                actions: 'dark-mode-actions'
             }
-        })
-            .then((value) => {
-                const monica1 = document.getElementById("monicaModal1");
-                monica1.parentNode.removeChild(monica1);
-                console.log(monica1);
-            });
+        }).then((result) => {
+            const monica1 = document.getElementById("monicaModal1");
+            monica1.parentNode.removeChild(monica1);
+            console.log(monica1);
+        });
+
+
+
     }
 }

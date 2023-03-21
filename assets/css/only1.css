@@ -46,3 +46,32 @@ img.rounded-circle.shadow {
 .badge {
     padding: 0.7rem;
 }
+
+/* Dark theme styles for SweetAlert2 */
+.dark-mode {
+    background: #2d2d2d !important;
+    color: #fff;
+}
+
+.dark-mode-header {
+    background: #3a3a3a !important;
+    color: #fff;
+}
+
+.dark-mode-close {
+    color: #fff !important;
+}
+
+.dark-mode-confirm {
+    background: #d33 !important;
+    border-color: #d33;
+    color: #fff;
+}
+
+.dark-mode-actions {
+    margin-top: 20px;
+}
+
+div#monicaModal1 button.btn-close {
+    display: none;
+}
