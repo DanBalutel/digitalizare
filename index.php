@@ -833,7 +833,13 @@
     })
     .catch(error => console.error('Eroare:', error));
   const CHF = 'https://api.raport.ai/exchange/chf';
-
+  function formatDate(date) {
+  return [
+    padTo2Digits(date.getDate()),
+    padTo2Digits(date.getMonth() + 1),
+    date.getFullYear(),
+  ].join('/');
+}
   fetch(CHF)
     .then(response => response.json())
     .then(data => {
@@ -847,7 +853,7 @@
           year: 'numeric'
         });
         var today = new Date();
-        document.getElementById('curs-data').innerText = today
+        document.getElementById('curs-data').innerText = formatDate(today)
 
 
       } else {
