@@ -846,7 +846,8 @@
           month: 'short',
           year: 'numeric'
         });
-        document.getElementById('curs-data').innerText = formattedDate
+        var today = new Date();
+        document.getElementById('curs-data').innerText = today
 
 
       } else {
