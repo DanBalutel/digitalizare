@@ -762,7 +762,7 @@
           </div>
         </div>
 
-        <div class="modal fade bd-example-modal-xl" id='monica_video' tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: block; padding-right: 0px;" aria-modal="true" role="dialog">
+        <!-- <div class="modal fade bd-example-modal-xl" id='monica_video' tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: block; padding-right: 0px;" aria-modal="true" role="dialog">
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header">
@@ -774,7 +774,7 @@
               </div>
             </div>
           </div>
-        </div>             
+        </div>              -->
 
       </div>
       <!-- footer start-->
