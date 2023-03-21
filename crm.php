@@ -32,10 +32,10 @@
 
 
 
-                                        <button class="btn btn-primary mb-3" id="downloadExcel">Exporta in Excel</button>
+                                        <button class="btn btn-primary mb-3" id="downloadExcel1">Exporta in Excel</button>
 
-                                        <input class="form-control" type="file" id="uploadExcel" accept=".xlsx" />
-                                        <button class="btn btn-primary mb-3" id="processExcel">Importa din Excel</button>
+                                        <input class="form-control" type="file" id="uploadExcel1" accept=".xlsx" />
+                                        <button class="btn btn-primary mb-3" id="processExcel1">Importa din Excel</button>
 
 
                                         <table class="display dataTable" id="multilevel-btn" role="grid" aria-describedby="multilevel-btn_info">
@@ -67,6 +67,51 @@
                                     </div>
                                 </div>
                             </div>
+
+
+                            <div class="card-body">
+                                <div class="dt-ext table-responsive">
+                                    <div id="multilevel-btn_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
+
+
+
+                                        <button class="btn btn-primary mb-3" id="downloadExcel2">Exporta in Excel</button>
+
+                                        <input class="form-control" type="file" id="uploadExcel2" accept=".xlsx" />
+                                        <button class="btn btn-primary mb-3" id="processExcel2">Importa din Excel</button>
+
+
+                                        <table class="display dataTable" id="multilevel-btn" role="grid" aria-describedby="multilevel-btn_info">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th rowspan="1" colspan="1" style="width: 80.4844px;">Id</th>
+                                                    <th>Nume / Prenume</th>
+                                                    <th>Telefon</th>
+                                                    <th>Email</th>
+                                                    <th>Trimisa oferta</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody id="crmTable2">
+
+                                            </tbody>
+
+                                        </table>
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
 
                         </div>
                     </div>

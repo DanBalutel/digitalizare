@@ -115,6 +115,8 @@ let crmTable1 = [{
 
 
 d.element('crmTable1')
+d.element('crmTable2')
+
 
 // return status css class for future use
 function returnStatus(status) {
@@ -200,25 +202,25 @@ function addcrmTable1Row(id, name, phone, email, status) {
 }
 
 // toggle button
-function toggleCrmDropdown1() {
-    d.element(`cT1dm${id}`).classList.toggle("show");
+function toggleCrmDropdown(tableId) {
+    d.element(`cT${tableId}dm${id}`).classList.toggle("show");
 }
 
 
 // change status
-function changeStatusCrmDropdown1(event, id, statusBtn) {
+function changeStatusCrmDropdown(event, id, statusBtn, tableId) {
 
     let status = '';
     if (statusBtn === `cT1s${id}`) {
         status = "Interesat";
-    } else if (statusBtn === `cT1d${id}`) {
+    } else if (statusBtn === `cT${tableId}d${id}`) {
         status = "Neinteresat";
     } else {
         status = "Nu stie";
     }
-    d.element(`cT1dm${id}`).classList.toggle("show");
-    d.element(`cT1status${id}`).innerHTML = status;
-    d.element(`cT1status${id}`).classList = `btn dropdown-toggle ${returnStatus(status)}`;
+    d.element(`cT${tableId}dm${id}`).classList.toggle("show");
+    d.element(`cT${tableId}status${id}`).innerHTML = status;
+    d.element(`cT${tableId}status${id}`).classList = `btn dropdown-toggle ${returnStatus(status)}`;
 
     // update JSON
     crmTable1[id - 1].status = status;
@@ -226,46 +228,46 @@ function changeStatusCrmDropdown1(event, id, statusBtn) {
 }
 
 // clear table
-function removeCrmTableHandlers1() {
+function removeCrmTableHandlers(table, tableId) {
 
-    for (i in crmTable1) {
-        const id = crmTable1[i].id;
+    for (i in table) {
+        const id = table[i].id;
 
-        d.element(`cT1status${id}`).removeEventListener('click', toggleCrmDropdown1);
-        d.element(`cT1s${id}`).removeEventListener('click', changeStatusCrmDropdown1);
-        d.element(`cT1d${id}`).removeEventListener('click', changeStatusCrmDropdown1);
-        d.element(`cT1w${id}`).removeEventListener('click', changeStatusCrmDropdown1);
+        d.element(`cT${tableId}status${id}`).removeEventListener('click', toggleCrmDropdown);
+        d.element(`cT${tableId}s${id}`).removeEventListener('click', changeStatusCrmDropdown);
+        d.element(`cT${tableId}d${id}`).removeEventListener('click', changeStatusCrmDropdown);
+        d.element(`cT${tableId}w${id}`).removeEventListener('click', changeStatusCrmDropdown);
     }
 }
 
-function renderCrmTable1(time) {
+function renderCrmTable(time, tableId, table) {
 
 
-    d.e.crmTable1.innerHTML = '';
+    d.element(`crmTable${tableId}`).innerHTML = '';
 
     // add rows
     setTimeout(() => {
-        for (i in crmTable1) {
-            const id = crmTable1[i].id;
-            const name = crmTable1[i].name;
-            const phone = crmTable1[i].phone;
-            const email = crmTable1[i].email;
-            const status = crmTable1[i].status;
+        for (i in table) {
+            const id = table[i].id;
+            const name = table[i].name;
+            const phone = table[i].phone;
+            const email = table[i].email;
+            const status = table[i].status;
 
             addcrmTable1Row(id, name, phone, email, status);
-            d.element(`cT1status${id}`);
+            d.element(`cT${tableId}status${id}`);
 
 
 
 
-            d.createHandler(`cT1status${id}`, "click", toggleCrmDropdown1);
+            d.createHandler(`cT${tableId}status${id}`, "click", toggleCrmDropdown);
 
 
 
 
-            d.createHandler(`cT1s${id}`, "click", (event) => changeStatusCrmDropdown1(event, id, `cT1s${id}`));
-            d.createHandler(`cT1d${id}`, "click", (event) => changeStatusCrmDropdown1(event, id, `cT1d${id}`));
-            d.createHandler(`cT1w${id}`, "click", (event) => changeStatusCrmDropdown1(event, id, `cT1w${id}`));
+            d.createHandler(`cT${tableId}s${id}`, "click", (event) => changeStatusCrmDropdown(event, id, `cT${tableId}s${id}`, tableId));
+            d.createHandler(`cT${tableId}d${id}`, "click", (event) => changeStatusCrmDropdown(event, id, `cT${tableId}d${id}`, tableId));
+            d.createHandler(`cT${tableId}w${id}`, "click", (event) => changeStatusCrmDropdown(event, id, `cT${tableId}w${id}`, tableId));
 
         }
     }, time);
@@ -278,8 +280,8 @@ function renderCrmTable1(time) {
 
 
 
-
-renderCrmTable1(0);
+// value 0 because table is rendered without delay and second element is id of the table
+renderCrmTable(0, 1, crmTable1);
 
 // excel data
 // Convert JSON to Excel
@@ -318,11 +320,10 @@ function s2ab(s) {
 }
 
 // Set up button click event
-document.getElementById('downloadExcel').addEventListener('click', () => {
+document.getElementById('downloadExcel1').addEventListener('click', () => {
     const workbook = jsonToExcel(crmTable1);
     downloadExcelFile(workbook, 'example.xlsx');
 });
-
 
 // upload in excel
 function excelToJson(workbook) {
@@ -343,13 +344,13 @@ function readExcelFile(file) {
     reader.readAsBinaryString(file);
 }
 
-// Set up button click event
-document.getElementById('processExcel').addEventListener('click', () => {
-    const inputElement = document.getElementById('uploadExcel');
+// Set up button click event for table 1
+document.getElementById('processExcel1').addEventListener('click', () => {
+    const inputElement = document.getElementById('uploadExcel1');
     const file = inputElement.files[0];
 
-    removeCrmTableHandlers1();
-    renderCrmTable1(3000);
+    removeCrmTableHandlers(crmTable1, 1);
+    renderCrmTable(3000);
     renderLoadingModal('Tabelul se proceseaza');
 
     if (file) {
@@ -358,3 +359,28 @@ document.getElementById('processExcel').addEventListener('click', () => {
         alert('Please select an Excel file to process.');
     }
 });
+
+// ##########################
+
+
+// // Set up button click event for table 2
+// document.getElementById('processExcel2').addEventListener('click', () => {
+//     const inputElement = document.getElementById('uploadExcel2');
+//     const file = inputElement.files[0];
+
+//     removeCrmTableHandlers(crmTable2, 2);
+//     renderCrmTable(3000);
+//     renderLoadingModal('Tabelul se proceseaza');
+
+//     if (file) {
+//         readExcelFile(file);
+//     } else {
+//         alert('Please select an Excel file to process.');
+//     }
+// });
+
+// // Set up button click event for table 2
+// document.getElementById('downloadExcel2').addEventListener('click', () => {
+//     const workbook = jsonToExcel(crmTable2);
+//     downloadExcelFile(workbook, 'example.xlsx');
+// });
