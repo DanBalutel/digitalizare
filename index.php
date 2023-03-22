@@ -122,6 +122,109 @@
           </div>
 
 
+          <div class="col-md-6 col-xs-12">
+            <div class="card small-widget mb-sm-0">
+              <div id="cardExemplu" class="card-body min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"><u>🟡Situație contabila in timp real</u></span>
+
+                <div class="row d-flex">
+                  <div class="col-md-6">
+                    <div class="f-w-700 col-md-6" style="font-size: 1.1rem;">
+                      (Exemplu) Situație Martie 2023:
+                    </div>
+
+
+                    <div class="col-md-10 mb-1">
+                      <div class="card small-widget mb-sm-0">
+                        <div class="card-body primary"> <span class="f-light">Proforme</span>
+                          <div class="d-flex align-items-end gap-1">
+                            <h4>100,000 lei</h4><span class="font-primary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
+                          </div>
+                          <div class="bg-gradient">
+                            <svg class="stroke-icon svg-fill">
+                              <use href="../assets/svg/icon-sprite.svg#fill-charts"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-10 mb-1">
+                      <div class="card small-widget mb-sm-0">
+                        <div class="card-body success"><span class="f-light">Încasați</span>
+                          <div class="d-flex align-items-end gap-1">
+                            <h4>80,000 Lei</h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
+                          </div>
+                          <div class="bg-gradient">
+                            <svg class="stroke-icon svg-fill">
+                              <use href="../assets/svg/icon-sprite.svg#profit"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-10 mb-1">
+                      <div class="card small-widget mb-sm-0">
+                        <div class="card-body warning"><span class="f-light">Cheltuieli</span>
+                          <div class="d-flex align-items-end gap-1">
+                            <h4>40,000 Lei</h4><span class="font-warning f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
+                          </div>
+                          <div class="bg-gradient">
+                            <svg class="stroke-icon svg-fill">
+                              <use href="../assets/svg/icon-sprite.svg#tag"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                    <div class="col-md-10 mb-1">
+                      <div class="card small-widget mb-sm-0">
+                        <div id="card3" class="card-body secondary"><span class="f-light">Număr angajați</span>
+                          <div class="d-flex align-items-end gap-1">
+                            <h4>8</h4><span class="font-secondary f-12 f-w-500"></span>
+                          </div>
+                          <div class="bg-gradient">
+                            <svg class="stroke-icon svg-fill">
+                              <use href="../assets/svg/icon-sprite.svg#fill-user"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="f-w-700 col-md-6 pt-3" style="font-size: 1.1rem;">
+                    Tot ce lucrează persoana/ firma de contabilitate se va putea migra in timp real (migrare automata
+                    din SAGA/ SmartBill/ orice soft de contabilitate)<br>
+                    Astfel veți știi situația contabila in timp real.
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-md-6 col-xs-12">
+            <div class="card small-widget mb-sm-0">
+              <div id="cardDateGenerale" class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"></span>
+
+                <div class="row d-flex">
+                  <div class="col-md-12" id="dateGenerale">
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
 
           
 
@@ -274,109 +377,6 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-xs-12">
-            <div class="card small-widget mb-sm-0">
-              <div id="cardExemplu" class="card-body min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"><u>🟡Situație contabila in timp real</u></span>
-
-                <div class="row d-flex">
-                  <div class="col-md-6">
-                    <div class="f-w-700 col-md-6" style="font-size: 1.1rem;">
-                      (Exemplu) Situație Martie 2023:
-                    </div>
-
-
-                    <div class="col-md-10 mb-1">
-                      <div class="card small-widget mb-sm-0">
-                        <div class="card-body primary"> <span class="f-light">Proforme</span>
-                          <div class="d-flex align-items-end gap-1">
-                            <h4>100,000 lei</h4><span class="font-primary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
-                          </div>
-                          <div class="bg-gradient">
-                            <svg class="stroke-icon svg-fill">
-                              <use href="../assets/svg/icon-sprite.svg#fill-charts"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-10 mb-1">
-                      <div class="card small-widget mb-sm-0">
-                        <div class="card-body success"><span class="f-light">Încasați</span>
-                          <div class="d-flex align-items-end gap-1">
-                            <h4>80,000 Lei</h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
-                          </div>
-                          <div class="bg-gradient">
-                            <svg class="stroke-icon svg-fill">
-                              <use href="../assets/svg/icon-sprite.svg#profit"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-10 mb-1">
-                      <div class="card small-widget mb-sm-0">
-                        <div class="card-body warning"><span class="f-light">Cheltuieli</span>
-                          <div class="d-flex align-items-end gap-1">
-                            <h4>40,000 Lei</h4><span class="font-warning f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
-                          </div>
-                          <div class="bg-gradient">
-                            <svg class="stroke-icon svg-fill">
-                              <use href="../assets/svg/icon-sprite.svg#tag"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-
-
-                    </div>
-
-                    <div class="col-md-10 mb-1">
-                      <div class="card small-widget mb-sm-0">
-                        <div id="card3" class="card-body secondary"><span class="f-light">Număr angajați</span>
-                          <div class="d-flex align-items-end gap-1">
-                            <h4>8</h4><span class="font-secondary f-12 f-w-500"></span>
-                          </div>
-                          <div class="bg-gradient">
-                            <svg class="stroke-icon svg-fill">
-                              <use href="../assets/svg/icon-sprite.svg#fill-user"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="f-w-700 col-md-6 pt-3" style="font-size: 1.1rem;">
-                    Tot ce lucrează persoana/ firma de contabilitate se va putea migra in timp real (migrare automata
-                    din SAGA/ SmartBill/ orice soft de contabilitate)<br>
-                    Astfel veți știi situația contabila in timp real.
-                  </div>
-
-
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-
-          <div class="col-md-6 col-xs-12">
-            <div class="card small-widget mb-sm-0">
-              <div id="cardDateGenerale" class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"></span>
-
-                <div class="row d-flex">
-                  <div class="col-md-12" id="dateGenerale">
-
-
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
 
 
           <!-- MAP -->
