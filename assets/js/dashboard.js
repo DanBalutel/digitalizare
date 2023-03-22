@@ -1071,15 +1071,15 @@ function showVideoMonica(displayedModal1) {
                   <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
                 </div>
                 <div class="modal-body dark-modal">
-                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/wMF8u-3PEGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/z4OL-mVRcd0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </div>
               </div>
             `,
             showConfirmButton: true,
-            confirmButtonText: 'Am inteles',
+            width: '90vw',
+            confirmButtonText: 'Generare demo',
             backdrop: 'rgba(0,0,0,0.4)',
             customClass: {
-                container: 'dark-mode',
+                container: '.dark-mode-transparent',
                 popup: 'dark-mode',
                 header: 'dark-mode-header',
                 title: 'dark-mode-header',
