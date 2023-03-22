@@ -21,213 +21,6 @@
         <div class="row g-sm-3 height-equal-2 widget-charts">
           <h3 id="name"></h3>
 
-          <div class="col-xl-4 col-md-6 col-sm-12 box-col-6">
-            <div class="card balance-box">
-              <div id="card-1" class="card-body d-flex justify-content-center">
-                <div class="balance-profile">
-                  <h6>Afisare sold/debit cont bancar in timp real</h5>
-                    <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
-                      <img src="assets/images/banci/bt.png" style="width: 10rem" alt="user vector">
-                    </div>
-                    <span class="f-light d-block mt-2">Soldul </span>
-                    <h5 class="mt-1">1,987,500.90 LEI</h5>
-                    <ul>
-                      <li>
-                        <div class="balance-item danger">
-                          <div class="balance-icon-wrap">
-                            <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-right">
-                                <line x1="7" y1="7" x2="17" y2="17"></line>
-                                <polyline points="17 7 17 17 7 17"></polyline>
-                              </svg></div>
-                          </div>
-                          <div> <span class="f-12 f-light">Cheltuieli </span>
-                            <h5>78.8K</h5><span class="badge badge-light-danger rounded-pill">-11.67%</span>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="balance-item success">
-                          <div class="balance-icon-wrap">
-                            <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
-                                <line x1="7" y1="17" x2="17" y2="7"></line>
-                                <polyline points="7 7 17 7 17 17"></polyline>
-                              </svg></div>
-                          </div>
-                          <div> <span class="f-12 f-light">Venituri</span>
-                            <h5>19.7K</h5><span class="badge badge-light-success rounded-pill">+10.67%</span>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-6 col-sm-12 box-col-6">
-            <div class="card balance-box">
-              <div id="card-2" class="card-body d-flex justify-content-center">
-                <div class="balance-profile">
-                  <h6>Afisare sold/debit cont bancar in timp real</h6>
-                  <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
-                    <img src="assets/images/banci/revolut.png" style="width: 10rem" alt="user vector">
-                  </div>
-                  <span class="f-light d-block mt-2">Soldul </span>
-                  <h5 class="mt-1">87,500.90 LEI</h5>
-                  <ul>
-                    <li>
-                      <div class="balance-item danger">
-                        <div class="balance-icon-wrap">
-                          <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-right">
-                              <line x1="7" y1="7" x2="17" y2="17"></line>
-                              <polyline points="17 7 17 17 7 17"></polyline>
-                            </svg></div>
-                        </div>
-                        <div> <span class="f-12 f-light">Cheltuieli </span>
-                          <h5>78.8K</h5><span class="badge badge-light-danger rounded-pill">-11.67%</span>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="balance-item success">
-                        <div class="balance-icon-wrap">
-                          <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
-                              <line x1="7" y1="17" x2="17" y2="7"></line>
-                              <polyline points="7 7 17 7 17 17"></polyline>
-                            </svg></div>
-                        </div>
-                        <div> <span class="f-12 f-light">Venituri</span>
-                          <h5>19.7K</h5><span class="badge badge-light-success rounded-pill">+10.67%</span>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-6 col-sm-12 box-col-6">
-            <div class="card balance-box">
-              <div id="card-3" class="card-body df-flex justify-content-center">
-                <h3>CURS VALUTAR - <span id="curs-data"></span></h3>
-                <hr>
-                <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/eur.svg" width="50" alt=""> EUR <b id="curs-valutar2"></b><br><br>
-
-                <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/usd.svg" width="50" alt=""> USD <b id="curs-valutar"></b><br><br>
-
-                <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/gbp.svg" width="50" alt=""> GBP <b id="curs-valutar3"></b><br><br>
-
-                <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/chf.svg" width="50" alt=""> CHF <b id="curs-valutar4"></b>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 col-xs-12">
-            <div class="card small-widget mb-sm-0">
-              <div id="cardExemplu" class="card-body min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"><u>🟡Situație contabila in timp real</u></span>
-
-                <div class="row d-flex">
-                  <div class="col-md-6">
-                    <div class="f-w-700 col-md-6" style="font-size: 1.1rem;">
-                      (Exemplu) Situație Martie 2023:
-                    </div>
-
-
-                    <div class="col-md-10 mb-1">
-                      <div class="card small-widget mb-sm-0">
-                        <div class="card-body primary"> <span class="f-light">Proforme</span>
-                          <div class="d-flex align-items-end gap-1">
-                            <h4>100,000 lei</h4><span class="font-primary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
-                          </div>
-                          <div class="bg-gradient">
-                            <svg class="stroke-icon svg-fill">
-                              <use href="../assets/svg/icon-sprite.svg#fill-charts"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-10 mb-1">
-                      <div class="card small-widget mb-sm-0">
-                        <div class="card-body success"><span class="f-light">Încasați</span>
-                          <div class="d-flex align-items-end gap-1">
-                            <h4>80,000 Lei</h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
-                          </div>
-                          <div class="bg-gradient">
-                            <svg class="stroke-icon svg-fill">
-                              <use href="../assets/svg/icon-sprite.svg#profit"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-10 mb-1">
-                      <div class="card small-widget mb-sm-0">
-                        <div class="card-body warning"><span class="f-light">Cheltuieli</span>
-                          <div class="d-flex align-items-end gap-1">
-                            <h4>40,000 Lei</h4><span class="font-warning f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
-                          </div>
-                          <div class="bg-gradient">
-                            <svg class="stroke-icon svg-fill">
-                              <use href="../assets/svg/icon-sprite.svg#tag"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-
-
-                    </div>
-
-                    <div class="col-md-10 mb-1">
-                      <div class="card small-widget mb-sm-0">
-                        <div id="card3" class="card-body secondary"><span class="f-light">Număr angajați</span>
-                          <div class="d-flex align-items-end gap-1">
-                            <h4>8</h4><span class="font-secondary f-12 f-w-500"></span>
-                          </div>
-                          <div class="bg-gradient">
-                            <svg class="stroke-icon svg-fill">
-                              <use href="../assets/svg/icon-sprite.svg#fill-user"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="f-w-700 col-md-6 pt-3" style="font-size: 1.1rem;">
-                    Tot ce lucrează persoana/ firma de contabilitate se va putea migra in timp real (migrare automata
-                    din SAGA/ SmartBill/ orice soft de contabilitate)<br>
-                    Astfel veți știi situația contabila in timp real.
-                  </div>
-
-
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-
-          <div class="col-md-6 col-xs-12">
-            <div class="card small-widget mb-sm-0">
-              <div id="cardDateGenerale" class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"></span>
-
-                <div class="row d-flex">
-                  <div class="col-md-12" id="dateGenerale">
-
-
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
               <div id="card1" class="card-body primary min-h-9"> <span class="f-light">Cifra de afaceri</span>
@@ -343,36 +136,242 @@
             </div>
           </div>
 
+          <!-- exemplu situatie financiara -->
+
+          <div class="col-md-6 col-xs-12">
+            <div class="card small-widget mb-sm-0">
+              <div id="cardExemplu" class="card-body min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light">
+                  <div>
+                    <span class="blink">🟡</span>
+                    <u>Situație contabila in timp real</u>
+                  </div>
+                </span>
+
+                <div class="row d-flex">
+                  <div class="col-md-6">
+                    <div class="f-w-700 col-md-6" style="font-size: 1.1rem;">
+                      (Exemplu) Situație Martie 2023:
+                    </div>
+
+
+                    <div class="col-md-10 mb-1">
+                      <div class="card small-widget mb-sm-0">
+                        <div class="card-body primary"> <span class="f-light">Proforme</span>
+                          <div class="d-flex align-items-end gap-1">
+                            <h4>100,000 lei</h4><span class="font-primary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
+                          </div>
+                          <div class="bg-gradient">
+                            <svg class="stroke-icon svg-fill">
+                              <use href="../assets/svg/icon-sprite.svg#fill-charts"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-10 mb-1">
+                      <div class="card small-widget mb-sm-0">
+                        <div class="card-body success"><span class="f-light">Încasați</span>
+                          <div class="d-flex align-items-end gap-1">
+                            <h4>80,000 Lei</h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
+                          </div>
+                          <div class="bg-gradient">
+                            <svg class="stroke-icon svg-fill">
+                              <use href="../assets/svg/icon-sprite.svg#profit"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-10 mb-1">
+                      <div class="card small-widget mb-sm-0">
+                        <div class="card-body warning"><span class="f-light">Cheltuieli</span>
+                          <div class="d-flex align-items-end gap-1">
+                            <h4>40,000 Lei</h4><span class="font-warning f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
+                          </div>
+                          <div class="bg-gradient">
+                            <svg class="stroke-icon svg-fill">
+                              <use href="../assets/svg/icon-sprite.svg#tag"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                    <div class="col-md-10 mb-1">
+                      <div class="card small-widget mb-sm-0">
+                        <div id="card3" class="card-body secondary"><span class="f-light">Număr angajați</span>
+                          <div class="d-flex align-items-end gap-1">
+                            <h4>8</h4><span class="font-secondary f-12 f-w-500"></span>
+                          </div>
+                          <div class="bg-gradient">
+                            <svg class="stroke-icon svg-fill">
+                              <use href="../assets/svg/icon-sprite.svg#fill-user"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="f-w-700 col-md-6 pt-3" style="font-size: 1.1rem;">
+                    Tot ce lucrează persoana/ firma de contabilitate se va putea migra in timp real (migrare automata
+                    din SAGA/ SmartBill/ orice soft de contabilitate)<br>
+                    Astfel veți știi situația contabila in timp real.
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Date generale despre firma -->
+          <div class="col-md-6 col-xs-12">
+            <div class="card small-widget mb-sm-0">
+              <div id="cardDateGenerale" class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"></span>
+                <div class="row d-flex">
+                  <div class="col-md-12" id="dateGenerale">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- banca transilvania -->
+          <div class="col-xl-4 col-md-6 col-sm-12 box-col-6">
+            <div class="card balance-box">
+              <div id="card-1" class="card-body d-flex justify-content-center">
+                <div class="balance-profile">
+                  <h6>Afisare sold/debit cont bancar in timp real</h5>
+                    <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
+                      <img src="assets/images/banci/bt.png" style="width: 10rem" alt="user vector">
+                    </div>
+                    <span class="f-light d-block mt-2">Soldul </span>
+                    <h5 class="mt-1">1,987,500.90 LEI</h5>
+                    <ul>
+                      <li>
+                        <div class="balance-item danger">
+                          <div class="balance-icon-wrap">
+                            <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-right">
+                                <line x1="7" y1="7" x2="17" y2="17"></line>
+                                <polyline points="17 7 17 17 7 17"></polyline>
+                              </svg></div>
+                          </div>
+                          <div> <span class="f-12 f-light">Cheltuieli </span>
+                            <h5>78.8K</h5><span class="badge badge-light-danger rounded-pill">-11.67%</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="balance-item success">
+                          <div class="balance-icon-wrap">
+                            <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                              </svg></div>
+                          </div>
+                          <div> <span class="f-12 f-light">Venituri</span>
+                            <h5>19.7K</h5><span class="badge badge-light-success rounded-pill">+10.67%</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- revolut -->
+          <div class="col-xl-4 col-md-6 col-sm-12 box-col-6">
+            <div class="card balance-box">
+              <div id="card-2" class="card-body d-flex justify-content-center">
+                <div class="balance-profile">
+                  <h6>Afisare sold/debit cont bancar in timp real</h6>
+                  <div style="padding: 20px;background: aliceblue;border-radius: 20px;">
+                    <img src="assets/images/banci/revolut.png" style="width: 10rem" alt="user vector">
+                  </div>
+                  <span class="f-light d-block mt-2">Soldul </span>
+                  <h5 class="mt-1">87,500.90 LEI</h5>
+                  <ul>
+                    <li>
+                      <div class="balance-item danger">
+                        <div class="balance-icon-wrap">
+                          <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-right">
+                              <line x1="7" y1="7" x2="17" y2="17"></line>
+                              <polyline points="17 7 17 17 7 17"></polyline>
+                            </svg></div>
+                        </div>
+                        <div> <span class="f-12 f-light">Cheltuieli </span>
+                          <h5>78.8K</h5><span class="badge badge-light-danger rounded-pill">-11.67%</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="balance-item success">
+                        <div class="balance-icon-wrap">
+                          <div class="balance-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                              <line x1="7" y1="17" x2="17" y2="7"></line>
+                              <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg></div>
+                        </div>
+                        <div> <span class="f-12 f-light">Venituri</span>
+                          <h5>19.7K</h5><span class="badge badge-light-success rounded-pill">+10.67%</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- curs valutar -->
+          <div class="col-xl-4 col-md-6 col-sm-12 box-col-6">
+            <div class="card balance-box">
+              <div id="card-3" class="card-body df-flex justify-content-center">
+                <h3>CURS VALUTAR - <span id="curs-data"></span></h3>
+                <hr>
+                <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/eur.svg" width="50" alt=""> EUR <b id="curs-valutar2"></b><br><br>
+
+                <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/usd.svg" width="50" alt=""> USD <b id="curs-valutar"></b><br><br>
+
+                <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/gbp.svg" width="50" alt=""> GBP <b id="curs-valutar3"></b><br><br>
+
+                <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/chf.svg" width="50" alt=""> CHF <b id="curs-valutar4"></b>
+              </div>
+            </div>
+          </div>
+
           <div class="col-xl-12 col-md-12 col-sm-12 box-col-12">
             <div class="card balance-box">
               <div class="card-body df-flex align-items-center justify-content-center">
-              <script>
-        (function(d, s, id) {
-            if (d.getElementById(id)) {
-                if (window.__TOMORROW__) {
-                    window.__TOMORROW__.renderWidget();
-                }
-                return;
-            }
-            const fjs = d.getElementsByTagName(s)[0];
-            const js = d.createElement(s);
-            js.id = id;
-            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+                <script>
+                  (function(d, s, id) {
+                    if (d.getElementById(id)) {
+                      if (window.__TOMORROW__) {
+                        window.__TOMORROW__.renderWidget();
+                      }
+                      return;
+                    }
+                    const fjs = d.getElementsByTagName(s)[0];
+                    const js = d.createElement(s);
+                    js.id = id;
+                    js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
 
-            fjs.parentNode.insertBefore(js, fjs);
-        })(document, 'script', 'tomorrow-sdk');
-        </script>
+                    fjs.parentNode.insertBefore(js, fjs);
+                  })(document, 'script', 'tomorrow-sdk');
+                </script>
 
-        <div class="tomorrow"
-           data-location-id=""
-           data-language="RO"
-           data-unit-system="METRIC"
-           data-skin="dark"
-           data-widget-type="upcoming"
-           style="padding-bottom:22px;position:relative;"
-        >
-          
-        </div>
+                <div class="tomorrow" data-location-id="" data-language="RO" data-unit-system="METRIC" data-skin="dark" data-widget-type="upcoming" style="padding-bottom:22px;position:relative;">
+
+                </div>
               </div>
             </div>
           </div>
@@ -769,7 +768,7 @@
               </div>
             </div>
           </div>
-        </div>         
+        </div>
 
       </div>
       <!-- footer start-->
