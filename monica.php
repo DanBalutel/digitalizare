@@ -36,6 +36,8 @@
                           <div class="name">Mony AI</div>
                           <div class="status font-success">Online</div>
                         </div>
+                        <ul class="list-inline float-start float-sm-end chat-menu-icons">
+                        </ul>
                         <div class="input-group-text btn btn-primary text-white fw-bold" style="margin-left:1rem" onclick="clearChatHistory()">Sterge istoricul</div>
                       </div>
                       <!-- chat-header end-->
