@@ -675,15 +675,28 @@ for (var i = 0; i < pairs.length; i++) {
 
 
 if (window.localStorage.dataObj) {
+
+    // show Monica first modal
+    showVideoMonica(localStorage.displayedModal1);
+
     dataObj = JSON.parse(window.localStorage.dataObj);
 
     // temp we add if check for login
     if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
+
+        // show Monica forst modal
+        showVideoMonica(localStorage.displayedModal1);
+
         populatePage();
     }
 
 } else if (request['cui']) {
+
+    // show Monica first modal
+    showVideoMonica(localStorage.displayedModal1);
+
     fetchAuth(request['cui']);
+
 } else {
 
     // temp we add if check for login
@@ -698,10 +711,6 @@ if (window.localStorage.dataObj) {
         console.log(window.location.pathname);
     }
 }
-
-
-console.log(request['cui']);
-
 
 // CUI 38911092
 function fetchAuth(cuiValue) {
@@ -759,9 +768,6 @@ function fetchAuth(cuiValue) {
 }
 
 function populatePage() {
-
-    // show Monica forst modal
-    showVideoMonica(localStorage.displayedModal1);
 
     try {
         removeLoadingModal();
