@@ -1065,7 +1065,7 @@ function showVideoMonica(displayedModal1) {
                   <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
                 </div>
                 <div class="modal-body dark-modal">
-                  <video src="https://cdn.discordapp.com/attachments/1051098546281132052/1087391236182261812/Clip_video_WhatsApp_2023-03-20_la_16.55.53.mp4" controls="" style="width: 100%;"></video>
+                  <video src="assets/video/monica_intro.mp4" controls="" style="width: 100%;"></video>
                 </div>
               </div>
             `,
