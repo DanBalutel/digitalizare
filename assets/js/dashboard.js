@@ -1065,7 +1065,7 @@ function showVideoMonica(displayedModal1) {
                   <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
                 </div>
                 <div class="modal-body dark-modal">
-                  <video src="assets/video/monica_intro.mp4" controls="" style="width: 100%;"></video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1ynZM9gaZVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
               </div>
             `,
