@@ -1069,7 +1069,6 @@ function showVideoMonica(displayedModal1) {
                 </div>
               </div>
             `,
-            width: '800px',
             showConfirmButton: true,
             confirmButtonText: 'Am inteles',
             backdrop: 'rgba(0,0,0,0.4)',
