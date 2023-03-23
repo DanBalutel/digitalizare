@@ -20,6 +20,7 @@
       <div class="container-fluid">
         <div class="row g-sm-3 height-equal-2 widget-charts">
           <h3 id="name"></h3>
+          <h4>Situatii financiare 2021</h4>
 
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
@@ -70,6 +71,7 @@
                 <div class="flex-wrap d-flex align-items-end gap-1">
                   <h4 id="cod-caen"></h4><span class="font-success f-12 f-w-500"></span>
                   <div id="nume-caen" class="f-14 f-s-normal">denumire CAEN</div>
+                  <span style="cursor: pointer">+ Adauga</span>
                 </div>
                 <div class="bg-gradient">
                   <svg class="stroke-icon svg-fill">

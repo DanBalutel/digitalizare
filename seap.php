@@ -15,11 +15,81 @@
             <?php
             $title = 'Dashboard';
             include('partial/breadcrumb.php')
-                ?>
+            ?>
 
             <!-- Container-fluid starts-->
             <div class="container-fluid">
                 <div class="row g-sm-3 height-equal-2 widget-charts">
+
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Licitatii / Lucrari</h3>
+                                <h6 id="caenTitle"></h6>
+
+                            </div>
+                            <div class="card-block row">
+                                <div class="col-sm-12 col-lg-12 col-xl-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-responsive-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Titlu</th>
+                                                    <th scope="col">Data publicare</th>
+                                                    <th scope="col">Termen</th>
+                                                    <th scope="col">Val. estimata</th>
+                                                    <th scope="col">Actiuni</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">SCN1122306</th>
+                                                    <td>Servicii de proiectare, asistență tehnică din partea proiectantului și execuția lucrărilor pentru realizarea obiectivului de investiție «MODERNIZARE DRUMURI DE INTERES LOCAL ÎN COMUNA HLIPICENI, JUDEȚUL BOTOȘANI</td>
+                                                    <td>23.03.2023 15:17</td>
+                                                    <td>10.04.2023 15:00</td>
+                                                    <td> 10.182.397,28  RON </td>
+                                                    <td>
+                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                                                        <div class="dropdown-menu" style="">
+                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <th scope="row">SCN1122298</th>
+                                                    <td>Reparatii curente la instalaţiile IFTE de pe raza secţiei IFTE Roman: instalatii IFTE din statiile Bacau,Roman si Girleni</td>
+                                                    <td>23.03.2023 12:55</td>
+                                                    <td>12.04.2023 15:00</td>
+                                                    <td> 550.000,00  RON </td>
+                                                    <td>
+                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                                                        <div class="dropdown-menu" style="">
+                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
 
                     <div class="col-sm-12">
                         <div class="card">
@@ -47,16 +117,10 @@
                                                     <td>23-08-2021</td>
                                                     <td> 6.700 RON</td>
                                                     <td>
-                                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                                            data-bs-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">Seteaza</button>
+                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                         <div class="dropdown-menu" style="">
-                                                            <h6 class="dropdown-header">Dropdown header</h6><a
-                                                                class="dropdown-item" href="?test=1">Action</a><a
-                                                                class="dropdown-item" href="#">Another action</a><a
-                                                                class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                                href="#">Separated link</a>
+                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -67,16 +131,10 @@
                                                     <td>23-08-2021 </td>
                                                     <td>35.000 RON </td>
                                                     <td>
-                                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                                            data-bs-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">Seteaza</button>
+                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                         <div class="dropdown-menu" style="">
-                                                            <h6 class="dropdown-header">Dropdown header</h6><a
-                                                                class="dropdown-item" href="?test=1">Action</a><a
-                                                                class="dropdown-item" href="#">Another action</a><a
-                                                                class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                                href="#">Separated link</a>
+                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -89,16 +147,10 @@
                                                     <td>06-09-2021 </td>
                                                     <td>221.848 RON</td>
                                                     <td>
-                                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                                            data-bs-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">Seteaza</button>
+                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                         <div class="dropdown-menu" style="">
-                                                            <h6 class="dropdown-header">Dropdown header</h6><a
-                                                                class="dropdown-item" href="?test=1">Action</a><a
-                                                                class="dropdown-item" href="#">Another action</a><a
-                                                                class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                                href="#">Separated link</a>
+                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -111,16 +163,10 @@
                                                     <td>07-09-2021 </td>
                                                     <td>193.175 RON </td>
                                                     <td>
-                                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                                            data-bs-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">Seteaza</button>
+                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                         <div class="dropdown-menu" style="">
-                                                            <h6 class="dropdown-header">Dropdown header</h6><a
-                                                                class="dropdown-item" href="?test=1">Action</a><a
-                                                                class="dropdown-item" href="#">Another action</a><a
-                                                                class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                                href="#">Separated link</a>
+                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -133,16 +179,10 @@
                                                     <td>06-09-2021 </td>
                                                     <td>8.123.677 RON </td>
                                                     <td>
-                                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                                            data-bs-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">Seteaza</button>
+                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                         <div class="dropdown-menu" style="">
-                                                            <h6 class="dropdown-header">Dropdown header</h6><a
-                                                                class="dropdown-item" href="?test=1">Action</a><a
-                                                                class="dropdown-item" href="#">Another action</a><a
-                                                                class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                                href="#">Separated link</a>
+                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -154,16 +194,10 @@
                                                     <td>25-08-2021 </td>
                                                     <td>1.443 RON</td>
                                                     <td>
-                                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                                            data-bs-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">Seteaza</button>
+                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                         <div class="dropdown-menu" style="">
-                                                            <h6 class="dropdown-header">Dropdown header</h6><a
-                                                                class="dropdown-item" href="?test=1">Action</a><a
-                                                                class="dropdown-item" href="#">Another action</a><a
-                                                                class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                                href="#">Separated link</a>
+                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -171,7 +205,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                
+
                                 </div>
                             </div>
 
@@ -183,8 +217,7 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="col-sm-12 col-lg-12 col-xl-12">
-                                <iframe src="https://www.e-licitatie.ro/pub" width="100%" height="1000vh"
-                                    name="iframe"></iframe>
+                                <iframe src="https://www.e-licitatie.ro/pub" width="100%" height="1000vh" name="iframe"></iframe>
                             </div>
                         </div>
                     </div>
@@ -195,9 +228,7 @@
 
 
             <!-- Modal loading-->
-            <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1"
-                aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true"
-                role="dialog">
+            <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true" role="dialog">
                 <div class="mt-5 modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-body dark-modal">
@@ -206,8 +237,7 @@
                             <h6 id="loadingLabel" class="w-100 d-flex justify-content-center">text here</h6>
 
                             <div class="progress">
-                                <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success"
-                                    role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
 
 
@@ -242,8 +272,14 @@
 <script src="assets/js/chart/morris-chart/prettify.min.js"></script>
 <script src="assets/js/chart/morris-chart/morris-script.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
+<script src="assets/js/custom-script.js"></script>
+
 <!-- Plugins JS Ends-->
 <script>
     new WOW().init();
+
+    // title of the table
+    dataObj = JSON.parse(window.localStorage.dataObj);
+    d.element('caenTitle').innerHTML = `CAEN: ${dataObj.Bilanturi[0].cod_caen} - ${listCaen[dataObj.Bilanturi[0].cod_caen]}`;
 </script>
 <?php include('partial/footer-end.php') ?>

@@ -76,7 +76,7 @@
                      <li><a href="outlook.php"><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
                   </ul>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="banci.php">
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <i data-feather="dollar-sign" style="color: rgba(82, 82, 108, 0.8)"></i>
                      <span>Banci</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>

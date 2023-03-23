@@ -127,124 +127,8 @@ let crmTable1 = [{
     factura: 'Renunta'
 }
 ];
-// let crmTable2 = [{
-//     id: 1,
-//     name: 'Gigi Popescu',
-//     phone: '0729 229 599',
-//     email: 'john@example.com',
-//     status: 'Platita'
-// },
-// {
-//     id: 2,
-//     name: 'Gigi Popescu 2',
-//     phone: '0729 229 599',
-//     email: 'jane@example.com',
-//     status: 'Renunta'
-// },
-// {
-//     id: 3,
-//     name: 'Gigi Popescu 3',
-//     phone: '0729 229 599',
-//     email: 'smith@example.com',
-//     status: 'Urmeaza'
-// },
-// {
-//     id: 4,
-//     name: 'Gigi Popescu 4',
-//     phone: '0729 229 599',
-//     email: 'jane@example.com',
-//     status: 'Renunta'
-// },
-// {
-//     id: 5,
-//     name: 'Gigi Popescu 5',
-//     phone: '0729 229 599',
-//     email: 'jane@example.com',
-//     status: 'Renunta'
-// },
-// {
-//     id: 6,
-//     name: 'Gigi Popescu 6',
-//     phone: '0729 229 599',
-//     email: 'jane@example.com',
-//     status: 'Renunta'
-// },
-// {
-//     id: 7,
-//     name: 'Gigi Popescu 7',
-//     phone: '0729 229 599',
-//     email: 'jane@example.com',
-//     status: 'Renunta'
-// },
-// {
-//     id: 8,
-//     name: 'Gigi Popescu 8',
-//     phone: '0729 229 599',
-//     email: 'jane@example.com',
-//     status: 'Renunta'
-// }, {
-//     id: 9,
-//     name: 'Gigi Popescu',
-//     phone: '0729 229 599',
-//     email: 'john@example.com',
-//     status: 'Platita'
-// },
-// {
-//     id: 10,
-//     name: 'Gigi Popescu 2',
-//     phone: '0729 229 599',
-//     email: 'jane@example.com',
-//     status: 'Renunta'
-// },
-// {
-//     id: 11,
-//     name: 'Gigi Popescu 3',
-//     phone: '0729 229 599',
-//     email: 'smith@example.com',
-//     status: 'Urmeaza'
-// },
-// {
-//     id: 12,
-//     name: 'Gigi Popescu 4',
-//     phone: '0729 229 599',
-//     email: 'jane@example.com',
-//     status: 'Renunta'
-// },
-// {
-//     id: 13,
-//     name: 'Gigi Popescu 5',
-//     phone: '0729 229 599',
-//     email: 'jane@example.com',
-//     status: 'Renunta'
-// },
-// {
-//     id: 14,
-//     name: 'Gigi Popescu 6',
-//     phone: '0729 229 599',
-//     email: 'jane@example.com',
-//     status: 'Renunta'
-// },
-// {
-//     id: 15,
-//     name: 'Gigi Popescu 7',
-//     phone: '0729 229 599',
-//     email: 'jane@example.com',
-//     status: 'Renunta'
-// },
-// {
-//     id: 16,
-//     name: 'Gigi Popescu 8',
-//     phone: '0729 229 599',
-//     email: 'jane@example.com',
-//     status: 'Renunta'
-// }
-// ];
-
-
-
 
 d.element('crmTable1')
-// d.element('crmTable2')
 
 
 // return status css class for future use
@@ -341,7 +225,7 @@ function addcrmTable1Row(id, name, phone, email, status, factura) {
                 "children": [
                     {
                         "tag": "button",
-                        "class": `btn dropdown-toggle ${returnStatus(factura, 1)}`,
+                        "class": `btn dropdown-toggle ${returnStatus(factura, 2)}`,
                         "innerHTML": factura,
                         "id": `cT1factura${id}`,
                         "attrs": {
@@ -353,25 +237,28 @@ function addcrmTable1Row(id, name, phone, email, status, factura) {
                     {
                         "tag": "div",
                         "class": "dropdown-menu",
-                        "id": `cT1dm${id}`,
+                        "id": `cT2dm${id}`,
                         "children": [
                             {
                                 "tag": "div",
                                 "class": "dropdown-item btn btn-success",
                                 "innerHTML": "Platita",
-                                "id": `cT1s${id}`
+                                "id": `cT2s${id}`,
+                                "attrs": {
+                                    "onclick": "alert('test text here');"
+                                }
                             },
                             {
                                 "tag": "div",
                                 "class": "dropdown-item btn btn-danger",
                                 "innerHTML": "Renunta",
-                                "id": `cT1d${id}`
+                                "id": `cT2d${id}`
                             },
                             {
                                 "tag": "div",
                                 "class": "dropdown-item btn btn-warning",
                                 "innerHTML": "Urmeaza",
-                                "id": `cT1w${id}`
+                                "id": `cT2w${id}`
                             }
                         ]
                     }
@@ -558,98 +445,3 @@ document.getElementById('processExcel1').addEventListener('click', () => {
         alert('Please select an Excel file to process.');
     }
 });
-
-// // ##########################
-
-// function addcrmTable2Row(id, name, phone, email, status) {
-
-//     // all schema of table line
-//     const jsonData = {
-//         "tag": "tr",
-//         "id": `cT2id${id}`,
-//         "class": "odd",
-//         "attrs": {
-//             "role": "row"
-//         },
-//         "children": [
-//             {
-//                 "tag": "td",
-//                 "innerHTML": `#${id}`
-//             }, {
-//                 "tag": "td",
-//                 "innerHTML": name
-//             }, {
-//                 "tag": "td",
-//                 "innerHTML": phone
-//             }, {
-//                 "tag": "td",
-//                 "innerHTML": email
-//             }, {
-//                 "tag": "td",
-//                 "class": "position-relative",
-//                 "children": [
-//                     {
-//                         "tag": "button",
-//                         "class": `btn dropdown-toggle ${returnStatus(status, 2)}`,
-//                         "innerHTML": status,
-//                         "id": `cT2status${id}`,
-//                         "attrs": {
-//                             "type": "button",
-//                             "data-bs-toggle": "dropdown",
-//                             "aria-expanded": "false"
-//                         }
-//                     },
-//                     {
-//                         "tag": "div",
-//                         "class": "dropdown-menu",
-//                         "id": `cT2dm${id}`,
-//                         "children": [
-//                             {
-//                                 "tag": "div",
-//                                 "class": "dropdown-item btn btn-success",
-//                                 "innerHTML": "Platita",
-//                                 "id": `cT2s${id}`
-//                             },
-//                             {
-//                                 "tag": "div",
-//                                 "class": "dropdown-item btn btn-danger",
-//                                 "innerHTML": "Renunta",
-//                                 "id": `cT2d${id}`
-//                             },
-//                             {
-//                                 "tag": "div",
-//                                 "class": "dropdown-item btn btn-warning",
-//                                 "innerHTML": "Urmeaza",
-//                                 "id": `cT2w${id}`
-//                             }
-//                         ]
-//                     }
-//                 ]
-//             },
-//         ]
-//     }
-
-//     d.createElement(jsonData, d.e.crmTable2);
-// }
-
-// // Set up button click event for table 2
-// document.getElementById('processExcel2').addEventListener('click', () => {
-//     const inputElement = document.getElementById('uploadExcel2');
-//     const file = inputElement.files[0];
-
-//     removeCrmTableHandlers(crmTable2, 2);
-//     renderCrmTable(3000);
-//     renderLoadingModal('Tabelul se proceseaza');
-
-//     if (file) {
-//         readExcelFile(file);
-//     } else {
-//         alert('Please select an Excel file to process.');
-//     }
-// });
-
-// // Set up button click event for table 2
-// document.getElementById('downloadExcel2').addEventListener('click', () => {
-//     const workbook = jsonToExcel(crmTable2);
-//     downloadExcelFile(workbook, 'example.xlsx');
-// });
