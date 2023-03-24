@@ -108,3 +108,21 @@ div#monicaModal1 button.btn-close {
     width: 58vw;
     height: 65vh;
 }
+
+
+.moniModal1 .swal2-actions.dark-mode-actions {
+    display: none !important;
+}
+
+/* monica Steps videos */
+.videoContainer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z - index: 9999;
+}
+
+.videoContainer iframe {
+    width: 320px;
+    height: 240px;
+}

@@ -254,6 +254,6 @@ class crmTable {
     }
 
     addRow() {
-
+        d.createElement(jsonLineSchema, d.e.crmTable1);
     }
 }
