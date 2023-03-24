@@ -25,7 +25,7 @@
 
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
-              <div id="card1" class="card-body primary min-h-9"> <span class="f-light">Cifra de afaceri</span>
+              <div id="card1" class="card-body primary min-h-7"> <span class="f-light">Cifra de afaceri</span>
                 <div class="d-flex align-items-end gap-1">
                   <h4 id="cifra-de-afaceri"></h4><span class="font-primary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
                 </div>
@@ -40,7 +40,7 @@
 
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
-              <div id="card2" class="card-body success min-h-9"><span class="f-light">Profit</span>
+              <div id="card2" class="card-body success min-h-7"><span class="f-light">Profit</span>
                 <div class="d-flex align-items-end gap-1">
                   <h4 id="profit-actual"></h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
                 </div>
@@ -54,7 +54,7 @@
           </div>
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
-              <div id="card3" class="card-body secondary min-h-9"><span class="f-light">Angajați</span>
+              <div id="card3" class="card-body secondary min-h-7"><span class="f-light">Angajați</span>
                 <div class="d-flex align-items-end gap-1">
                   <h4 id="locuri-munca"></h4><span class="font-secondary f-12 f-w-500"></span>
                 </div>
@@ -68,7 +68,7 @@
           </div>
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
-              <div id="card4" class="card-body success min-h-9"><span class="f-light">Cod CAEN</span>
+              <div id="card4" class="card-body success min-h-7"><span class="f-light">Cod CAEN</span>
                 <div class="flex-wrap d-flex align-items-end gap-1">
                   <h4 id="cod-caen"></h4><span class="font-success f-12 f-w-500"></span>
                   <div id="nume-caen" class="f-14 f-s-normal">denumire CAEN</div>
@@ -143,7 +143,7 @@
 
           <div class="col-md-6 col-xs-12">
             <div class="card small-widget mb-sm-0">
-              <div id="cardExemplu" class="card-body min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light">
+              <div id="cardExemplu" class="card-body min-h-7"> <span style="font-size: 1.7rem;" class="f-w-700 f-light">
                   <div>
                     <span class="blink">🟡</span>
                     <u>Situație contabila in timp real</u>
@@ -237,7 +237,7 @@
           <!-- Date generale despre firma -->
           <div class="col-md-6 col-xs-12">
             <div class="card small-widget mb-sm-0">
-              <div id="cardDateGenerale" class="card-body primary min-h-9"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"></span>
+              <div id="cardDateGenerale" class="card-body primary min-h-7"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"></span>
                 <div class="row d-flex">
                   <div class="col-md-12" id="dateGenerale">
                   </div>
