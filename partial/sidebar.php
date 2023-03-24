@@ -50,7 +50,7 @@
                <li class="sidebar-list">
                   <a class="sidebar-link" href="monica.php">
                      <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#stroke-chat"></use>
+                        <img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
                      </svg>
                      <svg class="fill-icon">
                         <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
