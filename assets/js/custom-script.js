@@ -784,9 +784,13 @@ d.createHandler('timerWork', 'click', showTimeOnClick);
 // <iframe width="560" height="315" src="https://www.youtube.com/embed/z4OL-mVRcd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 const moniStepsJson1 = {
     "tag": "div",
-    "id": "moniStepsVideo1",
-    "class": "videoContainer",
-    "innerHTML": `<iframe width="560" height="315" src="https://www.youtube.com/embed/z4OL-mVRcd0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+    "class": "videoWrapper",
+    "children": [
+        {
+            "tag": "div",
+            "id": "moniStepsVideo"
+        }
+    ]
 }
 
 d.createElement(moniStepsJson1, document.body);

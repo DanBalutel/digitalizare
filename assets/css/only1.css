@@ -115,14 +115,31 @@ div#monicaModal1 button.btn-close {
 }
 
 /* monica Steps videos */
-.videoContainer {
+.videoWrapper {
     position: fixed;
     bottom: 0;
     right: 0;
-    z - index: 9999;
+    z-index: 9999;
+    /* 16:9 aspect ratio */
+    height: 281px;
+    width: 500px;
+    overflow: hidden;
 }
 
-.videoContainer iframe {
-    width: 320px;
-    height: 240px;
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .videoWrapper {
+        padding-bottom: 75%;
+        /* 4:3 aspect ratio */
+        width: 75%;
+        bottom: 40%;
+
+    }
 }

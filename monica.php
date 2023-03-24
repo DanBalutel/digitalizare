@@ -168,6 +168,15 @@
   </div>
 </div>
 <?php include('partial/scripts.php') ?>
+
+<script>
+  // define Moni steps fideo ID
+  const moniVideoSteps = 'z4OL-mVRcd0';
+  
+</script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="assets/js/moniSteps.js"></script>
+
 <!-- Plugins JS start-->
 <script src="assets/js/notify/index.js"></script>
 <script src="/assets/js/chatgpt.js"></script>
