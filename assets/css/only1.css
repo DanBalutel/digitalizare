@@ -146,9 +146,5 @@ div#monicaModal1 button.btn-close {
 
 #iotImage1 {
     width: 40%;
-}
-@media only screen and (max-width: 600px) {
-    #iotImage1 {
-        width: 100%;
-    }
+    min-width: 350px;
 }
