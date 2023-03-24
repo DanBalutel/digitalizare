@@ -3,6 +3,8 @@ function onYouTubeIframeAPIReady() {
 
     const player = new YT.Player('moniStepsVideo', {
         videoId: moniVideoSteps, // Replace this with your video ID
+        width: '100%',
+        height: '100%',
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -26,4 +28,5 @@ function onPlayerStateChange(event) {
 function closeVideo() {
     const playerElement = document.getElementById('moniStepsVideo');
     playerElement.parentNode.removeChild(playerElement);
+    Swal.close();
 }

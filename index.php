@@ -844,6 +844,15 @@
     })
     .catch(error => console.error('Eroare:', error));
 </script>
+
+<script>
+  // define Moni steps fideo ID
+  const moniVideoSteps = 'z4OL-mVRcd0';
+</script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="assets/js/moniSteps.js"></script>
+
+
 <script src="assets/js/chart/apex-chart/apex-chart.js"></script>
 <script src="assets/js/chart/apex-chart/stock-prices.js"></script>
 <script src="assets/js/dashboard/default.js"></script>

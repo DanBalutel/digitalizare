@@ -21,11 +21,6 @@ img.rounded-circle.shadow {
     .timerWork {
         color: #57c07a;
     }
-
-    #monicaModal {
-        width: 70vw !important;
-        height: 30vh !important;
-    }
 }
 
 @media only screen and (min-width: 601px) {
@@ -104,11 +99,6 @@ div#monicaModal1 button.btn-close {
     }
 }
 
-#monicaModal {
-    width: 58vw;
-    height: 65vh;
-}
-
 
 .moniModal1 .swal2-actions.dark-mode-actions {
     display: none !important;
@@ -116,13 +106,10 @@ div#monicaModal1 button.btn-close {
 
 /* monica Steps videos */
 .videoWrapper {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 9999;
+    position: relative;
+    /* padding-bottom: 46.25%; */
     /* 16:9 aspect ratio */
-    height: 281px;
-    width: 500px;
+    height: 0;
     overflow: hidden;
 }
 
@@ -134,8 +121,17 @@ div#monicaModal1 button.btn-close {
     height: 100%;
 }
 
+.swal2-popup {
+    height: 450px;
+}
+
+.videoWrapper {
+    height: 400px;
+}
+
 @media only screen and (max-width: 600px) {
     .videoWrapper {
+        position: initial;
         padding-bottom: 75%;
         /* 4:3 aspect ratio */
         width: 75%;
@@ -147,4 +143,21 @@ div#monicaModal1 button.btn-close {
 #iotImage1 {
     width: 40%;
     min-width: 350px;
+}
+
+@media only screen and (max-width: 600px) {
+    .swal2-popup {
+        width: 100% !important;
+        max-width: 700px !important;
+    }
+}
+
+
+.videoContainerSteps {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 9999;
+    width: 320px;
+    height: 240px;
 }

@@ -456,16 +456,12 @@ function showVideoMonica(displayedModal1) {
         localStorage.setItem("displayedModal1", true);
         Swal.fire({
             html: `
-              <div id="monicaModal1" class="modal-content dark-mode">
-                <div class="modal-header">
-                  <h4 class="modal-title" id="myLargeModalLabel">Prezentare Only1.ai</h4>
-                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+                <div class="videoWrapper">
+                    <div id="moniStepsVideo"></div>
                 </div>
-                <div class="modal-body dark-modal">
-                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/z4OL-mVRcd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-              </div>
             `,
+            width: "700px",
+            minHeight: "500px",
             showConfirmButton: true,
             backdrop: 'rgba(0,0,0,0.4)',
             customClass: {
@@ -484,7 +480,10 @@ function showVideoMonica(displayedModal1) {
             console.log(monica1);
         });
 
-
+        onYouTubeIframeAPIReady();
 
     }
 }
+
+
+

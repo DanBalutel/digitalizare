@@ -53,7 +53,7 @@ function addLoading() {
     loadingChild.classList = 'chat-content-leftside';
     loadingChild.id = 'loading-child'
     loadingChild.innerHTML = `
-    <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
+    <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
     <div class="message-data text-end"></div>Se genereaza raspunsul <img src="https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif" width="80"></div>
     `;
     chatBox.appendChild(loadingChild);
@@ -85,7 +85,7 @@ function addMessage(msgLoc, msgText) {
         localStorage.setItem('chatMoni', d.element('chatBox').innerHTML + msgChild.innerHTML);
     } else {
         msgChild.innerHTML = `
-        <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="assets/images/user/3.png" alt="">
+        <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
         <div class="message-data" style="cursor:pointer" title="Copiaza" id="text" onclick="copyElementText(this.innerHTML)">${msgText}</div>
         `;
         localStorage.setItem('chatMoni', d.element('chatBox').innerHTML + msgChild.innerHTML);
