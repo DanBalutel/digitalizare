@@ -22,11 +22,7 @@
                      <i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
                   </div>
                </li>
-               <li class="sidebar-main-title">
-                  <div>
-                     <h6>General</h6>
-                  </div>
-               </li>
+              
 
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title link-nav" href="index.php">
