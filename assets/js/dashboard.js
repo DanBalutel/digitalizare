@@ -201,7 +201,7 @@ function populatePage() {
         d.element('dash').innerHTML = dataObj.DateGenerale.nume;
         d.element('nameAdmin').innerHTML = administrator.nume;
         if (name) {
-            name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: ${administrator.nume}`;
+            name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: <span style="color: #00CCFF">${administrator.nume}</span>`;
             const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
             chartSituatieFianciara.innerHTML = `Situatie finaciara ${dataObj.DateGenerale.nume}`;
 

@@ -161,3 +161,7 @@ div#monicaModal1 button.btn-close {
     width: 320px;
     height: 240px;
 }
+
+body {
+    font-size: 22px;
+}
