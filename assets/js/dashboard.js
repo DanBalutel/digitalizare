@@ -1,26 +1,40 @@
 let dataJson;
 let dataObj;
 
+// detect if screen is mobile
+function isScreenWidth768OrMore() {
+    if (window.innerWidth >= 768) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
 function setMaxHeight(ids) {
-    // initialize max height to 0
-    let maxHeight = 0;
 
-    // loop through each id and get its height
-    ids.forEach((id) => {
-        const element = document.getElementById(id);
-        const height = element.clientHeight;
+    if (isScreenWidth768OrMore()) {
+        // initialize max height to 0
+        let maxHeight = 0;
 
-        // update max height if current element is taller
-        if (height > maxHeight) {
-            maxHeight = height;
-        }
-    });
+        // loop through each id and get its height
+        ids.forEach((id) => {
+            const element = document.getElementById(id);
+            const height = element.clientHeight;
 
-    // set all elements' height to max height
-    ids.forEach((id) => {
-        const element = document.getElementById(id);
-        element.style.height = maxHeight + "px";
-    });
+            // update max height if current element is taller
+            if (height > maxHeight) {
+                maxHeight = height;
+            }
+        });
+
+        // set all elements' height to max height
+        ids.forEach((id) => {
+            const element = document.getElementById(id);
+            element.style.height = maxHeight + "px";
+        });
+
+    }
 }
 
 function startTimer() {
