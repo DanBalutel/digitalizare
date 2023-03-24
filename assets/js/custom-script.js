@@ -790,7 +790,3 @@ const moniStepsJson1 = {
 }
 
 d.createElement(moniStepsJson1, document.body);
-
-document.onclick = (e) => {
-e.target.innerHTML;
-}
