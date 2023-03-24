@@ -20,6 +20,7 @@
       <div class="container-fluid">
         <div class="row g-sm-3 height-equal-2 widget-charts">
           <h3 id="name"></h3>
+          <hr style="height: 10px;border-radius: 1rem;}">
           <h4>Situatii financiare 2021</h4>
 
           <div class="col-md-3">
