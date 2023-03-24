@@ -791,15 +791,6 @@ const moniStepsJson1 = {
 
 d.createElement(moniStepsJson1, document.body);
 
-
-let ae;
-
 document.onclick = (e) => {
-ae = e.target;
-}
-
-function testElementClick(elementClick) {
-    setTimeout(function () {
-        console.log(elementClick.parentElement);
-    }, 100);
+e.target.innerHTML;
 }
