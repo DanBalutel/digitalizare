@@ -84,7 +84,7 @@
           </div>
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
-              <div class="card-body secondary"> <span class="f-light">Active Totale</span>
+              <div id="card5" class="card-body secondary"> <span class="f-light">Active Totale</span>
                 <div class="d-flex align-items-end gap-1">
                   <h4 id="active-totale"></h4><span class="font-secondary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
                 </div>
@@ -98,7 +98,7 @@
           </div>
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
-              <div class="card-body warning"><span class="f-light">Stocuri</span>
+              <div id="card6" class="card-body warning"><span class="f-light">Stocuri</span>
                 <div class="d-flex align-items-end gap-1">
                   <h4 id="nr-stocuri"></h4><span class="font-warning f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
                 </div>
@@ -112,7 +112,7 @@
           </div>
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
-              <div class="card-body secondary"><span class="f-light">Casa si conturi in banci</span>
+              <div id="card7" class="card-body secondary"><span class="f-light">Casa si conturi in banci</span>
                 <div class="d-flex align-items-end gap-1">
                   <h4 id="casa-conturi"></h4><span class="font-secondary f-12 f-w-500"><i class="icon-arrow-down"></i><span>-10%</span></span>
                 </div>
@@ -126,7 +126,7 @@
           </div>
           <div class="col-md-3">
             <div class="card small-widget mb-sm-0">
-              <div class="card-body success"><span class="f-light">Capital total</span>
+              <div id="card8" class="card-body success"><span class="f-light">Capital total</span>
                 <div class="d-flex align-items-end gap-1">
                   <h4 id="capital-total"></h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+80%</span></span>
                 </div>
@@ -146,7 +146,7 @@
               <div id="cardExemplu" class="card-body min-h-7"> <span style="font-size: 1.7rem;" class="f-w-700 f-light">
                   <div>
                     <span class="blink">🟡</span>
-                    <u>Situație contabila in timp real</u>
+                    <u style="color: #00CCFF">Situație contabila in timp real</u>
                   </div>
                 </span>
 
@@ -247,6 +247,7 @@
           </div>
 
 
+          <h4 style="color: #00CCFF">Afisare sold/debit cont bancar in timp real</h4>
           <!-- banca transilvania -->
           <div class="col-xl-4 col-md-6 col-sm-12 box-col-6">
             <div class="card balance-box">
@@ -339,7 +340,7 @@
           <div class="col-xl-4 col-md-6 col-sm-12 box-col-6">
             <div class="card balance-box">
               <div id="card-3" class="card-body df-flex justify-content-center">
-                <h3>CURS VALUTAR - <span id="curs-data"></span></h3>
+                <h3>CURS VALUTAR - <br><span style="color: #00CCFF" id="curs-data"></span></h3>
                 <hr>
                 <img src="https://www.bancatransilvania.ro/themes/bancatransilvania/assets/images/curs-valutar/eur.svg" width="50" alt=""> EUR <b id="curs-valutar2"></b><br><br>
 
@@ -455,25 +456,25 @@
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-phone f-24"></i><br>
-                            <span>Apel</span>
+                            <span class="f-s-15">Apel</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-paper-plane f-24"></i><br>
-                            <span>Mesaj</span>
+                            <span class="f-s-15">Mesaj</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-video-camera f-24"></i><br>
-                            <span>Zoom</span>
+                            <span class="f-s-15">Zoom</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-inbox f-24"></i><br>
-                            <span>Email</span>
+                            <span class="f-s-15">Email</span>
                           </a>
                         </div>
                       </div>
@@ -497,25 +498,25 @@
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-phone f-24"></i><br>
-                            <span>Apel</span>
+                            <span class="f-s-15">Apel</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-paper-plane f-24"></i><br>
-                            <span>Mesaj</span>
+                            <span class="f-s-15">Mesaj</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-video-camera f-24"></i><br>
-                            <span>Zoom</span>
+                            <span class="f-s-15">Zoom</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-inbox f-24"></i><br>
-                            <span>Email</span>
+                            <span class="f-s-15">Email</span>
                           </a>
                         </div>
                       </div>
@@ -538,25 +539,25 @@
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-phone f-24"></i><br>
-                            <span>Apel</span>
+                            <span class="f-s-15">Apel</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-paper-plane f-24"></i><br>
-                            <span>Mesaj</span>
+                            <span class="f-s-15">Mesaj</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-video-camera f-24"></i><br>
-                            <span>Zoom</span>
+                            <span class="f-s-15">Zoom</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-inbox f-24"></i><br>
-                            <span>Email</span>
+                            <span class="f-s-15">Email</span>
                           </a>
                         </div>
                       </div>
@@ -579,25 +580,25 @@
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-phone f-24"></i><br>
-                            <span>Apel</span>
+                            <span class="f-s-15">Apel</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-paper-plane f-24"></i><br>
-                            <span>Mesaj</span>
+                            <span class="f-s-15">Mesaj</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-video-camera f-24"></i><br>
-                            <span>Zoom</span>
+                            <span class="f-s-15">Zoom</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-inbox f-24"></i><br>
-                            <span>Email</span>
+                            <span class="f-s-15">Email</span>
                           </a>
                         </div>
                       </div>
@@ -632,25 +633,25 @@
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-phone f-24"></i><br>
-                            <span>Apel</span>
+                            <span class="f-s-15">Apel</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-paper-plane f-24"></i><br>
-                            <span>Mesaj</span>
+                            <span class="f-s-15">Mesaj</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-video-camera f-24"></i><br>
-                            <span>Zoom</span>
+                            <span class="f-s-15">Zoom</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-inbox f-24"></i><br>
-                            <span>Email</span>
+                            <span class="f-s-15">Email</span>
                           </a>
                         </div>
                       </div>
@@ -674,25 +675,25 @@
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-phone f-24"></i><br>
-                            <span>Apel</span>
+                            <span class="f-s-15">Apel</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-paper-plane f-24"></i><br>
-                            <span>Mesaj</span>
+                            <span class="f-s-15">Mesaj</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-video-camera f-24"></i><br>
-                            <span>Zoom</span>
+                            <span class="f-s-15">Zoom</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-inbox f-24"></i><br>
-                            <span>Email</span>
+                            <span class="f-s-15">Email</span>
                           </a>
                         </div>
                       </div>
@@ -715,25 +716,25 @@
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-phone f-24"></i><br>
-                            <span>Apel</span>
+                            <span class="f-s-15">Apel</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-paper-plane f-24"></i><br>
-                            <span>Mesaj</span>
+                            <span class="f-s-15">Mesaj</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-video-camera f-24"></i><br>
-                            <span>Zoom</span>
+                            <span class="f-s-15">Zoom</span>
                           </a>
                         </div>
                         <div class="col-3">
                           <a href="#">
                             <i class="fa fa-inbox f-24"></i><br>
-                            <span>Email</span>
+                            <span class="f-s-15">Email</span>
                           </a>
                         </div>
                       </div>

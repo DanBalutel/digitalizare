@@ -10,6 +10,10 @@
     min-height: 30rem;
 }
 
+.f-s-15 {
+    font-size: 0.9rem;
+}
+
 img.rounded-circle.shadow {
     object-fit: cover;
 }

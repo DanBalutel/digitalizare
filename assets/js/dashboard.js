@@ -215,7 +215,7 @@ function populatePage() {
         d.element('dash').innerHTML = dataObj.DateGenerale.nume;
         d.element('nameAdmin').innerHTML = administrator.nume;
         if (name) {
-            name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: <span style="color: #00CCFF">${administrator.nume}</span>`;
+            name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: <br><span style="color: #00CCFF">${administrator.nume}</span>`;
             const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
             chartSituatieFianciara.innerHTML = `Situatie finaciara ${dataObj.DateGenerale.nume}`;
 
@@ -254,16 +254,16 @@ function populatePage() {
             const dateGenerale = document.getElementById('dateGenerale');
             dateGenerale.innerHTML = `
                                         <span>
-                                        <h4>Detalii generale</h4><br>
-                                        CUI: <h6>${dataObj.DateGenerale.cui}</h6><br>
-                                        Nr. de înmatriculare: <h6>${dataObj.DateGenerale.cod_inmatriculare}</h6><br>
-                                        Obiect activitate MFINANȚE: <h6>${dataObj.Bilanturi[0].cod_caen} - ${listCaen[codCAEN.innerHTML]}</h6> <br><br>
+                                        <h4 style="color: #00CCFF">Detalii generale</h4><br>
+                                        CUI: <span>${dataObj.DateGenerale.cui}</span><br>
+                                        Nr. de înmatriculare: <span>${dataObj.DateGenerale.cod_inmatriculare}</span><br>
+                                        Obiect activitate MFINANȚE: <span>${dataObj.Bilanturi[0].cod_caen} - ${listCaen[codCAEN.innerHTML]}</span> <br><br>
 
                                         <h4>Adresă</h4>
-                                        Localitate: <h6>${dataObj.DateGenerale.localitate}</h6>
-                                        Județ: <h6>${dataObj.DateGenerale.judet}</h6>
-                                        Sediu social (RECOM/MFINANȚE): <h6>${dataObj.DateGenerale.adresa}</h6>
-                                        Domiciliu fiscal (ANAF): <h6>${dataObj.DateGenerale.adresa_anaf}</h6>
+                                        Localitate: <span>${dataObj.DateGenerale.localitate}</span>
+                                        Județ: <span>${dataObj.DateGenerale.judet}</span>
+                                        Sediu social (RECOM/MFINANȚE): <span>${dataObj.DateGenerale.adresa}</span>
+                                        Domiciliu fiscal (ANAF): <span>${dataObj.DateGenerale.adresa_anaf}</span>
 
                                         </span>
                                         `;
@@ -300,7 +300,7 @@ function populatePage() {
                             width: 400
                         },
                         legend: {
-                            show: true
+                            show: false
                         }
                     }
                 }],
@@ -444,13 +444,16 @@ function populatePage() {
         // rentabilitatea si situatia fnanciara
         const ids3 = ["cardRA", "cardSF"];
         // carduri cu banci si prognoza meteo
-        const ids4 = ['card-1', 'card-2', 'card-3']
+        const ids4 = ['card-1', 'card-2', 'card-3'];
+        // carduri active, stocuri, banci si capital total
+        const ids5 = ['card5','card6','card7','card8',]
 
         setMaxHeight(ids0);
         setMaxHeight(ids1);
         setMaxHeight(ids2);
         setMaxHeight(ids3);
         setMaxHeight(ids4);
+        setMaxHeight(ids5);
 
 
 
