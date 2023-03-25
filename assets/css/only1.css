@@ -37,6 +37,9 @@ img.rounded-circle.shadow {
         margin-right: 3rem;
     }
 
+    #listAsoc {
+        display: none;
+    }
 }
 
 .timerWork {

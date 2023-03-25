@@ -401,6 +401,7 @@
               <div class="card-body apex-chart">
                 <div id="piechart"></div>
               </div>
+              <ul id="listAsoc" class="p-3 f-s-15"></ul>
             </div>
           </div>
 

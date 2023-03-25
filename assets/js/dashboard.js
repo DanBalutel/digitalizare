@@ -278,14 +278,15 @@ function populatePage() {
             const chartAsociati = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.asociati;
             const listNameAsociati = [];
             const listCotaAsociati = [];
+            let listAsocMobile = '';
 
             for (const asoc in chartAsociati) {
                 listNameAsociati.push(chartAsociati[asoc].nume);
                 listCotaAsociati.push(parseFloat(chartAsociati[asoc].procentaj));
-
+                listAsocMobile = listAsocMobile + `<li>${chartAsociati[asoc].nume} - ${chartAsociati[asoc].procentaj}</li>`;
             };
 
-            // pie chart
+            // pie chart, asociati
             var options8 = {
                 chart: {
                     width: 450,
@@ -313,6 +314,7 @@ function populatePage() {
             );
 
             chart8.render();
+            d.element('listAsoc').innerHTML = listAsocMobile;
 
             // basic area chart
             const chartProdMunc = dataObj.Bilanturi;
