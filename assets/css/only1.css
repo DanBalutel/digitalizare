@@ -166,7 +166,7 @@ div#monicaModal1 button.btn-close {
 
 .videoContainerSteps {
     position: fixed;
-    top: 30%;
+    top: 0;
     right: 0;
     z-index: 9999;
     width: 320px;
