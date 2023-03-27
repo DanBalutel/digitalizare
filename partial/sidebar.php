@@ -8,8 +8,7 @@
          <div class="back-btn"><i class="fa fa-angle-left"></i></div>
          <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
       </div>
-      <div class="logo-icon-wrapper"><a href="index"><img class="img-fluid" width="40"
-               src="/assets/images/logo/logo.png" alt=""></a></div>
+      <div class="logo-icon-wrapper"><a href="index"><img class="img-fluid" width="40" src="/assets/images/logo/logo.png" alt=""></a></div>
       <nav class="sidebar-main">
          <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
          <div id="sidebar-menu">
@@ -22,7 +21,7 @@
                      <i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
                   </div>
                </li>
-              
+
 
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title link-nav" href="index.php">
@@ -37,11 +36,8 @@
 
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title link-nav" href="#">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor"
-                        class="bi bi-plus" viewBox="0 0 16 16" id="IconChangeColor">
-                        <path
-                           d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
-                           id="mainIconPathAttribute" fill="#737373"></path>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16" id="IconChangeColor">
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" id="mainIconPathAttribute" fill="#737373"></path>
                      </svg>
                      <span>Adauga firma</span>
                   </a>
@@ -49,9 +45,7 @@
 
                <li class="sidebar-list">
                   <a class="sidebar-link" href="monica.php">
-                     <svg class="stroke-icon">
-                        <img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
-                     </svg>
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
                      <svg class="fill-icon">
                         <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
                      </svg><span>Mony AI</span></a>
@@ -72,8 +66,9 @@
                      <li><a href="outlook.php"><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
                   </ul>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
-                     <i data-feather="dollar-sign" style="color: rgba(82, 82, 108, 0.8)"></i>
+               <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="#">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/money_icon.png" alt="">
                      <span>Banci</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
@@ -160,8 +155,7 @@
                      <li><a href="leads.php">Leads</a></li>
                      <li><a href="clienti.php">Clienti</a></li>
                      <li><a href="colaboratori.php">Colaboratori</a></li>
-                     <li><a target="_blank" href="https://saleforce.com"><img src="assets/images/meniu/saleforce.png" height="20"
-                              alt=""></a></li>
+                     <li><a target="_blank" href="https://saleforce.com"><img src="assets/images/meniu/saleforce.png" height="20" alt=""></a></li>
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="erp.php">
@@ -291,8 +285,7 @@
                      <li><a target="_blank" href="https://adobe.com"><img src="assets/images/meniu/adobe.png" height="20" alt=""></a>
                      </li>
                      <li><a href="office.php"><img src="assets/images/meniu/office.png" height="20" alt=""></a></li>
-                     <li><a target="_blank" href="https://workspace.google.com"><img src="assets/images/meniu/workspace.png" height="20"
-                              alt=""></a></li>
+                     <li><a target="_blank" href="https://workspace.google.com"><img src="assets/images/meniu/workspace.png" height="20" alt=""></a></li>
                      <li><a href="google.php">Google apps</a></li>
                      <li><a href="mailchimp.php">MailChimp</a></li>
                   </ul>
@@ -308,14 +301,10 @@
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a target="_blank" target="_blank" href="https://www.emag.ro"><img src="assets/images/meniu/emag.png"
-                              height="20" alt=""></a></li>
-                     <li><a target="_blank" target="_blank" href="https://www.alibaba.com"><img src="assets/images/meniu/alibaba.png"
-                              height="20" alt=""></a></li>
-                     <li><a target="_blank" target="_blank" href="https://www.olx.ro"><img src="assets/images/meniu/olx.png" height="20"
-                              alt=""> OLX</a></li>
-                     <li><a target="_blank" target="_blank" href="https://www.shopify.com"><img src="assets/images/meniu/shopify.png"
-                              height="20" alt=""> </a></li>
+                     <li><a target="_blank" target="_blank" href="https://www.emag.ro"><img src="assets/images/meniu/emag.png" height="20" alt=""></a></li>
+                     <li><a target="_blank" target="_blank" href="https://www.alibaba.com"><img src="assets/images/meniu/alibaba.png" height="20" alt=""></a></li>
+                     <li><a target="_blank" target="_blank" href="https://www.olx.ro"><img src="assets/images/meniu/olx.png" height="20" alt=""> OLX</a></li>
+                     <li><a target="_blank" target="_blank" href="https://www.shopify.com"><img src="assets/images/meniu/shopify.png" height="20" alt=""> </a></li>
                   </ul>
                </li>
 
