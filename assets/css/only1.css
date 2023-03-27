@@ -176,3 +176,8 @@ div#monicaModal1 button.btn-close {
 body {
     font-size: 22px;
 }
+
+#demoPlay {
+    position: absolute;
+    bottom: calc( 50% - 11px );
+}

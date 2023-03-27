@@ -175,8 +175,12 @@
     }]
   }
 
-  d.createElement(moniStepsJson1, document.body);
+  function showMoniSteps() {
+    d.createElement(moniStepsJson1, document.body);
+    onYouTubeIframeAPIReady()
+  }
 
+  d.createHandler('demoPlay', 'click', showMoniSteps)
 
 </script>
 <script src="https://www.youtube.com/iframe_api"></script>
