@@ -766,6 +766,7 @@ function hideTime() {
         d.element('timer')
         d.e.timerWork.innerHTML = "🟢"
         d.e.timerWork.classList.toggle('timerBlink');
+        d.e.demoPlay.classList.toggle('hide');
     }, 5000);
 }
 window.addEventListener('load', hideTime);

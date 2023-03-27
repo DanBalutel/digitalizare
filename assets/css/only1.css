@@ -181,3 +181,7 @@ body {
     position: absolute;
     bottom: calc( 50% - 11px );
 }
+
+.hide {
+    display: none;
+}

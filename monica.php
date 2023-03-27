@@ -178,10 +178,7 @@
   function showMoniSteps() {
     d.createElement(moniStepsJson1, document.body);
     onYouTubeIframeAPIReady()
-    d.e.demoPlay.removeEventListener('click', showMoniSteps)
-    setTimeout(function() {
-      d.createHandler('demoPlay', 'click', showMoniSteps)
-    }, 10000)
+    d.e.demoPlay.classList.toggle('hide');
   }
 
   d.createHandler('demoPlay', 'click', showMoniSteps)

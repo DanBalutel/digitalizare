@@ -29,4 +29,5 @@ function closeVideo() {
     const playerElement = document.getElementById('moniStepsVideo');
     playerElement.parentNode.removeChild(playerElement);
     Swal.close();
+    d.e.demoPlay.classList.toggle('hide');
 }
