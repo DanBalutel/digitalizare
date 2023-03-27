@@ -112,7 +112,7 @@
         </div>
         <div class="col-md-4">
           <a style="cursor: pointer; min">
-            <div class="card" style="min-height: 4rem;">
+            <div class="card" style="min-height:4rem">
               <div id="ai-question-5" class="card-body p-3">
                 Daca digitalizezi o afacere cat timp pe an salveaza o companie de 50 de angajati, calculeaza
                 individual pentru fiecare angajat si da-mi rezultatul pentru toata compania calculata in zile.

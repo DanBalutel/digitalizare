@@ -107,7 +107,11 @@ function copyElementText(content) {
     document.execCommand("copy");
     document.body.removeChild(elem);
 
-    swal("Succes!", "Textul a fost copiat!", "success");
+    Swal.fire({
+        icon: 'success',
+        title: 'Succes!',
+        text: 'Textul a fost copiat!'
+    });
 }
 
 
