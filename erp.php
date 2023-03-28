@@ -373,7 +373,7 @@
                             <div class="card small-widget mb-sm-0">
                                 <div class="card-body primary min-h-9">
                                     <h4>
-                                        Intalniri
+                                        Intalniri - Auto Confirmare SMS
                                     </h4>
 
                                     <div class="table-responsive">
