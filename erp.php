@@ -200,7 +200,6 @@
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
                                             <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.312-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                            <h6 class="mt-3">Pagina: -</h6>
                                             <h5 class="mt-2 mb-2">🔴 Daniela Irimescu</h5>
                                             
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
@@ -242,7 +241,6 @@
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
                                             <img src="https://francizare.ro/storage/imagini/dan.webp" width="110" height="110" class="rounded-circle shadow" alt="">
-                                            <h6 class="mt-3">Pagina: - </h6>
                                             <h5 class="mt-2 mb-2">🔴 Dan Balutel</h5>
                                             
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
