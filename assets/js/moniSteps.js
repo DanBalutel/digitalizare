@@ -33,5 +33,6 @@ function closeVideo() {
 
     // new version with mony video loaded instant
     d.createElement(moniStepsJson1, demoPlayDiv);
+    
 
 }

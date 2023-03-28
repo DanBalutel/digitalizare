@@ -766,7 +766,30 @@ function hideTime() {
         d.element('timer')
         d.e.timerWork.innerHTML = "🟢"
         d.e.timerWork.classList.toggle('timerBlink');
-        d.e.demoPlay.classList.toggle('hide');
+
+
+
+        // mony video trigger
+        // define Moni steps fideo ID
+        const moniVideoSteps = 'z4OL-mVRcd0';
+
+        const moniStepsJson1 = {
+            "tag": "div",
+            "id": "videoContainerStepsMony",
+            "class": "videoContainerSteps",
+            "children": [{
+                "tag": "div",
+                "id": "moniStepsVideo"
+            }]
+        }
+        // d.e.demoPlay.classList.toggle('hide');
+        d.createElement(moniStepsJson1, demoPlayDiv);
+          onYouTubeIframeAPIReady()
+        const monyStepsID = d.element('videoContainerStepsMony');
+        monyStepsID.style.height = `${topbarHeight}px`;
+        monyStepsID.style.width = `${topbarHeight * 1.3}px`;
+        monyStepsID.style.bottom = `calc( 50% - ${topbarHeight/2}px )`;
+
     }, 5000);
 }
 window.addEventListener('load', hideTime);
