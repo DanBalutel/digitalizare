@@ -362,8 +362,42 @@
                                             href="javascript:void(0)">calendar filter</a>
                                         <div class="md-sidebar-aside job-left-aside custom-scrollbar">
                                             <div id="external-events">
+                                                <h4>Draggable Events</h4>
                                                 <div id="external-events-list">
-                                                    
+                                                    <div
+                                                        class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event">
+                                                        <div class="fc-event-main"> <i
+                                                                class="fa fa-birthday-cake me-2"></i>Birthday Party
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event">
+                                                        <div class="fc-event-main"> <i
+                                                                class="fa fa-user me-2"></i>Meeting
+                                                            With Team.</div>
+                                                    </div>
+                                                    <div
+                                                        class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event">
+                                                        <div class="fc-event-main"> <i class="fa fa-plane me-2"></i>Tour
+                                                            &
+                                                            Picnic</div>
+                                                    </div>
+                                                    <div
+                                                        class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event">
+                                                        <div class="fc-event-main"> <i
+                                                                class="fa fa-file-text me-2"></i>Reporting Schedule
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event">
+                                                        <div class="fc-event-main"> <i
+                                                                class="fa fa-briefcase me-2"></i>Lunch & Break</div>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    <input class="checkbox_animated" id="drop-remove" type="checkbox">
+                                                    <label for="drop-remove">remove after drop</label>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
