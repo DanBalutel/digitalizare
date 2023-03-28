@@ -237,7 +237,7 @@
                </li>
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="#">
-                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/e-commerce.png" alt="">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/vinde.png" alt="">
                      <span>Vinde / Cumpara</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
@@ -251,12 +251,8 @@
 
                <li class="sidebar-list mb-3">
                   <a class="sidebar-link" href="whatsapp.php">
-                     <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#cart"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#cart"> </use>
-                     </svg><span>WhatsApp</span>
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/wathsapp.png" alt="">
+                     <span>WhatsApp</span>
                   </a>
                </li>
 
