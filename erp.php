@@ -286,7 +286,6 @@
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
                                             <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.31-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                            <h6 class="mt-3">Pagina: Contabilitate</h6>
                                             <h5 class="mt-2 mb-2">Iordache Mihaela <br>
                                             <span class="blink">🟢</span> Lucreaza in Contabilitate</h5>
                                             
@@ -322,7 +321,6 @@
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
                                             <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                            <h6 class="mt-3">Pagina: IOT</h6>
                                             <h5 class="mt-2 mb-2">Ionut Rusu  <br>
                                             <span class="blink">🟢</span> Lucreaza in IOT</h5>
                                             
