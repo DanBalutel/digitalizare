@@ -27,11 +27,11 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-md-3">         
+                        <div class="row d-flex justify-content-center">  
                         
-                                <h2 class="mb-2 mt-2 text-center text-uppercase" style="color: #00CCFF">Organigrama Live</h2>    
-                                <hr>               
+                        <h2 class="mb-2 mt-2 text-center text-uppercase" style="color: #00CCFF">Organigrama Live</h2>    
+                        <hr>               
+                            <div class="col-md-3">       
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         Administrator
