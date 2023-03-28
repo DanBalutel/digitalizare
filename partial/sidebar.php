@@ -152,12 +152,8 @@
                </li>
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="smart-building.php">
-                     <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#stroke-others"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-others"></use>
-                     </svg><span>IoT</span>
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/iot.png" alt="">
+                     <span>IoT</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
