@@ -127,7 +127,7 @@
                      <li><a href="file-manager.php">Fisiere</a></li>
                   </ul>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="crm.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/crm.png" alt="">
                      <span>CRM</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
@@ -140,7 +140,7 @@
                      <li><a target="_blank" href="https://saleforce.com"><img src="assets/images/meniu/saleforce.png" height="20" alt=""></a></li>
                   </ul>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="erp.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/erp.png" alt="">
                      <span>ERP</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
