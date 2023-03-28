@@ -52,7 +52,7 @@
         </li>
         <li>
           <div class="mode">
-                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/dark.png" alt="">
+                     <img class="rounded-circle float-start chat-user-img  m-r-1" style="margin-left: 5px" width="20" src="../assets/images/meniu/dark.png" alt="">
           </div>
         </li>
         <li class="onhover-dropdown">
