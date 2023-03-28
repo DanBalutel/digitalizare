@@ -52,9 +52,7 @@
         </li>
         <li>
           <div class="mode">
-            <svg>
-              <use href="/assets/svg/icon-sprite.svg#moon"></use>
-            </svg>
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/dark.png" alt="">
           </div>
         </li>
         <li class="onhover-dropdown">
