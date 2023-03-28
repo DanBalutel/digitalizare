@@ -361,7 +361,10 @@
                                     <div class="md-sidebar mb-3"><a class="btn btn-primary md-sidebar-toggle"
                                             href="javascript:void(0)">calendar filter</a>
                                         <div class="md-sidebar-aside job-left-aside custom-scrollbar">
-                                            
+                                            <div id="external-events">
+                                                <div id="external-events-list">
+                                                    
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
