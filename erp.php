@@ -881,5 +881,26 @@
     new WOW().init();
 </script>
 <script src="assets/js/calendar/fullcalendar.min.js"></script>
-<script src="assets/js/calendar/fullcalendar-custom.js"></script>
+<script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          locale: 'ro',
+          initialView: 'dayGridMonth',
+          headerToolbar: {
+              left: "prev,next today",
+              center: "title",
+              right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth"
+          },
+          
+        eventDidMount: function(info) {
+          console.log(info.event.extendedProps);
+          // {description: "Lecture", department: "IT"}
+        }
+        });
+        calendar.render();
+      });
+</script>
 <?php include('partial/footer-end.php') ?>
