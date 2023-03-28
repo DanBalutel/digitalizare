@@ -174,7 +174,10 @@
       "id": "moniStepsVideo"
     }]
   }
-  const demoPlayDiv = d.element("demoPlayDiv");
+
+  const topbarHeight = d.element('headerWrapper').offsetHeight;
+  const demoPlayDiv = d.element('demoPlayDiv');
+  demoPlayDiv.style = `height:${topbarHeight};width: ${topbarHeight * 1.3}`;
   d.createElement(moniStepsJson1, demoPlayDiv);
 
   // function showMoniSteps() {
@@ -184,7 +187,7 @@
   // }
 
   // d.createHandler('demoPlay', 'click', showMoniSteps)
-  
+
 </script>
 <script src="https://www.youtube.com/iframe_api"></script>
 <script src="assets/js/moniSteps.js"></script>
