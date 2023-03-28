@@ -29,6 +29,12 @@
                     <div class="col-md-12">
                         <div class="row d-flex justify-content-center">
                             <div class="col-md-3">
+                                
+                                <div class="card radius-15">
+                                    <div class="card-body">
+                                        Administrator
+                                    </div>
+                                </div>
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
