@@ -125,7 +125,6 @@
                         <use href="assets/svg/icon-sprite.svg#fill-file"></use>
                      </svg><span>Arhivare cloud</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="doc-manager.php">Documente</a></li>
@@ -140,7 +139,6 @@
                         <use href="assets/svg/icon-sprite.svg#fill-user"></use>
                      </svg><span>CRM</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="crm.php">CRM</a></li>
@@ -151,13 +149,8 @@
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="erp.php">
-                     <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#stroke-learning"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-learning"></use>
-                     </svg><span>ERP</span>
-                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/erp.png" alt="">
+                     <span>ERP</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
