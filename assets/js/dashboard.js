@@ -496,7 +496,7 @@ function showVideoMonica(displayedModal1) {
         }).then((result) => {
             const monica1 = document.getElementById("monicaModal1");
             monica1.parentNode.removeChild(monica1);
-            console.log(monica1);
+            console.log('test label');
         });
 
         onYouTubeIframeAPIReady();

@@ -32,7 +32,7 @@ function closeVideo() {
     // d.e.demoPlay.classList.toggle('hide');
 
     // new version with mony video loaded instant
-    d.createElement(moniStepsJson1, demoPlayDiv);
+    // d.createElement(moniStepsJson1, demoPlayDiv);
     
 
 }

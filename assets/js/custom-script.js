@@ -769,26 +769,8 @@ function hideTime() {
 
 
 
-        // mony video trigger
-        // define Moni steps fideo ID
-        const moniVideoSteps = 'z4OL-mVRcd0';
-
-        const moniStepsJson1 = {
-            "tag": "div",
-            "id": "videoContainerStepsMony",
-            "class": "videoContainerSteps",
-            "children": [{
-                "tag": "div",
-                "id": "moniStepsVideo"
-            }]
-        }
-        // d.e.demoPlay.classList.toggle('hide');
-        d.createElement(moniStepsJson1, demoPlayDiv);
-          onYouTubeIframeAPIReady()
-        const monyStepsID = d.element('videoContainerStepsMony');
-        monyStepsID.style.height = `${topbarHeight}px`;
-        monyStepsID.style.width = `${topbarHeight * 1.3}px`;
-        monyStepsID.style.bottom = `calc( 50% - ${topbarHeight/2}px )`;
+        // show mony video
+        showTopBarMony();
 
     }, 5000);
 }
@@ -801,3 +783,39 @@ function showTimeOnClick() {
     hideTime();
 }
 d.createHandler('timerWork', 'click', showTimeOnClick);
+
+// show TopBar video when timer disappear
+function showTopBarMony() {
+
+    // declare variables
+    let moniVideoSteps = '';
+    let showMony = false;
+
+    // temp we add if check for login
+    if (window.location.pathname == "/monica" || window.location.pathname == "/monica.php") {
+        moniVideoSteps = 'z4OL-mVRcd0';
+        showMony = true;
+    }
+
+    console.log(`mony page: ${showMony}`)
+
+    // mony video trigger
+    const moniStepsJson1 = {
+        "tag": "div",
+        "id": "videoContainerStepsMony",
+        "class": "videoContainerSteps",
+        "children": [{
+            "tag": "div",
+            "id": "moniStepsVideo"
+        }]
+    }
+
+    if (showMony) {
+        d.createElement(moniStepsJson1, demoPlayDiv);
+        onYouTubeIframeAPIReady()
+        const monyStepsID = d.element('videoContainerStepsMony');
+        monyStepsID.style.height = `${topbarHeight}px`;
+        monyStepsID.style.width = `${topbarHeight * 1.3}px`;
+        monyStepsID.style.bottom = `calc( 50% - ${topbarHeight / 2}px )`;
+    }
+}
