@@ -109,7 +109,7 @@
                      <span>Experti</span></a>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
-                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/safe.png" alt="">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/arhivare.png" alt="">
                      <span>Arhivare cloud</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
