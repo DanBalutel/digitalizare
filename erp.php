@@ -27,48 +27,46 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="row">
-                            <div class="justify-content-center">
-                                <div class="col-md-3">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-3">
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
-                                    <div class="p-4 border radius-15">
-                                        <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.31-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                        <h6 class="mb-0 mt-5">Pagina: Contabilitate</h6>
-                                        <h5 class="mb-0 mt-5">🟢 Iordache Mihaela</h5>
-                                        <p class="mb-3">Expert Fonduri Europene</p>
-                                        <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
-                                        <div class="chat-tab-menu mt-3">
-                                        <div class="row">
-                                            <div class="col-6">
-                                            <a href="#">
-                                                <i class="fa fa-phone f-24"></i><br>
-                                                <span class="f-s-15">Apel</span>
-                                            </a>
+                                        <div class="p-4 border radius-15">
+                                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.31-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                            <h6 class="mb-0 mt-5">Pagina: Contabilitate</h6>
+                                            <h5 class="mb-0 mt-5">🟢 Iordache Mihaela</h5>
+                                            <p class="mb-3">Expert Fonduri Europene</p>
+                                            <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                                            <div class="chat-tab-menu mt-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                <a href="#">
+                                                    <i class="fa fa-phone f-24"></i><br>
+                                                    <span class="f-s-15">Apel</span>
+                                                </a>
+                                                </div>
+                                                <div class="col-6">
+                                                <a href="#">
+                                                    <i class="fa fa-paper-plane f-24"></i><br>
+                                                    <span class="f-s-15">Mesaj</span>
+                                                </a>
+                                                </div>
+                                                <div class="col-6">
+                                                <a href="#">
+                                                    <i class="fa fa-video-camera f-24"></i><br>
+                                                    <span class="f-s-15">Zoom</span>
+                                                </a>
+                                                </div>
+                                                <div class="col-6">
+                                                <a href="#">
+                                                    <i class="fa fa-inbox f-24"></i><br>
+                                                    <span class="f-s-15">Email</span>
+                                                </a>
+                                                </div>
                                             </div>
-                                            <div class="col-6">
-                                            <a href="#">
-                                                <i class="fa fa-paper-plane f-24"></i><br>
-                                                <span class="f-s-15">Mesaj</span>
-                                            </a>
-                                            </div>
-                                            <div class="col-6">
-                                            <a href="#">
-                                                <i class="fa fa-video-camera f-24"></i><br>
-                                                <span class="f-s-15">Zoom</span>
-                                            </a>
-                                            </div>
-                                            <div class="col-6">
-                                            <a href="#">
-                                                <i class="fa fa-inbox f-24"></i><br>
-                                                <span class="f-s-15">Email</span>
-                                            </a>
                                             </div>
                                         </div>
-                                        </div>
                                     </div>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                         </div>
