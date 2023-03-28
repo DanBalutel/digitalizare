@@ -27,6 +27,8 @@
 
                 <div class="row">
                     <div class="col-md-12">
+                        
+                        <h2 class="mb-2 mt-2" style="color: #00CCFF">Organigrama Live</h2>
                         <div class="row d-flex justify-content-center">
                             <div class="col-md-3">                            
                                 <div class="card radius-15">
