@@ -168,6 +168,7 @@
 
   const moniStepsJson1 = {
     "tag": "div",
+    "id": "videoContainerStepsMony",
     "class": "videoContainerSteps",
     "children": [{
       "tag": "div",
@@ -177,8 +178,7 @@
 
   const topbarHeight = d.element('headerWrapper').offsetHeight;
   const demoPlayDiv = d.element('demoPlayDiv');
-  demoPlayDiv.style = `height:${topbarHeight};width: ${topbarHeight * 1.3}`;
-  d.createElement(moniStepsJson1, demoPlayDiv);
+  // d.createElement(moniStepsJson1, demoPlayDiv);
 
   // function showMoniSteps() {
   //   d.createElement(moniStepsJson1, demoPlayDiv);
