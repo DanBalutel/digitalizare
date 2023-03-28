@@ -41,7 +41,9 @@
       </ul>
     </div>
     <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
-      <i id="demoPlay" class="icofont icofont-ui-play demoPlay hide"></i>
+      <div id="demoPlayDiv" class="demoPlay">
+        <i id="demoPlay" class="icofont icofont-ui-play hide"></i>
+      </div>
       <ul class="nav-menus">
         <li id="timerWork" class="mr-3 p-0 timerWork">
           <h6 class="mb-0" style="color: #01cdff;" id="dateNow"></h6>

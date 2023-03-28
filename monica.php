@@ -175,8 +175,10 @@
     }]
   }
 
+  const demoPlayDiv = d.element("demoPlayDiv");
+
   function showMoniSteps() {
-    d.createElement(moniStepsJson1, document.body);
+    d.createElement(moniStepsJson1, demoPlayDiv);
     onYouTubeIframeAPIReady()
     d.e.demoPlay.classList.toggle('hide');
   }
