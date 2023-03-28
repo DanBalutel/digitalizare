@@ -29,5 +29,9 @@ function closeVideo() {
     const playerElement = document.getElementById('moniStepsVideo');
     playerElement.parentNode.removeChild(playerElement);
     Swal.close();
-    d.e.demoPlay.classList.toggle('hide');
+    // d.e.demoPlay.classList.toggle('hide');
+
+    // new version with mony video loaded instant
+    d.createElement(moniStepsJson1, demoPlayDiv);
+
 }

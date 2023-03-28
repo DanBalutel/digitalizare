@@ -174,16 +174,17 @@
       "id": "moniStepsVideo"
     }]
   }
-
   const demoPlayDiv = d.element("demoPlayDiv");
+  d.createElement(moniStepsJson1, demoPlayDiv);
 
-  function showMoniSteps() {
-    d.createElement(moniStepsJson1, demoPlayDiv);
-    onYouTubeIframeAPIReady()
-    d.e.demoPlay.classList.toggle('hide');
-  }
+  // function showMoniSteps() {
+  //   d.createElement(moniStepsJson1, demoPlayDiv);
+  //   onYouTubeIframeAPIReady()
+  //   d.e.demoPlay.classList.toggle('hide');
+  // }
 
-  d.createHandler('demoPlay', 'click', showMoniSteps)
+  // d.createHandler('demoPlay', 'click', showMoniSteps)
+  
 </script>
 <script src="https://www.youtube.com/iframe_api"></script>
 <script src="assets/js/moniSteps.js"></script>
