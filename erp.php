@@ -39,7 +39,7 @@
                                         <div class="p-4 border radius-15">
                                             <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h6 class="mb-0 mt-5">Pagina: ERP</h6>
-                                            <h5 class="mt-2 mb-2">Alexandru Irimescu</h5>
+                                            <h5 class="mt-2 mb-2">🟢 Alexandru Irimescu</h5>
                                             
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
@@ -87,7 +87,7 @@
                                         <div class="p-4 border radius-15">
                                             <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h6 class="mb-0 mt-5">Pagina: Social Media</h6>
-                                            <h5 class="mt-2 mb-2">Alexandra G.</h5>
+                                            <h5 class="mt-2 mb-2">🟢 Alexandra G.</h5>
                                             
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
@@ -122,7 +122,7 @@
                                         <div class="p-4 border radius-15">
                                             <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.27.518-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h6 class="mb-0 mt-5">Pagina: E-Commerce</h6>                    
-                                            <h5 class="mt-2 mb-2">Stefania H.</h5>
+                                            <h5 class="mt-2 mb-2">🟢 Stefania H.</h5>
 
                                             
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
@@ -165,7 +165,7 @@
                                         <div class="p-4 border radius-15">
                                             <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.314-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h6 class="mb-0 mt-5">Pagina: Contabilitate</h6>
-                                            <h5 class="mt-2 mb-2">Andra B.</h5>
+                                            <h5 class="mt-2 mb-2">🟢 Andra B.</h5>
                                             
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
@@ -202,7 +202,7 @@
                                         <div class="p-4 border radius-15">
                                             <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.312-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h6 class="mb-0 mt-5">Pagina: Fonduri EU</h6>
-                                            <h5 class="mt-2 mb-2">Daniela Irimescu</h5>
+                                            <h5 class="mt-2 mb-2">🟢 Daniela Irimescu</h5>
                                             
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
@@ -289,6 +289,41 @@
                                             <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.31-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h6 class="mb-0 mt-5">Pagina: Contabilitate</h6>
                                             <h5 class="mt-2 mb-2">🟢 Iordache Mihaela</h5>
+                                            
+                                            <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                                            <div class="chat-tab-menu mt-3">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                <a href="#">
+                                                    <i class="fa fa-phone f-24"></i><br>
+                                                </a>
+                                                </div>
+                                                <div class="col-3">
+                                                <a href="#">
+                                                    <i class="fa fa-paper-plane f-24"></i><br>
+                                                </a>
+                                                </div>
+                                                <div class="col-3">
+                                                <a href="#">
+                                                    <i class="fa fa-video-camera f-24"></i><br>
+                                                </a>
+                                                </div>
+                                                <div class="col-3">
+                                                <a href="#">
+                                                    <i class="fa fa-inbox f-24"></i><br>
+                                                </a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card radius-15">
+                                    <div class="card-body text-center">
+                                        <div class="p-4 border radius-15">
+                                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                            <h6 class="mb-0 mt-5">Pagina: IOT</h6>
+                                            <h5 class="mt-2 mb-2">🟢 Ionut Rusu</h5>
                                             
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
