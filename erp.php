@@ -44,28 +44,24 @@
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
                                             <div class="row">
-                                                <div class="col-6">
+                                                <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-phone f-24"></i><br>
-                                                    <span class="f-s-15">Apel</span>
                                                 </a>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-paper-plane f-24"></i><br>
-                                                    <span class="f-s-15">Mesaj</span>
                                                 </a>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                                 </div>
                                             </div>
@@ -356,6 +352,7 @@
                             </div>
                         </div>
                     </div>
+                    <br>
                     <div class="col-md-6 col-xs-12" id="wrap">
                         <div class="card">
                             <div class="card-body">
