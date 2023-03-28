@@ -192,3 +192,8 @@ body {
 .hide {
     display: none;
 }
+
+/* menu spacing */
+.simplebar-content {
+    padding: 2rem 0 10rem 0 !important;
+}
