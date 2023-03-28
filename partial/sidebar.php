@@ -62,7 +62,7 @@
                   </ul>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="#">
+                  <a class="sidebar-link sidebar-title" href="banci.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/money_icon.png" alt="">
                      <span>Banci</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
