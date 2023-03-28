@@ -169,12 +169,16 @@ div#monicaModal1 button.btn-close {
 
 
 .videoContainerSteps {
-    position: fixed;
+    /* position: fixed;
     top: 0;
     right: 0;
     z-index: 9999;
     width: 320px;
-    height: 240px;
+    height: 240px; */
+    width: 64px;
+    height: 48px;
+    position: absolute;
+    bottom: calc( 50% - 24px );
 }
 
 body {
