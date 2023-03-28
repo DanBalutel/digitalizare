@@ -85,12 +85,8 @@
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
-                     <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#stroke-charts"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-charts"></use>
-                     </svg><span>Investitii</span>
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/investitii.png" alt="">
+                     <span>Investitii</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
