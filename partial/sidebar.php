@@ -184,7 +184,6 @@
                         <use href="assets/svg/icon-sprite.svg#fill-ecommerce"></use>
                      </svg><span>Ecommerce</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="list-products.php">Produse</a></li>
@@ -193,15 +192,9 @@
                   </ul>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="#">
-                     <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#stroke-form"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-form"> </use>
-                     </svg><span>Contabilitate</span>
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/contabilitate.png" alt="">
+                     <span>Contabilitate</span>
                      <div class="according-menu"><i class="fa fa-angle-down"></i></div>
-                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="#"><img src="assets/images/meniu/e-factura.png" height="20" alt=""></a></li>
@@ -229,12 +222,8 @@
                </li>
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="social.php">
-                     <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#stroke-social"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-social"> </use>
-                     </svg><span>Social Media</span>
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/social_media.png" alt="">
+                     <span>Social Media</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
@@ -248,12 +237,8 @@
                </li>
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="#">
-                     <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#stroke-board"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-board"> </use>
-                     </svg><span>SaaS</span>
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/saas.png" alt="">
+                     <span>SaaS</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
