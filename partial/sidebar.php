@@ -148,7 +148,7 @@
                      <li><a target="_blank" href="https://saleforce.com"><img src="assets/images/meniu/saleforce.png" height="20" alt=""></a></li>
                   </ul>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="erp.php">
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/erp.png" alt="">
                      <span>ERP</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
