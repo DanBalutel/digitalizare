@@ -39,7 +39,8 @@
                                         <div class="p-4 border radius-15">
                                             <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h6 class="mt-3">Pagina: ERP</h6>
-                                            <h5 class="mt-2 mb-2"><span class="blink"><span class="blink">🟢</span></span> Alexandru Irimescu</h5>
+                                            <h5 class="mt-2 mb-2"> Alexandru Irimescu <br>
+                                            <span class="blink">🟢</span> Lucreaza in ERP</h5>
                                             
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
