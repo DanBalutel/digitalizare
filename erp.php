@@ -357,6 +357,15 @@
                     <div class="col-md-6 col-xs-12" id="wrap">
                         <div class="card">
                             <div class="card-body">
+                                <div class="box-col-2">
+                                    <div class="md-sidebar mb-3"><a class="btn btn-primary md-sidebar-toggle"
+                                            href="javascript:void(0)">calendar filter</a>
+                                        <div class="md-sidebar-aside job-left-aside custom-scrollbar">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="box-col-6">
                                     <div class="calendar-default" id="calendar-container">
                                         <div id="calendar"></div>
