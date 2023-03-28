@@ -98,13 +98,9 @@
                      <li><a href="echipa.php">Externalizare</a></li>
                   </ul>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="institutii.php">
-                     <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#stroke-builders"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-builders"></use>
-                     </svg><span>Institutii</span>
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/institutii.png" alt="">
+                     <span>Institutii</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
