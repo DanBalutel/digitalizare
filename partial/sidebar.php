@@ -163,12 +163,8 @@
                </li>
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="#">
-                     <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-ecommerce"></use>
-                     </svg><span>Ecommerce</span>
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/e-commerce.png" alt="">
+                     <span>Ecommerce</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
@@ -241,12 +237,8 @@
                </li>
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="#">
-                     <svg class="stroke-icon">
-                        <use href="assets/svg/icon-sprite.svg#cart"></use>
-                     </svg>
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#cart"> </use>
-                     </svg><span>Vinde / Cumpara</span>
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/vinde.png" alt="">
+                     <span>Vinde / Cumpara</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
