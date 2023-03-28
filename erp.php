@@ -357,8 +357,6 @@
                     <div class="col-md-6 col-xs-12" id="wrap">
                         <div class="card">
                             <div class="card-body">
-                                <div class="box-col-2">
-
                                 <div class="box-col-6">
                                     <div class="calendar-default" id="calendar-container">
                                         <div id="calendar"></div>
