@@ -108,7 +108,7 @@
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/experti.png" alt="">
                      <span>Experti</span></a>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="file-manager.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/arhivare.png" alt="">
                      <span>Arhivare cloud</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
