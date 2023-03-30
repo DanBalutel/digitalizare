@@ -37,7 +37,7 @@
                         </div>
                         <ul class="list-inline float-start float-sm-end chat-menu-icons">
                         </ul>
-                        <div class="input-group-text btn btn-primary text-white fw-bold" style="margin-left:1rem" onclick="clearChatHistory()">Sterge istoricul</div>
+                        <div class="input-group-text btn btn-primary text-white fw-bold" style="margin-left:1rem" onclick="clearChatHistory()">X istoric</div>
                       </div>
                       <!-- chat-header end-->
                       <div class="chat-history chat-msg-box custom-scrollbar">
@@ -76,7 +76,7 @@
           <a style="cursor: pointer;">
             <div class="card" style="min-height: 4rem;">
               <div id="ai-question-1" class="card-body p-3">
-                Ce inseamna un CRM si care sunt beneficiile acestuia?
+                Enumeră 10 avantaje pentru folosirea unui CRM.
               </div>
             </div>
           </a>
@@ -85,7 +85,7 @@
           <a style="cursor: pointer;">
             <div class="card" style="min-height: 4rem;">
               <div id="ai-question-2" class="card-body p-3">
-                Cum pot genera noi clienti pentru afacerea mea din domeniul constructiilor in judetul Bucuresti?
+                Enumeră 10 avantaje pentru folosirea unui ERP.
               </div>
             </div>
           </a>
@@ -94,8 +94,7 @@
           <a style="cursor: pointer;">
             <div class="card" style="min-height: 4rem;">
               <div id="ai-question-3" class="card-body p-3">
-                Scrie un email profesional catre toti clientii mei ca voi avea un discount de 20% in luna martie
-                pentru servicii de arhitectura.
+                Scrie un email de informare către clienții mei să îi notifici că în luna aceasta oferim un discount de 10%.
               </div>
             </div>
           </a>
@@ -104,8 +103,7 @@
           <a style="cursor: pointer;">
             <div class="card" style="min-height: 4rem;">
               <div id="ai-question-4" class="card-body p-3">
-                Enumera cu liniuta toti pasii pe care trebuie sa ii parcurg pentru a digitaliza afacerea mea de
-                servicii de arhitectura.
+                Enumeră 10 afaceri în trend în 2023 din România.
               </div>
             </div>
           </a>
@@ -114,18 +112,7 @@
           <a style="cursor: pointer; min">
             <div class="card" style="min-height:4rem">
               <div id="ai-question-5" class="card-body p-3">
-                Daca digitalizezi o afacere cat timp pe an salveaza o companie de 50 de angajati, calculeaza
-                individual pentru fiecare angajat si da-mi rezultatul pentru toata compania calculata in zile.
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a style="cursor: pointer;">
-            <div class="card" style="min-height: 4rem;">
-              <div id="ai-question-6" class="card-body p-3">
-                Ofera-mi consultanta privind servicii inovatoare care sunt în prezent în cerere și la modă pe
-                internet, din care pot incepe o afacere in Bucuresti.
+                Tradu în română: Digitalisation of company in the construction sector
               </div>
             </div>
           </a>
@@ -187,7 +174,6 @@
   // }
 
   // d.createHandler('demoPlay', 'click', showMoniSteps)
-
 </script>
 <script src="https://www.youtube.com/iframe_api"></script>
 <script src="assets/js/moniSteps.js"></script>
