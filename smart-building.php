@@ -34,6 +34,25 @@
               </div>
             </div>
           </div>
+          <div class="col-sm-12 mt-2">
+            <div class="card small-widget mb-sm-0">
+              <div class="card-body success flex-wrap d-flex align-items-center justify-content-center">
+                <img class="w-100" src="assets/images/only1/iot2.jpg" alt="">
+
+                <h3 class="w-100 align-items-center justify-content-center d-flex">
+                  Urmareaste cursele si facute de Autovehicule/ Autoutilitare/ orice mijloc de transport
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="card small-widget mb-sm-0">
+              <div class="card-body success d-flex align-items-center justify-content-center">
+                <img class="w-100" src="assets/images/only1/iot4.jpeg" alt="">
+              </div>
+            </div>
+          </div>
           <h3 class="display-4">Dispozitive care se pot conecta la PC sau telefon pentru a le controla in timp real</h3>
 
           <div class="col-sm-12">
