@@ -129,6 +129,8 @@
                      <li><a href="clienti.php">Clienti</a></li>
                      <li><a href="colaboratori.php">Colaboratori</a></li>
                      <li><a target="_blank" href="https://saleforce.com"><img src="assets/images/meniu/saleforce.png" height="20" alt=""></a></li>
+                     <li><a href="#">SMS - Bulk</a></li>
+                     <li><a href="mailchimp.php">MailChimp</a></li>
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="erp.php">
@@ -232,7 +234,6 @@
                      <li><a href="office.php"><img src="assets/images/meniu/office.png" height="20" alt=""></a></li>
                      <li><a target="_blank" href="https://workspace.google.com"><img src="assets/images/meniu/workspace.png" height="20" alt=""></a></li>
                      <li><a href="google.php">Google apps</a></li>
-                     <li><a href="mailchimp.php">MailChimp</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
