@@ -494,9 +494,17 @@ function showVideoMonica(displayedModal1) {
                 actions: 'dark-mode-actions'
             }
         }).then((result) => {
-            const monica1 = document.getElementById("monicaModal1");
-            monica1.parentNode.removeChild(monica1);
-            console.log('test label');
+            try {
+                const monica1 = document.getElementById("monicaModal1");
+                monica1.parentNode.removeChild(monica1);
+            } catch (error) {
+                console.log(error)
+            }
+
+console.log(result);            
+            if (window.location.pathname === '/' || window.location.pathname === '/index' || window.location.pathname === '/index.php') {
+                window.location.href = window.location.href;
+            }
         });
 
         onYouTubeIframeAPIReady();
