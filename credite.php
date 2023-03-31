@@ -24,11 +24,11 @@
                         in fiecare saptamana.
                     </h3>
                     <h4>
-                        In functie de incasarile din ultimele 6 luni vezi putea vizualiza Bancile care va pot acorda credite.
+                        In functie de incasarile din ultimele 6 luni veti putea vizualiza Bancile care va pot acorda credite.
                     </h4>
                     <h4>
                         <b><u>Functionalitate:</u></b> Aplicatia completeaza automat toate documentele solicitate de banci si le transmite impreuna
-                        cu Banata Contabila migrata din aplicatie.
+                        cu Balanta Contabila migrata din aplicatie.
                     </h4>
                     <h4 class="pb-3" style="color:#00CCFF">
                         Efectiv veti vizualiza toate ofertele bancilor in timp real si veti putea solicita Creditul cu un simplu CLICK

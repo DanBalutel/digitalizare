@@ -24,17 +24,6 @@
                     <h3 style="color:#00CCFF">Avem parteneriat cu o societate de Brokeraj care va face UPDATE saptamanal la
                         dobanzile si plafoanele de acordare a Depozitelor.
                     </h3>
-                    <h4>
-                        Urmeaza sa includem si ofertele de Titluri de Stat de la Guvern
-                    </h4>
-                    <h4>
-                        <b><u>Fonduri UE:</u></b> Daca se vor completa toate CAEN-urile autorizate ale companiei si
-                        aplicatia poate accesa toate informatiile financiare in timp real:
-                    </h4>
-                    <h4 class="pb-3" style="color:#00CCFF">
-                        Veti fi notificat pentru toate masurile de finantare pe care puteti sa aplicati si punctajul pe
-                        care il obtineti - ASTFEL - Nu veti mai pierde nici o oportunitate de investitii
-                    </h4>
                 </div>
 
 
@@ -156,6 +145,68 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+
+                                <div class="card-title">
+                                    <h2>Informatii titluri de stat</h2>
+                                </div>
+                                <hr>
+                                <label for="">Suma titluri</label>
+                                <input type="number" class="form-control" placeholder="2000">
+                                <br>
+                                <label for="">Perioada</label>
+                                <select name="" id="" class="form-select">
+                                    <option value="">6 luni</option>
+                                    <option value="">1 an</option>
+                                    <option value="">3 ani</option>
+                                    <option value="">4 ani</option>
+                                    <option value="">5 ani</option>
+                                    <option value="">6 ani</option>
+                                    <option value="">7 ani</option>
+                                    <option value="">8 ani</option>
+                                    <option value="">9 ani</option>
+                                    <option value="">10 ani</option>
+                                    <option value="">11 ani</option>
+                                    <option value="">12 ani</option>
+                                    <option value="">13 ani</option>
+                                    <option value="">14 ani</option>
+                                    <option value="">15 ani</option>
+                                </select>
+                            </div>
+                            <div class="col-md-9">
+
+                                <div class="card-title">
+                                    <h2>Titluri de Stat de la Guvern</h2>
+                                </div>
+                                <hr>
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <p>
+                                            <a target="_blank" href="#"><img src="assets/images/only1/tezaur_4x_crop.jpg" width="180" alt=""></a>
+                                        </p>
+                                        <h4>TITLU de STAT</h4>
+                                        <p></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>
+                                        </p>
+                                        <h5>Dobanda aprilie 2023</h5>
+                                        <h3 class="text-secondary">8.3%</h3>
+                                        <p></p>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <a target="_blank" href="#" class="btn btn-warning align-middle">Acceseaza oferta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
             <!-- Container-fluid Ends-->
         </div>

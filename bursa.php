@@ -21,7 +21,7 @@
 
 
         <div class="row">
-          <h4>
+          <h4 style="color:#00CCFF">
             Vor fi afisate toate Activele detinute si veti fi notrificat daca una din ele coboara sau urca intr-un ritm alert.
           </h4>
           <h4 class="pb-3" style="color:#00CCFF">
