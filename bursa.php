@@ -11,15 +11,27 @@
     <?php include('partial/sidebar.php') ?>
     <!-- Page Sidebar Ends-->
     <div class="page-body">
-    
-      <?php 
-        $title = 'Bursa';
-        include('partial/breadcrumb.php') 
+
+      <?php
+      $title = 'Bursa';
+      include('partial/breadcrumb.php')
       ?>
       <!-- Container-fluid starts-->
-        <div class="container-fluid">
-          <iframe src="https://tradingeconomics.com/romania/stock-market#UpdatePanelChart" width="100%" style="height: 100vh;" frameborder="0"></iframe>
+      <div class="container-fluid">
+
+
+        <div class="row">
+          <h4>
+            Vor fi afisate toate Activele detinute si veti fi notrificat daca una din ele coboara sau urca intr-un ritm alert.
+          </h4>
+          <h4 class="pb-3" style="color:#00CCFF">
+            Se pot introduce Conturi multiple de aplicatii (BVB Bucuresti / Etorro / Coinbase)
+          </h4>
         </div>
+
+
+        <iframe src="https://tradingeconomics.com/romania/stock-market#UpdatePanelChart" width="100%" style="height: 100vh;" frameborder="0"></iframe>
+      </div>
       <!-- Container-fluid Ends-->
     </div>
     <!-- footer start-->
