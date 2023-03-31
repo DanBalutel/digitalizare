@@ -24,8 +24,8 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3>Licitatii / Lucrari</h3>
-                                <h6 id="caenTitle"></h6>
+                                <h2 style="color:#00CCFF">Licitatii / Lucrari</h2>
+                                <h5 style="color:#00CCFF" id="caenTitle"></h5>
 
                             </div>
                             <div class="card-block row">
@@ -94,7 +94,7 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3>Achizitii</h3>
+                                <h2 style="color:#00CCFF">Achizitii</h2>
 
                             </div>
                             <div class="card-block row">
@@ -155,7 +155,7 @@
                                                     </td>
                                                 </tr>
 
-
+<!-- 
                                                 <tr>
                                                     <th scope="row">4</th>
                                                     <td>Statie de pompare ape uzate menajere - Petresti Parc localitatea
@@ -169,9 +169,9 @@
                                                             <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                         </div>
                                                     </td>
-                                                </tr>
+                                                </tr> -->
 
-
+<!-- 
                                                 <tr>
                                                     <th scope="row">5</th>
                                                     <td>Armaturi de reglaj sala masini si sala cazane actionate electric
@@ -185,9 +185,9 @@
                                                             <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                         </div>
                                                     </td>
-                                                </tr>
+                                                </tr> -->
 
-
+<!-- 
                                                 <tr>
                                                     <th scope="row">6</th>
                                                     <td>Materiale pentru rebobinarea motoarelor </td>
@@ -200,7 +200,7 @@
                                                             <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                         </div>
                                                     </td>
-                                                </tr>
+                                                </tr> -->
 
                                             </tbody>
                                         </table>
