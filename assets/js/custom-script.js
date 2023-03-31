@@ -817,5 +817,7 @@ function showTopBarMony() {
         monyStepsID.style.height = `${topbarHeight}px`;
         monyStepsID.style.width = `${topbarHeight * 1.75}px`;
         monyStepsID.style.bottom = `calc( 50% - ${topbarHeight / 2}px )`;
+        monyStepsID.style.marginLeft = '-27px';
+        monyStepsID.style.zIndex = '0';
     }
 }

@@ -19,7 +19,7 @@
 
     <div class="nav-left col-1 pull-right p-0">
       <ul class="nav-menus">
-        <li class="onhover-dropdown text-center" style="font-size: 17px; color: #00CCFF">
+        <li class="onhover-dropdown text-center" style="font-size: 17px; color: #00CCFF; z-index: 3">
           Scan<br><i class="fa fa-camera" style="color: #00CCFF !important"></i>
           <div class="onhover-show-div notification-dropdown" style="background-color: #262932; top: 40px">
             <ul>
