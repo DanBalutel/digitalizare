@@ -740,6 +740,7 @@ function removeLoadingModal() {
 function logOut() {
     localStorage.removeItem('timeOnPage');
     localStorage.removeItem('dataObj');
+    localStorage.removeItem('newDataObj');
     console.log('removed');
 }
 
