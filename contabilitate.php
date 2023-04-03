@@ -45,7 +45,6 @@
 <!-- Plugins JS start-->
 
 <script src="assets/js/notify/bootstrap-notify.min.js"></script>
-<script src="assets/js/dashboard/default.js"></script>
 <script src="assets/js/notify/index.js"></script>
 <script src="assets/js/typeahead/handlebars.js"></script>
 <script src="assets/js/typeahead/typeahead.bundle.js"></script>
