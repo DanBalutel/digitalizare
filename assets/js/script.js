@@ -34,7 +34,10 @@
       }
       
     $(document).ready(function() {
-        $('input[type=file]').change(function(e){
+        $('#fileInput').change(function(e){
+            Swal.fire("Succes!", "Documentul a fost trimis in cloud!", "success");
+        });
+        $('#fileInput2').change(function(e){
             Swal.fire("Succes!", "Documentul a fost trimis in cloud!", "success");
         });
     });
