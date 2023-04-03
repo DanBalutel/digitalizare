@@ -20,7 +20,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="uploads/38911092_factura.png" class="img-fluid" alt="">
+                        <img id="myImage" src="" >
                     </div>
                     <div class="col-md-6"></div>
                 </div>
@@ -45,7 +45,11 @@
 <script src="assets/js/height-equal.js"></script>
 <script src="assets/js/animation/wow/wow.min.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
+<script>
+    var imageURL = 'uploads/' + dataObj.DateGenerale.cui + '_factura.png';
+    document.getElementById('myImage').src = imageURL;
 
+</script>
 <!-- Plugins JS Ends-->
 <script>
     new WOW().init();
