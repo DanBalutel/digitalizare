@@ -523,13 +523,15 @@ function populatePage() {
 
         d.element('asociatiConexiuni');
         function addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate) {
+            
+            let int = parseInt(i);
             // all schema of table line
             const jsonData = {
                 "tag": "tr",
                 "children": [
                     {
                         "tag": "th",
-                        "innerHTML": `${parseInt(i)++}`,
+                        "innerHTML": `${++int}`,
                         "attrs": {
                             "scope": "row"
                         }
