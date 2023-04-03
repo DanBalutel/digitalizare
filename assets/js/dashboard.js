@@ -116,6 +116,9 @@ function fetchAuth(cuiValue) {
     var url = `https://api.raport.ai/cui?cui=${cuiValue}`
     // (B) FETCH WITH HTTP AUTH
 
+    // for testing with new API from termene TEMP
+    getTermeneData(cuiValue);
+
     fetch(url)
 
         // (C) SERVER RESPONSE
@@ -161,6 +164,54 @@ function fetchAuth(cuiValue) {
             window.location.href = window.location.origin;
         });
 }
+
+function getTermeneData(cuiValue) {
+
+    // (A) URL & CREDENTIALS
+    var url = `https://api.raport.ai:3001/cui?cui=${cuiValue}`
+    // (B) FETCH WITH HTTP AUTH
+
+    fetch(url)
+
+        // (C) SERVER RESPONSE
+        .then((result) => {
+            if (result.status != 200) { throw new Error("Bad Server Response"); }
+            return result.text();
+        })
+        .then((response) => {
+            dataJson = response;
+            window.localStorage.setItem('newDataObj', dataJson);
+            dataObj = JSON.parse(dataJson);
+            console.log(dataObj);
+
+            document.addEventListener("DOMContentLoaded", function () {
+                console.log('loaded!');
+            });
+
+            // // temp we add if check for login
+            // if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
+            //     populatePage();
+            // }
+
+            // all html rendering goes here
+            // populatePage();
+
+        })
+
+        // (D) HANDLE ERRORS (OPTIONAL)
+        .catch((error) => {
+            console.log(error);
+            localStorage.removeItem('dataObj');
+            alert('CUI gresit')
+            window.location.href = window.location.origin;
+        });
+
+}
+
+
+// new Termene API
+newdataObj = JSON.parse(localStorage.newDataObj);
+
 
 function populatePage() {
 
@@ -451,7 +502,7 @@ function populatePage() {
         // carduri cu banci si prognoza meteo
         const ids4 = ['card-1', 'card-2', 'card-3'];
         // carduri active, stocuri, banci si capital total
-        const ids5 = ['card5','card6','card7','card8',]
+        const ids5 = ['card5', 'card6', 'card7', 'card8',]
 
         setMaxHeight(ids0);
         setMaxHeight(ids1);
@@ -504,7 +555,7 @@ function showVideoMonica(displayedModal1) {
                 console.log(error)
             }
 
-console.log(result);            
+            console.log(result);
             if (window.location.pathname === '/' || window.location.pathname === '/index' || window.location.pathname === '/index.php') {
                 window.location.href = window.location.href;
             }
