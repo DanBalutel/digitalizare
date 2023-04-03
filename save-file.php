@@ -3,7 +3,7 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
     $file = $_FILES['file'];
     $filename = $file['name'];
-    $cui = $_POST['cui_file'];
+    $cui = isset($_POST['cui_file']) ? $_POST['cui_file'] : '';
     $tmpFilePath = $file['tmp_name'];
 
     // Generate a unique filename based on the current timestamp
