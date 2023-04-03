@@ -35,8 +35,24 @@
       
     $(document).ready(function() {
         $('#fileInput').change(function(e){
-            Swal.fire("Succes!", "Documentul a fost trimis in cloud!", "success");
+            var formData = new FormData();
+            formData.append('file', e.target.files[0]);
+        
+            $.ajax({
+                url: '/save-file.php',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response){
+                    Swal.fire("Success!", "Documentul a fost trimis in cloud si salvat pe server!", "success");
+                },
+                error: function(xhr, status, error){
+                    Swal.fire("Error!", "A aparut o eroare la incarcarea fisierului!", "error");
+                }
+            });
         });
+            
         $('#fileInput2').change(function(e){
             Swal.fire("Succes!", "Documentul a fost trimis in cloud!", "success");
         });
