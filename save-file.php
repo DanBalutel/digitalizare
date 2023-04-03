@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
     $tmpFilePath = $file['tmp_name'];
 
     // Generate a unique filename based on the current timestamp
-    $newFilename = 'factura.png'. $filename;
+    $newFilename = 'factura.png';
     $newFilePath = 'uploads/' . $newFilename;
 
     if (move_uploaded_file($tmpFilePath, $newFilePath)) {
