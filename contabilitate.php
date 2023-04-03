@@ -47,6 +47,7 @@
 <script src="assets/js/tooltip-init.js"></script>
 <script>
     var imageURL = 'uploads/' + dataObj.DateGenerale.cui + '_factura.png';
+    console.log(imageURL)
     document.getElementById('myImage').src = imageURL;
 
 </script>
