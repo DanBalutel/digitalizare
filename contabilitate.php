@@ -23,7 +23,14 @@
                         <img id="myImage" class="img-fluid" src="">
                     </div>
                     <div class="col-md-6">
-                        <h2>Datele din factura</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Datele din factura</h2>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <input type="submit" class="btn btn-primary" value="Genereaza datele din factura">
+                            </div>
+                        </div>
                         <hr>
                     </div>
                 </div>
