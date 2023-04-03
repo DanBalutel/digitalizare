@@ -54,8 +54,9 @@
 <script src="assets/js/height-equal.js"></script>
 <script src="assets/js/animation/wow/wow.min.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
-<script defer>
+<script>
     
+    const dataObj = JSON.parse(window.localStorage.dataObj);
     var imageURL = 'uploads/' + dataObj.DateGenerale.cui + '_factura.png';
     document.getElementById('myImage').src = imageURL;
     console.log(`https://only1.ai/${imageURL}`)
