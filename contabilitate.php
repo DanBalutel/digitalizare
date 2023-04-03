@@ -60,7 +60,7 @@
     const dataObj = JSON.parse(window.localStorage.dataObj);
     var imageURL = 'uploads/' + dataObj.DateGenerale.cui + '_factura.png';
     document.getElementById('myImage').src = imageURL;
-
+    console.log(`https://only1.ai/${imageURL}`)
     document.getElementById('genereaza').addEventListener('click', function() {
             
         renderLoadingModal('Datele se incarca...');
@@ -74,14 +74,14 @@
                 return result.text();
             })
             .then((response) => {
-            
+                
+                console.log(response)
 
             })
 
             .catch((error) => {
                 console.log(error);
         });
-        console.log('Button clicked!');
 });
         
 
