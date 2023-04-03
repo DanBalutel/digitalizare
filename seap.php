@@ -154,54 +154,6 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-
-<!-- 
-                                                <tr>
-                                                    <th scope="row">4</th>
-                                                    <td>Statie de pompare ape uzate menajere - Petresti Parc localitatea
-                                                        Corbeanca </td>
-                                                    <td>07-09-2021 </td>
-                                                    <td>193.175 RON </td>
-                                                    <td>
-                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
-                                                        <div class="dropdown-menu" style="">
-                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                                                        </div>
-                                                    </td>
-                                                </tr> -->
-
-<!-- 
-                                                <tr>
-                                                    <th scope="row">5</th>
-                                                    <td>Armaturi de reglaj sala masini si sala cazane actionate electric
-                                                        si pneumatic aferente blocului energetic nr. 5 </td>
-                                                    <td>06-09-2021 </td>
-                                                    <td>8.123.677 RON </td>
-                                                    <td>
-                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
-                                                        <div class="dropdown-menu" style="">
-                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                                                        </div>
-                                                    </td>
-                                                </tr> -->
-
-<!-- 
-                                                <tr>
-                                                    <th scope="row">6</th>
-                                                    <td>Materiale pentru rebobinarea motoarelor </td>
-                                                    <td>25-08-2021 </td>
-                                                    <td>1.443 RON</td>
-                                                    <td>
-                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
-                                                        <div class="dropdown-menu" style="">
-                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                                                        </div>
-                                                    </td>
-                                                </tr> -->
-
                                             </tbody>
                                         </table>
                                     </div>

@@ -247,6 +247,82 @@
           </div>
 
 
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-header">
+                <h2 style="color:#00CCFF">Achizitii</h2>
+
+              </div>
+              <div class="card-block row">
+                <div class="col-sm-12 col-lg-12 col-xl-12">
+                  <div class="table-responsive">
+                    <table class="table table-responsive-sm">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Titlu</th>
+                          <th scope="col">Termen</th>
+                          <th scope="col">Val. estimata</th>
+                          <th scope="col">Actiuni</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Masa refrigerata cu 2 usi </td>
+                          <td>23-08-2021</td>
+                          <td> 6.700 RON</td>
+                          <td>
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                            <div class="dropdown-menu" style="">
+                              <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Masina de gatit cu 6 ochiuri, cuptor si dulap inchis</td>
+                          <td>23-08-2021 </td>
+                          <td>35.000 RON </td>
+                          <td>
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                            <div class="dropdown-menu" style="">
+                              <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                          </td>
+                        </tr>
+
+
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Contract de furnizare a unei instalatii de incinerare a
+                            deseurilor de hartie, containerizat </td>
+                          <td>06-09-2021 </td>
+                          <td>221.848 RON</td>
+                          <td>
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                            <div class="dropdown-menu" style="">
+                              <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+
           <h4 style="color: #00CCFF">Afisare sold/debit cont bancar in timp real</h4>
           <!-- banca transilvania -->
           <div class="col-xl-4 col-md-6 col-sm-12 box-col-6">
@@ -433,333 +509,338 @@
 
 
 
-          <div class="row d-flex justify-content-center">  
-                <h2 class="mb-2 mt-2 text-center text-uppercase" style="color: #00CCFF">Organigrama Live</h2>    
-                <hr>               
-                <div class="col-md-3">       
-                    <div class="card radius-15">
-                        <div class="card-body text-center">
-                            Administrator
-                        </div>
-                    </div>
-                    <div class="card radius-15">
-                        <div class="card-body text-center">
-                            <div class="p-4 border radius-15">
-                                <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                <h6 class="mt-3">Pagina: ERP</h6>
-                                <h5 class="mt-2 mb-2"> Alexandru Irimescu <br>
-                                <span class="blink">🟢</span> Lucreaza in ERP</h5>
-                                
-                                <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
-                                <div class="chat-tab-menu mt-3">
-                                <div class="row">
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-phone f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-paper-plane f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-video-camera f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-inbox f-24"></i><br>
-                                    </a>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="row d-flex justify-content-center">
+            <h2 class="mb-2 mt-2 text-center text-uppercase" style="color: #00CCFF">Organigrama Live</h2>
+            <hr>
+            <div class="col-md-3">
+              <div class="card radius-15">
+                <div class="card-body text-center">
+                  Administrator
                 </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-3">                            
-                    <div class="card radius-15">
-                        <div class="card-body text-center">
-                            Echipa Vanzari
-                        </div>
-                    </div>
-                    <div class="card radius-15">
-                        <div class="card-body text-center">
-                            <div class="p-4 border radius-15">
-                                <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                <h5 class="mt-2 mb-2">Alexandra G. <br>
-                                <span class="blink">🟢</span> Lucreaza in Social Media</h5>
-                                
-                                <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
-                                <div class="chat-tab-menu mt-3">
-                                <div class="row">
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-phone f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-paper-plane f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-video-camera f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-inbox f-24"></i><br>
-                                    </a>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card radius-15">
-                        <div class="card-body text-center">
-                            <div class="p-4 border radius-15">
-                                <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.27.518-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">                  
-                                <h5 class="mt-2 mb-2">🔴 Stefania H.</h5>
+              </div>
+              <div class="card radius-15">
+                <div class="card-body text-center">
+                  <div class="p-4 border radius-15">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <h6 class="mt-3">Pagina: ERP</h6>
+                    <h5 class="mt-2 mb-2"> Alexandru Irimescu <br>
+                      <span class="blink">🟢</span> Lucreaza in ERP
+                    </h5>
 
-                                
-                                <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
-                                <div class="chat-tab-menu mt-3">
-                                <div class="row">
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-phone f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-paper-plane f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-video-camera f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-inbox f-24"></i><br>
-                                    </a>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
+                    <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                    <div class="chat-tab-menu mt-3">
+                      <div class="row">
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-phone f-24"></i><br>
+                          </a>
                         </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-paper-plane f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-video-camera f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-inbox f-24"></i><br>
+                          </a>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <div class="col-md-3">                            
-                    <div class="card radius-15">
-                        <div class="card-body text-center">
-                            Finanate
-                        </div>
-                    </div>
-                    <div class="card radius-15">
-                        <div class="card-body text-center">
-                            <div class="p-4 border radius-15">
-                                <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.314-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                <h5 class="mt-2 mb-2"> Andra B. <br>
-                                <span class="blink">🟢</span> Lucreaza in Contabilitate</h5>
-                                
-                                <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
-                                <div class="chat-tab-menu mt-3">
-                                <div class="row">
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-phone f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-paper-plane f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-video-camera f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-inbox f-24"></i><br>
-                                    </a>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card radius-15">
-                        <div class="card-body text-center">
-                            <div class="p-4 border radius-15">
-                                <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.312-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                <h5 class="mt-2 mb-2">🔴 Daniela Irimescu</h5>
-                                
-                                <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
-                                <div class="chat-tab-menu mt-3">
-                                <div class="row">
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-phone f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-paper-plane f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-video-camera f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-inbox f-24"></i><br>
-                                    </a>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">                            
-                    <div class="card radius-15">
-                        <div class="card-body text-center">
-                            IT
-                        </div>
-                    </div>
-                    <div class="card radius-15">
-                        <div class="card-body text-center">
-                            <div class="p-4 border radius-15">
-                                <img src="https://francizare.ro/storage/imagini/dan.webp" width="110" height="110" class="rounded-circle shadow" alt="">
-                                <h5 class="mt-2 mb-2">🔴 Dan Balutel</h5>
-                                
-                                <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
-                                <div class="chat-tab-menu mt-3">
-                                <div class="row">
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-phone f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-paper-plane f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-video-camera f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-inbox f-24"></i><br>
-                                    </a>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                </div>
-                <div class="col-md-3">                            
-                    <div class="card radius-15">
-                        <div class="card-body text-center">
-                            Administrare
-                        </div>
-                    </div>
-                    <div class="card radius-15">
-                        <div class="card-body text-center">
-                            <div class="p-4 border radius-15">
-                                <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.31-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                <h5 class="mt-2 mb-2">Iordache Mihaela <br>
-                                <span class="blink">🟢</span> Lucreaza in Contabilitate</h5>
-                                
-                                <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
-                                <div class="chat-tab-menu mt-3">
-                                <div class="row">
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-phone f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-paper-plane f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-video-camera f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-inbox f-24"></i><br>
-                                    </a>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card radius-15">
-                        <div class="card-body text-center">
-                            <div class="p-4 border radius-15">
-                                <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                <h5 class="mt-2 mb-2">Ionut Rusu  <br>
-                                <span class="blink">🟢</span> Lucreaza in IOT</h5>
-                                
-                                <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
-                                <div class="chat-tab-menu mt-3">
-                                <div class="row">
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-phone f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-paper-plane f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-video-camera f-24"></i><br>
-                                    </a>
-                                    </div>
-                                    <div class="col-3">
-                                    <a href="#">
-                                        <i class="fa fa-inbox f-24"></i><br>
-                                    </a>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
           </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-3">
+              <div class="card radius-15">
+                <div class="card-body text-center">
+                  Echipa Vanzari
+                </div>
+              </div>
+              <div class="card radius-15">
+                <div class="card-body text-center">
+                  <div class="p-4 border radius-15">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <h5 class="mt-2 mb-2">Alexandra G. <br>
+                      <span class="blink">🟢</span> Lucreaza in Social Media
+                    </h5>
 
-          <!-- <h3 class="text-center">CHATUL INTERN AL COMPANIE (TRIMITE DOCUMENTE IN CLOUD)</h3>
+                    <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                    <div class="chat-tab-menu mt-3">
+                      <div class="row">
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-phone f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-paper-plane f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-video-camera f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-inbox f-24"></i><br>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card radius-15">
+                <div class="card-body text-center">
+                  <div class="p-4 border radius-15">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.27.518-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <h5 class="mt-2 mb-2">🔴 Stefania H.</h5>
+
+
+                    <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                    <div class="chat-tab-menu mt-3">
+                      <div class="row">
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-phone f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-paper-plane f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-video-camera f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-inbox f-24"></i><br>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card radius-15">
+                <div class="card-body text-center">
+                  Finanate
+                </div>
+              </div>
+              <div class="card radius-15">
+                <div class="card-body text-center">
+                  <div class="p-4 border radius-15">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.314-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <h5 class="mt-2 mb-2"> Andra B. <br>
+                      <span class="blink">🟢</span> Lucreaza in Contabilitate
+                    </h5>
+
+                    <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                    <div class="chat-tab-menu mt-3">
+                      <div class="row">
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-phone f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-paper-plane f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-video-camera f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-inbox f-24"></i><br>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card radius-15">
+                <div class="card-body text-center">
+                  <div class="p-4 border radius-15">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.312-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <h5 class="mt-2 mb-2">🔴 Daniela Irimescu</h5>
+
+                    <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                    <div class="chat-tab-menu mt-3">
+                      <div class="row">
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-phone f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-paper-plane f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-video-camera f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-inbox f-24"></i><br>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card radius-15">
+                <div class="card-body text-center">
+                  IT
+                </div>
+              </div>
+              <div class="card radius-15">
+                <div class="card-body text-center">
+                  <div class="p-4 border radius-15">
+                    <img src="https://francizare.ro/storage/imagini/dan.webp" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <h5 class="mt-2 mb-2">🔴 Dan Balutel</h5>
+
+                    <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                    <div class="chat-tab-menu mt-3">
+                      <div class="row">
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-phone f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-paper-plane f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-video-camera f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-inbox f-24"></i><br>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col-md-3">
+              <div class="card radius-15">
+                <div class="card-body text-center">
+                  Administrare
+                </div>
+              </div>
+              <div class="card radius-15">
+                <div class="card-body text-center">
+                  <div class="p-4 border radius-15">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.31-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <h5 class="mt-2 mb-2">Iordache Mihaela <br>
+                      <span class="blink">🟢</span> Lucreaza in Contabilitate
+                    </h5>
+
+                    <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                    <div class="chat-tab-menu mt-3">
+                      <div class="row">
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-phone f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-paper-plane f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-video-camera f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-inbox f-24"></i><br>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card radius-15">
+                <div class="card-body text-center">
+                  <div class="p-4 border radius-15">
+                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <h5 class="mt-2 mb-2">Ionut Rusu <br>
+                      <span class="blink">🟢</span> Lucreaza in IOT
+                    </h5>
+
+                    <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                    <div class="chat-tab-menu mt-3">
+                      <div class="row">
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-phone f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-paper-plane f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-video-camera f-24"></i><br>
+                          </a>
+                        </div>
+                        <div class="col-3">
+                          <a href="#">
+                            <i class="fa fa-inbox f-24"></i><br>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <h3 class="text-center">CHATUL INTERN AL COMPANIE (TRIMITE DOCUMENTE IN CLOUD)</h3>
 
           <h3><img src="/assets/images/logo/logo.png" width="50" height="50" class="rounded-circle shadow" alt="experti"><b>ECHIPA DE VANZARI</b>
           </h3>
@@ -1076,34 +1157,34 @@
           <div class="w-100 m-b-20 d-grid"> <a href="#" class="btn btn-outline-primary radius-15" data-bs-original-title="" title="">Scrie mesaj la toata compania</a>
           </div> -->
 
-        </div>
-        <!-- Container-fluid Ends-->
+      </div>
+      <!-- Container-fluid Ends-->
 
 
-        <!-- Modal loading-->
-        <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true" role="dialog">
-          <div class="mt-5 modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-body dark-modal">
+      <!-- Modal loading-->
+      <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true" role="dialog">
+        <div class="mt-5 modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-body dark-modal">
 
 
-                <h6 id="loadingLabel" class="w-100 d-flex justify-content-center">text here</h6>
+              <h6 id="loadingLabel" class="w-100 d-flex justify-content-center">text here</h6>
 
-                <div class="progress">
-                  <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-
-
+              <div class="progress">
+                <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
+
+
             </div>
           </div>
         </div>
-
       </div>
-      <!-- footer start-->
+
     </div>
-    <?php include('partial/footer.php') ?>
+    <!-- footer start-->
   </div>
+  <?php include('partial/footer.php') ?>
+</div>
 </div>
 <?php include('partial/scripts.php') ?>
 <!-- Plugins JS start-->
