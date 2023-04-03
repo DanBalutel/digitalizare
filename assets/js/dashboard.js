@@ -585,7 +585,7 @@ function populatePage() {
 
             for (let j in newdataObj.conexiuni_asociati[i].legaturi) {
                 functie += '<span class="cardWithGrayBorder">' + newdataObj.conexiuni_asociati[i].legaturi[j].functie + '</span><br>';
-                procentaj += '<span style="background-color: #57e546;" class="cardWithGrayBorder">' + newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '</span><br>';
+                procentaj += '<span style="color: #2F2F3B; border: none;background-color: #57e546;" class="cardWithGrayBorder">' + newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '</span><br>';
                 firma += '<span class="cardWithGrayBorder">' + newdataObj.conexiuni_asociati[i].legaturi[j].firma + '</span><br>';
                 judet += '<span class="cardWithGrayBorder">' + newdataObj.conexiuni_asociati[i].legaturi[j].judet + '</span><br>';
                 localitate += '<span class="cardWithGrayBorder">' + newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '</span><br>';
