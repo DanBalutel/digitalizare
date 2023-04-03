@@ -93,20 +93,8 @@
                                                 </tr>
                                             </thead>
                                             <tbody id="crmTable2">
-
                                             </tbody>
-
                                         </table>
-
-
-
-
-
-
-
-
-
-
                                     </div>
                                 </div>
                             </div>

@@ -77,6 +77,7 @@ if (window.localStorage.dataObj) {
     showVideoMonica(localStorage.displayedModal1);
 
     dataObj = JSON.parse(window.localStorage.dataObj);
+    newdataObj = JSON.parse(window.localStorage.newDataObj);
 
     // temp we add if check for login
     if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
@@ -204,7 +205,7 @@ function getTermeneData(cuiValue) {
             console.log(error);
             localStorage.removeItem('dataObj');
             //alert('CUI gresit')
-//            window.location.href = window.location.origin;
+            //            window.location.href = window.location.origin;
         });
 
 }
@@ -517,10 +518,77 @@ function populatePage() {
         setMaxHeight(ids5);
 
 
-        
-    // using newTermene from now
 
-    d.element('asociatiConexiuni');
+        // using newTermene from now
+
+        d.element('asociatiConexiuni');
+        function addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate) {
+            // all schema of table line
+            const jsonData = {
+                "tag": "tr",
+                "children": [
+                    {
+                        "tag": "th",
+                        "innerHTML": `${i}`,
+                        "attrs": {
+                            "scope": "row"
+                        }
+                    },
+                    {
+                        "tag": "td",
+                        "innerHTML": `${nume}`
+                    },
+                    {
+                        "tag": "td",
+                        "innerHTML": `${functie}`
+                    },
+                    {
+                        "tag": "td",
+                        "innerHTML": `${procentaj}`
+                    },
+                    {
+                        "tag": "td",
+                        "innerHTML": `${firma}`
+                    },
+                    {
+                        "tag": "td",
+                        "innerHTML": `${judet}`
+                    },
+                    {
+                        "tag": "td",
+                        "innerHTML": `${localitate}`
+                    }
+                ]
+            }
+
+            // end of JSON
+            d.createElement(jsonData, d.e.asociatiConexiuni);
+        }
+
+        // randuri tabel asociati conexiuni
+        for (let i in newdataObj.conexiuni_asociati) {
+            console.log(newdataObj.conexiuni_asociati[i]);
+
+            const nume = newdataObj.conexiuni_asociati[i].nume;
+            let functie = '';
+            let procentaj = '';
+            let firma = '';
+            let judet = '';
+            let localitate = '';
+
+            for (let j in newdataObj.conexiuni_asociati[i].legaturi) {
+                functie += newdataObj.conexiuni_asociati[i].legaturi[j].functie + '<br>';
+                procentaj += newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '<br>';
+                firma += newdataObj.conexiuni_asociati[i].legaturi[j].firma + '<br>';
+                judet += newdataObj.conexiuni_asociati[i].legaturi[j].judet + '<br>';
+                localitate += newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '<br>';
+
+            }
+
+            addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate)
+        }
+
+
 
 
     } catch (error) {
@@ -531,7 +599,7 @@ function populatePage() {
 
 
 
-// END populate page
+    // END populate page
 };
 
 function showVideoMonica(displayedModal1) {
