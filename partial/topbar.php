@@ -27,13 +27,13 @@
                 <label for="fileInput">
                   Scan Factura
                 </label>
-                <input id="fileInput" type="file" style="display: none;">
+                <input id="fileInput" name="data" type="file" style="display: none;">
               </li>
               <li class="nav-link border-4 text-white" style="cursor: pointer">
                 <label for="fileInput2">
                   Scan DOC
                 </label>
-                <input id="fileInput2" type="file" style="display: none;">
+                <input id="fileInput2" name="data" type="file" style="display: none;">
               </li>
             </ul>
           </div>
