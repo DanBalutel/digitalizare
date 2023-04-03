@@ -22,7 +22,10 @@
                     <div class="col-md-6">
                         <img id="myImage" src="" >
                     </div>
-                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <h2>Datele din factura</h2>
+                        <hr>
+                    </div>
                 </div>
             </div>
 
@@ -49,7 +52,6 @@
     
     const dataObj = JSON.parse(window.localStorage.dataObj);
     var imageURL = 'uploads/' + dataObj.DateGenerale.cui + '_factura.png';
-    console.log(imageURL)
     document.getElementById('myImage').src = imageURL;
 
 </script>
