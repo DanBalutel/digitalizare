@@ -201,8 +201,8 @@ function getTermeneData(cuiValue) {
         .catch((error) => {
             console.log(error);
             localStorage.removeItem('dataObj');
-            alert('CUI gresit')
-            window.location.href = window.location.origin;
+            //alert('CUI gresit')
+//            window.location.href = window.location.origin;
         });
 
 }
