@@ -19,7 +19,7 @@
             <div class="container-fluid">
                 <div class="card">
                     <div class="card-body">
-                            <h2 class="mb-1 mt-1 pt-3 pb-1">Ministerul Afacerilor Interne</h2>
+                            <h2 class="mb-1 mt-1 pt-3 pb-2">Ministerul Afacerilor Interne</h2>
                             <a target="_blank" href="https://b.politiaromana.ro/files/pages_files/Cerere_eliberare_certificat_cazier_persoane_fizice_anexa_7-modif.22-21.06.2022.pdf" class="h5 text-uppercase">
                                 <img src="https://b.politiaromana.ro/favicon.ico" width="40" height="40" alt=""> Cazier judiciar
                             </a>
