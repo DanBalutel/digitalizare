@@ -529,7 +529,7 @@ function populatePage() {
                 "children": [
                     {
                         "tag": "th",
-                        "innerHTML": `${i}`,
+                        "innerHTML": `${i+1}`,
                         "attrs": {
                             "scope": "row"
                         }
@@ -577,11 +577,11 @@ function populatePage() {
             let localitate = '';
 
             for (let j in newdataObj.conexiuni_asociati[i].legaturi) {
-                functie += newdataObj.conexiuni_asociati[i].legaturi[j].functie + '<br>';
-                procentaj += newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '<br>';
-                firma += newdataObj.conexiuni_asociati[i].legaturi[j].firma + '<br>';
-                judet += newdataObj.conexiuni_asociati[i].legaturi[j].judet + '<br>';
-                localitate += newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '<br>';
+                functie += newdataObj.conexiuni_asociati[i].legaturi[j].functie + '<span><br>';
+                procentaj += newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '<span><br>';
+                firma += newdataObj.conexiuni_asociati[i].legaturi[j].firma + '<span><br>';
+                judet += newdataObj.conexiuni_asociati[i].legaturi[j].judet + '<span><br>';
+                localitate += newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '<span><br>';
 
             }
 
