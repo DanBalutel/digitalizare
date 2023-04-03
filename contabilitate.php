@@ -20,7 +20,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <img id="myImage" src="" >
+                        <img id="myImage" class="img-fluid" src="">
                     </div>
                     <div class="col-md-6">
                         <h2>Datele din factura</h2>
