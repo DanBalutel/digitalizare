@@ -61,10 +61,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -108,10 +108,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -155,10 +155,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -210,10 +210,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -268,10 +268,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -317,10 +317,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -373,10 +373,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -422,10 +422,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -470,10 +470,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -517,10 +517,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -571,10 +571,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -620,10 +620,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -668,10 +668,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -715,10 +715,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -769,10 +769,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -818,10 +818,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -866,10 +866,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -913,10 +913,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -967,10 +967,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -1016,10 +1016,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -1065,10 +1065,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -1112,10 +1112,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -1163,10 +1163,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -1211,10 +1211,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -1258,10 +1258,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -1311,10 +1311,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -1359,10 +1359,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -1407,10 +1407,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
@@ -1455,10 +1455,10 @@
                                         <span class="f-s-15">Email</span>
                                     </a>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 p-0">
                                     <a href="#">
                                         <i class="fa fa-bell f-24"></i><br>
-                                        <span class="f-s-15">Notifica-l</span>
+                                        <span class="f-s-15">Notifica</span>
                                     </a>
                                 </div>
                                </div>
