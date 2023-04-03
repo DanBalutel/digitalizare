@@ -523,10 +523,13 @@ function populatePage() {
     }
 
 
+    // using newTermene from now
+
+    d.element('asociatiConexiuni');
 
 
 
-
+// END populate page
 };
 
 function showVideoMonica(displayedModal1) {

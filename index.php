@@ -270,7 +270,7 @@
 
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody id="asociatiConexiuni">
 
                       </tbody>
                     </table>
