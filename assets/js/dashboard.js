@@ -529,7 +529,7 @@ function populatePage() {
                 "children": [
                     {
                         "tag": "th",
-                        "innerHTML": `${i+1}`,
+                        "innerHTML": `${parseInt(i)++}`,
                         "attrs": {
                             "scope": "row"
                         }
