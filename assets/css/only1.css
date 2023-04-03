@@ -186,7 +186,7 @@ body {
 
 #demoPlay {
     position: absolute;
-    bottom: calc( 50% - 11px );
+    bottom: calc(50% - 11px);
 }
 
 .hide {
@@ -196,4 +196,21 @@ body {
 /* menu spacing */
 .simplebar-content {
     padding: 2rem 0 10rem 0 !important;
+}
+
+.cardWithGrayBorder {
+    border: 1px solid #cfcaca;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.columnCustomFlex {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
 }

@@ -530,7 +530,7 @@ function populatePage() {
                 "tag": "tr",
                 "children": [
                     {
-                        "tag": "th",
+                        "tag": "td",
                         "innerHTML": `${++int}`,
                         "attrs": {
                             "scope": "row"
@@ -542,22 +542,27 @@ function populatePage() {
                     },
                     {
                         "tag": "td",
+                        "class": "columnCustomFlex",
                         "innerHTML": `${functie}`
                     },
                     {
                         "tag": "td",
+                        "class": "columnCustomFlex",
                         "innerHTML": `${procentaj}`
                     },
                     {
                         "tag": "td",
+                        "class": "columnCustomFlex",
                         "innerHTML": `${firma}`
                     },
                     {
                         "tag": "td",
+                        "class": "columnCustomFlex",
                         "innerHTML": `${judet}`
                     },
                     {
                         "tag": "td",
+                        "class": "columnCustomFlex",
                         "innerHTML": `${localitate}`
                     }
                 ]
@@ -579,11 +584,11 @@ function populatePage() {
             let localitate = '';
 
             for (let j in newdataObj.conexiuni_asociati[i].legaturi) {
-                functie += '<span>' + newdataObj.conexiuni_asociati[i].legaturi[j].functie + '</span><br>';
-                procentaj += '<span>' + newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '</span><br>';
-                firma += '<span>' + newdataObj.conexiuni_asociati[i].legaturi[j].firma + '</span><br>';
-                judet += '<span>' + newdataObj.conexiuni_asociati[i].legaturi[j].judet + '</span><br>';
-                localitate += '<span>' + newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '</span><br>';
+                functie += '<span class="cardWithGrayBorder">' + newdataObj.conexiuni_asociati[i].legaturi[j].functie + '</span><br>';
+                procentaj += '<span style="background-color: #57e546;" class="cardWithGrayBorder">' + newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '</span><br>';
+                firma += '<span class="cardWithGrayBorder">' + newdataObj.conexiuni_asociati[i].legaturi[j].firma + '</span><br>';
+                judet += '<span class="cardWithGrayBorder">' + newdataObj.conexiuni_asociati[i].legaturi[j].judet + '</span><br>';
+                localitate += '<span class="cardWithGrayBorder">' + newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '</span><br>';
 
             }
 
