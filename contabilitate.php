@@ -46,6 +46,8 @@
 <script src="assets/js/animation/wow/wow.min.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
 <script>
+    
+    const dataObj = JSON.parse(window.localStorage.dataObj);
     var imageURL = 'uploads/' + dataObj.DateGenerale.cui + '_factura.png';
     console.log(imageURL)
     document.getElementById('myImage').src = imageURL;
