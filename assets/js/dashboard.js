@@ -117,7 +117,6 @@ function fetchAuth(cuiValue) {
     // (B) FETCH WITH HTTP AUTH
 
     // for testing with new API from termene TEMP
-    getTermeneData(cuiValue);
 
     fetch(url)
 
@@ -209,9 +208,14 @@ function getTermeneData(cuiValue) {
 }
 
 
-// new Termene API
-newdataObj = JSON.parse(localStorage.newDataObj);
 
+
+
+if (request['cui']) {
+    // new Termene API
+    getTermeneData(request['cui']);
+    newdataObj = JSON.parse(localStorage.newDataObj);
+}
 
 function populatePage() {
 
@@ -256,8 +260,7 @@ function populatePage() {
             const dataNastere = document.getElementById('dataNastere');
             dataNastere.innerHTML = administrator.dataNastere.slice(8, 10) + '.' + administrator.dataNastere.slice(5, 7) + '.' + administrator.dataNastere.slice(0, 4);
         }
-        if(document.getElementById('cui_file'))
-        {
+        if (document.getElementById('cui_file')) {
             document.getElementById('cui_file').value = dataObj.DateGenerale.cui;
         }
 
