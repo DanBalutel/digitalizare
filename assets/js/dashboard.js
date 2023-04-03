@@ -579,11 +579,11 @@ function populatePage() {
             let localitate = '';
 
             for (let j in newdataObj.conexiuni_asociati[i].legaturi) {
-                functie += newdataObj.conexiuni_asociati[i].legaturi[j].functie + '<span><br>';
-                procentaj += newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '<span><br>';
-                firma += newdataObj.conexiuni_asociati[i].legaturi[j].firma + '<span><br>';
-                judet += newdataObj.conexiuni_asociati[i].legaturi[j].judet + '<span><br>';
-                localitate += newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '<span><br>';
+                functie += '<span>' + newdataObj.conexiuni_asociati[i].legaturi[j].functie + '</span><br>';
+                procentaj += '<span>' + newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '</span><br>';
+                firma += '<span>' + newdataObj.conexiuni_asociati[i].legaturi[j].firma + '</span><br>';
+                judet += '<span>' + newdataObj.conexiuni_asociati[i].legaturi[j].judet + '</span><br>';
+                localitate += '<span>' + newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '</span><br>';
 
             }
 
