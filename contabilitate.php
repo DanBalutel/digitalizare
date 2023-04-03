@@ -54,7 +54,7 @@
 <script src="assets/js/height-equal.js"></script>
 <script src="assets/js/animation/wow/wow.min.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
-<script>
+<script defer>
     
     var imageURL = 'uploads/' + dataObj.DateGenerale.cui + '_factura.png';
     document.getElementById('myImage').src = imageURL;
