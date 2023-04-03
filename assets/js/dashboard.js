@@ -1,5 +1,7 @@
 let dataJson;
 let dataObj;
+let newdataObj;
+
 
 // detect if screen is mobile
 function isScreenWidth768OrMore() {

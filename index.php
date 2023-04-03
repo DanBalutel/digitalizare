@@ -261,56 +261,17 @@
                       <thead>
                         <tr>
                           <th scope="col">#</th>
-                          <th scope="col">Titlu</th>
-                          <th scope="col">Termen</th>
-                          <th scope="col">Val. estimata</th>
-                          <th scope="col">Actiuni</th>
+                          <th scope="col">Nume</th>
+                          <th scope="col">Functie</th>
+                          <th scope="col">%</th>
+                          <th scope="col">Firma</th>
+                          <th scope="col">Judet</th>
+                          <th scope="col">Localitate</th>
+
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Masa refrigerata cu 2 usi </td>
-                          <td>23-08-2021</td>
-                          <td> 6.700 RON</td>
-                          <td>
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
-                            <div class="dropdown-menu" style="">
-                              <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                            </div>
-                          </td>
-                        </tr>
 
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Masina de gatit cu 6 ochiuri, cuptor si dulap inchis</td>
-                          <td>23-08-2021 </td>
-                          <td>35.000 RON </td>
-                          <td>
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
-                            <div class="dropdown-menu" style="">
-                              <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                            </div>
-                          </td>
-                        </tr>
-
-
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Contract de furnizare a unei instalatii de incinerare a
-                            deseurilor de hartie, containerizat </td>
-                          <td>06-09-2021 </td>
-                          <td>221.848 RON</td>
-                          <td>
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
-                            <div class="dropdown-menu" style="">
-                              <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
-                              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
-                            </div>
-                          </td>
-                        </tr>
                       </tbody>
                     </table>
                   </div>
