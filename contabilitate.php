@@ -46,7 +46,7 @@
 <script src="assets/js/animation/wow/wow.min.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
 <script>
-    var imageURL = 'uploads/' + dataObj.DateGenerale.cui + '_factura.png';
+    var imageURL = 'uploads/' + DateGenerale.cui + '_factura.png';
     console.log(imageURL)
     document.getElementById('myImage').src = imageURL;
 
