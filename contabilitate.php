@@ -28,7 +28,7 @@
                                 <h2>Datele din factura</h2>
                             </div>
                             <div class="col-md-6 d-flex justify-content-center">
-                                <input type="submit" class="btn btn-primary" value="Genereaza datele din factura">
+                                <input type="submit" class="btn btn-primary" id="genereaza" value="Genereaza datele din factura">
                             </div>
                         </div>
                         <hr>
@@ -60,6 +60,32 @@
     const dataObj = JSON.parse(window.localStorage.dataObj);
     var imageURL = 'uploads/' + dataObj.DateGenerale.cui + '_factura.png';
     document.getElementById('myImage').src = imageURL;
+
+    document.getElementById('genereaza').addEventListener('click', function() {
+            
+        renderLoadingModal('Datele se incarca...');
+
+        var url = `https://api.raport.ai/genereaza?imagine=https://only1.ai/${imageURL}`
+
+        fetch(url)
+
+            .then((result) => {
+                if (result.status != 200) { throw new Error("Bad Server Response"); }
+                return result.text();
+            })
+            .then((response) => {
+            
+
+            })
+
+            .catch((error) => {
+                console.log(error);
+        });
+        console.log('Button clicked!');
+});
+        
+
+
 
 </script>
 <!-- Plugins JS Ends-->
