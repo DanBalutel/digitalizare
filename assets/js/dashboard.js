@@ -517,15 +517,17 @@ function populatePage() {
         setMaxHeight(ids5);
 
 
+        
+    // using newTermene from now
+
+    d.element('asociatiConexiuni');
+
 
     } catch (error) {
         console.log(error);
     }
 
 
-    // using newTermene from now
-
-    d.element('asociatiConexiuni');
 
 
 
