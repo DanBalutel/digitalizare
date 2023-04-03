@@ -27,7 +27,7 @@
                 <label for="fileInput">
                   Scan Factura
                 </label>
-                <input type="hidden" id="cui_file" name="cui_file" value="1">
+                <input type="hidden" id="cui_file" name="cui_file">
                 <input id="fileInput" name="data" type="file" style="display: none;">
               </li>
               <li class="nav-link border-4 text-white" style="cursor: pointer">
