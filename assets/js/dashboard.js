@@ -572,7 +572,7 @@ function populatePage() {
 
 
         d.element('dosareFirma');
-        function addAsocConexLine(i, numar, instanta, data, parti, materie, obiect, stadiu) {
+        function addDosare(i, numar, instanta, data, parti, materie, obiect, stadiu) {
 
             let int = parseInt(i);
             // all schema of table line
@@ -621,7 +621,6 @@ function populatePage() {
         
         // randuri tabel asociati conexiuni
         for (let i in dosare) {
-            console.log(dosare[i]);
 
             let numar = dosare[i].nr_dosar;
             let instanta = dosare[i].nume_instanta;
@@ -640,7 +639,7 @@ function populatePage() {
 
             // }
 
-            addAsocConexLine(i, numar, instanta, data, parti, materie, obiect, stadiu)
+            addDosare(i, numar, instanta, data, parti, materie, obiect, stadiu)
         }
 
 
