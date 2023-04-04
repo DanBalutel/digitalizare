@@ -288,6 +288,8 @@
             <div class="card">
               <div class="card-header">
                 <h2 style="color:#00CCFF">Dosare in instanta</h2>
+                <h4 style="color:#00CCFF">Data ultimei actualizări: 04.04.2023</h4>
+
               </div>
               <div class="card-block row">
                 <div class="col-sm-12 col-lg-12 col-xl-12">
