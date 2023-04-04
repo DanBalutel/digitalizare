@@ -76,7 +76,7 @@
             // perform OCR on the image
             Tesseract.recognize(url, 'ron')
                 .then(result => {
-                    document.getElementById('data').innerHTML = result.data.text;
+                    document.getElementById('data').innerHTML = result.data.text.replace('\n','<br>');
                     console.log(result.data.text);
                 })
                 .catch(error => {
