@@ -36,6 +36,9 @@
                             </div>
                         </div>
                         <hr>
+                        <div id="data">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,20 +70,21 @@
 
         renderLoadingModal('Datele se incarca...');
 
-        // var url = `https://only1.ai/${imageURL}`;
+        var url = `https://only1.ai/${imageURL}`;
 
-        // try {
-        //     // perform OCR on the image
-        //     Tesseract.recognize(url, 'ron')
-        //         .then(result => {
-        //             console.log(result.data.text);
-        //         })
-        //         .catch(error => {
-        //             console.error(error);
-        //         });
-        // } catch (error) {
-        //     console.error(error);
-        // }
+        try {
+            // perform OCR on the image
+            Tesseract.recognize(url, 'ron')
+                .then(result => {
+                    document.getElementById('data').innerHtml = result.data.text;
+                    console.log(result.data.text);
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        } catch (error) {
+            console.error(error);
+        }
     });
 </script>
 <!-- Plugins JS Ends-->
