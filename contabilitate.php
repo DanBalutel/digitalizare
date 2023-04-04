@@ -1,5 +1,4 @@
 <?php include('partial/header.php') ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/2.1.0/tesseract.min.js" integrity="sha512-//GjtqQtAtedEIJpCzDXdvQ0A6aKZgjKwaQTJbLEJjgTKPyopzvtvu/JaEVRFAs8aUhslCSTRwKih3wKtOaIbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 <?php include('partial/loader.php') ?>
@@ -49,6 +48,7 @@
 </div>
 <?php include('partial/scripts.php') ?>
 <!-- Plugins JS start-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/2.1.0/tesseract.min.js" integrity="sha512-//GjtqQtAtedEIJpCzDXdvQ0A6aKZgjKwaQTJbLEJjgTKPyopzvtvu/JaEVRFAs8aUhslCSTRwKih3wKtOaIbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="assets/js/notify/bootstrap-notify.min.js"></script>
 <script src="assets/js/notify/index.js"></script>
