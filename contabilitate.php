@@ -71,10 +71,9 @@
             document.getElementById('myImage').src = imageURL;
         } else {
             imageURL = 'uploads/factura.png';
-            document.getElementById('myImage').src = imageURL;
+            document.getElementById(' myImage').src = imageURL;
         }
     }).catch(err => console.log('Error:', err));
-    console.log(`https://only1.ai/${imageURL}`)
     document.getElementById('genereaza').addEventListener('click', function() {
 
         renderLoadingModal('Datele se incarca...');
@@ -86,7 +85,6 @@
             Tesseract.recognize(url, 'ron')
                 .then(result => {
                     document.getElementById('data').innerHTML = result.data.text.replace(/(\r\n|\n|\r)/gm,'<br>');
-                    console.log(result.data.text);
                 })
                 .catch(error => {
                     console.error(error);
