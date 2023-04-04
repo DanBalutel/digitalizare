@@ -297,14 +297,11 @@
                     <table class="table table-responsive-sm">
                       <thead>
                         <tr>
-                          <th scope="col">Numar Dosar</th>
+                          <th scope="col">Nr. Dosar / Instanta</th>
                           <th scope="col">Data</th>
-                          <th scope="col">Instanta</th>
-                          <th scope="col">%</th>
-                          <th scope="col">Firma</th>
-                          <th scope="col">Judet</th>
-                          <th scope="col">Localitate</th>
-
+                          <th scope="col">Parti</th>
+                          <th scope="col">Materie</th>
+                          <th scope="col">Obiect / Stadiu</th>
                         </tr>
                       </thead>
                       <tbody id="dosareFirma">
