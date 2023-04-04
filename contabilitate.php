@@ -71,7 +71,7 @@
             document.getElementById('myImage').src = imageURL;
         } else {
             imageURL = 'uploads/factura.png';
-            document.getElementById(' myImage').src = imageURL;
+            document.getElementById('myImage').src = imageURL;
         }
     }).catch(err => console.log('Error:', err));
     document.getElementById('genereaza').addEventListener('click', function() {
