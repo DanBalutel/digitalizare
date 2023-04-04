@@ -41,12 +41,12 @@
                 </div>
             </div>
 
-        </div>
+        </div> 
         <!-- footer start-->
         <?php include('partial/footer.php') ?>
     </div>
 </div>
-<?php include('partial/scripts.php') ?>
+<?php include('partial/scripts.php') ?> 
 <!-- Plugins JS start-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/2.1.0/tesseract.min.js" integrity="sha512-//GjtqQtAtedEIJpCzDXdvQ0A6aKZgjKwaQTJbLEJjgTKPyopzvtvu/JaEVRFAs8aUhslCSTRwKih3wKtOaIbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
