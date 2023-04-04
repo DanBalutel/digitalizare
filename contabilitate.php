@@ -54,9 +54,10 @@
 <script src="assets/js/height-equal.js"></script>
 <script src="assets/js/animation/wow/wow.min.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
-<script defer>
+<script>
     
-    var imageURL = 'uploads/' + dataObj.DateGenerale.cui + '_factura.png';
+    const obiect = JSON.parse(window.localStorage.dataObj);
+    var imageURL = 'uploads/' + obiect.DateGenerale.cui + '_factura.png';
     document.getElementById('myImage').src = imageURL;
     console.log(`https://only1.ai/${imageURL}`)
     document.getElementById('genereaza').addEventListener('click', function() {
