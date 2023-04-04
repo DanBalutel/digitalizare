@@ -214,3 +214,8 @@ body {
     flex-direction: column;
     justify-content: center; */
 }
+
+.chat-box .chat-right-aside .chat .chat-message {
+    width: calc(100% - 25px);
+    border-radius: 1rem;
+}
