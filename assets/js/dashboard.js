@@ -93,6 +93,7 @@ function fetchAuth(cuiValue) {
     // (B) FETCH WITH HTTP AUTH
 
     // for testing with new API from termene TEMP
+    getTermeneData(cuiValue);
 
     fetch(url)
 
