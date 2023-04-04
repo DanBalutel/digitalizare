@@ -37,7 +37,7 @@
                         </div>
                         <hr>
                         <div id="data">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
             // perform OCR on the image
             Tesseract.recognize(url, 'ron')
                 .then(result => {
-                    document.getElementById('data').innerHtml = result.data.text;
+                    document.getElementById('data').innerHTML = result.data.text;
                     console.log(result.data.text);
                 })
                 .catch(error => {
