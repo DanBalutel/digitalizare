@@ -24,7 +24,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <img id="myImage" class="img-fluid" src="">
+                        <img id="myImage" class="img-fluid" src="?no-cache=<?php echo 123; ?>">
                     </div>
                     <div class="col-md-6">
                         <div class="row">
@@ -67,10 +67,10 @@
     fetch(`https://only1.ai/uploads/${obiect.DateGenerale.cui}_factura.png`, { method: 'HEAD' })
     .then(res => {
         if (res.ok) {
-            imageURL = 'uploads/' + obiect.DateGenerale.cui + '_factura.png?nocache='+Math.floor(Math.random() * 1000);
+            imageURL = 'uploads/' + obiect.DateGenerale.cui + '_factura.png';
             document.getElementById('myImage').src = imageURL;
         } else {
-            imageURL = 'uploads/factura.png?nocache='+Math.floor(Math.random() * 1000)';
+            imageURL = 'uploads/factura.png';
             document.getElementById(' myImage').src = imageURL;
         }
     }).catch(err => console.log('Error:', err));
