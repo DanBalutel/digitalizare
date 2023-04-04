@@ -84,6 +84,7 @@
             Tesseract.recognize(url, 'ron')
                 .then(result => {
                     document.getElementById('data').innerHTML = result.data.text.replace(/(\r\n|\n|\r)/gm,'<br>');
+                    console.log(result)
                 })
                 .catch(error => {
                     console.error(error);
