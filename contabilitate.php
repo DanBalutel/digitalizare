@@ -56,7 +56,6 @@
 <script src="assets/js/tooltip-init.js"></script>
 <script>
     
-    const dataObj = JSON.parse(window.localStorage.dataObj);
     var imageURL = 'uploads/' + dataObj.DateGenerale.cui + '_factura.png';
     document.getElementById('myImage').src = imageURL;
     console.log(`https://only1.ai/${imageURL}`)
