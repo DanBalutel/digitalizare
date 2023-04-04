@@ -1,6 +1,5 @@
 <?php include('partial/header.php') ?>
 
-<script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
 
 
 <?php include('partial/loader.php') ?>
@@ -61,7 +60,8 @@
 <script src="assets/js/height-equal.js"></script>
 <script src="assets/js/animation/wow/wow.min.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
-<script>
+<script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
+<script> 
     const obiect = JSON.parse(window.localStorage.dataObj);
     let imageURL;
     fetch(`https://only1.ai/uploads/${obiect.DateGenerale.cui}_factura.png`, { method: 'HEAD' })
