@@ -63,8 +63,16 @@
 <script src="assets/js/tooltip-init.js"></script>
 <script>
     const obiect = JSON.parse(window.localStorage.dataObj);
-    var imageURL = 'uploads/' + obiect.DateGenerale.cui + '_factura.png';
-    document.getElementById('myImage').src = imageURL;
+    fetch(`https://only1.ai/uploads/${obiect.DateGenerale.cui}_factura.png`, { method: 'HEAD' })
+    .then(res => {
+        if (res.ok) {
+            var imageURL = 'uploads/' + obiect.DateGenerale.cui + '_factura.png';
+            document.getElementById('myImage').src = imageURL;
+        } else {
+            var imageURL = 'uploads/factura.png';
+            document.getElementById('myImage').src = imageURL;
+        }
+    }).catch(err => console.log('Error:', err));
     console.log(`https://only1.ai/${imageURL}`)
     document.getElementById('genereaza').addEventListener('click', function() {
 
