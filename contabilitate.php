@@ -1,6 +1,5 @@
 <?php include('partial/header.php') ?>
-
-<script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/2.1.0/tesseract.min.js" integrity="sha512-//GjtqQtAtedEIJpCzDXdvQ0A6aKZgjKwaQTJbLEJjgTKPyopzvtvu/JaEVRFAs8aUhslCSTRwKih3wKtOaIbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 <?php include('partial/loader.php') ?>
