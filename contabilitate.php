@@ -55,37 +55,29 @@
 <script src="assets/js/animation/wow/wow.min.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
 <script>
-    
     const obiect = JSON.parse(window.localStorage.dataObj);
     var imageURL = 'uploads/' + obiect.DateGenerale.cui + '_factura.png';
     document.getElementById('myImage').src = imageURL;
     console.log(`https://only1.ai/${imageURL}`)
     document.getElementById('genereaza').addEventListener('click', function() {
-            
+
         renderLoadingModal('Datele se incarca...');
 
-        var url = `https://api.raport.ai/genereaza?imagine=https://only1.ai/${imageURL}`
+        var url = `https://only1.ai/${imageURL}`;
 
-        fetch(url)
-
-            .then((result) => {
-                if (result.status != 200) { throw new Error("Bad Server Response"); }
-                return result.text();
-            })
-            .then((response) => {
-                
-                console.log(response)
-
-            })
-
-            .catch((error) => {
-                console.log(error);
-        });
-});
-        
-
-
-
+        try {
+            // perform OCR on the image
+            Tesseract.recognize(url, 'ron')
+                .then(result => {
+                    console.log(result.data.text);
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        } catch (error) {
+            console.error(error);
+        }
+    });
 </script>
 <!-- Plugins JS Ends-->
 <script>
