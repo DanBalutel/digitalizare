@@ -70,52 +70,55 @@
           </div>
         </div>
       </div>
-      <h3 style="color:#00CCFF;">CLICK pe Exemple ⬇️</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <a style="cursor: pointer;">
-            <div class="card" style="min-height: 4rem;">
-              <div id="ai-question-1" class="card-body p-3">
-                Enumeră 10 avantaje pentru folosirea unui CRM.
+
+      <div class="container-fluid">
+        <h3 style="color:#00CCFF;">CLICK pe Exemple ⬇️</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <a style="cursor: pointer;">
+              <div class="card" style="min-height: 4rem;">
+                <div id="ai-question-1" class="card-body p-3">
+                  Enumeră 10 avantaje pentru folosirea unui CRM.
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a style="cursor: pointer;">
-            <div class="card" style="min-height: 4rem;">
-              <div id="ai-question-2" class="card-body p-3">
-                Enumeră 10 avantaje pentru folosirea unui ERP.
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a style="cursor: pointer;">
+              <div class="card" style="min-height: 4rem;">
+                <div id="ai-question-2" class="card-body p-3">
+                  Enumeră 10 avantaje pentru folosirea unui ERP.
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a style="cursor: pointer;">
-            <div class="card" style="min-height: 4rem;">
-              <div id="ai-question-3" class="card-body p-3">
-                Scrie un email de informare către clienții mei să îi notifici că în luna aceasta oferim un discount de 10%.
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a style="cursor: pointer;">
+              <div class="card" style="min-height: 4rem;">
+                <div id="ai-question-3" class="card-body p-3">
+                  Scrie un email de informare către clienții mei să îi notifici că în luna aceasta oferim un discount de 10%.
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a style="cursor: pointer;">
-            <div class="card" style="min-height: 4rem;">
-              <div id="ai-question-4" class="card-body p-3">
-                Enumeră 10 afaceri în trend în 2023 din România.
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a style="cursor: pointer;">
+              <div class="card" style="min-height: 4rem;">
+                <div id="ai-question-4" class="card-body p-3">
+                  Enumeră 10 afaceri în trend în 2023 din România.
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a style="cursor: pointer; min">
-            <div class="card" style="min-height:4rem">
-              <div id="ai-question-5" class="card-body p-3">
-                Tradu în română: Digitalisation of company in the construction sector
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a style="cursor: pointer; min">
+              <div class="card" style="min-height:4rem">
+                <div id="ai-question-5" class="card-body p-3">
+                  Tradu în română: Digitalisation of company in the construction sector
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
 
