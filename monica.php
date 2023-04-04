@@ -182,9 +182,11 @@
   // moni copy question cards
   const monyIds1 = ['ai-question-1', 'ai-question-2', 'ai-question-3', 'ai-question-5', 'ai-question-5']
   const monyIds2 = ['ai-question-4', 'ai-question-5']
-  setMaxHeight(monyIds1);
-  setMaxHeight(monyIds2);
 
+  document.addEventListener("DOMContentLoaded", function() {
+    setMaxHeight(monyIds1);
+    setMaxHeight(monyIds2);
+  });
 </script>
 <script src="https://www.youtube.com/iframe_api"></script>
 <script src="assets/js/moniSteps.js"></script>
