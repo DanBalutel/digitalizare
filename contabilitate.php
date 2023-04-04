@@ -73,7 +73,7 @@
             imageURL = "uploads/factura.png?timestamp="+ Math.random();
             document.getElementById('myImage').src = imageURL;
         }
-    }).catch(err => console.log('Error:', err));
+    }).catch(err => console.log(''));
     document.getElementById('genereaza').addEventListener('click', function() {
 
         renderLoadingModal('Datele se incarca...');
