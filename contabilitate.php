@@ -67,10 +67,10 @@
     fetch(`https://only1.ai/uploads/${obiect.DateGenerale.cui}_factura.png`, { method: 'HEAD' })
     .then(res => {
         if (res.ok) {
-            imageURL = 'uploads/' + obiect.DateGenerale.cui + '_factura.png?no-cache=<?php echo 123; ?>';
+            imageURL = "uploads/" + obiect.DateGenerale.cui + "_factura.png?timestamp=<%= new Date().getTime() %>";
             document.getElementById('myImage').src = imageURL;
         } else {
-            imageURL = 'uploads/factura.png?no-cache=<?php echo 123; ?>';
+            imageURL = "uploads/factura.png?timestamp=<%= new Date().getTime() %>";
             document.getElementById('myImage').src = imageURL;
         }
     }).catch(err => console.log('Error:', err));
