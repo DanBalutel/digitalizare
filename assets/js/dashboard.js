@@ -142,6 +142,9 @@ function fetchAuth(cuiValue) {
 
 function getTermeneData(cuiValue) {
 
+    //stop until we have DB
+    return;
+
     // (A) URL & CREDENTIALS
     var url = `https://api.raport.ai:3001/cui?cui=${cuiValue}`
     // (B) FETCH WITH HTTP AUTH
