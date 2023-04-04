@@ -822,3 +822,29 @@ function showTopBarMony() {
         monyStepsID.style.zIndex = '0';
     }
 }
+
+function setMaxHeight(ids) {
+
+    if (isScreenWidth768OrMore()) {
+        // initialize max height to 0
+        let maxHeight = 0;
+
+        // loop through each id and get its height
+        ids.forEach((id) => {
+            const element = document.getElementById(id);
+            const height = element.clientHeight;
+
+            // update max height if current element is taller
+            if (height > maxHeight) {
+                maxHeight = height;
+            }
+        });
+
+        // set all elements' height to max height
+        ids.forEach((id) => {
+            const element = document.getElementById(id);
+            element.style.height = maxHeight + "px";
+        });
+
+    }
+}
