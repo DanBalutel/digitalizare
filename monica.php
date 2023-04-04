@@ -37,7 +37,7 @@
                         </div>
                         <ul class="list-inline float-start float-sm-end chat-menu-icons">
                         </ul>
-                        <div class="input-group-text btn btn-primary text-white fw-bold" style="margin-left:1rem" onclick="clearChatHistory()">X istoric</div>
+                        <div class="input-group-text btn btn-primary text-white fw-bold" style="margin:0 1rem" onclick="clearChatHistory()">X istoric</div>
                       </div>
                       <!-- chat-header end-->
                       <div class="chat-history chat-msg-box custom-scrollbar">
