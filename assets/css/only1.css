@@ -208,6 +208,13 @@ body {
     text-align: center;
 }
 
+@media only screen and (max-width: 767.98px) {
+    .cardWithGrayBorder {
+        max-width: none;
+    }
+}
+
+
 .chat-box .chat-right-aside .chat .chat-message {
     width: calc(100% - 25px);
     border-radius: 1rem;
