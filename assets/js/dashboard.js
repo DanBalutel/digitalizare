@@ -497,7 +497,7 @@ function populatePage() {
 
         d.element('asociatiConexiuni');
         function addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate) {
-            
+
             let int = parseInt(i);
             // all schema of table line
             const jsonData = {
@@ -568,6 +568,81 @@ function populatePage() {
 
             addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate)
         }
+
+
+
+        d.element('dosareFirma');
+        function addAsocConexLine(i, numar, instanta, data, parti, materie, obiect, stadiu) {
+
+            let int = parseInt(i);
+            // all schema of table line
+            const jsonData = {
+                "tag": "tr",
+                "children": [
+                    {
+                        "tag": "td",
+                        "innerHTML": `${++int}`,
+                        "attrs": {
+                            "scope": "row"
+                        }
+                    },
+                    {
+                        "tag": "td",
+                        "innerHTML": `${numar}<br>${instanta}`
+                    },
+                    {
+                        "tag": "td",
+                        "class": "columnCustomFlex",
+                        "innerHTML": `${data}`
+                    },
+                    {
+                        "tag": "td",
+                        "class": "columnCustomFlex",
+                        "innerHTML": `${parti}`
+                    },
+                    {
+                        "tag": "td",
+                        "class": "columnCustomFlex",
+                        "innerHTML": `${materie}`
+                    },
+                    {
+                        "tag": "td",
+                        "class": "columnCustomFlex",
+                        "innerHTML": `${obiect}<br>${stadiu}`
+                    }
+                ]
+            }
+
+            // end of JSON
+            d.createElement(jsonData, d.e.dosareFirma);
+        }
+
+        const dosare = newdataObj.dosare.rezultate
+        
+        // randuri tabel asociati conexiuni
+        for (let i in dosare) {
+            console.log(dosare[i]);
+
+            let numar = dosare[i].nr_dosar;
+            let instanta = dosare[i].nume_instanta;
+            let data = dosare[i].data_dosar;
+            let parti = 'parti';
+            let materie = dosare[i].materie_juridica;
+            let obiect = dosare[i].obiect;
+            let stadiu = dosare[i].stadiu_procesual;
+
+            // for (let j in newdataObj.conexiuni_asociati[i].legaturi) {
+            //     functie += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].functie + '</span><br>';
+            //     procentaj += '<span style="color: #2F2F3B; border: none;background-color: #57e546;" class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '</span><br>';
+            //     firma += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].firma + '</span><br>';
+            //     judet += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].judet + '</span><br>';
+            //     localitate += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '</span><br>';
+
+            // }
+
+            addAsocConexLine(i, numar, instanta, data, parti, materie, obiect, stadiu)
+        }
+
 
 
 
