@@ -297,6 +297,7 @@
                     <table class="table table-responsive-sm">
                       <thead>
                         <tr>
+                          <th scope="col">#</th>
                           <th scope="col">Nr. Dosar / Instanta</th>
                           <th scope="col">Data</th>
                           <th scope="col">Parti</th>
