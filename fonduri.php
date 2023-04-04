@@ -24,9 +24,11 @@
                     <h4 class="pb-3" style="color:#00CCFF">
                         Daca se vor completa toate CAEN-urile autorizate ale companiei
                         aplicatia poate accesa toate informatiile financiare in timp real:
-                        <br>
-                        Veti fi notificat pentru toate masurile de finantare pe care puteti sa aplicati si punctajul pe
-                        care il obtineti - ASTFEL - Nu veti mai pierde nici o oportunitate de investitii
+                        <br><br>
+                        - Veti fi notificat pentru toate masurile de finantare pe care puteti sa aplicati si punctajul pe
+                        care il obtineti 
+                        <br><br>
+                        - ASTFEL - Nu veti mai pierde nici o oportunitate de investitii
                     </h4>
                 </div>
 
