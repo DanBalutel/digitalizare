@@ -71,10 +71,11 @@ function renderAnswer2(question, conversationID, parentMessageId) {
         // SERVER RESPONSE
         .then((result) => {
             if (result.status != 200) { throw new Error("Bad Server Response"); }
+            console.log(result);
             return result.text();
         })
         .then((response) => {
-            ansText = JSON.parse(response);
+            // ansText = JSON.parse(response);
 
             //DEBUG
             console.log(response);
