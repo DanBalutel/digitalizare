@@ -625,7 +625,7 @@ function populatePage() {
             let numar = dosare[i].nr_dosar;
             let instanta = dosare[i].nume_instanta;
             let data = dosare[i].data_dosar;
-            let parti = 'parti';
+            let parti = '';
             let materie = dosare[i].materie_juridica;
             let obiect = dosare[i].obiect;
             let stadiu = dosare[i].stadiu_procesual;
@@ -638,6 +638,10 @@ function populatePage() {
             //     localitate += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '</span><br>';
 
             // }
+
+            for (let j in dosare[i].rezultate) {
+                parti += `${dosare[i].rezultate[j].denumire}<br>${dosare[i].rezultate[j].calitate}<br><br>`
+            }
 
             addDosare(i, numar, instanta, data, parti, materie, obiect, stadiu)
         }
