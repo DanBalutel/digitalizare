@@ -77,8 +77,9 @@ function renderAnswer2(question, conversationID, parentMessageId) {
             ansText = JSON.parse(response);
 
             //DEBUG
-            console.log(ansText);
+            console.log(response);
 
+            return;
             // all html rendering goes here
             removeLoading();
             addMessage('left', ansText.message)
