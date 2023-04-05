@@ -50,7 +50,7 @@ if (localStorage.chatMoni) {
 
 // acces API with question
 function renderAnswer2(question, conversationID, parentMessageId) {
-    fetch('http://api.raport.ai:3002/conversation', {
+    fetch('http://api.raport.ai/vgpt', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
