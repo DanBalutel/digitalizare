@@ -77,7 +77,7 @@
 
         renderLoadingModal('Datele se incarca...');
 
-        var url = `https://only1.ai/${imageURL}`;
+        var url = `https://aipro.ro/${imageURL}`;
 
         try {
             // perform OCR on the image
