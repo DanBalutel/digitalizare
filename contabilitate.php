@@ -63,7 +63,7 @@
 <script> 
     const obiect = JSON.parse(window.localStorage.dataObj);
     let imageURL;
-    fetch(`https://only1.ai/uploads/${obiect.DateGenerale.cui}_factura.png`, { method: 'HEAD' })
+    fetch(`https://aipro.ro/uploads/${obiect.DateGenerale.cui}_factura.png`, { method: 'HEAD' })
     .then(res => {
         if (res.ok) {
             imageURL = "uploads/" + obiect.DateGenerale.cui + "_factura.png?timestamp="+ Math.random();
