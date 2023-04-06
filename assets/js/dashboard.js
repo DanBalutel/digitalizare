@@ -623,8 +623,8 @@ function populatePage() {
             let data = `<span class="cardWithGrayBorder f-s-15">${dataDosar.getUTCDate()}/${dataDosar.getUTCMonth() + 1}/${dataDosar.getUTCFullYear()}</span>`;
             let parti = '';
             let materie = dosare[i].materie_juridica;
-            let obiect = dosare[i].obiect;
-            let stadiu = `<span class="cardWithGrayBorder f-s-15">${dosare[i].stadiu_procesual}</span>`;
+            let obiect = `<span class="cardWithGrayBorder f-s-15">${dosare[i].obiect}</span>`;
+            let stadiu = `<span class="cardWithGrayBorder f-s-15">Stadiu: ${dosare[i].stadiu_procesual}</span>`;
 
             for (let j in dosare[i].rezultate) {
                 parti += `${dosare[i].rezultate[j].denumire}<br>${dosare[i].rezultate[j].calitate}<br><br>`
