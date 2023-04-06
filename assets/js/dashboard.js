@@ -620,7 +620,7 @@ function populatePage() {
             dataDosar = new Date(dosare[i].data_dosar);
             let numar = dosare[i].nr_dosar;
             let instanta = dosare[i].nume_instanta;
-            let data = `${dataDosar.getUTCDate()}:${dataDosar.getUTCMonth() + 1}:${dataDosar.getUTCFullYear()}`;
+            let data = `${dataDosar.getUTCDate()}/${dataDosar.getUTCMonth() + 1}/${dataDosar.getUTCFullYear()}`;
             let parti = '';
             let materie = dosare[i].materie_juridica;
             let obiect = dosare[i].obiect;
