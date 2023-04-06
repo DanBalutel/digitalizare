@@ -619,7 +619,7 @@ function populatePage() {
 
             let numar = dosare[i].nr_dosar;
             let instanta = dosare[i].nume_instanta;
-            let data = dosare[i].data_dosar;
+            let data = `${dosare[i].data_dosar.getUTCDate()}:${dosare[i].data_dosar.getUTCMonth() + 1}:${dosare[i].data_dosar.getUTCFullYear()}`;
             let parti = '';
             let materie = dosare[i].materie_juridica;
             let obiect = dosare[i].obiect;
