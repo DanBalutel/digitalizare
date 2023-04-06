@@ -50,8 +50,6 @@ if (localStorage.chatMoni) {
 
 // acces API with question
 function renderAnswer2(question) {
-    const conversationId = '';
-    const messageId = '';
 
     fetch('http://api.raport.ai/vgpt', {
         method: 'POST',
@@ -60,8 +58,8 @@ function renderAnswer2(question) {
         },
         body: JSON.stringify({
             'message': question,
-            'conversationID': conversationId || '',
-            'parentMessageId': messageId || '',
+            'conversationID': localStorage.conversationId || '',
+            'parentMessageId': localStorage.messageId || '',
             'stream': false
         }),
         cors: {
@@ -88,10 +86,9 @@ function renderAnswer2(question) {
             // removeLoading();
             if (!localStorage.conversationId) {
                 localStorage.setItem("conversationId", ansText.conversationId);
-                conversationId = ansText.conversationId;
-                messageId = ansText.messageId;
+                localStorage.setItem("messageId", ansText.messageId);
             } else {
-                messageId = ansText.messageId;
+                localStorage.setItem("messageId", ansText.messageId);
             }
             addMessage('left', ansText.response)
             chatBox.scrollTop = chatBox.scrollHeight;
