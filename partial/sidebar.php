@@ -93,7 +93,7 @@
                      <li><a href="echipa.php">Externalizare</a></li>
                   </ul>
                </li>
-               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
+               <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="institutii.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/institutii.png" alt="">
                      <span>Institutii</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
