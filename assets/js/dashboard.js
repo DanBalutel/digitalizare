@@ -592,7 +592,7 @@ function populatePage() {
                     },
                     {
                         "tag": "td",
-                        "class": "columnCustomFlex",
+                        "class": "columnCustomFlex cardWithGrayBorder f-s-15",
                         "innerHTML": `${data}`
                     },
                     {
@@ -625,15 +625,6 @@ function populatePage() {
             let materie = dosare[i].materie_juridica;
             let obiect = dosare[i].obiect;
             let stadiu = dosare[i].stadiu_procesual;
-
-            // for (let j in newdataObj.conexiuni_asociati[i].legaturi) {
-            //     functie += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].functie + '</span><br>';
-            //     procentaj += '<span style="color: #2F2F3B; border: none;background-color: #57e546;" class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '</span><br>';
-            //     firma += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].firma + '</span><br>';
-            //     judet += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].judet + '</span><br>';
-            //     localitate += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '</span><br>';
-
-            // }
 
             for (let j in dosare[i].rezultate) {
                 parti += `${dosare[i].rezultate[j].denumire}<br>${dosare[i].rezultate[j].calitate}<br><br>`
