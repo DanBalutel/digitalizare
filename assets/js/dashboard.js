@@ -598,11 +598,6 @@ function populatePage() {
                     {
                         "tag": "td",
                         "class": "columnCustomFlex",
-                        "innerHTML": `${parti}`
-                    },
-                    {
-                        "tag": "td",
-                        "class": "columnCustomFlex",
                         "innerHTML": `${materie}`
                     },
                     {

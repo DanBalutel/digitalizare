@@ -300,7 +300,6 @@
                           <th scope="col">#</th>
                           <th scope="col">Nr. Dosar / Instanta</th>
                           <th scope="col">Data</th>
-                          <th scope="col">Parti</th>
                           <th scope="col">Materie</th>
                           <th scope="col">Obiect / Stadiu</th>
                         </tr>
