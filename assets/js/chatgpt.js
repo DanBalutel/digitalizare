@@ -51,10 +51,6 @@ if (localStorage.chatMoni) {
 // acces API with question
 function renderAnswer2(question, conversationId, messageId) {
 
-// console.log(localStorage.conversationId);
-// console.log(localStorage.messageId);
-
-
     fetch('http://api.raport.ai/vgpt', {
         method: 'POST',
         headers: {
@@ -62,8 +58,8 @@ function renderAnswer2(question, conversationId, messageId) {
         },
         body: JSON.stringify({
             'message': question,
-            'conversationId': conversationId,
-            'parentMessageId': messageId,
+            'conversationId': localStorage.conversationId,
+            'parentMessageId': localStorage.messageId,
             'stream': false
         }),
         cors: {
