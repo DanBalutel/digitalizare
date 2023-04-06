@@ -21,6 +21,7 @@
             <!-- Container-fluid starts-->
             <div class="container-fluid">
                 <h2 style="color: #00CCFF">Functie OCR: Cand faceti poza la o factura - Aplicatia va prelua automat datele si le va migra in programele de contabilitate folosite.</h2>
+                <hr>
                 <div class="row mt-2">
                     <div class="col-md-6">
                         <img id="myImage" class="img-fluid" src="">
