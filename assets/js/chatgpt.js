@@ -55,7 +55,7 @@ function renderAnswer2(question, conversationId, messageId) {
             } else {
                 localStorage.setItem("messageId", ansText.messageId);
             }
-            addMessage('left', ansText.response)
+            addMessage('left', ansText.response.replace(/(\r\n|\n|\r)/gm,'<br>'))
             chatBox.scrollTop = chatBox.scrollHeight;
 
 
