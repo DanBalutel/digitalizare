@@ -130,8 +130,8 @@
           <div class="col-md-8 d-flex flex-column justify-content-center">
             <span style="color:#00CCFF">
             <b>0742024473<b> Salvați numărul și puteți accesa AI:  <br>
-            1. <a href="https://wa.me/40742024473" target="_blank"><u>Click: Whatsapp</u></a>: Acces rapid și istoric  <br>
-            2. <a href="sms:+40742024473" target="_blank"><u>Click: SMS</u></a> (acces la AI chiar si in zone fără internet)
+            1. <a href="https://wa.me/40742024473" target="_blank">Click: <u>Whatsapp</u></a>: Acces rapid și istoric  <br>
+            2. <a href="sms:+40742024473" target="_blank">Click: <u>SMS</u></a> (acces la AI chiar si in zone fără internet)
             </span>
           </div>
         </div>
