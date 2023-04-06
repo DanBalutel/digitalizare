@@ -43,10 +43,6 @@ function renderAnswer2(question, conversationId, messageId) {
         .then((response) => {
             ansText = JSON.parse(response);
 
-            //DEBUG
-            console.log(ansText);
-
-
             // all html rendering goes here
             removeLoading();
             if (!localStorage.conversationId) {
