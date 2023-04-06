@@ -617,9 +617,10 @@ function populatePage() {
         // randuri tabel asociati conexiuni
         for (let i in dosare) {
 
+            dataDosar = new Date(dosare[i].data_dosar);
             let numar = dosare[i].nr_dosar;
             let instanta = dosare[i].nume_instanta;
-            let data = `${dosare[i].data_dosar.getUTCDate()}:${dosare[i].data_dosar.getUTCMonth() + 1}:${dosare[i].data_dosar.getUTCFullYear()}`;
+            let data = `${dataDosar.getUTCDate()}:${dataDosar.getUTCMonth() + 1}:${dataDosar.getUTCFullYear()}`;
             let parti = '';
             let materie = dosare[i].materie_juridica;
             let obiect = dosare[i].obiect;
