@@ -592,7 +592,7 @@ function populatePage() {
                     },
                     {
                         "tag": "td",
-                        "class": "columnCustomFlex cardWithGrayBorder f-s-15",
+                        "class": "columnCustomFlex",
                         "innerHTML": `${data}`
                     },
                     {
@@ -620,7 +620,7 @@ function populatePage() {
             dataDosar = new Date(dosare[i].data_dosar);
             let numar = dosare[i].nr_dosar;
             let instanta = dosare[i].nume_instanta;
-            let data = `${dataDosar.getUTCDate()}/${dataDosar.getUTCMonth() + 1}/${dataDosar.getUTCFullYear()}`;
+            let data = `<span class="cardWithGrayBorder f-s-15">${dataDosar.getUTCDate()}/${dataDosar.getUTCMonth() + 1}/${dataDosar.getUTCFullYear()}</span>`;
             let parti = '';
             let materie = dosare[i].materie_juridica;
             let obiect = dosare[i].obiect;
