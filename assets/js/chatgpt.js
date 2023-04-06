@@ -80,10 +80,10 @@ function renderAnswer2(question, conversationID, parentMessageId) {
             //DEBUG
             console.log(ansText);
 
-            return;
+
             // all html rendering goes here
             removeLoading();
-            addMessage('left', ansText.message)
+            addMessage('left', ansText.response)
             chatBox.scrollTop = chatBox.scrollHeight;
 
 
