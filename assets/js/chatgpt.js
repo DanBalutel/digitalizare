@@ -168,7 +168,7 @@ function copyElementText(content) {
 // run when user press enter on chat input box
 askGpt.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-        renderAnswer(askGpt.value);
+        renderAnswer2(askGpt.value);
         addMessage('right', askGpt.value)
         addLoading();
     }
@@ -177,48 +177,49 @@ askGpt.addEventListener('keypress', function (e) {
 // clear chat history
 function clearChatHistory() {
     localStorage.removeItem('chatMoni')
+    localStorage.removeItem('conversationId')
     location.reload();
 }
 
 document.getElementById('trimite').addEventListener("click", function () {
-    renderAnswer(askGpt.value);
+    renderAnswer2(askGpt.value);
     addMessage('right', askGpt.value)
     addLoading();
 })
 
 const aiQuestion1 = document.getElementById('ai-question-1');
 aiQuestion1.addEventListener('click', function () {
-    renderAnswer(aiQuestion1.innerHTML);
+    renderAnswer2(aiQuestion1.innerHTML);
     addMessage('right', aiQuestion1.innerHTML)
     addLoading();
 })
 const aiQuestion2 = document.getElementById('ai-question-2');
 aiQuestion2.addEventListener('click', function () {
-    renderAnswer(aiQuestion2.innerHTML);
+    renderAnswer2(aiQuestion2.innerHTML);
     addMessage('right', aiQuestion2.innerHTML)
     addLoading();
 })
 const aiQuestion3 = document.getElementById('ai-question-3');
 aiQuestion3.addEventListener('click', function () {
-    renderAnswer(aiQuestion3.innerHTML);
+    renderAnswer2(aiQuestion3.innerHTML);
     addMessage('right', aiQuestion3.innerHTML)
     addLoading();
 })
 const aiQuestion4 = document.getElementById('ai-question-4');
 aiQuestion4.addEventListener('click', function () {
-    renderAnswer(aiQuestion4.innerHTML);
+    renderAnswer2(aiQuestion4.innerHTML);
     addMessage('right', aiQuestion4.innerHTML)
     addLoading();
 })
 const aiQuestion5 = document.getElementById('ai-question-5');
 aiQuestion5.addEventListener('click', function () {
-    renderAnswer(aiQuestion5.innerHTML);
+    renderAnswer2(aiQuestion5.innerHTML);
     addMessage('right', aiQuestion5.innerHTML)
     addLoading();
 })
 const aiQuestion6 = document.getElementById('ai-question-6');
 aiQuestion6.addEventListener('click', function () {
-    renderAnswer(aiQuestion6.innerHTML);
+    renderAnswer2(aiQuestion6.innerHTML);
     addMessage('right', aiQuestion6.innerHTML)
     addLoading();
 })
