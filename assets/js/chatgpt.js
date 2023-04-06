@@ -51,6 +51,10 @@ if (localStorage.chatMoni) {
 // acces API with question
 function renderAnswer2(question) {
 
+console.log(localStorage.conversationId);
+console.log(localStorage.messageId);
+
+
     fetch('http://api.raport.ai/vgpt', {
         method: 'POST',
         headers: {
