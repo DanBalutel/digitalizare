@@ -75,10 +75,10 @@ function renderAnswer2(question, conversationID, parentMessageId) {
             return result.text();
         })
         .then((response) => {
-            // ansText = JSON.parse(response);
+            ansText = JSON.parse(response);
 
             //DEBUG
-            console.log(response);
+            console.log(ansText);
 
             return;
             // all html rendering goes here
