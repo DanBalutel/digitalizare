@@ -62,7 +62,7 @@ function renderAnswer2(question, conversationId, messageId) {
         },
         body: JSON.stringify({
             'message': question,
-            'conversationID': conversationId,
+            'conversationId': conversationId,
             'parentMessageId': messageId,
             'stream': false
         }),
