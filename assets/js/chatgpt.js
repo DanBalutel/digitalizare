@@ -62,8 +62,8 @@ console.log(localStorage.messageId);
         },
         body: JSON.stringify({
             'message': question,
-            'conversationID': localStorage.conversationId || '',
-            'parentMessageId': localStorage.messageId || '',
+            'conversationID': localStorage.conversationId,
+            'parentMessageId': localStorage.messageId,
             'stream': false
         }),
         cors: {
