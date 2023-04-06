@@ -123,7 +123,19 @@
       </div>
 
       <div class="container-fluid">
-        <img class="center" src="assets/images/iphone1.png" alt="">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="center" src="assets/images/iphone1.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <span style="color:#00CCFF">
+            <b>0742024473<b> Salvați numărul și puteți accesa AI:  <br>
+            1. <a href="https://wa.me/40742024473">Whatsapp</a>: Acces rapid și istoric  <br>
+            2. <a href="sms:+40742024473">SMS</a> (acces la AI chiar si in zone fără internet)
+            </span>
+          </div>
+        </div>
+
       </div>
 
       <!-- Modal loading-->
