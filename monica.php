@@ -122,6 +122,10 @@
         </div>
       </div>
 
+      <div class="container-fluid">
+        <img class="center" src="assets/images/iphone1.png" alt="">
+      </div>
+
       <!-- Modal loading-->
       <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true" role="dialog">
         <div class="mt-5 modal-dialog modal-lg">
