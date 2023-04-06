@@ -122,6 +122,22 @@
         </div>
       </div>
 
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <img class="center" src="assets/images/iphone1.png" alt="">
+          </div>
+          <div class="col-md-8 d-flex flex-column justify-content-center">
+            <span style="color:#00CCFF">
+            <b>0742024473<b> Salvați numărul și puteți accesa AI:  <br>
+            1. <a href="https://wa.me/40742024473" target="_blank"><u>Whatsapp</u></a>: Acces rapid și istoric  <br>
+            2. <a href="sms:+40742024473" target="_blank"><u>SMS</u></a> (acces la AI chiar si in zone fără internet)
+            </span>
+          </div>
+        </div>
+
+      </div>
+
       <!-- Modal loading-->
       <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true" role="dialog">
         <div class="mt-5 modal-dialog modal-lg">
