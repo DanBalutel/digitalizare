@@ -21,6 +21,11 @@
             <!-- Container-fluid starts-->
             <div class="container-fluid">
                 <h2 style="color: #00CCFF">Functie OCR: Cand faceti poza la o factura - Aplicatia va prelua automat datele si le va migra in programele de contabilitate folosite.</h2>
+                <div class="row">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <input type="submit" class="btn btn-primary" id="genereaza" value="Click Demo">
+                </div>
+                </div>
                 <hr>
                 <div class="row mt-2">
                     <div class="col-md-6">
@@ -30,9 +35,6 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <h2>Datele din factura</h2>
-                            </div>
-                            <div class="col-md-6 d-flex justify-content-center">
-                                <input type="submit" class="btn btn-primary" id="genereaza" value="Genereaza datele din factura">
                             </div>
                         </div>
                         <hr>
