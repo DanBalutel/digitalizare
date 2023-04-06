@@ -13,41 +13,6 @@ if (localStorage.chatMoni) {
 
 // functions
 
-// // acces API with question
-// function renderAnswer(question) {
-//     fetch('https://api.raport.ai/post', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify({
-//             'quest': question
-//         }),
-//         cors: {
-//             origin: ['https://danbalutel.github.io', 'http://penguin.linux.test'],
-//             methods: 'GET, HEAD, PUT, PATCH, DELETE',
-//         }
-
-
-//     })
-//         // SERVER RESPONSE
-//         .then((result) => {
-//             if (result.status != 200) { throw new Error("Bad Server Response"); }
-//             return result.text();
-//         })
-//         .then((response) => {
-//             ansText = JSON.parse(response);
-
-//             // all html rendering goes here
-//             removeLoading();
-//             addMessage('left', ansText.message)
-//             chatBox.scrollTop = chatBox.scrollHeight;
-
-
-//         })
-//         .catch(error => console.log(error));
-// }
-
 // acces API with question
 function renderAnswer2(question, conversationId, messageId) {
 
@@ -83,7 +48,7 @@ function renderAnswer2(question, conversationId, messageId) {
 
 
             // all html rendering goes here
-            // removeLoading();
+            removeLoading();
             if (!localStorage.conversationId) {
                 localStorage.setItem("conversationId", ansText.conversationId);
                 localStorage.setItem("messageId", ansText.messageId);
