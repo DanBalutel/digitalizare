@@ -197,7 +197,7 @@ function populatePage() {
     }
 
     // using new dataObj !!!!!!!!!!!!!!!
-    const administratorId = findAdministratorId(0);
+    const administratorId = findAdministratorId(0,newdataObj);
 
     try {
 
