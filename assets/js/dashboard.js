@@ -25,7 +25,7 @@ if (request['cui']) {
     newdataObj = JSON.parse(window.localStorage.newDataObj);
 
     alert('bariera 1');
-    
+
     // temp we add if check for login
     if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
 
@@ -40,7 +40,7 @@ if (request['cui']) {
     // temp we add if check for login
     if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
 
-        let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
+        let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
         if (codulCUI == null || codulCUI == "") {
             window.location.href = window.location.href;
         } else {
