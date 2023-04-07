@@ -18,8 +18,8 @@ for (var i = 0; i < pairs.length; i++) {
 }
 if (request['cui']) {
 
+    window.localStorage.setItem('cui', request['cui']);
     showVideoMonica(localStorage.displayedModal1);
-
     fetchAuth(request['cui']);
     populatePage();
 
@@ -38,11 +38,9 @@ if (request['cui']) {
     //     populatePage();
     // }
 
-} else if (localStorage.newDataObj && localStorage.DataObj) {
+} else if (localStorage.cui) {
 
-    dataObj = JSON.parse(localStorage.dataJson);
-    newdataObj = JSON.parse(localStorage.newdataJson);
-    populatePage();
+    fetchAuth(localStorage.cui)
 }
 
 
