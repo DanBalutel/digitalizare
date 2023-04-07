@@ -125,7 +125,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-4">
-            <img class="center" src="assets/images/iphone1.png" alt="">
+            <img class="center" style="max-width=350px;" src="assets/images/iphone1.png" alt="">
           </div>
           <div class="col-md-8 d-flex flex-column justify-content-center">
             <span style="color:#00CCFF">
