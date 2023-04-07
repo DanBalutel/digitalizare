@@ -71,7 +71,7 @@
     </div>
 </div>
 <?php include('partial/scripts.php'); ?>
-<script>
+<script defer>
     function retPdfFieldsObj1() {
         const administratorId = findAdministratorId(0);
         const caen = `${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}`
