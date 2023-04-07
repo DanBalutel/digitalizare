@@ -44,22 +44,6 @@ function findAdministratorId(id) {
     }
 };
 
-function replaceDiacritics(str) {
-    const diacriticsMap = {
-        "ă": "a",
-        "â": "a",
-        "î": "i",
-        "ș": "s",
-        "ț": "t",
-        "Ă": "A",
-        "Â": "A",
-        "Î": "I",
-        "Ș": "S",
-        "Ț": "T"
-    };
-    return str.replace(/[ăâîșțĂÂÎȘȚ]/g, match => diacriticsMap[match]);
-}
-
 var request = {};
 var pairs = location.search.substring(1).split('&');
 for (var i = 0; i < pairs.length; i++) {
