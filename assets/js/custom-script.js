@@ -753,10 +753,6 @@ const findAdministratorId = function (id, dataObject) {
     }
 };
 
-console.log(findAdministratorId);
-alert('stop');
-
-return;
 // logOut function
 function logOut() {
     localStorage.removeItem('timeOnPage');
