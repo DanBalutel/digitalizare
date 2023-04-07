@@ -19,10 +19,6 @@ for (var i = 0; i < pairs.length; i++) {
 }
 if (request['cui']) {
 
-    // show Monica first modal
-    showVideoMonica(localStorage.displayedModal1);
-
-
     // new Termene API
     fetchAuth(request['cui']);
     dataObj = JSON.parse(window.localStorage.dataObj);
