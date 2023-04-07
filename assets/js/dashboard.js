@@ -11,7 +11,12 @@ function isScreenWidth768OrMore() {
         return false;
     }
 }
-
+var request = {};
+var pairs = location.search.substring(1).split('&');
+for (var i = 0; i < pairs.length; i++) {
+    var pair = pairs[i].split('=');
+    request[pair[0]] = pair[1];
+}
 if (request['cui']) {
     // new Termene API
     fetchAuth(request['cui']);
@@ -40,12 +45,7 @@ function startTimer() {
     }, 1000);
 }
 
-var request = {};
-var pairs = location.search.substring(1).split('&');
-for (var i = 0; i < pairs.length; i++) {
-    var pair = pairs[i].split('=');
-    request[pair[0]] = pair[1];
-}
+
 
 
 if (window.localStorage.dataObj) {
