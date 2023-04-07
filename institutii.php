@@ -84,7 +84,6 @@
     };
 
     function retPdfFieldsObj1() {
-        const
         let administratorId = findAdministratorId(0, newdataObj);
         const caen = `${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}`
         const fieldsObj = {
