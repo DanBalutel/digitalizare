@@ -130,7 +130,7 @@ function fetchAuth(cuiValue) {
         // (D) HANDLE ERRORS (OPTIONAL)
         .catch((error) => {
             console.log(`eroarea raspuns: ${error}`);
-            localStorage.removeItem('dataObj');
+            // localStorage.removeItem('dataObj');
             alert('CUI gresit')
             window.location.href = window.location.origin;
         });
