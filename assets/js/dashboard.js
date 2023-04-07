@@ -39,6 +39,9 @@ if (request['cui']) {
     // }
 
 } else if (localStorage.newDataObj) {
+
+    dataObj = JSON.parse(localStorage.dataJson);
+    newdataObj = JSON.parse(localStorage.newdataJson);
     populatePage();
 }
 
