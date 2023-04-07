@@ -7,7 +7,7 @@ function generatePdf(fileName, fieldsObj) {
         },
         body: JSON.stringify({
             'cui': newdataObj.firma.cui,
-            'fileName': fileName,
+            'fileName': 'pdfSample',
             'pdfPath': 'https://aipro.ro/assets/pdf/cerere.pdf',
             'fieldValues': {
                 'subsemnatul': 'numele'
