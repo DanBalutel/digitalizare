@@ -125,7 +125,7 @@
         generatePdf('pdfSample', retPdfFieldsObj1());
     }
 
-    d.createHandler('demoPdfCreate', 'click', generatePdf);
+    d.createHandler('demoPdfCreate', 'click', generatePdf1);
 </script>
 <script src="assets/js/tooltip-init.js"></script>
 
