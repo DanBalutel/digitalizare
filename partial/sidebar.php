@@ -260,7 +260,7 @@
                
                <li class="sidebar-list mb-3">
                   <a class="sidebar-link" type="button" data-bs-toggle="modal" data-bs-target="#oferta" data-bs-original-title="Oferta de pret" title="Oferta de pret">
-                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/favicon.png" alt="">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/logo/favicon.png" alt="">
                      <span>Oferta de pret</span>
                   </a>
                </li>
