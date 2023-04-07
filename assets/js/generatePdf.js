@@ -1,4 +1,5 @@
 function generatePdf(fileName, fieldsObj) {
+    console.log(fieldsObj);
     // loading
     renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
 
