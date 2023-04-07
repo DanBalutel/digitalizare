@@ -79,6 +79,7 @@
                   <a class="sidebar-link sidebar-title" href="contabilitate.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/contabilitate.png" alt="">
                      <span>Contabilitate</span>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="contabilitate.php">Contabilitate</a></li>
