@@ -38,7 +38,7 @@ if (request['cui']) {
     //     populatePage();
     // }
 
-} else if (localStorage.newDataObj) {
+} else if (localStorage.newDataObj && localStorage.DataObj) {
 
     dataObj = JSON.parse(localStorage.dataJson);
     newdataObj = JSON.parse(localStorage.newdataJson);
