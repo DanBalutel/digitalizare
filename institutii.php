@@ -72,7 +72,7 @@
         <?php include('partial/footer.php');?>
     </div>
 </div>
-<script src="assets/js/institutii.js" defer></script>
+<script src="assets/js/generatePdf.js" defer></script>
 <?php include('partial/scripts.php'); ?>
 
 <script src="assets/js/tooltip-init.js"></script>
