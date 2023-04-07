@@ -220,7 +220,7 @@ function populatePage() {
         const loggedName = document.getElementById('loggedName');
         loggedName.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
         const loggedPosition = document.getElementById('loggedPosition');
-        loggedPosition.innerHTML = `AdnewdataObj.administratori.persoane_fizice[administratorId]ministrator`;
+        loggedPosition.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].functia;
 
         const loggedNameProfile = document.getElementById('loggedNameProfile');
         if (loggedNameProfile) {
