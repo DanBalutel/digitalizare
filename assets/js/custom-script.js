@@ -732,7 +732,15 @@ function removeLoadingModal() {
     $.notifyClose();
 };
 
-
+function findAdministratorId(id) {
+    const positionName = newdataObj.administratori.persoane_fizice[id].functie;
+    if (positionName.includes('administrator')) {
+        return id;
+    } else {
+        const idplus = id + 1; // increment id by 1 using the + operator instead of ++ 
+        return findAdministratorId(idplus); // add return statement to ensure the function returns a value
+    }
+};
 
 
 
