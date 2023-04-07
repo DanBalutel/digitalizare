@@ -13,7 +13,11 @@
                             <input type="email" class="form-control" placeholder="example@gmail.com">
                         </div>
                         <div class="col-md-12">
-                            <label for="buget">Buget <br>(cat sunteti pregatit sa platiti pentru acest soft)</label>
+                            <label for="phone">Telefon</label>
+                            <input type="text" class="form-control" placeholder="+40700000000">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="buget">Buget orentativ</label>
                             <input type="text" class="form-control" placeholder="50000 Euro">
                         </div>
                     </div>

@@ -1,11 +1,11 @@
 <div class="sidebar-wrapper" sidebar-layout="stroke-svg">
    <div>
-      <div class="logo-wrapper d-flex">
+      <div class="logo-wrapper">
          <a href="index" class="text-center">
             <img class="img-fluid for-light" src="/assets/images/logo/logo.png" width="50" alt="">
             <img class="img-fluid for-dark" src="/assets/images/logo/logo.png" width="50" alt="">
          </a>
-         <a type="button" data-bs-toggle="modal" data-bs-target="#oferta" data-bs-original-title="Oferta de pret" title="Oferta de pret" style="padding-top: 35px; padding-left: 5px; font-size: 16px; font-weight: bold" class="area-blue text-uppercase">Oferta de pret</a>
+         <div class="back-btn"><i class="fa fa-angle-left"></i></div>
          <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
       </div>
       <div class="logo-icon-wrapper"><a href="index"><img class="img-fluid" width="40" src="/assets/images/logo/logo.png" alt=""></a></div>
@@ -16,10 +16,10 @@
                <li class="back-btn">
                   <a href="index">
                      <img class="img-fluid" src="/assets/images/logo/logo.png" width="40" alt=""></a>
-                     <div class="mobile-back text-end">
-                        <span>Back</span>
-                        <i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
-                     </div>
+                  <div class="mobile-back text-end">
+                     <span>Back</span>
+                     <i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
+                  </div>
                </li>
 
 
@@ -50,6 +50,35 @@
                         <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
                      </svg><span>Mony AI</span></a>
                </li>
+               <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="#">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/mail.png" alt=""><span>Mail</span>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
+                  <ul class="sidebar-submenu" style="display: none;">
+                     <li><a href="gmail.php"><img src="assets/images/meniu/gmail.png" height="20" alt=""></a></li>
+                     <li><a href="yahoo.php"><img src="assets/images/meniu/yahoo.png" height="20" alt=""></a></li>
+                     <li><a href="outlook.php"><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
+                  </ul>
+               </li>
+               <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="banci.php">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/money_icon.png" alt="">
+                     <span>Banci</span>
+                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                  </a>
+                  <ul class="sidebar-submenu" style="display: none;">
+                     <li><a href="banci.php">Dashboard</a></li>
+                     <li><a href="#"><img src="assets/images/banci/revolut.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/bcr.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/brd.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/bt.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/cec.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/ing.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/unicredit.png" height="20" alt=""></a></li>
+                     <li><a href="#"><img src="assets/images/banci/raiffeisen.png" height="20" alt=""></a></li>
+                  </ul>
+               </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/investitii.png" alt="">
                      <span>Investitii</span>
@@ -75,36 +104,9 @@
                      <li><a href="auto-doc.php">Auto DOC </a></li>
                   </ul>
                </li>
-               <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="contabilitate.php">
-                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/contabilitate.png" alt="">
-                     <span>Contabilitate</span>
-                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                  </a>
-                  <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="contabilitate.php">Contabilitate</a></li>
-                     <li><a target="_blank" href="https://mfinante.gov.ro/web/efactura"><img src="assets/images/meniu/e-factura.png" height="20" alt=""></a></li>
-                     <li><a target="_blank" href="https://cloud.smartbill.ro/auth/login/?_ga=2.67868241.1511869911.1680014429-582632679.1680014429"><img src="assets/images/meniu/smartbill.png" height="20" alt=""></a></li>
-                     <li><a target="_blank" href="https://www.sagasoft.ro/index.php"><img src="assets/images/meniu/software.png" height="20" alt=""></a></li>
-                     <li><a href="#">Emite oferta (ProForma)</a></li>
-                     <li><a href="#">Incasari</a></li>
-                     <li><a href="#">Plati</a></li>
-                     <li><a href="#">Rapoarte</a></li>
-                     <li><a href="#">Alerte facturi restante</a></li>
-                     <li><a href="#">TVA de platit</a></li>
-                     <li><a href="#">TVA de recuperat</a></li>
-                     <li><a href="#">BUGETELE ASIG.SOC. SI FD.SPEC.</a></li>
-                     <li><a href="#">BUGETUL DE STAT CONT. ASIG.</a></li>
-                     <li><a href="#">Incarca facturi electronice de la clienti</a></li>
-                     <li><a href="#">Registru de casa</a></li>
-                     <li><a href="#">Rapoarte Facturi</a></li>
-                     <li><a href="#">Serii documente</a></li>
-                     <li><a href="#">Jurnal banca</a></li>
-                     <li><a href="#">Rapoarte Avize</a></li>
-                     <li><a href="#">Rapoarte Proforme</a></li>
-                     <li><a href="#">Exporta Factura</a></li>
-                     <li><a href="#">Exporta E-factura</a></li>
-                  </ul>
+               <li class="sidebar-list"><a class="sidebar-link" href="expert.php">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/experti.png" alt="">
+                     <span>Experti</span></a>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="file-manager.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/arhivare.png" alt="">
@@ -114,21 +116,6 @@
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="doc-manager.php">Documente</a></li>
                      <li><a href="file-manager.php">Fisiere</a></li>
-                  </ul>
-               </li>
-               <li class="sidebar-list"><a class="sidebar-link" href="expert.php">
-                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/experti.png" alt="">
-                     <span>Experti</span></a>
-               </li>
-               <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="smart-building.php">
-                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/iot.png" alt="">
-                     <span>IoT</span>
-                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                  </a>
-                  <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="smart-building.php">Smart building</a></li>
-                     <li><a href="echipamente.php">Echipamente</a></li>
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="crm.php">
@@ -166,32 +153,14 @@
                   </ul>
                </li>
                <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="#">
-                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/mail.png" alt=""><span>Mail</span>
+                  <a class="sidebar-link sidebar-title" href="smart-building.php">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/iot.png" alt="">
+                     <span>IoT</span>
                      <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="gmail.php"><img src="assets/images/meniu/gmail.png" height="20" alt=""></a></li>
-                     <li><a href="yahoo.php"><img src="assets/images/meniu/yahoo.png" height="20" alt=""></a></li>
-                     <li><a href="outlook.php"><img src="assets/images/meniu/outlook.png" height="20" alt=""></a></li>
-                  </ul>
-               </li>
-               <li class="sidebar-list">
-                  <a class="sidebar-link sidebar-title" href="banci.php">
-                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/money_icon.png" alt="">
-                     <span>Banci</span>
-                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
-                  </a>
-                  <ul class="sidebar-submenu" style="display: none;">
-                     <li><a href="banci.php">Dashboard</a></li>
-                     <li><a href="#"><img src="assets/images/banci/revolut.png" height="20" alt=""></a></li>
-                     <li><a href="#"><img src="assets/images/banci/bcr.png" height="20" alt=""></a></li>
-                     <li><a href="#"><img src="assets/images/banci/brd.png" height="20" alt=""></a></li>
-                     <li><a href="#"><img src="assets/images/banci/bt.png" height="20" alt=""></a></li>
-                     <li><a href="#"><img src="assets/images/banci/cec.png" height="20" alt=""></a></li>
-                     <li><a href="#"><img src="assets/images/banci/ing.png" height="20" alt=""></a></li>
-                     <li><a href="#"><img src="assets/images/banci/unicredit.png" height="20" alt=""></a></li>
-                     <li><a href="#"><img src="assets/images/banci/raiffeisen.png" height="20" alt=""></a></li>
+                     <li><a href="smart-building.php">Smart building</a></li>
+                     <li><a href="echipamente.php">Echipamente</a></li>
                   </ul>
                </li>
                <li class="sidebar-list">
@@ -206,7 +175,36 @@
                      <li><a href="edit-profile.php">Setari</a></li>
                   </ul>
                </li>
-
+               <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="contabilitate.php">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/contabilitate.png" alt="">
+                     <span>Contabilitate</span>
+                     <div class="according-menu"><i class="fa fa-angle-down"></i></div>
+                  </a>
+                  <ul class="sidebar-submenu" style="display: none;">
+                     <li><a target="_blank" href="https://mfinante.gov.ro/web/efactura"><img src="assets/images/meniu/e-factura.png" height="20" alt=""></a></li>
+                     <li><a target="_blank" href="https://cloud.smartbill.ro/auth/login/?_ga=2.67868241.1511869911.1680014429-582632679.1680014429"><img src="assets/images/meniu/smartbill.png" height="20" alt=""></a></li>
+                     <li><a target="_blank" href="https://www.sagasoft.ro/index.php"><img src="assets/images/meniu/software.png" height="20" alt=""></a></li>
+                     <li><a href="#">Emite oferta (ProForma)</a></li>
+                     <li><a href="#">Incasari</a></li>
+                     <li><a href="#">Plati</a></li>
+                     <li><a href="#">Rapoarte</a></li>
+                     <li><a href="#">Alerte facturi restante</a></li>
+                     <li><a href="#">TVA de platit</a></li>
+                     <li><a href="#">TVA de recuperat</a></li>
+                     <li><a href="#">BUGETELE ASIG.SOC. SI FD.SPEC.</a></li>
+                     <li><a href="#">BUGETUL DE STAT CONT. ASIG.</a></li>
+                     <li><a href="#">Incarca facturi electronice de la clienti</a></li>
+                     <li><a href="#">Registru de casa</a></li>
+                     <li><a href="#">Rapoarte Facturi</a></li>
+                     <li><a href="#">Serii documente</a></li>
+                     <li><a href="#">Jurnal banca</a></li>
+                     <li><a href="#">Rapoarte Avize</a></li>
+                     <li><a href="#">Rapoarte Proforme</a></li>
+                     <li><a href="#">Exporta Factura</a></li>
+                     <li><a href="#">Exporta E-factura</a></li>
+                  </ul>
+               </li>
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="social.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/social_media.png" alt="">
@@ -258,7 +256,15 @@
                      <span>WhatsApp</span>
                   </a>
                </li>
-
+               <hr>
+               
+               <li class="sidebar-list mb-3">
+                  <a class="sidebar-link" type="button" data-bs-toggle="modal" data-bs-target="#oferta" data-bs-original-title="Oferta de pret" title="Oferta de pret">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/wathsapp.png" alt="">
+                     <span>Oferta de pret</span>
+                  </a>
+               </li>
+             
 
             </ul>
          </div>
