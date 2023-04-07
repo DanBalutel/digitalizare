@@ -2,6 +2,15 @@ let dataJson;
 let dataObj;
 let newdataObj;
 
+const findAdministratorId = function (id, dataObject) {
+    const positionName = dataObject.administratori.persoane_fizice[id].functie;
+    if (positionName.includes('administrator')) {
+        return id;
+    } else {
+        const idplus = id + 1;
+        return findAdministratorId(idplus, dataObject);
+    }
+};
 
 // detect if screen is mobile
 function isScreenWidth768OrMore() {
@@ -197,7 +206,7 @@ function populatePage() {
     }
 
     // using new dataObj !!!!!!!!!!!!!!!
-    const administratorId = findAdministratorId(0,newdataObj);
+    const administratorId = findAdministratorId(0, newdataObj);
 
     try {
 
