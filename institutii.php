@@ -74,7 +74,7 @@
 <?php include('partial/scripts.php'); ?>
 <script defer>
     function retPdfFieldsObj1() {
-        const administratorId = findAdministratorId(0);
+        const const administratorId = findAdministratorId(0, newdataObj);
         const caen = `${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}`
         const fieldsObj = {
             'subsemnatul': newdataObj.administratori.persoane_fizice[administratorId].nume || '',
