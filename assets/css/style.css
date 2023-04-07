@@ -34717,9 +34717,9 @@ button[data-toggle=dropdown]:hover~.dropdown-menu {
   fill: var(--theme-deafult);
 }
 
-/* .page-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content li a {
+.page-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content li a {
   text-transform: capitalize;
-} */
+}
 
 .page-wrapper .sidebar-wrapper[sidebar-layout=stroke-svg] .stroke-icon {
   display: inline-block;
