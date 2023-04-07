@@ -5,7 +5,35 @@
             <img class="img-fluid for-light" src="/assets/images/logo/logo.png" width="50" alt="">
             <img class="img-fluid for-dark" src="/assets/images/logo/logo.png" width="50" alt="">
          </a>
-         <a href="" style="padding-top: 35px; padding-left: 5px; font-size: 16px; font-weight: bold" class="area-blue text-uppercase">Oferta de pret</a>
+         <a type="button" data-bs-toggle="modal" data-bs-target="#oferta" data-bs-original-title="Oferta de pret" title="Oferta de pret" style="padding-top: 35px; padding-left: 5px; font-size: 16px; font-weight: bold" class="area-blue text-uppercase">Oferta de pret</a>
+         <div class="modal" id="oferta" tabindex="-1" aria-labelledby="oferta" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">Tooltip and Popover Modal</h5>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <label for="email">Email</label>
+                           <input type="email" class="form-control" placeholder="example@gmail.com">
+                        </div>
+                        <div class="col-md-12">
+                           <label for="buget">Buget (cat sunteti pregatit sa platiti pentru acest soft)</label>
+                           <input type="text" class="form-control" placeholder="50000 Euro">
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-bs-dismiss="modal" data-bs-original-title="" title="">Inchide</button>
+                  <button class="btn btn-primary" type="button" data-bs-original-title="" title="">Genereaza si trimite oferate</button>
+               </div>
+            </div>
+            </div>
+         </div>
          <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
       </div>
       <div class="logo-icon-wrapper"><a href="index"><img class="img-fluid" width="40" src="/assets/images/logo/logo.png" alt=""></a></div>
