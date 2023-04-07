@@ -36,8 +36,8 @@ function generatePdf(fileName, fieldsObj) {
                 // 'sediu_web': newdataObj.date_contact.web || '',
                 // 'CAEN_rev1.0': newdataObj.cod_caen.principal_bt.substring(0,40) || '',
                 // 'CAEN_rev1.1': newdataObj.cod_caen.principal_bt.substring(40,400) || '',
-                'imputernicire.0': true,
-                'comunicare_posta': true
+                'imputernicire.0': '1',
+                'comunicare_posta': '1'
             } 
         })
 
