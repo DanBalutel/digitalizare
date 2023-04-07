@@ -5,7 +5,7 @@
             <img class="img-fluid for-light" src="/assets/images/logo/logo.png" width="50" alt="">
             <img class="img-fluid for-dark" src="/assets/images/logo/logo.png" width="50" alt="">
          </a>
-         <a href="" style="padding: 20px;" class="text-primary">Oferta d pret</a>
+         <a href="" style="padding-top: 15px; padding-left: 2px; font-size: 17px" class="area-blue text-uppercase">Oferta de pret</a>
          <div class="back-btn"><i class="fa fa-angle-left"></i></div>
          <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
       </div>

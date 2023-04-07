@@ -1,7 +1,9 @@
 .min-h-7 {
     min-height: 7rem;
 }
-
+.area-blue {
+    color: #00CCFF !important;
+}
 .min-h-9 {
     min-height: 9rem;
 }
