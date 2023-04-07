@@ -125,7 +125,6 @@ function fetchAuth(cuiValue) {
         // (D) HANDLE ERRORS (OPTIONAL)
         .catch((error) => {
             console.log(`eroarea raspuns: ${error}`);
-            return;
             localStorage.removeItem('dataObj');
             alert('CUI gresit')
             window.location.href = window.location.origin;
@@ -161,7 +160,7 @@ function getTermeneData(cuiValue) {
             // }
 
             // all html rendering goes here
-            // populatePage();
+            populatePage();
 
         })
 
