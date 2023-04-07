@@ -710,6 +710,15 @@ const listCaen = {
 const d = new ElementHandler();
 
 
+const findAdministratorId = function (id, dataObject) {
+    const positionName = dataObject.administratori.persoane_fizice[id].functie;
+    if (positionName.includes('administrator')) {
+        return id;
+    } else {
+        const idplus = id + 1;
+        return findAdministratorId(idplus, dataObject);
+    }
+};
 
 
 function renderLoadingModal(label) {
