@@ -12,6 +12,12 @@ function isScreenWidth768OrMore() {
     }
 }
 
+if (request['cui']) {
+    // new Termene API
+    fetchAuth(request['cui']);
+    newdataObj = JSON.parse(localStorage.newDataObj);
+}
+
 function startTimer() {
     // check if local storage has a previous time value
     let prevTime = localStorage.getItem("timeOnPage") || 0;
@@ -153,10 +159,10 @@ function getTermeneData(cuiValue) {
             return result.text();
         })
         .then((response) => {
-            dataJson = response;
-            window.localStorage.setItem('newDataObj', dataJson);
-            dataObj = JSON.parse(dataJson);
-            console.log(dataObj);
+            newdataJson = response;
+            window.localStorage.setItem('newDataObj', newdataJson);
+            newdataObj = JSON.parse(newdataJson);
+            console.log(newdataObj);
 
             document.addEventListener("DOMContentLoaded", function () {
                 console.log('loaded!');
@@ -175,7 +181,7 @@ function getTermeneData(cuiValue) {
         // (D) HANDLE ERRORS (OPTIONAL)
         .catch((error) => {
             console.log(error);
-            localStorage.removeItem('dataObj');
+            localStorage.removeItem('newDataObj');
             //alert('CUI gresit')
             //            window.location.href = window.location.origin;
         });
@@ -186,11 +192,7 @@ function getTermeneData(cuiValue) {
 
 
 
-if (request['cui']) {
-    // new Termene API
-    fetchAuth(request['cui']);
-    newdataObj = JSON.parse(localStorage.newDataObj);
-}
+
 
 function populatePage() {
 
