@@ -16,7 +16,7 @@ for (var i = 0; i < pairs.length; i++) {
     var pair = pairs[i].split('=');
     request[pair[0]] = pair[1];
 }
-if (request['cui'] || localStorage.newDataObj) {
+if (request['cui']) {
 
     showVideoMonica(localStorage.displayedModal1);
 
@@ -38,7 +38,12 @@ if (request['cui'] || localStorage.newDataObj) {
     //     populatePage();
     // }
 
-} else {
+} else if (localStorage.newDataObj) {
+    populatePage();
+}
+
+
+else {
 
     // temp we add if check for login
     if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
@@ -430,7 +435,7 @@ function populatePage() {
             }
 
 
-        
+
             var morris_chart = {
                 init: function () {
                     Morris.Bar({
@@ -444,7 +449,7 @@ function populatePage() {
                 }
             };
             (function ($) {
-            
+
                 morris_chart.init()
             })(jQuery);
         }
