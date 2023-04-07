@@ -75,6 +75,7 @@
 <script defer>
     dataObj = JSON.parse(localStorage.dataJson);
     newdataObj = JSON.parse(localStorage.newdataJson);
+    
     const findAdministratorId = function(id, dataObject) {
         const positionName = dataObject.administratori.persoane_fizice[id].functie;
         if (positionName.includes('administrator')) {
