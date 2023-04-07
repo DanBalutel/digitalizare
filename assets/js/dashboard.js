@@ -25,8 +25,6 @@ if (request['cui']) {
 
     // new Termene API
     fetchAuth(request['cui']);
-    newdataObj = JSON.parse(localStorage.newDataObj);
-
     dataObj = JSON.parse(window.localStorage.dataObj);
     newdataObj = JSON.parse(window.localStorage.newDataObj);
 
