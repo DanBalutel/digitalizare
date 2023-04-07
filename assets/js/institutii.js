@@ -1,0 +1,3 @@
+function generatePdf() {
+    alert("PDF");
+}
