@@ -15,7 +15,7 @@ function generatePdf(fileName, fieldsObj) {
             'fieldValues': {
                 'subsemnatul': replaceDiacritics(newdataObj.administratori.persoane_fizice[administratorId].nume) || '',
                 'domiciliat': replaceDiacritics(newdataObj.administratori.persoane_fizice[administratorId].localitate) || '',
-                'strada': replaceDiacritics(ataObj.administratori.persoane_fizice[administratorId].localitate) || '',
+                'strada': replaceDiacritics(newdataObj.administratori.persoane_fizice[administratorId].localitate) || '',
                 'judet': replaceDiacritics(newdataObj.administratori.persoane_fizice[administratorId].judet) || '',
                 'calitate': replaceDiacritics(newdataObj.administratori.persoane_fizice[administratorId].functie) || '',
                 'firma':  replaceDiacritics(newdataObj.firma.nume_mfinante) || '',
