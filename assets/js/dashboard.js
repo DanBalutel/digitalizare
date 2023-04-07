@@ -47,7 +47,6 @@ if (request['cui']) {
         if (codulCUI == null || codulCUI == "") {
             window.location.href = window.location.href;
         } else {
-            fetchAuth(codulCUI);
             window.location.href = window.location.href + `?cui=${codulCUI}`;
         }
     }
