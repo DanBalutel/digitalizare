@@ -6,7 +6,6 @@
             <img class="img-fluid for-dark" src="/assets/images/logo/logo.png" width="50" alt="">
          </a>
          <a type="button" data-bs-toggle="modal" data-bs-target="#oferta" data-bs-original-title="Oferta de pret" title="Oferta de pret" style="padding-top: 35px; padding-left: 5px; font-size: 16px; font-weight: bold" class="area-blue text-uppercase">Oferta de pret</a>
-         
          <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
       </div>
       <div class="logo-icon-wrapper"><a href="index"><img class="img-fluid" width="40" src="/assets/images/logo/logo.png" alt=""></a></div>

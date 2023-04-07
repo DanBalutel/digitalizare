@@ -1159,24 +1159,6 @@
       <!-- Container-fluid Ends-->
 
 
-      <!-- Modal loading-->
-      <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true" role="dialog">
-        <div class="mt-5 modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-body dark-modal">
-
-
-              <h6 id="loadingLabel" class="w-100 d-flex justify-content-center">text here</h6>
-
-              <div class="progress">
-                <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-      </div>
 
     </div>
     <!-- footer start-->
