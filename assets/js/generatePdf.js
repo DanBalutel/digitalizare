@@ -2,6 +2,7 @@ function generatePdf(fileName, fieldsObj) {
     // loading
     renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
     const administratorId = findAdministratorId(0);
+    const caen = `${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}`
 
     fetch('http://api.raport.ai:3003/generate-pdf', {
         method: 'POST',
@@ -34,8 +35,8 @@ function generatePdf(fileName, fieldsObj) {
                 'sediu_fax': newdataObj.date_contact.fax.toString() || '',
                 'sediu_mail': newdataObj.date_contact.email.toString() || '',
                 'sediu_web': newdataObj.date_contact.web.toString() || '',
-                'CAEN_rev1.0': newdataObj.cod_caen.principal_bt.substring(0,40) || '',
-                'CAEN_rev1.1': newdataObj.cod_caen.principal_bt.substring(40,400) || ''
+                'CAEN_rev1.0': caen.substring(0,40) || '',
+                'CAEN_rev1.1': caen.substring(40,400) || ''
             } 
         })
 
