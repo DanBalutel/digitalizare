@@ -15,7 +15,7 @@
             <?php include('partial/breadcrumb.php'); ?>
             <!-- Container-fluid starts-->
             <div class="container-fluid">
-                <h3><a href="#" onclick="generatePdf('pdfSample', fieldsObj);">Click DEMO</a> - Completare automata documente - Transmitere automata solicitari Institutii</h3>
+                <h3><a href="#" onclick="">Click DEMO</a> - Completare automata documente - Transmitere automata solicitari Institutii</h3>
                 <div class="card">
                     <div class="card-body">
                         <h2 class="mb-1 mt-1 pt-3 pb-2">Ministerul Afacerilor Interne</h2>
