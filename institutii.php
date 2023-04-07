@@ -73,8 +73,19 @@
 </div>
 <?php include('partial/scripts.php'); ?>
 <script defer>
+    const findAdministratorId = function(id, dataObject) {
+        const positionName = dataObject.administratori.persoane_fizice[id].functie;
+        if (positionName.includes('administrator')) {
+            return id;
+        } else {
+            const idplus = id + 1;
+            return findAdministratorId(idplus, dataObject);
+        }
+    };
+
     function retPdfFieldsObj1() {
-        const let administratorId = findAdministratorId(0, newdataObj);
+        const
+        let administratorId = findAdministratorId(0, newdataObj);
         const caen = `${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}`
         const fieldsObj = {
             'subsemnatul': newdataObj.administratori.persoane_fizice[administratorId].nume || '',
