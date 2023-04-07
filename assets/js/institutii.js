@@ -1,4 +1,6 @@
 function generatePdf(fileName, fieldsObj) {
+    // loading
+    renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
 
     fetch('http://api.raport.ai:3003/generate-pdf', {
         method: 'POST',
@@ -24,6 +26,7 @@ function generatePdf(fileName, fieldsObj) {
         })
         .then((response) => {
             pdfLink = JSON.parse(response);
+            
 
             // DEBUG
             console.log(pdfLink);
