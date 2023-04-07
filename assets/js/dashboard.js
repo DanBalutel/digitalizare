@@ -21,6 +21,9 @@ if (request['cui']) {
     // new Termene API
     fetchAuth(request['cui']);
     newdataObj = JSON.parse(localStorage.newDataObj);
+
+    // show Monica first modal
+    showVideoMonica(localStorage.displayedModal1);
 }
 
 function startTimer() {
@@ -49,9 +52,6 @@ function startTimer() {
 
 
 if (window.localStorage.dataObj) {
-
-    // show Monica first modal
-    showVideoMonica(localStorage.displayedModal1);
 
     dataObj = JSON.parse(window.localStorage.dataObj);
     newdataObj = JSON.parse(window.localStorage.newDataObj);
