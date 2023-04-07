@@ -16,7 +16,7 @@ for (var i = 0; i < pairs.length; i++) {
     var pair = pairs[i].split('=');
     request[pair[0]] = pair[1];
 }
-if (request['cui']) {
+if (request['cui'] || localStorage.newDataObj) {
 
     showVideoMonica(localStorage.displayedModal1);
 
