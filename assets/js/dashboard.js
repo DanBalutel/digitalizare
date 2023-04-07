@@ -16,6 +16,17 @@ for (var i = 0; i < pairs.length; i++) {
     var pair = pairs[i].split('=');
     request[pair[0]] = pair[1];
 }
+
+const findAdministratorId = function (id, dataObject) {
+    const positionName = dataObject.administratori.persoane_fizice[id].functie;
+    if (positionName.includes('administrator')) {
+        return id;
+    } else {
+        const idplus = id + 1;
+        return findAdministratorId(idplus, dataObject);
+    }
+};
+
 if (request['cui']) {
 
     showVideoMonica(localStorage.displayedModal1);
@@ -176,17 +187,6 @@ function getTermeneData(cuiValue) {
         });
 
 }
-
-
-const findAdministratorId = function (id, dataObject) {
-    const positionName = dataObject.administratori.persoane_fizice[id].functie;
-    if (positionName.includes('administrator')) {
-        return id;
-    } else {
-        const idplus = id + 1;
-        return findAdministratorId(idplus, dataObject);
-    }
-};
 
 
 
