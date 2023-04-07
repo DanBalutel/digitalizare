@@ -256,7 +256,7 @@
                      <span>WhatsApp</span>
                   </a>
                </li>
-               <hr class="area-blue">
+               <hr class="area-blue" style="height: 3px !important">
                
                <li class="sidebar-list mb-3">
                   <a class="sidebar-link" type="button" data-bs-toggle="modal" data-bs-target="#oferta" data-bs-original-title="Oferta de pret" title="Oferta de pret">
