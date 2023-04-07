@@ -1,6 +1,7 @@
 function generatePdf(fileName, fieldsObj) {
     // loading
     renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
+    const administrator = findAdministrator(0);
 
     fetch('http://api.raport.ai:3003/generate-pdf', {
         method: 'POST',
@@ -12,7 +13,8 @@ function generatePdf(fileName, fieldsObj) {
             'fileName': 'pdfSample',
             'pdfPath': 'https://aipro.ro/assets/pdf/cerere.pdf',
             'fieldValues': {
-                'subsemnatul': 'numele'
+                'subsemnatul': administrator,
+                'domiciliat': 
             } 
         })
 

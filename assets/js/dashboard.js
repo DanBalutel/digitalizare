@@ -202,56 +202,52 @@ function populatePage() {
         console.log(e);
     }
 
-    function findAdministrator(id) {
-        const positionName = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.administratori[id].functie;
+    function findAdministratorId(id) {
+        const positionName = newdataObj.administratori.persoane_fizice[id].functie;
         if (positionName.includes('administrator')) {
-            return dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.administratori[id];
+            return id;
         } else {
             const idplus = id + 1; // increment id by 1 using the + operator instead of ++ 
-            console.log(idplus);
-            return findAdministrator(idplus); // add return statement to ensure the function returns a value
+            return findAdministratorId(idplus); // add return statement to ensure the function returns a value
         }
     };
 
+    // using new dataObj !!!!!!!!!!!!!!!
+    const administratorId = findAdministratorId(0);
 
     try {
 
-        const administrator = findAdministrator(0);
-
         const loggedName = document.getElementById('loggedName');
-        loggedName.innerHTML = administrator.nume;
+        loggedName.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
         const loggedPosition = document.getElementById('loggedPosition');
-        loggedPosition.innerHTML = 'Administrator';
+        loggedPosition.innerHTML = 'AdnewdataObj.administratori.persoane_fizice[administratorId]ministrator';
 
         const loggedNameProfile = document.getElementById('loggedNameProfile');
         if (loggedNameProfile) {
 
-            loggedNameProfile.innerHTML = administrator.nume;
+            loggedNameProfile.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
             const loggedPositionProfile = document.getElementById('loggedPositionProfile');
             loggedPositionProfile.innerHTML = 'Administrator';
 
             const adresa = document.getElementById('adresa');
-            adresa.innerHTML = administrator.adresa;
-            document.getElementById('numeBuletin').value = administrator.nume;
+            adresa.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].adresa;
+            document.getElementById('numeBuletin').value = newdataObj.administratori.persoane_fizice[administratorId].nume;
 
             const dataNastere = document.getElementById('dataNastere');
-            dataNastere.innerHTML = administrator.dataNastere.slice(8, 10) + '.' + administrator.dataNastere.slice(5, 7) + '.' + administrator.dataNastere.slice(0, 4);
+            dataNastere.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].data_nastere;
         }
         if (document.getElementById('cui_file')) {
-            document.getElementById('cui_file').value = dataObj.DateGenerale.cui;
+            document.getElementById('cui_file').value = newdataObj.firma.cui;
         }
-
-        // debug
-        console.log(dataObj)
 
         // temp we render here all DOOM elements
         const name = document.getElementById('name');
-        d.element('dash').innerHTML = dataObj.DateGenerale.nume;
-        d.element('nameAdmin').innerHTML = administrator.nume;
+        d.element('dash').innerHTML = newdataObj.firma.nume_mfinante;
+        d.element('nameAdmin').innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
         if (name) {
-            name.innerHTML = `${dataObj.DateGenerale.nume} - Administrator: <br><span style="color: #00CCFF">${administrator.nume}</span>`;
+            name.innerHTML = `${newdataObj.firma.nume_mfinante} - Administrator: <br><span style="color: #00CCFF">${newdataObj.administratori.persoane_fizice[administratorId].nume}</span>`;
             const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
-            chartSituatieFianciara.innerHTML = `Situatie finaciara ${dataObj.DateGenerale.nume}`;
+            chartSituatieFianciara.innerHTML = `Situatie finaciara ${newdataObj.firma.nume_mfinante}`;
 
             const blockCA = document.getElementById('cifra-de-afaceri');
             blockCA.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_cifra_de_afaceri.data.pop().y).toLocaleString('en-US');;
@@ -260,7 +256,7 @@ function populatePage() {
             blockProfit.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_profit_pierdere.data.pop().y).toLocaleString('en-US');
 
             const mapAnaf = document.getElementById('mapAnaf');
-            const addresAnaf = encodeURIComponent(dataObj.DateGenerale.adresa);
+            const addresAnaf = encodeURIComponent(`${newdataObj.adresa.anaf.tara} judet: ${newdataObj.adresa.anaf.judet} ${newdataObj.adresa.anaf.formatat}`);
             mapAnaf.innerHTML = '<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=' + addresAnaf + '&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>';
 
             const locuriMunca = document.getElementById('locuri-munca');
