@@ -24,6 +24,8 @@ if (request['cui']) {
     dataObj = JSON.parse(window.localStorage.dataObj);
     newdataObj = JSON.parse(window.localStorage.newDataObj);
 
+    alert('bariera 1');
+    
     // temp we add if check for login
     if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
 
