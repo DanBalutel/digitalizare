@@ -106,7 +106,7 @@
 
     }
 
-    console.log(retPdfFieldsObj1);
+    console.log(retPdfFieldsObj1());
 </script>
 <script src="assets/js/generatePdf.js" defer></script>
 <script src="assets/js/tooltip-init.js"></script>
