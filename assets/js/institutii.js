@@ -8,7 +8,9 @@ function generatePdf() {
         body: JSON.stringify({
             'cui': newdataObj.firma.cui,
             'pdfPath': 'https://aipro.ro/assets/pdf/cerere.pdf',
-            'fieldValues': {} 
+            'fieldValues': {
+
+            } 
         })
 
 
@@ -22,14 +24,8 @@ function generatePdf() {
         .then((response) => {
             pdfLink = JSON.parse(response);
 
-            if (!localStorage.conversationId) {
-                localStorage.setItem("conversationId", ansText.conversationId);
-                localStorage.setItem("messageId", ansText.messageId);
-            } else {
-                localStorage.setItem("messageId", ansText.messageId);
-            }
-            addMessage('left', ansText.response.replace(/(\r\n|\n|\r)/gm, '<br>'))
-            chatBox.scrollTop = chatBox.scrollHeight;
+            // DEBUG
+            console.log(pdfLink);
 
 
         })
