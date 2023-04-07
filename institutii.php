@@ -72,7 +72,7 @@
     </div>
 </div>
 <?php include('partial/scripts.php'); ?>
-<script defer>
+<script>
     dataObj = JSON.parse(localStorage.dataJson);
     newdataObj = JSON.parse(localStorage.newdataJson);
     
