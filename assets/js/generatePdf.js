@@ -11,33 +11,9 @@ function generatePdf(fileName, fieldsObj) {
         },
         body: JSON.stringify({
             'cui': newdataObj.firma.cui,
-            'fileName': 'pdfSample',
+            'fileName': fileName,
             'pdfPath': 'https://aipro.ro/assets/pdf/cerere.pdf',
-            'fieldValues': {
-                'subsemnatul': newdataObj.administratori.persoane_fizice[administratorId].nume || '',
-                'domiciliat': newdataObj.administratori.persoane_fizice[administratorId].localitate || '',
-                'strada': newdataObj.administratori.persoane_fizice[administratorId].localitate || '',
-                'judet': newdataObj.administratori.persoane_fizice[administratorId].judet || '',
-                'calitate': newdataObj.administratori.persoane_fizice[administratorId].functie || '',
-                'firma':  newdataObj.firma.nume_mfinante || '',
-                'nr_ordine_rc':  newdataObj.firma.j || '',
-                'CUI': newdataObj.firma.cui.toString() || '',
-                'sediu_domiciliat': newdataObj.adresa.anaf.localitate || '',
-                'sediu_strada': newdataObj.adresa.anaf.strada || '',
-                'sediu_numar': newdataObj.adresa.anaf.numar || '',
-                'sediu_bloc': newdataObj.adresa.anaf.bloc || '',
-                'sediu_scara': newdataObj.adresa.anaf.scara || '',
-                'sediu_etaj': newdataObj.adresa.anaf.etaj || '',
-                'sediu_apartament': newdataObj.adresa.anaf.apartament || '' ,
-                'sediu_judet': newdataObj.adresa.anaf.judet || '',
-                'sediu_cod': newdataObj.adresa.anaf.cod_postal.toString() || '',
-                'sediu_telefon': newdataObj.date_contact.telefon.toString() || '',
-                'sediu_fax': newdataObj.date_contact.fax.toString() || '',
-                'sediu_mail': newdataObj.date_contact.email.toString() || '',
-                'sediu_web': newdataObj.date_contact.web.toString() || '',
-                'CAEN_rev1.0': caen.substring(0,40) || '',
-                'CAEN_rev1.1': caen.substring(40,400) || ''
-            } 
+            'fieldValues': fieldsObj
         })
 
 
