@@ -77,7 +77,6 @@ if (window.localStorage.dataObj) {
         } else {
             window.location.href = window.location.href + `?cui=${codulCUI}`;
         }
-        console.log(window.location.pathname);
     }
 }
 
@@ -188,7 +187,7 @@ function getTermeneData(cuiValue) {
 
 if (request['cui']) {
     // new Termene API
-    getTermeneData(request['cui']);
+    fetchAuth(request['cui']);
     newdataObj = JSON.parse(localStorage.newDataObj);
 }
 
