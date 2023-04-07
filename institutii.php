@@ -120,7 +120,7 @@
 
     }
 </script>
-<script src="assets/js/generatePdf.js" defer></script>
+<script src="assets/js/generatePdf.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
 
 <?php include('partial/footer-end.php'); ?>
