@@ -9,7 +9,7 @@ function generatePdf() {
             'cui': newdataObj.firma.cui,
             'pdfPath': 'https://aipro.ro/assets/pdf/cerere.pdf',
             'fieldValues': {
-
+                'subsemnatul': 'numele'
             } 
         })
 
