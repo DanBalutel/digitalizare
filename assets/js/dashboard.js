@@ -21,7 +21,7 @@ if (request['cui']) {
 
     fetchAuth(request['cui']);
     alert(request['cui']);
-
+    populatePage();
 
     // // new Termene API
     // fetchAuth(request['cui']);
