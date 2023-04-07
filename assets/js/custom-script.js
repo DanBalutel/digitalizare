@@ -744,6 +744,7 @@ function logOut() {
     localStorage.removeItem('timeOnPage');
     localStorage.removeItem('dataObj');
     localStorage.removeItem('newDataObj');
+    localStorage.removeItem('cui');
     console.log('removed');
 }
 
