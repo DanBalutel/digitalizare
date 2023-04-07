@@ -97,10 +97,6 @@ function fetchAuth(cuiValue) {
         })
         .then((response) => {
 
-            console.log(response);
-            return;
-
-            //   document.getElementById("demoShow").innerHTML = response;
             dataJson = response;
             if (dataJson.DateGenerale = undefined && (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php")) {
                 let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
