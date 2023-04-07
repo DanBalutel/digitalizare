@@ -752,6 +752,7 @@ const findAdministratorId = function (id, dataObject) {
         return findAdministratorId(idplus, dataObject);
     }
 };
+console.log('...................................................................................');
 
 // logOut function
 function logOut() {
