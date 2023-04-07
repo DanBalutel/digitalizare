@@ -120,7 +120,7 @@
 
 
     d.element('demoPdfCreate');
-    d.createHandler('demoPdfCreate', 'click', generatePdfFieldsObj);
+    d.createHandler('demoPdfCreate', 'click', generatePdf);
 </script>
 <script src="assets/js/tooltip-init.js"></script>
 
