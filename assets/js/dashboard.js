@@ -2,16 +2,6 @@ let dataJson;
 let dataObj;
 let newdataObj;
 
-const findAdministratorId = function (id, dataObject) {
-    const positionName = dataObject.administratori.persoane_fizice[id].functie;
-    if (positionName.includes('administrator')) {
-        return id;
-    } else {
-        const idplus = id + 1;
-        return findAdministratorId(idplus, dataObject);
-    }
-};
-
 // detect if screen is mobile
 function isScreenWidth768OrMore() {
     if (window.innerWidth >= 768) {
@@ -199,6 +189,16 @@ function getTermeneData(cuiValue) {
 
 function populatePage() {
 
+    const findAdministratorId = function (id, dataObject) {
+        const positionName = dataObject.administratori.persoane_fizice[id].functie;
+        if (positionName.includes('administrator')) {
+            return id;
+        } else {
+            const idplus = id + 1;
+            return findAdministratorId(idplus, dataObject);
+        }
+    };
+    
     try {
         removeLoadingModal();
     } catch (e) {
