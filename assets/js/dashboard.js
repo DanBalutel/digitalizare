@@ -232,6 +232,7 @@ function populatePage() {
         // temp we render here all DOOM elements
         const name = document.getElementById('name');
         d.element('dash').innerHTML = newdataObj.firma.nume_mfinante;
+        console.log(`nume admin: ${newdataObj.administratori.persoane_fizice[administratorId].nume}`);
         d.element('nameAdmin').innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
         if (name) {
             name.innerHTML = `${newdataObj.firma.nume_mfinante} - Administrator: <br><span style="color: #00CCFF">${newdataObj.administratori.persoane_fizice[administratorId].nume}</span>`;
