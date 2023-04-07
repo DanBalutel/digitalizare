@@ -1097,7 +1097,7 @@ svg.f-light {
   font-size: 12px;
   line-height: 1;
   margin-bottom: 0;
-  
+  /*text-transform: capitalize;*/
 }
 
 .label-theme {
@@ -4469,7 +4469,7 @@ body.modal-open .select2-container--open .select2-dropdown {
 }
 
 .breadcrumb-item.active {
-  
+  /*text-transform: capitalize;*/
 }
 
 /**=====================
@@ -4481,7 +4481,7 @@ body.modal-open .select2-container--open .select2-dropdown {
 .form-builder .help-block {
   margin-bottom: 0;
   color: #cccccc;
-  
+  /*text-transform: capitalize;*/
 }
 
 .form-builder .btn-light {
@@ -5050,7 +5050,7 @@ body.modal-open .select2-container--open .select2-dropdown {
 .card .card-header h5:not(.mb-0),
 .card .card-header h5:not(.m-0) {
   margin-bottom: 0;
-  
+  /*text-transform: capitalize;*/
 }
 
 .card .card-header>span {
@@ -12318,7 +12318,7 @@ th {
 }
 
 .bookmark-wrap .left-bookmark ul li a>.title {
-  
+  /*text-transform: capitalize;*/
 }
 
 .bookmark-wrap.todo-wrap .left-bookmark {
@@ -12690,7 +12690,7 @@ th {
 }
 
 .cart .cart-btn-transform {
-  
+  /*text-transform: capitalize;*/
 }
 
 .cart .qty-box {
@@ -15302,7 +15302,7 @@ p.data-attributes svg {
 .default-datepicker .datepicker-inline .datepicker .datepicker--nav {
   border-bottom: none;
   padding: 0;
-  
+  /*text-transform: capitalize;*/
   margin-top: 0;
 }
 
@@ -19326,7 +19326,7 @@ footer.blockquote-footer {
 }
 
 .product-box .modal .modal-header .product-box .product-details h6 {
-  
+  /*text-transform: capitalize;*/
 }
 
 .product-box .modal .modal-header .product-box .product-details .product-price {
@@ -24469,7 +24469,7 @@ ul.dot-group li {
 .demo-imgs .demo-content .title-wrapper .theme-name {
   position: relative;
   font-size: calc(15px + 5 * (100vw - 300px) / 1620);
-  
+  /*text-transform: capitalize;*/
 }
 
 .demo-imgs .demo-content .title-wrapper .theme-name span {
@@ -31037,7 +31037,7 @@ body.dark-only .drag form input {
 }
 
 body.dark-only .drag form .help-block {
-  
+  /*text-transform: capitalize;*/
   color: #98a6ad;
 }
 
@@ -33245,7 +33245,7 @@ body[class*=dark-] .for-light {
 
 .component .input-group .btn {
   line-height: 32px;
-  
+  /*text-transform: capitalize;*/
 }
 
 .form-builder .drag-box fieldset {
@@ -34656,14 +34656,14 @@ button[data-toggle=dropdown]:hover~.dropdown-menu {
 .page-wrapper .page-body-wrapper .page-title .row h3 {
   font-size: 24px;
   margin-bottom: 0;
-  
+  /*text-transform: capitalize;*/
 }
 
 .page-wrapper .page-body-wrapper .page-title .row h3 small {
   display: block;
   font-size: 12px;
   margin-bottom: 5px;
-  
+  /*text-transform: capitalize;*/
   color: #52526c;
 }
 
@@ -34718,7 +34718,7 @@ button[data-toggle=dropdown]:hover~.dropdown-menu {
 }
 
 .page-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content li a {
-  
+  /*text-transform: capitalize;*/
 }
 
 .page-wrapper .sidebar-wrapper[sidebar-layout=stroke-svg] .stroke-icon {
@@ -34879,7 +34879,7 @@ button[data-toggle=dropdown]:hover~.dropdown-menu {
   color: #2F2F3B;
   line-height: 23px;
   text-decoration: none;
-  
+  /*text-transform: capitalize;*/
   padding: 5px 15px;
   margin: 0 3px;
   letter-spacing: 0.04em;
@@ -35001,7 +35001,7 @@ button[data-toggle=dropdown]:hover~.dropdown-menu {
   background: transparent;
   color: #2F2F3B;
   border-radius: 0 !important;
-  
+  /*text-transform: capitalize;*/
   padding: 3px 0;
   font-size: 13px;
   display: block;
@@ -35338,7 +35338,7 @@ button[data-toggle=dropdown]:hover~.dropdown-menu {
 
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links li a span {
   letter-spacing: 0.7px;
-  
+  /*text-transform: capitalize;*/
   color: rgba(82, 82, 108, 0.8);
 }
 
@@ -35974,7 +35974,7 @@ button[data-toggle=dropdown]:hover~.dropdown-menu {
 }
 
 .page-wrapper.compact-sidebar .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links li a span {
-  
+  /*text-transform: capitalize;*/
   color: #2c323f;
   font-weight: 500;
   letter-spacing: 1px;
@@ -36668,7 +36668,7 @@ button[data-toggle=dropdown]:hover~.dropdown-menu {
 .md-sidebar .md-sidebar-toggle {
   display: none;
   width: fit-content;
-  
+  /*text-transform: capitalize;*/
   margin-bottom: 20px;
 }
 
