@@ -132,6 +132,7 @@ function fetchAuth(cuiValue) {
         // (D) HANDLE ERRORS (OPTIONAL)
         .catch((error) => {
             console.log(error);
+            return;
             localStorage.removeItem('dataObj');
             alert('CUI gresit')
             window.location.href = window.location.origin;
