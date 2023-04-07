@@ -26,6 +26,7 @@
         'CAEN_rev1.1': caen.substring(40, 400) || ''
     }
 
+    console.log(fieldsObj);
 
 </script>
 <?php include('partial/loader.php'); ?>
