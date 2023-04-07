@@ -79,9 +79,9 @@
                   <a class="sidebar-link sidebar-title" href="contabilitate.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/contabilitate.png" alt="">
                      <span>Contabilitate</span>
-                     <!-- <div class="according-menu"><i class="fa fa-angle-down"></i></div> -->
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
+                     <li><a href="contabilitate.php">Contabilitate</a></li>
                      <li><a target="_blank" href="https://mfinante.gov.ro/web/efactura"><img src="assets/images/meniu/e-factura.png" height="20" alt=""></a></li>
                      <li><a target="_blank" href="https://cloud.smartbill.ro/auth/login/?_ga=2.67868241.1511869911.1680014429-582632679.1680014429"><img src="assets/images/meniu/smartbill.png" height="20" alt=""></a></li>
                      <li><a target="_blank" href="https://www.sagasoft.ro/index.php"><img src="assets/images/meniu/software.png" height="20" alt=""></a></li>
