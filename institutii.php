@@ -115,11 +115,16 @@
             'CAEN_rev1.0': caen.substring(0, 40) || '',
             'CAEN_rev1.1': caen.substring(40, 400) || ''
         }
+
+        return fieldsObj;
     }
 
 
 
-    d.element('demoPdfCreate');
+    function generatePdf1() {
+        generatePdf('pdfSample', retPdfFieldsObj1());
+    }
+
     d.createHandler('demoPdfCreate', 'click', generatePdf);
 </script>
 <script src="assets/js/tooltip-init.js"></script>
