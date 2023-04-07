@@ -75,7 +75,7 @@
 <script src="assets/js/generatePdf.js"></script>
 <script>
     dataObj = JSON.parse(localStorage.dataObj);
-    newdataObj = JSON.parse(localStorage.newdataObj);
+    newdataObj = JSON.parse(localStorage.newDataObj);
 
     const findAdministratorId = function(id, dataObject) {
         const positionName = dataObject.administratori.persoane_fizice[id].functie;
