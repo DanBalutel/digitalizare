@@ -34,7 +34,15 @@ function startTimer() {
     }, 1000);
 }
 
-
+function findAdministratorId(id) {
+    const positionName = newdataObj.administratori.persoane_fizice[id].functie;
+    if (positionName.includes('administrator')) {
+        return id;
+    } else {
+        const idplus = id + 1; // increment id by 1 using the + operator instead of ++ 
+        return findAdministratorId(idplus); // add return statement to ensure the function returns a value
+    }
+};
 
 var request = {};
 var pairs = location.search.substring(1).split('&');
@@ -201,16 +209,6 @@ function populatePage() {
     } catch (e) {
         console.log(e);
     }
-
-    function findAdministratorId(id) {
-        const positionName = newdataObj.administratori.persoane_fizice[id].functie;
-        if (positionName.includes('administrator')) {
-            return id;
-        } else {
-            const idplus = id + 1; // increment id by 1 using the + operator instead of ++ 
-            return findAdministratorId(idplus); // add return statement to ensure the function returns a value
-        }
-    };
 
     // using new dataObj !!!!!!!!!!!!!!!
     const administratorId = findAdministratorId(0);
