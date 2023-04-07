@@ -74,18 +74,18 @@
 <?php include('partial/scripts.php'); ?>
 <script src="assets/js/generatePdf.js"></script>
 <script>
-    dataObj = JSON.parse(localStorage.dataJson);
-    newdataObj = JSON.parse(localStorage.newdataJson);
+    dataObj = JSON.parse(localStorage.dataObj);
+    newdataObj = JSON.parse(localStorage.newdataObj);
 
-    // const findAdministratorId = function(id, dataObject) {
-    //     const positionName = dataObject.administratori.persoane_fizice[id].functie;
-    //     if (positionName.includes('administrator')) {
-    //         return id;
-    //     } else {
-    //         const idplus = id + 1;
-    //         return findAdministratorId(idplus, dataObject);
-    //     }
-    // };
+    const findAdministratorId = function(id, dataObject) {
+        const positionName = dataObject.administratori.persoane_fizice[id].functie;
+        if (positionName.includes('administrator')) {
+            return id;
+        } else {
+            const idplus = id + 1;
+            return findAdministratorId(idplus, dataObject);
+        }
+    };
 
 
 
