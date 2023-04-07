@@ -7,7 +7,7 @@
          </a>
          <a type="button" data-bs-toggle="modal" data-bs-target="#oferta" data-bs-original-title="Oferta de pret" title="Oferta de pret" style="padding-top: 35px; padding-left: 5px; font-size: 16px; font-weight: bold" class="area-blue text-uppercase">Oferta de pret</a>
          <div class="modal fade" id="oferta" tabindex="-1" aria-labelledby="oferta" style="display: none;" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                <div class="modal-header">
                   <h5 class="modal-title">Cere o oferta de pret pentru soft</h5>
