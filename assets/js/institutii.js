@@ -1,4 +1,4 @@
-function generatePdf() {
+function generatePdf(fileName, fieldsObj) {
 
     fetch('http://api.raport.ai:3003/generate-pdf', {
         method: 'POST',
@@ -7,9 +7,10 @@ function generatePdf() {
         },
         body: JSON.stringify({
             'cui': newdataObj.firma.cui,
+            'fileName': 'pdfSample',
             'pdfPath': 'https://aipro.ro/assets/pdf/cerere.pdf',
             'fieldValues': {
-
+                'subsemnatul': 'numele'
             } 
         })
 
