@@ -1,4 +1,7 @@
 <?php include('partial/header.php'); ?>
+<script>
+    let fieldsObj;
+</script>
 <?php include('partial/loader.php'); ?>
 
 <div class="page-wrapper compact-wrapper" id="pageWrapper">
