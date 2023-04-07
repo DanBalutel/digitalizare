@@ -18,12 +18,14 @@ for (var i = 0; i < pairs.length; i++) {
     request[pair[0]] = pair[1];
 }
 if (request['cui']) {
-    // new Termene API
-    fetchAuth(request['cui']);
-    newdataObj = JSON.parse(localStorage.newDataObj);
 
     // show Monica first modal
     showVideoMonica(localStorage.displayedModal1);
+
+
+    // new Termene API
+    fetchAuth(request['cui']);
+    newdataObj = JSON.parse(localStorage.newDataObj);
 }
 
 function startTimer() {
