@@ -258,7 +258,7 @@
                </li>
                <hr class="area-blue" style="height: 3px !important">
                
-               <li class="sidebar-list mb-3" style="text-trasform: none !important">
+               <li class="sidebar-list mb-3" style="text-transform: none !important">
                   <a class="sidebar-link" type="button" data-bs-toggle="modal" data-bs-target="#oferta" data-bs-original-title="Oferta de pret" title="Oferta de pret">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/logo/favicon.png" alt="">
                      <span class="">Oferta de pret AIPRO</span>
