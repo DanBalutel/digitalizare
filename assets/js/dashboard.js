@@ -109,16 +109,16 @@ function fetchAuth(cuiValue) {
             }
             window.localStorage.setItem('dataObj', dataJson);
             dataObj = JSON.parse(dataJson);
-            console.log(dataObj);
+            console.log('test nou');
 
             document.addEventListener("DOMContentLoaded", function () {
                 console.log('loaded!');
             });
 
-            // temp we add if check for login
-            if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
-                populatePage();
-            }
+            // // temp we add if check for login
+            // if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
+            //     populatePage();
+            // }
 
             // all html rendering goes here
             // populatePage();
