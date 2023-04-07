@@ -26,6 +26,31 @@ if (request['cui']) {
     // new Termene API
     fetchAuth(request['cui']);
     newdataObj = JSON.parse(localStorage.newDataObj);
+
+    dataObj = JSON.parse(window.localStorage.dataObj);
+    newdataObj = JSON.parse(window.localStorage.newDataObj);
+
+    // temp we add if check for login
+    if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
+
+        // show Monica forst modal
+        showVideoMonica(localStorage.displayedModal1);
+
+        populatePage();
+    }
+
+} else {
+
+    // temp we add if check for login
+    if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
+
+        let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
+        if (codulCUI == null || codulCUI == "") {
+            window.location.href = window.location.href;
+        } else {
+            window.location.href = window.location.href + `?cui=${codulCUI}`;
+        }
+    }
 }
 
 function startTimer() {
@@ -51,42 +76,6 @@ function startTimer() {
 }
 
 
-
-
-if (window.localStorage.dataObj) {
-
-    dataObj = JSON.parse(window.localStorage.dataObj);
-    newdataObj = JSON.parse(window.localStorage.newDataObj);
-
-    // temp we add if check for login
-    if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
-
-        // show Monica forst modal
-        showVideoMonica(localStorage.displayedModal1);
-
-        populatePage();
-    }
-
-} else if (request['cui']) {
-
-    // show Monica first modal
-    showVideoMonica(localStorage.displayedModal1);
-
-    fetchAuth(request['cui']);
-
-} else {
-
-    // temp we add if check for login
-    if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
-
-        let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
-        if (codulCUI == null || codulCUI == "") {
-            window.location.href = window.location.href;
-        } else {
-            window.location.href = window.location.href + `?cui=${codulCUI}`;
-        }
-    }
-}
 
 // CUI 38911092
 function fetchAuth(cuiValue) {
