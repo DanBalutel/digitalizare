@@ -1,6 +1,4 @@
 // you can add your custom script here
-newdataObj = JSON.parse(window.localStorage.newDataObj) || {};
-
 class ElementHandler {
     constructor() {
         this.e = {};
