@@ -19,6 +19,7 @@ for (var i = 0; i < pairs.length; i++) {
 }
 if (request['cui']) {
 
+    fetchAuth(request['cui']);
     alert(request['cui']);
 
 
