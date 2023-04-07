@@ -18,6 +18,8 @@ for (var i = 0; i < pairs.length; i++) {
 }
 if (request['cui']) {
 
+    showVideoMonica(localStorage.displayedModal1);
+
     fetchAuth(request['cui']);
     populatePage();
 
@@ -32,7 +34,6 @@ if (request['cui']) {
     // if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
 
     //     // show Monica forst modal
-    //     showVideoMonica(localStorage.displayedModal1);
 
     //     populatePage();
     // }
