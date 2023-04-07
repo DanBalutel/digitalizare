@@ -1,8 +1,6 @@
 function generatePdf(fileName, fieldsObj) {
     // loading
     renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
-    const administratorId = findAdministratorId(0);
-    const caen = `${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}`
 
     fetch('http://api.raport.ai:3003/generate-pdf', {
         method: 'POST',

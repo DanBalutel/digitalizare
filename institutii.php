@@ -1,5 +1,7 @@
 <?php include('partial/header.php'); ?>
-<script>
+<script defer>
+    const administratorId = findAdministratorId(0);
+    const caen = `${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}`
     const fieldsObj = {
         'subsemnatul': newdataObj.administratori.persoane_fizice[administratorId].nume || '',
         'domiciliat': newdataObj.administratori.persoane_fizice[administratorId].localitate || '',
@@ -27,7 +29,6 @@
     }
 
     console.log(fieldsObj);
-
 </script>
 <?php include('partial/loader.php'); ?>
 
