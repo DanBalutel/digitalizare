@@ -19,21 +19,24 @@ for (var i = 0; i < pairs.length; i++) {
 }
 if (request['cui']) {
 
-    // new Termene API
-    fetchAuth(request['cui']);
-    dataObj = JSON.parse(window.localStorage.dataObj);
-    newdataObj = JSON.parse(window.localStorage.newDataObj);
+    alert(request['cui']);
 
-    alert('bariera 1');
 
-    // temp we add if check for login
-    if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
+    // // new Termene API
+    // fetchAuth(request['cui']);
+    // dataObj = JSON.parse(window.localStorage.dataObj);
+    // newdataObj = JSON.parse(window.localStorage.newDataObj);
 
-        // show Monica forst modal
-        showVideoMonica(localStorage.displayedModal1);
+    // alert('bariera 1');
 
-        populatePage();
-    }
+    // // temp we add if check for login
+    // if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
+
+    //     // show Monica forst modal
+    //     showVideoMonica(localStorage.displayedModal1);
+
+    //     populatePage();
+    // }
 
 } else {
 
