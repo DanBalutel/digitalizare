@@ -77,15 +77,15 @@
     dataObj = JSON.parse(localStorage.dataJson);
     newdataObj = JSON.parse(localStorage.newdataJson);
 
-    const findAdministratorId = function(id, dataObject) {
-        const positionName = dataObject.administratori.persoane_fizice[id].functie;
-        if (positionName.includes('administrator')) {
-            return id;
-        } else {
-            const idplus = id + 1;
-            return findAdministratorId(idplus, dataObject);
-        }
-    };
+    // const findAdministratorId = function(id, dataObject) {
+    //     const positionName = dataObject.administratori.persoane_fizice[id].functie;
+    //     if (positionName.includes('administrator')) {
+    //         return id;
+    //     } else {
+    //         const idplus = id + 1;
+    //         return findAdministratorId(idplus, dataObject);
+    //     }
+    // };
 
 
 
