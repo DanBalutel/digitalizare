@@ -26,12 +26,7 @@ function generatePdf(fileName, fieldsObj) {
         })
         .then((response) => {
             pdfLink = JSON.parse(response);
-            
-
-            // DEBUG
-            console.log(pdfLink);
-
-
+            window.location.href = pdfLink.link;
         })
         .catch(error => console.log(error));
 
