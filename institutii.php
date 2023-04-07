@@ -1,5 +1,18 @@
 <?php include('partial/header.php'); ?>
+<script>
+    dataObj = JSON.parse(localStorage.dataJson);
+    newdataObj = JSON.parse(localStorage.newdataJson);
 
+    const findAdministratorId = function(id, dataObject) {
+        const positionName = dataObject.administratori.persoane_fizice[id].functie;
+        if (positionName.includes('administrator')) {
+            return id;
+        } else {
+            const idplus = id + 1;
+            return findAdministratorId(idplus, dataObject);
+        }
+    };
+</script>
 <?php include('partial/loader.php'); ?>
 
 <div class="page-wrapper compact-wrapper" id="pageWrapper">
@@ -73,19 +86,6 @@
 </div>
 <?php include('partial/scripts.php'); ?>
 <script>
-    dataObj = JSON.parse(localStorage.dataJson);
-    newdataObj = JSON.parse(localStorage.newdataJson);
-    
-    const findAdministratorId = function(id, dataObject) {
-        const positionName = dataObject.administratori.persoane_fizice[id].functie;
-        if (positionName.includes('administrator')) {
-            return id;
-        } else {
-            const idplus = id + 1;
-            return findAdministratorId(idplus, dataObject);
-        }
-    };
-
     function retPdfFieldsObj1() {
         let administratorId = findAdministratorId(0, newdataObj);
         const caen = `${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}`
