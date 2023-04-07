@@ -93,6 +93,10 @@ function fetchAuth(cuiValue) {
             return result.text();
         })
         .then((response) => {
+
+            console.log(response);
+            return;
+            
             //   document.getElementById("demoShow").innerHTML = response;
             dataJson = response;
             if (dataJson.DateGenerale = undefined && (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php")) {
