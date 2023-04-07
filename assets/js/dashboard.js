@@ -444,7 +444,7 @@ function populatePage() {
             }
 
 
-            "use strict";
+        
             var morris_chart = {
                 init: function () {
                     Morris.Bar({
@@ -458,7 +458,7 @@ function populatePage() {
                 }
             };
             (function ($) {
-                "use strict";
+            
                 morris_chart.init()
             })(jQuery);
         }
