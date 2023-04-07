@@ -18,9 +18,9 @@ for (var i = 0; i < pairs.length; i++) {
 }
 if (request['cui']) {
 
-    fetchAuth(request['cui']);
+    // fetchAuth(request['cui']);
     alert(request['cui']);
-    populatePage();
+    // populatePage();
 
     // // new Termene API
     // fetchAuth(request['cui']);
@@ -198,7 +198,7 @@ function populatePage() {
             return findAdministratorId(idplus, dataObject);
         }
     };
-    
+
     try {
         removeLoadingModal();
     } catch (e) {
