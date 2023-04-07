@@ -1,7 +1,4 @@
 <!-- latest jquery-->
-<script src="assets/js/custom-script.js"></script>
-<script src="assets/js/dashboard.js" defer></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Bootstrap js-->
 <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
@@ -22,4 +19,6 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!-- Plugins JS Ends-->
 <!-- Theme js-->
+<script src="assets/js/custom-script.js"></script>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/dashboard.js" defer></script>
