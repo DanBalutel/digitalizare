@@ -1,10 +1,11 @@
 <div class="sidebar-wrapper" sidebar-layout="stroke-svg">
    <div>
-      <div class="logo-wrapper">
+      <div class="logo-wrapper d-flex">
          <a href="index" class="text-center">
             <img class="img-fluid for-light" src="/assets/images/logo/logo.png" width="50" alt="">
             <img class="img-fluid for-dark" src="/assets/images/logo/logo.png" width="50" alt="">
          </a>
+         <a href="" style="padding: 20px;" class="text-primary">Oferta d pret</a>
          <div class="back-btn"><i class="fa fa-angle-left"></i></div>
          <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
       </div>
@@ -16,10 +17,10 @@
                <li class="back-btn">
                   <a href="index">
                      <img class="img-fluid" src="/assets/images/logo/logo.png" width="40" alt=""></a>
-                  <div class="mobile-back text-end">
-                     <span>Back</span>
-                     <i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
-                  </div>
+                     <div class="mobile-back text-end">
+                        <span>Back</span>
+                        <i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
+                     </div>
                </li>
 
 
