@@ -34571,7 +34571,7 @@ button[data-toggle=dropdown]:hover~.dropdown-menu {
 }
 
 .page-wrapper .page-header .header-wrapper .nav-right .profile-dropdown {
-  width: 240px;
+  width: 160px;
   top: 57px;
   left: -12px;
   padding: 0 10px;
