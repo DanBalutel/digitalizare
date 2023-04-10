@@ -2,13 +2,59 @@ let dataJson;
 let dataObj;
 let newdataObj;
 
-
 // detect if screen is mobile
 function isScreenWidth768OrMore() {
     if (window.innerWidth >= 768) {
         return true;
     } else {
         return false;
+    }
+}
+var request = {};
+var pairs = location.search.substring(1).split('&');
+for (var i = 0; i < pairs.length; i++) {
+    var pair = pairs[i].split('=');
+    request[pair[0]] = pair[1];
+}
+if (request['cui']) {
+
+    window.localStorage.setItem('cui', request['cui']);
+    showVideoMonica(localStorage.displayedModal1);
+    fetchAuth(request['cui']);
+    populatePage();
+
+    // // new Termene API
+    // fetchAuth(request['cui']);
+    // dataObj = JSON.parse(window.localStorage.dataObj);
+    // newdataObj = JSON.parse(window.localStorage.newDataObj);
+
+    // alert('bariera 1');
+
+    // // temp we add if check for login
+    // if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
+
+    //     // show Monica forst modal
+
+    //     populatePage();
+    // }
+
+} else if (localStorage.cui) {
+
+    fetchAuth(localStorage.cui)
+}
+
+
+else {
+
+    // temp we add if check for login
+    if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
+
+        let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
+        if (codulCUI == null || codulCUI == "") {
+            window.location.href = window.location.href;
+        } else {
+            window.location.href = window.location.href + `?cui=${codulCUI}`;
+        }
     }
 }
 
@@ -34,62 +80,7 @@ function startTimer() {
     }, 1000);
 }
 
-function findAdministratorId(id) {
-    const positionName = newdataObj.administratori.persoane_fizice[id].functie;
-    if (positionName.includes('administrator')) {
-        return id;
-    } else {
-        const idplus = id + 1; // increment id by 1 using the + operator instead of ++ 
-        return findAdministratorId(idplus); // add return statement to ensure the function returns a value
-    }
-};
 
-var request = {};
-var pairs = location.search.substring(1).split('&');
-for (var i = 0; i < pairs.length; i++) {
-    var pair = pairs[i].split('=');
-    request[pair[0]] = pair[1];
-}
-
-
-if (window.localStorage.dataObj) {
-
-    // show Monica first modal
-    showVideoMonica(localStorage.displayedModal1);
-
-    dataObj = JSON.parse(window.localStorage.dataObj);
-    newdataObj = JSON.parse(window.localStorage.newDataObj);
-
-    // temp we add if check for login
-    if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
-
-        // show Monica forst modal
-        showVideoMonica(localStorage.displayedModal1);
-
-        populatePage();
-    }
-
-} else if (request['cui']) {
-
-    // show Monica first modal
-    showVideoMonica(localStorage.displayedModal1);
-
-    fetchAuth(request['cui']);
-
-} else {
-
-    // temp we add if check for login
-    if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
-
-        let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
-        if (codulCUI == null || codulCUI == "") {
-            window.location.href = window.location.href;
-        } else {
-            window.location.href = window.location.href + `?cui=${codulCUI}`;
-        }
-        console.log(window.location.pathname);
-    }
-}
 
 // CUI 38911092
 function fetchAuth(cuiValue) {
@@ -111,7 +102,7 @@ function fetchAuth(cuiValue) {
             return result.text();
         })
         .then((response) => {
-            //   document.getElementById("demoShow").innerHTML = response;
+
             dataJson = response;
             if (dataJson.DateGenerale = undefined && (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php")) {
                 let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
@@ -124,16 +115,16 @@ function fetchAuth(cuiValue) {
             }
             window.localStorage.setItem('dataObj', dataJson);
             dataObj = JSON.parse(dataJson);
-            console.log(dataObj);
+            console.log('test nou');
 
             document.addEventListener("DOMContentLoaded", function () {
                 console.log('loaded!');
             });
 
-            // temp we add if check for login
-            if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
-                populatePage();
-            }
+            // // temp we add if check for login
+            // if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
+            //     populatePage();
+            // }
 
             // all html rendering goes here
             // populatePage();
@@ -142,8 +133,8 @@ function fetchAuth(cuiValue) {
 
         // (D) HANDLE ERRORS (OPTIONAL)
         .catch((error) => {
-            console.log(error);
-            localStorage.removeItem('dataObj');
+            console.log(`eroarea raspuns: ${error}`);
+            // localStorage.removeItem('dataObj');
             alert('CUI gresit')
             window.location.href = window.location.origin;
         });
@@ -163,10 +154,10 @@ function getTermeneData(cuiValue) {
             return result.text();
         })
         .then((response) => {
-            dataJson = response;
-            window.localStorage.setItem('newDataObj', dataJson);
-            dataObj = JSON.parse(dataJson);
-            console.log(dataObj);
+            newdataJson = response;
+            window.localStorage.setItem('newDataObj', newdataJson);
+            newdataObj = JSON.parse(newdataJson);
+            console.log(newdataObj);
 
             document.addEventListener("DOMContentLoaded", function () {
                 console.log('loaded!');
@@ -178,31 +169,31 @@ function getTermeneData(cuiValue) {
             // }
 
             // all html rendering goes here
-            // populatePage();
+            populatePage();
 
         })
 
         // (D) HANDLE ERRORS (OPTIONAL)
         .catch((error) => {
             console.log(error);
-            localStorage.removeItem('dataObj');
+            localStorage.removeItem('newDataObj');
             //alert('CUI gresit')
             //            window.location.href = window.location.origin;
         });
 
 }
 
-
-
-
-
-if (request['cui']) {
-    // new Termene API
-    getTermeneData(request['cui']);
-    newdataObj = JSON.parse(localStorage.newDataObj);
-}
-
 function populatePage() {
+
+    const findAdministratorId = function (id, dataObject) {
+        const positionName = dataObject.administratori.persoane_fizice[id].functie;
+        if (positionName.includes('administrator')) {
+            return id;
+        } else {
+            const idplus = id + 1;
+            return findAdministratorId(idplus, dataObject);
+        }
+    };
 
     try {
         removeLoadingModal();
@@ -211,7 +202,7 @@ function populatePage() {
     }
 
     // using new dataObj !!!!!!!!!!!!!!!
-    const administratorId = findAdministratorId(0);
+    const administratorId = findAdministratorId(0, newdataObj);
 
     try {
 
@@ -241,7 +232,7 @@ function populatePage() {
         // temp we render here all DOOM elements
         const name = document.getElementById('name');
         d.element('dash').innerHTML = newdataObj.firma.nume_mfinante;
-        d.element('nameAdmin').innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
+        // d.element('nameAdmin').innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
         if (name) {
             name.innerHTML = `${newdataObj.firma.nume_mfinante} - Administrator: <br><span style="color: #00CCFF">${newdataObj.administratori.persoane_fizice[administratorId].nume}</span>`;
             const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
@@ -445,7 +436,7 @@ function populatePage() {
             }
 
 
-            "use strict";
+
             var morris_chart = {
                 init: function () {
                     Morris.Bar({
@@ -459,7 +450,7 @@ function populatePage() {
                 }
             };
             (function ($) {
-                "use strict";
+
                 morris_chart.init()
             })(jQuery);
         }
@@ -607,7 +598,7 @@ function populatePage() {
         }
 
         const dosare = newdataObj.dosare.rezultate
-        
+
         // randuri tabel asociati conexiuni
         for (let i in dosare) {
 

@@ -1,5 +1,4 @@
 // you can add your custom script here
-
 class ElementHandler {
     constructor() {
         this.e = {};
@@ -711,8 +710,6 @@ const listCaen = {
 const d = new ElementHandler();
 
 
-
-
 function renderLoadingModal(label) {
 
     var notify = $.notify(`<i class="fa fa-bell-o"></i>${label}`, {
@@ -732,15 +729,22 @@ function removeLoadingModal() {
     $.notifyClose();
 };
 
-
-
-
+// function findAdministratorId(id) {
+//     const positionName = newdataObj.administratori.persoane_fizice[id].functie;
+//     if (positionName.includes('administrator')) {
+//         return id;
+//     } else {
+//         const idplus = id + 1; // increment id by 1 using the + operator instead of ++ 
+//         return findAdministratorId(idplus); // add return statement to ensure the function returns a value
+//     }
+// };
 
 // logOut function
 function logOut() {
     localStorage.removeItem('timeOnPage');
     localStorage.removeItem('dataObj');
     localStorage.removeItem('newDataObj');
+    localStorage.removeItem('cui');
     console.log('removed');
 }
 
