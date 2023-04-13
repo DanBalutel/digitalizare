@@ -551,7 +551,7 @@
 
                                             <tr>
                                                 <th scope="row">1</th>
-                                                <td> <img src="assets/images/only1/bmw_car.png" alt="">  Automobil BMW X3</td>
+                                                <td> <img src="assets/images/only1/bmw_car.png" style="max-width:7rem" alt="">  Automobil BMW X3</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
                                                         data-bs-toggle="dropdown" aria-haspopup="true"
@@ -570,7 +570,7 @@
 
                                             <tr>
                                                 <th scope="row">2</th>
-                                                <td>Calculator personal Lenovo V15</td>
+                                                <td><img src="assets/images/only1/laptop.png" style="max-width:7rem" alt="">Calculator personal Lenovo V15</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
                                                         data-bs-toggle="dropdown" aria-haspopup="true"
