@@ -219,9 +219,12 @@
                      <li><a href="facebook.php">Facebook</a></li>
                      <li><a href="instagram.php">Instagram</a></li>
                      <li><a href="linkedin.php">LinkedIn</a></li>
-                     <li><a href="youtube">YouTube</a></li>
                      <li><a href="pinterest.php">Pinterest</a></li>
                   </ul>
+               </li>
+               <li class="sidebar-list"><a class="sidebar-link" href="youtube.php">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt="">
+                     <span>Youtube</span></a>
                </li>
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="#">
