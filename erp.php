@@ -551,7 +551,7 @@
 
                                             <tr>
                                                 <th scope="row">1</th>
-                                                <td>Automobil BMW X3</td>
+                                                <td> <img src="assets/images/only1/bmw_car.png" alt="">  Automobil BMW X3</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
                                                         data-bs-toggle="dropdown" aria-haspopup="true"
