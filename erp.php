@@ -392,7 +392,7 @@
 
                                                 <tr>
                                                     <th scope="row">1</th>
-                                                    <td>Propunere colaborare</td>
+                                                    <td>Discutii cu partenerii de afaceri</td>
                                                     <td>Birou</td>
                                                     <td>12.00 15.02.2023</td>
                                                     <td>
@@ -413,7 +413,7 @@
 
                                                 <tr>
                                                     <th scope="row">2</th>
-                                                    <td>Propunere colaborare</td>
+                                                    <td>Planificarea campaniei de marketing</td>
                                                     <td>Birou</td>
                                                     <td>13.00 15.02.2023</td>
                                                     <td>
@@ -436,7 +436,7 @@
 
                                                 <tr>
                                                     <th scope="row">3</th>
-                                                    <td>Propunere colaborare</td>
+                                                    <td>Intalnire cu furnizorii</td>
                                                     <td>Zoom</td>
                                                     <td>16.00 15.02.2023</td>
                                                     <td>
@@ -458,7 +458,7 @@
 
                                                 <tr>
                                                     <th scope="row">4</th>
-                                                    <td>Propunere colaborare</td>
+                                                    <td>Evaluarea performantei echipei</td>
                                                     <td>Zoom</td>
                                                     <td>16.30 15.02.2023</td>
                                                     <td>
