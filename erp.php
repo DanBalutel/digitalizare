@@ -591,7 +591,7 @@
 
                                             <tr>
                                                 <th scope="row">3</th>
-                                                <td>Echipamente</td>
+                                                <td><img src="assets/images/only1/echipamente.png" style="max-width:7rem" alt="">Echipamente</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
                                                         data-bs-toggle="dropdown" aria-haspopup="true"
