@@ -53,7 +53,7 @@
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/investitii.png" alt="">
                      <span>Investitii</span>
-                     
+
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="seap.php">SEAP/SICAP</a></li>
@@ -67,7 +67,7 @@
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="institutii.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/institutii.png" alt="">
                      <span>Institutii</span>
-                     
+
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="institutii.php">Institutii </a></li>
@@ -82,6 +82,7 @@
 
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
+                     <li><a href="contabilitate.php">Contabilitate</a></li>
                      <li><a target="_blank" href="https://mfinante.gov.ro/web/efactura"><img src="assets/images/meniu/e-factura.png" height="20" alt=""></a></li>
                      <li><a target="_blank" href="https://cloud.smartbill.ro/auth/login/?_ga=2.67868241.1511869911.1680014429-582632679.1680014429"><img src="assets/images/meniu/smartbill.png" height="20" alt=""></a></li>
                      <li><a target="_blank" href="https://www.sagasoft.ro/index.php"><img src="assets/images/meniu/software.png" height="20" alt=""></a></li>
@@ -108,7 +109,7 @@
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="file-manager.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/arhivare.png" alt="">
                      <span>Arhivare cloud</span>
-                     
+
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="doc-manager.php">Documente</a></li>
@@ -123,7 +124,7 @@
                   <a class="sidebar-link sidebar-title" href="smart-building.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/iot.png" alt="">
                      <span>IoT</span>
-                     
+
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="smart-building.php">Smart building</a></li>
@@ -133,7 +134,7 @@
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="crm.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/crm.png" alt="">
                      <span>CRM</span>
-                     
+
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="crm.php">CRM</a></li>
@@ -148,7 +149,7 @@
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="erp.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/erp.png" alt="">
                      <span>ERP</span>
-                     
+
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="erp.php">ERP</a></li>
@@ -169,7 +170,7 @@
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="#">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/mail.png" alt=""><span>Mail</span>
-                     
+
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="gmail.php"><img src="assets/images/meniu/gmail.png" height="20" alt=""></a></li>
@@ -181,7 +182,7 @@
                   <a class="sidebar-link sidebar-title" href="banci.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/money_icon.png" alt="">
                      <span>Banci</span>
-                     
+
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="banci.php">Dashboard</a></li>
@@ -199,7 +200,7 @@
                   <a class="sidebar-link sidebar-title" href="#">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/e-commerce.png" alt="">
                      <span>Ecommerce</span>
-                     
+
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="list-products.php">Produse</a></li>
@@ -211,7 +212,7 @@
                   <a class="sidebar-link sidebar-title" href="social.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/social_media.png" alt="">
                      <span>Social Media</span>
-                     
+
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="social.php">Social Media</a></li>
@@ -226,7 +227,7 @@
                   <a class="sidebar-link sidebar-title" href="#">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/saas.png" alt="">
                      <span>SaaS</span>
-                     
+
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a target="_blank" href="https://termene.ro"><img src="assets/images/meniu/termene.png" height="20" alt=""></a>
@@ -242,7 +243,7 @@
                   <a class="sidebar-link sidebar-title" href="#">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/vinde.png" alt="">
                      <span>Vinde / Cumpara</span>
-                     
+
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a target="_blank" target="_blank" href="https://www.emag.ro"><img src="assets/images/meniu/emag.png" height="20" alt=""></a></li>
@@ -259,14 +260,14 @@
                   </a>
                </li>
                <hr class="area-blue" style="height: 3px !important">
-               
+
                <li class="sidebar-list mb-3" style="text-transform: none !important">
                   <a class="sidebar-link" type="button" data-bs-toggle="modal" data-bs-target="#oferta" data-bs-original-title="Oferta de pret" title="Oferta de pret">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/logo/favicon.png" alt="">
                      <span class="">Oferta de pret AIPRO</span>
                   </a>
                </li>
-             
+
 
             </ul>
          </div>
