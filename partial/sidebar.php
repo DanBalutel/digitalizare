@@ -76,6 +76,13 @@
                   </ul>
                </li>
                <li class="sidebar-list">
+                  <a class="sidebar-link" href="pdfai.php">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
+                     <svg class="fill-icon">
+                        <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
+                     </svg><span>Chat AI</span></a>
+               </li>
+               <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="contabilitate.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/contabilitate.png" alt="">
                      <span>Contabilitate</span>

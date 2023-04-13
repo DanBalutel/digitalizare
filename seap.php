@@ -183,28 +183,6 @@
                         </div>
                     </div>
 
-                    
- 
-
-                    <div id="my-html-box"></div>
-
-
-
-
-<script>
-    const url = 'https://www.youtube.com';
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-const apiUrl = proxyUrl + url;
-
-fetch(apiUrl)
-  .then(response => response.text())
-  .then(data => {
-    // Do something with the data, like displaying it in an HTML box
-    document.getElementById('my-html-box').innerHTML = data;
-  })
-  .catch(error => console.error(error));
-</script>
-
 
                 </div>
             </div>
