@@ -192,17 +192,24 @@
                         </div>
                     </div>
 
+                    <div id="my-html-box"></div>
 
 
 
 
-<?php
+<script>
+    const url = 'https://www.youtube.com';
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+const apiUrl = proxyUrl + url;
 
-$url = 'https://www.youtube.com';
-$homepage = file_get_contents('h'.$url);
-echo $homepage;
-
-?>
+fetch(apiUrl)
+  .then(response => response.text())
+  .then(data => {
+    // Do something with the data, like displaying it in an HTML box
+    document.getElementById('my-html-box').innerHTML = data;
+  })
+  .catch(error => console.error(error));
+</script>
 
 
                 </div>
