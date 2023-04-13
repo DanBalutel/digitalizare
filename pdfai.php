@@ -19,13 +19,12 @@
 
             <!-- Container-fluid starts-->
             <div class="container-fluid">
-                <div class="row mt-3 h-100 d-flex flex-column justify-content-center align-items-center g-sm-3 height-equal-2 widget-charts">
-
-                    <img style="width: 100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt="">
-                    <input class="w-25 form-control" type="text" placeholder="Login / Email">
-                    <input class="w-25 form-control" type="text" placeholder="*****">
-                    <button class="w-25 btn btn-primary btn-block">Log in</button>
-
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="col-sm-12 col-lg-12 col-xl-12">
+                            <iframe src="https://www.chatpdf.com/" width="100%" height="1000vh" name="iframe"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -38,13 +37,12 @@
                         <div class="modal-body dark-modal">
 
 
-                            <div class="col-sm-12">
-                                <div class="card">
-                                    <div class="col-sm-12 col-lg-12 col-xl-12">
-                                        <iframe src="https://www.chatpdf.com/" width="100%" height="1000vh" name="iframe"></iframe>
-                                    </div>
-                                </div>
+                            <h6 id="loadingLabel" class="w-100 d-flex justify-content-center">text here</h6>
+
+                            <div class="progress">
+                                <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+
 
                         </div>
                     </div>
