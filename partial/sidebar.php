@@ -50,6 +50,13 @@
                         <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
                      </svg><span>Mony AI</span></a>
                </li>
+               <li class="sidebar-list">
+                  <a class="sidebar-link" href="pdfai.php">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="https://thumbs.dreamstime.com/b/pencil-paper-icon-outline-pencil-paper-vector-icon-color-flat-isolated-pencil-paper-icon-color-outline-vector-233227516.jpg" alt="">
+                     <svg class="fill-icon">
+                        <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
+                     </svg><span>PDF ai</span></a>
+               </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/investitii.png" alt="">
                      <span>Investitii</span>
@@ -74,13 +81,6 @@
                      <li><a href="">Avize online </a></li>
                      <li><a href="auto-doc.php">Auto DOC </a></li>
                   </ul>
-               </li>
-               <li class="sidebar-list">
-                  <a class="sidebar-link" href="pdfai.php">
-                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="https://thumbs.dreamstime.com/b/pencil-paper-icon-outline-pencil-paper-vector-icon-color-flat-isolated-pencil-paper-icon-color-outline-vector-233227516.jpg" alt="">
-                     <svg class="fill-icon">
-                        <use href="assets/svg/icon-sprite.svg#fill-chat"></use>
-                     </svg><span>Pdf AI</span></a>
                </li>
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="contabilitate.php">
