@@ -214,6 +214,7 @@ body {
 
 .cardWithNoBorder {
     border: none;
+    white-space: nowrap;
 }
 
 
