@@ -1,9 +1,11 @@
 .min-h-7 {
     min-height: 7rem;
 }
+
 .area-blue {
     color: #00CCFF !important;
 }
+
 .min-h-9 {
     min-height: 9rem;
 }
@@ -209,6 +211,11 @@ body {
     display: inline-block;
     text-align: center;
 }
+
+.cardWithNoBorder {
+    border: none;
+}
+
 
 @media only screen and (max-width: 767.98px) {
     .cardWithGrayBorder {
