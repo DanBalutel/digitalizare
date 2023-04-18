@@ -81,7 +81,7 @@ function addcrmTable1Row(id, name, phone, email, status, factura) {
         "children": [
             {
                 "tag": "td",
-                "innerHTML": `#${id}`
+                "innerHTML": `${id}`
             }, {
                 "tag": "td",
                 "innerHTML": name
