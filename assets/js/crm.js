@@ -87,7 +87,7 @@ function addcrmTable1Row(id, name, phone, email, status, factura) {
                 "innerHTML": name
             }, {
                 "tag": "td",
-                "class": "cardWithNoBorder",
+                "class": "cardWithNoBorder f-s-15",
                 "innerHTML": phone
             }, {
                 "tag": "td",
