@@ -1,130 +1,43 @@
 // demo data to load in table
 let crmTable1 = [{
     id: 1,
-    name: 'Gigi Popescu',
-    phone: '0729 229 599',
-    email: 'john@example.com',
+    name: 'Ana Popescu',
+    phone: '0738 391 876',
+    email: 'ana.popescu@email.com',
     status: 'Interesat',
     factura: 'Platita'
 },
 {
     id: 2,
-    name: 'Gigi Popescu 2',
-    phone: '0729 229 599',
-    email: 'jane@example.com',
+    name: 'Vlad Ionescu',
+    phone: '0746 230 981',
+    email: 'v.ionescu@email.com',
     status: 'Neinteresat',
     factura: 'Urmeaza'
 },
 {
     id: 3,
-    name: 'Gigi Popescu 3',
-    phone: '0729 229 599',
-    email: 'smith@example.com',
+    name: 'Maria Georgescu',
+    phone: '0721 829 415',
+    email: 'maria.georgescu@email.com',
     status: 'Nu stie',
     factura: 'Platita'
 },
 {
     id: 4,
-    name: 'Gigi Popescu 4',
-    phone: '0729 229 599',
-    email: 'jane@example.com',
+    name: 'Alexandru Stoica',
+    phone: '0790 518 423',
+    email: 'alexandru.stoica@email.com',
     status: 'Neinteresat',
     factura: 'Renunta'
 },
 {
     id: 5,
-    name: 'Gigi Popescu 5',
-    phone: '0729 229 599',
-    email: 'jane@example.com',
+    name: 'Andreea Mihai',
+    phone: '0768 611 213',
+    email: 'jandreea.mihai@email.com',
     status: 'Neinteresat',
     factura: 'Platita'
-},
-{
-    id: 6,
-    name: 'Gigi Popescu 6',
-    phone: '0729 229 599',
-    email: 'jane@example.com',
-    status: 'Neinteresat',
-    factura: 'Urmeaza'
-},
-{
-    id: 7,
-    name: 'Gigi Popescu 7',
-    phone: '0729 229 599',
-    email: 'jane@example.com',
-    status: 'Neinteresat',
-    factura: 'Renunta'
-},
-{
-    id: 8,
-    name: 'Gigi Popescu 8',
-    phone: '0729 229 599',
-    email: 'jane@example.com',
-    status: 'Neinteresat',
-    factura: 'Renunta'
-}, {
-    id: 9,
-    name: 'Gigi Popescu',
-    phone: '0729 229 599',
-    email: 'john@example.com',
-    status: 'Interesat',
-    factura: 'Urmeaza'
-},
-{
-    id: 10,
-    name: 'Gigi Popescu 2',
-    phone: '0729 229 599',
-    email: 'jane@example.com',
-    status: 'Neinteresat',
-    factura: 'Renunta'
-},
-{
-    id: 11,
-    name: 'Gigi Popescu 3',
-    phone: '0729 229 599',
-    email: 'smith@example.com',
-    status: 'Nu stie',
-    factura: 'Urmeaza'
-},
-{
-    id: 12,
-    name: 'Gigi Popescu 4',
-    phone: '0729 229 599',
-    email: 'jane@example.com',
-    status: 'Neinteresat',
-    factura: 'Renunta'
-},
-{
-    id: 13,
-    name: 'Gigi Popescu 5',
-    phone: '0729 229 599',
-    email: 'jane@example.com',
-    status: 'Neinteresat',
-    factura: 'Renunta'
-},
-{
-    id: 14,
-    name: 'Gigi Popescu 6',
-    phone: '0729 229 599',
-    email: 'jane@example.com',
-    status: 'Neinteresat',
-    factura: 'Renunta'
-},
-{
-    id: 15,
-    name: 'Gigi Popescu 7',
-    phone: '0729 229 599',
-    email: 'jane@example.com',
-    status: 'Neinteresat',
-    factura: 'Renunta'
-},
-{
-    id: 16,
-    name: 'Gigi Popescu 8',
-    phone: '0729 229 599',
-    email: 'jane@example.com',
-    status: 'Neinteresat',
-    factura: 'Renunta'
 }
 ];
 
