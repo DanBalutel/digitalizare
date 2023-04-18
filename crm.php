@@ -70,7 +70,6 @@
                                 </div>
                             </div>
 
-
                             <div class="card-body">
                                 <div class="dt-ext table-responsive">
                                     <div id="multilevel-btn_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
