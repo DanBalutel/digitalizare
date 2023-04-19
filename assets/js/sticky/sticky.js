@@ -52,12 +52,14 @@ var noteTemp = '<div class="note" ondragstart=`function(){$(this).css("z-index",
 var noteZindex = 1;
 function deleteNote() {
     $(this).parent('.note').hide("puff", { percent: 133 }, 250);
+    saveCards();
 };
 function newNote() {
     $(noteTemp).hide().appendTo("#board").show("fade", 300).draggable();
     $('.remove').click(deleteNote);
     $('textarea').autogrow();
     $('.note')
+    saveCards()
     return false;
 };
 function newNote2(title, content) {
@@ -67,6 +69,7 @@ function newNote2(title, content) {
     note.hide().appendTo("#board").show("fade", 300).draggable();
     note.find('.remove').click(deleteNote);
     note.find('textarea').autogrow();
+    saveCards()
     return false;
 };
 (function ($) {
