@@ -22,7 +22,6 @@
                 <h5>Sticky Note <a class="btn btn-primary pull-right m-l-10" id="add_new" href="javascript:;">Add New Note</a></h5>
               </div>
               <div class="card-body">
-                <div class="sticky-note" id="board"></div>
               </div>
             </div>
           </div>

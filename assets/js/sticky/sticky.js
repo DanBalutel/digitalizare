@@ -1,38 +1,34 @@
 'use strict';
-(function($){
-    $.fn.autogrow = function(options)
-    {
-        return this.filter('textarea').each(function()
-        {
-            var self         = this;
-            var $self        = $(self);
-            var minHeight    = $self.height();
+(function ($) {
+    $.fn.autogrow = function (options) {
+        return this.filter('textarea').each(function () {
+            var self = this;
+            var $self = $(self);
+            var minHeight = $self.height();
             var noFlickerPad = $self.hasClass('autogrow-short') ? 0 : parseInt($self.css('lineHeight')) || 0;
             var shadow = $('<div></div>').css({
-                position:    'absolute',
-                top:         -10000,
-                left:        -10000,
-                width:       $self.width(),
-                fontSize:    $self.css('fontSize'),
-                fontFamily:  $self.css('fontFamily'),
-                fontWeight:  $self.css('fontWeight'),
-                lineHeight:  $self.css('lineHeight'),
-                resize:      'none',
+                position: 'absolute',
+                top: -10000,
+                left: -10000,
+                width: $self.width(),
+                fontSize: $self.css('fontSize'),
+                fontFamily: $self.css('fontFamily'),
+                fontWeight: $self.css('fontWeight'),
+                lineHeight: $self.css('lineHeight'),
+                resize: 'none',
                 'word-wrap': 'break-word'
             }).appendTo(document.body);
-            var update = function(event)
-            {
-                var times = function(string, number)
-                {
-                    for (var i=0, r=''; i<number; i++) r += string;
-                        return r;
+            var update = function (event) {
+                var times = function (string, number) {
+                    for (var i = 0, r = ''; i < number; i++) r += string;
+                    return r;
                 };
                 var val = self.value.replace(/</g, '&lt;')
-                .replace(/>/g, '&gt;')
-                .replace(/&/g, '&amp;')
-                .replace(/\n$/, '<br/>&nbsp;')
-                .replace(/\n/g, '<br/>')
-                .replace(/ {2,}/g, function(space){ return times('&nbsp;', space.length - 1) + ' ' });
+                    .replace(/>/g, '&gt;')
+                    .replace(/&/g, '&amp;')
+                    .replace(/\n$/, '<br/>&nbsp;')
+                    .replace(/\n/g, '<br/>')
+                    .replace(/ {2,}/g, function (space) { return times('&nbsp;', space.length - 1) + ' ' });
                 if (event && event.data && event.data.event === 'keydown' && event.keyCode === 13) {
                     val += '<br />';
                 }
@@ -40,31 +36,40 @@
                 shadow.html(val + (noFlickerPad === 0 ? '...' : '')); // Append '...' to resize pre-emptively.
                 $self.height(Math.max(shadow.height() + noFlickerPad, minHeight));
             }
-            $self.change(update).keyup(update).keydown({event:'keydown'},update);
+            $self.change(update).keyup(update).keydown({ event: 'keydown' }, update);
             $(window).resize(update);
             update();
         });
     };
 })(jQuery);
-var noteTemp =  '<div class="note" ondragstart=`function(){$(this).css("z-index", ++noteZindex);}`>'
-+	'<a href="javascript:;" class="button remove">X</a>'
-+ 	'<div class="note_cnt">'
-+		'<textarea class="title" placeholder="Enter note title" oninput="saveCards()"></textarea>'
-+ 		'<textarea class="cnt" placeholder="Enter note description here" oninput="saveCards()"></textarea>'
-+	'</div> '
-+'</div>';
+var noteTemp = '<div class="note" ondragstart=`function(){$(this).css("z-index", ++noteZindex);}`>'
+    + '<a href="javascript:;" class="button remove">X</a>'
+    + '<div class="note_cnt">'
+    + '<textarea class="title" placeholder="Enter note title" oninput="saveCards()"></textarea>'
+    + '<textarea class="cnt" placeholder="Enter note description here" oninput="saveCards()"></textarea>'
+    + '</div> '
+    + '</div>';
 var noteZindex = 1;
-function deleteNote(){
-    $(this).parent('.note').hide("puff",{ percent: 133}, 250);
+function deleteNote() {
+    $(this).parent('.note').hide("puff", { percent: 133 }, 250);
 };
 function newNote() {
     $(noteTemp).hide().appendTo("#board").show("fade", 300).draggable();
     $('.remove').click(deleteNote);
     $('textarea').autogrow();
     $('.note')
-    return false; 
+    return false;
 };
-(function($) {
+function newNote2(title, content) {
+    var note = $(noteTemp);
+    note.find('.title').val(title);
+    note.find('.cnt').val(content);
+    note.hide().appendTo("#board").show("fade", 300).draggable();
+    note.find('.remove').click(deleteNote);
+    note.find('textarea').autogrow();
+    return false;
+};
+(function ($) {
     "use strict";
     $("#board").height($(document).height());
     $("#add_new").click(newNote);
@@ -85,18 +90,25 @@ function saveBoard() {
 }
 
 function saveCards() {
+    localStorage.board = '';
     var cardsArray = [];
-  
-    $('.note').each(function() {
-      var cardTitle = $(this).find('.title').val();
-      var cardContent = $(this).find('.cnt').val();
-      var cardObject = {
-        title: cardTitle,
-        content: cardContent
-      };
-      cardsArray.push(cardObject);
+
+    $('.note').each(function () {
+        var cardTitle = $(this).find('.title').val();
+        var cardContent = $(this).find('.cnt').val();
+        var cardObject = {
+            title: cardTitle,
+            content: cardContent
+        };
+        cardsArray.push(cardObject);
     });
 
     localStorage.board = JSON.stringify(cardsArray);
-  }
-  
+}
+
+
+
+const boardNotes = JSON.parse(localStorage.board);
+boardNotes.forEach((item) => {
+    newNote2(item.title, item.content)
+});
