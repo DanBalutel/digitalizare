@@ -229,3 +229,26 @@ body {
     width: calc(100% - 25px);
     border-radius: 1rem;
 }
+
+.uploadCrmFile> :nth-child(1) {
+    height: 4rem;
+    min-width: 10rem;
+    margin-right: 1rem;
+}
+
+.uploadCrmFile> :nth-child(2) {
+    height: 4rem;
+    max-width: 15rem;
+}
+
+.uploadCrmFile> :nth-child(3) {
+    height: 4rem;
+    min-width: 10rem;
+    margin-left: 1rem;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .uploadCrmFile> :nth-child(3) {
+        margin-left: 0;
+    }
+}

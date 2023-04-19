@@ -33,11 +33,61 @@
                                     <div id="multilevel-btn_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
 
 
+                                        <div class="uploadCrmFile">
+                                            <button class="btn btn-primary mb-3" id="downloadExcel1">Exporta in Excel</button>
+                                            <input class="form-control" type="file" id="uploadExcel1" accept=".xlsx" />
+                                            <button class="btn btn-primary mb-3" id="processExcel1">Importa din Excel</button>
+                                        </div>
 
-                                        <button class="btn btn-primary mb-3" id="downloadExcel1">Exporta in Excel</button>
+                                        <table class="display dataTable" id="multilevel-btn" role="grid" aria-describedby="multilevel-btn_info">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th rowspan="1" colspan="1" style="width: 80.4844px;">Id</th>
+                                                    <th>Nume / Prenume</th>
+                                                    <th>Telefon</th>
+                                                    <th>Email</th>
+                                                    <th>Trimisa oferta</th>
+                                                    <th>Factura</th>
 
-                                        <input class="form-control" type="file" id="uploadExcel1" accept=".xlsx" />
-                                        <button class="btn btn-primary mb-3" id="processExcel1">Importa din Excel</button>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="crmTable1">
+
+                                            </tbody>
+
+                                        </table>
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <div class="dt-ext table-responsive">
+                                    <div id="multilevel-btn_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
+
+
+
+                                        <div class="uploadCrmFile">
+                                            <button class="btn btn-primary mb-3" id="downloadExcel2">Exporta in Excel</button>
+
+                                            <input class="form-control" type="file" id="uploadExcel2" accept=".xlsx" />
+                                            <button class="btn btn-primary mb-3" id="processExcel2">Importa din Excel</button>
+                                        </div>
 
 
                                         <table class="display dataTable" id="multilevel-btn" role="grid" aria-describedby="multilevel-btn_info">
@@ -48,10 +98,11 @@
                                                     <th>Telefon</th>
                                                     <th>Email</th>
                                                     <th>Trimisa oferta</th>
+                                                    <th>Factura</th>
 
                                                 </tr>
                                             </thead>
-                                            <tbody id="crmTable1">
+                                            <tbody id="crmTable2">
 
                                             </tbody>
 
@@ -104,6 +155,8 @@
 
                         </div>
                     </div>
+
+
                 </div>
 
             </div>
