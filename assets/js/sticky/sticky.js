@@ -74,7 +74,7 @@ function newNote2(title, content) {
     $("#board").height($(document).height());
     $("#add_new").click(newNote);
     $('.remove').click(deleteNote);
-    newNote();
+    // newNote();
     return false;
 })(jQuery);
 
@@ -83,11 +83,6 @@ function newNote2(title, content) {
 // }
 
 
-function saveBoard() {
-    // localStorage.board = d.element('board').innerHTML;
-    console.log('save');
-
-}
 
 function saveCards() {
     localStorage.board = '';
