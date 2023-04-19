@@ -46,11 +46,11 @@
         });
     };
 })(jQuery);
-var noteTemp =  '<div class="note">'
+var noteTemp =  '<div class="note" ondragstart=`function(){$(this).css("z-index", ++noteZindex);}`>'
 +	'<a href="javascript:;" class="button remove">X</a>'
 + 	'<div class="note_cnt">'
-+		'<textarea class="title" placeholder="Enter note title"></textarea>'
-+ 		'<textarea class="cnt" placeholder="Enter note description here"></textarea>'
++		'<textarea class="title" placeholder="Enter note title" oninput="saveCards()"></textarea>'
++ 		'<textarea class="cnt" placeholder="Enter note description here" oninput="saveCards()"></textarea>'
 +	'</div> '
 +'</div>';
 var noteZindex = 1;
@@ -58,10 +58,7 @@ function deleteNote(){
     $(this).parent('.note').hide("puff",{ percent: 133}, 250);
 };
 function newNote() {
-    $(noteTemp).hide().appendTo("#board").show("fade", 300).draggable().on('dragstart',
-    function(){
-        $(this).zIndex(++noteZindex);
-    });
+    $(noteTemp).hide().appendTo("#board").show("fade", 300).draggable();
     $('.remove').click(deleteNote);
     $('textarea').autogrow();
     $('.note')
@@ -75,3 +72,31 @@ function newNote() {
     newNote();
     return false;
 })(jQuery);
+
+// if (localStorage.board) {
+//     d.element('board') = localStorage.board;
+// }
+
+
+function saveBoard() {
+    // localStorage.board = d.element('board').innerHTML;
+    console.log('save');
+
+}
+
+function saveCards() {
+    var cardsArray = [];
+  
+    $('.note').each(function() {
+      var cardTitle = $(this).find('.title').val();
+      var cardContent = $(this).find('.cnt').val();
+      var cardObject = {
+        title: cardTitle,
+        content: cardContent
+      };
+      cardsArray.push(cardObject);
+    });
+
+    localStorage.board = JSON.stringify(cardsArray);
+  }
+  
