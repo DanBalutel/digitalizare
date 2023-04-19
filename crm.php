@@ -70,7 +70,7 @@
                                 </div>
                             </div>
 
-                            <div class="card-body">
+                            <!-- <div class="card-body">
                                 <div class="dt-ext table-responsive">
                                     <div id="multilevel-btn_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
 
@@ -98,7 +98,7 @@
                                         </table>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
 
 
