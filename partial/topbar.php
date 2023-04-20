@@ -49,6 +49,7 @@
       </ul>
     </div>
 
+    <div id="modal-block" style = "position : absolute; top : 50%; left : 28.6%"></div>
 
     <div class="nav-right col-xxl-6 col-xl-5 col-md-6 col-7 pull-right right-header p-0 ms-auto">
       <div id="demoPlayDiv" class="demoPlay">
