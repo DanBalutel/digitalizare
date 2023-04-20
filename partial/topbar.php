@@ -17,7 +17,7 @@
       <div class="toggle-sidebar"><img class="img-fluid" src="/assets/images/logo/logo.png" width="50" alt=""></a></div>
     </div>
 
-    <div class="nav-left col-1 pull-right pr-3">
+    <div class="nav-left col-1 pull-right p-0">
       <ul class="nav-menus">
         <li class="onhover-dropdown text-center" style="font-size: 17px; color: #00CCFF; z-index: 3">
           Scan<br><i class="fa fa-camera" style="color: #00CCFF !important"></i>
