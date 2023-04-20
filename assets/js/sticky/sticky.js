@@ -51,7 +51,9 @@ var noteTemp = '<div class="note" ondragstart=`function(){$(this).css("z-index",
     + '</div>';
 var noteZindex = 1;
 function deleteNote() {
-    $(this).parent('.note').hide("puff", { percent: 133 }, 250);
+    $(this).parent('.note').hide("puff", { percent: 133 }, 250, function () {
+        $(this).remove();
+    });
     saveCards();
 };
 function newNote() {
@@ -91,17 +93,20 @@ function saveCards() {
     localStorage.board = '';
     var cardsArray = [];
 
-    $('.note').each(function () {
-        var cardTitle = $(this).find('.title').val();
-        var cardContent = $(this).find('.cnt').val();
-        var cardObject = {
-            title: cardTitle,
-            content: cardContent
-        };
-        cardsArray.push(cardObject);
-    });
+    setTimeout(function () {
+        $('.note').each(function () {
+            var cardTitle = $(this).find('.title').val();
+            var cardContent = $(this).find('.cnt').val();
+            var cardObject = {
+                title: cardTitle,
+                content: cardContent
+            };
+            cardsArray.push(cardObject);
+        });
 
-    localStorage.board = JSON.stringify(cardsArray);
+        localStorage.board = JSON.stringify(cardsArray);
+    }, 1000);
+
 }
 
 
