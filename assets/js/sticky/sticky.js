@@ -43,6 +43,7 @@
     };
 })(jQuery);
 var noteTemp = '<div class="note" ondragstart=`function(){$(this).css("z-index", ++noteZindex);}`>'
+    + '<input type="checkbox" class="remove">'
     + '<a href="javascript:;" class="button remove">X</a>'
     + '<div class="note_cnt">'
     + '<textarea class="title" placeholder="Enter note title" oninput="saveCards()"></textarea>'
@@ -51,10 +52,13 @@ var noteTemp = '<div class="note" ondragstart=`function(){$(this).css("z-index",
     + '</div>';
 var noteZindex = 1;
 function deleteNote() {
-    $(this).parent('.note').hide("puff", { percent: 133 }, 250, function () {
-        $(this).remove();
-    });
-    saveCards();
+    if (d.element('board')) {
+        $(this).parent('.note').hide("puff", { percent: 133 }, 250, function () {
+            $(this).remove();
+        });
+        saveCards();
+    }
+
 };
 function newNote() {
     $(noteTemp).hide().appendTo("#board").show("fade", 300).draggable();
@@ -72,8 +76,13 @@ function newNote2(title, content) {
     note.find('.remove').click(deleteNote);
     note.find('textarea').autogrow();
     saveCards()
+    clearStickyForm()
     return false;
 };
+function clearStickyForm() {
+    d.element('newNoteTitle').value = '';
+    d.element('newNoteText').value = '';
+}
 (function ($) {
     "use strict";
     $("#board").height($(document).height());
@@ -112,6 +121,9 @@ function saveCards() {
 
 
 const boardNotes = JSON.parse(localStorage.board);
-boardNotes.forEach((item) => {
-    newNote2(item.title, item.content)
-});
+if (d.element('board')) {
+    boardNotes.forEach((item) => {
+        newNote2(item.title, item.content)
+    });
+}
+

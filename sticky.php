@@ -26,12 +26,11 @@
 
                 <textarea class="form-control input-txt-bx mt-3" name="" id="newNoteText" cols="30" rows="10" placeholder="Textul ....."></textarea>
 
-
     
 
               </div>
               <div class="card-body">
-                <div class="sticky-note" id="board"></div>
+                <div class="sticky-note" id="board" data-custom-ID="board"></div>
               </div>
             </div>
           </div>
