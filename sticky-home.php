@@ -29,7 +29,7 @@
 
                                 <div class="row">
                                     <div class="col">
-                                        <h4>Azi</h4>
+                                        <h5>Azi</h5>
                                     </div>
                                 </div>
 
@@ -51,7 +51,7 @@
 
                                 <div class="row">
                                     <div class="col">
-                                        <h4>Alerte</h4>
+                                        <h5>Alerte</h5>
                                     </div>
                                 </div>
 
@@ -73,7 +73,7 @@
 
                                 <div class="row">
                                     <div class="col">
-                                        <h4>Toate</h4>
+                                        <h5>Toate</h5>
                                     </div>
                                 </div>
 
@@ -96,7 +96,7 @@
 
                                 <div class="row">
                                     <div class="col">
-                                        <h4>Importante</h4>
+                                        <h5>Importante</h5>
                                     </div>
                                 </div>
 
@@ -119,7 +119,7 @@
 
                                 <div class="row">
                                     <div class="col">
-                                        <h4>Completate</h4>
+                                        <h5>Completate</h5>
                                     </div>
                                 </div>
 
