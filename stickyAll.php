@@ -7,7 +7,7 @@
         display: block;
         position: relative;
         padding: 1em;
-        width: calc(25% - 30px);
+        width: calc(100% - 30px);
         min-height: 300px;
         margin: 15px;
         border-radius: 5px;
