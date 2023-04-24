@@ -19,10 +19,7 @@
           <div class="col-sm-12">
             <div class="card">
               <div class="card-header">
-                <a class="btn btn-primary pull-right m-l-10 mb-3" onclick="newNote2(d.element('newNoteTitle').value, d.element('newNoteText').value)">Adauga notita</a>
-
-
-                <input class="form-control input-txt-bx mb-3" type="text" id="newNoteTitle" placeholder="Titlul .....">
+                <a class="btn btn-primary pull-right m-l-10 mb-3" onclick="newNote2(d.element('newNoteText').value)">Adauga notita</a>
 
                 <textarea class="form-control input-txt-bx mt-3" name="" id="newNoteText" cols="30" rows="10" placeholder="Textul ....."></textarea>
 

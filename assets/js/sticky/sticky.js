@@ -47,14 +47,22 @@ var noteTemp = '<div class="note" ondragstart=`function(){$(this).css("z-index",
     + '<input type="checkbox" class="remove">'
     + '<a href="javascript:;" class="button remove">X</a>'
     + '<div class="note_cnt">'
-    + '<textarea class="title" placeholder="Enter note title" oninput="saveCards()"></textarea>'
     + '<textarea class="cnt" placeholder="Enter note description here" oninput="saveCards()"></textarea>'
+
+    + '<div class="d-flex pers">'
+    + '<img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+    + '<img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+    + '<img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+    + '<img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+    + '</div>'
+
     + '<div class="d-flex">'
     + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Azi</div>'
     + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Important</div>'
     + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Alerta</div>'
     + '<div onclick="assignNote(this)" class="cardWithGrayBorder m-1 f-s-10"><i class="icofont icofont-business-man"></i></div>'
     + '</div>'
+    
     + '</div> '
     + '</div>';
 var noteZindex = 1;
@@ -75,9 +83,18 @@ function newNote() {
     saveCards()
     return false;
 };
-function newNote2(title, content) {
+function newNote2(content) {
     var note = $(noteTemp);
-    note.find('.title').val(title);
+    note.find('.cnt').val(content);
+    note.hide().prependTo("#board").show("fade", 300).draggable();
+    note.find('.remove').click(deleteNote);
+    note.find('textarea').autogrow();
+    saveCards()
+    clearStickyForm()
+    return false;
+};
+function newNote2Render(content) {
+    var note = $(noteTemp);
     note.find('.cnt').val(content);
     note.hide().appendTo("#board").show("fade", 300).draggable();
     note.find('.remove').click(deleteNote);
@@ -87,7 +104,6 @@ function newNote2(title, content) {
     return false;
 };
 function clearStickyForm() {
-    d.element('newNoteTitle').value = '';
     d.element('newNoteText').value = '';
 }
 (function ($) {
@@ -111,11 +127,11 @@ function saveCards() {
 
     setTimeout(function () {
         $('.note').each(function () {
-            var cardTitle = $(this).find('.title').val();
             var cardContent = $(this).find('.cnt').val();
+            var cardPersons = $(this).find('.pers').html();
             var cardObject = {
-                title: cardTitle,
-                content: cardContent
+                content: cardContent,
+                persons: cardPersons
             };
             cardsArray.push(cardObject);
         });
@@ -130,7 +146,7 @@ function saveCards() {
 const boardNotes = JSON.parse(localStorage.board);
 if (d.element('board')) {
     boardNotes.forEach((item) => {
-        newNote2(item.title, item.content)
+        newNote2Render(item.content)
     });
 }
 
@@ -150,7 +166,7 @@ function popupElement(picture, element) {
                                 <img src="${picture}" width="50" height="50" class="rounded-circle shadow" alt="">
                                 <h5 class="mb-0 mt-5 f-s-15">Doina Lupu</h5>
                                 <p class="mb-3 f-s-15">Avocat</p>
-                                <div onclick="tempElement.remove();Swal.close()" class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15  f-s-10">Atribuie</a>
+                                <div onclick="Swal.close();addPerson(this,'${picture}');" class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15  f-s-10">Atribuie</a>
                                 </div>
                             </div>
                         </div>
@@ -191,3 +207,9 @@ function assignNote(element) {
     });
 }
 
+
+function addPerson(element,picture) {
+    console.log($(element).find('.pers').html());
+}
+
+tempElement.remove();
