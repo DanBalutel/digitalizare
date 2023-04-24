@@ -53,7 +53,7 @@ var noteTemp = '<div class="note" ondragstart=`function(){$(this).css("z-index",
     + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Azi</div>'
     + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Important</div>'
     + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Alerta</div>'
-    + '<div onclick="assignNote(this)" class="cardWithGrayBorder m-1 f-s-10">...</div>'
+    + '<div onclick="assignNote(this)" class="cardWithGrayBorder m-1 f-s-10"><i class="icofont icofont-business-man"></i></div>'
     + '</div>'
     + '</div> '
     + '</div>';
