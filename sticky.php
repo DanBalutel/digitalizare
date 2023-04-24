@@ -50,3 +50,4 @@
 <script src="assets/js/tooltip-init.js"></script>
 
 <?php include('partial/footer-end.php'); ?>
+

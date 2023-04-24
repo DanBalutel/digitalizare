@@ -48,6 +48,12 @@ var noteTemp = '<div class="note" ondragstart=`function(){$(this).css("z-index",
     + '<div class="note_cnt">'
     + '<textarea class="title" placeholder="Enter note title" oninput="saveCards()"></textarea>'
     + '<textarea class="cnt" placeholder="Enter note description here" oninput="saveCards()"></textarea>'
+    + '<div class="d-flex">'
+    + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Azi</div>'
+    + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Important</div>'
+    + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Alerta</div>'
+    + '<div onclick="assignNote(this)" class="cardWithGrayBorder m-1 f-s-10">...</div>'
+    + '</div>'
     + '</div> '
     + '</div>';
 var noteZindex = 1;
@@ -124,6 +130,64 @@ const boardNotes = JSON.parse(localStorage.board);
 if (d.element('board')) {
     boardNotes.forEach((item) => {
         newNote2(item.title, item.content)
+    });
+}
+
+
+function makeThemeBlue(element) {
+    element.classList.toggle('button-theme-blue');
+    saveCards();
+}
+
+let tempElement;
+function popupElement(picture, element) {
+    tempElement = element.parentElement.parentElement.parentElement;
+    const result = `
+    <div class="col-6 col-md-4">
+                    <div class="card radius-15">
+                        <div class="text-center">
+                            <div class="p-3">
+                                <img src="${picture}" width="50" height="50" class="rounded-circle shadow" alt="">
+                                <h5 class="mb-0 mt-5 f-s-15">Doina Lupu</h5>
+                                <p class="mb-3 f-s-15">Avocat</p>
+                                <div onclick="tempElement.remove();Swal.close()" class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15  f-s-10">Atribuie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    `
+    return result;
+}
+
+
+function assignNote(element) {
+    Swal.fire({
+        html: `
+            <div style="width: 100%" class="noteAssign row row-cols-1 row-cols-lg-3 row-cols-xl-4">
+            ${popupElement('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU',element)}
+            ${popupElement('https://www.avocatura.com/imagini/avocati/avocat--7686.jpg',element)}
+            ${popupElement('https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg',element)}
+            ${popupElement('https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg',element)}
+            
+            </div>
+        `,
+        width: "700px",
+        minHeight: "500px",
+        showConfirmButton: true,
+        backdrop: 'rgba(0,0,0,0.4)',
+        customClass: {
+            container: '.dark-mode-transparent moniModal1',
+            popup: 'dark-mode',
+            header: 'dark-mode-header',
+            title: 'dark-mode-header',
+            closeButton: 'dark-mode-close',
+            content: 'dark-mode',
+            confirmButton: 'dark-mode-confirm',
+            actions: 'dark-mode-actions'
+        }
+    }).then((result) => {
+        console.log(result);
     });
 }
 

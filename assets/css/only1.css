@@ -18,6 +18,16 @@
     font-size: 0.9rem;
 }
 
+.f-s-10 {
+    font-size: .6rem;
+}
+
+.button-theme-blue {
+    color: var(--theme-deafult) !important;
+    border-color: var(--theme-deafult) !important;
+    font-weight: 800 !important;
+}
+
 .m-r-1 {
     margin-right: 1rem;
 }
@@ -54,7 +64,9 @@ img.rounded-circle.shadow {
     cursor: pointer;
 }
 
-
+/* .noteAssign .card-body.text-center {
+    padding: 0px !important
+} */
 
 
 .badge-custom {
@@ -275,9 +287,11 @@ body {
     .uploadCrmFile {
         flex-direction: column;
     }
+
     .note {
         width: calc(100% - 30px);
     }
+
     .note-none {
         min-width: calc(100% - 30px);
     }
@@ -320,4 +334,3 @@ div#board {
     accent-color: #a19ca3 !important;
     filter: invert(79%) hue-rotate(289deg) brightness(1.7);
 }
-
