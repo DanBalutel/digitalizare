@@ -1,32 +1,6 @@
 <?php include('partial/header.php'); ?>
 <link rel="stylesheet" type="text/css" href="assets/css/vendors/sticky.css">
 <?php include('partial/header.php'); ?>
-<style>
-    .note-none {
-        float: left;
-        display: block;
-        position: relative;
-        padding: 1em;
-        width: calc(100% - 30px);
-        min-height: 300px;
-        margin: 15px;
-        border-radius: 5px;
-        background-color: rgba(115, 102, 255, 0.1);
-        transition: transform 0.15s;
-        z-index: 1;
-
-    }
-
-    .note-none textarea {
-        background-color: transparent;
-        border: none;
-        resize: vertical;
-        font-style: italic;
-        width: 100%;
-        padding: 5px;
-        color: rgba(255, 255, 255, 0.6);
-    }
-</style>
 <div class="page-wrapper compact-wrapper" id="pageWrapper">
     <!-- Page Header Start-->
     <?php include('partial/topbar.php'); ?>
