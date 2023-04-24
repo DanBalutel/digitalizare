@@ -1,4 +1,5 @@
 'use strict';
+let tempElement;
 (function ($) {
     $.fn.autogrow = function (options) {
         return this.filter('textarea').each(function () {
@@ -139,7 +140,6 @@ function makeThemeBlue(element) {
     saveCards();
 }
 
-let tempElement;
 function popupElement(picture, element) {
     tempElement = element.parentElement.parentElement.parentElement;
     const result = `
