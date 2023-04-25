@@ -19,11 +19,12 @@
           <div class="col-sm-12">
             <div class="card">
               <div class="card-header">
+                <a href="sticky-home.php" class="btn btn-primary pull-left m-l-10 mb-3">Meniu</a>
                 <a class="btn btn-primary pull-right m-l-10 mb-3" onclick="newNote2(d.element('newNoteText').value)">Adauga notita</a>
 
                 <textarea class="form-control input-txt-bx mt-3" name="" id="newNoteText" cols="30" rows="10" placeholder="Textul ....."></textarea>
 
-    
+
 
               </div>
               <div class="card-body">
@@ -31,6 +32,91 @@
               </div>
             </div>
           </div>
+
+          <!-- Card Joi -->
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+
+                <div class="sticky-note w-100" id="boardHard1" data-custom-ID="boardHard1">
+                  <h3>Joi - 20.04.2023</h3>
+                  <!-- hardcoded card -->
+                  <div class="noteCustom" ondragstart="`function(){$(this).css(&quot;z-index&quot;," ++notezindex);}`="" style=""><input type="checkbox" class="remove" data-bs-original-title="" title=""><a href="javascript:;" class="button remove" data-bs-original-title="" title="">X</a>
+                    <div class="note_cnt"><textarea class="cnt" placeholder="Enter note description here" oninput="saveCards()" style="height: 200px;"></textarea>
+                      <div class="d-flex pers"><img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""></div>
+                      <div class="d-flex">
+                        <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Azi</div>
+                        <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Important</div>
+                        <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Alerta</div>
+                        <div onclick="assignNote(this)" class="cardWithGrayBorder m-1 f-s-10"><i class="icofont icofont-business-man"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END hardcoded card -->
+
+                  <!-- hardcoded card -->
+                  <div class="noteCustom" ondragstart="`function(){$(this).css(&quot;z-index&quot;," ++notezindex);}`="" style=""><input type="checkbox" class="remove" data-bs-original-title="" title=""><a href="javascript:;" class="button remove" data-bs-original-title="" title="">X</a>
+                    <div class="note_cnt"><textarea class="cnt" placeholder="Enter note description here" oninput="saveCards()" style="height: 200px;"></textarea>
+                      <div class="d-flex pers"><img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""></div>
+                      <div class="d-flex">
+                        <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Azi</div>
+                        <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Important</div>
+                        <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Alerta</div>
+                        <div onclick="assignNote(this)" class="cardWithGrayBorder m-1 f-s-10"><i class="icofont icofont-business-man"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END hardcoded card -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END Card Joi -->
+
+
+          <!-- Card Vineri -->
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+
+                <div class="sticky-note w-100" id="boardHard1" data-custom-ID="boardHard1">
+                  <h3>Vineri - 21.04.2023</h3>
+                  <!-- hardcoded card -->
+                  <div class="noteCustom" ondragstart="`function(){$(this).css(&quot;z-index&quot;," ++notezindex);}`="" style=""><input type="checkbox" class="remove" data-bs-original-title="" title=""><a href="javascript:;" class="button remove" data-bs-original-title="" title="">X</a>
+                    <div class="note_cnt"><textarea class="cnt" placeholder="Enter note description here" oninput="saveCards()" style="height: 200px;"></textarea>
+                      <div class="d-flex pers"><img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""></div>
+                      <div class="d-flex">
+                        <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Azi</div>
+                        <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Important</div>
+                        <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Alerta</div>
+                        <div onclick="assignNote(this)" class="cardWithGrayBorder m-1 f-s-10"><i class="icofont icofont-business-man"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END hardcoded card -->
+
+                  <!-- hardcoded card -->
+                  <div class="noteCustom" ondragstart="`function(){$(this).css(&quot;z-index&quot;," ++notezindex);}`="" style=""><input type="checkbox" class="remove" data-bs-original-title="" title=""><a href="javascript:;" class="button remove" data-bs-original-title="" title="">X</a>
+                    <div class="note_cnt"><textarea class="cnt" placeholder="Enter note description here" oninput="saveCards()" style="height: 200px;"></textarea>
+                      <div class="d-flex pers"><img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""></div>
+                      <div class="d-flex">
+                        <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Azi</div>
+                        <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Important</div>
+                        <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Alerta</div>
+                        <div onclick="assignNote(this)" class="cardWithGrayBorder m-1 f-s-10"><i class="icofont icofont-business-man"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END hardcoded card -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END Card Vineri -->
+
+
+
+
         </div>
       </div>
       <!-- Container-fluid Ends-->
@@ -47,4 +133,3 @@
 <script src="assets/js/tooltip-init.js"></script>
 
 <?php include('partial/footer-end.php'); ?>
-

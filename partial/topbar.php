@@ -44,7 +44,7 @@
 
     <div class="nav-left col-1 pull-right pl-3">
       <ul class="nav-menus">
-        <li class="text-center"><a href="sticky-home.php"><img src="assets/images/only1/notite.png" style="max-width: 2rem; max-height: 2rem;" alt=""></a></li>
+        <li class="text-center"><a href="sticky.php"><img src="assets/images/only1/notite.png" style="max-width: 2rem; max-height: 2rem;" alt=""></a></li>
 
       </ul>
     </div>

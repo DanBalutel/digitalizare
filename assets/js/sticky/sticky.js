@@ -1,3 +1,5 @@
+document.querySelector('.dark-only').classList.toggle('dark-only');
+
 'use strict';
 let tempElement;
 (function ($) {
@@ -51,9 +53,9 @@ var noteTemp = '<div class="note" ondragstart=`function(){$(this).css("z-index",
 
     + '<div class="d-flex pers">'
     + '<img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
-    + '<img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
-    + '<img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
-    + '<img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+    + '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+    + '<img src="https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+    + '<img src="https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
     + '</div>'
 
     + '<div class="d-flex">'
@@ -62,7 +64,7 @@ var noteTemp = '<div class="note" ondragstart=`function(){$(this).css("z-index",
     + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Alerta</div>'
     + '<div onclick="assignNote(this)" class="cardWithGrayBorder m-1 f-s-10"><i class="icofont icofont-business-man"></i></div>'
     + '</div>'
-    
+
     + '</div> '
     + '</div>';
 var noteZindex = 1;
@@ -159,19 +161,19 @@ function makeThemeBlue(element) {
 function popupElement(picture, element) {
     tempElement = element.parentElement.parentElement.parentElement;
     const result = `
-    <div class="col-6 col-md-4">
-                    <div class="card radius-15">
-                        <div class="text-center">
-                            <div class="p-3">
-                                <img src="${picture}" width="50" height="50" class="rounded-circle shadow" alt="">
-                                <h5 class="mb-0 mt-5 f-s-15">Doina Lupu</h5>
-                                <p class="mb-3 f-s-15">Avocat</p>
-                                <div onclick="Swal.close();addPerson(this,'${picture}');" class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15  f-s-10">Atribuie</a>
-                                </div>
-                            </div>
-                        </div>
+    <div class="col-5 col-md-4 m-2">
+    <div class="card radius-15">
+        <div class="text-center">
+            <div class="p-3">
+                <img src="${picture}" width="50" height="50" class="rounded-circle shadow" alt="">
+                    <h5 class="mb-0 mt-5 f-s-15">Doina Lupu</h5>
+                    <p class="mb-3 f-s-15">Avocat</p>
+                    <input type="checkbox" class="remove">
                     </div>
-                </div>
+            </div>
+        </div>
+    </div>
+</div>
     `
     return result;
 }
@@ -180,13 +182,11 @@ function popupElement(picture, element) {
 function assignNote(element) {
     Swal.fire({
         html: `
-            <div style="width: 100%" class="noteAssign row row-cols-1 row-cols-lg-3 row-cols-xl-4">
-            ${popupElement('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU',element)}
-            ${popupElement('https://www.avocatura.com/imagini/avocati/avocat--7686.jpg',element)}
-            ${popupElement('https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg',element)}
-            ${popupElement('https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg',element)}
-            
-            </div>
+            ${popupElement('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU', element)}
+            ${popupElement('https://www.avocatura.com/imagini/avocati/avocat--7686.jpg', element)}
+            ${popupElement('https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg', element)}
+            ${popupElement('https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg', element)}
+            <div onclick="Swal.close();" class="w-100 mt-1"> <a href="#" class="btn btn-outline-primary radius-15  f-s-10">Atribuie</a> </div>
         `,
         width: "700px",
         minHeight: "500px",
@@ -194,6 +194,7 @@ function assignNote(element) {
         backdrop: 'rgba(0,0,0,0.4)',
         customClass: {
             container: '.dark-mode-transparent moniModal1',
+            htmlContainer: 'd-flex flex-wrap',
             popup: 'dark-mode',
             header: 'dark-mode-header',
             title: 'dark-mode-header',
@@ -208,8 +209,9 @@ function assignNote(element) {
 }
 
 
-function addPerson(element,picture) {
+function addPerson(element, picture) {
     console.log($(element).find('.pers').html());
 }
 
 tempElement.remove();
+

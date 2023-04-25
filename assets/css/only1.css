@@ -64,10 +64,9 @@ img.rounded-circle.shadow {
     cursor: pointer;
 }
 
-/* .noteAssign .card-body.text-center {
-    padding: 0px !important
-} */
-
+#newNoteText {
+    font-size: 1.3rem;
+}
 
 .badge-custom {
     background: #a97500
@@ -292,6 +291,10 @@ body {
         width: calc(100% - 30px);
     }
 
+    .noteCustom {
+        width: 100%;
+    }
+
     .note-none {
         min-width: calc(100% - 30px);
     }
@@ -330,7 +333,7 @@ div#board {
     height: auto !important;
 }
 
-.note>input[type="checkbox"] {
+body.dark-only .note>input[type="checkbox"], body.dark-only .noteCustom>input[type="checkbox"] {
     accent-color: #a19ca3 !important;
     filter: invert(79%) hue-rotate(289deg) brightness(1.7);
 }
