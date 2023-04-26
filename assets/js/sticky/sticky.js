@@ -49,7 +49,7 @@ var noteTemp = '<div class="note" ondragstart=`function(){$(this).css("z-index",
     + '<input type="checkbox" class="remove">'
     + '<a href="javascript:;" class="button remove">X</a>'
     + '<div class="note_cnt">'
-    + '<textarea class="cnt" placeholder="Enter note description here" oninput="saveCards()"></textarea>'
+    + '<textarea class="cnt" rows="10" placeholder="Scrie textul aici" oninput="saveCards()"></textarea>'
 
     + '<div class="d-flex pers">'
     + '<img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
@@ -178,21 +178,10 @@ function popupElement(picture, element) {
     return result;
 }
 
-
-function assignNote(element) {
-    Swal.fire({
-        html: `
-            ${popupElement('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU', element)}
-            ${popupElement('https://www.avocatura.com/imagini/avocati/avocat--7686.jpg', element)}
-            ${popupElement('https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg', element)}
-            ${popupElement('https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg', element)}
-            <div onclick="Swal.close();" class="w-100 mt-1"> <a href="#" class="btn btn-outline-primary radius-15  f-s-10">Atribuie</a> </div>
-        `,
-        width: "700px",
-        minHeight: "500px",
-        showConfirmButton: true,
-        backdrop: 'rgba(0,0,0,0.4)',
-        customClass: {
+function retCustomClass() {
+    const darkClass = document.getElementsByClassName('dark-only');
+    if (darkClass[0]) {
+        return {
             container: '.dark-mode-transparent moniModal1',
             htmlContainer: 'd-flex flex-wrap',
             popup: 'dark-mode',
@@ -200,9 +189,37 @@ function assignNote(element) {
             title: 'dark-mode-header',
             closeButton: 'dark-mode-close',
             content: 'dark-mode',
-            confirmButton: 'dark-mode-confirm',
             actions: 'dark-mode-actions'
         }
+    } else {
+        return {
+            container: '.dark-mode-transparent moniModal1',
+            htmlContainer: 'd-flex flex-wrap',
+            header: 'dark-mode-header',
+            title: 'dark-mode-header'
+        }
+    }
+
+}
+
+function assignNote(element) {
+
+    console.log(retCustomClass());
+
+    Swal.fire({
+        html: `
+            ${popupElement('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU', element)}
+            ${popupElement('https://www.avocatura.com/imagini/avocati/avocat--7686.jpg', element)}
+            ${popupElement('https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg', element)}
+            ${popupElement('https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg', element)}
+        `,
+        width: "700px",
+        minHeight: "1200px",
+        showConfirmButton: true,
+        confirmButtonText: 'Atribuie',
+        confirmButtonColor: '#7066e0 !important',
+        backdrop: 'rgba(0,0,0,0.4)',
+        customClass: retCustomClass(),
     }).then((result) => {
         console.log(result);
     });

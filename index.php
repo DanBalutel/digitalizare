@@ -10,7 +10,7 @@
     <!-- Page Sidebar Start-->
     <?php include('partial/sidebar.php') ?>
     <!-- Page Sidebar Ends-->
-    <div class="page-body">
+    <div class="page-body index">
 
       <?php
       $title = 'Dashboard';
