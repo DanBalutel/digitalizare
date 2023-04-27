@@ -234,6 +234,10 @@
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt="">
                      <span>Youtube</span></a>
                </li>
+               <li class="sidebar-list"><a class="sidebar-link" href="zoom.php">
+                     <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="assets/images/only1/zoom.png" alt="">
+                     <span>Zoom</span></a>
+               </li>
                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="#">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/saas.png" alt="">
