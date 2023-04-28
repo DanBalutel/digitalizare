@@ -519,7 +519,7 @@
               <div class="card radius-15">
                 <div class="card-body text-center">
                   <div class="p-4 border radius-15">
-                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="assets/images/custom-persons/5.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h6 class="mt-3">Pagina: ERP</h6>
                     <h5 class="mt-2 mb-2"> Alexandru Irimescu <br>
                       <span class="blink">🟢</span> Lucreaza in ERP
@@ -565,7 +565,7 @@
               <div class="card radius-15">
                 <div class="card-body text-center">
                   <div class="p-4 border radius-15">
-                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="assets/images/custom-persons/3.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mt-2 mb-2">Alexandra G. <br>
                       <span class="blink">🟢</span> Lucreaza in Social Media
                     </h5>
@@ -601,7 +601,7 @@
               <div class="card radius-15">
                 <div class="card-body text-center">
                   <div class="p-4 border radius-15">
-                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.27.518-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="assets/images/custom-persons/4.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mt-2 mb-2">🔴 Stefania H.</h5>
 
 
@@ -643,7 +643,7 @@
               <div class="card radius-15">
                 <div class="card-body text-center">
                   <div class="p-4 border radius-15">
-                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.314-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="assets/images/custom-persons/8.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mt-2 mb-2"> Andra B. <br>
                       <span class="blink">🟢</span> Lucreaza in Contabilitate
                     </h5>
@@ -681,7 +681,7 @@
               <div class="card radius-15">
                 <div class="card-body text-center">
                   <div class="p-4 border radius-15">
-                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.312-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="assets/images/custom-persons/10.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mt-2 mb-2">🔴 Daniela Irimescu</h5>
 
                     <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
@@ -722,7 +722,7 @@
               <div class="card radius-15">
                 <div class="card-body text-center">
                   <div class="p-4 border radius-15">
-                    <img src="https://francizare.ro/storage/imagini/dan.webp" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="assets/images/custom-persons/2.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mt-2 mb-2">🔴 Dan Balutel</h5>
 
                     <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
@@ -765,7 +765,7 @@
               <div class="card radius-15">
                 <div class="card-body text-center">
                   <div class="p-4 border radius-15">
-                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.31-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="assets/images/custom-persons/12.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mt-2 mb-2">Iordache Mihaela <br>
                       <span class="blink">🟢</span> Lucreaza in Contabilitate
                     </h5>
@@ -801,7 +801,7 @@
               <div class="card radius-15">
                 <div class="card-body text-center">
                   <div class="p-4 border radius-15">
-                    <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                    <img src="assets/images/custom-persons/9.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                     <h5 class="mt-2 mb-2">Ionut Rusu <br>
                       <span class="blink">🟢</span> Lucreaza in IOT
                     </h5>
