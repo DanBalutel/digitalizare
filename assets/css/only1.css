@@ -298,6 +298,10 @@ body {
     .note-none {
         min-width: calc(100% - 30px);
     }
+
+    footer.footer {
+        margin: 0;
+    }
 }
 
 .note-none {
@@ -333,7 +337,8 @@ div#board {
     height: auto !important;
 }
 
-body.dark-only .note>input[type="checkbox"], body.dark-only .noteCustom>input[type="checkbox"] {
+body.dark-only .note>input[type="checkbox"],
+body.dark-only .noteCustom>input[type="checkbox"] {
     accent-color: #a19ca3 !important;
     filter: invert(79%) hue-rotate(289deg) brightness(1.7);
 }
