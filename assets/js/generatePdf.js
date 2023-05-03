@@ -3,7 +3,7 @@ function generatePdf(fileName, fieldsObj) {
     // loading
     renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
 
-    fetch('http://api.raport.ai:3003/generate-pdf', {
+    fetch('http://api.aipro.ro:3003/generate-pdf', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

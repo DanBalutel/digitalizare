@@ -1169,7 +1169,7 @@
 <?php include('partial/scripts.php') ?>
 <!-- Plugins JS start-->
 <script defer>
-  const eur = 'https://api.raport.ai/exchange/eur';
+  const eur = 'https://api.aipro.ro/exchange/eur';
 
   fetch(eur)
     .then(response => response.json())
@@ -1182,7 +1182,7 @@
     })
     .catch(error => console.error('Eroare:', error));
 
-  const usd = 'https://api.raport.ai/exchange/usd';
+  const usd = 'https://api.aipro.ro/exchange/usd';
 
   fetch(usd)
     .then(response => response.json())
@@ -1195,7 +1195,7 @@
       }
     })
     .catch(error => console.error('Eroare:', error));
-  const GBP = 'https://api.raport.ai/exchange/gbp';
+  const GBP = 'https://api.aipro.ro/exchange/gbp';
 
   fetch(GBP)
     .then(response => response.json())
@@ -1208,7 +1208,7 @@
       }
     })
     .catch(error => console.error('Eroare:', error));
-  const CHF = 'https://api.raport.ai/exchange/chf';
+  const CHF = 'https://api.aipro.ro/exchange/chf';
 
   fetch(CHF)
     .then(response => response.json())

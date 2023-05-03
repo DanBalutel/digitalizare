@@ -16,7 +16,7 @@ if (localStorage.chatMoni) {
 // acces API with question
 function renderAnswer2(question, conversationId, messageId) {
 
-    fetch('http://api.raport.ai/vgpt', {
+    fetch('http://api.aipro.ro/vgpt', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
