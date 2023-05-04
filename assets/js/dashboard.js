@@ -143,7 +143,7 @@ function fetchAuth(cuiValue) {
 function getTermeneData(cuiValue) {
 
     // (A) URL & CREDENTIALS
-    var url = `https://api.aipro.ro:3001/cui?cui=${cuiValue}`
+    var url = `https://api.aipro.ro/cui?cui=${cuiValue}`
     // (B) FETCH WITH HTTP AUTH
 
     fetch(url)
