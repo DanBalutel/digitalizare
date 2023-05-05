@@ -88,7 +88,7 @@ function fetchAuth(cuiValue) {
     renderLoadingModal('Datele se incarca...');
 
     // (A) URL & CREDENTIALS
-    var url = `https://api.aipro.ro/cui?cui=${cuiValue}`
+    var url = `https://api.aipro.ro:3004/cui?cui=${cuiValue}`
     // (B) FETCH WITH HTTP AUTH
 
     // for testing with new API from termene TEMP
