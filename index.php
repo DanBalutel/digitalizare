@@ -1169,7 +1169,7 @@
 <?php include('partial/scripts.php') ?>
 <!-- Plugins JS start-->
 <script defer>
-  const eur = 'https://api.aipro.ro/exchange/eur';
+  const eur = 'https://api.aipro.ro:3004/exchange/eur';
 
   fetch(eur)
     .then(response => response.json())
@@ -1182,7 +1182,7 @@
     })
     .catch(error => console.error('Eroare:', error));
 
-  const usd = 'https://api.aipro.ro/exchange/usd';
+  const usd = 'https://api.aipro.ro:3004/exchange/usd';
 
   fetch(usd)
     .then(response => response.json())
@@ -1195,7 +1195,7 @@
       }
     })
     .catch(error => console.error('Eroare:', error));
-  const GBP = 'https://api.aipro.ro/exchange/gbp';
+  const GBP = 'https://api.aipro.ro:3004/exchange/gbp';
 
   fetch(GBP)
     .then(response => response.json())
@@ -1208,7 +1208,7 @@
       }
     })
     .catch(error => console.error('Eroare:', error));
-  const CHF = 'https://api.aipro.ro/exchange/chf';
+  const CHF = 'https://api.aipro.ro:3004/exchange/chf';
 
   fetch(CHF)
     .then(response => response.json())
