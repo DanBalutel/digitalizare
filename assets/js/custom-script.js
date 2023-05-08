@@ -748,7 +748,6 @@ function logOut() {
     console.log('removed');
 }
 
-console.log('test');
 
 
 d.element('profileImg');
@@ -801,8 +800,6 @@ function showTopBarMony() {
         moniVideoSteps = 'z4OL-mVRcd0';
         showMony = true;
     }
-
-    console.log(`mony page: ${showMony}`)
 
     // mony video trigger
     const moniStepsJson1 = {

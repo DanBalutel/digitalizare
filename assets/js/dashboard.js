@@ -115,7 +115,6 @@ function fetchAuth(cuiValue) {
             }
             window.localStorage.setItem('dataObj', dataJson);
             dataObj = JSON.parse(dataJson);
-            console.log('test nou');
 
             document.addEventListener("DOMContentLoaded", function () {
                 console.log('loaded!');
@@ -157,7 +156,6 @@ function getTermeneData(cuiValue) {
             newdataJson = response;
             window.localStorage.setItem('newDataObj', newdataJson);
             newdataObj = JSON.parse(newdataJson);
-            console.log(newdataObj);
 
             document.addEventListener("DOMContentLoaded", function () {
                 console.log('loaded!');

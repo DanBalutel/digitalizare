@@ -1222,7 +1222,6 @@
           month: 'short',
           year: 'numeric'
         });
-        console.log(data)
         document.getElementById('curs-data').innerText = formattedDate
 
 
