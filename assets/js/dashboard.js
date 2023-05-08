@@ -419,10 +419,8 @@ function populatePage() {
             // };
 
             const minLen = Math.min(chartDataCA.length, chartDataPP.length, chartDataDa.length);
-            console.log(`lungimea minima e de: ${minLen}`);
 
             for (i = 0; i < minLen; i++) {
-                console.log(i);
                 const temp = {
                     x: `${chartDataCA[i].an}`,
                     y: parseInt(chartDataCA[i].y),
@@ -531,8 +529,6 @@ function populatePage() {
 
         // randuri tabel asociati conexiuni
         for (let i in newdataObj.conexiuni_asociati) {
-            console.log(newdataObj.conexiuni_asociati[i]);
-
             const nume = newdataObj.conexiuni_asociati[i].nume;
             let functie = '';
             let procentaj = '';
