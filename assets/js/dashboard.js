@@ -205,39 +205,40 @@ function populatePage() {
     try {
 
         const loggedName = document.getElementById('loggedName');
-        loggedName.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
+        loggedName.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;  //DONE
         const loggedPosition = document.getElementById('loggedPosition');
-        loggedPosition.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].functie;
+        loggedPosition.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].functie;  //DONE
 
         const loggedNameProfile = document.getElementById('loggedNameProfile');
         if (loggedNameProfile) {
 
-            loggedNameProfile.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
+            loggedNameProfile.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;  //DONE
             const loggedPositionProfile = document.getElementById('loggedPositionProfile');
             loggedPositionProfile.innerHTML = 'Administrator';
 
             const adresa = document.getElementById('adresa');
-            adresa.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].adresa;
-            document.getElementById('numeBuletin').value = newdataObj.administratori.persoane_fizice[administratorId].nume;
+            adresa.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].adresa;  //DONE
+            document.getElementById('numeBuletin').value = newdataObj.administratori.persoane_fizice[administratorId].nume;  //DONE
 
             const dataNastere = document.getElementById('dataNastere');
-            dataNastere.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].data_nastere;
+            dataNastere.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].data_nastere;  //DONE
         }
         if (document.getElementById('cui_file')) {
-            document.getElementById('cui_file').value = newdataObj.firma.cui;
+            document.getElementById('cui_file').value = newdataObj.firma.cui;  //DONE
         }
 
         // temp we render here all DOOM elements
         const name = document.getElementById('name');
-        d.element('dash').innerHTML = newdataObj.firma.nume_mfinante;
+        d.element('dash').innerHTML = newdataObj.firma.nume_mfinante;  //DONE
         // d.element('nameAdmin').innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
         if (name) {
-            name.innerHTML = `${newdataObj.firma.nume_mfinante} - Administrator: <br><span style="color: #00CCFF">${newdataObj.administratori.persoane_fizice[administratorId].nume}</span>`;
+            name.innerHTML = `${newdataObj.firma.nume_mfinante} - Administrator: <br><span style="color: #00CCFF">${newdataObj.administratori.persoane_fizice[administratorId].nume}</span>`;  //DONE
             const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
-            chartSituatieFianciara.innerHTML = `Situatie finaciara ${newdataObj.firma.nume_mfinante}`;
+            chartSituatieFianciara.innerHTML = `Situatie finaciara ${newdataObj.firma.nume_mfinante}`;  //DONE
 
             const blockCA = document.getElementById('cifra-de-afaceri');
-            blockCA.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_cifra_de_afaceri.data.pop().y).toLocaleString('en-US');;
+            // blockCA.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_cifra_de_afaceri.data.pop().y).toLocaleString('en-US');;
+            blockCA.innerHTML = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.cifra_de_afaceri_neta.valoare).toLocaleString('en-US');;
 
             const blockProfit = document.getElementById('profit-actual');
             blockProfit.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_profit_pierdere.data.pop().y).toLocaleString('en-US');
@@ -528,20 +529,20 @@ function populatePage() {
         }
 
         // randuri tabel asociati conexiuni
-        for (let i in newdataObj.conexiuni_asociati) {
-            const nume = newdataObj.conexiuni_asociati[i].nume;
+        for (let i in newdataObj.conexiuni_asociati) {  //DONE
+            const nume = newdataObj.conexiuni_asociati[i].nume;  //DONE
             let functie = '';
             let procentaj = '';
             let firma = '';
             let judet = '';
             let localitate = '';
 
-            for (let j in newdataObj.conexiuni_asociati[i].legaturi) {
-                functie += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].functie + '</span><br>';
-                procentaj += '<span style="color: #2F2F3B; border: none;background-color: #57e546;" class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '</span><br>';
-                firma += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].firma + '</span><br>';
-                judet += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].judet + '</span><br>';
-                localitate += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '</span><br>';
+            for (let j in newdataObj.conexiuni_asociati[i].legaturi) {  //DONE
+                functie += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].functie + '</span><br>';  //DONE
+                procentaj += '<span style="color: #2F2F3B; border: none;background-color: #57e546;" class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '</span><br>';  //DONE
+                firma += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].firma + '</span><br>';  //DONE
+                judet += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].judet + '</span><br>';  //DONE
+                localitate += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '</span><br>';  //DONE
 
             }
 
@@ -591,7 +592,7 @@ function populatePage() {
             d.createElement(jsonData, d.e.dosareFirma);
         }
 
-        const dosare = newdataObj.dosare.rezultate
+        const dosare = newdataObj.dosare.rezultate;  //DONE
 
         // randuri tabel asociati conexiuni
         for (let i in dosare) {
