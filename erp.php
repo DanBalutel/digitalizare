@@ -19,7 +19,7 @@
             <?php
             $title = 'Dashboard';
             include('partial/breadcrumb.php')
-                ?>
+            ?>
 
             <!-- Container-fluid starts-->
 
@@ -27,11 +27,12 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="row d-flex justify-content-center">  
-                        
-                        <h2 class="mb-2 mt-2 text-center text-uppercase" style="color: #00CCFF">Organigrama Live</h2>    
-                        <hr>               
-                            <div class="col-md-3">       
+
+
+                        <div class="row d-flex justify-content-center">
+                            <h2 class="mb-2 mt-2 text-center text-uppercase" style="color: #00CCFF">Organigrama Live</h2>
+                            <hr>
+                            <div class="col-md-3">
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         Administrator
@@ -40,35 +41,36 @@
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
-                                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.14.3812-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                            <img src="assets/images/custom-persons/5.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h6 class="mt-3">Pagina: ERP</h6>
                                             <h5 class="mt-2 mb-2"> Alexandru Irimescu <br>
-                                            <span class="blink">🟢</span> Lucreaza in ERP</h5>
-                                            
+                                                <span class="blink">🟢</span> Lucreaza in ERP
+                                            </h5>
+
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-phone f-24"></i><br>
-                                                </a>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-phone f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-paper-plane f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-video-camera f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-inbox f-24"></i><br>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-paper-plane f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-video-camera f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-inbox f-24"></i><br>
-                                                </a>
-                                                </div>
-                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -76,7 +78,7 @@
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center">
-                            <div class="col-md-3">                            
+                            <div class="col-md-3">
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         Echipa Vanzari
@@ -85,34 +87,35 @@
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
-                                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                            <img src="assets/images/custom-persons/3.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h5 class="mt-2 mb-2">Alexandra G. <br>
-                                            <span class="blink">🟢</span> Lucreaza in Social Media</h5>
-                                            
+                                                <span class="blink">🟢</span> Lucreaza in Social Media
+                                            </h5>
+
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-phone f-24"></i><br>
-                                                </a>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-phone f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-paper-plane f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-video-camera f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-inbox f-24"></i><br>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-paper-plane f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-video-camera f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-inbox f-24"></i><br>
-                                                </a>
-                                                </div>
-                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -120,40 +123,40 @@
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
-                                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.27.518-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">                  
+                                            <img src="assets/images/custom-persons/4.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h5 class="mt-2 mb-2">🔴 Stefania H.</h5>
 
-                                            
+
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-phone f-24"></i><br>
-                                                </a>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-phone f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-paper-plane f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-video-camera f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-inbox f-24"></i><br>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-paper-plane f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-video-camera f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-inbox f-24"></i><br>
-                                                </a>
-                                                </div>
-                                            </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">                            
+                            <div class="col-md-3">
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         Finanate
@@ -162,76 +165,77 @@
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
-                                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.314-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                            <img src="assets/images/custom-persons/8.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h5 class="mt-2 mb-2"> Andra B. <br>
-                                            <span class="blink">🟢</span> Lucreaza in Contabilitate</h5>
-                                            
+                                                <span class="blink">🟢</span> Lucreaza in Contabilitate
+                                            </h5>
+
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-phone f-24"></i><br>
-                                                </a>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-phone f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-paper-plane f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-video-camera f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-inbox f-24"></i><br>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-paper-plane f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-video-camera f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-inbox f-24"></i><br>
-                                                </a>
-                                                </div>
-                                            </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                
+
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
-                                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.312-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                            <img src="assets/images/custom-persons/10.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h5 class="mt-2 mb-2">🔴 Daniela Irimescu</h5>
-                                            
+
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-phone f-24"></i><br>
-                                                </a>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-phone f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-paper-plane f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-video-camera f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-inbox f-24"></i><br>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-paper-plane f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-video-camera f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-inbox f-24"></i><br>
-                                                </a>
-                                                </div>
-                                            </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">                            
+                            <div class="col-md-3">
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         IT
@@ -240,41 +244,41 @@
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
-                                            <img src="https://francizare.ro/storage/imagini/dan.webp" width="110" height="110" class="rounded-circle shadow" alt="">
+                                            <img src="assets/images/custom-persons/2.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h5 class="mt-2 mb-2">🔴 Dan Balutel</h5>
-                                            
+
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-phone f-24"></i><br>
-                                                </a>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-phone f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-paper-plane f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-video-camera f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-inbox f-24"></i><br>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-paper-plane f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-video-camera f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-inbox f-24"></i><br>
-                                                </a>
-                                                </div>
-                                            </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                
+
                             </div>
-                            <div class="col-md-3">                            
+                            <div class="col-md-3">
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         Administrare
@@ -283,34 +287,35 @@
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
-                                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.31-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                            <img src="assets/images/custom-persons/12.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h5 class="mt-2 mb-2">Iordache Mihaela <br>
-                                            <span class="blink">🟢</span> Lucreaza in Contabilitate</h5>
-                                            
+                                                <span class="blink">🟢</span> Lucreaza in Contabilitate
+                                            </h5>
+
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-phone f-24"></i><br>
-                                                </a>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-phone f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-paper-plane f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-video-camera f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-inbox f-24"></i><br>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-paper-plane f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-video-camera f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-inbox f-24"></i><br>
-                                                </a>
-                                                </div>
-                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -318,40 +323,46 @@
                                 <div class="card radius-15">
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
-                                            <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.315-300x300.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                            <h5 class="mt-2 mb-2">Ionut Rusu  <br>
-                                            <span class="blink">🟢</span> Lucreaza in IOT</h5>
-                                            
+                                            <img src="assets/images/custom-persons/9.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                            <h5 class="mt-2 mb-2">Ionut Rusu <br>
+                                                <span class="blink">🟢</span> Lucreaza in IOT
+                                            </h5>
+
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-phone f-24"></i><br>
-                                                </a>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-phone f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-paper-plane f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-video-camera f-24"></i><br>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <i class="fa fa-inbox f-24"></i><br>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-paper-plane f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-video-camera f-24"></i><br>
-                                                </a>
-                                                </div>
-                                                <div class="col-3">
-                                                <a href="#">
-                                                    <i class="fa fa-inbox f-24"></i><br>
-                                                </a>
-                                                </div>
-                                            </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
+
+
+
                     </div>
                     <br>
                     <div class="col-md-6 col-xs-12" id="wrap">
@@ -396,16 +407,10 @@
                                                     <td>Birou</td>
                                                     <td>12.00 15.02.2023</td>
                                                     <td>
-                                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                                            data-bs-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">Seteaza</button>
+                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                         <div class="dropdown-menu" style="">
-                                                            <h6 class="dropdown-header">Dropdown header</h6><a
-                                                                class="dropdown-item" href="?test=1">Action</a><a
-                                                                class="dropdown-item" href="#">Another action</a><a
-                                                                class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                                href="#">Separated link</a>
+                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -417,16 +422,10 @@
                                                     <td>Birou</td>
                                                     <td>13.00 15.02.2023</td>
                                                     <td>
-                                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                                            data-bs-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">Seteaza</button>
+                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                         <div class="dropdown-menu" style="">
-                                                            <h6 class="dropdown-header">Dropdown header</h6><a
-                                                                class="dropdown-item" href="?test=1">Action</a><a
-                                                                class="dropdown-item" href="#">Another action</a><a
-                                                                class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                                href="#">Separated link</a>
+                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -440,16 +439,10 @@
                                                     <td>Zoom</td>
                                                     <td>16.00 15.02.2023</td>
                                                     <td>
-                                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                                            data-bs-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">Seteaza</button>
+                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                         <div class="dropdown-menu" style="">
-                                                            <h6 class="dropdown-header">Dropdown header</h6><a
-                                                                class="dropdown-item" href="?test=1">Action</a><a
-                                                                class="dropdown-item" href="#">Another action</a><a
-                                                                class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                                href="#">Separated link</a>
+                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -462,16 +455,10 @@
                                                     <td>Zoom</td>
                                                     <td>16.30 15.02.2023</td>
                                                     <td>
-                                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                                            data-bs-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">Seteaza</button>
+                                                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                         <div class="dropdown-menu" style="">
-                                                            <h6 class="dropdown-header">Dropdown header</h6><a
-                                                                class="dropdown-item" href="?test=1">Action</a><a
-                                                                class="dropdown-item" href="#">Another action</a><a
-                                                                class="dropdown-item" href="#">Something else here</a>
-                                                            <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                                href="#">Separated link</a>
+                                                            <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -500,20 +487,17 @@
                                         <br>
                                         <p class="f-m-light mt-1">Vanzari 2023 1M (euro)</p>
                                         <div class="progress lg-progress-bar">
-                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                                         </div>
                                         <br>
                                         <p class="f-m-light mt-1">Autorizari</p>
                                         <div class="progress lg-progress-bar">
-                                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%"
-                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                                         </div>
                                         <br>
                                         <p class="f-m-light mt-1">Cursuri IT</p>
                                         <div class="progress lg-progress-bar">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%"
-                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                                         </div>
 
                                     </div>
@@ -551,18 +535,12 @@
 
                                             <tr>
                                                 <th scope="row">1</th>
-                                                <td> <img src="assets/images/only1/bmw_car.png" style="max-width: 5rem;padding-right: 2rem;" alt="">  Automobil BMW X3</td>
+                                                <td> <img src="assets/images/only1/bmw_car.png" style="max-width: 5rem;padding-right: 2rem;" alt=""> Automobil BMW X3</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -572,16 +550,10 @@
                                                 <th scope="row">2</th>
                                                 <td><img src="assets/images/only1/laptop.png" style="max-width: 5rem;padding-right: 2rem;" alt="">Calculator personal Lenovo V15</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -593,16 +565,10 @@
                                                 <th scope="row">3</th>
                                                 <td><img src="assets/images/only1/echipamente.png" style="max-width: 5rem;padding-right: 2rem;" alt="">Echipamente</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -648,16 +614,10 @@
                                                 <td><img src="assets/images/only1/scaun.png" style="max-width: 5rem;padding-right: 2rem;" alt="">Scaun</td>
                                                 <td>12</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -668,16 +628,10 @@
                                                 <td><img src="assets/images/only1/birou.png" style="max-width: 5rem;padding-right: 2rem;" alt="">Birou</td>
                                                 <td>3</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -726,16 +680,10 @@
                                                 <td><img src="assets/images/only1/hartie.png" style="max-width: 5rem;padding-right: 2rem;" alt="">Hartie</td>
                                                 <td>30 pach.</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -746,16 +694,10 @@
                                                 <td><img src="assets/images/only1/apa.png" style="max-width: 5rem;padding-right: 2rem;" alt="">Apa</td>
                                                 <td>30l</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -783,9 +725,7 @@
             </div>
 
             <!-- Modal loading-->
-            <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1"
-                aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true"
-                role="dialog">
+            <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true" role="dialog">
                 <div class="mt-5 modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-body dark-modal">
@@ -794,8 +734,7 @@
                             <h6 id="loadingLabel" class="w-100 d-flex justify-content-center">text here</h6>
 
                             <div class="progress">
-                                <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success"
-                                    role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
 
 
@@ -836,25 +775,24 @@
 </script>
 <script src="assets/js/calendar/fullcalendar.min.js"></script>
 <script>
-  
-  document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
-        
+
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          locale: 'ro',
-          initialView: 'dayGridMonth',
-          headerToolbar: {
-              left: "prev,next today",
-              center: "title",
-              right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth"
-          },
-          
-        eventDidMount: function(info) {
-          console.log(info.event.extendedProps);
-          // {description: "Lecture", department: "IT"}
-        }
+            locale: 'ro',
+            initialView: 'dayGridMonth',
+            headerToolbar: {
+                left: "prev,next today",
+                center: "title",
+                right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth"
+            },
+
+            eventDidMount: function(info) {
+                console.log(info.event.extendedProps);
+                // {description: "Lecture", department: "IT"}
+            }
         });
         calendar.render();
-      });
+    });
 </script>
 <?php include('partial/footer-end.php') ?>
