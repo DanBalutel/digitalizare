@@ -20,6 +20,6 @@ var scrollable_custom = {
     }
 };
 (function($) {
-    "use strict";
+    ;
     scrollable_custom.init();
 })(jQuery);

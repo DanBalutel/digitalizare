@@ -1,4 +1,4 @@
-"use strict";
+;
 var morris_chart = {
     init: function() {
         Morris.Area({
@@ -380,6 +380,6 @@ var morris_chart = {
     }
 };
 (function($) {
-    "use strict";
+    ;
     morris_chart.init()
 })(jQuery);

@@ -1,4 +1,4 @@
-"use strict";
+;
 ;(function (window, $, undefined) { ;(function () {
     var VERSION = '2.2.3',
         pluginName = 'datepicker',

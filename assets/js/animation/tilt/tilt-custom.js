@@ -1,5 +1,5 @@
 (function($) {
-"use strict";
+;
    var tilt_custom = {
       init: function() {
          const tilt = $('.js-tilt').tilt();

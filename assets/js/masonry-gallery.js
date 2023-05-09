@@ -1,4 +1,4 @@
-"use strict";
+;
 var masonry_gallery = {
 	init: function() {
 		$('.grid').isotope({
@@ -7,6 +7,6 @@ var masonry_gallery = {
 	}
 };
 (function($) {
-	"use strict";
+	;
     masonry_gallery.init();
 })(jQuery);

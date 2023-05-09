@@ -1,4 +1,4 @@
-"use strict";
+;
 function customRadio(radioName){
     var radioButton = $('input[name="'+ radioName +'"]');
     $(radioButton).each(function(){
@@ -230,7 +230,7 @@ function setColor(){
     }
 }
 (function($) {
-    "use strict";
+    ;
     customRadio("color-option");
     customCheckbox("border-all");
     setColor();

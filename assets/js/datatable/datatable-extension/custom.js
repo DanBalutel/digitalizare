@@ -1,4 +1,4 @@
-"use strict";
+;
 $(document).ready(function(){
     $('#auto-fill').DataTable( {
         autoFill: true

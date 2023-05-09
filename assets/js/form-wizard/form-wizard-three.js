@@ -1,4 +1,4 @@
-"use strict";
+;
 function scroll_to_class(element_class, removed_height) {
 	var scroll_to = $(element_class).offset().top - removed_height;
 	if($(window).scrollTop() != scroll_to) {
@@ -18,7 +18,7 @@ function bar_progress(progress_line_object, direction) {
 	progress_line_object.attr('style', 'width: ' + new_value + '%;').data('now-value', new_value);
 }
 (function($) {
-	"use strict";
+	;
 	$.backstretch;
     $('#top-navbar-1').on('shown.bs.collapse', function(){
     	$.backstretch("resize");

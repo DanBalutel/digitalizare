@@ -1,5 +1,5 @@
 (function($) {
-	"use strict";
+	;
 	new Chartist.Line('.ct-1', {
 	  	labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
 	  	series: [

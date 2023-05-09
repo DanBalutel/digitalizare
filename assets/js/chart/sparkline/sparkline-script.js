@@ -1,5 +1,5 @@
 (function($) {
-    "use strict";
+    ;
     setTimeout(function(){
         $("#line-chart-sparkline").sparkline([5, 10, 20, 14, 17, 21, 20, 10, 4, 13,0, 10, 30, 40, 10, 15, 20], {
             type: 'line',
@@ -124,6 +124,6 @@ var sparkline_chart = {
     }
 };
 (function($) {
-    "use strict";
+    ;
   sparkline_chart.init()
 })(jQuery);

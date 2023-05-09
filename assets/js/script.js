@@ -1,5 +1,5 @@
 (function ($) {
-    "use strict";
+    ;
     $(document).on('click', function (e) {
         var outside_space = $(".outside");
         if (!outside_space.is(e.target) &&
@@ -203,7 +203,7 @@ $('.tap-top').click(function () {
     return false;
 });
 (function ($, window, document, undefined) {
-    "use strict";
+    ;
     var $ripple = $(".js-ripple");
     $ripple.on("click.ui.ripple", function (e) {
         var $this = $(this);

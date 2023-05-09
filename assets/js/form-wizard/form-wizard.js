@@ -1,4 +1,4 @@
-"use strict";
+;
 var currentTab = 0; 
 showTab(currentTab);
 function showTab(n) {

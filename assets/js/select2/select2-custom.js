@@ -1,7 +1,7 @@
-"use strict";
+;
 setTimeout(function(){
         (function($) {
-            "use strict";
+            ;
             // Single Search Select
             $(".js-example-basic-single").select2();
             $(".js-example-disabled-results").select2();

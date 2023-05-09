@@ -60,6 +60,6 @@ var customcard = {
 };
 
 (function($) {
-    "use strict";
+    ;
     customcard.init()
 })(jQuery);

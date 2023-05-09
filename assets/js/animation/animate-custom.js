@@ -1,4 +1,4 @@
-"use strict";
+;
 function testAnim(x) {
     $('#animation-box').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $(this).removeClass();
@@ -18,6 +18,6 @@ var animate_custom = {
     }
 };
 (function($) {
-    "use strict";
+    ;
     animate_custom.init()
 })(jQuery);

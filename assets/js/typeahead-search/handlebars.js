@@ -27,7 +27,7 @@ THE SOFTWARE.
 var Handlebars = (function() {
 // handlebars/safe-string.js
 var __module4__ = (function() {
-  "use strict";
+  ;
   var __exports__;
   // Build out our basic SafeString type
   function SafeString(string) {
@@ -44,7 +44,7 @@ var __module4__ = (function() {
 
 // handlebars/utils.js
 var __module3__ = (function(__dependency1__) {
-  "use strict";
+  ;
   var __exports__ = {};
   /*jshint -W004 */
   var SafeString = __dependency1__;
@@ -126,7 +126,7 @@ var __module3__ = (function(__dependency1__) {
 
 // handlebars/exception.js
 var __module5__ = (function() {
-  "use strict";
+  ;
   var __exports__;
 
   var errorProps = ['description', 'fileName', 'lineNumber', 'message', 'name', 'number', 'stack'];
@@ -148,7 +148,7 @@ var __module5__ = (function() {
 
 // handlebars/base.js
 var __module2__ = (function(__dependency1__, __dependency2__) {
-  "use strict";
+  ;
   var __exports__ = {};
   var Utils = __dependency1__;
   var Exception = __dependency2__;
@@ -334,7 +334,7 @@ var __module2__ = (function(__dependency1__, __dependency2__) {
 
 // handlebars/runtime.js
 var __module6__ = (function(__dependency1__, __dependency2__, __dependency3__) {
-  "use strict";
+  ;
   var __exports__ = {};
   var Utils = __dependency1__;
   var Exception = __dependency2__;
@@ -477,7 +477,7 @@ var __module6__ = (function(__dependency1__, __dependency2__, __dependency3__) {
 
 // handlebars.runtime.js
 var __module1__ = (function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __dependency5__) {
-  "use strict";
+  ;
   var __exports__;
   /*globals Handlebars: true */
   var base = __dependency1__;
@@ -515,7 +515,7 @@ var __module1__ = (function(__dependency1__, __dependency2__, __dependency3__, _
 
 // handlebars/compiler/ast.js
 var __module7__ = (function(__dependency1__) {
-  "use strict";
+  ;
   var __exports__;
   var Exception = __dependency1__;
 
@@ -679,7 +679,7 @@ var __module7__ = (function(__dependency1__) {
 
 // handlebars/compiler/parser.js
 var __module9__ = (function() {
-  "use strict";
+  ;
   var __exports__;
   /* jshint ignore:start */
   /* Jison generated parser */
@@ -1169,7 +1169,7 @@ var __module9__ = (function() {
 
 // handlebars/compiler/base.js
 var __module8__ = (function(__dependency1__, __dependency2__) {
-  "use strict";
+  ;
   var __exports__ = {};
   var parser = __dependency1__;
   var AST = __dependency2__;
@@ -1190,7 +1190,7 @@ var __module8__ = (function(__dependency1__, __dependency2__) {
 
 // handlebars/compiler/javascript-compiler.js
 var __module11__ = (function(__dependency1__) {
-  "use strict";
+  ;
   var __exports__;
   var COMPILER_REVISION = __dependency1__.COMPILER_REVISION;
   var REVISION_CHANGES = __dependency1__.REVISION_CHANGES;
@@ -2090,7 +2090,7 @@ var __module11__ = (function(__dependency1__) {
 
 // handlebars/compiler/compiler.js
 var __module10__ = (function(__dependency1__, __dependency2__, __dependency3__, __dependency4__) {
-  "use strict";
+  ;
   var __exports__ = {};
   var Exception = __dependency1__;
   var parse = __dependency2__.parse;
@@ -2567,7 +2567,7 @@ var __module10__ = (function(__dependency1__, __dependency2__, __dependency3__, 
 
 // handlebars.js
 var __module0__ = (function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __dependency5__) {
-  "use strict";
+  ;
   var __exports__;
   /*globals Handlebars: true */
   var Handlebars = __dependency1__;

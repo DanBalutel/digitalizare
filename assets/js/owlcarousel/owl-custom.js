@@ -274,6 +274,6 @@ var owl_carousel_custom = {
 };
 
 (function($) {
-    "use strict";
+    ;
     owl_carousel_custom.init();
 })(jQuery);

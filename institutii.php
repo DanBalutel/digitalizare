@@ -74,7 +74,6 @@
 <?php include('partial/scripts.php'); ?>
 <script src="assets/js/generatePdf.js"></script>
 <script>
-    dataObj = JSON.parse(localStorage.dataObj);
     newdataObj = JSON.parse(localStorage.newDataObj);
 
     const findAdministratorId = function(id, dataObject) {

@@ -5,7 +5,7 @@
  */
 
 (function sortableModule(factory) {
-	"use strict";
+	;
 
 	if (typeof define === "function" && define.amd) {
 		define(factory);
@@ -18,7 +18,7 @@
 		window["Sortable"] = factory();
 	}
 })(function sortableFactory() {
-	"use strict";
+	;
 
 	if (typeof window == "undefined" || !window.document) {
 		return function sortableError() {

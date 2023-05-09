@@ -1,4 +1,4 @@
-"use strict";
+;
 $(window).scroll(function() {
     if ($(this).scrollTop()>100){
         $('.page-header').fadeOut();

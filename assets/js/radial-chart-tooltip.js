@@ -1,4 +1,4 @@
-"use strict";
+;
 var radial_tooltip = {
     init: function() {
 	$('[data-toggle="tooltip"]').tooltip();
@@ -12,6 +12,6 @@ var radial_tooltip = {
 	}
 };
 (function($) {
-	"use strict";
+	;
     radial_tooltip.init()
 })(jQuery);

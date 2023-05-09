@@ -1,4 +1,4 @@
-"use strict";
+;
 
 $(".toggle-nav").click(function () {
   $('#sidebar-links .nav-menu').css("left", "0px");
@@ -173,7 +173,7 @@ var $window = $(window);
 var widthwindow = $window.width();
 
 (function ($) {
-  "use strict";
+  ;
 
   if (widthwindow <= 991) {
     $toggle_nav_top.attr('checked', false);

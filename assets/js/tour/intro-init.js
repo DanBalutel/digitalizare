@@ -1,5 +1,5 @@
 (function($) {
-    "use strict";
+    ;
     var intro_start = {
         init: function() {
             introJs().start();

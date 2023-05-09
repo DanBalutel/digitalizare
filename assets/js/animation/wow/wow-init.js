@@ -1,5 +1,5 @@
 (function($) {
-"use strict";
+;
 	var wow_init = {
 		init: function() {
 			$('.grid').isotope({

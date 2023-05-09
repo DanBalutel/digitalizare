@@ -1,5 +1,5 @@
 (function($) {
-	"use strict";
+	;
 	var clipboard = new ClipboardJS('.btn-clipboard');
 	clipboard.on('success', function(e) {
 	    alert("copied");

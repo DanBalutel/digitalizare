@@ -1,5 +1,5 @@
 (function($) {
-    "use strict";
+    ;
     var data = [],
     totalPoints = 300;
     function getRandomData() {

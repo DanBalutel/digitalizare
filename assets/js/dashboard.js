@@ -1,5 +1,4 @@
 let dataJson;
-let dataObj;
 let newdataObj;
 
 // detect if screen is mobile
@@ -20,27 +19,12 @@ if (request['cui']) {
 
     window.localStorage.setItem('cui', request['cui']);
     showVideoMonica(localStorage.displayedModal1);
-    fetchAuth(request['cui']);
+    getTermeneData(request['cui']);
     populatePage();
-
-    // // new Termene API
-    // fetchAuth(request['cui']);
-    // dataObj = JSON.parse(window.localStorage.dataObj);
-    // newdataObj = JSON.parse(window.localStorage.newDataObj);
-
-    // alert('bariera 1');
-
-    // // temp we add if check for login
-    // if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
-
-    //     // show Monica forst modal
-
-    //     populatePage();
-    // }
 
 } else if (localStorage.cui) {
 
-    fetchAuth(localStorage.cui)
+    getTermeneData(localStorage.cui)
 }
 
 
@@ -83,63 +67,58 @@ function startTimer() {
 
 
 // CUI 38911092
-function fetchAuth(cuiValue) {
+// function fetchAuth(cuiValue) {
+//     // // (A) URL & CREDENTIALS
+//     // var url = `https://api.aipro.ro:3004/cui?cui=${cuiValue}`
+//     // // (B) FETCH WITH HTTP AUTH
+//     // // for testing with new API from termene TEMP
+//     // getTermeneData(cuiValue);
+//     fetch(url)
 
-    renderLoadingModal('Datele se incarca...');
+//         // // (C) SERVER RESPONSE
+//         // .then((result) => {
+//         //     if (result.status != 200) { throw new Error("Bad Server Response"); }
+//         //     return result.text();
+//         // })
+//         .then((response) => {
 
-    // (A) URL & CREDENTIALS
-    var url = `https://api.aipro.ro:3004/cui?cui=${cuiValue}`
-    // (B) FETCH WITH HTTP AUTH
+//             dataJson = response;
+//             if (dataJson.DateGenerale = undefined && (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php")) {
+//                 let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
+//                 if (codulCUI == null || codulCUI == "") {
+//                     window.location.href = window.location.href;
+//                 } else {
+//                     window.location.href = window.location.href + `?cui=${codulCUI}`;
+//                 }
+//                 return;
+//             }
+//             window.localStorage.setItem('dataObj', dataJson);
+//             dataObj = JSON.parse(dataJson);
 
-    // for testing with new API from termene TEMP
-    getTermeneData(cuiValue);
+//             document.addEventListener("DOMContentLoaded", function () {
+//                 console.log('loaded!');
+//             });
 
-    fetch(url)
+//             // // temp we add if check for login
+//             // if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
+//             //     populatePage();
+//             // }
 
-        // (C) SERVER RESPONSE
-        .then((result) => {
-            if (result.status != 200) { throw new Error("Bad Server Response"); }
-            return result.text();
-        })
-        .then((response) => {
-
-            dataJson = response;
-            if (dataJson.DateGenerale = undefined && (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php")) {
-                let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
-                if (codulCUI == null || codulCUI == "") {
-                    window.location.href = window.location.href;
-                } else {
-                    window.location.href = window.location.href + `?cui=${codulCUI}`;
-                }
-                return;
-            }
-            window.localStorage.setItem('dataObj', dataJson);
-            dataObj = JSON.parse(dataJson);
-
-            document.addEventListener("DOMContentLoaded", function () {
-                console.log('loaded!');
-            });
-
-            // // temp we add if check for login
-            // if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
-            //     populatePage();
-            // }
-
-            // all html rendering goes here
-            // populatePage();
-
-        })
-
-        // (D) HANDLE ERRORS (OPTIONAL)
-        .catch((error) => {
-            console.log(`eroarea raspuns: ${error}`);
-            // localStorage.removeItem('dataObj');
-            alert('CUI gresit')
-            window.location.href = window.location.origin;
-        });
-}
+//             // all html rendering goes here
+//             // populatePage();
+//         })
+//         // (D) HANDLE ERRORS (OPTIONAL)
+//         .catch((error) => {
+//             console.log(`eroarea raspuns: ${error}`);
+//             // localStorage.removeItem('dataObj');
+//             alert('CUI gresit')
+//             window.location.href = window.location.origin;
+//         });
+// }
 
 function getTermeneData(cuiValue) {
+
+    renderLoadingModal('Datele se incarca...');
 
     // (A) URL & CREDENTIALS
     var url = `https://api.aipro.ro:3001/cui?cui=${cuiValue}`
@@ -154,6 +133,15 @@ function getTermeneData(cuiValue) {
         })
         .then((response) => {
             newdataJson = response;
+            if (newdataJson.DateGenerale = undefined && (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php")) {
+                let codulCUI = prompt("Te rog sa introduci codul CUI:", "");
+                if (codulCUI == null || codulCUI == "") {
+                    window.location.href = window.location.href;
+                } else {
+                    window.location.href = window.location.href + `?cui=${codulCUI}`;
+                }
+                return;
+            }
             window.localStorage.setItem('newDataObj', newdataJson);
             newdataObj = JSON.parse(newdataJson);
 
@@ -161,30 +149,31 @@ function getTermeneData(cuiValue) {
                 console.log('loaded!');
             });
 
-            // // temp we add if check for login
-            // if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
-            //     populatePage();
-            // }
-
-            // all html rendering goes here
-            populatePage();
-
+            return newdataObj;
         })
+        .then((newdataObj) => {
+            // call populatePage only when newdataObj is defined
+            if (newdataObj) {
+                populatePage(newdataObj);
+            }
+        })
+
 
         // (D) HANDLE ERRORS (OPTIONAL)
         .catch((error) => {
-            console.log(error);
+            console.log(`eroare CUI: ${error}`);
             localStorage.removeItem('newDataObj');
-            //alert('CUI gresit')
-            //            window.location.href = window.location.origin;
+            alert('CUI gresit')
+            window.location.href = window.location.origin;
         });
 
 }
 
-function populatePage() {
+function populatePage(termeneData) {
 
     const findAdministratorId = function (id, dataObject) {
         const positionName = dataObject.administratori.persoane_fizice[id].functie;
+
         if (positionName.includes('administrator')) {
             return id;
         } else {
@@ -237,51 +226,50 @@ function populatePage() {
             chartSituatieFianciara.innerHTML = `Situatie finaciara ${newdataObj.firma.nume_mfinante}`;  //DONE
 
             const blockCA = document.getElementById('cifra-de-afaceri');
-            // blockCA.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_cifra_de_afaceri.data.pop().y).toLocaleString('en-US');;
-            blockCA.innerHTML = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.cifra_de_afaceri_neta.valoare).toLocaleString('en-US');;
+            blockCA.innerHTML = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.cifra_de_afaceri_neta.valoare).toLocaleString('en-US');
 
             const blockProfit = document.getElementById('profit-actual');
-            blockProfit.innerHTML = parseFloat(dataObj.detalii_grafice.grafice_profit_pierdere.data.pop().y).toLocaleString('en-US');
+            blockProfit.innerHTML = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.profit_net.valoare).toLocaleString('en-US');
 
             const mapAnaf = document.getElementById('mapAnaf');
             const addresAnaf = encodeURIComponent(`${newdataObj.adresa.anaf.tara} judet: ${newdataObj.adresa.anaf.judet} ${newdataObj.adresa.anaf.formatat}`);
             mapAnaf.innerHTML = '<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=' + addresAnaf + '&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>';
 
             const locuriMunca = document.getElementById('locuri-munca');
-            locuriMunca.innerHTML = dataObj.Bilanturi[0].numar_mediu_angajati;
+            locuriMunca.innerHTML = newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.numar_mediu_angajati.valoare;
 
             const codCAEN = document.getElementById('cod-caen');
-            codCAEN.innerHTML = dataObj.Bilanturi[0].cod_caen;
+            codCAEN.innerHTML = newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.cod_caen;
             const numeCAEN = document.getElementById('nume-caen');
             numeCAEN.innerHTML = listCaen[codCAEN.innerHTML];
 
             const activeTotale = document.getElementById('active-totale');
-            const activeTotaleData = parseFloat(dataObj.Bilanturi[0].active_circulante) + parseFloat(dataObj.Bilanturi[0].active_imobilizate);
+            const activeTotaleData = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.active_circulante.valoare) + parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.active_imobilizate.valoare);
             activeTotale.innerHTML = activeTotaleData.toLocaleString('en-US')
 
 
             const nrStocuri = document.getElementById('nr-stocuri');
-            nrStocuri.innerHTML = parseFloat(dataObj.Bilanturi[0].stocuri).toLocaleString('en-US');
+            nrStocuri.innerHTML = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.stocuri.valoare).toLocaleString('en-US');
 
             const casaConturi = document.getElementById('casa-conturi');
-            casaConturi.innerHTML = parseFloat(dataObj.Bilanturi[0].casa_si_conturi_la_banci).toLocaleString('en-US');
+            casaConturi.innerHTML = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.casa_si_conturi_la_banci.valoare).toLocaleString('en-US');
 
             const capitalTotal = document.getElementById('capital-total');
-            capitalTotal.innerHTML = parseFloat(dataObj.Bilanturi[0].capital_total).toLocaleString('en-US');
+            capitalTotal.innerHTML = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.capital_total.valoare).toLocaleString('en-US');
 
             const dateGenerale = document.getElementById('dateGenerale');
             dateGenerale.innerHTML = `
                                         <span>
                                         <h4 style="color: #00CCFF">Detalii generale</h4><br>
-                                        CUI: <span>${dataObj.DateGenerale.cui}</span><br>
-                                        Nr. de înmatriculare: <span>${dataObj.DateGenerale.cod_inmatriculare}</span><br>
-                                        Obiect activitate MFINANȚE: <span>${dataObj.Bilanturi[0].cod_caen} - ${listCaen[codCAEN.innerHTML]}</span> <br><br>
+                                        CUI: <span>${newdataObj.firma.cui}</span><br>
+                                        Nr. de înmatriculare: <span>${newdataObj.firma.j}</span><br>
+                                        Obiect activitate MFINANȚE: <span>${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}</span> <br><br>
 
                                         <h4>Adresă</h4>
-                                        Localitate: <span>${dataObj.DateGenerale.localitate}</span>
-                                        Județ: <span>${dataObj.DateGenerale.judet}</span>
-                                        Sediu social (RECOM/MFINANȚE): <span>${dataObj.DateGenerale.adresa}</span>
-                                        Domiciliu fiscal (ANAF): <span>${dataObj.DateGenerale.adresa_anaf}</span>
+                                        Localitate: <span>${newdataObj.adresa.anaf.localitate}</span>
+                                        Județ: <span>${newdataObj.adresa.anaf.judet}</span>
+                                        Sediu social (RECOM/MFINANȚE): <span>${newdataObj.adresa.sediu_social.formatat}</span>
+                                        Domiciliu fiscal (ANAF): <span>${newdataObj.adresa.anaf.formatat}</span>
 
                                         </span>
                                         `;
@@ -293,7 +281,7 @@ function populatePage() {
             const year = today.getFullYear().toString();
             dateNow.innerHTML = `Log in ${day}/${month}/${year}`;
 
-            const chartAsociati = dataObj.asociatiAdministratoriCuLegaturilvl2.asociatiAdministratori.asociati;
+            const chartAsociati = newdataObj.asociati.persoane_fizice;
             const listNameAsociati = [];
             const listCotaAsociati = [];
             let listAsocMobile = '';
@@ -335,7 +323,7 @@ function populatePage() {
             d.element('listAsoc').innerHTML = listAsocMobile;
 
             // basic area chart
-            const chartProdMunc = dataObj.Bilanturi;
+            const chartProdMunc = newdataObj.bilanturi_mfinante_scurte;
             const listNrAngaj = [];
             const listAni = [];
 
@@ -349,8 +337,18 @@ function populatePage() {
             }
 
             for (const prod in chartProdMunc) {
-                roundOf(listNrAngaj.unshift(parseInt(chartProdMunc[prod].cifra_de_afaceri_neta) / parseInt(chartProdMunc[prod].numar_mediu_angajati))).toFixed(2);
-                roundOf(listAni.unshift(chartProdMunc[prod].an)).toFixed(2);
+
+                if (chartProdMunc[prod] != null && chartProdMunc[prod].cifra_de_afaceri_neta.valoare != null && chartProdMunc[prod].numar_mediu_angajati.valoare != null) {
+
+                    let nrAngaj = parseInt(chartProdMunc[prod].numar_mediu_angajati.valoare);
+                    if (nrAngaj == 0) {
+                        nrAngaj = 1;
+                    }
+
+                    roundOf(listNrAngaj.push(parseInt(chartProdMunc[prod].cifra_de_afaceri_neta.valoare) / nrAngaj)).toFixed(2);
+                    roundOf(listAni.push(chartProdMunc[prod].an)).toFixed(2);
+                }
+
             };
 
             var options = {
@@ -409,29 +407,18 @@ function populatePage() {
 
             // situatiile financiare
             constSitFin = [];
-            const chartDataCA = dataObj.detalii_grafice.grafice_cifra_de_afaceri.data;
-            const chartDataPP = dataObj.detalii_grafice.grafice_profit_pierdere.data;
-            const chartDataDa = dataObj.detalii_grafice.grafice_datorii.data;
 
-            // for (const pP in chartDataPP) {
-
-
-
-            // };
-
-            const minLen = Math.min(chartDataCA.length, chartDataPP.length, chartDataDa.length);
-
-            for (i = 0; i < minLen; i++) {
-                const temp = {
-                    x: `${chartDataCA[i].an}`,
-                    y: parseInt(chartDataCA[i].y),
-                    z: parseInt(chartDataPP[i].y),
-                    a: parseInt(chartDataDa[i].y)
-                };
-
-                constSitFin.push(temp);
-            }
-
+            for (const prod in chartProdMunc) {
+                if (chartProdMunc[prod] != null && chartProdMunc[prod].cifra_de_afaceri_neta.valoare != null && chartProdMunc[prod].profit_pierdere_neta.valoare != null && chartProdMunc[prod].datorii.valoare != null) {
+                    const temp = {
+                        x: `${chartProdMunc[prod].an}`,
+                        y: parseInt(chartProdMunc[prod].cifra_de_afaceri_neta.valoare),
+                        z: parseInt(chartProdMunc[prod].profit_pierdere_neta.valoare),
+                        a: parseInt(chartProdMunc[prod].datorii.valoare)
+                    };
+                    constSitFin.push(temp);
+                }
+            };
 
 
             var morris_chart = {

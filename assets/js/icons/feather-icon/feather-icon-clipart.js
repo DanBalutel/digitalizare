@@ -1,5 +1,5 @@
 (function($) {
-    "use strict";
+    ;
     $('.icon-lists .media').click( function() {
 
         $(".fa-fa-icon-show-div").show().removeClass('opecity-0');

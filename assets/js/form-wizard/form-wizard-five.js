@@ -213,7 +213,7 @@
     }
 })(jQuery);
 (function ($) {
-    "use strict";
+    ;
     $('#wizard').smartWizard({
         transitionEffect: 'slideleft',
         onFinish: onFinishCallback

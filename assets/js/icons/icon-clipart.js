@@ -1,5 +1,5 @@
 (function($) {
-    "use strict";
+    ;
     $('.icon-lists div').click( function() {
         $(".icon-lists").addClass('m-b-50');
         $(".fa-fa-icon-show-div").show();

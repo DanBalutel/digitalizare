@@ -1,5 +1,5 @@
 (function($) {
-    "use strict";
+    ;
     $("#basicScenario").jsGrid({
         width: "100%",
         filtering: true,

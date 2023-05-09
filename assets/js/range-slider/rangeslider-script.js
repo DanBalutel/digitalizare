@@ -49,6 +49,6 @@ var range_slider_custom = {
     }
 };
 (function($) {
-    "use strict";
+    ;
     range_slider_custom.init();
 })(jQuery);

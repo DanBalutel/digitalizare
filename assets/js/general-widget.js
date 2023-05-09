@@ -1,4 +1,4 @@
-"use strict";
+;
 
 // order chart
 var options2 = {

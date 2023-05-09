@@ -1,5 +1,5 @@
 (function($) {
-    "use strict";
+    ;
     $(".knob").knob({
         change : function (value) {
             //console.log("change : " + value);

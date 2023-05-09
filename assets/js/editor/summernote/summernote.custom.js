@@ -24,7 +24,7 @@ var summernote_custom = {
     }
 };
 (function($) {
-    "use strict";
+    ;
     summernote_custom.init();
 })(jQuery);
 

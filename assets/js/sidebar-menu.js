@@ -166,7 +166,7 @@ $body_part_side.click(function () {
 var $window = $(window);
 var widthwindow = $window.width();
 (function ($) {
-    "use strict";
+    ;
     if (widthwindow <= 991) {
         $toggle_nav_top.attr('checked', false);
         $nav.addClass("close_icon");

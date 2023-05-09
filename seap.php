@@ -241,7 +241,7 @@
     new WOW().init();
 
     // title of the table
-    dataObj = JSON.parse(window.localStorage.dataObj);
-    d.element('caenTitle').innerHTML = `CAEN: ${dataObj.Bilanturi[0].cod_caen} - ${listCaen[dataObj.Bilanturi[0].cod_caen]}`;
+    newdataObj = JSON.parse(window.localStorage.newDataObj);
+    d.element('caenTitle').innerHTML = `CAEN: ${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}`;
 </script>
 <?php include('partial/footer-end.php') ?>

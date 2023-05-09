@@ -109,7 +109,7 @@ function clearStickyForm() {
     d.element('newNoteText').value = '';
 }
 (function ($) {
-    "use strict";
+    ;
     $("#board").height($(document).height());
     $("#add_new").click(newNote);
     $('.remove').click(deleteNote);

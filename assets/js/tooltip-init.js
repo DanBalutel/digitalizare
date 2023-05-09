@@ -1,5 +1,5 @@
 
-"use strict";
+;
 $(document).ready(function() {
 	var tooltip_init = {
 		init: function() {

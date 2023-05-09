@@ -1,6 +1,6 @@
 'use strict';
 ! function(maps) {
-    "use strict";
+    ;
     var b = function() {};
     b.prototype.init = function() {
         maps("#world-map").vectorMap({
@@ -75,6 +75,6 @@
     }, maps.VectorMap = new b, maps.VectorMap.Constructor = b
 }(window.jQuery),
 function(maps) {
-    "use strict";
+    ;
     maps.VectorMap.init()
 }(window.jQuery);

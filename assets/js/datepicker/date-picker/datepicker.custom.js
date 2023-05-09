@@ -1,6 +1,6 @@
-"use strict";
+;
 (function($) {
-    "use strict";
+    ;
 //Minimum and Maxium Date
     $('#minMaxExample').datepicker({
         language: 'en',

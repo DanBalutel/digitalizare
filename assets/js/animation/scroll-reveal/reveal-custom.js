@@ -3,7 +3,7 @@
  Scroll reveal animation
  ----------------------------------------------------*/
 (function($) {
-"use strict";
+;
     if (Modernizr.csstransforms3d) {
         window.sr = ScrollReveal();
         sr.reveal('.reveal', {

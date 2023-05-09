@@ -67,6 +67,6 @@ var tree_custom = {
     }
 };
 (function($) {
-    "use strict";
+    ;
     tree_custom.init()
 })(jQuery);

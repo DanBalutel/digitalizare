@@ -1,4 +1,4 @@
-"use strict";
+;
 
 var editor = ace.edit("editor");
 // Sublime appearance:

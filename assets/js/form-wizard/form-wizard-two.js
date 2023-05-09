@@ -1,5 +1,5 @@
 (function($) {
-    "use strict";
+    ;
     var fomr_wizard_two = {
         init: function() {
             var navListItems = $('div.setup-panel div a'),
@@ -36,7 +36,7 @@
         }
     };
     (function($) {
-        "use strict";
+        ;
         fomr_wizard_two.init();
     })(jQuery);
 })(jQuery);

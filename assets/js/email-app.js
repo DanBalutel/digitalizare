@@ -1,4 +1,4 @@
-"use strict";
+;
 CKEDITOR.replace( 'text-box', {
     on: {
         contentDom: function( evt ) {

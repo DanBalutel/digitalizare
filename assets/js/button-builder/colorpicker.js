@@ -1,6 +1,6 @@
 
 (function ($) {
-	"use strict";
+	;
 	var ColorPicker = function () {
 		var
 			ids = {},

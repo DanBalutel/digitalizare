@@ -1,4 +1,4 @@
-"use strict";
+;
 // Countdown js
 const second = 1000,
     minute = second * 60,

@@ -1,7 +1,7 @@
 
 //DateRange Picker
 (function($) {
-    "use strict";
+    ;
     $(function() {
         $('input[name="daterange"]').daterangepicker();
     });
