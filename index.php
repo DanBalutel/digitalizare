@@ -1238,6 +1238,7 @@
 </script>
 <script src="https://www.youtube.com/iframe_api"></script>
 <script src="assets/js/moniSteps.js"></script>
+<script src="assets/js/sendOffer.js"></script>
 
 
 <script src="assets/js/chart/apex-chart/apex-chart.js"></script>
