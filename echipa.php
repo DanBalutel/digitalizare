@@ -145,7 +145,7 @@
                             <div class="card radius-15">
                                 <div class="card-body text-center">
                                     <div class="p-4 border radius-15">
-                                        <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg"
+                                        <img src="assets/images/custom-persons/3.jpg"
                                             width="110" height="110" class="rounded-circle shadow" alt="">
                                         <h5 class="mb-0 mt-5">Alexandra G.</h5>
                                         <p class="mb-3">Expert Fonduri Europene</p>
@@ -186,7 +186,7 @@
                             <div class="card radius-15">
                                 <div class="card-body text-center">
                                     <div class="p-4 border radius-15">
-                                        <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg"
+                                        <img src="assets/images/custom-persons/3.jpg"
                                             width="110" height="110" class="rounded-circle shadow" alt="">
                                         <h5 class="mb-0 mt-5">Alexandra G.</h5>
                                         <p class="mb-3">Expert Fonduri Europene</p>
@@ -226,48 +226,7 @@
                             <div class="card radius-15">
                                 <div class="card-body text-center">
                                     <div class="p-4 border radius-15">
-                                        <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg"
-                                            width="110" height="110" class="rounded-circle shadow" alt="">
-                                        <h5 class="mb-0 mt-5">Alexandra G.</h5>
-                                        <p class="mb-3">Expert Fonduri Europene</p>
-
-                                        <div class="d-grid"> <a href="#"
-                                                class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
-                                        <div class="chat-tab-menu mt-3">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <a href="#">
-                                                        <i class="fa fa-phone f-24"></i><br>
-                                                    </a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="#">
-                                                        <i class="fa fa-paper-plane f-24"></i><br>
-                                                    </a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="#">
-                                                        <i class="fa fa-video-camera f-24"></i><br>
-                                                    </a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="#">
-                                                        <i class="fa fa-inbox f-24"></i><br>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4">
-                            <div class="card radius-15">
-                                <div class="card-body text-center">
-                                    <div class="p-4 border radius-15">
-                                        <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg"
+                                        <img src="assets/images/custom-persons/3.jpg"
                                             width="110" height="110" class="rounded-circle shadow" alt="">
                                         <h5 class="mb-0 mt-5">Alexandra G.</h5>
                                         <p class="mb-3">Expert Fonduri Europene</p>
@@ -308,47 +267,7 @@
                             <div class="card radius-15">
                                 <div class="card-body text-center">
                                     <div class="p-4 border radius-15">
-                                        <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg"
-                                            width="110" height="110" class="rounded-circle shadow" alt="">
-                                        <h5 class="mb-0 mt-5">Alexandra G.</h5>
-                                        <p class="mb-3">Expert Fonduri Europene</p>
-
-                                        <div class="d-grid"> <a href="#"
-                                                class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
-                                        <div class="chat-tab-menu mt-3">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <a href="#">
-                                                        <i class="fa fa-phone f-24"></i><br>
-                                                    </a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="#">
-                                                        <i class="fa fa-paper-plane f-24"></i><br>
-                                                    </a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="#">
-                                                        <i class="fa fa-video-camera f-24"></i><br>
-                                                    </a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="#">
-                                                        <i class="fa fa-inbox f-24"></i><br>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="card radius-15">
-                                <div class="card-body text-center">
-                                    <div class="p-4 border radius-15">
-                                        <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg"
+                                        <img src="assets/images/custom-persons/3.jpg"
                                             width="110" height="110" class="rounded-circle shadow" alt="">
                                         <h5 class="mb-0 mt-5">Alexandra G.</h5>
                                         <p class="mb-3">Expert Fonduri Europene</p>
@@ -389,7 +308,47 @@
                             <div class="card radius-15">
                                 <div class="card-body text-center">
                                     <div class="p-4 border radius-15">
-                                        <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg"
+                                        <img src="assets/images/custom-persons/3.jpg"
+                                            width="110" height="110" class="rounded-circle shadow" alt="">
+                                        <h5 class="mb-0 mt-5">Alexandra G.</h5>
+                                        <p class="mb-3">Expert Fonduri Europene</p>
+
+                                        <div class="d-grid"> <a href="#"
+                                                class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                                        <div class="chat-tab-menu mt-3">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <a href="#">
+                                                        <i class="fa fa-phone f-24"></i><br>
+                                                    </a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <a href="#">
+                                                        <i class="fa fa-paper-plane f-24"></i><br>
+                                                    </a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <a href="#">
+                                                        <i class="fa fa-video-camera f-24"></i><br>
+                                                    </a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <a href="#">
+                                                        <i class="fa fa-inbox f-24"></i><br>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card radius-15">
+                                <div class="card-body text-center">
+                                    <div class="p-4 border radius-15">
+                                        <img src="assets/images/custom-persons/3.jpg"
                                             width="110" height="110" class="rounded-circle shadow" alt="">
                                         <h5 class="mb-0 mt-5">Alexandra G.</h5>
                                         <p class="mb-3">Expert Fonduri Europene</p>
@@ -430,7 +389,48 @@
                             <div class="card radius-15">
                                 <div class="card-body text-center">
                                     <div class="p-4 border radius-15">
-                                        <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg"
+                                        <img src="assets/images/custom-persons/3.jpg"
+                                            width="110" height="110" class="rounded-circle shadow" alt="">
+                                        <h5 class="mb-0 mt-5">Alexandra G.</h5>
+                                        <p class="mb-3">Expert Fonduri Europene</p>
+
+                                        <div class="d-grid"> <a href="#"
+                                                class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
+                                        <div class="chat-tab-menu mt-3">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <a href="#">
+                                                        <i class="fa fa-phone f-24"></i><br>
+                                                    </a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <a href="#">
+                                                        <i class="fa fa-paper-plane f-24"></i><br>
+                                                    </a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <a href="#">
+                                                        <i class="fa fa-video-camera f-24"></i><br>
+                                                    </a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <a href="#">
+                                                        <i class="fa fa-inbox f-24"></i><br>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="card radius-15">
+                                <div class="card-body text-center">
+                                    <div class="p-4 border radius-15">
+                                        <img src="assets/images/custom-persons/3.jpg"
                                             width="110" height="110" class="rounded-circle shadow" alt="">
                                         <h5 class="mb-0 mt-5">Alexandra G.</h5>
                                         <p class="mb-3">Expert Fonduri Europene</p>
@@ -470,7 +470,7 @@
                             <div class="card radius-15">
                                 <div class="card-body text-center">
                                     <div class="p-4 border radius-15">
-                                        <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.313-300x300.jpg"
+                                        <img src="assets/images/custom-persons/3.jpg"
                                             width="110" height="110" class="rounded-circle shadow" alt="">
                                         <h5 class="mb-0 mt-5">Alexandra G.</h5>
                                         <p class="mb-3">Expert Fonduri Europene</p>
