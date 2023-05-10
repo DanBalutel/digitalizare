@@ -27,7 +27,7 @@
                             <div class="card radius-15">
                                 <div class="card-body text-center">
                                     <div class="p-4 border radius-15">
-                                        <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.312-300x300.jpg"
+                                        <img src="assets/images/custom-persons/10.jpg"
                                             width="110" height="110" class="rounded-circle shadow" alt="">
                                         <h5 class="mb-0 mt-5">Daniela Irimescu</h5>
                                         <p class="mb-3">Expert Fonduri Europene</p>
@@ -67,7 +67,7 @@
                                 <div class="card-body text-center">
 
                                     <div class="p-4 border radius-15">
-                                        <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.26.314-300x300.jpg"
+                                        <img src="assets/images/custom-persons/8.jpg"
                                             width="110" height="110" class="rounded-circle shadow" alt="">
                                         <h5 class="mb-0 mt-5">Andra B.</h5>
                                         <p class="mb-3">Expert Fonduri Europene</p>
@@ -106,7 +106,7 @@
                             <div class="card radius-15">
                                 <div class="card-body text-center">
                                     <div class="p-4 border radius-15">
-                                        <img src="https://area4u.ro/wp-content/uploads/2023/02/Imagine-WhatsApp-2023-02-08-la-18.27.518-300x300.jpg"
+                                        <img src="assets/images/custom-persons/4.jpg"
                                             width="110" height="110" class="rounded-circle shadow" alt="">
                                         <h5 class="mb-0 mt-5">Stefania H.</h5>
                                         <p class="mb-3">Expert Fonduri Europene</p>
