@@ -10,22 +10,22 @@
                     <div class="row">
                         <div class="col-md-12">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" placeholder="example@gmail.com">
+                            <input id="oEmail" type="email" class="form-control" placeholder="example@gmail.com">
                         </div>
                         <div class="col-md-12">
                             <label for="phone">Telefon</label>
-                            <input type="text" class="form-control" placeholder="+40700000000">
+                            <input id="oTelefon" type="text" class="form-control" placeholder="+40700000000">
                         </div>
                         <div class="col-md-12">
                             <label for="buget">Buget orentativ</label>
-                            <input type="text" class="form-control" placeholder="50000 Euro">
+                            <input id="oBuget" type="text" class="form-control" placeholder="50000 Euro">
                         </div>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-bs-dismiss="modal" data-bs-original-title="" title="">Inchide</button>
-                <button class="btn btn-primary" type="button" data-bs-original-title="" title="">Genereaza si trimite oferate</button>
+                <button class="btn btn-primary" type="button" data-bs-original-title="" title="" onclick="sendTest()">Genereaza si trimite oferate</button>
             </div>
         </div>
     </div>

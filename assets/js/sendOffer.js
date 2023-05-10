@@ -41,12 +41,9 @@ function sendTest() {
     // const oEmail = document.getElementById('oEmail').value;
     // const oMessage = document.getElementById('oMessage').value;
 
-    const eEmail = "admin@admin.admin";
-    const eTelefon = "dan";
-    const eBuget = "textul";
-
-    console.log(JSON.stringify({ email: eEmail, telefon: eTelefon, buget: eBuget }));
-
+    const eEmail = document.getElementById('oEmail').value;
+    const eTelefon = document.getElementById('oTelefon').value;
+    const eBuget = document.getElementById('oBuget').value;
 
     fetch('https://api.aipro.ro:3005/send', {
         method: 'POST',
@@ -58,14 +55,26 @@ function sendTest() {
         .then(response => {
             if (response.ok) {
                 console.log('Email sent successfully!');
-                alert('Email sent successfully!');
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Email sent successfully'
+                });
             } else {
                 console.error('Error sending email:', response.statusText);
-                alert('An error occurred while sending the email.');
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'An error occurred while sending the email'
+                });
             }
         })
         .catch(error => {
             console.error('Error sending email:', error);
-            alert('An error occurred while sending the email.');
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'An error occurred while sending the email'
+            });
         });
 }
