@@ -1,5 +1,15 @@
 const form = document.querySelector('form');
 const sendButton = document.querySelector('#send');
+const findAdministratorId = function (id, dataObject) {
+    const positionName = dataObject.administratori.persoane_fizice[id].functie;
+
+    if (positionName.includes('administrator')) {
+        return id;
+    } else {
+        const idplus = id + 1;
+        return findAdministratorId(idplus, dataObject);
+    }
+};
 
 function sendTest() {
     // const oName = document.getElementById('oName').value;
@@ -9,13 +19,14 @@ function sendTest() {
     const eEmail = document.getElementById('oEmail').value;
     const eTelefon = document.getElementById('oTelefon').value;
     const eBuget = document.getElementById('oBuget').value;
+    const administratorId = findAdministratorId(0, newdataObj);
     const dateGenerale = `
     
     Detalii generale:
     CUI: ${newdataObj.firma.cui}
     Nr. de înmatriculare: ${newdataObj.firma.j}
     Cod CAEN: ${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}
-    Administrator: ${findAdministratorId(0, newdataObj)}
+    Administrator: ${newdataObj.administratori.persoane_fizice[administratorId].nume}
 
     Adresă:
     Localitate: ${newdataObj.adresa.anaf.localitate}
