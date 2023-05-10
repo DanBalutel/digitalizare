@@ -45,7 +45,7 @@
 
                                                 <tr>
                                                     <th scope="row">1</th>
-                                                    <td>Propunere colaborare</td>
+                                                    <td>Inovatia prin colaborare</td>
                                                     <td>Birou</td>
                                                     <td>12.00 15.02.2023</td>
                                                     <td>
@@ -66,7 +66,7 @@
 
                                                 <tr>
                                                     <th scope="row">2</th>
-                                                    <td>Propunere colaborare</td>
+                                                    <td>Leadership si dezvoltarea angajatilor</td>
                                                     <td>Birou</td>
                                                     <td>13.00 15.02.2023</td>
                                                     <td>
@@ -89,7 +89,7 @@
 
                                                 <tr>
                                                     <th scope="row">3</th>
-                                                    <td>Propunere colaborare</td>
+                                                    <td>Tehnologii emergente si impactul lor asupra afacerii</td>
                                                     <td>Zoom</td>
                                                     <td>16.00 15.02.2023</td>
                                                     <td>
@@ -111,7 +111,7 @@
 
                                                 <tr>
                                                     <th scope="row">4</th>
-                                                    <td>Propunere colaborare</td>
+                                                    <td>Marketing digital si optimizarea conversiilor</td>
                                                     <td>Zoom</td>
                                                     <td>16.30 15.02.2023</td>
                                                     <td>
