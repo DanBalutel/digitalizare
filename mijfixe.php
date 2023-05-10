@@ -43,7 +43,7 @@
 
                                             <tr>
                                                 <th scope="row">1</th>
-                                                <td>Automobil BMW X3</td>
+                                                <td><img src="assets/images/only1/bmw_car.png" style="max-width: 5rem;padding-right: 2rem;" alt="">Automobil BMW X3</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
                                                         data-bs-toggle="dropdown" aria-haspopup="true"
@@ -62,7 +62,7 @@
 
                                             <tr>
                                                 <th scope="row">2</th>
-                                                <td>Calculator personal Lenovo V15</td>
+                                                <td><img src="assets/images/only1/laptop.png" style="max-width: 5rem;padding-right: 2rem;" alt="">Calculator personal Lenovo V15</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
                                                         data-bs-toggle="dropdown" aria-haspopup="true"
@@ -83,7 +83,7 @@
 
                                             <tr>
                                                 <th scope="row">3</th>
-                                                <td>Echipamente</td>
+                                                <td><img src="assets/images/only1/echipamente.png" style="max-width: 5rem;padding-right: 2rem;" alt="">Echipamente</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
                                                         data-bs-toggle="dropdown" aria-haspopup="true"
