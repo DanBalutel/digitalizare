@@ -41,9 +41,12 @@ function sendTest() {
     // const oEmail = document.getElementById('oEmail').value;
     // const oMessage = document.getElementById('oMessage').value;
 
-    const eTelefon = "dan";
     const eEmail = "admin@admin.admin";
+    const eTelefon = "dan";
     const eBuget = "textul";
+
+    console.log(JSON.stringify({ email: eEmail, telefon: eTelefon, buget: eBuget }));
+
 
     fetch('https://api.aipro.ro:3005/send', {
         method: 'POST',
