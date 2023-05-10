@@ -34,29 +34,35 @@ form.addEventListener('submit', (event) => {
 });
 
 
-const oName = "dan";
-const oEmail = "admin@admin.admin";
-const oMessage = "textul";
+
 
 function sendTest() {
-    fetch('http://api.aipro.ro:3005/send', {
+    // const oName = document.getElementById('oName').value;
+    // const oEmail = document.getElementById('oEmail').value;
+    // const oMessage = document.getElementById('oMessage').value;
+
+    const oName = "dan";
+    const oEmail = "admin@admin.admin";
+    const oMessage = "textul";
+
+    fetch('https://api.aipro.ro:3005/send', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({ oName, oEmail, oMessage })
     })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            alert('Email sent successfully!');
-            // sendButton.disabled = false;
-            // sendButton.innerText = 'Send';
+        .then(response => {
+            if (response.ok) {
+                console.log('Email sent successfully!');
+                alert('Email sent successfully!');
+            } else {
+                console.error('Error sending email:', response.statusText);
+                alert('An error occurred while sending the email.');
+            }
         })
         .catch(error => {
-            console.error(error);
+            console.error('Error sending email:', error);
             alert('An error occurred while sending the email.');
-            // sendButton.disabled = false;
-            // sendButton.innerText = 'Send';
         });
 }
