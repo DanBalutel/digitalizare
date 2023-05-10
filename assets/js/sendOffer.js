@@ -10,19 +10,18 @@ function sendTest() {
     const eTelefon = document.getElementById('oTelefon').value;
     const eBuget = document.getElementById('oBuget').value;
     const dateGenerale = `
-        <span>
-        <h4 style="color: #00CCFF">Detalii generale</h4><br>
-        CUI: <span>${newdataObj.firma.cui}</span><br>
-        Nr. de înmatriculare: <span>${newdataObj.firma.j}</span><br>
-        Obiect activitate MFINANȚE: <span>${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}</span> <br><br>
+    
+    Detalii generale:
+    CUI: ${newdataObj.firma.cui}
+    Nr. de înmatriculare: ${newdataObj.firma.j}
+    Cod CAEN: ${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}
+    Administrator: ${findAdministratorId(0, newdataObj)}
 
-        <h4>Adresă</h4>
-        Localitate: <span>${newdataObj.adresa.anaf.localitate}</span>
-        Județ: <span>${newdataObj.adresa.anaf.judet}</span>
-        Sediu social (RECOM/MFINANȚE): <span>${newdataObj.adresa.sediu_social.formatat}</span>
-        Domiciliu fiscal (ANAF): <span>${newdataObj.adresa.anaf.formatat}</span>
-
-        </span>
+    Adresă:
+    Localitate: ${newdataObj.adresa.anaf.localitate}
+    Județ: ${newdataObj.adresa.anaf.judet}
+    Sediu social (RECOM/MFINANȚE): ${newdataObj.adresa.sediu_social.formatat}
+    Domiciliu fiscal (ANAF): ${newdataObj.adresa.anaf.formatat}
     `;
 
     fetch('https://api.aipro.ro:3005/send', {
