@@ -43,7 +43,7 @@
 
                                             <tr>
                                                 <th scope="row">1</th>
-                                                <td>Hartie</td>
+                                                <td><img src="assets/images/only1/hartie.png" style="max-width: 5rem;padding-right: 2rem;" alt="">Hartie</td>
                                                 <td>30 pach.</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
@@ -63,7 +63,7 @@
 
                                             <tr>
                                                 <th scope="row">2</th>
-                                                <td>Apa</td>
+                                                <td><img src="assets/images/only1/apa.png" style="max-width: 5rem;padding-right: 2rem;" alt="">Apa</td>
                                                 <td>30l</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"

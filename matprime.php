@@ -43,7 +43,7 @@
 
                                             <tr>
                                                 <th scope="row">1</th>
-                                                <td>Scaun</td>
+                                                <td><img src="assets/images/only1/scaun.png" style="max-width: 5rem;padding-right: 2rem;" alt="">Scaun</td>
                                                 <td>12</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
@@ -63,7 +63,7 @@
 
                                             <tr>
                                                 <th scope="row">2</th>
-                                                <td>Birou</td>
+                                                <td><img src="assets/images/only1/birou.png" style="max-width: 5rem;padding-right: 2rem;" alt="">Birou</td>
                                                 <td>3</td>
                                                 <td>
                                                     <button class="btn btn-primary dropdown-toggle" type="button"
