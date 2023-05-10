@@ -25,7 +25,7 @@
             </div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-bs-dismiss="modal" data-bs-original-title="" title="">Inchide</button>
-                <button class="btn btn-primary" type="button" data-bs-original-title="" title="" onclick="sendTest()">Genereaza si trimite oferate</button>
+                <button class="btn btn-primary" type="button" data-bs-dismiss="modal" data-bs-original-title="" title="" onclick="sendTest()">Genereaza si trimite oferate</button>
             </div>
         </div>
     </div>
