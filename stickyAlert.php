@@ -18,6 +18,9 @@
                 <div class="row sticky-header-main">
                     <div class="col-sm-12">
                         <div class="card">
+                            <div class="card-header">
+                                <a href="sticky-home.php" class="btn btn-primary pull-left m-l-10 mb-3">Meniu</a>
+                            </div>
                             <div class="card-body">
                                 <div class="sticky-note" id="boardNone">
                                     <div class="note ui-draggable ui-draggable-handle" ondragstart="`function(){$(this).css(&quot;z-index&quot;," ++notezindex);}`="" style=""><a href="javascript:;" class="button remove" data-bs-original-title="" title="">X</a>
