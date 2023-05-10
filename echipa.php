@@ -39,25 +39,21 @@
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-phone f-24"></i><br>
-                                                        <span>Apel</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-paper-plane f-24"></i><br>
-                                                        <span>Mesaj</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-video-camera f-24"></i><br>
-                                                        <span>Zoom</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-inbox f-24"></i><br>
-                                                        <span>Email</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -83,25 +79,21 @@
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-phone f-24"></i><br>
-                                                        <span>Apel</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-paper-plane f-24"></i><br>
-                                                        <span>Mesaj</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-video-camera f-24"></i><br>
-                                                        <span>Zoom</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-inbox f-24"></i><br>
-                                                        <span>Email</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -126,25 +118,21 @@
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-phone f-24"></i><br>
-                                                        <span>Apel</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-paper-plane f-24"></i><br>
-                                                        <span>Mesaj</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-video-camera f-24"></i><br>
-                                                        <span>Zoom</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-inbox f-24"></i><br>
-                                                        <span>Email</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -169,25 +157,21 @@
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-phone f-24"></i><br>
-                                                        <span>Apel</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-paper-plane f-24"></i><br>
-                                                        <span>Mesaj</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-video-camera f-24"></i><br>
-                                                        <span>Zoom</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-inbox f-24"></i><br>
-                                                        <span>Email</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -214,25 +198,21 @@
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-phone f-24"></i><br>
-                                                        <span>Apel</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-paper-plane f-24"></i><br>
-                                                        <span>Mesaj</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-video-camera f-24"></i><br>
-                                                        <span>Zoom</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-inbox f-24"></i><br>
-                                                        <span>Email</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -258,25 +238,21 @@
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-phone f-24"></i><br>
-                                                        <span>Apel</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-paper-plane f-24"></i><br>
-                                                        <span>Mesaj</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-video-camera f-24"></i><br>
-                                                        <span>Zoom</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-inbox f-24"></i><br>
-                                                        <span>Email</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -303,25 +279,21 @@
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-phone f-24"></i><br>
-                                                        <span>Apel</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-paper-plane f-24"></i><br>
-                                                        <span>Mesaj</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-video-camera f-24"></i><br>
-                                                        <span>Zoom</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-inbox f-24"></i><br>
-                                                        <span>Email</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -348,25 +320,21 @@
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-phone f-24"></i><br>
-                                                        <span>Apel</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-paper-plane f-24"></i><br>
-                                                        <span>Mesaj</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-video-camera f-24"></i><br>
-                                                        <span>Zoom</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-inbox f-24"></i><br>
-                                                        <span>Email</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -392,25 +360,21 @@
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-phone f-24"></i><br>
-                                                        <span>Apel</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-paper-plane f-24"></i><br>
-                                                        <span>Mesaj</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-video-camera f-24"></i><br>
-                                                        <span>Zoom</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-inbox f-24"></i><br>
-                                                        <span>Email</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -437,25 +401,21 @@
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-phone f-24"></i><br>
-                                                        <span>Apel</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-paper-plane f-24"></i><br>
-                                                        <span>Mesaj</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-video-camera f-24"></i><br>
-                                                        <span>Zoom</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-inbox f-24"></i><br>
-                                                        <span>Email</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -482,25 +442,21 @@
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-phone f-24"></i><br>
-                                                        <span>Apel</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-paper-plane f-24"></i><br>
-                                                        <span>Mesaj</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-video-camera f-24"></i><br>
-                                                        <span>Zoom</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-inbox f-24"></i><br>
-                                                        <span>Email</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -526,25 +482,21 @@
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-phone f-24"></i><br>
-                                                        <span>Apel</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-paper-plane f-24"></i><br>
-                                                        <span>Mesaj</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-video-camera f-24"></i><br>
-                                                        <span>Zoom</span>
                                                     </a>
                                                 </div>
                                                 <div class="col-3">
                                                     <a href="#">
                                                         <i class="fa fa-inbox f-24"></i><br>
-                                                        <span>Email</span>
                                                     </a>
                                                 </div>
                                             </div>
