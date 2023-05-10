@@ -56,25 +56,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -103,25 +99,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -150,25 +142,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -205,25 +193,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -263,25 +247,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -312,25 +292,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -368,25 +344,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -417,25 +389,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -465,25 +433,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -512,25 +476,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -566,25 +526,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -615,25 +571,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -663,25 +615,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -710,25 +658,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -764,25 +708,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -813,25 +753,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -861,25 +797,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -908,25 +840,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -962,25 +890,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -1011,25 +935,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -1060,25 +980,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -1107,25 +1023,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -1158,25 +1070,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -1206,25 +1114,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -1253,25 +1157,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -1306,25 +1206,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -1354,25 +1250,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -1402,25 +1294,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -1450,25 +1338,21 @@
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-wechat f-24"></i><br>
-                                                    <span class="f-s-15">Chat</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-video-camera f-24"></i><br>
-                                                    <span class="f-s-15">Zoom</span>
                                                 </a>
                                             </div>
                                             <div class="col-3">
                                                 <a href="#">
                                                     <i class="fa fa-inbox f-24"></i><br>
-                                                    <span class="f-s-15">Email</span>
                                                 </a>
                                             </div>
                                             <div class="col-3 p-0">
                                                 <a href="#">
                                                     <i class="fa fa-bell f-24"></i><br>
-                                                    <span class="f-s-15">Notifica</span>
                                                 </a>
                                             </div>
                                         </div>
