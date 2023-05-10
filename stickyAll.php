@@ -18,6 +18,8 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header">
+                                <a href="sticky-home.php" class="btn btn-primary pull-left m-l-10 mb-3">Meniu</a>
+
                                 <a class="btn btn-primary pull-right m-l-10 mb-3" onclick="newNote2(d.element('newNoteTitle').value, d.element('newNoteText').value)">Adauga notita</a>
 
 
