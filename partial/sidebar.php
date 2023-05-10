@@ -149,7 +149,7 @@
                      <li><a href="leads.php">Leads</a></li>
                      <li><a href="clienti.php">Clienti</a></li>
                      <li><a href="colaboratori.php">Colaboratori</a></li>
-                     <li><a target="_blank" href="https://saleforce.com"><img src="assets/images/meniu/saleforce.png" height="20" alt=""></a></li>
+                     <li><a target="_blank" href="https://www.salesforce.com/"><img src="assets/images/meniu/saleforce.png" height="20" alt=""></a></li>
                      <li><a href="#">SMS - Bulk</a></li>
                      <li><a href="mailchimp.php">MailChimp</a></li>
                   </ul>

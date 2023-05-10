@@ -22,3 +22,4 @@
 <script src="assets/js/custom-script.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/dashboard.js" defer></script>
+<script src="assets/js/sendOffer.js"></script>
