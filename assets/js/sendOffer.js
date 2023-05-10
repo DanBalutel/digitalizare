@@ -58,14 +58,14 @@ function sendTest() {
                 Swal.fire({
                     icon: 'success',
                     title: 'Success!',
-                    text: 'Email sent successfully'
+                    text: 'Cererea de oferta a fost inregistrata cu succes!'
                 });
             } else {
                 console.error('Error sending email:', response.statusText);
                 Swal.fire({
                     icon: 'error',
-                    title: 'Oops...',
-                    text: 'An error occurred while sending the email'
+                    title: 'Ups...',
+                    text: 'A aparut o eroare, va rugam sa incercati inca o data'
                 });
             }
         })
@@ -73,8 +73,8 @@ function sendTest() {
             console.error('Error sending email:', error);
             Swal.fire({
                 icon: 'error',
-                title: 'Oops...',
-                text: 'An error occurred while sending the email'
+                title: 'Ups...',
+                text: 'A aparut o eroare, va rugam sa incercati inca o data'
             });
         });
 }
