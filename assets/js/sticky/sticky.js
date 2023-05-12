@@ -95,9 +95,10 @@ function newNote2(content) {
     clearStickyForm()
     return false;
 };
-function newNote2Render(content) {
+function newNote2Render(content, persons) {
     var note = $(noteTemp);
     note.find('.cnt').val(content);
+    note.find('.pers').html(persons);
     note.hide().appendTo("#board").show("fade", 300).draggable();
     note.find('.remove').click(deleteNote);
     note.find('textarea').autogrow();
@@ -148,7 +149,7 @@ function saveCards() {
 const boardNotes = JSON.parse(localStorage.board);
 if (d.element('board')) {
     boardNotes.forEach((item) => {
-        newNote2Render(item.content)
+        newNote2Render(item.content, item.persons)
     });
 }
 
@@ -158,7 +159,7 @@ function makeThemeBlue(element) {
     saveCards();
 }
 
-function popupElement(picture, element, nume, functie) {
+function popupElement(picture, element, nume, functie, id) {
     tempElement = element.parentElement.parentElement.parentElement;
     const result = `
     <div class="col-5 col-md-4 m-2">
@@ -168,7 +169,7 @@ function popupElement(picture, element, nume, functie) {
                 <img src="${picture}" width="50" height="50" class="rounded-circle shadow" alt="">
                     <h5 class="mb-0 mt-5 f-s-15">${nume}</h5>
                     <p class="mb-3 f-s-15">${functie}</p>
-                    <input type="checkbox" class="remove">
+                    <input type="checkbox" onclick="tempPersImage(${id})" class="remove">
                     </div>
             </div>
         </div>
@@ -202,20 +203,26 @@ function retCustomClass() {
 
 }
 
+let tempPersImageIDS = [];
+function tempPersImage(id) {
+    tempPersImageIDS.push(`assets/images/custom-persons/${id}.jpg`)
+}
+
 function assignNote(element) {
 
     console.log(retCustomClass());
+    tempPersImageIDS = [];
 
     Swal.fire({
         html: `
-            ${popupElement('assets/images/custom-persons/5.jpg', element, "Alexandru Irimescu", "Administrator" )}
-            ${popupElement('assets/images/custom-persons/3.jpg', element, "Alexandra Ghibu", "Expert fonduri europene AFIR")}
-            ${popupElement('assets/images/custom-persons/4.jpg', element, "Stefani Hriscu", "Expert fonduri europene AFIR")}
-            ${popupElement('assets/images/custom-persons/8.jpg', element, "Andra Bunu", "Expert fonduri europene AFIR")}
-            ${popupElement('assets/images/custom-persons/10.jpg', element, "Daniela Irimescu", "Expert fonduri europene AFIR")}
-            ${popupElement('assets/images/custom-persons/2.jpg', element, "Dan Balutel", "Expert fonduri europene AFIR")}
-            ${popupElement('assets/images/custom-persons/12.jpg', element, "Iordache Mihaela", "Expert fonduri europene AFIR")}
-            ${popupElement('assets/images/custom-persons/9.jpg', element, "Ionut Rusu", "Expert fonduri europene AFIR")}
+            ${popupElement('assets/images/custom-persons/5.jpg', element, "Alexandru Irimescu", "Administrator", 5)}
+            ${popupElement('assets/images/custom-persons/3.jpg', element, "Alexandra Ghibu", "Expert fonduri europene AFIR", 3)}
+            ${popupElement('assets/images/custom-persons/4.jpg', element, "Stefani Hriscu", "Expert fonduri europene AFIR", 4)}
+            ${popupElement('assets/images/custom-persons/8.jpg', element, "Andra Bunu", "Expert fonduri europene AFIR", 8)}
+            ${popupElement('assets/images/custom-persons/10.jpg', element, "Daniela Irimescu", "Expert fonduri europene AFIR", 10)}
+            ${popupElement('assets/images/custom-persons/2.jpg', element, "Dan Balutel", "Expert fonduri europene AFIR", 2)}
+            ${popupElement('assets/images/custom-persons/12.jpg', element, "Iordache Mihaela", "Expert fonduri europene AFIR", 12)}
+            ${popupElement('assets/images/custom-persons/9.jpg', element, "Ionut Rusu", "Expert fonduri europene AFIR", 9)}
 
         `,
         width: "700px",
@@ -227,6 +234,10 @@ function assignNote(element) {
         customClass: retCustomClass(),
     }).then((result) => {
         console.log(result);
+
+        for (let i = 0; i < tempPersImageIDS.length; i++) {
+
+        }
     });
 }
 
