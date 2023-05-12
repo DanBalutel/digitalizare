@@ -65,7 +65,7 @@
 <script src="assets/js/animation/wow/wow.min.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
 <script> 
-    const obiect = JSON.parse(window.localStorage.newdataObj);
+    const obiect = JSON.parse(localStorage.newdataObj);
     let imageURL;
     fetch(`https://aipro.ro/uploads/${obiect.DateGenerale.cui}_factura.png`, { method: 'HEAD' })
     .then(res => {
