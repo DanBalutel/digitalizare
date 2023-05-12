@@ -115,16 +115,7 @@
                           <li class="list-inline-item"><a href="https://rss.app/" target="_blank"><i class="fa fa-rss"></i></a></li>
                         </ul>
                       </div>
-                      <div class="follow">
-                        <div class="row">
-                          <div class="col-6 text-md-end border-right">
-                            <div class="follow-num counter">25869</div><span>Follower</span>
-                          </div>
-                          <div class="col-6 text-md-start">
-                            <div class="follow-num counter">659887</div><span>Following</span>
-                          </div>
-                        </div>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
