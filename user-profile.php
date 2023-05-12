@@ -135,7 +135,10 @@
                         <hr>
 
                         <div class="flot-chart-container">
-                          <div class="flot-chart-placeholder" id="morris-simple-bar-chart"></div>
+                          <img src="assets/images/custom-persons/9.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                          <h5 class="mt-2 mb-2">Ionut Rusu <br>
+                            <span class="blink">🟢</span> Lucreaza in IOT
+                          </h5>
                         </div>
                         <div class="row">
                           <div class="col-sm-6 mb-2">
