@@ -125,7 +125,7 @@
                         <h2>Activitatea pe aplicatie - <i data-feather="clock"></i> 5h 10m</h2>
                         <hr>
 
-                          <div class="row">
+                          <div class="row mx-auto">
                             <div class="col-md-4 col-12">
                               <img src="assets/images/custom-persons/9.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                               <h5 class="mt-2 mb-2">Ionut Rusu <br>
