@@ -125,7 +125,6 @@
                         <h2>Activitatea pe aplicatie - <i data-feather="clock"></i> 5h 10m</h2>
                         <hr>
 
-                        <div class="flot-chart-container">
                           <div class="row">
                             <div class="col-md-4 col-12">
                               <img src="assets/images/custom-persons/9.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
@@ -152,7 +151,6 @@
                               </h5>
                             </div>
                           </div>
-                        </div>
                         <div class="row">
                           <div class="col-sm-6 mb-2">
                             <h4>Google</h4>
