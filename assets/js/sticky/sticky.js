@@ -158,7 +158,7 @@ function makeThemeBlue(element) {
     saveCards();
 }
 
-function popupElement(picture, element) {
+function popupElement(picture, element, nume, functie) {
     tempElement = element.parentElement.parentElement.parentElement;
     const result = `
     <div class="col-5 col-md-4 m-2">
@@ -166,8 +166,8 @@ function popupElement(picture, element) {
         <div class="text-center">
             <div class="p-3">
                 <img src="${picture}" width="50" height="50" class="rounded-circle shadow" alt="">
-                    <h5 class="mb-0 mt-5 f-s-15">Doina Lupu</h5>
-                    <p class="mb-3 f-s-15">Avocat</p>
+                    <h5 class="mb-0 mt-5 f-s-15">${nume}</h5>
+                    <p class="mb-3 f-s-15">${functie}</p>
                     <input type="checkbox" class="remove">
                     </div>
             </div>
@@ -208,10 +208,15 @@ function assignNote(element) {
 
     Swal.fire({
         html: `
-            ${popupElement('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU', element)}
-            ${popupElement('https://www.avocatura.com/imagini/avocati/avocat--7686.jpg', element)}
-            ${popupElement('https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg', element)}
-            ${popupElement('https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg', element)}
+            ${popupElement('assets/images/custom-persons/5.jpg', element, "Alexandru Irimescu", "Administrator" )}
+            ${popupElement('assets/images/custom-persons/3.jpg', element, "Alexandra Ghibu", "Expert fonduri europene AFIR")}
+            ${popupElement('assets/images/custom-persons/4.jpg', element, "Stefani Hriscu", "Expert fonduri europene AFIR")}
+            ${popupElement('assets/images/custom-persons/8.jpg', element, "Andra Bunu", "Expert fonduri europene AFIR")}
+            ${popupElement('assets/images/custom-persons/10.jpg', element, "Daniela Irimescu", "Expert fonduri europene AFIR")}
+            ${popupElement('assets/images/custom-persons/2.jpg', element, "Dan Balutel", "Expert fonduri europene AFIR")}
+            ${popupElement('assets/images/custom-persons/12.jpg', element, "Iordache Mihaela", "Expert fonduri europene AFIR")}
+            ${popupElement('assets/images/custom-persons/9.jpg', element, "Ionut Rusu", "Expert fonduri europene AFIR")}
+
         `,
         width: "700px",
         minHeight: "1200px",
