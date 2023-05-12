@@ -147,7 +147,7 @@
                             <div class="col-4">
                               <img src="assets/images/custom-persons/7.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                               <h5 class="mt-2 mb-2">Dan Balutel <br>
-                                <span class="blink">🟢</span> Lucreaza in IOT
+                                <span class="blink">🟢</span> Lucreaza in CRM
                                 <br>
                                 20 minute
                               </h5>
@@ -155,7 +155,7 @@
                             <div class="col-4">
                               <img src="assets/images/custom-persons/8.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                               <h5 class="mt-2 mb-2">Andra Bunu <br>
-                                <span class="blink">🟢</span> Lucreaza in IOT
+                                <span class="blink">🟢</span> Lucreaza in Social Media
                                 <br>
                                 40 minute
                               </h5>
