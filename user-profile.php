@@ -125,7 +125,7 @@
                         <h2>Activitatea pe aplicatie - <i data-feather="clock"></i> 5h 10m</h2>
                         <hr>
                         <div class="row">
-                          <div class="col-md-6 col-sm-6 col-lg-4">
+                          <div class="col-md-6 col-6 col-lg-4">
                             <img src="assets/images/custom-persons/9.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                             <h5 class="mt-2 mb-2">Ionut Rusu <br>
                               <span class="blink">🟢</span> Lucreaza in IOT
@@ -133,7 +133,7 @@
                               60 minute
                             </h5>
                           </div>
-                          <div class="col-md-6 col-sm-6 col-lg-4">
+                          <div class="col-md-6 col-6 col-lg-4">
                             <img src="assets/images/custom-persons/7.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                             <h5 class="mt-2 mb-2">Dan Balutel <br>
                               <span class="blink">🟢</span> Lucreaza in CRM
@@ -141,7 +141,7 @@
                               20 minute
                             </h5>
                           </div>
-                          <div class="col-md-6 col-sm-6 col-lg-4">
+                          <div class="col-md-6 col-6 col-lg-4">
                             <img src="assets/images/custom-persons/8.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                             <h5 class="mt-2 mb-2">Andra Bunu <br>
                               <span class="blink">🟢</span> Lucreaza in Social Media
