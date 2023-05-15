@@ -157,7 +157,7 @@
 
 
                                             <tr>
-                                                <th scope="row">2</th>
+                                                <th scope="row">1</th>
                                                 <td>Raluca Vasilescu</td>
                                                 <td>+40 111 222 333<br>raluca.vasilescu@example.com</td>
                                                 <td>site.ro</td>
@@ -176,7 +176,7 @@
                                             </tr>
 
                                             <tr>
-                                                <th scope="row">3</th>
+                                                <th scope="row">2</th>
                                                 <td>Marius Radu</td>
                                                 <td>+40 123 456 789<br>marius.radu@example.com</td>
                                                 <td>site.ro</td>
@@ -194,7 +194,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">4</th>
+                                                <th scope="row">3</th>
                                                 <td>Ana Vladescu</td>
                                                 <td>+40 555 123 456<br>ana.vladescu@example.com</td>
                                                 <td>site.ro</td>
@@ -212,7 +212,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">5</th>
+                                                <th scope="row">4</th>
                                                 <td>Ionut Ionescu</td>
                                                 <td>+40 333 444 555<br>ionut.ionescu@example.com</td>
                                                 <td>site.ro</td>
