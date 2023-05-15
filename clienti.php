@@ -173,10 +173,29 @@
 
 
 
-                                        <tr>
+
+                                            <tr>
                                                 <th scope="row">1</th>
-                                                <td>Raluca Vasilescu</td>
-                                                <td>+40 111 222 333<br>raluca.vasilescu@example.com</td>
+                                                <td>Mihai Dumitru</td>
+                                                <td>+40 111 222 333<br>mihai.dumitru@example.com</td>
+                                                <td>site.ro</td>
+                                                <td>...</td>
+                                                <td>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                                        <a class="dropdown-item" href="?test=1">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Elena Vasile</td>
+                                                <td>+40 444 555 666<br>elena.vasile@example.com</td>
                                                 <td>site.ro</td>
                                                 <td>...</td>
                                                 <td>
@@ -193,27 +212,9 @@
                                             </tr>
 
                                             <tr>
-                                                <th scope="row">2</th>
-                                                <td>Marius Radu</td>
-                                                <td>+40 123 456 789<br>marius.radu@example.com</td>
-                                                <td>site.ro</td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6>
-                                                        <a class="dropdown-item" href="?test=1">Action</a>
-                                                        <a class="dropdown-item" href="#">Another action</a>
-                                                        <a class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div>
-                                                        <a class="dropdown-item" href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
                                                 <th scope="row">3</th>
-                                                <td>Ana Vladescu</td>
-                                                <td>+40 555 123 456<br>ana.vladescu@example.com</td>
+                                                <td>Andrei Gheorghe</td>
+                                                <td>+40 666 777 888<br>andrei.gheorghe@example.com</td>
                                                 <td>site.ro</td>
                                                 <td>...</td>
                                                 <td>
@@ -230,8 +231,8 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">4</th>
-                                                <td>Ionut Ionescu</td>
-                                                <td>+40 333 444 555<br>ionut.ionescu@example.com</td>
+                                                <td>Mihaela Popescu</td>
+                                                <td>+40 999 888 777<br>mihaela.popescu@example.com</td>
                                                 <td>site.ro</td>
                                                 <td>...</td>
                                                 <td>
@@ -246,9 +247,43 @@
                                                     </div>
                                                 </td>
                                             </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>Adrian Stanescu</td>
+                                                <td>+40 222 333 444<br>adrian.stanescu@example.com</td>
+                                                <td>site.ro</td>
+                                                <td>...</td>
+                                                <td>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                                        <a class="dropdown-item" href="?test=1">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>Laura Popa</td>
+                                                <td>+40 777 111 222<br>laura.popa@example.com</td>
+                                                <td>site.ro</td>
+                                                <td>...</td>
+                                                <td>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                                        <a class="dropdown-item" href="?test=1">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </td>
 
-
-
+                                            </tr>
 
 
 
