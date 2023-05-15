@@ -15,7 +15,7 @@
             <?php
             $title = 'Dashboard';
             include('partial/breadcrumb.php')
-                ?>
+            ?>
 
             <!-- Container-fluid starts-->
             <div class="container-fluid">
@@ -46,484 +46,171 @@
 
                                             <tr>
                                                 <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
+                                                <td>Mihai Dumitru</td>
+                                                <td>+40 111 222 333<br>mihai.dumitru@example.com</td>
+                                                <td>site.ro</td>
                                                 <td>...</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                                        <a class="dropdown-item" href="?test=1">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Elena Vasile</td>
+                                                <td>+40 444 555 666<br>elena.vasile@example.com</td>
+                                                <td>site.ro</td>
+                                                <td>...</td>
+                                                <td>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                                        <a class="dropdown-item" href="?test=1">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Andrei Gheorghe</td>
+                                                <td>+40 666 777 888<br>andrei.gheorghe@example.com</td>
+                                                <td>site.ro</td>
+                                                <td>...</td>
+                                                <td>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                                        <a class="dropdown-item" href="?test=1">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>Mihaela Popescu</td>
+                                                <td>+40 999 888 777<br>mihaela.popescu@example.com</td>
+                                                <td>site.ro</td>
+                                                <td>...</td>
+                                                <td>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                                        <a class="dropdown-item" href="?test=1">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>Adrian Stanescu</td>
+                                                <td>+40 222 333 444<br>adrian.stanescu@example.com</td>
+                                                <td>site.ro</td>
+                                                <td>...</td>
+                                                <td>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                                        <a class="dropdown-item" href="?test=1">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>Laura Popa</td>
+                                                <td>+40 777 111 222<br>laura.popa@example.com</td>
+                                                <td>site.ro</td>
+                                                <td>...</td>
+                                                <td>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                                        <a class="dropdown-item" href="?test=1">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>George Ionescu</td>
+                                                <td>+40 333 444 555<br>george.ionescu@example.com</td>
+                                                <td>site.ro</td>
+                                                <td>...</td>
+                                                <td>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                                        <a class="dropdown-item" href="?test=1">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>Andreea Radu</td>
+                                                <td>+40 666 777 888<br>andreea.radu@example.com</td>
+                                                <td>site.ro</td>
+                                                <td>...</td>
+                                                <td>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                                        <a class="dropdown-item" href="?test=1">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">9</th>
+                                                <td>Vlad Mihai</td>
+                                                <td>+40 888 777 666<br>vlad.mihai@example.com</td>
+                                                <td>site.ro</td>
+                                                <td>...</td>
+                                                <td>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                                        <a class="dropdown-item" href="?test=1">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
 
 
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-
-
-                    <div class="col-md-6 col-xs-12">
-                        <div class="card small-widget mb-sm-0">
-                            <div class="card-body primary min-h-9">
-
-                                <h4>
-                                    CONTABILITATE
-                                </h4>
-
-                                <div class="table-responsive">
-                                    <table class="table table-responsive-sm">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Nume/Prenume</th>
-                                                <th scope="col">Telefon/Email</th>
-                                                <th scope="col">Site</th>
-                                                <th scope="col">Servicii</th>
-                                                <th scope="col">Actiuni</th>
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-
-
-
-
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <div class="col-md-6 col-xs-12">
-                        <div class="card small-widget mb-sm-0">
-                            <div class="card-body primary min-h-9">
-                                <h4>
-                                    IT
-                                </h4>
-
-                                <div class="table-responsive">
-                                    <table class="table table-responsive-sm">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Nume/Prenume</th>
-                                                <th scope="col">Telefon/Email</th>
-                                                <th scope="col">Site</th>
-                                                <th scope="col">Servicii</th>
-                                                <th scope="col">Actiuni</th>
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Cristina Popescu</td>
-                                                <td>07265555555 <br> email@gmail.com</td>
-                                                <td>site.ro </td>
-                                                <td>...</td>
-                                                <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
-                                                    <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -567,16 +254,10 @@
                                                 <td>site.ro </td>
                                                 <td>...</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -589,16 +270,10 @@
                                                 <td>site.ro </td>
                                                 <td>...</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -613,16 +288,10 @@
                                                 <td>site.ro </td>
                                                 <td>...</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -636,16 +305,10 @@
                                                 <td>site.ro </td>
                                                 <td>...</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -659,16 +322,10 @@
                                                 <td>site.ro </td>
                                                 <td>...</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -682,16 +339,10 @@
                                                 <td>site.ro </td>
                                                 <td>...</td>
                                                 <td>
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">Seteaza</button>
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seteaza</button>
                                                     <div class="dropdown-menu" style="">
-                                                        <h6 class="dropdown-header">Dropdown header</h6><a
-                                                            class="dropdown-item" href="?test=1">Action</a><a
-                                                            class="dropdown-item" href="#">Another action</a><a
-                                                            class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div><a class="dropdown-item"
-                                                            href="#">Separated link</a>
+                                                        <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="?test=1">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -721,9 +372,7 @@
 
 
             <!-- Modal loading-->
-            <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1"
-                aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true"
-                role="dialog">
+            <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true" role="dialog">
                 <div class="mt-5 modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-body dark-modal">
@@ -732,8 +381,7 @@
                             <h6 id="loadingLabel" class="w-100 d-flex justify-content-center">text here</h6>
 
                             <div class="progress">
-                                <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success"
-                                    role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
 
 
