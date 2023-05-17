@@ -18,7 +18,7 @@ for (var i = 0; i < pairs.length; i++) {
 if (request['cui']) {
 
     window.localStorage.setItem('cui', request['cui']);
-    showVideoMonica(localStorage.displayedModal1);
+    // showVideoMonica(localStorage.displayedModal1);
     getTermeneData(request['cui']);
     populatePage();
 
