@@ -21,7 +21,7 @@
             <div class="container-fluid">
                 <div class="row mt-3 h-100 d-flex flex-column justify-content-center align-items-center g-sm-3 height-equal-2 widget-charts">
 
-                    <iframe style="min-height: 80vh" src="https://us05web.zoom.us/wc/93140276777/start" allow="camera; microphone"></iframe>
+                    <iframe style="min-height: 80vh" src="https://zoom.us/j/95620343729?pwd=TEE3bHU2TUZIbUVxMWhZcG40em5uZz09" allow="camera; microphone"></iframe>
 
 
                 </div>
