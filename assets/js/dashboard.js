@@ -32,10 +32,10 @@ if (request['cui']) {
 else {
 
     // TEMP removed request for CUI
-    window.localStorage.setItem('cui', '38911092');
+    window.localStorage.setItem('cui', '19');
     // REMOVED TEMP monica video popup
     // showVideoMonica(localStorage.displayedModal1);
-    getTermeneData(request['38911092']);
+    getTermeneData(request['19']);
     populatePage();
     // END TEMP
 
