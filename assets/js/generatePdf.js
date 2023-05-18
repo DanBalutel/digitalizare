@@ -34,8 +34,8 @@ function generatePdf(fileName, fieldsObj) {
 }
 
 
-function generatePdfA6(fileName) {
-    // console.log(fieldsObj);
+function generatePdfA6(fileName, fieldsObj) {
+    console.log(fieldsObj);
     // loading
     renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
 
@@ -47,8 +47,8 @@ function generatePdfA6(fileName) {
         body: JSON.stringify({
             'cui': newdataObj.firma.cui,
             'fileName': fileName,
-            'pdfPath': 'https://aipro.ro/assets/pdf/anexa6.pdf'
-            // 'fieldValues': fieldsObj
+            'pdfPath': 'https://aipro.ro/assets/pdf/anexa6.pdf',
+            'fieldValues': fieldsObj
         })
 
 
