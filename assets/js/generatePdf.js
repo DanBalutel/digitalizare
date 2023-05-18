@@ -47,7 +47,7 @@ function generatePdfA6(fileName, fieldsObj) {
         body: JSON.stringify({
             'cui': newdataObj.firma.cui,
             'fileName': fileName,
-            'pdfPath': 'https://aipro.ro/assets/pdf/anexa6.pdf',
+            'pdfPath': 'https://aipro.ro/assets/pdf/anexa6_3.pdf',
             'fieldValues': fieldsObj
         })
 
