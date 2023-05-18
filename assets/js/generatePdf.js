@@ -42,7 +42,7 @@ function generatePdfA6(fileName, fieldsObj) {
     fetch('http://api.aipro.ro:3003/generate-pdf', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/pdf'
         },
         body: JSON.stringify({
             'cui': newdataObj.firma.cui,
