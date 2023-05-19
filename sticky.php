@@ -87,7 +87,10 @@
                   <h3>Vineri - 21.04.2023</h3>
                   <!-- hardcoded card -->
                   <div class="noteCustom" ondragstart="`function(){$(this).css(&quot;z-index&quot;," ++notezindex);}`="" style=""><input type="checkbox" class="remove" data-bs-original-title="" title=""><a href="javascript:;" class="button remove" data-bs-original-title="" title="">X</a>
-                    <div class="note_cnt"><textarea class="cnt" rows="10" placeholder="Scrie textul aici" oninput="saveCards()"></textarea>
+                    <div class="note_cnt">
+                      <textarea class="cnt" rows="10" placeholder="Scrie textul aici" oninput="saveCards()">
+                      Revizuirea raportului financiar trimestrial - întâlnire cu echipa financiară pentru a revizui raportul financiar trimestrial al companiei. Analizam tendințele și luam decizii strategice pentru a optimiza performanța financiară a companiei.
+                      </textarea>
                       <div class="d-flex pers"><img src="assets/images/custom-persons/4.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="assets/images/custom-persons/8.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""></div>
                       <div class="d-flex">
                         <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Azi</div>
@@ -101,7 +104,10 @@
 
                   <!-- hardcoded card -->
                   <div class="noteCustom" ondragstart="`function(){$(this).css(&quot;z-index&quot;," ++notezindex);}`="" style=""><input type="checkbox" class="remove" data-bs-original-title="" title=""><a href="javascript:;" class="button remove" data-bs-original-title="" title="">X</a>
-                    <div class="note_cnt"><textarea class="cnt" rows="10" placeholder="Scrie textul aici" oninput="saveCards()"></textarea>
+                    <div class="note_cnt">
+                      <textarea class="cnt" rows="10" placeholder="Scrie textul aici" oninput="saveCards()">
+                      Planificarea întâlnirii cu echipa de proiect - întâlnire cu echipa de proiect pentru a discuta despre stadiul actual al proiectelor și pentru a verifica dacă se respectă termenele limită.
+                      </textarea>
                       <div class="d-flex pers"><img src="assets/images/custom-persons/8.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="assets/images/custom-persons/11.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""><img src="assets/images/custom-persons/13.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt=""></div>
                       <div class="d-flex">
                         <div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Azi</div>
