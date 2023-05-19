@@ -52,10 +52,10 @@ var noteTemp = '<div class="note" ondragstart=`function(){$(this).css("z-index",
     + '<textarea class="cnt" rows="10" placeholder="Scrie textul aici" oninput="saveCards()"></textarea>'
 
     + '<div class="d-flex pers">'
-    + '<img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
-    + '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
-    + '<img src="https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
-    + '<img src="https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+    // + '<img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+    // + '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+    // + '<img src="https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+    // + '<img src="https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
     + '</div>'
 
     + '<div class="d-flex">'
