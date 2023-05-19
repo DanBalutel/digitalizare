@@ -151,7 +151,7 @@ div#monicaModal1 button.btn-close {
     height: 100%;
 }
 
-.swal2-popup {
+.page-wrapper.notes .swal2-popup {
     height: 900px;
 }
 
