@@ -45,28 +45,52 @@ let tempElement;
         });
     };
 })(jQuery);
-var noteTemp = '<div class="note" ondragstart=`function(){$(this).css("z-index", ++noteZindex);}`>'
-    + '<input type="checkbox" class="remove">'
-    + '<a href="javascript:;" class="button remove">X</a>'
-    + '<div class="note_cnt">'
-    + '<textarea class="cnt" rows="10" placeholder="Scrie textul aici" oninput="saveCards()"></textarea>'
 
-    + '<div class="d-flex pers">'
-    // + '<img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
-    // + '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
-    // + '<img src="https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
-    // + '<img src="https://www.barou-alba.ro/wp-content/uploads/2020/12/DORIANI-CELLINI-SEBASTIAN.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
-    + '</div>'
 
-    + '<div class="d-flex">'
-    + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Azi</div>'
-    + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Important</div>'
-    + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Alerta</div>'
-    + '<div onclick="assignNote(this)" class="cardWithGrayBorder m-1 f-s-10"><i class="icofont icofont-business-man"></i></div>'
-    + '</div>'
+// lista cu poze la angajati
+let assingList = [];
 
-    + '</div> '
-    + '</div>';
+function addOrRemoveEmployeer(id) {
+    const index = assingList.indexOf(id);
+
+    if (index === -1) {
+        assingList.push(id);
+        console.log(`ID ${id} added to the list.`);
+    } else {
+        assingList.splice(index, 1);
+        console.log(`ID ${id} removed from the list.`);
+    }
+}
+
+
+let clickedCard = '';
+
+function getNodeTemp() {
+    const uniqueID = generateUniqueId();
+
+    return `<div class="note" id="${uniqueID}" ondragstart="function(){$(this).css("z-index", ++noteZindex)";}>`
+        + '<input type="checkbox" class="remove">'
+        + '<a href="javascript:;" class="button remove">X</a>'
+        + '<div class="note_cnt">'
+        + '<textarea class="cnt" rows="10" placeholder="Scrie textul aici" oninput="saveCards()"></textarea>'
+
+        + `<div id="listOfPersons${uniqueID}" class="d-flex pers">`
+        // + '<img src="https://www.avocatura.com/imagini/avocati/avocat--7686.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+        // + '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNaKSnBhPL2gOjhgAgpdn_uqoXByl_aoB3zU0Poy3pXrUGSRdyQHKaTqzDxC6PeAB2Fw&amp;usqp=CAU" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+        // + '<img src="https://www.avocatura.com/imagini/avocati/avocat-marcu-andrei-alexandru-9317.jpg" width="30" height="30" class="rounded-circle shadow m-1" alt="">'
+        + '</div>'
+
+        + '<div class="d-flex">'
+        + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Azi</div>'
+        + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Important</div>'
+        + '<div onclick="makeThemeBlue(this)" class="cardWithGrayBorder m-1 f-s-10">Alerta</div>'
+        + `<div onclick="assignNote(this); clickedCard='${uniqueID}'" class="cardWithGrayBorder m-1 f-s-10"><i class="icofont icofont-business-man"></i></div>`
+        + '</div>'
+
+        + '</div> '
+        + '</div>';
+}
+
 var noteZindex = 1;
 function deleteNote() {
     if (d.element('board')) {
@@ -86,6 +110,7 @@ function newNote() {
     return false;
 };
 function newNote2(content) {
+    const noteTemp = getNodeTemp();
     var note = $(noteTemp);
     note.find('.cnt').val(content);
     note.hide().prependTo("#board").show("fade", 300).draggable();
@@ -96,6 +121,7 @@ function newNote2(content) {
     return false;
 };
 function newNote2Render(content, persons) {
+    const noteTemp = getNodeTemp();
     var note = $(noteTemp);
     note.find('.cnt').val(content);
     note.find('.pers').html(persons);
@@ -169,7 +195,7 @@ function popupElement(picture, element, nume, functie, id) {
                 <img src="${picture}" width="50" height="50" class="rounded-circle shadow" alt="">
                     <h5 class="mb-0 mt-5 f-s-15">${nume}</h5>
                     <p class="mb-3 f-s-15">${functie}</p>
-                    <input type="checkbox" onclick="tempPersImage(${id})" class="remove">
+                    <input type="checkbox" onclick="addOrRemoveEmployeer('${picture}')" class="remove">
                     </div>
             </div>
         </div>
@@ -203,15 +229,10 @@ function retCustomClass() {
 
 }
 
-let tempPersImageIDS = [];
-function tempPersImage(id) {
-    tempPersImageIDS.push(`assets/images/custom-persons/${id}.jpg`)
-}
-
 function assignNote(element) {
 
     console.log(retCustomClass());
-    tempPersImageIDS = [];
+    assingList = [];
 
     Swal.fire({
         html: `
@@ -233,10 +254,13 @@ function assignNote(element) {
         backdrop: 'rgba(0,0,0,0.4)',
         customClass: retCustomClass(),
     }).then((result) => {
-        console.log(result);
+        let listEmployee = d.element(`listOfPersons${clickedCard}`)
+        listEmployee.innerHTML = '';
 
-        for (let i = 0; i < tempPersImageIDS.length; i++) {
+        for (let i = 0; i < assingList.length; i++) {
+            console.log(assingList[i]);
 
+            listEmployee.innerHTML += `<img src="${assingList[i]}" width="30" height="30" class="rounded-circle shadow m-1" alt="">`
         }
     });
 }

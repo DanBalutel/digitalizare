@@ -17,6 +17,16 @@
 <script src="assets/js/slick/slick.js"></script>
 <script src="assets/js/header-slick.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function generateUniqueId() {
+        const random = Math.floor(Math.random() * 90000) + 10000;
+        return random.toString().substring(0, 5);
+    }
+
+    // Example usage
+    const uniqueId = generateUniqueId();
+    console.log(uniqueId);
+</script>
 <!-- Plugins JS Ends-->
 <!-- Theme js-->
 <script src="assets/js/custom-script.js"></script>
