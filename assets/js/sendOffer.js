@@ -30,7 +30,7 @@ function sendTest() {
         },
     })
         .then(response => {
-            console.log(response)
+            console.log(response.json())
             if (response.ok) {
                 console.log('Email sent successfully!');
 
@@ -38,7 +38,10 @@ function sendTest() {
                     icon: 'success',
                     title: 'Success!',
                     text: 'Cererea de oferta a fost inregistrata cu succes!'
-                });
+                }).then(() => {
+                    // After the Swal message, redirect the user
+                    window.location.href = `oferta.php?cui=${encodeURIComponent(eCui)}`;
+                });;
             } else {
                 console.error('Error sending email:', response.statusText);
                 Swal.fire({
