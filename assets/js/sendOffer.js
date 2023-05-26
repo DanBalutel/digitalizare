@@ -21,8 +21,9 @@ function sendTest() {
     const eBuget = document.getElementById('oBuget').value;
     const eCui = document.getElementById('oCui').value;
     
+    console.log(eCui)
     // vasi function
-    fetch(`http://195.161.68.184:3010/api/get/firme/${eCui}`, {
+    fetch(`http://195.161.68.184:3010/api/get/firme/19`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
