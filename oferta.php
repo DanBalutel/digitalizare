@@ -25,7 +25,34 @@
 </div>
 
 <?php include('partial/scripts.php'); ?>
+<script>
+    function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+    const results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+const eCui = getParameterByName('cui');
 
+fetch(`https://punctaj.ro/api/anaf/cui/${eCui}`, {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+})
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        // Process your data here...
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        // Handle error...
+    });
+
+</script>
   <script src="assets/js/notify/index.js"></script>
 
 <script src="assets/js/height-equal.js"></script>
