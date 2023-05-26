@@ -9,6 +9,10 @@
                 <form action="">
                     <div class="row">
                         <div class="col-md-12">
+                            <label for="cui">CUI</label>
+                            <input id="cui" type="number" class="form-control" placeholder="19">
+                        </div>
+                        <div class="col-md-12">
                             <label for="email">Email</label>
                             <input id="oEmail" type="email" class="form-control" placeholder="example@gmail.com">
                         </div>
