@@ -21,9 +21,26 @@
             <div class="container-fluid">
                 <div class="row g-sm-3 height-equal-2 widget-charts">
 
+
+                    <div class="dropdown">
+                        <input type="text" id="themeSearch" class="dropdown-input form-control" style="background-color: #1d1e26;border-color: #1d1e26;color: rgba(255, 255, 255, 0.2);" placeholder="Adauga un CUI...">
+                        <ul class="dropdown-list" id="themeDropdown">
+                            <li>Selecteaza un CUI</li>
+                            <li value="1" onclick="getLeadData('13548146')">13548146</li>
+                            <li value="2" onclick="getLeadData('35410186')">35410186</li>
+                            <li value="3" onclick="getLeadData('6116706')">6116706</li>
+                            <li value="4" onclick="getLeadData('43938809')">43938809</li>
+                            <li value="5" onclick="getLeadData('15985694')">15985694</li>
+                            <li value="6" onclick="getLeadData('37375182')">37375182</li>
+                            <li value="7" onclick="getLeadData('18911470')">18911470</li>
+                            <li value="8" onclick="getLeadData('40452811')">40452811</li>
+                            <li value="9" onclick="getLeadData('6116706')">6116706</li>
+                        </ul>
+                    </div>
+
+
+
                     <h4 style="color: #00CCFF">Campanii Facebook</h4>
-
-
 
                     <div class="col-sm-12">
                         <div class="card">
@@ -37,6 +54,8 @@
                                             <button class="btn btn-primary mb-3" id="downloadExcel1">Exporta in Excel</button>
                                             <input class="form-control" type="file" id="uploadExcel1" accept=".xlsx" />
                                             <button class="btn btn-primary mb-3" id="processExcel1">Importa din Excel</button>
+                                            <button class="btn btn-primary mb-3 m-l-3" id="addClient1">Adauga lead</button>
+
                                         </div>
 
                                         <table class="display dataTable" id="multilevel-btn" role="grid" aria-describedby="multilevel-btn_info">
@@ -181,5 +200,350 @@
 <!-- Plugins JS Ends-->
 <script>
     new WOW().init();
+
+    function addClient1(clientData) {
+
+        Swal.fire({
+            html: `
+
+            <div class="">
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="row g-sm-3 height-equal-2 widget-charts">
+            <div class="col-md-6">
+                <div class="card small-widget mb-sm-0">
+                    <div id="card1" class="card-body primary min-h-7"> <span class="f-light">Cifra de afaceri</span>
+                        <div class="d-flex align-items-end gap-1">
+                            <h4 id="cifra-de-afaceri"></h4><span class="font-primary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
+                        </div>
+                        <div class="bg-gradient">
+                            <svg class="stroke-icon svg-fill">
+                                <use href="../assets/svg/icon-sprite.svg#fill-charts"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card small-widget mb-sm-0">
+                    <div id="card2" class="card-body success min-h-7"><span class="f-light">Profit</span>
+                        <div class="d-flex align-items-end gap-1">
+                            <h4 id="profit-actual"></h4><span class="font-success f-12 f-w-500"><i class="icon-arrow-up"></i><span>+20%</span></span>
+                        </div>
+                        <div class="bg-gradient">
+                            <svg class="stroke-icon svg-fill">
+                                <use href="../assets/svg/icon-sprite.svg#profit"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card small-widget mb-sm-0">
+                    <div id="card3" class="card-body secondary min-h-7"><span class="f-light">Angajați</span>
+                        <div class="d-flex align-items-end gap-1">
+                            <h4 id="locuri-munca"></h4><span class="font-secondary f-12 f-w-500"></span>
+                        </div>
+                        <div class="bg-gradient">
+                            <svg class="stroke-icon svg-fill">
+                                <use href="../assets/svg/icon-sprite.svg#fill-user"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card small-widget mb-sm-0">
+                    <div id="card4" class="card-body success min-h-7"><span class="f-light">Cod CAEN</span>
+                        <div class="flex-wrap d-flex align-items-end gap-1">
+                            <h4 id="cod-caen"></h4><span class="font-success f-12 f-w-500"></span>
+                            <div id="nume-caen" class="f-14 f-s-normal">denumire CAEN</div>
+                        </div>
+                        <div class="bg-gradient">
+                            <svg class="stroke-icon svg-fill">
+                                <use href="../assets/svg/icon-sprite.svg#fill-bookmark"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Date generale despre firma -->
+        <div class="col-12 mt-3">
+            <div class="card small-widget mb-sm-0">
+                <div id="cardDateGenerale" class="card-body primary min-h-7"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"></span>
+                    <div class="row d-flex">
+                        <div class="col-md-12" id="dateGenerale">
+                            <span>
+                                <h4 style="color: #00CCFF">Detalii generale</h4><br>
+                                CUI: <span>19</span><br>
+                                Nr. de înmatriculare: <span>J40/365/1991</span><br>
+                                Obiect activitate MFINANȚE: <span>4719 - Comert cu amanuntul in magazine nespecializate, cu vanzare predominanta de produse nealimentare</span> <br><br>
+
+                                <h4>Adresă</h4>
+                                Localitate: <span>București</span>
+                                Județ: <span>București</span>
+                                Sediu social (RECOM/MFINANȚE): <span>Șoseaua Colentina, Nr. 2, București, Sector 2</span>
+                                Domiciliu fiscal (ANAF): <span>Șoseaua Colentina, Nr. 2, București, Sector 2</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 mt-3">
+            <div class="card">
+                <div class="card-header" style="background-color: rgba(0, 0, 0, 0.03);">
+                    <h2 style="color:#00CCFF">Asociați/acționari și persoane autorizate - conexiuni cu alte firme</h2>
+                    <h4 style="color:#00CCFF">Data ultimei actualizări: 02.03.2023</h4>
+                </div>
+                <div class="card-block row">
+                    <div class="col-sm-12 col-lg-12 col-xl-12">
+                        <div class="table-responsive">
+                            <table class="table table-responsive-sm">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nume</th>
+                                        <th scope="col">Functie</th>
+                                        <th scope="col">%</th>
+                                        <th scope="col">Firma</th>
+                                        <th scope="col">Judet</th>
+                                        <th scope="col">Localitate</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="asociatiConexiuni">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+    </div>
+</div>
+            `,
+            width: "700px",
+            minHeight: "500px",
+            showConfirmButton: true,
+            backdrop: 'rgba(0,0,0,0.4)',
+            customClass: {
+                container: '.dark-mode-transparent moniModal1',
+                popup: 'dark-mode',
+                header: 'dark-mode-header',
+                title: 'dark-mode-header',
+                closeButton: 'dark-mode-close',
+                content: 'dark-mode',
+                confirmButton: 'dark-mode-confirm',
+                actions: 'dark-mode-actions'
+            }
+
+        }).then((result) => {
+            try {
+
+            } catch (error) {
+                console.log(error)
+            }
+
+            console.log(result);
+        });
+
+
+
+
+
+        console.log(clientData);
+
+        const blockCA = document.getElementById('cifra-de-afaceri');
+        blockCA.innerHTML = parseFloat(clientData.bilanturi_mfinante_scurte.ultimul_raportat.cifra_de_afaceri_neta.valoare).toLocaleString('en-US');
+
+        const blockProfit = document.getElementById('profit-actual');
+        blockProfit.innerHTML = parseFloat(clientData.bilanturi_mfinante_scurte.ultimul_raportat.profit_net.valoare).toLocaleString('en-US');
+
+        const locuriMunca = document.getElementById('locuri-munca');
+        locuriMunca.innerHTML = clientData.bilanturi_mfinante_scurte.ultimul_raportat.numar_mediu_angajati.valoare;
+
+        const codCAEN = document.getElementById('cod-caen');
+        codCAEN.innerHTML = clientData.bilanturi_mfinante_scurte.ultimul_raportat.cod_caen;
+        const numeCAEN = document.getElementById('nume-caen');
+        numeCAEN.innerHTML = listCaen[codCAEN.innerHTML];
+
+        const dateGenerale = document.getElementById('dateGenerale');
+        dateGenerale.innerHTML = `
+                <span>
+                <h4 style="color: #00CCFF">Detalii generale</h4><br>
+                CUI: <span>${clientData.firma.cui}</span><br>
+                Nr. de înmatriculare: <span>${clientData.firma.j}</span><br>
+                Obiect activitate MFINANȚE: <span>${clientData.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}</span> <br><br>
+
+                <h4>Adresă</h4>
+                Localitate: <span>${clientData.adresa.anaf.localitate}</span>
+                Județ: <span>${clientData.adresa.anaf.judet}</span>
+                Sediu social (RECOM/MFINANȚE): <span>${clientData.adresa.sediu_social.formatat}</span>
+                Domiciliu fiscal (ANAF): <span>${clientData.adresa.anaf.formatat}</span>
+
+                </span>
+                `;
+
+        d.element('asociatiConexiuni');
+
+        function addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate) {
+
+            let int = parseInt(i);
+            // all schema of table line
+            const jsonData = {
+                "tag": "tr",
+                "children": [{
+                        "tag": "td",
+                        "innerHTML": `${++int}`,
+                        "attrs": {
+                            "scope": "row"
+                        }
+                    },
+                    {
+                        "tag": "td",
+                        "innerHTML": `${nume}`
+                    },
+                    {
+                        "tag": "td",
+                        "class": "columnCustomFlex",
+                        "innerHTML": `${functie}`
+                    },
+                    {
+                        "tag": "td",
+                        "class": "columnCustomFlex",
+                        "innerHTML": `${procentaj}`
+                    },
+                    {
+                        "tag": "td",
+                        "class": "columnCustomFlex",
+                        "innerHTML": `${firma}`
+                    },
+                    {
+                        "tag": "td",
+                        "class": "columnCustomFlex",
+                        "innerHTML": `${judet}`
+                    },
+                    {
+                        "tag": "td",
+                        "class": "columnCustomFlex",
+                        "innerHTML": `${localitate}`
+                    }
+                ]
+            }
+
+            // end of JSON
+            d.createElement(jsonData, d.e.asociatiConexiuni);
+        }
+
+        // randuri tabel asociati conexiuni
+        for (let i in clientData.conexiuni_asociati) { //DONE
+            const nume = clientData.conexiuni_asociati[i].nume; //DONE
+            let functie = '';
+            let procentaj = '';
+            let firma = '';
+            let judet = '';
+            let localitate = '';
+
+            for (let j in clientData.conexiuni_asociati[i].legaturi) { //DONE
+                functie += '<span class="cardWithGrayBorder f-s-15">' + clientData.conexiuni_asociati[i].legaturi[j].functie + '</span><br>'; //DONE
+                procentaj += '<span style="color: #2F2F3B; border: none;background-color: #57e546;" class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '</span><br>'; //DONE
+                firma += '<span class="cardWithGrayBorder f-s-15">' + clientData.conexiuni_asociati[i].legaturi[j].firma + '</span><br>'; //DONE
+                judet += '<span class="cardWithGrayBorder f-s-15">' + clientData.conexiuni_asociati[i].legaturi[j].judet + '</span><br>'; //DONE
+                localitate += '<span class="cardWithGrayBorder f-s-15">' + clientData.conexiuni_asociati[i].legaturi[j].localitate + '</span><br>'; //DONE
+
+            }
+
+            addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate)
+        }
+
+    }
+
+    d.element("element");
+    d.createHandler('addClient1', 'click', addClient1);
+
+
+
+
+    const themeSearchInput = document.getElementById('themeSearch');
+    const themeDropdown = document.getElementById('themeDropdown');
+    const themeOptions = Array.from(themeDropdown.getElementsByTagName('li'));
+
+    themeSearchInput.addEventListener('click', () => {
+        themeDropdown.classList.toggle('show');
+    });
+
+    themeSearchInput.addEventListener('input', () => {
+        const searchText = themeSearchInput.value.toLowerCase();
+
+        themeOptions.forEach((option) => {
+            if (option.textContent.toLowerCase().includes(searchText)) {
+                option.style.display = 'block';
+            } else {
+                option.style.display = 'none';
+            }
+        });
+    });
+
+    themeOptions.forEach((option) => {
+        option.addEventListener('click', () => {
+            themeSearchInput.value = option.textContent;
+            themeDropdown.classList.remove('show');
+        });
+    });
+
+
+
+    let leadData = {};
+
+    function getLeadData(cui) {
+        console.log(cui);
+        // (A) URL & CREDENTIALS
+        var url = `https://api.aipro.ro:3001/cui?cui=${cui}`
+        // (B) FETCH WITH HTTP AUTH
+
+        fetch(url)
+
+            // (C) SERVER RESPONSE
+            .then((result) => {
+                if (result.status != 200) {
+                    throw new Error("Bad Server Response");
+                }
+                return result.text();
+            })
+            .then((response) => {
+                leadData = JSON.parse(response);
+
+                document.addEventListener("DOMContentLoaded", function() {
+                    console.log('loaded!');
+                });
+
+                return leadData;
+            })
+            .then((leadData) => {
+                // call populatePage only when newdataObj is defined
+                if (leadData) {
+                    console.log(leadData);
+                    // also we create popup here
+                    addClient1(leadData);
+                }
+            })
+
+
+            // (D) HANDLE ERRORS (OPTIONAL)
+            .catch((error) => {
+                console.log(`eroare CUI: ${error}`);
+                localStorage.removeItem('newDataObj');
+                alert('CUI gresit')
+                window.location.href = window.location.origin;
+            });
+
+
+
+    };
 </script>
 <?php include('partial/footer-end.php') ?>

@@ -32,6 +32,10 @@
     margin-right: 1rem;
 }
 
+.m-l-3 {
+    margin-left: 3rem;
+}
+
 img.rounded-circle.shadow {
     object-fit: cover;
 }
@@ -341,4 +345,48 @@ body.dark-only .note>input[type="checkbox"],
 body.dark-only .noteCustom>input[type="checkbox"] {
     accent-color: #a19ca3 !important;
     filter: invert(79%) hue-rotate(289deg) brightness(1.7);
+}
+
+
+
+/* crm popup CSS */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-input {
+    padding: 5px;
+}
+
+.dropdown-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: #1d1e26;;
+    border: 1px solid #1d1e26;;
+    display: none;
+}
+
+.dropdown-list li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown-list li:hover {
+    background-color: #e5e5e5;
+}
+
+.dropdown-list.show {
+    display: block;
+}
+
+.swal2-html-container td, .swal2-html-container th, h4#locuri-munca, h4#cifra-de-afaceri, h4#profit-actual, h4#cod-caen, div#nume-caen, div#dateGenerale {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.swal2-html-container td:nth-child(2) {
+    min-width: 10rem;
 }
