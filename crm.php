@@ -217,7 +217,10 @@
             <div class="col-md-6">
                 <div class="card small-widget mb-sm-0">
                     <div id="proforma" class="card-body primary min-h-7"> <span class="f-light">Facturi ProForma</span>
-                        <p> Proforma 4 </p>
+                    <br>
+                    <br>
+                        <div> Proforma 4.pdf </div>
+                        <div> Proforma 5.pdf </div>
                     </div>
                 </div>
             </div>
@@ -225,6 +228,10 @@
             <div class="col-md-6">
                 <div class="card small-widget mb-sm-0">
                     <div id="factura" class="card-body primary min-h-7"> <span class="f-light">Facturi Fiscale</span>
+                    <br>
+                    <br>
+
+                        <div class="ffGreen"> Factura Fiscala 5.pdf </div>
                     </div>
                 </div>
             </div>
