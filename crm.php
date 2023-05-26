@@ -346,12 +346,24 @@
 
         }).then((result) => {
             try {
+                // after confirm "adauga lead"
+                const administratorId = findAdministratorId(0, clientData);
+                const tempAdmin = clientData.administratori.persoane_fizice[administratorId].nume;
 
+                crmTable1.push({
+                    id: crmTable1.length + 1,
+                    name: tempAdmin,
+                    phone: clientData.date_contact.telefon[0],
+                    email: clientData.date_contact.email[0],
+                    status: 'Nu stie',
+                    factura: 'Urmeaza'
+                })
+
+                // adaugam leadurile in tabel, reincarcam tabelul
+                renderCrmTable(0, 1, crmTable1);
             } catch (error) {
                 console.log(error)
             }
-
-            console.log(result);
         });
 
 
