@@ -35,7 +35,8 @@
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 const eCui = getParameterByName('cui');
-
+const eEmail = getParameterByName('email');
+console.log(eEmail)
 fetch(`https://punctaj.ro/api/anaf/cui/${eCui}`, {
     method: 'GET',
     headers: {

@@ -21,7 +21,6 @@ function sendTest() {
     const eBuget = document.getElementById('oBuget').value;
     const eCui = document.getElementById('oCui').value;
     
-    console.log(eCui)
     // vasi function
     fetch(`https://punctaj.ro/api/anaf/cui/${eCui}`, {
         method: 'GET',
@@ -40,7 +39,7 @@ function sendTest() {
                     text: 'Cererea de oferta a fost inregistrata cu succes!'
                 }).then(() => {
                     // After the Swal message, redirect the user
-                    window.location.href = `oferta.php?cui=${encodeURIComponent(eCui)}`;
+                    window.location.href = `oferta.php?cui=${encodeURIComponent(eCui)}&email=${encodeURIComponent(eEmail)}&telefon=${encodeURIComponent(eTelefon)}&buget=${encodeURIComponent(eBuget)}`;
                 });;
             } else {
                 console.error('Error sending email:', response.statusText);
