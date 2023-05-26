@@ -210,6 +210,26 @@
     <!-- Container-fluid starts-->
     <div class="container-fluid">
         <div class="row g-sm-3 height-equal-2 widget-charts">
+
+        <h2 style="color:#00CCFF" id="numePrenume"></h2>
+
+
+            <div class="col-md-6">
+                <div class="card small-widget mb-sm-0">
+                    <div id="proforma" class="card-body primary min-h-7"> <span class="f-light">Facturi ProForma</span>
+                        <p> Proforma 4 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card small-widget mb-sm-0">
+                    <div id="factura" class="card-body primary min-h-7"> <span class="f-light">Facturi Fiscale</span>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="col-md-6">
                 <div class="card small-widget mb-sm-0">
                     <div id="card1" class="card-body primary min-h-7"> <span class="f-light">Cifra de afaceri</span>
@@ -274,18 +294,7 @@
                 <div id="cardDateGenerale" class="card-body primary min-h-7"> <span style="font-size: 1.7rem;" class="f-w-700 f-light"></span>
                     <div class="row d-flex">
                         <div class="col-md-12" id="dateGenerale">
-                            <span>
-                                <h4 style="color: #00CCFF">Detalii generale</h4><br>
-                                CUI: <span>19</span><br>
-                                Nr. de înmatriculare: <span>J40/365/1991</span><br>
-                                Obiect activitate MFINANȚE: <span>4719 - Comert cu amanuntul in magazine nespecializate, cu vanzare predominanta de produse nealimentare</span> <br><br>
 
-                                <h4>Adresă</h4>
-                                Localitate: <span>București</span>
-                                Județ: <span>București</span>
-                                Sediu social (RECOM/MFINANȚE): <span>Șoseaua Colentina, Nr. 2, București, Sector 2</span>
-                                Domiciliu fiscal (ANAF): <span>Șoseaua Colentina, Nr. 2, București, Sector 2</span>
-                            </span>
                         </div>
                     </div>
                 </div>
@@ -294,8 +303,8 @@
         <div class="col-sm-12 mt-3">
             <div class="card">
                 <div class="card-header" style="background-color: rgba(0, 0, 0, 0.03);">
-                    <h2 style="color:#00CCFF">Asociați/acționari și persoane autorizate - conexiuni cu alte firme</h2>
-                    <h4 style="color:#00CCFF">Data ultimei actualizări: 02.03.2023</h4>
+                    <h4 style="color:#00CCFF">Asociați/acționari și persoane autorizate - conexiuni cu alte firme</h4>
+                    <h6 style="color:#00CCFF">Data ultimei actualizări: 02.03.2023</h6>
                 </div>
                 <div class="card-block row">
                     <div class="col-sm-12 col-lg-12 col-xl-12">
@@ -369,8 +378,11 @@
 
 
 
+        const administratorId = findAdministratorId(0, clientData);
+        const tempAdmin = clientData.administratori.persoane_fizice[administratorId].nume;
 
-        console.log(clientData);
+        const titleName = document.getElementById('numePrenume');
+        titleName.innerHTML = clientData.firma.nume_mfinante + ' - ' + tempAdmin;
 
         const blockCA = document.getElementById('cifra-de-afaceri');
         blockCA.innerHTML = parseFloat(clientData.bilanturi_mfinante_scurte.ultimul_raportat.cifra_de_afaceri_neta.valoare).toLocaleString('en-US');

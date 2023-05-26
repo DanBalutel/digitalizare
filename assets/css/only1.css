@@ -383,7 +383,7 @@ body.dark-only .noteCustom>input[type="checkbox"] {
     display: block;
 }
 
-.swal2-html-container td, .swal2-html-container th, h4#locuri-munca, h4#cifra-de-afaceri, h4#profit-actual, h4#cod-caen, div#nume-caen, div#dateGenerale {
+.proforma, .swal2-html-container td, .swal2-html-container th, h4#locuri-munca, h4#cifra-de-afaceri, h4#profit-actual, h4#cod-caen, div#nume-caen, div#dateGenerale {
     color: rgba(255, 255, 255, 0.6);
 }
 
