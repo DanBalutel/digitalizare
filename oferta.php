@@ -46,15 +46,12 @@ fetch(`https://punctaj.ro/api/anaf/cui/${eCui}`, {
     .then(response => response.json())
     .then(data => {
         console.log(data);
-        const dateGenerale = `
+        document.getElementById('general_data').innerHTML = `
         Detalii generale:
         CUI: ${eCui}
         Nr. de înmatriculare: ${data.companyInfo.date_generale.nrRegCom}
         Cod CAEN: ${data.companyInfo.date_generale.nrRegCom.cod_CAEN} 
-
-     
         `;
-        document.getElementById('general_data').innerHTML = dategenerale
 
     })
     .catch(error => {
