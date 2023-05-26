@@ -323,13 +323,15 @@
 
 
 
-        
+
     </div>
 </div>
             `,
             width: "700px",
             minHeight: "500px",
             showConfirmButton: true,
+            confirmButtonText: 'Adauga',
+            confirmButtonColor: '#16b170 !important',
             backdrop: 'rgba(0,0,0,0.4)',
             customClass: {
                 container: '.dark-mode-transparent moniModal1',

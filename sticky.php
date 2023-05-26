@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/vendors/sticky.css">
 <?php include('partial/header.php'); ?>
 
-<div class="page-wrapper notes compact-wrapper" id="pageWrapper">
+<div class="page-wrapper compact-wrapper" id="pageWrapper">
   <!-- Page Header Start-->
   <?php include('partial/topbar.php'); ?>
   <!-- Page Header Ends -->
@@ -11,7 +11,7 @@
     <!-- Page Sidebar Start-->
     <?php include('partial/sidebar.php'); ?>
     <!-- Page Sidebar Ends-->
-    <div class="page-body">
+    <div class="page-body notes">
       <?php include('partial/breadcrumb.php'); ?>
       <!-- Container-fluid starts                    -->
       <div class="container-fluid">

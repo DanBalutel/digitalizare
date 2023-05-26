@@ -101,8 +101,8 @@ img.rounded-circle.shadow {
 }
 
 .dark-mode-confirm {
-    background: #d33 !important;
-    border-color: #d33;
+    background: ##54BA4A !important;
+    border-color: ##54BA4A ;
     color: #fff;
 }
 
@@ -134,7 +134,7 @@ div#monicaModal1 button.btn-close {
 }
 
 
-.index .moniModal1 .swal2-actions.dark-mode-actions {
+.index .notes .moniModal1 .swal2-actions.dark-mode-actions {
     display: none !important;
 }
 
