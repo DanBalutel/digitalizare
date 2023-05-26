@@ -23,7 +23,7 @@ function sendTest() {
     
     console.log(eCui)
     // vasi function
-    fetch(`http://195.161.68.184:3010/api/get/firme/19`, {
+    fetch(`https://punctaj.ro/api/anaf/cui/${eCui}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
