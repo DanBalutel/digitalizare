@@ -609,7 +609,6 @@
             .then((leadData) => {
                 // call populatePage only when newdataObj is defined
                 if (leadData) {
-                    console.log(leadData);
                     // also we create popup here
                     addClient1(leadData);
                 }
