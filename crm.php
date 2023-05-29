@@ -568,10 +568,10 @@
 
             // (D) HANDLE ERRORS (OPTIONAL)
             .catch((error) => {
-                console.log(`eroare CUI: ${error}`);
-                localStorage.removeItem('newDataObj');
-                alert('CUI gresit')
-                window.location.href = window.location.origin;
+                // console.log(`eroare CUI: ${error}`);
+                // localStorage.removeItem('newDataObj');
+                // alert('CUI gresit')
+                window.location.href = window.location.href;
             });
 
 
