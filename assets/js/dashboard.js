@@ -130,9 +130,12 @@ function getTermeneData(cuiValue) {
 
     renderLoadingModal('Datele se incarca...');
 
-    // (A) URL & CREDENTIALS
-    var url = `https://api.aipro.ro:3001/cui?cui=${cuiValue}`
-    // (B) FETCH WITH HTTP AUTH
+    // // (A) URL & CREDENTIALS
+    // var url = `https://api.aipro.ro:3001/cui?cui=${cuiValue}`
+    // // (B) FETCH WITH HTTP AUTH
+
+// TEMP we use a local file for fetch
+    var url = `https://aipro.ro/assets/js/tempCUI${cuiValue}.json`
 
     fetch(url)
 
