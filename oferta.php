@@ -16,7 +16,16 @@
             <!-- Container-fluid starts-->
             <div class="container-fluid">
                 <p id="general_data"></p>
-                <embed src="assets/pdf/Prezentare Soft AiPro.pdf" />
+                <hr>
+                <h2>Prezentare Soft AiPro</h2>
+                <embed
+                    src="assets/pdf/Prezentare Soft AiPro.pdf"
+                    type="application/pdf"
+                    frameBorder="0"
+                    scrolling="auto"
+                    height="100%"
+                    width="100%"
+                ></embed>
             </div>
             <!-- Container-fluid Ends-->
         </div>
@@ -27,7 +36,7 @@
 
 <?php include('partial/scripts.php'); ?>
 <script>
-    function getParameterByName(name, url = window.location.href) {
+function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
     const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
     const results = regex.exec(url);
@@ -37,7 +46,6 @@
 }
 const eCui = getParameterByName('cui');
 const eEmail = getParameterByName('email');
-console.log(eEmail)
 fetch(`https://punctaj.ro/api/anaf/cui/${eCui}`, {
     method: 'GET',
     headers: {
@@ -58,11 +66,10 @@ fetch(`https://punctaj.ro/api/anaf/cui/${eCui}`, {
     })
     .catch(error => {
         console.error('Error:', error);
-        // Handle error...
     });
 
 </script>
-  <script src="assets/js/notify/index.js"></script>
 
+<script src="assets/js/notify/index.js"></script>
 <script src="assets/js/height-equal.js"></script>
 <?php include('partial/footer-end.php'); ?>
