@@ -425,6 +425,7 @@
                 </span>
                 `;
 
+                console.log(d.e.asociatiConexiuni);
         d.remove('asociatiConexiuni');
         d.element('asociatiConexiuni');
 
