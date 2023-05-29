@@ -16,6 +16,7 @@
             <!-- Container-fluid starts-->
             <div class="container-fluid">
                 <p id="general_data"></p>
+                <embed src="assets/pdf/Prezentare Soft AiPro.pdf" />
             </div>
             <!-- Container-fluid Ends-->
         </div>
@@ -47,7 +48,8 @@ fetch(`https://punctaj.ro/api/anaf/cui/${eCui}`, {
     .then(data => {
         console.log(data);
         document.getElementById('general_data').innerHTML = `
-        Detalii generale: <br>
+        <h2>Detalii generale:</h2> <br>
+        <hr>
         CUI: ${eCui}  <br>
         Nr. de înmatriculare: ${data.companyInfo.date_generale.nrRegCom} <br>
         Cod CAEN: ${data.companyInfo.date_generale.cod_CAEN} <br>
