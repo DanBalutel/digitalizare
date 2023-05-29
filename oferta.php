@@ -47,6 +47,7 @@ function getParameterByName(name, url = window.location.href) {
 const eCui = getParameterByName('cui');
 const eTelefon = getParameterByName('telefon');
 const eEmail = getParameterByName('email');
+const eBuget = getParameterByName('buget');
 fetch(`https://punctaj.ro/api/anaf/cui/${eCui}`, {
     method: 'GET',
     headers: {
@@ -61,6 +62,7 @@ fetch(`https://punctaj.ro/api/anaf/cui/${eCui}`, {
         <hr>
         Telefon: ${eTelefon}  <br>
         Email: ${eEmail}  <br>
+        Buget: ${eBuget}  <br>
         CUI: ${eCui}  <br>
         Nr. de înmatriculare: ${data.companyInfo.data.date_generale.nrRegCom} <br>
         Cod CAEN: ${data.companyInfo.data.date_generale.cod_CAEN} <br>
