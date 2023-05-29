@@ -346,7 +346,7 @@
             confirmButtonColor: '#16b170 !important',
             backdrop: 'rgba(0,0,0,0.4)',
             customClass: {
-                container: '.dark-mode-transparent moniModal1',
+                container: '.dark-mode-transparent crmModal1',
                 popup: 'dark-mode',
                 header: 'dark-mode-header',
                 title: 'dark-mode-header',

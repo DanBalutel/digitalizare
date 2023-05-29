@@ -397,3 +397,31 @@ body.dark-only .noteCustom>input[type="checkbox"] {
 .swal2-html-container td:nth-child(2) {
     min-width: 10rem;
 }
+
+
+.crmModal1 div#swal2-html-container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.crmModal1 th:nth-child(1) {
+    min-width: 36px;
+}
+.crmModal1 th:nth-child(2) {
+    min-width: 160px;
+}
+.crmModal1 th:nth-child(3) {
+    min-width: 200px;
+}
+.crmModal1 th:nth-child(4) {
+    min-width: 53px;
+}
+.crmModal1 th:nth-child(5) {
+    min-width: 152px;
+}
+.crmModal1 th:nth-child(6) {
+    min-width: 80px;
+}
+.crmModal1 th:nth-child(7) {
+    min-width: 120px;
+}
