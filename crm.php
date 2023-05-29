@@ -583,7 +583,7 @@
 
         // TEMP folosim JSON
         // (A) URL & CREDENTIALS
-        var url = `https: //aipro.ro/assets/js/tempCUI${cui}.json`
+        var url = `https://aipro.ro/assets/js/tempCUI${cui}.json`
         // (B) FETCH WITH HTTP AUTH
 
         // momentan scoatem TEMP
