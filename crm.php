@@ -26,7 +26,7 @@
                         <input type="text" id="themeSearch" class="dropdown-input form-control" style="background-color: #1d1e26;border-color: #1d1e26;color: rgba(255, 255, 255, 0.2);" placeholder="Adauga un CUI...">
                         <ul class="dropdown-list" id="themeDropdown">
                             <li>Selecteaza un CUI</li>
-                            <li value="1" onclick="getLeadData(localStorage.cui13548146)">13548146</li>
+                            <li value="1" onclick="getLeadData('1')">13548146</li>
                             <li value="2" onclick="getLeadData('6116706')">6116706</li>
                             <li value="3" onclick="getLeadData('43938809')">43938809</li>
                             <li value="4" onclick="getLeadData('15985694')">15985694</li>
@@ -578,9 +578,49 @@
         //         // window.location.href = window.location.href;
         //     });
 
-        // folosim local storage TEMP
-        leadData = JSON.parse(cui);
-        addClient1(leadData);
+
+
+
+        // TEMP folosim JSON
+        // (A) URL & CREDENTIALS
+        var url = `https: //aipro.ro/assets/js/tempCUI${cui}.json`
+        // (B) FETCH WITH HTTP AUTH
+
+        // momentan scoatem TEMP
+        fetch(url)
+            // (C) SERVER RESPONSE
+            .then((result) => {
+                if (result.status != 200) {
+                    throw new Error("Bad Server Response");
+                }
+                return result.text();
+            })
+            .then((response) => {
+                leadData = JSON.parse(response);
+
+                document.addEventListener("DOMContentLoaded", function() {
+                    console.log('loaded!');
+                });
+
+                return leadData;
+            })
+            .then((leadData) => {
+                // call populatePage only when newdataObj is defined
+                if (leadData) {
+                    console.log(leadData);
+                    // also we create popup here
+                    addClient1(leadData);
+                }
+            })
+
+
+            // (D) HANDLE ERRORS (OPTIONAL)
+            .catch((error) => {
+                // console.log(`eroare CUI: ${error}`);
+                // localStorage.removeItem('newDataObj');
+                // alert('CUI gresit')
+                // window.location.href = window.location.href;
+            });
     };
 </script>
 <?php include('partial/footer-end.php') ?>
