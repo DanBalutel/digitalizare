@@ -23,7 +23,7 @@
                     type="application/pdf"
                     frameBorder="0"
                     scrolling="auto"
-                    height="100%"
+                    style="height: 80vh"
                     width="100%"
                 ></embed>
             </div>
