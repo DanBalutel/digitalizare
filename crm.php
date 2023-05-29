@@ -33,7 +33,6 @@
                             <li value="5" onclick="getLeadData('37375182')">37375182</li>
                             <li value="6" onclick="getLeadData('18911470')">18911470</li>
                             <li value="7" onclick="getLeadData('40452811')">40452811</li>
-                            <li value="8" onclick="getLeadData('6116706')">6116706</li>
                         </ul>
                     </div>
 
@@ -425,9 +424,8 @@
                 </span>
                 `;
 
-                console.log(d.e.asociatiConexiuni);
-        d.remove('asociatiConexiuni');
-        d.element('asociatiConexiuni');
+
+        d.e.asociatiConexiuni.innerHTML = `<tbody id="asociatiConexiuni"> </tbody>`;
 
         function addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate) {
 
@@ -475,7 +473,8 @@
             }
 
             // end of JSON
-            d.createElement(jsonData, d.e.asociatiConexiuni);
+            d.createElement(jsonData, d.element('asociatiConexiuni'));
+            console.log(d.e.asociatiConexiuni);
         }
 
         // randuri tabel asociati conexiuni
@@ -501,7 +500,6 @@
 
     }
 
-    d.element("element");
     d.createHandler('addClient1', 'click', addClient1);
 
 
@@ -577,7 +575,7 @@
                 // console.log(`eroare CUI: ${error}`);
                 // localStorage.removeItem('newDataObj');
                 // alert('CUI gresit')
-                window.location.href = window.location.href;
+                // window.location.href = window.location.href;
             });
 
 

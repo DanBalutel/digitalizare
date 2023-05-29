@@ -33,3 +33,16 @@
 <script src="assets/js/script.js"></script>
 <script src="assets/js/dashboard.js" defer></script>
 <script src="assets/js/sendOffer.js"></script>
+<?php
+// // List of pages where the script should be added
+// $allowedPages = array('crm.php');
+
+// // Get the current page file name
+// $currentFile = $_SERVER['PHP_SELF'];
+// $currentPage = basename($currentFile);
+
+// // Check if the current page is in the allowed pages list
+// if (!in_array($currentPage, $allowedPages)) {
+//     echo '<script src="assets/js/dashboard.js" defer></script>';
+// }
+?>
