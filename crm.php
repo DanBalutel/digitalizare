@@ -425,6 +425,7 @@
                 </span>
                 `;
 
+        d.remove('asociatiConexiuni');
         d.element('asociatiConexiuni');
 
         function addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate) {
