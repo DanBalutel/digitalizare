@@ -27,12 +27,12 @@
                         <ul class="dropdown-list" id="themeDropdown">
                             <li>Selecteaza un CUI</li>
                             <li value="1" onclick="getLeadData('1')">13548146</li>
-                            <li value="2" onclick="getLeadData('6116706')">6116706</li>
-                            <li value="3" onclick="getLeadData('43938809')">43938809</li>
-                            <li value="4" onclick="getLeadData('15985694')">15985694</li>
-                            <li value="5" onclick="getLeadData('37375182')">37375182</li>
-                            <li value="6" onclick="getLeadData('18911470')">18911470</li>
-                            <li value="7" onclick="getLeadData('40452811')">40452811</li>
+                            <li value="2" onclick="getLeadData('2')">6116706</li>
+                            <li value="3" onclick="getLeadData('3')">43938809</li>
+                            <li value="4" onclick="getLeadData('4')">15985694</li>
+                            <li value="5" onclick="getLeadData('5')">37375182</li>
+                            <li value="6" onclick="getLeadData('6')">18911470</li>
+                            <li value="7" onclick="getLeadData('7')">40452811</li>
                         </ul>
                     </div>
 
@@ -199,7 +199,7 @@
 <script>
     new WOW().init();
 
-    function addClient1(clientData) {
+    function addClient1(clientData, tempID) {
 
         Swal.fire({
             html: `
@@ -326,7 +326,7 @@
                                         <th scope="col">Localitate</th>
                                     </tr>
                                 </thead>
-                                <tbody id="asociatiConexiuni">
+                                <tbody id="asociatiConexiuni${tempID}">
                                 </tbody>
                             </table>
                         </div>
@@ -409,6 +409,7 @@
         numeCAEN.innerHTML = listCaen[codCAEN.innerHTML];
 
         const dateGenerale = document.getElementById('dateGenerale');
+
         dateGenerale.innerHTML = `
                 <span>
                 <h4 style="color: #00CCFF">Detalii generale</h4><br>
@@ -426,7 +427,13 @@
                 `;
 
 
-        d.e.asociatiConexiuni.innerHTML = `<tbody id="asociatiConexiuni"> </tbody>`;
+
+        d.element(`asociatiConexiuni${tempID}`)
+        // d.e.asociatiConexiuni.innerHTML = `<tbody id="asociatiConexiuni"> </tbody>`;
+
+
+        console.log(d.element(`asociatiConexiuni${tempID}`));
+
 
         function addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate) {
 
@@ -474,8 +481,7 @@
             }
 
             // end of JSON
-            d.createElement(jsonData, d.element('asociatiConexiuni'));
-            console.log(d.e.asociatiConexiuni);
+            d.createElement(jsonData, d.element(`asociatiConexiuni${tempID}`));
         }
 
         // randuri tabel asociati conexiuni
@@ -498,8 +504,6 @@
 
             addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate)
         }
-
-        console.log(clientData.conexiuni_asociati);
     }
 
     d.createHandler('addClient1', 'click', addClient1);
@@ -609,8 +613,10 @@
             .then((leadData) => {
                 // call populatePage only when newdataObj is defined
                 if (leadData) {
+                    // generates a random number between 1000 and 9999 (inclusive)
+                    const randomId = Math.floor(Math.random() * 9000) + 1000;
                     // also we create popup here
-                    addClient1(leadData);
+                    addClient1(leadData, randomId);
                 }
             })
 
