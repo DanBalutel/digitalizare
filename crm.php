@@ -343,6 +343,8 @@
             minHeight: "500px",
             showConfirmButton: true,
             confirmButtonText: 'Adauga',
+            showCancelButton: true,
+            cancelButtonText: 'renunta',
             confirmButtonColor: '#16b170 !important',
             backdrop: 'rgba(0,0,0,0.4)',
             customClass: {
@@ -375,6 +377,8 @@
 
                     // adaugam leadurile in tabel, reincarcam tabelul
                     renderCrmTable(0, 1, crmTable1);
+                } else if (result.isDenied) {
+                    Swal.fire('nu a fost adaugat', '', 'info')
                 }
 
             } catch (error) {
