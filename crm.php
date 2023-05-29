@@ -30,9 +30,7 @@
                             <li value="2" onclick="getLeadData('2')">6116706</li>
                             <li value="3" onclick="getLeadData('3')">43938809</li>
                             <li value="4" onclick="getLeadData('4')">15985694</li>
-                            <li value="5" onclick="getLeadData('5')">37375182</li>
-                            <li value="6" onclick="getLeadData('6')">18911470</li>
-                            <li value="7" onclick="getLeadData('7')">40452811</li>
+                            <li value="5" onclick="getLeadData('6')">18911470</li>
                         </ul>
                     </div>
 
