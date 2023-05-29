@@ -361,6 +361,9 @@
 
         }).then((result) => {
             try {
+
+                console.log(result);
+
                 // after confirm "adauga lead"
                 const administratorId = findAdministratorId(0, clientData);
                 const tempAdmin = clientData.administratori.persoane_fizice[administratorId].nume;
