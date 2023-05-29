@@ -386,6 +386,7 @@
 
 
 
+        console.log(clientData);
 
         const administratorId = findAdministratorId(0, clientData);
         const tempAdmin = clientData.administratori.persoane_fizice[administratorId].nume;
@@ -498,6 +499,7 @@
             addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate)
         }
 
+        console.log(clientData.conexiuni_asociati);
     }
 
     d.createHandler('addClient1', 'click', addClient1);
