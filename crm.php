@@ -27,13 +27,13 @@
                         <ul class="dropdown-list" id="themeDropdown">
                             <li>Selecteaza un CUI</li>
                             <li value="1" onclick="getLeadData('13548146')">13548146</li>
-                            <li value="3" onclick="getLeadData('6116706')">6116706</li>
-                            <li value="4" onclick="getLeadData('43938809')">43938809</li>
-                            <li value="5" onclick="getLeadData('15985694')">15985694</li>
-                            <li value="6" onclick="getLeadData('37375182')">37375182</li>
-                            <li value="7" onclick="getLeadData('18911470')">18911470</li>
-                            <li value="8" onclick="getLeadData('40452811')">40452811</li>
-                            <li value="9" onclick="getLeadData('6116706')">6116706</li>
+                            <li value="2" onclick="getLeadData('6116706')">6116706</li>
+                            <li value="3" onclick="getLeadData('43938809')">43938809</li>
+                            <li value="4" onclick="getLeadData('15985694')">15985694</li>
+                            <li value="5" onclick="getLeadData('37375182')">37375182</li>
+                            <li value="6" onclick="getLeadData('18911470')">18911470</li>
+                            <li value="7" onclick="getLeadData('40452811')">40452811</li>
+                            <li value="8" onclick="getLeadData('6116706')">6116706</li>
                         </ul>
                     </div>
 
