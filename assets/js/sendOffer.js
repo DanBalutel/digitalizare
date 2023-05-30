@@ -20,9 +20,13 @@ function sendTest() {
     const eTelefon = document.getElementById('oTelefon').value;
     const eBuget = document.getElementById('oBuget').value;
     const eCui = document.getElementById('oCui').value;
-    
+    let eClient = '';
+    let eRegcom = '';
+    let eAdresa = '';
 
-   
+
+
+
     fetch('https://api.aipro.ro:3005/send', {
         method: 'POST',
         headers: {
@@ -62,4 +66,45 @@ function sendTest() {
                 text: 'A aparut o eroare, va rugam sa incercati inca o data'
             });
         });
+
+
+
+
+
+
+    fetch('https://api.aipro.ro:3003/generate-pdf', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "pdfPath": "https://aipro.ro/assets/pdf/aipro-prezentare_3.pdf",
+            "fieldValues": {
+                "client": eClient,
+                "cif": eCui,
+                "regcom": eRegcom,
+                "adresa": eAdresa,
+                "suma": eBuget
+            },
+            "cui": eCui
+        })
+    })
+        .then(response => {
+            if (response.ok) {
+                console.log(response);
+                
+            } else {
+                
+            }
+        })
+        .catch(error => {
+            // console.error('Error sending email:', error);
+            // Swal.fire({
+            //     icon: 'error',
+            //     title: 'Ups...',
+            //     text: 'A aparut o eroare, va rugam sa incercati inca o data'
+            // });
+        });
+
+
 }
