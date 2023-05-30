@@ -91,7 +91,7 @@ function sendTest() {
     })
         .then(response => {
             if (response.ok) {
-                console.log(response.body);
+                console.log(response.body.link);
                 
             } else {
                 
