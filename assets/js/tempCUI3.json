@@ -1,0 +1,1143 @@
+{
+    "mo":{
+       "rezultate":[
+          {
+             "id":"_67-6.476.172_.2021.1811.",
+             "text":"\n                    Societatea VANTABLACK - S.R.L.\n                                                      ROMÂNIA\n                                       MINISTERUL JUSTIȚIEI\n      OFICIUL NAȚIONAL AL REGISTRULUI COMERȚULUI\n     OFICIUL REGISTRULUI COMERȚULUI DE PE LÂNGĂ\n                                      TRIBUNALUL PRAHOVA\n    EXTRAS AL REZOLUȚIEI NR. 5019/18.03.2021\n       Magdalena Zaharia - Persoana desemnată conform\nart. 11 alin. (1) din O.U.G. nr. 116/2009 pentru instituirea\nunor măsuri privind activitatea de înregistrare în registrul\ncomerțului, aprobată cu modificări și completări prin\nLegea nr. 84/2010, cu modificările și completările\nulterioare\n       În baza cererii nr. 14688 din data de 17.03.2021 și a\nactelor doveditoare depuse, persoana desemnată la\nOficiul Registrului Comerțului de pe lângă Tribunalul\nPrahova a dispus autorizarea constituirii, înmatricularea\nși înregistrarea societății:\n       - denumire și formă juridică: VANTABLACK - S.R.L.;\n       - cod unic de înregistrare: 43938809;\n       - identificator unic la nivel european (EUID):\nROONRC.J29/754/2021;\n       - număr de ordine în registrul comerțului:\nJ29/754/2021;\n       - sediul social: municipiul Ploiești, strada Ion Luca\nCaragiale nr. 14, ap. 1, județul Prahova;\n       - domeniul principal de activitate: grupa CAEN 620 -\nActivități de servicii în tehnologia informației;\n       - activitate principală: 6201 - Activități de realizare a\nsoft-ului la comandă (software orientat client);\n       - capital social: 200 lei, total părți sociale: 20 a câte 10\nlei fiecare;\n       - fondator: RUSU ANDREEA, cu domiciliul în\nBucurești, sectorul 5, strada Novaci nr. 14, bloc P65,\nscara 3, ap. 65;\n       - administrator: RUSU ANDREEA, puteri conferite:\ndepline, cu domiciliul în București, sectorul 5, Strada\nNovaci nr. 14, bloc P65, scara 3, ap. 65;\n       - durata de funcționare: nedeterminată.\n       Dispune publicarea în Monitorul Oficial al României,\nPartea a IV-a, a prezentului extras.\n          (67/6.476.172)",
+             "tip_act":"Extras al rezolutiei",
+             "nr_buletin":"1811",
+             "nume_firma":"VANTABLACK SRL",
+             "data_buletin":"2021-05-06T00:00:00Z"
+          }
+       ],
+       "numar_rezultate":1
+    },
+    "bcc":[
+       
+    ],
+    "bpi":{
+       "rezultate":[
+          
+       ],
+       "numar_rezultate":0
+    },
+    "rnpm":{
+       "rezultate":[
+          
+       ],
+       "numar_rezultate":0
+    },
+    "firma":{
+       "j":"J29/754/2021",
+       "cui":43938809,
+       "nume_recom":"VANTABLACK SRL",
+       "nume_sursa":"RECOM",
+       "nume_mfinante":"VANTABLACK SRL",
+       "capital_social":200,
+       "nume_fara_forma_org":"VANTABLACK",
+       "este_cod_tva_intracomunitar":false
+    },
+    "adresa":{
+       "anaf":{
+          "bloc":null,
+          "etaj":null,
+          "tara":"România",
+          "judet":"Prahova",
+          "numar":"14",
+          "scara":null,
+          "sector":null,
+          "strada":"Ion Luca Caragiale",
+          "formatat":"Strada Ion Luca Caragiale, Nr. 14, Ap. 1, Ploiești, Județ Prahova",
+          "apartament":"1",
+          "cod_postal":100015,
+          "localitate":"Ploiești",
+          "tip_strada":"Strada",
+          "neprelucrat":"JUD. PRAHOVA, MUN. PLOIEȘTI, STR. ION LUCA CARAGIALE, NR.14, AP.1",
+          "sub_localitate":null
+       },
+       "sediu_social":{
+          "bloc":null,
+          "etaj":null,
+          "tara":"România",
+          "judet":"Prahova",
+          "numar":"14",
+          "scara":null,
+          "sursa":"RECOM",
+          "sector":null,
+          "strada":"Ion Luca Caragiale",
+          "expirare":{
+             "este_expirat":false,
+             "data_expirare":null,
+             "data_actualizare":"2023-01-16"
+          },
+          "formatat":"Strada Ion Luca Caragiale, Nr. 14, Ap. 1, Ploiești, Județ Prahova",
+          "apartament":"1",
+          "cod_postal":100015,
+          "cod_siruta":130543,
+          "localitate":"Ploiești",
+          "tip_strada":"Strada",
+          "neprelucrat":"STR. ION LUCA CARAGIALE, NR. 14, AP. 1, C.P. 100015",
+          "neprelucrat_mf":"Str. ION LUCA CARAGIALE 14 Ap:1 - Ploiești",
+          "sub_localitate":null,
+          "neprelucrat_recom":"STR. ION LUCA CARAGIALE, NR. 14, AP. 1, C.P. 100015"
+       }
+    },
+    "dosare":{
+       "rezultate":[
+          
+       ],
+       "numar_rezultate":0
+    },
+    "asociati":{
+       "liste":[
+          
+       ],
+       "persoane_fizice":[
+          {
+             "id":"#139:88713",
+             "nume":"RUSU ANDREEA",
+             "tara":"România",
+             "aport":200,
+             "judet":"BUCUREȘTI",
+             "adresa":"BUCURESTI SECTORUL 5,BUCUREȘTI,Romania",
+             "functie":"asociat",
+             "cod_tara":642,
+             "cetatenie":"română",
+             "procentaj":100,
+             "localitate":"BUCURESTI SECTORUL 5",
+             "loc_nastere":"BUCURESTI SECTORUL 3",
+             "data_nastere":"1989-07-27",
+             "tara_nastere":"România",
+             "cod_cetatenie":642,
+             "judet_nastere":"PRAHOVA"
+          }
+       ],
+       "persoane_juridice":[
+          
+       ]
+    },
+    "cod_caen":{
+       "principal_bt":"62010 [ ACTIVITATI DE REALIZARE A SOFT-ULUI LA COMANDA (SO ]",
+       "principal_recom":{
+          "cod":"6201",
+          "label":"Activitati de realizare a soft-ului la comanda (software orientat client)",
+          "versiune":2
+       },
+       "secundare_recom":{
+          "lista":[
+             
+          ],
+          "data_actualizare":""
+       },
+       "principal_mfinante":{
+          "cod":"6201",
+          "label":"Activitati de realizare a soft-ului la comanda (software orientat client)"
+       }
+    },
+    "start_up":{
+       "an":null,
+       "rue":null,
+       "suma":null,
+       "agentie":null,
+       "are_start_up":false
+    },
+    "grup_firma":{
+       "firma_speta":{
+          "cui":"43938809",
+          "procentaj":100,
+          "nume_firma":"VANTABLACK S.R.L.",
+          "id_companie":"#93:137203",
+          "asociati_procentaj":[
+             {
+                "asociat":{
+                   "id":"#139:88713",
+                   "nume":"RUSU ANDREEA",
+                   "judet":"BUCUREȘTI",
+                   "adresa":"BUCURESTI SECTORUL 5,BUCUREȘTI,Romania",
+                   "localitate":"BUCURESTI SECTORUL 5"
+                },
+                "procentaj":100
+             }
+          ]
+       }
+    },
+    "statut_tva":{
+       "curent":{
+          "cod":1,
+          "label":"Neplătitor",
+          "data_interogare":"2023-04-04",
+          "data_anulare_tva":null,
+          "data_inceput_tva":null,
+          "data_operare_anulare_tva":null
+       },
+       "istoric":[
+          {
+             "cod":1,
+             "label":"Neplătitor",
+             "data_interogare":"2023-04-04",
+             "data_anulare_tva":null,
+             "data_inceput_tva":null,
+             "data_operare_anulare_tva":null
+          }
+       ]
+    },
+    "beneficiari":[
+       {
+          "tip":"Persoana",
+          "drum":{
+             "direct":{
+                "firma":{
+                   "cui":43938809,
+                   "nume":"VANTABLACK S.R.L."
+                },
+                "procent":100
+             },
+             "indirect":[
+                
+             ]
+          },
+          "nume":"RUSU ANDREEA",
+          "tara":"Romania",
+          "judet":"BUCUREȘTI",
+          "adresa":"BUCURESTI SECTORUL 5,BUCUREȘTI,Romania",
+          "calitate":"asociat",
+          "cod_tara":642,
+          "cetatenie":"română",
+          "localitate":"BUCURESTI SECTORUL 5",
+          "loc_nastere":"BUCURESTI SECTORUL 3",
+          "data_nastere":"1989-07-27",
+          "tara_nastere":"ROMANIA - RO",
+          "cod_cetatenie":642,
+          "tip_beneficiar":[
+             "direct"
+          ],
+          "procentaj_agregat":100,
+          "este_beneficiar_real":true
+       }
+    ],
+    "risc_altman":{
+       "curent":{
+          "an":2021,
+          "label":"Foarte scăzut",
+          "punctaj":12,
+          "tendinta":null
+       },
+       "istoric":[
+          {
+             "an":2021,
+             "label":"Foarte scăzut",
+             "punctaj":12,
+             "tendinta":null
+          }
+       ],
+       "documentatie":{
+          "mare":"Punctaj altman între 1.81 și 2.22",
+          "mediu":"Punctaj altman între 2.22 și 2.675",
+          "scazut":"Punctaj altman între 2.675 și 6",
+          "foarte_mare":"Punctaj altman mai mic decât 1.81",
+          "foarte_scazut":"Punctaj altman mai mare sau egal ca 6"
+       }
+    },
+    "stare_firma":{
+       "recom":{
+          "curenta":{
+             "cod":1048,
+             "clasa":"funcțiune",
+             "label":"funcţiune",
+             "cod_clasa":1,
+             "functiune":true,
+             "data_actualizare":"2023-01-16"
+          },
+          "istoric":[
+             {
+                "cod":1048,
+                "clasa":"funcțiune",
+                "label":"funcţiune",
+                "cod_clasa":1,
+                "functiune":true,
+                "schimbare_judet":false,
+                "data_actualizare":"2021-04-02"
+             }
+          ]
+       },
+       "mfinante":{
+          "curenta":{
+             "clasa":"funcțiune",
+             "label":"INREGISTRAT din data 18 Martie 2021",
+             "cod_clasa":1,
+             "functiune":true,
+             "data_actualizare":"2023-03-27"
+          }
+       }
+    },
+    "conexiuni_mo":{
+       "rezultate":[
+          {
+             "cui":"43938809",
+             "monitor":{
+                "id":"_67-6.476.172_.2021.1811.",
+                "nume":"VANTABLACK SRL",
+                "pagina":{
+                   "end":"27",
+                   "start":"26"
+                },
+                "tip_act":"Extras al rezolutiei",
+                "sursa_pdf":"2021.1811.pdf",
+                "an_monitor":2021,
+                "nr_monitor":"1811",
+                "data_monitor":"06.05.2021 03:00:00"
+             },
+             "denumire":"VANTABLACK S.R.L.",
+             "conexiune":{
+                "id":null,
+                "rid":"#177:122815",
+                "hash":"8619139034569770000",
+                "nume":null,
+                "adresa":"municipiul Ploiești, Strada Ion Luca Caragiale nr. 14, ap. 1, județul Prahova",
+                "este_firma":null,
+                "nume_canonic":null
+             },
+             "localitate":null
+          }
+       ]
+    },
+    "date_contact":{
+       "fax":[
+          
+       ],
+       "web":[
+          
+       ],
+       "email":[
+          
+       ],
+       "telefon":[
+          "0765907662"
+       ]
+    },
+    "datorii_anaf":null,
+    "marime_firma":{
+       "curenta":{
+          "an":2021,
+          "marime":"micro"
+       },
+       "istoric":[
+          {
+             "an":2021,
+             "marime":"micro"
+          }
+       ]
+    },
+    "puncte_lucru":[
+       
+    ],
+    "risc_juridic":{
+       "bpi":0,
+       "risc":"Scăzut",
+       "total":0,
+       "nr_dosare":0,
+       "nr_dosare_negative":0,
+       "nr_dosare_cu_multe_parti":0,
+       "nr_dosare_litigii_cu_profesionisti_debitor":0
+    },
+    "bilant_extins":{
+       "f10_bilant_extins":{
+          "an2012":[
+             
+          ],
+          "an2013":[
+             
+          ],
+          "an2014":[
+             
+          ],
+          "an2015":[
+             
+          ],
+          "an2016":[
+             
+          ],
+          "an2017":[
+             
+          ],
+          "an2018":[
+             
+          ],
+          "an2019":[
+             
+          ],
+          "an2020":[
+             
+          ],
+          "an2021":[
+             {
+                "valoare":null,
+                "descriere":"A ACTIVE IMOBILIZATE"
+             },
+             {
+                "valoare":null,
+                "descriere":"I IMOBILIZARI NECORPORALE"
+             },
+             {
+                "valoare":null,
+                "descriere":"II IMOBILIZARI CORPORALE"
+             },
+             {
+                "valoare":null,
+                "descriere":"III IMOBILIZARI FINANCIARE"
+             },
+             {
+                "valoare":141284,
+                "descriere":"B ACTIVE CIRCULANTE"
+             },
+             {
+                "valoare":null,
+                "descriere":"I STOCURI"
+             },
+             {
+                "valoare":98000,
+                "descriere":"II CREANTE"
+             },
+             {
+                "valoare":null,
+                "descriere":"2 Creante reprezentand dividende"
+             },
+             {
+                "valoare":98000,
+                "descriere":"7 Creante pana la 1 an (total)"
+             },
+             {
+                "valoare":null,
+                "descriere":"III INVESTITII PE TERMEN SCURT"
+             },
+             {
+                "valoare":43284,
+                "descriere":"IV CASA SI CONTURI LA BANCI"
+             },
+             {
+                "valoare":null,
+                "descriere":"C CHELTUIELI IN AVANS"
+             },
+             {
+                "valoare":null,
+                "descriere":"Sume de reluat intr-o perioada de pana la un an"
+             },
+             {
+                "valoare":null,
+                "descriere":"Sume de reluat intr-o perioada mai mare de un an"
+             },
+             {
+                "valoare":4155,
+                "descriere":"D DATORII: SUMELE CARE TREBUIE PLATITE INTR-O PERIOADA DE PANA LA UN AN"
+             },
+             {
+                "valoare":137129,
+                "descriere":"E ACTIVE CIRCULANTE NETE/DATORII CURENTE NETE"
+             },
+             {
+                "valoare":137129,
+                "descriere":"F TOTAL ACTIVE MINUS DATORII CURENTE"
+             },
+             {
+                "valoare":null,
+                "descriere":"G DATORII: SUMELE CARE TREBUIE PLATITE INTR-O PERIOADA MAI MARE DE UN AN"
+             },
+             {
+                "valoare":null,
+                "descriere":"H PROVIZIOANE"
+             },
+             {
+                "valoare":null,
+                "descriere":"I VENITURI IN AVANS"
+             },
+             {
+                "valoare":null,
+                "descriere":"1 Subventii pentru investitii"
+             },
+             {
+                "valoare":null,
+                "descriere":"2 Venituri inregistrate in avans"
+             },
+             {
+                "valoare":null,
+                "descriere":"3 Venituri in avans aferente activelor primite prin transfer de la clienti"
+             },
+             {
+                "valoare":null,
+                "descriere":"Fond comercial negativ"
+             },
+             {
+                "valoare":137129,
+                "descriere":"CAPITALURI PROPRII"
+             },
+             {
+                "valoare":200,
+                "descriere":"I CAPITAL"
+             },
+             {
+                "valoare":200,
+                "descriere":"1 Capital subscris varsat"
+             },
+             {
+                "valoare":null,
+                "descriere":"2 Capital subscris nevarsat"
+             },
+             {
+                "valoare":null,
+                "descriere":"3 Patrimoniul regiei"
+             },
+             {
+                "valoare":null,
+                "descriere":"4 Patrimoniul institutelor nationale de cercetare-dezvoltare"
+             },
+             {
+                "valoare":null,
+                "descriere":"5 Alte elemente de capitaluri proprii - SOLD C"
+             },
+             {
+                "valoare":null,
+                "descriere":"II PRIME DE CAPITAL"
+             },
+             {
+                "valoare":null,
+                "descriere":"III REZERVE DIN REEVALUARE"
+             },
+             {
+                "valoare":40,
+                "descriere":"IV REZERVE"
+             },
+             {
+                "valoare":null,
+                "descriere":"Actiuni proprii"
+             },
+             {
+                "valoare":null,
+                "descriere":"Castiguri legate de instrumentele de capitaluri proprii"
+             },
+             {
+                "valoare":null,
+                "descriere":"Pierderi legate de instrumentele de capitaluri proprii"
+             },
+             {
+                "valoare":0,
+                "descriere":"V PROFITUL SAU PIERDEREA EXERCITIULUI REPORTAT(A) - SOLD C"
+             },
+             {
+                "valoare":0,
+                "descriere":"V PROFITUL SAU PIERDEREA EXERCITIULUI REPORTAT(A) - SOLD D"
+             },
+             {
+                "valoare":137129,
+                "descriere":"CAPITALURI"
+             },
+             {
+                "valoare":null,
+                "descriere":"Patrimoniul public"
+             },
+             {
+                "valoare":null,
+                "descriere":"Patrimoniu privat"
+             },
+             {
+                "valoare":136929,
+                "descriere":"VI PROFITUL SAU PIERDEREA EXERCITIULUI FINANCIAR - SOLD C"
+             },
+             {
+                "valoare":null,
+                "descriere":"VI PROFITUL SAU PIERDEREA EXERCITIULUI FINANCIAR - SOLD D"
+             },
+             {
+                "valoare":40,
+                "descriere":"Repartizarea profitului"
+             }
+          ],
+          "an2022":[
+             
+          ]
+       },
+       "f30_data_informative":{
+          "an2012":[
+             
+          ],
+          "an2013":[
+             
+          ],
+          "an2014":[
+             
+          ],
+          "an2015":[
+             
+          ],
+          "an2016":[
+             
+          ],
+          "an2017":[
+             
+          ],
+          "an2018":[
+             
+          ],
+          "an2019":[
+             
+          ],
+          "an2020":[
+             
+          ],
+          "an2021":[
+             {
+                "valoare":null,
+                "descriere":"Numar mediu de salariati"
+             },
+             {
+                "valoare":141084,
+                "descriere":"PROFITUL  DIN EXPLOATARE"
+             },
+             {
+                "valoare":0,
+                "descriere":"PIERDEREA DIN EXPLOATARE"
+             }
+          ],
+          "an2022":[
+             
+          ]
+       },
+       "f20_casa_si_conturi_la_banci":{
+          "an2012":[
+             
+          ],
+          "an2013":[
+             
+          ],
+          "an2014":[
+             
+          ],
+          "an2015":[
+             
+          ],
+          "an2016":[
+             
+          ],
+          "an2017":[
+             
+          ],
+          "an2018":[
+             
+          ],
+          "an2019":[
+             
+          ],
+          "an2020":[
+             
+          ],
+          "an2021":[
+             {
+                "valoare":141336,
+                "descriere":"1 Cifra de afaceri neta"
+             },
+             {
+                "valoare":141336,
+                "descriere":"- din care, cifra de afaceri netă corespunzătoare principalei activități desfășurate"
+             },
+             {
+                "valoare":null,
+                "descriere":"Alte venituri"
+             },
+             {
+                "valoare":null,
+                "descriere":"8a) Cheltuieli cu materiile prime si materialele consumabile"
+             },
+             {
+                "valoare":null,
+                "descriere":"Cheltuieli cu personalul "
+             },
+             {
+                "valoare":null,
+                "descriere":"Amortizari, provizioane si ajustari de valoare"
+             },
+             {
+                "valoare":4155,
+                "descriere":"Impozite"
+             },
+             {
+                "valoare":136929,
+                "descriere":"22 PROFITUL SAU PIERDEREA NET(A) A PERIOADEI DE RAPORTARE - PROFIT"
+             },
+             {
+                "valoare":0,
+                "descriere":"22 PROFITUL SAU PIERDEREA NET(A) A PERIOADEI DE RAPORTARE - PIERDERE"
+             },
+             {
+                "valoare":252,
+                "descriere":"Alte cheltuieli*****"
+             }
+          ],
+          "an2022":[
+             
+          ]
+       }
+    },
+    "import_export":{
+       "fax":[
+          
+       ],
+       "web":[
+          
+       ],
+       "tari":{
+          "export":[
+             
+          ],
+          "import":[
+             
+          ]
+       },
+       "email":[
+          
+       ],
+       "adresa":null,
+       "telefon":[
+          
+       ],
+       "sectiuni":{
+          "export":[
+             
+          ],
+          "import":[
+             
+          ]
+       },
+       "administratori":[
+          
+       ],
+       "are_activitati_export":false,
+       "are_activitati_import":false
+    },
+    "recipise_anaf":{
+       "rezultate":[
+          {
+             "data":"2022-02-01",
+             "are_recipise":true,
+             "tip_document":"D100",
+             "data_incarcare":"2022-01-17",
+             "stare_document":"Documentul este valid",
+             "data_inregistrare":"INTERNT-321163057-2022 din 17.01.2022",
+             "perioada_raportare":"9 2021",
+             "tip_document_extra":null
+          },
+          {
+             "data":"2022-02-01",
+             "are_recipise":true,
+             "tip_document":"D100",
+             "data_incarcare":"2022-01-17",
+             "stare_document":"Documentul este valid",
+             "data_inregistrare":"INTERNT-321163016-2022 din 17.01.2022",
+             "perioada_raportare":"6 2021",
+             "tip_document_extra":null
+          },
+          {
+             "data":"2022-02-01",
+             "are_recipise":true,
+             "tip_document":"D100",
+             "data_incarcare":"2022-01-17",
+             "stare_document":"Documentul este valid",
+             "data_inregistrare":"INTERNT-321162973-2022 din 17.01.2022",
+             "perioada_raportare":"3 2021",
+             "tip_document_extra":null
+          }
+       ],
+       "numar_rezultate":3
+    },
+    "sicap_directe":{
+       "rezultate":[
+          
+       ],
+       "numar_rezultate":0
+    },
+    "sicap_publice":{
+       "rezultate":[
+          
+       ],
+       "numar_rezultate":0
+    },
+    "statut_fiscal":{
+       "curent":{
+          "cod":2,
+          "label":"Activă",
+          "data_interogare":"2023-04-04",
+          "data_modificare":null
+       },
+       "istoric":[
+          {
+             "cod":2,
+             "label":"Activă",
+             "data_interogare":"2023-04-04",
+             "data_modificare":null
+          }
+       ]
+    },
+    "administratori":{
+       "persoane_fizice":[
+          {
+             "id":"#139:88713",
+             "nume":"RUSU ANDREEA",
+             "tara":"România",
+             "judet":"BUCUREȘTI",
+             "adresa":"BUCURESTI SECTORUL 5,BUCUREȘTI,Romania",
+             "functie":"administrator",
+             "cod_tara":642,
+             "cetatenie":"română",
+             "localitate":"BUCURESTI SECTORUL 5",
+             "tip_durata":null,
+             "data_numire":null,
+             "loc_nastere":"BUCURESTI SECTORUL 3",
+             "data_nastere":"1989-07-27",
+             "cod_cetatenie":642,
+             "data_inceput_mandat":null,
+             "data_sfarsit_mandat":null,
+             "data_prelungire_mandat":null
+          }
+       ],
+       "persoane_juridice":[
+          
+       ]
+    },
+    "forma_juridica":{
+       "curenta":{
+          "denumire":"Societate comercială cu Răspundere Limitată",
+          "organizare":"SRL",
+          "data_actualizare":"2023-03-02T00:00:00Z"
+       },
+       "istoric":[
+          {
+             "denumire":"Societate comercială cu Răspundere Limitată",
+             "organizare":"SRL",
+             "data_actualizare":"2023-03-02T00:00:00Z"
+          }
+       ]
+    },
+    "conturi_bancare":[
+       
+    ],
+    "data_infiintarii":{
+       "ani":2,
+       "data":"2021-03-18",
+       "luni":24,
+       "zile":748
+    },
+    "evaluare_termene":{
+       "nota":5.9,
+       "nota_detaliata":{
+          "split_tva":59,
+          "tva_anulat":59,
+          "capital_total":42,
+          "cifra_afacere":4,
+          "numar_angajati":11,
+          "profit_pierdere":11,
+          "vechimea_firmei":29,
+          "datorii_buget_stat":24,
+          "insolventa_radiere":0,
+          "rata_solvabilitate":45,
+          "dosare_debitor_parat":59,
+          "capital_total_negativ":59,
+          "solvabilitate_negativa":59,
+          "productivitate_angajati":11,
+          "conexiuni_aa_firme_inchise":34,
+          "pierdere_mai_mare_de_5_procente_din_cifra_afacere":59
+       },
+       "capacitate_de_plata":3336
+    },
+    "proiecte_europene":[
+       
+    ],
+    "conexiuni_asociati":[
+       
+    ],
+    "date_contact_extins":{
+       "email":[
+          
+       ],
+       "telefon":[
+          {
+             "tip":"telefon",
+             "gdpr":null,
+             "sursa":"MFINANTE",
+             "numar_telefon":"0765907662"
+          }
+       ],
+       "persoane":[
+          
+       ],
+       "adrese_web":[
+          
+       ],
+       "social_media":[
+          
+       ]
+    },
+    "statut_tva_incasare":{
+       "curent":{
+          "cod":1,
+          "label":"Neplătitor TVA la încasare",
+          "data_interogare":"2023-04-04",
+          "data_modificare":null
+       },
+       "istoric":[
+          {
+             "cod":1,
+             "label":"Neplătitor TVA la încasare",
+             "data_interogare":"2023-04-04",
+             "data_modificare":null
+          }
+       ]
+    },
+    "autorizatii_transport":[
+       
+    ],
+    "risc_insolventa_termene":null,
+    "conexiuni_administratori":[
+       
+    ],
+    "bilanturi_mfinante_scurte":{
+       "an_2008":null,
+       "an_2009":null,
+       "an_2010":null,
+       "an_2011":null,
+       "an_2012":null,
+       "an_2013":null,
+       "an_2014":null,
+       "an_2015":null,
+       "an_2016":null,
+       "an_2017":null,
+       "an_2018":null,
+       "an_2019":null,
+       "an_2020":null,
+       "an_2021":{
+          "an":2021,
+          "id":10833686,
+          "data":"2022-06-06",
+          "creante":{
+             "valoare":98000,
+             "tendinta":null
+          },
+          "datorii":{
+             "valoare":4155,
+             "tendinta":null
+          },
+          "stocuri":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "cod_caen":6201,
+          "profit_net":{
+             "valoare":136929,
+             "tendinta":null
+          },
+          "tip_bilant":null,
+          "profit_brut":{
+             "valoare":141084,
+             "tendinta":null
+          },
+          "provizioane":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "capital_total":{
+             "valoare":137129,
+             "tendinta":null
+          },
+          "pierdere_neta":{
+             "valoare":0,
+             "tendinta":null
+          },
+          "capital_social":{
+             "valoare":200,
+             "tendinta":null
+          },
+          "pierdere_bruta":{
+             "valoare":0,
+             "tendinta":null
+          },
+          "tip_activitate":"Activitati de realizare a soft-ului la comanda (software orientat client)",
+          "venituri_total":{
+             "valoare":141336,
+             "tendinta":null
+          },
+          "data_actualizare":"2022-06-06",
+          "patrimoniu_regie":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "active_circulante":{
+             "valoare":141284,
+             "tendinta":null
+          },
+          "cheltuieli_totale":{
+             "valoare":252,
+             "tendinta":null
+          },
+          "patrimoniu_public":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "venituri_in_avans":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "active_imobilizate":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "cheltuieli_in_avans":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "numar_mediu_angajati":{
+             "valoare":null,
+             "tendinta":{
+                "label":"Neschimbată",
+                "valoare":0
+             }
+          },
+          "profit_pierdere_neta":{
+             "valoare":136929,
+             "tendinta":null
+          },
+          "cifra_de_afaceri_neta":{
+             "valoare":141336,
+             "tendinta":null
+          },
+          "profit_pierdere_bruta":{
+             "valoare":141084,
+             "tendinta":null
+          },
+          "casa_si_conturi_la_banci":{
+             "valoare":43284,
+             "tendinta":null
+          }
+       },
+       "ultimul_raportat":{
+          "an":2021,
+          "id":10833686,
+          "data":"2022-06-06",
+          "creante":{
+             "valoare":98000,
+             "tendinta":null
+          },
+          "datorii":{
+             "valoare":4155,
+             "tendinta":null
+          },
+          "stocuri":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "cod_caen":6201,
+          "profit_net":{
+             "valoare":136929,
+             "tendinta":null
+          },
+          "tip_bilant":null,
+          "profit_brut":{
+             "valoare":141084,
+             "tendinta":null
+          },
+          "provizioane":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "capital_total":{
+             "valoare":137129,
+             "tendinta":null
+          },
+          "pierdere_neta":{
+             "valoare":0,
+             "tendinta":null
+          },
+          "capital_social":{
+             "valoare":200,
+             "tendinta":null
+          },
+          "pierdere_bruta":{
+             "valoare":0,
+             "tendinta":null
+          },
+          "tip_activitate":"Activitati de realizare a soft-ului la comanda (software orientat client)",
+          "venituri_total":{
+             "valoare":141336,
+             "tendinta":null
+          },
+          "data_actualizare":"2022-06-06",
+          "patrimoniu_regie":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "active_circulante":{
+             "valoare":141284,
+             "tendinta":null
+          },
+          "cheltuieli_totale":{
+             "valoare":252,
+             "tendinta":null
+          },
+          "patrimoniu_public":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "venituri_in_avans":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "active_imobilizate":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "cheltuieli_in_avans":{
+             "valoare":null,
+             "tendinta":null
+          },
+          "numar_mediu_angajati":{
+             "valoare":null,
+             "tendinta":{
+                "label":"Neschimbată",
+                "valoare":0
+             }
+          },
+          "profit_pierdere_neta":{
+             "valoare":136929,
+             "tendinta":null
+          },
+          "cifra_de_afaceri_neta":{
+             "valoare":141336,
+             "tendinta":null
+          },
+          "profit_pierdere_bruta":{
+             "valoare":141084,
+             "tendinta":null
+          },
+          "casa_si_conturi_la_banci":{
+             "valoare":43284,
+             "tendinta":null
+          }
+       }
+    },
+    "istoric_asociati_cu_procente":[
+       {
+          "data":{
+             "iesire":"2022-12-30",
+             "intrare":"2021-04-02",
+             "actualizare":"2022-12-31"
+          },
+          "nume":"RUSU ANDREEA",
+          "id_aa":"RUSUANDREEA",
+          "procentaj":{
+             "an_2016":null,
+             "an_2017":null,
+             "an_2018":null,
+             "an_2019":null,
+             "an_2020":null,
+             "an_2021":100,
+             "an_2022":100
+          }
+       }
+    ]
+ }

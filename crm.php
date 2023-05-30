@@ -21,20 +21,17 @@
             <div class="container-fluid">
                 <div class="row g-sm-3 height-equal-2 widget-charts">
 
+                    <h2 style="color: #00CCFF">Tasteaza sau selecteaza un cui si adauga un client nou in CRM</h2>
 
                     <div class="dropdown">
-                        <input type="text" id="themeSearch" class="dropdown-input form-control" style="background-color: #1d1e26;border-color: #1d1e26;color: rgba(255, 255, 255, 0.2);" placeholder="Adauga un CUI...">
+                        <input type="text" id="themeSearch" class="dropdown-input form-control" style="background-color: #1d1e26;border-color: #00CCFF;color: rgba(255, 255, 255, 0.2);" placeholder="Adauga un CUI...">
                         <ul class="dropdown-list" id="themeDropdown">
                             <li>Selecteaza un CUI</li>
-                            <li value="1" onclick="getLeadData('13548146')">13548146</li>
-                            <li value="2" onclick="getLeadData('35410186')">35410186</li>
-                            <li value="3" onclick="getLeadData('6116706')">6116706</li>
-                            <li value="4" onclick="getLeadData('43938809')">43938809</li>
-                            <li value="5" onclick="getLeadData('15985694')">15985694</li>
-                            <li value="6" onclick="getLeadData('37375182')">37375182</li>
-                            <li value="7" onclick="getLeadData('18911470')">18911470</li>
-                            <li value="8" onclick="getLeadData('40452811')">40452811</li>
-                            <li value="9" onclick="getLeadData('6116706')">6116706</li>
+                            <li value="1" onclick="getLeadData('1')">13548146</li>
+                            <li value="2" onclick="getLeadData('2')">6116706</li>
+                            <li value="3" onclick="getLeadData('3')">43938809</li>
+                            <li value="4" onclick="getLeadData('4')">15985694</li>
+                            <li value="5" onclick="getLeadData('6')">18911470</li>
                         </ul>
                     </div>
 
@@ -201,7 +198,7 @@
 <script>
     new WOW().init();
 
-    function addClient1(clientData) {
+    function addClient1(clientData, tempID) {
 
         Swal.fire({
             html: `
@@ -328,7 +325,7 @@
                                         <th scope="col">Localitate</th>
                                     </tr>
                                 </thead>
-                                <tbody id="asociatiConexiuni">
+                                <tbody id="asociatiConexiuni${tempID}">
                                 </tbody>
                             </table>
                         </div>
@@ -347,10 +344,12 @@
             minHeight: "500px",
             showConfirmButton: true,
             confirmButtonText: 'Adauga',
+            showCancelButton: true,
+            cancelButtonText: 'renunta',
             confirmButtonColor: '#16b170 !important',
             backdrop: 'rgba(0,0,0,0.4)',
             customClass: {
-                container: '.dark-mode-transparent moniModal1',
+                container: '.dark-mode-transparent crmModal1',
                 popup: 'dark-mode',
                 header: 'dark-mode-header',
                 title: 'dark-mode-header',
@@ -362,21 +361,31 @@
 
         }).then((result) => {
             try {
-                // after confirm "adauga lead"
-                const administratorId = findAdministratorId(0, clientData);
-                const tempAdmin = clientData.administratori.persoane_fizice[administratorId].nume;
 
-                crmTable1.push({
-                    id: crmTable1.length + 1,
-                    name: tempAdmin,
-                    phone: clientData.date_contact.telefon[0],
-                    email: clientData.date_contact.email[0],
-                    status: 'Nu stie',
-                    factura: 'Urmeaza'
-                })
+                console.log(result);
 
-                // adaugam leadurile in tabel, reincarcam tabelul
-                renderCrmTable(0, 1, crmTable1);
+                if (result.isConfirmed) {
+                    // after confirm "adauga lead"
+                    const administratorId = findAdministratorId(0, clientData);
+                    const tempAdmin = clientData.administratori.persoane_fizice[administratorId].nume;
+
+                    crmTable1.push({
+                        id: crmTable1.length + 1,
+                        name: tempAdmin,
+                        phone: clientData.date_contact.telefon[0],
+                        email: clientData.date_contact.email[0],
+                        status: 'Nu stie',
+                        factura: 'Urmeaza'
+                    })
+
+                    Swal.fire(`Ai adaugat clientul: ${tempAdmin}`, '', 'info')
+
+                    // adaugam leadurile in tabel, reincarcam tabelul
+                    renderCrmTable(0, 1, crmTable1);
+                } else if (result.isDismissed) {
+                    Swal.fire('nu a fost adaugat', '', 'info')
+                }
+
             } catch (error) {
                 console.log(error)
             }
@@ -384,6 +393,7 @@
 
 
 
+        console.log(clientData);
 
         const administratorId = findAdministratorId(0, clientData);
         const tempAdmin = clientData.administratori.persoane_fizice[administratorId].nume;
@@ -406,6 +416,7 @@
         numeCAEN.innerHTML = listCaen[codCAEN.innerHTML];
 
         const dateGenerale = document.getElementById('dateGenerale');
+
         dateGenerale.innerHTML = `
                 <span>
                 <h4 style="color: #00CCFF">Detalii generale</h4><br>
@@ -422,7 +433,14 @@
                 </span>
                 `;
 
-        d.element('asociatiConexiuni');
+
+
+        d.element(`asociatiConexiuni${tempID}`)
+        // d.e.asociatiConexiuni.innerHTML = `<tbody id="asociatiConexiuni"> </tbody>`;
+
+
+        console.log(d.element(`asociatiConexiuni${tempID}`));
+
 
         function addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate) {
 
@@ -470,7 +488,7 @@
             }
 
             // end of JSON
-            d.createElement(jsonData, d.e.asociatiConexiuni);
+            d.createElement(jsonData, d.element(`asociatiConexiuni${tempID}`));
         }
 
         // randuri tabel asociati conexiuni
@@ -493,10 +511,8 @@
 
             addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate)
         }
-
     }
 
-    d.element("element");
     d.createHandler('addClient1', 'click', addClient1);
 
 
@@ -535,12 +551,56 @@
 
     function getLeadData(cui) {
         console.log(cui);
+        // // (A) URL & CREDENTIALS
+        // var url = `https://api.aipro.ro:3001/cui?cui=${cui}`
+        // // (B) FETCH WITH HTTP AUTH
+
+        // // momentan scoatem TEMP
+        // fetch(url)
+        //     // (C) SERVER RESPONSE
+        //     .then((result) => {
+        //         if (result.status != 200) {
+        //             throw new Error("Bad Server Response");
+        //         }
+        //         return result.text();
+        //     })
+        //     .then((response) => {
+        //         leadData = JSON.parse(response);
+
+        //         document.addEventListener("DOMContentLoaded", function() {
+        //             console.log('loaded!');
+        //         });
+
+        //         return leadData;
+        //     })
+        //     .then((leadData) => {
+        //         // call populatePage only when newdataObj is defined
+        //         if (leadData) {
+        //             console.log(leadData);
+        //             // also we create popup here
+        //             addClient1(leadData);
+        //         }
+        //     })
+
+
+        //     // (D) HANDLE ERRORS (OPTIONAL)
+        //     .catch((error) => {
+        //         // console.log(`eroare CUI: ${error}`);
+        //         // localStorage.removeItem('newDataObj');
+        //         // alert('CUI gresit')
+        //         // window.location.href = window.location.href;
+        //     });
+
+
+
+
+        // TEMP folosim JSON
         // (A) URL & CREDENTIALS
-        var url = `https://api.aipro.ro:3001/cui?cui=${cui}`
+        var url = `https://aipro.ro/assets/js/tempCUI${cui}.json`
         // (B) FETCH WITH HTTP AUTH
 
+        // momentan scoatem TEMP
         fetch(url)
-
             // (C) SERVER RESPONSE
             .then((result) => {
                 if (result.status != 200) {
@@ -560,23 +620,21 @@
             .then((leadData) => {
                 // call populatePage only when newdataObj is defined
                 if (leadData) {
-                    console.log(leadData);
+                    // generates a random number between 1000 and 9999 (inclusive)
+                    const randomId = Math.floor(Math.random() * 9000) + 1000;
                     // also we create popup here
-                    addClient1(leadData);
+                    addClient1(leadData, randomId);
                 }
             })
 
 
             // (D) HANDLE ERRORS (OPTIONAL)
             .catch((error) => {
-                console.log(`eroare CUI: ${error}`);
-                localStorage.removeItem('newDataObj');
-                alert('CUI gresit')
-                window.location.href = window.location.origin;
+                // console.log(`eroare CUI: ${error}`);
+                // localStorage.removeItem('newDataObj');
+                // alert('CUI gresit')
+                // window.location.href = window.location.href;
             });
-
-
-
     };
 </script>
 <?php include('partial/footer-end.php') ?>
