@@ -64,8 +64,8 @@ fetch(`https://punctaj.ro/api/anaf/cui/${eCui}`, {
         Email: ${eEmail}  <br>
         Buget: ${eBuget}  <br>
         CUI: ${eCui}  <br>
-        Nr. de înmatriculare: ${data.companyInfo.company.date_generale.nrRegCom} <br>
-        Cod CAEN: ${data.companyInfo.company.date_generale.cod_CAEN} <br>
+        Nr. de înmatriculare: ${data.companyInfo.date_generale.nrRegCom} <br>
+        Cod CAEN: ${data.companyInfo.date_generale.cod_CAEN} <br>
         `;
 
     })
