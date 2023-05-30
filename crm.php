@@ -21,9 +21,10 @@
             <div class="container-fluid">
                 <div class="row g-sm-3 height-equal-2 widget-charts">
 
+                    <h2 style="color: #00CCFF">Tasteaza sau selecteaza un cui si adauga un client nou in CRM</h2>
 
                     <div class="dropdown">
-                        <input type="text" id="themeSearch" class="dropdown-input form-control" style="background-color: #1d1e26;border-color: #1d1e26;color: rgba(255, 255, 255, 0.2);" placeholder="Adauga un CUI...">
+                        <input type="text" id="themeSearch" class="dropdown-input form-control" style="background-color: #1d1e26;border-color: #00CCFF;color: rgba(255, 255, 255, 0.2);" placeholder="Adauga un CUI...">
                         <ul class="dropdown-list" id="themeDropdown">
                             <li>Selecteaza un CUI</li>
                             <li value="1" onclick="getLeadData('1')">13548146</li>
@@ -361,6 +362,8 @@
         }).then((result) => {
             try {
 
+                console.log(result);
+
                 if (result.isConfirmed) {
                     // after confirm "adauga lead"
                     const administratorId = findAdministratorId(0, clientData);
@@ -375,9 +378,11 @@
                         factura: 'Urmeaza'
                     })
 
+                    Swal.fire(`Ai adaugat clientul: ${tempAdmin}`, '', 'info')
+
                     // adaugam leadurile in tabel, reincarcam tabelul
                     renderCrmTable(0, 1, crmTable1);
-                } else if (result.isDenied) {
+                } else if (result.isDismissed) {
                     Swal.fire('nu a fost adaugat', '', 'info')
                 }
 
