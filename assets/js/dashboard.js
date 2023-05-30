@@ -135,7 +135,8 @@ function getTermeneData(cuiValue) {
     // // (B) FETCH WITH HTTP AUTH
 
 // TEMP we use a local file for fetch
-    var url = `https://aipro.ro/assets/js/tempCUI${cuiValue}.json`
+    var url = `https://aipro.ro/assets/js/tempCUI19.json`
+    localStorage.removeItem("cui");
 
     fetch(url)
 
