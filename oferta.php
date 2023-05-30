@@ -48,7 +48,7 @@ const eCui = getParameterByName('cui');
 const eTelefon = getParameterByName('telefon');
 const eEmail = getParameterByName('email');
 const eBuget = getParameterByName('buget');
-fetch(`https://analize.punctaj.ro/anaf/${eCui}`, {
+fetch(`https://punctaj.ro/api/anaf/cui/${eCui}`, {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json'
@@ -64,8 +64,8 @@ fetch(`https://analize.punctaj.ro/anaf/${eCui}`, {
         Email: ${eEmail}  <br>
         Buget: ${eBuget}  <br>
         CUI: ${eCui}  <br>
-        Nr. de înmatriculare: ${data.company.date_generale.nrRegCom} <br>
-        Cod CAEN: ${data.company.date_generale.cod_CAEN} <br>
+        Nr. de înmatriculare: ${data.companyInfo.company.date_generale.nrRegCom} <br>
+        Cod CAEN: ${data.companyInfo.company.date_generale.cod_CAEN} <br>
         `;
 
     })
