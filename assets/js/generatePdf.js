@@ -33,6 +33,8 @@ function generatePdf(fileName, fieldsObj, pdfPath) {
 
 }
 
+generatePdf('pdfSample', fieldsObj, 'https://aipro.ro/assets/pdf/cerere.pdf');
+
 
 function generatePdfA6(fileName, fieldsObj) {
     console.log(fieldsObj);
