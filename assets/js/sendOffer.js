@@ -84,7 +84,7 @@ function sendTest() {
     })
         .then(response => {
             if (response.ok) {
-                console.log(response.body.link);
+                console.log(response);
 
             } else {
                 console.error('Error sending email:', error);
