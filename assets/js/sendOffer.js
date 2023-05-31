@@ -78,33 +78,11 @@ function sendTest() {
             "fieldValues": {
                 "client": oNume,
                 "cif": oCui,
-                "suma": oBuget
+                "suma": oBuget + " Lei"
             },
             "cui": oCui
         })
     })
-        // .then(result => {
-        //     console.log(result);
-
-        //     if (result.ok) {
-
-        //     } else {
-        //         console.error('Error sending email:', error);
-        //         Swal.fire({
-        //             icon: 'error',
-        //             title: 'Ups...',
-        //             text: 'A aparut o eroare, va rugam sa incercati inca o data'
-        //         });
-        //     }
-        // })
-        // .catch(error => {
-        //     console.error('Error sending email:', error);
-        //     Swal.fire({
-        //         icon: 'error',
-        //         title: 'Ups...',
-        //         text: 'A aparut o eroare, va rugam sa incercati inca o data'
-        //     });
-        // });
         // SERVER RESPONSE
         .then((result) => {
             if (result.status != 200) { throw new Error("Bad Server Response"); }
@@ -113,7 +91,8 @@ function sendTest() {
         })
         .then((response) => {
             pdfLink = JSON.parse(response);
-            window.location.href = pdfLink.link;
+            console.log(pdfLink);
+
         })
         .catch(error => console.log(error));
 
