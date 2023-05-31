@@ -18,15 +18,15 @@
                         </div>
                         <div class="col-md-12">
                             <label for="email">Email</label>
-                            <input id="oEmail" type="email" class="form-control" placeholder="example@gmail.com">
+                            <input id="oEmail" type="email" class="form-control" placeholder="exemplu@gmail.com">
                         </div>
                         <div class="col-md-12">
                             <label for="phone">Telefon</label>
-                            <input id="oTelefon" type="text" class="form-control" placeholder="+40700000000">
+                            <input id="oTelefon" type="text" class="form-control" placeholder="40700000000">
                         </div>
                         <div class="col-md-12">
                             <label for="buget">Buget orentativ</label>
-                            <input id="oBuget" type="text" class="form-control" placeholder="50000 Euro">
+                            <input id="oBuget" type="text" class="form-control" placeholder="30 000 lei">
                         </div>
                     </div>
                 </form>
