@@ -107,8 +107,10 @@ function sendTest() {
             "pdfPath": "https://aipro.ro/assets/pdf/aipro_prezentare.pdf",
             "fileName": "ofertapret",
             "fieldValues": {
-                "client": oNume,
-                "cif": oCui,
+                "nume": oNume,
+                "cui": oCui,
+                "email": oEmail,
+                "telefon": oTelefon,
                 "suma": oBuget + " Lei"
             },
             "cui": oCui
