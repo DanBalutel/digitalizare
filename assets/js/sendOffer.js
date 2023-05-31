@@ -82,9 +82,10 @@ function sendTest() {
             "cui": oCui
         })
     })
-        .then(response => {
-            if (response.ok) {
-                console.log(response);
+        .then(result => {
+            console.log(result);
+
+            if (result.ok) {
 
             } else {
                 console.error('Error sending email:', error);
