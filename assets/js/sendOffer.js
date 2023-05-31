@@ -12,17 +12,12 @@ const findAdministratorId = function (id, dataObject) {
 };
 
 function sendTest() {
-    // const oName = document.getElementById('oName').value;
-    // const oEmail = document.getElementById('oEmail').value;
-    // const oMessage = document.getElementById('oMessage').value;
 
-    const eEmail = document.getElementById('oEmail').value;
-    const eTelefon = document.getElementById('oTelefon').value;
-    const eBuget = document.getElementById('oBuget').value;
-    const eCui = document.getElementById('oCui').value;
-    let eClient = '';
-    let eRegcom = '';
-    let eAdresa = '';
+    const oNume = document.getElementById('oNume').value;
+    const oCui = document.getElementById('oCui').value;
+    const oEmail = document.getElementById('oEmail').value;
+    const oTelefon = document.getElementById('oTelefon').value;
+    const oBuget = document.getElementById('oBuget').value;
 
 
 
@@ -78,13 +73,11 @@ function sendTest() {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "pdfPath": "https://aipro.ro/assets/pdf/aipro-prezentare_3.pdf",
+            "pdfPath": "https://aipro.ro/assets/pdf/aipro_prezentare.pdf",
             "fieldValues": {
-                "client": eClient,
-                "cif": eCui,
-                "regcom": eRegcom,
-                "adresa": eAdresa,
-                "suma": eBuget
+                "client": oNume,
+                "cif": oCui,
+                "suma": oBuget
             },
             "cui": eCui
         })
@@ -92,18 +85,23 @@ function sendTest() {
         .then(response => {
             if (response.ok) {
                 console.log(response.body.link);
-                
+
             } else {
-                
+                console.error('Error sending email:', error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Ups...',
+                    text: 'A aparut o eroare, va rugam sa incercati inca o data'
+                });
             }
         })
         .catch(error => {
-            // console.error('Error sending email:', error);
-            // Swal.fire({
-            //     icon: 'error',
-            //     title: 'Ups...',
-            //     text: 'A aparut o eroare, va rugam sa incercati inca o data'
-            // });
+            console.error('Error sending email:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Ups...',
+                text: 'A aparut o eroare, va rugam sa incercati inca o data'
+            });
         });
 
 
