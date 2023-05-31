@@ -46,7 +46,7 @@ function sendTest() {
                         text: 'Cererea de oferta a fost inregistrata cu succes!'
                     }).then(() => {
                         // After the Swal message, redirect the user
-                        window.location.href = `oferta.php?cui=${encodeURIComponent(eCui)}&email=${encodeURIComponent(eEmail)}&telefon=${encodeURIComponent(eTelefon)}&buget=${encodeURIComponent(eBuget)}`;
+                        // window.location.href = `oferta.php?cui=${encodeURIComponent(eCui)}&email=${encodeURIComponent(eEmail)}&telefon=${encodeURIComponent(eTelefon)}&buget=${encodeURIComponent(eBuget)}`;
                     });
                 } else {
                     console.error('Error sending email:', response.statusText);
