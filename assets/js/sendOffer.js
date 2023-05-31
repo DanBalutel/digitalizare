@@ -127,7 +127,7 @@ function sendTest() {
             // trimite oferta Alex
             trimiteOferta(oNume, oCui, oEmail, oTelefon, oBuget, pdfLink.link);
             // trimite oferta client
-            trimiteOfertaClient();
+            trimiteOfertaClient(oNume, oCui, oEmail, oTelefon, oBuget, pdfLink.link);
         })
         .catch(error => console.log(error));
 
