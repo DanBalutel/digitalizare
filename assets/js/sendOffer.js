@@ -22,45 +22,50 @@ function sendTest() {
 
 
 
-    // fetch('https://api.aipro.ro:3005/send', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify({
-    //         email: eEmail,
-    //         telefon: eTelefon,
-    //         buget: eBuget
-    //     })
-    // })
-    //     .then(response => {
-    //         if (response.ok) {
-    //             console.log('Email sent successfully!');
-    //             Swal.fire({
-    //                 icon: 'success',
-    //                 title: 'Success!',
-    //                 text: 'Cererea de oferta a fost inregistrata cu succes!'
-    //             }).then(() => {
-    //                 // After the Swal message, redirect the user
-    //                 window.location.href = `oferta.php?cui=${encodeURIComponent(eCui)}&email=${encodeURIComponent(eEmail)}&telefon=${encodeURIComponent(eTelefon)}&buget=${encodeURIComponent(eBuget)}`;
-    //             });
-    //         } else {
-    //             console.error('Error sending email:', response.statusText);
-    //             Swal.fire({
-    //                 icon: 'error',
-    //                 title: 'Ups...',
-    //                 text: 'A aparut o eroare, va rugam sa incercati inca o data'
-    //             });
-    //         }
-    //     })
-    //     .catch(error => {
-    //         console.error('Error sending email:', error);
-    //         Swal.fire({
-    //             icon: 'error',
-    //             title: 'Ups...',
-    //             text: 'A aparut o eroare, va rugam sa incercati inca o data'
-    //         });
-    //     });
+    function trimiteOferta(eNume,eCui,eEmail,eTelefon,eBuget,eLink) {
+        fetch('https://api.aipro.ro:3005/send', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                nume: eNume,
+                cui: eCui,
+                email: eEmail,
+                telefon: eTelefon,
+                buget: eBuget,
+                link: eLink
+            })
+        })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Email sent successfully!');
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Success!',
+                        text: 'Cererea de oferta a fost inregistrata cu succes!'
+                    }).then(() => {
+                        // After the Swal message, redirect the user
+                        window.location.href = `oferta.php?cui=${encodeURIComponent(eCui)}&email=${encodeURIComponent(eEmail)}&telefon=${encodeURIComponent(eTelefon)}&buget=${encodeURIComponent(eBuget)}`;
+                    });
+                } else {
+                    console.error('Error sending email:', response.statusText);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Ups...',
+                        text: 'A aparut o eroare, va rugam sa incercati inca o data'
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error sending email:', error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Ups...',
+                    text: 'A aparut o eroare, va rugam sa incercati inca o data'
+                });
+            });
+    }
 
 
 
@@ -92,6 +97,10 @@ function sendTest() {
         .then((response) => {
             pdfLink = JSON.parse(response);
             console.log(pdfLink);
+
+            // trimite oferta Alex
+            trimiteOferta(oNume,oCui,oEmail,oTelefon,oBuget,pdfLink);
+            // trimite oferta client
 
         })
         .catch(error => console.log(error));
