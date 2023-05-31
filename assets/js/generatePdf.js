@@ -1,4 +1,4 @@
-function generatePdf(fileName, fieldsObj) {
+function generatePdf(fileName, fieldsObj, pdfPath) {
     console.log(fieldsObj);
     // loading
     renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
@@ -11,7 +11,7 @@ function generatePdf(fileName, fieldsObj) {
         body: JSON.stringify({
             'cui': newdataObj.firma.cui,
             'fileName': fileName,
-            'pdfPath': 'https://aipro.ro/assets/pdf/cerere.pdf',
+            'pdfPath': pdfPath,
             'fieldValues': fieldsObj
         })
 

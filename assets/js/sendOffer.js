@@ -83,28 +83,40 @@ function sendTest() {
             "cui": oCui
         })
     })
-        .then(result => {
+        // .then(result => {
+        //     console.log(result);
+
+        //     if (result.ok) {
+
+        //     } else {
+        //         console.error('Error sending email:', error);
+        //         Swal.fire({
+        //             icon: 'error',
+        //             title: 'Ups...',
+        //             text: 'A aparut o eroare, va rugam sa incercati inca o data'
+        //         });
+        //     }
+        // })
+        // .catch(error => {
+        //     console.error('Error sending email:', error);
+        //     Swal.fire({
+        //         icon: 'error',
+        //         title: 'Ups...',
+        //         text: 'A aparut o eroare, va rugam sa incercati inca o data'
+        //     });
+        // });
+        // SERVER RESPONSE
+        .then((result) => {
+            if (result.status != 200) { throw new Error("Bad Server Response"); }
             console.log(result);
-
-            if (result.ok) {
-
-            } else {
-                console.error('Error sending email:', error);
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Ups...',
-                    text: 'A aparut o eroare, va rugam sa incercati inca o data'
-                });
-            }
+            return result.text();
         })
-        .catch(error => {
-            console.error('Error sending email:', error);
-            Swal.fire({
-                icon: 'error',
-                title: 'Ups...',
-                text: 'A aparut o eroare, va rugam sa incercati inca o data'
-            });
-        });
+        .then((response) => {
+            pdfLink = JSON.parse(response);
+            window.location.href = pdfLink.link;
+        })
+        .catch(error => console.log(error));
+
 
 
 }
