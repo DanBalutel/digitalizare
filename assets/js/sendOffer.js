@@ -96,10 +96,10 @@ function sendTest() {
         })
         .then((response) => {
             pdfLink = JSON.parse(response);
-            console.log(pdfLink);
+            console.log(pdfLink.link);
 
             // trimite oferta Alex
-            trimiteOferta(oNume,oCui,oEmail,oTelefon,oBuget,pdfLink);
+            trimiteOferta(oNume,oCui,oEmail,oTelefon,oBuget,pdfLink.link);
             // trimite oferta client
 
         })
