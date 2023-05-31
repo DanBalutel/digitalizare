@@ -9,6 +9,10 @@
                 <form action="">
                     <div class="row">
                         <div class="col-md-12">
+                            <label for="nume">Nume</label>
+                            <input id="oNume" type="number" class="form-control" placeholder="Adrian Popescu">
+                        </div>
+                        <div class="col-md-12">
                             <label for="cui">CUI</label>
                             <input id="oCui" type="number" class="form-control" placeholder="19">
                         </div>
