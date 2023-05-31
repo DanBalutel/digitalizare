@@ -74,6 +74,7 @@ function sendTest() {
         },
         body: JSON.stringify({
             "pdfPath": "https://aipro.ro/assets/pdf/aipro_prezentare.pdf",
+            "fileName": "ofertapret",
             "fieldValues": {
                 "client": oNume,
                 "cif": oCui,
