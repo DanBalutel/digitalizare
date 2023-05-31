@@ -67,7 +67,7 @@ function sendTest() {
             });
     }
 
-    function trimiteOfertaClient() {
+    function trimiteOfertaClient(eNume, eCui, eEmail, eTelefon, eBuget, eLink) {
         fetch('https://api.aipro.ro:3005/sendClient', {
             method: 'POST',
             headers: {
