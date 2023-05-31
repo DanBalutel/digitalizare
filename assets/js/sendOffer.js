@@ -79,7 +79,7 @@ function sendTest() {
                 "cif": oCui,
                 "suma": oBuget
             },
-            "cui": eCui
+            "cui": oCui
         })
     })
         .then(response => {
