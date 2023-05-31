@@ -22,7 +22,7 @@ function sendTest() {
 
 
 
-    function trimiteOferta(eNume,eCui,eEmail,eTelefon,eBuget,eLink) {
+    function trimiteOferta(eNume, eCui, eEmail, eTelefon, eBuget, eLink) {
         fetch('https://api.aipro.ro:3005/send', {
             method: 'POST',
             headers: {
@@ -67,6 +67,32 @@ function sendTest() {
             });
     }
 
+    function trimiteOfertaClient() {
+        fetch('https://api.aipro.ro:3005/sendClient', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                nume: eNume,
+                cui: eCui,
+                email: eEmail,
+                telefon: eTelefon,
+                buget: eBuget,
+                link: eLink
+            })
+        })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Email to client sent successfully!');
+                } else {
+                    console.error('Error sending email:', response.statusText);
+                }
+            })
+            .catch(error => {
+                console.error('Error sending email:', error);
+            });
+    }
 
 
 
@@ -99,9 +125,9 @@ function sendTest() {
             console.log(pdfLink.link);
 
             // trimite oferta Alex
-            trimiteOferta(oNume,oCui,oEmail,oTelefon,oBuget,pdfLink.link);
+            trimiteOferta(oNume, oCui, oEmail, oTelefon, oBuget, pdfLink.link);
             // trimite oferta client
-
+            trimiteOfertaClient();
         })
         .catch(error => console.log(error));
 
