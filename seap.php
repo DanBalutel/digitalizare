@@ -175,15 +175,6 @@
                     </div>
 
 
-                    <div class="col-sm-12">
-                        <div class="card">
-                            <div class="col-sm-12 col-lg-12 col-xl-12">
-                                <iframe src="https://www.chatpdf.com/" width="100%" height="1000vh" name="iframe"></iframe>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
 
