@@ -47,7 +47,7 @@
 // }
 
 // Check if the 'showoffert' parameter exists and is equal to 1
-if (isset($_GET['showoffert']) && $_GET['showoffert'] === '1') {
+if (isset($_GET['oferta']) && $_GET['oferta'] === '1') {
     
     echo '<script src="assets/js/showOffer.js" defer></script>';
 
