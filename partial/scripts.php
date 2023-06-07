@@ -29,10 +29,10 @@
 </script>
 <!-- Plugins JS Ends-->
 <!-- Theme js-->
-<script src="assets/js/custom-script.js?version=<?php echo(rand(1, 100000)); ?>"></script>
+<script src="assets/js/custom-script.js?version=<?php echo (rand(1, 100000)); ?>"></script>
 <script src="assets/js/script.js"></script>
-<script src="assets/js/dashboard.js?version=<?php echo(rand(1, 100000)); ?>" defer></script>
-<script src="assets/js/sendOffer.js?version=<?php echo(rand(1, 100000)); ?>"></script>
+<script src="assets/js/dashboard.js?version=<?php echo (rand(1, 100000)); ?>" defer></script>
+<script src="assets/js/sendOffer.js?version=<?php echo (rand(1, 100000)); ?>"></script>
 <?php
 // // List of pages where the script should be added
 // $allowedPages = array('crm.php');
@@ -45,4 +45,12 @@
 // if (!in_array($currentPage, $allowedPages)) {
 //     echo '<script src="assets/js/dashboard.js" defer></script>';
 // }
+
+// Check if the 'showoffert' parameter exists and is equal to 1
+if (isset($_GET['showoffert']) && $_GET['showoffert'] === '1') {
+    
+    echo '<script src="assets/js/showOffer.js" defer></script>';
+
+}
+
 ?>
