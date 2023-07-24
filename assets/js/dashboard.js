@@ -28,6 +28,8 @@ if (!request['cui'] && !localStorage.cui) {
     }
 } else if (request['cui']) {
     window.localStorage.setItem('cui', request['cui']);
+    getTermeneData(localStorage.cui);
+    populatePage();
 } else {
     getTermeneData(localStorage.cui);
     populatePage();
