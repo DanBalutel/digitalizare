@@ -51,7 +51,7 @@ if (request['cui']) {
 }
 
 // temp we add if check for login
-if (localStorage.newDataObj = undefined || (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php")) {
+if (!request['cui']) {
 
     let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
     if (codulCUI == null || codulCUI == "") {
