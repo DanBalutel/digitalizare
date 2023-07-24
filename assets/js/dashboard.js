@@ -17,7 +17,7 @@ for (var i = 0; i < pairs.length; i++) {
 }
 
 // temp we add if check for login
-if (!request['cui']) {
+if (!request['cui'] $$ !localStorage.cui) {
 
     let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
     if (codulCUI == null || codulCUI == "") {
@@ -27,7 +27,7 @@ if (!request['cui']) {
         window.location.href = window.location.href + `?cui=${codulCUI}`;
     }
 } else {
-    getTermeneData(request['cui']);
+    getTermeneData(localStorage.cui);
     populatePage();
 }
 
@@ -119,7 +119,7 @@ function getTermeneData(cuiValue) {
 
     // // TEMP we use a local file for fetch
     //     var url = `https://aipro.ro/assets/js/tempCUI9.json`
-    localStorage.removeItem("cui");
+    // localStorage.removeItem("cui");
 
     fetch(url)
 
