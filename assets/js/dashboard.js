@@ -25,6 +25,9 @@ if (!request['cui']) {
     } else {
         window.location.href = window.location.href + `?cui=${codulCUI}`;
     }
+} else {
+    getTermeneData(request['cui']);
+    populatePage();
 }
 
 if (request['cui']) {
