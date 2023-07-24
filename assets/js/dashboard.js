@@ -186,7 +186,7 @@ function getTermeneData(cuiValue) {
 function populatePage(termeneData) {
 
     const findAdministratorId = function (id, dataObject) {
-        const positionName = dataObject.administratori.persoane_fizice[id].functie;
+        const positionName = newdataObj.administratori.persoane_fizice[id].functie;
 
         if (positionName.includes('administrator')) {
             return id;
