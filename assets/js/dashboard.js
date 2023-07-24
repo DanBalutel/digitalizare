@@ -31,8 +31,8 @@ if (request['cui']) {
 
 else {
 
-    // TEMP removed request for CUI
-    window.localStorage.setItem('cui', '19');
+    // // TEMP removed request for CUI
+    // window.localStorage.setItem('cui', '19');
     // REMOVED TEMP monica video popup
     // showVideoMonica(localStorage.displayedModal1);
     getTermeneData(request['cui']);
@@ -40,16 +40,16 @@ else {
     // END TEMP
 
 
-    // // temp we add if check for login
-    // if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
+    // temp we add if check for login
+    if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
 
-    //     let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
-    //     if (codulCUI == null || codulCUI == "") {
-    //         window.location.href = window.location.href;
-    //     } else {
-    //         window.location.href = window.location.href + `?cui=${codulCUI}`;
-    //     }
-    // }
+        let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
+        if (codulCUI == null || codulCUI == "") {
+            window.location.href = window.location.href;
+        } else {
+            window.location.href = window.location.href + `?cui=${codulCUI}`;
+        }
+    }
 }
 
 function startTimer() {
