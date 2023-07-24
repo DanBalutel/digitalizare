@@ -26,7 +26,10 @@ if (request['cui']) {
 } else if (localStorage.cui) {
 
     getTermeneData(localStorage.cui)
-} else {
+}
+
+
+else {
 
     // // TEMP removed request for CUI
     // window.localStorage.setItem('cui', '19');
@@ -37,18 +40,16 @@ if (request['cui']) {
     // END TEMP
 
 
+    // // temp we add if check for login
+    // if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
 
-}
-
-// temp we add if check for login
-if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
-
-    let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
-    if (codulCUI == null || codulCUI == "") {
-        window.location.href = window.location.href;
-    } else {
-        window.location.href = window.location.href + `?cui=${codulCUI}`;
-    }
+    //     let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
+    //     if (codulCUI == null || codulCUI == "") {
+    //         window.location.href = window.location.href;
+    //     } else {
+    //         window.location.href = window.location.href + `?cui=${codulCUI}`;
+    //     }
+    // }
 }
 
 function startTimer() {
@@ -133,8 +134,8 @@ function getTermeneData(cuiValue) {
     var url = `https://api.aipro.ro:3001/cui?cui=${cuiValue}`
     // (B) FETCH WITH HTTP AUTH
 
-    // // TEMP we use a local file for fetch
-    //     var url = `https://aipro.ro/assets/js/tempCUI9.json`
+// // TEMP we use a local file for fetch
+//     var url = `https://aipro.ro/assets/js/tempCUI9.json`
     localStorage.removeItem("cui");
 
     fetch(url)
@@ -185,7 +186,7 @@ function getTermeneData(cuiValue) {
 function populatePage(termeneData) {
 
     const findAdministratorId = function (id, dataObject) {
-        const positionName = dataObject.administratori.persoane_fizice[id].functie;
+        const positionName = newdataObject.administratori.persoane_fizice[id].functie;
 
         if (positionName.includes('administrator')) {
             return id;
