@@ -51,7 +51,7 @@ if (request['cui']) {
 }
 
 // temp we add if check for login
-if (newdataObj = undefined && window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
+if (newdataObj = undefined || (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php")) {
 
     let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
     if (codulCUI == null || codulCUI == "") {
