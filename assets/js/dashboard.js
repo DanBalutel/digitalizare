@@ -17,7 +17,7 @@ for (var i = 0; i < pairs.length; i++) {
 }
 
 // temp we add if check for login
-if (!request['cui'] $$ !localStorage.cui) {
+if (!request['cui'] && !localStorage.cui) {
 
     let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
     if (codulCUI == null || codulCUI == "") {
@@ -26,6 +26,8 @@ if (!request['cui'] $$ !localStorage.cui) {
         window.localStorage.setItem('cui', request['cui']);
         window.location.href = window.location.href + `?cui=${codulCUI}`;
     }
+} else if (request['cui']) {
+    window.localStorage.setItem('cui', request['cui']);
 } else {
     getTermeneData(localStorage.cui);
     populatePage();
