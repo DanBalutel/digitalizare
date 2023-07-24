@@ -16,6 +16,17 @@ for (var i = 0; i < pairs.length; i++) {
     request[pair[0]] = pair[1];
 }
 
+// temp we add if check for login
+if (!request['cui']) {
+
+    let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
+    if (codulCUI == null || codulCUI == "") {
+        window.location.href = window.location.href;
+    } else {
+        window.location.href = window.location.href + `?cui=${codulCUI}`;
+    }
+}
+
 if (request['cui']) {
 
     window.localStorage.setItem('cui', request['cui']);
@@ -50,16 +61,7 @@ if (request['cui']) {
     // }
 }
 
-// temp we add if check for login
-if (!request['cui']) {
 
-    let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
-    if (codulCUI == null || codulCUI == "") {
-        window.location.href = window.location.href;
-    } else {
-        window.location.href = window.location.href + `?cui=${codulCUI}`;
-    }
-}
 
 
 function startTimer() {
