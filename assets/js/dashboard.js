@@ -23,6 +23,7 @@ if (!request['cui']) {
     if (codulCUI == null || codulCUI == "") {
         window.location.href = window.location.href;
     } else {
+        window.localStorage.setItem('cui', request['cui']);
         window.location.href = window.location.href + `?cui=${codulCUI}`;
     }
 } else {
@@ -30,39 +31,6 @@ if (!request['cui']) {
     populatePage();
 }
 
-if (request['cui']) {
-
-    window.localStorage.setItem('cui', request['cui']);
-    // REMOVED TEMP monica video popup
-    // showVideoMonica(localStorage.displayedModal1);
-    getTermeneData(request['cui']);
-    populatePage();
-
-} else if (localStorage.cui) {
-
-    getTermeneData(localStorage.cui)
-} else {
-
-    // // TEMP removed request for CUI
-    // window.localStorage.setItem('cui', '19');
-    // REMOVED TEMP monica video popup
-    // showVideoMonica(localStorage.displayedModal1);
-    getTermeneData(request['cui']);
-    populatePage();
-    // END TEMP
-
-
-    // // temp we add if check for login
-    // if (window.location.pathname !== "/area4u" && window.location.pathname !== "/area4u.php") {
-
-    //     let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
-    //     if (codulCUI == null || codulCUI == "") {
-    //         window.location.href = window.location.href;
-    //     } else {
-    //         window.location.href = window.location.href + `?cui=${codulCUI}`;
-    //     }
-    // }
-}
 
 
 
