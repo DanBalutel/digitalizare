@@ -35,7 +35,7 @@ else {
     window.localStorage.setItem('cui', '19');
     // REMOVED TEMP monica video popup
     // showVideoMonica(localStorage.displayedModal1);
-    getTermeneData(request['19']);
+    getTermeneData(request['cui']);
     populatePage();
     // END TEMP
 
@@ -76,7 +76,7 @@ function startTimer() {
 
 
 
-// CUI 38911092
+// // CUI 38911092
 // function fetchAuth(cuiValue) {
 //     // // (A) URL & CREDENTIALS
 //     // var url = `https://api.aipro.ro:3004/cui?cui=${cuiValue}`
@@ -130,12 +130,12 @@ function getTermeneData(cuiValue) {
 
     renderLoadingModal('Datele se incarca...');
 
-    // // (A) URL & CREDENTIALS
-    // var url = `https://api.aipro.ro:3001/cui?cui=${cuiValue}`
-    // // (B) FETCH WITH HTTP AUTH
+    // (A) URL & CREDENTIALS
+    var url = `https://api.aipro.ro:3001/cui?cui=${cuiValue}`
+    // (B) FETCH WITH HTTP AUTH
 
-// TEMP we use a local file for fetch
-    var url = `https://aipro.ro/assets/js/tempCUI9.json`
+// // TEMP we use a local file for fetch
+//     var url = `https://aipro.ro/assets/js/tempCUI9.json`
     localStorage.removeItem("cui");
 
     fetch(url)
