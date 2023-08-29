@@ -16,31 +16,31 @@ for (var i = 0; i < pairs.length; i++) {
     request[pair[0]] = pair[1];
 }
 
-// // comment for fixed cui
-if (!request['cui']) {
-window.location.href = window.location.href + `?cui=19`;
-    getTermeneData('19');
-    populatePage();
-}
-
-// // temp we add if check for login
-// if (!request['cui'] && !localStorage.cui) {
-
-//     let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
-//     if (codulCUI == null || codulCUI == "") {
-//         window.location.href = window.location.href;
-//     } else {
-//         window.localStorage.setItem('cui', request['cui']);
-//         window.location.href = window.location.href + `?cui=${codulCUI}`;
-//     }
-// } else if (request['cui']) {
-//     window.localStorage.setItem('cui', request['cui']);
-//     getTermeneData(localStorage.cui);
-//     populatePage();
-// } else {
-//     getTermeneData(localStorage.cui);
+// // // comment for fixed cui
+// if (!request['cui']) {
+// window.location.href = window.location.href + `?cui=19`;
+//     getTermeneData('19');
 //     populatePage();
 // }
+
+// temp we add if check for login
+if (!request['cui'] && !localStorage.cui) {
+
+    let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
+    if (codulCUI == null || codulCUI == "") {
+        window.location.href = window.location.href;
+    } else {
+        window.localStorage.setItem('cui', request['cui']);
+        window.location.href = window.location.href + `?cui=${codulCUI}`;
+    }
+} else if (request['cui']) {
+    window.localStorage.setItem('cui', request['cui']);
+    getTermeneData(localStorage.cui);
+    populatePage();
+} else {
+    getTermeneData(localStorage.cui);
+    populatePage();
+}
 
 
 
