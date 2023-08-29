@@ -18,8 +18,8 @@ for (var i = 0; i < pairs.length; i++) {
 
 // // // comment for fixed cui
 if (!request['cui']) {
-window.location.href = window.location.href + `?cui=19`;
-    getTermeneData('19');
+window.location.href = window.location.href + `?cui=9`;
+    getTermeneData('9');
     populatePage();
 }
 
