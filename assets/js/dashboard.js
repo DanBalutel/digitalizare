@@ -17,11 +17,11 @@ for (var i = 0; i < pairs.length; i++) {
 }
 
 // // // comment for fixed cui
-// if (!request['cui']) {
-// window.location.href = window.location.href + `?cui=19`;
-//     getTermeneData('19');
-//     populatePage();
-// }
+if (!request['cui']) {
+window.location.href = window.location.href + `?cui=19`;
+    getTermeneData('19');
+    populatePage();
+}
 
 // temp we add if check for login
 if (!request['cui'] && !localStorage.cui) {
