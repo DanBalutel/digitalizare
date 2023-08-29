@@ -18,7 +18,9 @@ for (var i = 0; i < pairs.length; i++) {
 
 // // comment for fixed cui
 if (!request['cui']) {
-window.location.href = window.location.href + `?cui=19`;
+window.location.href = window.location.href + `?cui=38911092`;
+    getTermeneData('38911092');
+    populatePage();
 }
 
 // // temp we add if check for login
