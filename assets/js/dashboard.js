@@ -121,7 +121,7 @@ function getTermeneData(cuiValue) {
 
     // // HERE set to use API instead of locked Area4U SRL
     // (A) URL & CREDENTIALS
-    var url = `https://api.aipro.ro:3001/cui?cui=${cuiValue}`
+    var url = `https://api.aipro.ro/get?cui=${cuiValue}`
     // (B) FETCH WITH HTTP AUTH
 
     // // TEMP we use a local file for fetch
