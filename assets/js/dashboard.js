@@ -201,7 +201,7 @@ function populatePage(termeneData) {
     // using new dataObj !!!!!!!!!!!!!!!
     // const administratorId = findAdministratorId(0, newdataObj);
 
-    try {
+    // try {
 
         // const loggedName = document.getElementById('loggedName');
         // loggedName.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;  //DONE
@@ -614,9 +614,9 @@ function populatePage(termeneData) {
 
 
 
-    } catch (error) {
-        console.log(error);
-    }
+    // } catch (error) {
+    //     console.log(error);
+    // }
 
 
 
