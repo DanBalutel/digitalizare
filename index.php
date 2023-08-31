@@ -139,6 +139,19 @@
             </div>
           </div>
 
+
+          
+          <!-- MAP -->
+          <div class="col-md-12 col-xs-12">
+            <div id="cardAF" class="card small-widget mb-sm-0">
+              <div class="card-header">
+                <h5>Adresa fiscala</h5>
+              </div>
+              <div id="mapAnaf"></div>
+            </div>
+          </div>
+
+
           <!-- exemplu situatie financiara -->
 
           <div class="col-md-6 col-xs-12">
@@ -248,15 +261,7 @@
 
 
 
-          <!-- MAP -->
-          <div class="col-md-12 col-xs-12">
-            <div id="cardAF" class="card small-widget mb-sm-0">
-              <div class="card-header">
-                <h5>Adresa fiscala</h5>
-              </div>
-              <div id="mapAnaf"></div>
-            </div>
-          </div>
+
 
 
           <!-- 
