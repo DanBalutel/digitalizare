@@ -24,12 +24,7 @@ function renderAnswer2(question) {
         body: JSON.stringify({
             'question': question
         }),
-        cors: {
-            origin: ['https://danbalutel.github.io', 'http://penguin.linux.test'],
-            methods: 'GET, HEAD, PUT, PATCH, DELETE',
-        }
-
-
+        mode: 'no-cors'
     })
         // SERVER RESPONSE
         .then((result) => {
