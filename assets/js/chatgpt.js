@@ -22,8 +22,9 @@ function renderAnswer2(question) {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            'question': question
-        }),
+            "question": "cine a fost stefan?"
+          }
+          ),
         cors: {
             origin: ['https://aipro.ro', 'http://penguin.linux.test'],
             methods: 'GET, HEAD, PUT, PATCH, DELETE',
