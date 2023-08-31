@@ -231,7 +231,7 @@ function populatePage(termeneData) {
         // d.element('dash').innerHTML = newdataObj.date_generale.denumire;  //DONE
         // d.element('nameAdmin').innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
         if (name) {
-            name.innerHTML = `${newdataObj.date_generale.denumire}`;  //DONE
+            //name.innerHTML = `${newdataObj.date_generale.denumire}`;  //DONE
             const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
             chartSituatieFianciara.innerHTML = `Situatie finaciara ${newdataObj.date_generale.denumire}`;  //DONE
 
