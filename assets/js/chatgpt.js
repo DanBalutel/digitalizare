@@ -14,18 +14,18 @@ if (localStorage.chatMoni) {
 // functions
 
 // acces API with question
-function renderAnswer2(question, conversationId, messageId) {
+function renderAnswer2(question) {
 
-    fetch('http://api.aipro.ro:3004/vgpt', {
+    fetch('https://blackstar.biz:3001/gptt', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            'message': question,
-            'conversationId': localStorage.conversationId,
-            'parentMessageId': localStorage.messageId,
-            'stream': false
+            'question': question,
+            // 'conversationId': localStorage.conversationId,
+            // 'parentMessageId': localStorage.messageId,
+            // 'stream': false
         }),
         cors: {
             origin: ['https://danbalutel.github.io', 'http://penguin.linux.test'],
@@ -45,12 +45,12 @@ function renderAnswer2(question, conversationId, messageId) {
 
             // all html rendering goes here
             removeLoading();
-            if (!localStorage.conversationId) {
-                localStorage.setItem("conversationId", ansText.conversationId);
-                localStorage.setItem("messageId", ansText.messageId);
-            } else {
-                localStorage.setItem("messageId", ansText.messageId);
-            }
+            // if (!localStorage.conversationId) {
+            //     localStorage.setItem("conversationId", ansText.conversationId);
+            //     localStorage.setItem("messageId", ansText.messageId);
+            // } else {
+            //     localStorage.setItem("messageId", ansText.messageId);
+            // }
             addMessage('left', ansText.response.replace(/(\r\n|\n|\r)/gm,'<br>'))
             chatBox.scrollTop = chatBox.scrollHeight;
 
