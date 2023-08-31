@@ -22,10 +22,7 @@ function renderAnswer2(question) {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            'question': question,
-            // 'conversationId': localStorage.conversationId,
-            // 'parentMessageId': localStorage.messageId,
-            // 'stream': false
+            'question': question
         }),
         cors: {
             origin: ['https://danbalutel.github.io', 'http://penguin.linux.test'],
