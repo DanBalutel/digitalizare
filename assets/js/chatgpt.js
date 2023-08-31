@@ -21,10 +21,9 @@ function renderAnswer2(question) {
         headers: {
             'Content-Type': 'application/json'
         },
-        // body: JSON.stringify({
-        //     "question": "cine a fost stefan?"
-        //   }),
-        body: {"question": "cine a fost stefan?"},
+        body: JSON.stringify({
+            "question": "cine a fost stefan?"
+          }),
         cors: 'no-cors'
 
 
