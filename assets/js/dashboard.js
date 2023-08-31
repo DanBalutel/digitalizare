@@ -222,9 +222,9 @@ function populatePage(termeneData) {
         //     const dataNastere = document.getElementById('dataNastere');
         //     dataNastere.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].data_nastere;  //DONE
         // }
-        if (document.getElementById('cui_file')) {
-            document.getElementById('cui_file').value = newdataObj.CUI;  //DONE
-        }
+        // if (document.getElementById('cui_file')) {
+        //     document.getElementById('cui_file').value = newdataObj.CUI;  //DONE
+        // }
 
         // temp we render here all DOOM elements
         const name = document.getElementById('name');
