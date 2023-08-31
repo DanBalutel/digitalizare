@@ -16,7 +16,7 @@ if (localStorage.chatMoni) {
 // acces API with question
 function renderAnswer2(question) {
 
-    fetch('https://blackstar.biz:3001/gptt', {
+    fetch('https://blackstar.biz:3001/gpt', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
