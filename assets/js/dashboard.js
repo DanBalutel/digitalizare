@@ -21,15 +21,15 @@ for (var i = 0; i < pairs.length; i++) {
 // temp we add if check for login
 if (!request['cui'] && !localStorage.cui) {
 
-    // let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
-    // if (codulCUI == null || codulCUI == "") {
-    //     window.location.href = window.location.href;
-    // } else {
-    //     window.localStorage.setItem('cui', request['cui']);
-    //     window.location.href = window.location.href + `?cui=${codulCUI}`;
-    // }
-    window.localStorage.setItem('cui', request['cui']);
-    window.location.href = window.location.href + `?cui=9`;
+    let codulCUI = prompt("Te rog sa introduci codul CUI :", "");
+    if (codulCUI == null || codulCUI == "") {
+        window.location.href = window.location.href;
+    } else {
+        window.localStorage.setItem('cui', request['cui']);
+        window.location.href = window.location.href + `?cui=${codulCUI}`;
+    }
+    // window.localStorage.setItem('cui', request['cui']);
+    // window.location.href = window.location.href + `?cui=9`;
 } else if (request['cui']) {
     window.localStorage.setItem('cui', request['cui']);
     getTermeneData(localStorage.cui);
