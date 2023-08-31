@@ -235,6 +235,9 @@ function populatePage(termeneData) {
             // const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
             // chartSituatieFianciara.innerHTML = `Situatie finaciara ${newdataObj.date_generale.denumire}`;  //DONE
 
+            // DEBUG
+            console.log(newdataObj);
+
             const blockCA = document.getElementById('cifra-de-afaceri');
             blockCA.innerHTML = parseFloat(newdataObj.an2022.i[7].val_indicator).toLocaleString('en-US');
 
