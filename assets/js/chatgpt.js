@@ -31,7 +31,7 @@ function renderAnswer2(question) {
         // SERVER RESPONSE
         .then((result) => {
             if (result.status != 200) { throw new Error("Bad Server Response"); }
-            console.log(result);
+            console.log(result.body);
             return result.text();
         })
         .then((response) => {
