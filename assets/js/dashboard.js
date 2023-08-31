@@ -28,8 +28,7 @@ if (!request['cui'] && !localStorage.cui) {
         window.localStorage.setItem('cui', request['cui']);
         window.location.href = window.location.href + `?cui=${codulCUI}`;
     }
-    // window.localStorage.setItem('cui', request['cui']);
-    // window.location.href = window.location.href + `?cui=9`;
+
 } else if (request['cui']) {
     window.localStorage.setItem('cui', request['cui']);
     getTermeneData(localStorage.cui);
@@ -123,11 +122,11 @@ function getTermeneData(cuiValue) {
 
     // // HERE set to use API instead of locked Area4U SRL
     // (A) URL & CREDENTIALS
-    // var url = `https://api.aipro.ro:3001/cui?cui=${cuiValue}`
+    var url = `https://api.aipro.ro/get?cui=${cuiValue}`
     // (B) FETCH WITH HTTP AUTH
 
     // // TEMP we use a local file for fetch
-    var url = `https://aipro.ro/assets/js/tempCUI9.json`
+    // var url = `https://aipro.ro/assets/js/tempCUI9.json`
     // localStorage.removeItem("cui");
 
     fetch(url)
