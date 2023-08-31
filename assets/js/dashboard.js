@@ -449,26 +449,26 @@ function populatePage(termeneData) {
         //     })(jQuery);
         // }
 
-        // // BLOCKS HEIGHT IN DASHBOARD
-        // // carduri 4 prima linie
-        // const ids0 = ["card1", "card2", "card3", "card4"];
-        // // blocurile de exemplu date generale
-        // const ids1 = ["cardExemplu", "cardDateGenerale"];
-        // // harta si asociatii
-        // const ids2 = ["cardAF", "cardAsoc"];
-        // // rentabilitatea si situatia fnanciara
-        // const ids3 = ["cardRA", "cardSF"];
-        // // carduri cu banci si prognoza meteo
-        // const ids4 = ['card-1', 'card-2', 'card-3'];
-        // // carduri active, stocuri, banci si capital total
-        // const ids5 = ['card5', 'card6', 'card7', 'card8',]
+        // BLOCKS HEIGHT IN DASHBOARD
+        // carduri 4 prima linie
+        const ids0 = ["card1", "card2", "card3", "card4"];
+        // blocurile de exemplu date generale
+        const ids1 = ["cardExemplu", "cardDateGenerale"];
+        // harta si asociatii
+        const ids2 = ["cardAF", "cardAsoc"];
+        // rentabilitatea si situatia fnanciara
+        const ids3 = ["cardRA", "cardSF"];
+        // carduri cu banci si prognoza meteo
+        const ids4 = ['card-1', 'card-2', 'card-3'];
+        // carduri active, stocuri, banci si capital total
+        const ids5 = ['card5', 'card6', 'card7', 'card8',]
 
-        // setMaxHeight(ids0);
-        // setMaxHeight(ids1);
-        // setMaxHeight(ids2);
-        // setMaxHeight(ids3);
-        // setMaxHeight(ids4);
-        // setMaxHeight(ids5);
+        setMaxHeight(ids0);
+        setMaxHeight(ids1);
+        setMaxHeight(ids2);
+        setMaxHeight(ids3);
+        setMaxHeight(ids4);
+        setMaxHeight(ids5);
 
 
 
