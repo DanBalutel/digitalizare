@@ -24,7 +24,12 @@ function renderAnswer2(question) {
         body: JSON.stringify({
             'question': question
         }),
-        mode: 'no-cors'
+        cors: {
+            origin: ['https://aipro.ro', 'http://penguin.linux.test'],
+            methods: 'GET, HEAD, PUT, PATCH, DELETE',
+        }
+
+
     })
         // SERVER RESPONSE
         .then((result) => {
