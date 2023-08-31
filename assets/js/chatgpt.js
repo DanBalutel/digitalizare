@@ -1,5 +1,5 @@
 // elements
-const askGpt = document.getElementById('askGPT');
+// const askGpt = document.getElementById('askGPT');
 const chatBox = document.getElementById('chatBox');
 
 
