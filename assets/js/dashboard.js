@@ -614,9 +614,9 @@ function populatePage(termeneData) {
 
 
 
-    } catch (error) {
-        console.log(error);
-    }
+    // } catch (error) {
+    //     console.log(error);
+    // }
 
 
 
@@ -666,6 +666,3 @@ function showVideoMonica(displayedModal1) {
 
     }
 }
-
-
-
