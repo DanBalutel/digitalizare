@@ -169,7 +169,7 @@ function getTermeneData(cuiValue) {
             console.log(`eroare CUI: ${error}`);
             // localStorage.removeItem('newDataObj');
             // alert('CUI gresit')
-            window.location.href = window.location.href;
+            //window.location.href = window.location.href;
         });
 
 }
