@@ -228,7 +228,7 @@ function populatePage(termeneData) {
 
         // temp we render here all DOOM elements
         const name = document.getElementById('name');
-        d.element('dash').innerHTML = newdataObj.firma.nume_mfinante;  //DONE
+        d.element('dash').innerHTML = newdataObj.date_generale.denumire;  //DONE
         // d.element('nameAdmin').innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
         if (name) {
             name.innerHTML = `${newdataObj.date_generale.denumire}`;  //DONE
