@@ -37,6 +37,7 @@ function renderAnswer2(question) {
         .then((response) => {
             // ansText = JSON.parse(response);
             ansText = response;
+console.log(response);
 
             // all html rendering goes here
             removeLoading();
