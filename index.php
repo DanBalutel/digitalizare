@@ -246,7 +246,20 @@
             </div>
           </div>
 
-<!-- 
+
+
+          <!-- MAP -->
+          <div class="col-md-12 col-xs-12">
+            <div id="cardAF" class="card small-widget mb-sm-0">
+              <div class="card-header">
+                <h5>Adresa fiscala</h5>
+              </div>
+              <div id="mapAnaf"></div>
+            </div>
+          </div>
+
+
+          <!-- 
           <div class="col-sm-12">
             <div class="card">
               <div class="card-header">
@@ -456,15 +469,7 @@
 
 
 
-          <!-- MAP -->
-          <div class="col-md-6 col-xs-12">
-            <div id="cardAF" class="card small-widget mb-sm-0">
-              <div class="card-header">
-                <h5>Adresa fiscala</h5>
-              </div>
-              <div id="mapAnaf"></div>
-            </div>
-          </div>
+
 
 
           <!-- <div class="col-sm-12 col-xl-6 box-col-6">
