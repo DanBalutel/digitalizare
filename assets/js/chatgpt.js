@@ -47,7 +47,7 @@ console.log(response);
             // } else {
             //     localStorage.setItem("messageId", ansText.messageId);
             // }
-            addMessage('left', ansText.response.replace(/(\r\n|\n|\r)/gm,'<br>'))
+            addMessage('left', ansText)
             chatBox.scrollTop = chatBox.scrollHeight;
 
 
