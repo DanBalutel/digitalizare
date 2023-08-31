@@ -22,7 +22,7 @@ function renderAnswer2(question) {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "question": "cine a fost stefan?"
+            "question": question
           }),
         cors: 'no-cors'
 
