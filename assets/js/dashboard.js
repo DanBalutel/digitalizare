@@ -232,8 +232,8 @@ function populatePage(termeneData) {
         // d.element('nameAdmin').innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
         if (name) {
             //name.innerHTML = `${newdataObj.date_generale.denumire}`;  //DONE
-            const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
-            chartSituatieFianciara.innerHTML = `Situatie finaciara ${newdataObj.date_generale.denumire}`;  //DONE
+            // const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
+            // chartSituatieFianciara.innerHTML = `Situatie finaciara ${newdataObj.date_generale.denumire}`;  //DONE
 
             const blockCA = document.getElementById('cifra-de-afaceri');
             blockCA.innerHTML = parseFloat(newdataObj.an2022.i[7].val_indicator).toLocaleString('en-US');
