@@ -167,6 +167,8 @@ function getTermeneData(cuiValue) {
         // (D) HANDLE ERRORS (OPTIONAL)
         .catch((error) => {
             console.log(`eroare CUI: ${error}`);
+
+            // TODO aret pentru cui gresit
             // localStorage.removeItem('newDataObj');
             // alert('CUI gresit')
             //window.location.href = window.location.href;
@@ -193,32 +195,35 @@ function populatePage(termeneData) {
         console.log(e);
     }
 
+
+    // from now we are deleting all data from termene
+
     // using new dataObj !!!!!!!!!!!!!!!
-    const administratorId = findAdministratorId(0, newdataObj);
+    // const administratorId = findAdministratorId(0, newdataObj);
 
     try {
 
-        const loggedName = document.getElementById('loggedName');
-        loggedName.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;  //DONE
-        const loggedPosition = document.getElementById('loggedPosition');
-        loggedPosition.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].functie;  //DONE
+        // const loggedName = document.getElementById('loggedName');
+        // loggedName.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;  //DONE
+        // const loggedPosition = document.getElementById('loggedPosition');
+        // loggedPosition.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].functie;  //DONE
 
-        const loggedNameProfile = document.getElementById('loggedNameProfile');
-        if (loggedNameProfile) {
+        // const loggedNameProfile = document.getElementById('loggedNameProfile');
+        // if (loggedNameProfile) {
 
-            loggedNameProfile.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;  //DONE
-            const loggedPositionProfile = document.getElementById('loggedPositionProfile');
-            loggedPositionProfile.innerHTML = 'Administrator';
+        //     loggedNameProfile.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;  //DONE
+        //     const loggedPositionProfile = document.getElementById('loggedPositionProfile');
+        //     loggedPositionProfile.innerHTML = 'Administrator';
 
-            const adresa = document.getElementById('adresa');
-            adresa.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].adresa;  //DONE
-            document.getElementById('numeBuletin').value = newdataObj.administratori.persoane_fizice[administratorId].nume;  //DONE
+        //     const adresa = document.getElementById('adresa');
+        //     adresa.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].adresa;  //DONE
+        //     document.getElementById('numeBuletin').value = newdataObj.administratori.persoane_fizice[administratorId].nume;  //DONE
 
-            const dataNastere = document.getElementById('dataNastere');
-            dataNastere.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].data_nastere;  //DONE
-        }
+        //     const dataNastere = document.getElementById('dataNastere');
+        //     dataNastere.innerHTML = newdataObj.administratori.persoane_fizice[administratorId].data_nastere;  //DONE
+        // }
         if (document.getElementById('cui_file')) {
-            document.getElementById('cui_file').value = newdataObj.firma.cui;  //DONE
+            document.getElementById('cui_file').value = newdataObj.CUI;  //DONE
         }
 
         // temp we render here all DOOM elements
@@ -226,55 +231,55 @@ function populatePage(termeneData) {
         d.element('dash').innerHTML = newdataObj.firma.nume_mfinante;  //DONE
         // d.element('nameAdmin').innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
         if (name) {
-            name.innerHTML = `${newdataObj.firma.nume_mfinante} - Administrator: <br><span style="color: #00CCFF">${newdataObj.administratori.persoane_fizice[administratorId].nume}</span>`;  //DONE
+            name.innerHTML = `${newdataObj.date_generale.denumire}`;  //DONE
             const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
-            chartSituatieFianciara.innerHTML = `Situatie finaciara ${newdataObj.firma.nume_mfinante}`;  //DONE
+            chartSituatieFianciara.innerHTML = `Situatie finaciara ${newdataObj.date_generale.denumire}`;  //DONE
 
             const blockCA = document.getElementById('cifra-de-afaceri');
-            blockCA.innerHTML = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.cifra_de_afaceri_neta.valoare).toLocaleString('en-US');
+            blockCA.innerHTML = parseFloat(newdataObj.an2022.i[7].val_indicator).toLocaleString('en-US');
 
             const blockProfit = document.getElementById('profit-actual');
-            blockProfit.innerHTML = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.profit_net.valoare).toLocaleString('en-US');
+            blockProfit.innerHTML = parseFloat(newdataObj.an2022.i[2].val_indicator).toLocaleString('en-US');
 
             const mapAnaf = document.getElementById('mapAnaf');
-            const addresAnaf = encodeURIComponent(`${newdataObj.adresa.anaf.tara} judet: ${newdataObj.adresa.anaf.judet} ${newdataObj.adresa.anaf.formatat}`);
+            // const addresAnaf = encodeURIComponent(`${newdataObj.adresa.anaf.tara} judet: ${newdataObj.adresa.anaf.judet} ${newdataObj.adresa.anaf.formatat}`);
+            const addresAnaf = encodeURIComponent(`${newdataObj.date_generale.adresa}`);
             mapAnaf.innerHTML = '<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=' + addresAnaf + '&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>';
 
             const locuriMunca = document.getElementById('locuri-munca');
-            locuriMunca.innerHTML = newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.numar_mediu_angajati.valoare;
+            locuriMunca.innerHTML = newdataObj.an2022.i[0].val_indicator;
 
             const codCAEN = document.getElementById('cod-caen');
-            codCAEN.innerHTML = newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.cod_caen;
+            codCAEN.innerHTML = newdataObj.an2022.caen;
             const numeCAEN = document.getElementById('nume-caen');
-            numeCAEN.innerHTML = listCaen[codCAEN.innerHTML];
+            numeCAEN.innerHTML = newdataObj.an2022.den_caen;
 
             const activeTotale = document.getElementById('active-totale');
-            const activeTotaleData = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.active_circulante.valoare) + parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.active_imobilizate.valoare);
+            const activeTotaleData = parseFloat(newdataObj.an2022.i[18].val_indicator) + parseFloat(newdataObj.an2022.i[19].val_indicator);
             activeTotale.innerHTML = activeTotaleData.toLocaleString('en-US')
 
 
             const nrStocuri = document.getElementById('nr-stocuri');
-            nrStocuri.innerHTML = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.stocuri.valoare).toLocaleString('en-US');
+            nrStocuri.innerHTML = parseFloat(newdataObj.an2022.i[17].val_indicator).toLocaleString('en-US');
 
             const casaConturi = document.getElementById('casa-conturi');
-            casaConturi.innerHTML = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.casa_si_conturi_la_banci.valoare).toLocaleString('en-US');
+            casaConturi.innerHTML = parseFloat(newdataObj.an2022.i[15].val_indicator).toLocaleString('en-US');
 
             const capitalTotal = document.getElementById('capital-total');
-            capitalTotal.innerHTML = parseFloat(newdataObj.bilanturi_mfinante_scurte.ultimul_raportat.capital_total.valoare).toLocaleString('en-US');
+            capitalTotal.innerHTML = parseFloat(newdataObj.an2022.i[10].val_indicator).toLocaleString('en-US');
 
             const dateGenerale = document.getElementById('dateGenerale');
             dateGenerale.innerHTML = `
                                         <span>
                                         <h4 style="color: #00CCFF">Detalii generale</h4><br>
-                                        CUI: <span>${newdataObj.firma.cui}</span><br>
-                                        Nr. de înmatriculare: <span>${newdataObj.firma.j}</span><br>
-                                        Obiect activitate MFINANȚE: <span>${newdataObj.cod_caen.principal_mfinante.cod} - ${newdataObj.cod_caen.principal_mfinante.label}</span> <br><br>
+                                        CUI: <span>${newdataObj.CUI}</span><br>
+                                        Nr. de înmatriculare: <span>${newdataObj.date_generale.nrRegCom}</span><br>
+                                        Obiect activitate MFINANȚE: <span>${newdataObj.date_generale.cad_CAEN}</span> <br><br>
 
                                         <h4>Adresă</h4>
-                                        Localitate: <span>${newdataObj.adresa.anaf.localitate}</span>
-                                        Județ: <span>${newdataObj.adresa.anaf.judet}</span>
-                                        Sediu social (RECOM/MFINANȚE): <span>${newdataObj.adresa.sediu_social.formatat}</span>
-                                        Domiciliu fiscal (ANAF): <span>${newdataObj.adresa.anaf.formatat}</span>
+                                        Localitate: <span>${newdataObj.adresa_domiciliu_fiscal.ddenumire_Localitate}</span>
+                                        Județ: <span>${newdataObj.adresa_domiciliu_fiscal.ddenumire_Judet}</span>
+                                        Domiciliu fiscal (ANAF): <span>${newdataObj.date_generale.adresa}</span>
 
                                         </span>
                                         `;
@@ -286,324 +291,324 @@ function populatePage(termeneData) {
             const year = today.getFullYear().toString();
             dateNow.innerHTML = `Log in ${day}/${month}/${year}`;
 
-            const chartAsociati = newdataObj.asociati.persoane_fizice;
-            const listNameAsociati = [];
-            const listCotaAsociati = [];
-            let listAsocMobile = '';
+            // const chartAsociati = newdataObj.asociati.persoane_fizice;
+            // const listNameAsociati = [];
+            // const listCotaAsociati = [];
+            // let listAsocMobile = '';
 
-            for (const asoc in chartAsociati) {
-                listNameAsociati.push(chartAsociati[asoc].nume);
-                listCotaAsociati.push(parseFloat(chartAsociati[asoc].procentaj));
-                listAsocMobile = listAsocMobile + `<li>${chartAsociati[asoc].nume} - ${chartAsociati[asoc].procentaj}</li>`;
-            };
+            // for (const asoc in chartAsociati) {
+            //     listNameAsociati.push(chartAsociati[asoc].nume);
+            //     listCotaAsociati.push(parseFloat(chartAsociati[asoc].procentaj));
+            //     listAsocMobile = listAsocMobile + `<li>${chartAsociati[asoc].nume} - ${chartAsociati[asoc].procentaj}</li>`;
+            // };
 
-            // pie chart, asociati
-            var options8 = {
-                chart: {
-                    width: 450,
-                    type: 'pie',
-                },
-                series: listCotaAsociati,
-                labels: listNameAsociati,
-                responsive: [{
-                    breakpoint: 480,
-                    options: {
-                        chart: {
-                            width: 400
-                        },
-                        legend: {
-                            show: false
-                        }
-                    }
-                }],
-                colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, '#51bb25', '#a927f9', '#f8d62b']
-            }
+            // // pie chart, asociati
+            // var options8 = {
+            //     chart: {
+            //         width: 450,
+            //         type: 'pie',
+            //     },
+            //     series: listCotaAsociati,
+            //     labels: listNameAsociati,
+            //     responsive: [{
+            //         breakpoint: 480,
+            //         options: {
+            //             chart: {
+            //                 width: 400
+            //             },
+            //             legend: {
+            //                 show: false
+            //             }
+            //         }
+            //     }],
+            //     colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, '#51bb25', '#a927f9', '#f8d62b']
+            // }
 
-            var chart8 = new ApexCharts(
-                document.querySelector("#piechart"),
-                options8
-            );
+            // var chart8 = new ApexCharts(
+            //     document.querySelector("#piechart"),
+            //     options8
+            // );
 
-            chart8.render();
-            d.element('listAsoc').innerHTML = listAsocMobile;
+            // chart8.render();
+            // d.element('listAsoc').innerHTML = listAsocMobile;
 
-            // basic area chart
-            const chartProdMunc = newdataObj.bilanturi_mfinante_scurte;
-            const listNrAngaj = [];
-            const listAni = [];
+            // // basic area chart
+            // const chartProdMunc = newdataObj.bilanturi_mfinante_scurte;
+            // const listNrAngaj = [];
+            // const listAni = [];
 
-            function roundOf(n, p) {
-                const n1 = n * Math.pow(10, p + 1);
-                const n2 = Math.floor(n1 / 10);
-                if (n1 >= (n2 * 10 + 5)) {
-                    return (n2 + 1) / Math.pow(10, p);
-                }
-                return n2 / Math.pow(10, p);
-            }
+        //     function roundOf(n, p) {
+        //         const n1 = n * Math.pow(10, p + 1);
+        //         const n2 = Math.floor(n1 / 10);
+        //         if (n1 >= (n2 * 10 + 5)) {
+        //             return (n2 + 1) / Math.pow(10, p);
+        //         }
+        //         return n2 / Math.pow(10, p);
+        //     }
 
-            for (const prod in chartProdMunc) {
+        //     for (const prod in chartProdMunc) {
 
-                if (chartProdMunc[prod] != null && chartProdMunc[prod].cifra_de_afaceri_neta.valoare != null && chartProdMunc[prod].numar_mediu_angajati.valoare != null) {
+        //         if (chartProdMunc[prod] != null && chartProdMunc[prod].cifra_de_afaceri_neta.valoare != null && chartProdMunc[prod].numar_mediu_angajati.valoare != null) {
 
-                    let nrAngaj = parseInt(chartProdMunc[prod].numar_mediu_angajati.valoare);
-                    if (nrAngaj == 0) {
-                        nrAngaj = 1;
-                    }
+        //             let nrAngaj = parseInt(chartProdMunc[prod].numar_mediu_angajati.valoare);
+        //             if (nrAngaj == 0) {
+        //                 nrAngaj = 1;
+        //             }
 
-                    roundOf(listNrAngaj.push(parseInt(chartProdMunc[prod].cifra_de_afaceri_neta.valoare) / nrAngaj)).toFixed(2);
-                    roundOf(listAni.push(chartProdMunc[prod].an)).toFixed(2);
-                }
+        //             roundOf(listNrAngaj.push(parseInt(chartProdMunc[prod].cifra_de_afaceri_neta.valoare) / nrAngaj)).toFixed(2);
+        //             roundOf(listAni.push(chartProdMunc[prod].an)).toFixed(2);
+        //         }
 
-            };
+        //     };
 
-            var options = {
-                chart: {
-                    height: 350,
-                    type: 'area',
-                    zoom: {
-                        enabled: true
-                    },
-                    toolbar: {
-                        show: true
-                    }
-                },
-                responsive: [{
-                    breakpoint: 480,
-                    options: {
-                        chart: {
-                            width: 350
-                        },
-                        legend: {
-                            show: true
-                        }
-                    }
-                }],
-                dataLabels: {
-                    enabled: false
-                },
-                stroke: {
-                    curve: 'straight'
-                },
-                series: [{
-                    name: "Rentabilitatea",
-                    data: listNrAngaj
-                }],
-                labels: listAni,
-                xaxis: {
-                    type: 'yeartime',
-                },
-                yaxis: {
-                    opposite: true
-                },
-                legend: {
-                    horizontalAlign: 'left'
-                },
-                colors: [CubaAdminConfig.primary]
+        //     var options = {
+        //         chart: {
+        //             height: 350,
+        //             type: 'area',
+        //             zoom: {
+        //                 enabled: true
+        //             },
+        //             toolbar: {
+        //                 show: true
+        //             }
+        //         },
+        //         responsive: [{
+        //             breakpoint: 480,
+        //             options: {
+        //                 chart: {
+        //                     width: 350
+        //                 },
+        //                 legend: {
+        //                     show: true
+        //                 }
+        //             }
+        //         }],
+        //         dataLabels: {
+        //             enabled: false
+        //         },
+        //         stroke: {
+        //             curve: 'straight'
+        //         },
+        //         series: [{
+        //             name: "Rentabilitatea",
+        //             data: listNrAngaj
+        //         }],
+        //         labels: listAni,
+        //         xaxis: {
+        //             type: 'yeartime',
+        //         },
+        //         yaxis: {
+        //             opposite: true
+        //         },
+        //         legend: {
+        //             horizontalAlign: 'left'
+        //         },
+        //         colors: [CubaAdminConfig.primary]
 
-            }
+        //     }
 
-            var chart = new ApexCharts(
-                document.querySelector("#basic-apex"),
-                options
-            );
+        //     var chart = new ApexCharts(
+        //         document.querySelector("#basic-apex"),
+        //         options
+        //     );
 
-            chart.render();
-
-
-            // situatiile financiare
-            constSitFin = [];
-
-            for (const prod in chartProdMunc) {
-                if (chartProdMunc[prod] != null && chartProdMunc[prod].cifra_de_afaceri_neta.valoare != null && chartProdMunc[prod].profit_pierdere_neta.valoare != null && chartProdMunc[prod].datorii.valoare != null) {
-                    const temp = {
-                        x: `${chartProdMunc[prod].an}`,
-                        y: parseInt(chartProdMunc[prod].cifra_de_afaceri_neta.valoare),
-                        z: parseInt(chartProdMunc[prod].profit_pierdere_neta.valoare),
-                        a: parseInt(chartProdMunc[prod].datorii.valoare)
-                    };
-                    constSitFin.push(temp);
-                }
-            };
+        //     chart.render();
 
 
-            var morris_chart = {
-                init: function () {
-                    Morris.Bar({
-                        element: "morris-simple-bar-chart",
-                        data: constSitFin,
-                        xkey: "x",
-                        ykeys: ["y", "z", "a"],
-                        barColors: [CubaAdminConfig.primary, "#51bb25", CubaAdminConfig.secondary],
-                        labels: ["Cifra de afaceri", "Profit", "Datorii"]
-                    })
-                }
-            };
-            (function ($) {
+        //     // situatiile financiare
+        //     constSitFin = [];
 
-                morris_chart.init()
-            })(jQuery);
-        }
-
-        // BLOCKS HEIGHT IN DASHBOARD
-        // carduri 4 prima linie
-        const ids0 = ["card1", "card2", "card3", "card4"];
-        // blocurile de exemplu date generale
-        const ids1 = ["cardExemplu", "cardDateGenerale"];
-        // harta si asociatii
-        const ids2 = ["cardAF", "cardAsoc"];
-        // rentabilitatea si situatia fnanciara
-        const ids3 = ["cardRA", "cardSF"];
-        // carduri cu banci si prognoza meteo
-        const ids4 = ['card-1', 'card-2', 'card-3'];
-        // carduri active, stocuri, banci si capital total
-        const ids5 = ['card5', 'card6', 'card7', 'card8',]
-
-        setMaxHeight(ids0);
-        setMaxHeight(ids1);
-        setMaxHeight(ids2);
-        setMaxHeight(ids3);
-        setMaxHeight(ids4);
-        setMaxHeight(ids5);
+        //     for (const prod in chartProdMunc) {
+        //         if (chartProdMunc[prod] != null && chartProdMunc[prod].cifra_de_afaceri_neta.valoare != null && chartProdMunc[prod].profit_pierdere_neta.valoare != null && chartProdMunc[prod].datorii.valoare != null) {
+        //             const temp = {
+        //                 x: `${chartProdMunc[prod].an}`,
+        //                 y: parseInt(chartProdMunc[prod].cifra_de_afaceri_neta.valoare),
+        //                 z: parseInt(chartProdMunc[prod].profit_pierdere_neta.valoare),
+        //                 a: parseInt(chartProdMunc[prod].datorii.valoare)
+        //             };
+        //             constSitFin.push(temp);
+        //         }
+        //     };
 
 
+        //     var morris_chart = {
+        //         init: function () {
+        //             Morris.Bar({
+        //                 element: "morris-simple-bar-chart",
+        //                 data: constSitFin,
+        //                 xkey: "x",
+        //                 ykeys: ["y", "z", "a"],
+        //                 barColors: [CubaAdminConfig.primary, "#51bb25", CubaAdminConfig.secondary],
+        //                 labels: ["Cifra de afaceri", "Profit", "Datorii"]
+        //             })
+        //         }
+        //     };
+        //     (function ($) {
 
-        // using newTermene from now
+        //         morris_chart.init()
+        //     })(jQuery);
+        // }
 
-        d.element('asociatiConexiuni');
-        function addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate) {
+        // // BLOCKS HEIGHT IN DASHBOARD
+        // // carduri 4 prima linie
+        // const ids0 = ["card1", "card2", "card3", "card4"];
+        // // blocurile de exemplu date generale
+        // const ids1 = ["cardExemplu", "cardDateGenerale"];
+        // // harta si asociatii
+        // const ids2 = ["cardAF", "cardAsoc"];
+        // // rentabilitatea si situatia fnanciara
+        // const ids3 = ["cardRA", "cardSF"];
+        // // carduri cu banci si prognoza meteo
+        // const ids4 = ['card-1', 'card-2', 'card-3'];
+        // // carduri active, stocuri, banci si capital total
+        // const ids5 = ['card5', 'card6', 'card7', 'card8',]
 
-            let int = parseInt(i);
-            // all schema of table line
-            const jsonData = {
-                "tag": "tr",
-                "children": [
-                    {
-                        "tag": "td",
-                        "innerHTML": `${++int}`,
-                        "attrs": {
-                            "scope": "row"
-                        }
-                    },
-                    {
-                        "tag": "td",
-                        "innerHTML": `${nume}`
-                    },
-                    {
-                        "tag": "td",
-                        "class": "columnCustomFlex",
-                        "innerHTML": `${functie}`
-                    },
-                    {
-                        "tag": "td",
-                        "class": "columnCustomFlex",
-                        "innerHTML": `${procentaj}`
-                    },
-                    {
-                        "tag": "td",
-                        "class": "columnCustomFlex",
-                        "innerHTML": `${firma}`
-                    },
-                    {
-                        "tag": "td",
-                        "class": "columnCustomFlex",
-                        "innerHTML": `${judet}`
-                    },
-                    {
-                        "tag": "td",
-                        "class": "columnCustomFlex",
-                        "innerHTML": `${localitate}`
-                    }
-                ]
-            }
-
-            // end of JSON
-            d.createElement(jsonData, d.e.asociatiConexiuni);
-        }
-
-        // randuri tabel asociati conexiuni
-        for (let i in newdataObj.conexiuni_asociati) {  //DONE
-            const nume = newdataObj.conexiuni_asociati[i].nume;  //DONE
-            let functie = '';
-            let procentaj = '';
-            let firma = '';
-            let judet = '';
-            let localitate = '';
-
-            for (let j in newdataObj.conexiuni_asociati[i].legaturi) {  //DONE
-                functie += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].functie + '</span><br>';  //DONE
-                procentaj += '<span style="color: #2F2F3B; border: none;background-color: #57e546;" class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '</span><br>';  //DONE
-                firma += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].firma + '</span><br>';  //DONE
-                judet += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].judet + '</span><br>';  //DONE
-                localitate += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '</span><br>';  //DONE
-
-            }
-
-            addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate)
-        }
+        // setMaxHeight(ids0);
+        // setMaxHeight(ids1);
+        // setMaxHeight(ids2);
+        // setMaxHeight(ids3);
+        // setMaxHeight(ids4);
+        // setMaxHeight(ids5);
 
 
 
-        d.element('dosareFirma');
-        function addDosare(i, numar, instanta, data, parti, materie, obiect, stadiu) {
+        // // using newTermene from now
 
-            let int = parseInt(i);
-            // all schema of table line
-            const jsonData = {
-                "tag": "tr",
-                "children": [
-                    {
-                        "tag": "td",
-                        "innerHTML": `${++int}`,
-                        "attrs": {
-                            "scope": "row"
-                        }
-                    },
-                    {
-                        "tag": "td",
-                        "innerHTML": `${numar}<br>${instanta}`
-                    },
-                    {
-                        "tag": "td",
-                        "class": "columnCustomFlex",
-                        "innerHTML": `${data}`
-                    },
-                    {
-                        "tag": "td",
-                        "class": "columnCustomFlex",
-                        "innerHTML": `${materie}`
-                    },
-                    {
-                        "tag": "td",
-                        "class": "columnCustomFlex",
-                        "innerHTML": `${obiect}<br>${stadiu}`
-                    }
-                ]
-            }
+        // d.element('asociatiConexiuni');
+        // function addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate) {
 
-            // end of JSON
-            d.createElement(jsonData, d.e.dosareFirma);
-        }
+        //     let int = parseInt(i);
+        //     // all schema of table line
+        //     const jsonData = {
+        //         "tag": "tr",
+        //         "children": [
+        //             {
+        //                 "tag": "td",
+        //                 "innerHTML": `${++int}`,
+        //                 "attrs": {
+        //                     "scope": "row"
+        //                 }
+        //             },
+        //             {
+        //                 "tag": "td",
+        //                 "innerHTML": `${nume}`
+        //             },
+        //             {
+        //                 "tag": "td",
+        //                 "class": "columnCustomFlex",
+        //                 "innerHTML": `${functie}`
+        //             },
+        //             {
+        //                 "tag": "td",
+        //                 "class": "columnCustomFlex",
+        //                 "innerHTML": `${procentaj}`
+        //             },
+        //             {
+        //                 "tag": "td",
+        //                 "class": "columnCustomFlex",
+        //                 "innerHTML": `${firma}`
+        //             },
+        //             {
+        //                 "tag": "td",
+        //                 "class": "columnCustomFlex",
+        //                 "innerHTML": `${judet}`
+        //             },
+        //             {
+        //                 "tag": "td",
+        //                 "class": "columnCustomFlex",
+        //                 "innerHTML": `${localitate}`
+        //             }
+        //         ]
+        //     }
 
-        const dosare = newdataObj.dosare.rezultate;  //DONE
+        //     // end of JSON
+        //     d.createElement(jsonData, d.e.asociatiConexiuni);
+        // }
 
-        // randuri tabel asociati conexiuni
-        for (let i in dosare) {
+        // // randuri tabel asociati conexiuni
+        // for (let i in newdataObj.conexiuni_asociati) {  //DONE
+        //     const nume = newdataObj.conexiuni_asociati[i].nume;  //DONE
+        //     let functie = '';
+        //     let procentaj = '';
+        //     let firma = '';
+        //     let judet = '';
+        //     let localitate = '';
 
-            dataDosar = new Date(dosare[i].data_dosar);
-            let numar = `Nr.: ${dosare[i].nr_dosar}`;
-            let instanta = `<span class="cardWithGrayBorder f-s-15">${dosare[i].nume_instanta}</span>`;
-            let data = `<span class="cardWithGrayBorder f-s-15">${dataDosar.getUTCDate()}/${dataDosar.getUTCMonth() + 1}/${dataDosar.getUTCFullYear()}</span>`;
-            let parti = '';
-            let materie = dosare[i].materie_juridica;
-            let obiect = dosare[i].obiect;
-            let stadiu = `<span class="cardWithGrayBorder f-s-15">Stadiu: ${dosare[i].stadiu_procesual}</span>`;
+        //     for (let j in newdataObj.conexiuni_asociati[i].legaturi) {  //DONE
+        //         functie += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].functie + '</span><br>';  //DONE
+        //         procentaj += '<span style="color: #2F2F3B; border: none;background-color: #57e546;" class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].procentaj + '</span><br>';  //DONE
+        //         firma += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].firma + '</span><br>';  //DONE
+        //         judet += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].judet + '</span><br>';  //DONE
+        //         localitate += '<span class="cardWithGrayBorder f-s-15">' + newdataObj.conexiuni_asociati[i].legaturi[j].localitate + '</span><br>';  //DONE
 
-            for (let j in dosare[i].rezultate) {
-                parti += `${dosare[i].rezultate[j].denumire}<br>${dosare[i].rezultate[j].calitate}<br><br>`
-            }
+        //     }
 
-            addDosare(i, numar, instanta, data, parti, materie, obiect, stadiu)
-        }
+        //     addAsocConexLine(i, nume, functie, procentaj, firma, judet, localitate)
+        // }
+
+
+
+        // d.element('dosareFirma');
+        // function addDosare(i, numar, instanta, data, parti, materie, obiect, stadiu) {
+
+        //     let int = parseInt(i);
+        //     // all schema of table line
+        //     const jsonData = {
+        //         "tag": "tr",
+        //         "children": [
+        //             {
+        //                 "tag": "td",
+        //                 "innerHTML": `${++int}`,
+        //                 "attrs": {
+        //                     "scope": "row"
+        //                 }
+        //             },
+        //             {
+        //                 "tag": "td",
+        //                 "innerHTML": `${numar}<br>${instanta}`
+        //             },
+        //             {
+        //                 "tag": "td",
+        //                 "class": "columnCustomFlex",
+        //                 "innerHTML": `${data}`
+        //             },
+        //             {
+        //                 "tag": "td",
+        //                 "class": "columnCustomFlex",
+        //                 "innerHTML": `${materie}`
+        //             },
+        //             {
+        //                 "tag": "td",
+        //                 "class": "columnCustomFlex",
+        //                 "innerHTML": `${obiect}<br>${stadiu}`
+        //             }
+        //         ]
+        //     }
+
+        //     // end of JSON
+        //     d.createElement(jsonData, d.e.dosareFirma);
+        // }
+
+        // const dosare = newdataObj.dosare.rezultate;  //DONE
+
+        // // randuri tabel asociati conexiuni
+        // for (let i in dosare) {
+
+        //     dataDosar = new Date(dosare[i].data_dosar);
+        //     let numar = `Nr.: ${dosare[i].nr_dosar}`;
+        //     let instanta = `<span class="cardWithGrayBorder f-s-15">${dosare[i].nume_instanta}</span>`;
+        //     let data = `<span class="cardWithGrayBorder f-s-15">${dataDosar.getUTCDate()}/${dataDosar.getUTCMonth() + 1}/${dataDosar.getUTCFullYear()}</span>`;
+        //     let parti = '';
+        //     let materie = dosare[i].materie_juridica;
+        //     let obiect = dosare[i].obiect;
+        //     let stadiu = `<span class="cardWithGrayBorder f-s-15">Stadiu: ${dosare[i].stadiu_procesual}</span>`;
+
+        //     for (let j in dosare[i].rezultate) {
+        //         parti += `${dosare[i].rezultate[j].denumire}<br>${dosare[i].rezultate[j].calitate}<br><br>`
+        //     }
+
+        //     addDosare(i, numar, instanta, data, parti, materie, obiect, stadiu)
+        // }
 
 
 
