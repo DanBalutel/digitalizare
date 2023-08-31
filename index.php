@@ -246,7 +246,7 @@
             </div>
           </div>
 
-
+<!-- 
           <div class="col-sm-12">
             <div class="card">
               <div class="card-header">
@@ -280,11 +280,11 @@
 
 
             </div>
-          </div>
+          </div> -->
 
 
 
-          <div class="col-sm-12">
+          <!-- <div class="col-sm-12">
             <div class="card">
               <div class="card-header">
                 <h2 style="color:#00CCFF">Dosare in instanta</h2>
@@ -315,7 +315,7 @@
 
             </div>
           </div>
-
+ -->
 
 
 
@@ -467,7 +467,7 @@
           </div>
 
 
-          <div class="col-sm-12 col-xl-6 box-col-6">
+          <!-- <div class="col-sm-12 col-xl-6 box-col-6">
             <div id="cardAsoc" class="card min-h-30">
               <div class="card-header">
                 <h5>Asociatii</h5>
@@ -503,7 +503,7 @@
               </div>
             </div>
           </div>
-
+ -->
 
 
 
