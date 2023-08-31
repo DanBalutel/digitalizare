@@ -1,3 +1,6 @@
+<?php
+header("Access-Control-Allow-Origin: *");
+?>
 <?php include('partial/header.php') ?>
 <script src="assets/js/chatgpt.js" defer></script>
 <?php include('partial/loader.php') ?>

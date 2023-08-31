@@ -18,6 +18,9 @@ function renderAnswer2(question) {
 
     fetch('https://blackstar.biz:3001/gpt', {
         method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
         body: JSON.stringify({
             "question": "cine a fost stefan?"
           }
