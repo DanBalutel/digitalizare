@@ -231,7 +231,7 @@ function populatePage(termeneData) {
         // d.element('dash').innerHTML = newdataObj.date_generale.denumire;  //DONE
         // d.element('nameAdmin').innerHTML = newdataObj.administratori.persoane_fizice[administratorId].nume;
         if (name) {
-            //name.innerHTML = `${newdataObj.date_generale.denumire}`;  //DONE
+            name.innerHTML = `${newdataObj.date_generale.denumire}`;  //DONE
             // const chartSituatieFianciara = document.getElementById('grafic-situatie-financiara');
             // chartSituatieFianciara.innerHTML = `Situatie finaciara ${newdataObj.date_generale.denumire}`;  //DONE
 
@@ -457,20 +457,20 @@ function populatePage(termeneData) {
         const ids0 = ["card1", "card2", "card3", "card4"];
         // blocurile de exemplu date generale
         const ids1 = ["cardExemplu", "cardDateGenerale"];
-        // harta si asociatii
-        const ids2 = ["cardAF", "cardAsoc"];
-        // rentabilitatea si situatia fnanciara
-        const ids3 = ["cardRA", "cardSF"];
-        // carduri cu banci si prognoza meteo
-        const ids4 = ['card-1', 'card-2', 'card-3'];
+        // // harta si asociatii
+        // const ids2 = ["cardAF", "cardAsoc"];
+        // // rentabilitatea si situatia fnanciara
+        // const ids3 = ["cardRA", "cardSF"];
+        // // carduri cu banci si prognoza meteo
+        // const ids4 = ['card-1', 'card-2', 'card-3'];
         // carduri active, stocuri, banci si capital total
         const ids5 = ['card5', 'card6', 'card7', 'card8',]
 
         setMaxHeight(ids0);
         setMaxHeight(ids1);
-        setMaxHeight(ids2);
-        setMaxHeight(ids3);
-        setMaxHeight(ids4);
+        // setMaxHeight(ids2);
+        // setMaxHeight(ids3);
+        // setMaxHeight(ids4);
         setMaxHeight(ids5);
 
 
