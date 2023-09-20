@@ -16,16 +16,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 // Forward the request
 $ch = curl_init();
 
+// Get and format headers from the client
+$clientHeaders = getallheaders();
+$forwardHeaders = [];
+foreach ($clientHeaders as $name => $value) {
+    // Skip certain headers
+    if (!in_array($name, ['Host', 'Content-Length'])) {
+        $forwardHeaders[] = "$name: $value";
+    }
+}
+
 // Set up CURL options
 $options = array(
-    CURLOPT_URL => $targetUrl . $_GET['path'], // Assuming you'll send the path as a query param, e.g., ?path=jspdf/generate-pdf
+    CURLOPT_URL => $targetUrl . $_GET['path'], 
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_MAXREDIRS => 10,
     CURLOPT_TIMEOUT => 30,
     CURLOPT_CUSTOMREQUEST => $_SERVER['REQUEST_METHOD'],
     CURLOPT_POSTFIELDS => file_get_contents('php://input'),
-    CURLOPT_HTTPHEADER => getallheaders() // Forward the headers received
+    CURLOPT_HTTPHEADER => $forwardHeaders
 );
 
 curl_setopt_array($ch, $options);
@@ -44,4 +54,5 @@ if (curl_errno($ch)) {
 }
 
 curl_close($ch);
+
 ?>
