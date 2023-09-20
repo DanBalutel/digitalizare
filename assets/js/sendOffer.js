@@ -23,7 +23,7 @@ function sendTest() {
 
 
     function trimiteOferta(projectID, eNume, eCui, eEmail, eTelefon, eBuget, eLink, source) {
-        fetch('http://3.67.38.226:3000/email/sendMail', {
+        fetch('https://aipro.ro/proxy.php?path=email/sendMail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -73,7 +73,7 @@ function sendTest() {
     }
 
     function trimiteOfertaClient(eNume, eCui, eEmail, eTelefon, eBuget, eLink) {
-        fetch('http://3.67.38.226:3000/email/sendMail', {
+        fetch('https://aipro.ro/proxy.php?path=email/sendMail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -108,7 +108,7 @@ function sendTest() {
 
 
 
-    fetch('http://3.67.38.226:3000/jspdf/generate-pdf', {
+    fetch('https://aipro.ro/proxy.php?path=jspdf/generate-pdf', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
