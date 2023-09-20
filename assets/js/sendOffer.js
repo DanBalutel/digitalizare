@@ -30,7 +30,7 @@ function sendTest() {
             },
             body: JSON.stringify({
                 "projectID": projectID,
-                "email": eEmail,
+                "email": "dan@area4u.ro",
                 "subiect": `Oferta trimisa la: ${eEmail}`,
                 "continut": `
                 CUI: ${eCui}
@@ -84,12 +84,14 @@ function sendTest() {
                 "email": eEmail,
                 "subiect": `Oferta trimisa la: ${eEmail}`,
                 "continut": `
-                CUI: ${eCui}
-                Email: ${eEmail}
-                Telefon: ${eTelefon}
-                Nume Prenume: ${eNume}
-                Buget: ${eBuget}
-                `,
+                Bună ziua,
+
+                Vă mulțumim că ați arătat interes pentru serviciile noastre. Vă atașăm oferta de preț solicitată.
+            
+                Pentru orice întrebări sau clarificări, vă stăm la dispoziție.
+            
+                Cu stimă,
+                Echipa Area4U`,
                 "source": source,
                 "fileList": eLink
             })
