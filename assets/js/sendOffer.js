@@ -137,23 +137,18 @@ function sendTest() {
         .then((response) => {
             pdfLink = JSON.parse(response);
             console.log(pdfLink.link);
+            const attachments = [
+                {
+                    filename: 'oferta_aipro.pdf',
+                    path: pdfLink.link,
+                    contentType: 'application/pdf'
+                }
+            ];
 
             // trimite oferta Alex
-            trimiteOferta("AiPro.ro", oNume, oCui, oEmail, oTelefon, oBuget, `
-            [{
-                filename: 'oferta_aipro.pdf',
-                path: ${pdfLink.link},
-                contentType: 'application/pdf'
-            }]
-            `, 0);//projectID, eNume, eCui, eEmail, eTelefon, eBuget, eLink, source
+            trimiteOferta("AiPro.ro", oNume, oCui, oEmail, oTelefon, oBuget, attachments, 0);//projectID, eNume, eCui, eEmail, eTelefon, eBuget, eLink, source
             // trimite oferta client
-            trimiteOfertaClient("AiPro", oNume, oCui, oEmail, oTelefon, oBuget, `
-            [{
-                filename: 'oferta_aipro.pdf',
-                path: ${pdfLink.link},
-                contentType: 'application/pdf'
-            }]
-            `, 0);
+            trimiteOfertaClient("AiPro", oNume, oCui, oEmail, oTelefon, oBuget, attachments, 0);
         })
         .catch(error => console.log(error));
 
