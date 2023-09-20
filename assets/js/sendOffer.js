@@ -18,14 +18,12 @@ function sendTest() {
     const oEmail = document.getElementById('oEmail').value;
     const oTelefon = document.getElementById('oTelefon').value;
     const oBuget = document.getElementById('oBuget').value;
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    const generatePdfUrl = 'http://3.67.38.226:3000/jspdf/generate-pdf';
-    const sendEmailUrl = 'http://3.67.38.226:3000/jspdf/generate-pdf';
+
 
 
 
     function trimiteOferta(projectID, eNume, eCui, eEmail, eTelefon, eBuget, eLink, source) {
-        fetch(proxyUrl + sendEmailUrl, {
+        fetch('https://aipro.ro/proxy.php?path=email/sendMail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -75,7 +73,7 @@ function sendTest() {
     }
 
     function trimiteOfertaClient(eNume, eCui, eEmail, eTelefon, eBuget, eLink) {
-        fetch(proxyUrl + sendEmailUrl, {
+        fetch('https://aipro.ro/proxy.php?path=email/sendMail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -110,7 +108,7 @@ function sendTest() {
 
 
 
-    fetch(proxyUrl + generatePdfUrl, {
+    fetch('https://aipro.ro/proxy.php?path=jspdf/generate-pdf', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
