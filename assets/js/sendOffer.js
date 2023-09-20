@@ -37,6 +37,7 @@ function sendTest() {
                 Email: ${eEmail}
                 Telefon: ${eTelefon}
                 Nume Prenume: ${eNume}
+                Buget: ${eBuget}
                 `,
                 "source": source,
                 "fileList": eLink
@@ -72,7 +73,7 @@ function sendTest() {
             });
     }
 
-    function trimiteOfertaClient(eNume, eCui, eEmail, eTelefon, eBuget, eLink) {
+    function trimiteOfertaClient(projectID, eNume, eCui, eEmail, eTelefon, eBuget, eLink, source) {
         fetch('https://aipro.ro/proxy.php?path=email/sendMail', {
             method: 'POST',
             headers: {
@@ -87,6 +88,7 @@ function sendTest() {
                 Email: ${eEmail}
                 Telefon: ${eTelefon}
                 Nume Prenume: ${eNume}
+                Buget: ${eBuget}
                 `,
                 "source": source,
                 "fileList": eLink
