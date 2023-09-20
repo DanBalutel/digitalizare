@@ -22,19 +22,24 @@ function sendTest() {
 
 
 
-    function trimiteOferta(eNume, eCui, eEmail, eTelefon, eBuget, eLink) {
-        fetch('https://api.aipro.ro:3005/send', {
+    function trimiteOferta(projectID, eNume, eCui, eEmail, eTelefon, eBuget, eLink, source) {
+        fetch('http://3.67.38.226:3000/email/sendMail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                nume: eNume,
-                cui: eCui,
-                email: eEmail,
-                telefon: eTelefon,
-                buget: eBuget,
-                link: eLink
+                "projectID": projectID,
+                "email": eEmail,
+                "subiect": `Oferta trimisa la: ${eEmail}`,
+                "continut": `
+                CUI: ${eCui}
+                Email: ${eEmail}
+                Telefon: ${eTelefon}
+                Nume Prenume: ${eNume}
+                `,
+                "source": source,
+                "fileList": eLink
             })
         })
             .then(response => {
@@ -68,18 +73,23 @@ function sendTest() {
     }
 
     function trimiteOfertaClient(eNume, eCui, eEmail, eTelefon, eBuget, eLink) {
-        fetch('https://api.aipro.ro:3005/sendClient', {
+        fetch('http://3.67.38.226:3000/email/sendMail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                nume: eNume,
-                cui: eCui,
-                email: eEmail,
-                telefon: eTelefon,
-                buget: eBuget,
-                link: eLink
+                "projectID": projectID,
+                "email": eEmail,
+                "subiect": `Oferta trimisa la: ${eEmail}`,
+                "continut": `
+                CUI: ${eCui}
+                Email: ${eEmail}
+                Telefon: ${eTelefon}
+                Nume Prenume: ${eNume}
+                `,
+                "source": source,
+                "fileList": eLink
             })
         })
             .then(response => {
@@ -98,7 +108,7 @@ function sendTest() {
 
 
 
-    fetch('https://api.aipro.ro:3003/generate-pdf', {
+    fetch('http://3.67.38.226:3000/jspdf/generate-pdf', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -127,9 +137,21 @@ function sendTest() {
             console.log(pdfLink.link);
 
             // trimite oferta Alex
-            trimiteOferta(oNume, oCui, oEmail, oTelefon, oBuget, pdfLink.link);
+            trimiteOferta("AiPro.ro", oNume, oCui, oEmail, oTelefon, oBuget, `
+            [{
+                filename: 'oferta_aipro.pdf',
+                path: ${pdfLink.link},
+                contentType: 'application/pdf'
+            }]
+            `, 0);//projectID, eNume, eCui, eEmail, eTelefon, eBuget, eLink, source
             // trimite oferta client
-            trimiteOfertaClient(oNume, oCui, oEmail, oTelefon, oBuget, pdfLink.link);
+            trimiteOfertaClient("AiPro", oNume, oCui, oEmail, oTelefon, oBuget, `
+            [{
+                filename: 'oferta_aipro.pdf',
+                path: ${pdfLink.link},
+                contentType: 'application/pdf'
+            }]
+            `, 0);
         })
         .catch(error => console.log(error));
 
