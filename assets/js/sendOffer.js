@@ -82,7 +82,7 @@ function sendTest() {
             body: JSON.stringify({
                 "projectID": projectID,
                 "email": eEmail,
-                "subiect": `Oferta trimisa la: ${eEmail}`,
+                "subiect": `Oferta de pret AiPro`,
                 "continut": `
                 Bună ziua,
 
