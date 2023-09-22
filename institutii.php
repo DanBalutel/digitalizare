@@ -92,7 +92,7 @@
 
     function generatePdf1() {
 
-        let administratorId = findAdministratorId(0, newdataObj);
+        // let administratorId = findAdministratorId(0, newdataObj);
         const caen = `${newdataObj.date_generale.cod_CAEN}`
         const fieldsObj = {
             // 'subsemnatul': newdataObj.administratori.persoane_fizice[administratorId].nume || '',
