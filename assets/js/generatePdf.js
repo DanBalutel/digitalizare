@@ -9,7 +9,7 @@ function generatePdf(fileName, fieldsObj, pdfPath) {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            'cui': newdataObj.firma.cui,
+            'cui': newdataObj.CUI,
             'fileName': fileName,
             'pdfPath': pdfPath,
             'fieldValues': fieldsObj
