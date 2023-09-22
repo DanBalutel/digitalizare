@@ -3,7 +3,7 @@ function generatePdf(fileName, fieldsObj, pdfPath) {
     // loading
     renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
 
-    fetch('http://api.aipro.ro:3003/generate-pdf', {
+    fetch('https://aipro.ro/proxy.php?path=jspdf/generate-pdf', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -41,7 +41,7 @@ function generatePdfA6(fileName, fieldsObj) {
     // loading
     renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
 
-    fetch('http://api.aipro.ro:3003/generate-pdf', {
+    fetch('https://aipro.ro/proxy.php?path=jspdf/generate-pdf', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
