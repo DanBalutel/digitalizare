@@ -112,7 +112,7 @@
             // 'sediu_apartament': newdataObj.adresa.anaf.apartament || '',
             'sediu_judet': newdataObj.adresa_domiciliu_fiscal.ddenumire_Judet || '',
             'sediu_cod': newdataObj.adresa_domiciliu_fiscal.dcod_Postal || '',
-            'sediu_telefon': newdataObj.date_generale.telefon.toString() || '',
+            'sediu_telefon': newdataObj.date_generale.telefon.toString() || ''
             // 'sediu_fax': newdataObj.date_contact.fax.toString() || '',
             // 'sediu_mail': newdataObj.date_contact.email.toString() || '',
             // 'sediu_web': newdataObj.date_contact.web.toString() || '',
