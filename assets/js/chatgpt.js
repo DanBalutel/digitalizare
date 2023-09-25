@@ -16,7 +16,7 @@ if (localStorage.chatMoni) {
 // acces API with question
 function renderAnswer2(question) {
 
-    fetch('https://aipro.ro/proxy.php?path=gpt', {
+    fetch('https://ai.aipro.ro/proxy.php?path=gpt', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
