@@ -67,7 +67,7 @@
 <script> 
     const obiect = JSON.parse(window.localStorage.newDataObj);
     let imageURL;
-    fetch(`https://aipro.ro/uploads/${obiect.CUI}_factura.png`, { method: 'HEAD' })
+    fetch(`https://ai.aipro.ro/uploads/${obiect.CUI}_factura.png`, { method: 'HEAD' })
     .then(res => {
         if (res.ok) {
             imageURL = "uploads/" + obiect.CUI + "_factura.png?timestamp="+ Math.random();
@@ -81,7 +81,7 @@
 
         renderLoadingModal('Datele se incarca...');
 
-        var url = `https://aipro.ro/${imageURL}`;
+        var url = `https://ai.aipro.ro/${imageURL}`;
 
         try {
             // perform OCR on the image

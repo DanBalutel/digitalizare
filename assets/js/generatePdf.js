@@ -33,7 +33,7 @@ function generatePdf(fileName, fieldsObj, pdfPath) {
 
 }
 
-// generatePdf('pdfSample', fieldsObj, 'https://aipro.ro/assets/pdf/cerere.pdf');
+// generatePdf('pdfSample', fieldsObj, 'https://ai.aipro.ro/assets/pdf/cerere.pdf');
 
 
 function generatePdfA6(fileName, fieldsObj) {
@@ -49,7 +49,7 @@ function generatePdfA6(fileName, fieldsObj) {
         body: JSON.stringify({
             'cui': newdataObj.firma.cui,
             'fileName': fileName,
-            'pdfPath': 'https://aipro.ro/assets/pdf/anexa6_3.pdf',
+            'pdfPath': 'https://ai.aipro.ro/assets/pdf/anexa6_3.pdf',
             'fieldValues': fieldsObj
         })
 

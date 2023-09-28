@@ -118,7 +118,7 @@ function sendTest() {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "pdfPath": "https://aipro.ro/assets/pdf/aipro_oferta.pdf",
+            "pdfPath": "https://ai.aipro.ro/assets/pdf/aipro_oferta.pdf",
             "fileName": "ofertapret",
             "fieldValues": {
                 "nume": oNume,

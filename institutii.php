@@ -119,7 +119,7 @@
             // 'CAEN_rev1.0': caen.substring(0, 40) || '',
             // 'CAEN_rev1.1': caen.substring(40, 400) || ''
         }
-        generatePdf('pdfSample', fieldsObj, 'https://aipro.ro/assets/pdf/cerere.pdf');
+        generatePdf('pdfSample', fieldsObj, 'https://ai.aipro.ro/assets/pdf/cerere.pdf');
     }
 
     d.createHandler('demoPdfCreate', 'click', generatePdf1);
