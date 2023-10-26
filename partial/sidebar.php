@@ -74,7 +74,7 @@
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="institutii.php">
                      <img class="rounded-circle float-start chat-user-img img-30 m-r-1" src="../assets/images/meniu/institutii.png" alt="">
-                     <span>Institutii</span>
+                     <span>DOC-Online</span>
 
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
