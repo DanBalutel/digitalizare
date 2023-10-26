@@ -17,10 +17,9 @@
             <!-- Container-fluid starts-->
             <div class="container-fluid">
                 <h3>
-                    <a href="#" id="demoPdfCreate">Click DEMO</a>
+                    <a href="#" id="demoPdfCreate">Import doc ⬆</a>
                     <br>- Completare automata documente
                     <br>- Transmitere automata solicitari Institutii
-                    <br>- Import doc ⬆
                     <br>- Deschidere direct din aplicatie pentru completare
                     <br>- Arhiva documente
                 </h3>
