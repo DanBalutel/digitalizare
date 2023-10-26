@@ -17,6 +17,11 @@
             <!-- Container-fluid starts-->
             <div class="container-fluid">
                 <h3><a href="#" id="demoPdfCreate">Click DEMO</a><br>- Completare automata documente<br>- Transmitere automata solicitari Institutii</h3>
+                <form action="">
+                    <label for="email">Trimite documentul la semnat</label>
+                    <input type="email" class="form-control" required placeholder="Email" />
+                    <button type="submit" class="btn btn-primary mt-2">Trimite</button>
+                </form>
                 <div class="card">
                     <div class="card-body">
                         <h2 class="mb-1 mt-1 pt-3 pb-2">Ministerul Afacerilor Interne</h2>
