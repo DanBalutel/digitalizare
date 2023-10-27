@@ -37,7 +37,45 @@ function renderAnswer2(question) {
         .then((response) => {
             // ansText = JSON.parse(response);
             ansText = response;
-console.log(response);
+            console.log(response);
+
+            // all html rendering goes here
+            removeLoading();
+            // if (!localStorage.conversationId) {
+            //     localStorage.setItem("conversationId", ansText.conversationId);
+            //     localStorage.setItem("messageId", ansText.messageId);
+            // } else {
+            //     localStorage.setItem("messageId", ansText.messageId);
+            // }
+            addMessage('left', ansText)
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+
+        })
+        .catch(error => console.log(error));
+}
+function renderimage(promt) {
+
+    fetch('https://punctaj.ro/image/' + promt, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        cors: 'no-cors'
+
+
+    })
+        // SERVER RESPONSE
+        .then((result) => {
+            if (result.status != 200) { throw new Error("Bad Server Response"); }
+            console.log(result.body);
+            return result.text();
+        })
+        .then((response) => {
+            // ansText = JSON.parse(response);
+            console.log(response)
+            ansText = response;
+            console.log(response);
 
             // all html rendering goes here
             removeLoading();
@@ -140,6 +178,11 @@ function clearChatHistory() {
 
 document.getElementById('trimite').addEventListener("click", function () {
     renderAnswer2(askGpt.value);
+    addMessage('right', askGpt.value)
+    addLoading();
+})
+document.getElementById('img_generate').addEventListener("click", function () {
+    renderimage(askGpt.value);
     addMessage('right', askGpt.value)
     addLoading();
 })
