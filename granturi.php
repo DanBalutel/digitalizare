@@ -66,7 +66,7 @@
 <!-- Plugins JS Ends-->
 <script>
     $(document).ready(function() {
-        console.log(JSON.parse(newdataJson))
+        console.log(window.localStorage.getItem('cui'))
         $('#filesInput').click(function(e){
             var formData = new FormData();
             formData.append('file', e.target.files[0]);
