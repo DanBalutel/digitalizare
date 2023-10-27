@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="card-body">
+                        <div class="card-body" id="fisiere">
                            
                         </div>
 
@@ -76,7 +76,7 @@
             type: 'POST',
             data: { cui: cui },
             success: function(response) {
-                $('.card-body').html(response);
+                $('#fisiere').html(response);
             },
             error: function() {
                 console.error("Failed to fetch files.");
