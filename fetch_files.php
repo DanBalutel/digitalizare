@@ -14,7 +14,7 @@ if (isset($_POST['cui'])) {
     if (count($files) > 0) {
         echo "<div class='row'>";
         foreach ($files as $file) {
-            echo "<div class='col-md-12'><a href='" . $directoryPath . $file . "' target='_blank'>" . $file . "</a></div>";
+            echo "<div class='col-md-6'><a href='" . $directoryPath . $file . "' target='_blank'>" . $file . "</a></div>";
         }
         echo "</div>";
     } else {
