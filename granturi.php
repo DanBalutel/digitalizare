@@ -30,8 +30,10 @@
                                 <div class="col-md-6">Documente</div>
                                 <div class="col-md-6">
                                     <form action="" class="d-flex">
-                                        <input type="file" name="" id="" multiple class="form-control me-75"> <button class="btn btn-primary w-100" id="filesInput">Incarca</button> 
+                                        <input type="file" name="" id="fileInputs" multiple class="form-control me-75"> 
+                                        <button class="btn btn-primary w-100" id="uploadButton">Incarca</button> 
                                     </form>
+
                                 </div>
                             </div>
                         </div>
@@ -66,28 +68,37 @@
 <!-- Plugins JS Ends-->
 <script>
     $(document).ready(function() {
-        const cui = window.localStorage.getItem('cui')
-        $('#filesInput').click(function(e){
-            var formData = new FormData();
-            formData.append('file', e.target.files[0]);
-            formData.append('cui_file',window.localStorage.getItem('cui'));
-        
-            $.ajax({
-                url: '/upload_files.php',
-                type: 'POST',
-                data: formData,
-                processData: false,
-                contentType: false,
-                success: function(response){
-                    Swal.fire("Success!", "Documentele a fost trimis in cloud si salvat pe server!", "success");
-                },
-                error: function(xhr, status, error){
-                    Swal.fire("Error!", "A aparut o eroare la incarcarea fisierului!", "error");
-                }
-            });
+    const cui = window.localStorage.getItem('cui');
+
+    $('#uploadButton').click(function(e){
+        e.preventDefault(); 
+
+        var fileInput = $('#fileInputs')[0];
+        if (!fileInput.files.length) {
+            Swal.fire("Error!", "No file selected!", "error");
+            return;
+        }
+
+        var formData = new FormData();
+        formData.append('file', fileInput.files[0]);
+        formData.append('cui_file', cui);
+
+        $.ajax({
+            url: '/upload_files.php',
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function(response){
+                Swal.fire("Success!", "Documentele a fost trimis in cloud si salvat pe server!", "success");
+            },
+            error: function(xhr, status, error){
+                Swal.fire("Error!", "A aparut o eroare la incarcarea fisierului!", "error");
+            }
         });
-            
     });
+});
+
 </script>
 <script>
   new WOW().init();
