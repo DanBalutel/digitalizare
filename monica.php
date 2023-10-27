@@ -187,7 +187,7 @@ header("Access-Control-Allow-Origin: *");
   }
 
   const topbarHeight = d.element('headerWrapper').offsetHeight;
-  // const demoPlayDiv = d.element('demoPlayDiv');
+  const demoPlayDiv = d.element('demoPlayDiv');
   // d.createElement(moniStepsJson1, demoPlayDiv);
 
   // function showMoniSteps() {
