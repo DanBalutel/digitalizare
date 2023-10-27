@@ -19,7 +19,7 @@
         <div class="row">
             <div class="card">
                 <div class="card-header">
-                    Proiect - Sprijin pentru entitățile din domeniul agroalimentar sub formă de microgranturi și granturi pentru capital de lucru
+                    Grant capital de lucru  - Sprijin pentru entitățile din domeniul agroalimentar sub formă de microgranturi și granturi pentru capital de lucru
                 </div>
             </div>
         </div>
