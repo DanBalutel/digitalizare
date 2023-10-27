@@ -56,7 +56,7 @@ function renderAnswer2(question) {
 }
 function renderimage(promt) {
 
-    fetch('https://punctaj.ro/image/' + promt, {
+    fetch('https://punctaj.ro/api/image/' + promt, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
