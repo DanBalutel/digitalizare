@@ -117,9 +117,10 @@
                     text: "Documentele a fost trimis in cloud si salvat pe server!",
                     icon: "success",
                     onClose: () => {
-                        location.reload();  // Refresh the page after the Swal alert is closed
+                        location.reload();  
                     }
                 });
+                        location.reload();  
             },
             error: function(xhr, status, error){
                 Swal.fire("Error!", "A aparut o eroare la incarcarea fisierului!", "error");
