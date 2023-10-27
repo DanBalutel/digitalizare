@@ -49,17 +49,17 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="bg-primary">
+                                <div class="bg-primary p-2">
                                     <span id="data_1"></span>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="bg-warning">
+                                <div class="bg-warning p-2">
                                     <span id="data_2"></span>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="bg-danger">
+                                <div class="bg-danger p-2">
                                     <span id="data_1"></span>
                                 </div>
                             </div>
