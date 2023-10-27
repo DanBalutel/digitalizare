@@ -136,7 +136,7 @@ function addMessage(msgLoc, msgText) {
         localStorage.setItem('chatMoni', d.element('chatBox').innerHTML + msgChild.innerHTML);
     }
     chatBox.appendChild(msgChild);
-    msgChild.scrollIntoView(false)
+    msgChild.scrollIntoView(true)
 };
 
 // copy message code to clipboard and clear it from html tags
