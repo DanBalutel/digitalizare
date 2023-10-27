@@ -49,18 +49,18 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="bg-primary p-2">
+                                <div class="bg-primary p-3 text-center">
                                     <span id="data_1"></span>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="bg-warning p-2">
+                                <div class="bg-warning p-3 text-center">
                                     <span id="data_2"></span>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="bg-danger p-2">
-                                    <span id="data_1"></span>
+                                <div class="bg-danger p-3 text-center">
+                                    <span id="data_2"></span>
                                 </div>
                             </div>
                         </div>
@@ -100,6 +100,22 @@
             data: { cui: cui },
             success: function(response) {
                 $('#fisiere').html(response);
+            },
+            error: function() {
+                console.error("Failed to fetch files.");
+            }
+        });
+    });
+    $(document).ready(function() {
+        const cui = window.localStorage.getItem('cui');
+ 
+        $.ajax({
+            url: 'https://punctaj.ro/api/agri/' + cui,
+            type: 'get',
+            data: { cui: cui },
+            success: function(response) {
+                console.log(response)
+                $('#data_1').html(response);
             },
             error: function() {
                 console.error("Failed to fetch files.");
