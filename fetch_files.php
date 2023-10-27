@@ -12,11 +12,11 @@ if (isset($_POST['cui'])) {
     }
 
     if (count($files) > 0) {
-        echo "<ul>";
+        echo "<div class='row'>";
         foreach ($files as $file) {
-            echo "<li><a href='" . $directoryPath . $file . "' target='_blank'>" . $file . "</a></li>";
+            echo "<div class='col-md-3'><a href='" . $directoryPath . $file . "' target='_blank'>" . $file . "</a></div>";
         }
-        echo "</ul>";
+        echo "</div>";
     } else {
         echo "<p>No files found.</p>";
     }
