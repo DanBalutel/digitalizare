@@ -124,14 +124,14 @@ function addMessage(msgLoc, msgText) {
     if (msgLoc === 'right') {
         msgChild.innerHTML = `
             <div id="chat-feed" class="message other-message pull-right"><img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
-                <div class="message-data">${msgText}
+                <div class="message-data" style="max-width: 100%">${msgText}
             </div>
         `;
         localStorage.setItem('chatMoni', d.element('chatBox').innerHTML + msgChild.innerHTML);
     } else {
         msgChild.innerHTML = `
         <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
-        <div class="message-data" style="cursor:pointer" title="Copiaza" id="text" onclick="copyElementText(this.innerHTML)">${msgText}</div>
+        <div class="message-data" style="cursor:pointer; max-width: 100%" title="Copiaza" id="text" onclick="copyElementText(this.innerHTML)">${msgText}</div>
         `;
         localStorage.setItem('chatMoni', d.element('chatBox').innerHTML + msgChild.innerHTML);
     }
