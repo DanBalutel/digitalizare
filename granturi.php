@@ -33,7 +33,6 @@
                                         <input type="file" name="file[]" id="fileInputs" multiple class="form-control me-75"> 
                                         <button class="btn btn-primary w-100" id="uploadButton">Incarca</button> 
                                     </form>
-
                                 </div> 
                             </div>
                         </div>
@@ -77,7 +76,6 @@
             type: 'POST',
             data: { cui: cui },
             success: function(response) {
-                console.log(response)
                 $('.card-body').html(response);
             },
             error: function() {
