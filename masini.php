@@ -54,6 +54,7 @@
                                                     <img src="assets/images/custom-persons/1.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                                 </div>
                                                 <br>
+                                                <span class="txt-info">Conduce:</span>
                                                 <div class="row">
                                                     <div class="col-5">
                                                         <img src="/newServices/poze/shipping1.jpg" width="55" height="55" class="shadow" style="object-fit:cover;" alt="">
