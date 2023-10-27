@@ -112,13 +112,20 @@
             processData: false,
             contentType: false,
             success: function(response){
-                Swal.fire("Success!", "Documentele a fost trimis in cloud si salvat pe server!", "success");
-                location.reload()
+                Swal.fire({
+                    title: "Success!",
+                    text: "Documentele a fost trimis in cloud si salvat pe server!",
+                    icon: "success",
+                    onClose: () => {
+                        location.reload();  // Refresh the page after the Swal alert is closed
+                    }
+                });
             },
             error: function(xhr, status, error){
                 Swal.fire("Error!", "A aparut o eroare la incarcarea fisierului!", "error");
             }
         });
+
     });
 });
 
