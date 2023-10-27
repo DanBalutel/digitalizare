@@ -60,6 +60,7 @@ header("Access-Control-Allow-Origin: *");
                           <div class="col-xl-12 d-flex">
                             <div class="input-group text-box">
                               <input class="form-control input-txt-bx" id="askGPT" type="text" name="message-to-send" placeholder="Scrie aici .....">
+                              <button class="input-group-text btn btn-success text-white fw-bold" id="img_generate" type="button">Genereaza imagine</button>
                               <button class="input-group-text btn btn-primary text-white fw-bold" id="trimite" type="button">Trimite</button>
                             </div>
                           </div>
