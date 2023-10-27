@@ -138,6 +138,9 @@
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="smart-building.php">Smart building</a></li>
                      <li><a href="echipamente.php">Echipamente</a></li>
+                     <li><a href="masini.php">Masini</a></li>
+                     <li><a href="agricultura.php">Agricultura</a></li>
+
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="crm.php">
