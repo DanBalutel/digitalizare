@@ -31,7 +31,7 @@
                                 <div class="col-md-6">
                                     <div class="d-flex">
                                         <form action="">
-                                            <input type="file" name="" id="" multiple class="form-contro"> <button class="btn btn-primary w-100">Incarca</button> 
+                                            <input type="file" name="" id="" multiple class="form-control"> <button class="btn btn-primary w-100">Incarca</button> 
                                         </form>
                                     </div>
                                 </div>
