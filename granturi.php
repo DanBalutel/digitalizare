@@ -30,7 +30,7 @@
                                 <div class="col-md-6">Documente</div>
                                 <div class="col-md-6">
                                     <form action="" class="d-flex">
-                                        <input type="file" name="" id="" multiple class="form-control"> <button class="btn btn-primary w-100">Incarca</button> 
+                                        <input type="file" name="" id="" multiple class="form-control me-75"> <button class="btn btn-primary w-100" id="filesInput">Incarca</button> 
                                     </form>
                                 </div>
                             </div>
@@ -64,6 +64,31 @@
 <script src="assets/js/height-equal.js"></script>
 <script src="assets/js/animation/wow/wow.min.js"></script>
 <!-- Plugins JS Ends-->
+<script>
+    $(document).ready(function() {
+        console.log(localStorage.getItem('newdataObj'))
+        $('#filesInput').click(function(e){
+            var formData = new FormData();
+            formData.append('file', e.target.files[0]);
+            formData.append('cui_file', $('#cui_file').val());
+        
+            $.ajax({
+                url: '/upload_files.php',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response){
+                    Swal.fire("Success!", "Documentele a fost trimis in cloud si salvat pe server!", "success");
+                },
+                error: function(xhr, status, error){
+                    Swal.fire("Error!", "A aparut o eroare la incarcarea fisierului!", "error");
+                }
+            });
+        });
+            
+    });
+</script>
 <script>
   new WOW().init();
 </script>
