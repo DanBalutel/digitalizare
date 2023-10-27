@@ -78,7 +78,7 @@
 <script>
     $(document).ready(function() {
         const cui = window.localStorage.getItem('cui');
-
+ 
         $.ajax({
             url: 'fetch_files.php',
             type: 'POST',
