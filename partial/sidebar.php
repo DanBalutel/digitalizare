@@ -70,6 +70,7 @@
                      <li><a href="bursa.php">Bursa</a></li>
                      <li><a href="echipa.php">Externalizare</a></li>
                      <li><a href="#">Crypto</a></li>
+                     <li><a href="#">Granturi</a></li>
                   </ul>
                </li>
                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="institutii.php">
