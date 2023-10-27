@@ -23,6 +23,24 @@
                         Grant capital de lucru 2022 - Sprijin pentru entitățile din domeniul agroalimentar sub formă de microgranturi și granturi pentru capital de lucru
                     </div>
                 </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <div class="row">
+                                <div class="col-md-6">Documente</div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <input type="file" name="" id="" class="form-contro"> <button class="btn btn-primary">Incarca</button> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
