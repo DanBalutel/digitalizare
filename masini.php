@@ -27,7 +27,7 @@
                                     <div class="row">
                                         <div class="col-12 col-md-3">
                                             <div class="card-header d-flex justify-content-center">
-                                                <h4 class="card-title">Ion Popescu</h4>
+                                                <h6 class="card-title">Ion Popescu</h6>
                                             </div>
                                             <div class="card-body d-flex justify-content-center">
                                                 <img src="assets/images/custom-persons/9.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
@@ -47,11 +47,20 @@
                                     <div class="row">
                                         <div class="col-12 col-md-3">
                                             <div class="card-header d-flex justify-content-center">
-                                                <h4 class="card-title">Daniel Martin</h4>
+                                                <h6 class="card-title">Daniel Martin</h6>
                                             </div>
-                                            <div class="card-body d-flex justify-content-center">
+                                            <div class="card-body d-flex flex-column justify-content-center">
                                                 <div class="avatar">
                                                     <img src="assets/images/custom-persons/1.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <img src="/newServices/poze/shipping1.jpg" width="55" height="55" class="shadow" style="object-fit:cover;" alt="">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <p>Man_08431</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -68,7 +77,7 @@
                                     <div class="row">
                                         <div class="col-12 col-md-3">
                                             <div class="card-header d-flex justify-content-center">
-                                                <h4 class="card-title">Robert Johnson</h4>
+                                                <h6 class="card-title">Robert Johnson</h6>
                                             </div>
                                             <div class="card-body d-flex justify-content-center">
                                                 <div class="avatar">
@@ -89,7 +98,7 @@
                                     <div class="row">
                                         <div class="col-12 col-md-3">
                                             <div class="card-header d-flex justify-content-center">
-                                                <h4 class="card-title">Michael Anderson</h4>
+                                                <h6 class="card-title">Michael Anderson</h6>
                                             </div>
                                             <div class="card-body d-flex justify-content-center">
                                                 <div class="avatar">
