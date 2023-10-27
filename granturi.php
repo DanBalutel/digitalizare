@@ -30,7 +30,7 @@
                                 <div class="col-md-6">Documente</div>
                                 <div class="col-md-6">
                                     <form action="" class="d-flex">
-                                        <input type="file" name="file[]" id="fileInputs" multiple class="form-control me-75"> 
+                                        <input type="file" name="file[]" max="10" id="fileInputs" multiple class="form-control me-75"> 
                                         <button class="btn btn-primary w-100" id="uploadButton">Incarca</button> 
                                     </form>
                                 </div> 
