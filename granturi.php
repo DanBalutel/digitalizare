@@ -52,21 +52,21 @@
                                 <div class="bg-primary p-3 text-center">
                                     <span>DE PUBLICAT COMUNICAT</span>
                                     <div id="data_1"></div>
-                                    <textarea name="" class="form-control mt-2" placeholder="Comentarii" id=""></textarea>
+                                    <textarea name="comentariu1" class="form-control mt-2" placeholder="Comentarii" id="comentariu1"></textarea>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="bg-warning p-3 text-center">
                                     <span>ULTIMA ZI RAPORTARE</span>
                                     <div id="data_2"></div>
-                                    <textarea name="" class="form-control mt-2" placeholder="Comentarii" id=""></textarea>
+                                    <textarea name="comentariu2" class="form-control mt-2" placeholder="Comentarii" id="comentariu2"></textarea>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="bg-danger p-3 text-center">
                                     <span>Finalizare proces monitorizare</span>
                                     <div id="data_3"></div>
-                                    <textarea name="" class="form-control mt-2" placeholder="Comentarii" id=""></textarea>
+                                    <textarea name="comentariu3" class="form-control mt-2" placeholder="Comentarii" id="comentariu3"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,31 @@
 <script>
   
   $(document).ready(function() {
+
         const cui = window.localStorage.getItem('cui');
+        $('textarea[name="comentariu1"], textarea[name="comentariu2"], textarea[name="comentariu3"]').on('change', function () {
+                const comentariu1 = $("#comentariu1").val()
+                const comentariu2 = $("#comentariu2").val()
+                const comentariu3 = $("#comentariu3").val()
+                $.ajax({
+                    url: 'https://punctaj.ro/api/agri_update/' + cui,
+                    method: 'PUT',
+                    data: {
+                        comentariu1: comentariu1,
+                        comentariu2: comentariu2,
+                        comentariu3: comentariu3,
+                    },
+                    success: function (response) {
+                        Swal.fire("Success!", "Comentariu actualizat cu success!", "success");
+                    },
+                    error: function (xhr, status, error) {
+                        toastr.success('Ceva nu a mers bine.', 'Error');
+                        console.error('Error updating data:', error);
+                    }
+                });
+            });
+        });
+
  
         $.ajax({
             url: 'fetch_files.php',
