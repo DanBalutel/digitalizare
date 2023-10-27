@@ -18,7 +18,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header text-primary">
                     Grant capital de lucru 2022 - Sprijin pentru entitățile din domeniul agroalimentar sub formă de microgranturi și granturi pentru capital de lucru
                 </div>
             </div>
