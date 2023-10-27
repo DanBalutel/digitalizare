@@ -52,18 +52,21 @@
                                 <div class="bg-primary p-3 text-center">
                                     <span>DE PUBLICAT COMUNICAT</span>
                                     <div id="data_1"></div>
+                                    <textarea name="" class="form-control mt-2" placeholder="Comentarii" id=""></textarea>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="bg-warning p-3 text-center">
                                     <span>ULTIMA ZI RAPORTARE</span>
                                     <div id="data_2"></div>
+                                    <textarea name="" class="form-control mt-2" placeholder="Comentarii" id=""></textarea>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="bg-danger p-3 text-center">
                                     <span>Finalizare proces monitorizare</span>
                                     <div id="data_3"></div>
+                                    <textarea name="" class="form-control mt-2" placeholder="Comentarii" id=""></textarea>
                                 </div>
                             </div>
                         </div>
