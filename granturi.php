@@ -30,24 +30,16 @@
                                 <div class="col-md-6">Documente</div>
                                 <div class="col-md-6">
                                     <form action="" class="d-flex">
-                                        <input type="file" name="" id="fileInputs" multiple class="form-control me-75"> 
+                                        <input type="file" name="file[]" id="fileInputs" multiple class="form-control me-75"> 
                                         <button class="btn btn-primary w-100" id="uploadButton">Incarca</button> 
                                     </form>
 
-                                </div>
+                                </div> 
                             </div>
                         </div>
                         <hr>
                         <div class="card-body">
-                            <?php if (count($files) > 0): ?>
-                                <ul>
-                                    <?php foreach ($files as $file): ?>
-                                        <li><a href="<?php echo $directoryPath . $file; ?>" target="_blank"><?php echo $file; ?></a></li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            <?php else: ?>
-                                <p>No files found.</p>
-                            <?php endif; ?>
+                           
                         </div>
 
                     </div>
@@ -78,7 +70,7 @@
 <script>
   
 
-    $(document).ready(function() {
+  $(document).ready(function() {
     const cui = window.localStorage.getItem('cui');
 
     $('#uploadButton').click(function(e){
@@ -91,7 +83,12 @@
         }
 
         var formData = new FormData();
-        formData.append('file', fileInput.files[0]);
+        
+        // Loop through all selected files and append them to formData
+        for (let i = 0; i < fileInput.files.length; i++) {
+            formData.append('file[]', fileInput.files[i]);
+        }
+
         formData.append('cui_file', cui);
 
         $.ajax({
@@ -109,6 +106,7 @@
         });
     });
 });
+
 
 </script>
 <script>
