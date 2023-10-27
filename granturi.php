@@ -66,11 +66,11 @@
 <!-- Plugins JS Ends-->
 <script>
     $(document).ready(function() {
-        console.log(window.localStorage.getItem('cui'))
+        const cui = window.localStorage.getItem('cui')
         $('#filesInput').click(function(e){
             var formData = new FormData();
             formData.append('file', e.target.files[0]);
-            formData.append('cui_file', $('#cui_file').val());
+            formData.append('cui_file',window.localStorage.getItem('cui'));
         
             $.ajax({
                 url: '/upload_files.php',
