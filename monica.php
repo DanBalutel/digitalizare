@@ -176,18 +176,18 @@ header("Access-Control-Allow-Origin: *");
   // define Moni steps fideo ID
   const moniVideoSteps = 'iqHC5eQIH7k';
 
-  // const moniStepsJson1 = {
-  //   "tag": "div",
-  //   "id": "videoContainerStepsMony",
-  //   "class": "videoContainerSteps",
-  //   "children": [{
-  //     "tag": "div",
-  //     "id": "moniStepsVideo"
-  //   }]
-  // }
+  const moniStepsJson1 = {
+    "tag": "div",
+    "id": "videoContainerStepsMony",
+    "class": "videoContainerSteps",
+    "children": [{
+      "tag": "div",
+      "id": "moniStepsVideo"
+    }]
+  }
 
   const topbarHeight = d.element('headerWrapper').offsetHeight;
-  const demoPlayDiv = d.element('demoPlayDiv');
+  // const demoPlayDiv = d.element('demoPlayDiv');
   // d.createElement(moniStepsJson1, demoPlayDiv);
 
   // function showMoniSteps() {
