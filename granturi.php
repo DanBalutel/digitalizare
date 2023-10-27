@@ -50,16 +50,19 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="bg-primary p-3 text-center">
+                                    <span>DE PUBLICAT COMUNICAT</span>
                                     <div id="data_1"></div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="bg-warning p-3 text-center">
+                                    <span>ULTIMA ZI RAPORTARE</span>
                                     <div id="data_2"></div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="bg-danger p-3 text-center">
+                                    <span>Finalizare proces monitorizare</span>
                                     <div id="data_3"></div>
                                 </div>
                             </div>
@@ -114,7 +117,6 @@
             type: 'get',
             data: { cui: cui },
             success: function(response) {
-                console.log(response)
                 $('#data_1').html(response.data_publicare);
                 $('#data_2').html(response.data_raportare);
                 $('#data_3').html(response.data_raportare);
