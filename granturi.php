@@ -89,6 +89,7 @@
     $('#uploadButton').click(function(e){
         e.preventDefault(); 
 
+        renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
         var fileInput = $('#fileInputs')[0];
         if (!fileInput.files.length) {
             Swal.fire("Error!", "No file selected!", "error");
