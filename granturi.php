@@ -36,11 +36,11 @@
                                 </div> 
                             </div>
                         </div>
-                        <hr>
-                        <div class="card-body" id="fisiere">
-                           
-                        </div>
 
+                    </div>
+                    <hr>
+                    <div class="card-body" id="fisiere">
+                        
                     </div>
                 </div>
                 <div class="card">
