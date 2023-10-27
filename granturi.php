@@ -76,22 +76,7 @@
 <script src="assets/js/animation/wow/wow.min.js"></script>
 <!-- Plugins JS Ends-->
 <script>
-    $(document).ready(function() {
-        const cui = window.localStorage.getItem('cui');
- 
-        $.ajax({
-            url: 'fetch_files.php',
-            type: 'POST',
-            data: { cui: cui },
-            success: function(response) {
-                console.log(response)
-                $('.card-body').html(response);
-            },
-            error: function() {
-                console.error("Failed to fetch files.");
-            }
-        });
-    });
+  
 
     $(document).ready(function() {
     const cui = window.localStorage.getItem('cui');
