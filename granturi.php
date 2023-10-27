@@ -101,25 +101,24 @@
 
         const cui = window.localStorage.getItem('cui');
         $('textarea[name="comentariu1"], textarea[name="comentariu2"], textarea[name="comentariu3"]').on('change', function () {
-                const comentariu1 = $("#comentariu1").val()
-                const comentariu2 = $("#comentariu2").val()
-                const comentariu3 = $("#comentariu3").val()
-                $.ajax({
-                    url: 'https://punctaj.ro/api/agri_update/' + cui,
-                    method: 'PUT',
-                    data: {
-                        comentariu1: comentariu1,
-                        comentariu2: comentariu2,
-                        comentariu3: comentariu3,
-                    },
-                    success: function (response) {
-                        Swal.fire("Success!", "Comentariu actualizat cu success!", "success");
-                    },
-                    error: function (xhr, status, error) {
-                        toastr.success('Ceva nu a mers bine.', 'Error');
-                        console.error('Error updating data:', error);
-                    }
-                });
+            const comentariu1 = $("#comentariu1").val()
+            const comentariu2 = $("#comentariu2").val()
+            const comentariu3 = $("#comentariu3").val()
+            $.ajax({
+                url: 'https://punctaj.ro/api/agri_update/' + cui,
+                method: 'PUT',
+                data: {
+                    comentariu1: comentariu1,
+                    comentariu2: comentariu2,
+                    comentariu3: comentariu3,
+                },
+                success: function (response) {
+                    Swal.fire("Success!", "Comentariu actualizat cu success!", "success");
+                },
+                error: function (xhr, status, error) {
+                    toastr.success('Ceva nu a mers bine.', 'Error');
+                    console.error('Error updating data:', error);
+                }
             });
         });
 
