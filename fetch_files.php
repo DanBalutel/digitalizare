@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['cui'])) {
-    $cui = $_POST['cui']; // Make sure to sanitize this value
+    $cui = $_POST['cui']; 
 
     $directoryPath = "uploads/$cui/";
     $files = [];
@@ -8,7 +8,6 @@ if (isset($_POST['cui'])) {
     if (is_dir($directoryPath)) {
         $files = scandir($directoryPath);
         
-        // Remove the '.' and '..' entries
         $files = array_diff($files, ['.', '..']);
     }
 

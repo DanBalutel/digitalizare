@@ -39,8 +39,17 @@
                         </div>
                         <hr>
                         <div class="card-body">
-
+                            <?php if (count($files) > 0): ?>
+                                <ul>
+                                    <?php foreach ($files as $file): ?>
+                                        <li><a href="<?php echo $directoryPath . $file; ?>" target="_blank"><?php echo $file; ?></a></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            <?php else: ?>
+                                <p>No files found.</p>
+                            <?php endif; ?>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -67,6 +76,23 @@
 <script src="assets/js/animation/wow/wow.min.js"></script>
 <!-- Plugins JS Ends-->
 <script>
+    $(document).ready(function() {
+        const cui = window.localStorage.getItem('cui');
+
+        $.ajax({
+            url: 'fetch_files.php',
+            type: 'POST',
+            data: { cui: cui },
+            success: function(response) {
+                console.log(response)
+                $('.card-body').html(response);
+            },
+            error: function() {
+                console.error("Failed to fetch files.");
+            }
+        });
+    });
+
     $(document).ready(function() {
     const cui = window.localStorage.getItem('cui');
 
