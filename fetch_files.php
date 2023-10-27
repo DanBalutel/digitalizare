@@ -18,7 +18,7 @@ if (isset($_POST['cui'])) {
         }
         echo "</div>";
     } else {
-        echo "<p>No files found.</p>";
+        echo "<p>Nu sunt fisiere.</p>";
     }
 }
 ?>
