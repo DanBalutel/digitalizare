@@ -43,6 +43,29 @@
 
                     </div>
                 </div>
+                <div class="card">
+                    <div class="card-header">Etape urmarire grant</div>
+                    <hr>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="bg-primary">
+                                    <span id="data_1"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-warning">
+                                    <span id="data_2"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-danger">
+                                    <span id="data_1"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
