@@ -15,7 +15,15 @@
     $title = 'Granturi';
     include('partial/breadcrumb.php')
     ?>
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    Proiect - Sprijin pentru entitățile din domeniul agroalimentar sub formă de microgranturi și granturi pentru capital de lucru
+                </div>
+            </div>
+        </div>
+    </div>
 
     </div>
     <!-- footer start-->
