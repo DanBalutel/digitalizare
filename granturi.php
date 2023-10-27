@@ -30,14 +30,16 @@
                                 <div class="col-md-6">Documente</div>
                                 <div class="col-md-6">
                                     <div class="d-flex">
-                                        <input type="file" name="" id="" class="form-contro"> <button class="btn btn-primary">Incarca</button> 
+                                        <form action="">
+                                            <input type="file" name="" id="" multiple class="form-contro"> <button class="btn btn-primary w-100">Incarca</button> 
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <hr>
                         <div class="card-body">
-                            
+
                         </div>
                     </div>
                 </div>
