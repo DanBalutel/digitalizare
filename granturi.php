@@ -29,11 +29,9 @@
                             <div class="row">
                                 <div class="col-md-6">Documente</div>
                                 <div class="col-md-6">
-                                    <div class="d-flex">
-                                        <form action="">
-                                            <input type="file" name="" id="" multiple class="form-control"> <button class="btn btn-primary w-100">Incarca</button> 
-                                        </form>
-                                    </div>
+                                    <form action="" class="d-flex">
+                                        <input type="file" name="" id="" multiple class="form-control"> <button class="btn btn-primary w-100">Incarca</button> 
+                                    </form>
                                 </div>
                             </div>
                         </div>
