@@ -113,6 +113,7 @@
             contentType: false,
             success: function(response){
                 Swal.fire("Success!", "Documentele a fost trimis in cloud si salvat pe server!", "success");
+                location.reload()
             },
             error: function(xhr, status, error){
                 Swal.fire("Error!", "A aparut o eroare la incarcarea fisierului!", "error");
