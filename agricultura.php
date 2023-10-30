@@ -38,13 +38,11 @@
                                             <div class="card-body d-flex flex-column align-items-center">
                                                 <!-- poza sofer -->
                                                 <div class="row">
-                                                    <div class="col-6">
-                                                        <p>
-                                                            <span class="txt-info">Ulei Motor: </span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-6 d-flex flex-column justify-content-center">
+                                                    <div class="col-12">
+                                                        <h4 class="txt-info">Planifica o lucrare: </h4>
 
+                                                        <p>
+                                                        </p>
                                                     </div>
                                                 </div>
                                                 <!-- end poza sofer  -->
