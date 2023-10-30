@@ -25,16 +25,42 @@
                             <div class="card mb-4">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-12 col-md-3">
-                                            <div class="card-header d-flex justify-content-center">
-                                                <h6 class="card-title">Ion Popescu</h6>
-                                            </div>
-                                            <div class="card-body d-flex justify-content-center">
-                                                <img src="assets/images/custom-persons/9.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                        <div class="col-12 col-md-5">
+                                            <div class="card-body d-flex flex-column align-items-center">
+                                                <!-- poza sofer -->
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="avatar">
+                                                            <img src="assets/images/custom-persons/9.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column justify-content-center">
+                                                        <h6 class="card-title d-flex flex-column justify-content-center">Ion Popescu</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- end poza sofer  -->
+                                                <!-- alte detalii -->
+                                                <div class="row">
+                                                    <div class="col-12 mt-3">
+                                                        <p class="mt-3">
+                                                            <span class="txt-info">Nr. identificare: </span> 35485632114587<br>
+                                                            <span class="txt-info">Stare: </span> <button class="btn btn-success btn-xs" type="button" title="" data-bs-original-title="btn btn-success btn-xs">In tranzit</button><br>
+                                                            <span class="txt-info">Contactul șoferului: </span> +40 746 728 732<br>
+                                                            <span class="txt-info">Încărcătura Curentă: </span>Echipamente industriale grele<br>
+                                                            <span class="txt-info">Data și Ora Plecării: </span>27 oct. 2023 - 20:30<br>
+                                                            <span class="txt-info">Destinația Curentă: </span>Budapesta, Ungaria<br><br>
+                                                            <span class="txt-info">Alerte și Notificări: </span><br>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column justify-content-center">
+
+                                                    </div>
+                                                </div>
+                                                <!-- end alte detalii -->
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-9">
-                                            <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=44.769685,25.027373&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                                        <div class="col-12 col-md-7">
+                                            <iframe width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=44.769685,25.027373&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                                         </div>
                                     </div>
 
@@ -45,29 +71,49 @@
                             <div class="card mb-4">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-12 col-md-3">
-                                            <div class="card-header d-flex justify-content-center">
-                                                <h6 class="card-title">Daniel Martin</h6>
-                                            </div>
-                                            <div class="card-body d-flex flex-column justify-content-center">
-                                                <div class="avatar">
-                                                    <img src="assets/images/custom-persons/1.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                                </div>
-                                                <br>
-                                                <span class="txt-info">Conduce:</span>
+                                        <div class="col-12 col-md-5">
+                                            <div class="card-body d-flex flex-column align-items-center">
+                                                <!-- poza sofer -->
                                                 <div class="row">
-                                                    <div class="col-5">
-                                                        <img src="/newServices/poze/shipping1.jpg" width="55" height="55" class="shadow" style="object-fit:cover;" alt="">
+                                                    <div class="col-6">
+                                                        <div class="avatar">
+                                                            <img src="assets/images/custom-persons/1.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                                        </div>
                                                     </div>
-                                                    <div class="col-7">
-                                                        <p>Man_08431</p>
+                                                    <div class="col-6 d-flex flex-column justify-content-center">
+                                                        <h6 class="card-title d-flex flex-column justify-content-center">Daniel Martin</h6>
                                                     </div>
                                                 </div>
+                                                <!-- end poza sofer  -->
+                                                <!-- alte detalii -->
+                                                <div class="row">
+                                                    <div class="col-12 mt-3">
+                                                        <p class="mt-3">
+                                                            <span class="txt-info">Nr. identificare: </span> 35485632114587<br>
+                                                            <span class="txt-info">Stare: </span> <button class="btn btn-warning btn-xs" type="button" title="" data-bs-original-title="btn btn-success btn-xs">In asteptare</button><br>
+                                                            <span class="txt-info">Contactul șoferului: </span> +40 746 728 732<br>
+                                                            <span class="txt-info">Încărcătura Curentă: </span>---<br>
+                                                            <span class="txt-info">Data și Ora Plecării: </span>27 oct. 2023 - 20:30<br>
+                                                            <span class="txt-info">Destinația Curentă: </span>Budapesta, Ungaria<br><br>
+                                                            <span class="txt-info">Alerte și Notificări: </span><br>
+
+                                                        <div class="alert alert-warning dark" role="alert">
+                                                            <p>Notificare: Are loc incarcarea marfii.</p>
+                                                        </div>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column justify-content-center">
+
+                                                    </div>
+                                                </div>
+                                                <!-- end alte detalii -->
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-9">
-                                            <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=44.314623,23.916960&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                                        <!-- harta locatia masinii -->
+                                        <div class="col-12 col-md-7">
+                                            <iframe width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=44.314623,23.916960&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                                         </div>
+                                        <!-- end harta locatia masinii -->
                                     </div>
                                 </div>
                             </div>
@@ -76,20 +122,45 @@
                             <div class="card mb-4">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-12 col-md-3">
-                                            <div class="card-header d-flex justify-content-center">
-                                                <h6 class="card-title">Robert Johnson</h6>
-                                            </div>
-                                            <div class="card-body d-flex justify-content-center">
-                                                <div class="avatar">
-                                                    <img src="assets/images/custom-persons/2.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                        <div class="col-12 col-md-5">
+                                            <div class="card-body d-flex flex-column align-items-center">
+                                                <!-- poza sofer -->
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="avatar">
+                                                            <img src="assets/images/custom-persons/2.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column justify-content-center">
+                                                        <h6 class="card-title d-flex flex-column justify-content-center">Robert Johnson</h6>
+                                                    </div>
                                                 </div>
+                                                <!-- end poza sofer  -->
+                                                <!-- alte detalii -->
+                                                <div class="row">
+                                                    <div class="col-12 mt-3">
+                                                        <p class="mt-3">
+                                                            <span class="txt-info">Nr. identificare: </span> 35485632114587<br>
+                                                            <span class="txt-info">Stare: </span> <button class="btn btn-success btn-xs" type="button" title="" data-bs-original-title="btn btn-success btn-xs">In tranzit</button><br>
+                                                            <span class="txt-info">Contactul șoferului: </span> +40 746 728 732<br>
+                                                            <span class="txt-info">Încărcătura Curentă: </span>Echipamente industriale grele<br>
+                                                            <span class="txt-info">Data și Ora Plecării: </span>27 oct. 2023 - 20:30<br>
+                                                            <span class="txt-info">Destinația Curentă: </span>Budapesta, Ungaria<br><br>
+                                                            <span class="txt-info">Alerte și Notificări: </span><br>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column justify-content-center">
+
+                                                    </div>
+                                                </div>
+                                                <!-- end alte detalii -->
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-9">
-                                            <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=45.098346,23.332877&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                                        <div class="col-12 col-md-7">
+                                            <iframe width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=45.098346,23.332877&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -97,23 +168,49 @@
                             <div class="card mb-4">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-12 col-md-3">
-                                            <div class="card-header d-flex justify-content-center">
-                                                <h6 class="card-title">Michael Anderson</h6>
-                                            </div>
-                                            <div class="card-body d-flex justify-content-center">
-                                                <div class="avatar">
-                                                    <img src="assets/images/custom-persons/6.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                        <div class="col-12 col-md-5">
+                                            <div class="card-body d-flex flex-column align-items-center">
+                                                <!-- poza sofer -->
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="avatar">
+                                                            <img src="assets/images/custom-persons/6.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column justify-content-center">
+                                                        <h6 class="card-title d-flex flex-column justify-content-center">Michael Anderson</h6>
+                                                    </div>
                                                 </div>
+                                                <!-- end poza sofer  -->
+                                                <!-- alte detalii -->
+                                                <div class="row">
+                                                    <div class="col-12 mt-3">
+                                                        <p class="mt-3">
+                                                            <span class="txt-info">Nr. identificare: </span> 35485632114587<br>
+                                                            <span class="txt-info">Stare: </span> <button class="btn btn-success btn-xs" type="button" title="" data-bs-original-title="btn btn-success btn-xs">In tranzit</button><br>
+                                                            <span class="txt-info">Contactul șoferului: </span> +40 746 728 732<br>
+                                                            <span class="txt-info">Încărcătura Curentă: </span>Echipamente industriale grele<br>
+                                                            <span class="txt-info">Data și Ora Plecării: </span>27 oct. 2023 - 20:30<br>
+                                                            <span class="txt-info">Destinația Curentă: </span>Budapesta, Ungaria<br><br>
+                                                            <span class="txt-info">Alerte și Notificări: </span><br>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 d-flex flex-column justify-content-center">
+
+                                                    </div>
+                                                </div>
+                                                <!-- end alte detalii -->
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-9">
-                                            <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=46.975859,23.215396&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                                        <div class="col-12 col-md-7">
+                                            <iframe width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=46.975859,23.215396&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </section>
 
@@ -122,7 +219,7 @@
                         <div class="col-12 col-md-3">
                             <div class="card card-developer-meetup">
                                 <div class="meetup-img-wrapper rounded-top text-center">
-                                    <img src="/newServices/poze/Image1.png" class="mt-3" alt="Meeting Pic" height="170">
+                                    <img src="assets/images/Image1.png" class="mt-3" alt="Meeting Pic" height="170">
                                 </div>
                                 <div class="card-body">
                                     <div class="meetup-header d-flex flex-column align-items-left">
@@ -241,7 +338,7 @@
                         <div class="col-12 col-md-3">
                             <div class="card card-developer-meetup">
                                 <div class="meetup-img-wrapper rounded-top text-center">
-                                    <img src="/newServices/poze/shipping1.jpg" class="mt-3" alt="Meeting Pic" height="170">
+                                    <img src="assets/images/shipping1.jpg" class="mt-3" alt="Meeting Pic" height="170">
                                 </div>
                                 <div class="card-body">
                                     <div class="meetup-header d-flex flex-column align-items-left">
@@ -369,7 +466,7 @@
                         <div class="col-12 col-md-3">
                             <div class="card card-developer-meetup">
                                 <div class="meetup-img-wrapper rounded-top text-center">
-                                    <img src="/newServices/poze/Image1.png" class="mt-3" alt="Meeting Pic" height="170">
+                                    <img src="assets/images/Image1.png" class="mt-3" alt="Meeting Pic" height="170">
                                 </div>
                                 <div class="card-body">
                                     <div class="meetup-header d-flex flex-column align-items-left">
@@ -478,7 +575,7 @@
                         <div class="col-12 col-md-3">
                             <div class="card card-developer-meetup">
                                 <div class="meetup-img-wrapper rounded-top text-center">
-                                    <img src="/newServices/poze/shipping1.jpg" class="mt-3" alt="Meeting Pic" height="170">
+                                    <img src="assets/images/shipping1.jpg" class="mt-3" alt="Meeting Pic" height="170">
                                 </div>
                                 <div class="card-body">
                                     <div class="meetup-header d-flex flex-column align-items-left">
