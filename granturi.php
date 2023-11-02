@@ -145,7 +145,7 @@
             success: function(response) {
                 $('#data_1').html(response.data_publicare);
                 $('#data_2').html(response.data_raportare);
-                $('#data_3').html(response.data_raportare);
+                $('#data_3').html(response.data_finalizare);
                 $('#comentariu1').val(response.comentariu1);
                 $('#comentariu2').val(response.comentariu2);
                 $('#comentariu3').val(response.comentariu3);
