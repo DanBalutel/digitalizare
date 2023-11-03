@@ -29,7 +29,7 @@
                 <hr>
                 <div class="row mt-2">
                     <div class="col-md-6">
-                        <img id="myImage" class="img-fluid" src="">
+                        <img id="myImage1" class="img-fluid" src="">
                     </div>
                     <div class="col-md-6">
                         <div class="row">
