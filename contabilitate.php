@@ -65,12 +65,13 @@
 <script src="assets/js/animation/wow/wow.min.js"></script>
 <script src="assets/js/tooltip-init.js"></script>
 <script> 
-    const obiect = JSON.parse(window.localStorage.newDataObj);
+    
+    const cui = window.localStorage.getItem('cui');
     let imageURL;
-    fetch(`https://ai.aipro.ro/uploads/${obiect.CUI}_factura.png`, { method: 'HEAD' })
+    fetch(`https://ai.aipro.ro/uploads/${cui}_factura.png`, { method: 'HEAD' })
     .then(res => {
         if (res.ok) {
-            imageURL = "uploads/" + obiect.CUI + "_factura.png?timestamp="+ Math.random();
+            imageURL = "uploads/" + cui + "_factura.png?timestamp="+ Math.random();
             document.getElementById('myImage').src = imageURL;
         } else {
             imageURL = "uploads/factura.png?timestamp="+ Math.random();
