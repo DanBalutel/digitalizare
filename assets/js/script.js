@@ -36,8 +36,9 @@
     $(document).ready(function() {
         $('#fileInput').change(function(e){
             var formData = new FormData();
+            const cui = window.localStorage.getItem('cui');
             formData.append('file', e.target.files[0]);
-            formData.append('cui_file', $('#cui_file').val());
+            formData.append('cui_file', cui);
         
             $.ajax({
                 url: '/save-file.php',
