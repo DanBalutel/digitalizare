@@ -29,7 +29,7 @@
                 <hr>
                 <div class="row mt-2">
                     <div class="col-md-6">
-                        <img id="myImage1" class="img-fluid" src="">
+                        <img id="imgFactura" class="img-fluid" src="">
                     </div>
                     <div class="col-md-6">
                         <div class="row">
@@ -72,10 +72,10 @@
     .then(res => {
         if (res.ok) {
             imageURL = "uploads/" + cui + "_factura.png?timestamp="+ Math.random();
-            document.getElementById('myImage').src = imageURL;
+            document.getElementById('imgFactura').src = imageURL;
         } else {
             imageURL = "uploads/factura.png?timestamp="+ Math.random();
-            document.getElementById('myImage').src = imageURL;
+            document.getElementById('imgFactura').src = imageURL;
         }
     }).catch(err => console.log(''));
     document.getElementById('genereaza').addEventListener('click', function() {
