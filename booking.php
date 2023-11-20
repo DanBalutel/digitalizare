@@ -19,7 +19,7 @@
             <!-- Container-fluid starts-->
             <div class="container-fluid">
                 
-                <iframe src="https://www.booking.com/index.ro.html?label=gen173nr-1BCAEoggI46AdIM1gEaMABiAEBmAEguAEXyAEV2AEB6AEBiAIBqAIDuALK0O2qBsACAdICJGNiOGY3YjBmLWIyOTQtNDI5ZC1iNmFkLTE0YjZiYWJmZGRlZNgCBeACAQ&sid=aeca1262c3e2faa58590dfa72262f258&keep_landing=1&sb_price_type=total&" frameborder="0"></iframe>
+                <iframe style="width: 100%; height: 90rem" src="https://www.booking.com/index.ro.html?label=gen173nr-1BCAEoggI46AdIM1gEaMABiAEBmAEguAEXyAEV2AEB6AEBiAIBqAIDuALK0O2qBsACAdICJGNiOGY3YjBmLWIyOTQtNDI5ZC1iNmFkLTE0YjZiYWJmZGRlZNgCBeACAQ&sid=aeca1262c3e2faa58590dfa72262f258&keep_landing=1&sb_price_type=total&" frameborder="0"></iframe>
             </div>
 
         </div>
