@@ -165,7 +165,7 @@
                   </a>
                   <ul class="sidebar-submenu" style="display: none;">
                      <li><a href="erp.php">ERP</a></li>
-                     <li><a href=""><img src="assets/images/meniu/booking.png" height="20" alt=""></a></li>
+                     <li><a href="booking.php"><img src="assets/images/meniu/booking.png" height="20" alt=""></a></li>
                      <li><a href="calendar-basic.php">Calendar</a></li>
                      <li><a href="projects.php">Proiecte</a></li>
                      <li><a href="meetings.php">Intalniri/Evenimente</a></li>
