@@ -81,7 +81,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-6 d-flex flex-column justify-content-center">
-                                                        <h6 class="card-title d-flex flex-column justify-content-center">Daniel Martin</h6>
+                                                        <h6 class="card-title d-flex flex-column justify-content-center">Daniel Popescu</h6>
                                                     </div>
                                                 </div>
                                                 <!-- end poza sofer  -->
@@ -132,7 +132,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-6 d-flex flex-column justify-content-center">
-                                                        <h6 class="card-title d-flex flex-column justify-content-center">Robert Johnson</h6>
+                                                        <h6 class="card-title d-flex flex-column justify-content-center">Ion Radu</h6>
                                                     </div>
                                                 </div>
                                                 <!-- end poza sofer  -->
@@ -178,7 +178,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-6 d-flex flex-column justify-content-center">
-                                                        <h6 class="card-title d-flex flex-column justify-content-center">Michael Anderson</h6>
+                                                        <h6 class="card-title d-flex flex-column justify-content-center">Andrei Popescu</h6>
                                                     </div>
                                                 </div>
                                                 <!-- end poza sofer  -->
@@ -219,7 +219,7 @@
                         <div class="col-12 col-md-3">
                             <div class="card card-developer-meetup">
                                 <div class="meetup-img-wrapper rounded-top text-center">
-                                    <img src="assets/images/Image1.png" class="mt-3" alt="Meeting Pic" height="170">
+                                    <img src="https://comyspedition.ro/renault.png" class="mt-3" alt="Meeting Pic" height="170">
                                 </div>
                                 <div class="card-body">
                                     <div class="meetup-header d-flex flex-column align-items-left">
@@ -338,7 +338,7 @@
                         <div class="col-12 col-md-3">
                             <div class="card card-developer-meetup">
                                 <div class="meetup-img-wrapper rounded-top text-center">
-                                    <img src="assets/images/shipping1.jpg" class="mt-3" alt="Meeting Pic" height="170">
+                                    <img src="https://comyspedition.ro/mercedes.png" class="mt-3" alt="Meeting Pic" height="170">
                                 </div>
                                 <div class="card-body">
                                     <div class="meetup-header d-flex flex-column align-items-left">
@@ -466,7 +466,7 @@
                         <div class="col-12 col-md-3">
                             <div class="card card-developer-meetup">
                                 <div class="meetup-img-wrapper rounded-top text-center">
-                                    <img src="assets/images/Image1.png" class="mt-3" alt="Meeting Pic" height="170">
+                                    <img src="https://comyspedition.ro/w.png" class="mt-3" alt="Meeting Pic" height="170">
                                 </div>
                                 <div class="card-body">
                                     <div class="meetup-header d-flex flex-column align-items-left">
@@ -575,7 +575,7 @@
                         <div class="col-12 col-md-3">
                             <div class="card card-developer-meetup">
                                 <div class="meetup-img-wrapper rounded-top text-center">
-                                    <img src="assets/images/shipping1.jpg" class="mt-3" alt="Meeting Pic" height="170">
+                                    <img src="https://comyspedition.ro/renault.png" class="mt-3" alt="Meeting Pic" height="170">
                                 </div>
                                 <div class="card-body">
                                     <div class="meetup-header d-flex flex-column align-items-left">
