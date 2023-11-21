@@ -1,6 +1,16 @@
 const askGpt = document.getElementById('askGPT');
 const chatBox = document.getElementById('chatBox');
+const incercari = document.getElementById('incercari');
+const img_generate = document.getElementById('img_generate');
+try {
+    
+    const response = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
+    console.log(response.json())
 
+    return await response.text();
+} catch (error) {
+    console.error('Request failed:', error);
+}
 // Load chat history from localStorage
 if (localStorage.chatMoni) {
     chatBox.innerHTML = localStorage.chatMoni;
@@ -39,7 +49,6 @@ async function makeApiRequest(url, method, headers, body = null) {
 // Function to handle API responses
 async function handleApiResponse(question, isImage = false) {
     const cui = window.localStorage.getItem('cui')
-    console.log(cui)
     const apiURL = isImage ? `https://punctaj.ro/api/image/${question}/${cui}` : 'https://ai.aipro.ro/proxy.php?path=gpt';
     const method = isImage ? 'GET' : 'POST';
     const headers = { 'Content-Type': 'application/json' };
