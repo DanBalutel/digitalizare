@@ -95,7 +95,7 @@ function addMessage(msgLoc, msgText) {
         msgChild.innerHTML = `
             <div id="chat-feed" class="message my-message">
                 <img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
-                <div class="message-data" style="cursor:pointer;" >${msgText}</div> 
+                <div class="message-data">${msgText}</div> 
             </div>
         `;
     }
