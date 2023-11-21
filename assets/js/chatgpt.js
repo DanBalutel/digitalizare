@@ -1,223 +1,143 @@
-// elements
+// Elements
 const askGpt = document.getElementById('askGPT');
 const chatBox = document.getElementById('chatBox');
 
-
+// Load chat history from localStorage
 if (localStorage.chatMoni) {
-    d.element('chatBox').innerHTML = localStorage.chatMoni
+    chatBox.innerHTML = localStorage.chatMoni;
 } else {
-    localStorage.setItem('chatMoni', d.element('chatBox').innerHTML);
+    localStorage.setItem('chatMoni', chatBox.innerHTML);
 }
 
+// Helper function to make API requests
+async function makeApiRequest(url, method, headers, body) {
+    try {
+        const response = await fetch(url, {
+            method: method,
+            headers: headers,
+            body: JSON.stringify(body),
+            cors: 'no-cors'
+        });
 
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
 
-// functions
-
-// acces API with question
-function renderAnswer2(question) {
-
-    fetch('https://ai.aipro.ro/proxy.php?path=gpt', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            "question": question
-          }),
-        cors: 'no-cors'
-
-
-    })
-        // SERVER RESPONSE
-        .then((result) => {
-            if (result.status != 200) { throw new Error("Bad Server Response"); }
-            console.log(result.body);
-            return result.text();
-        })
-        .then((response) => {
-            // ansText = JSON.parse(response);
-            ansText = response;
-            console.log(response);
-
-            // all html rendering goes here
-            removeLoading();
-            if (!localStorage.conversationId) {
-                localStorage.setItem("conversationId", ansText.conversationId);
-                localStorage.setItem("messageId", ansText.messageId);
-            } else {
-                localStorage.setItem("messageId", ansText.messageId);
-            }
-            addMessage('left', ansText)
-            chatBox.scrollTop = chatBox.scrollHeight;
-
-
-        })
-        .catch(error => console.log(error));
-}
-function renderimage(promt) {
-
-    fetch('https://punctaj.ro/api/image/' + promt, {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        cors: 'no-cors'
-
-
-    })
-        // SERVER RESPONSE
-        .then((result) => {
-            if (result.status != 200) { throw new Error("Bad Server Response"); }
-            console.log(result.body);
-            return result.text();
-        })
-        .then((response) => {
-            // ansText = JSON.parse(response);
-            console.log(response)
-            ansText = response;
-            console.log(response);
-
-            // all html rendering goes here
-            removeLoading();
-            // if (!localStorage.conversationId) {
-            //     localStorage.setItem("conversationId", ansText.conversationId);
-            //     localStorage.setItem("messageId", ansText.messageId);
-            // } else {
-            //     localStorage.setItem("messageId", ansText.messageId);
-            // }
-            addMessage('left', ansText)
-            chatBox.scrollTop = chatBox.scrollHeight;
-
-
-        })
-        .catch(error => console.log(error));
+        return await response.text();
+    } catch (error) {
+        console.error('Request failed:', error);
+        removeLoading();
+    }
 }
 
+// Function to handle API responses
+async function handleApiResponse(question, isImage = false) {
+    const apiURL = isImage ? `https://punctaj.ro/api/image/${question}` : 'https://ai.aipro.ro/proxy.php?path=gpt';
+    const method = isImage ? 'GET' : 'POST';
+    const headers = { 'Content-Type': 'application/json' };
+    const body = isImage ? null : { "question": question };
+
+    const response = await makeApiRequest(apiURL, method, headers, body);
+
+    if (response) {
+        const ansText = response; // Assuming response is the text to be displayed
+        removeLoading();
+        addMessage('left', ansText);
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+}
+
+// Add loading animation
 function addLoading() {
     const loadingChild = document.createElement('div');
     loadingChild.classList = 'chat-content-leftside';
-    loadingChild.id = 'loading-child'
+    loadingChild.id = 'loading-child';
     loadingChild.innerHTML = `
-    <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
-    <div class="message-data text-end"></div>Se genereaza raspunsul <img src="https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif" width="80"></div>
+        <div id="chat-feed" class="message my-message">
+            <img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
+            <div class="message-data text-end">Se genereaza raspunsul 
+                <img src="https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif" width="80">
+            </div>
+        </div>
     `;
     chatBox.appendChild(loadingChild);
     askGpt.value = '';
     loadingChild.scrollTop = loadingChild.scrollHeight;
-    renderLoadingModal('<strong>Se încarcă datele</strong>, va rugam așteptați 😌🙏🏼.');
-};
-
-// remove answer loading animation
-function removeLoading() {
-    const loadingChild = document.getElementById('loading-child');
-    loadingChild.remove()
-    removeLoadingModal();
-
 }
 
-// add message in chat
+// Remove loading animation
+function removeLoading() {
+    const loadingChild = document.getElementById('loading-child');
+    if (loadingChild) {
+        loadingChild.remove();
+    }
+}
+
+// Add message to chat
 function addMessage(msgLoc, msgText) {
     const msgChild = document.createElement('li');
     msgChild.classList = "clearfix";
 
     if (msgLoc === 'right') {
         msgChild.innerHTML = `
-            <div id="chat-feed" class="message other-message pull-right"><img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
-                <div class="message-data" style="max-width: 100%">${msgText}
+            <div id="chat-feed" class="message other-message pull-right">
+                <img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
+                <div class="message-data">${msgText}</div>
             </div>
         `;
-        localStorage.setItem('chatMoni', d.element('chatBox').innerHTML + msgChild.innerHTML);
     } else {
         msgChild.innerHTML = `
-        <div id="chat-feed" class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
-        <div class="message-data" style="cursor:pointer; max-width: 100%" title="Copiaza" id="text" onclick="copyElementText(this.innerHTML)">${msgText}</div>
+            <div id="chat-feed" class="message my-message">
+                <img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
+                <div class="message-data" style="cursor:pointer;" title="Copiaza" onclick="copyElementText(this.innerText)">${msgText}</div>
+            </div>
         `;
-        localStorage.setItem('chatMoni', d.element('chatBox').innerHTML + msgChild.innerHTML);
     }
     chatBox.appendChild(msgChild);
-};
+    localStorage.setItem('chatMoni', chatBox.innerHTML);
+}
 
-// copy message code to clipboard and clear it from html tags
 function copyElementText(content) {
     const elem = document.createElement("textarea");
     document.body.appendChild(elem);
-
-    // Remove HTML tags from content if present
-    const strippedContent = content.replace(/<[^>]+>/g, '');
-
-    elem.value = strippedContent;
+    elem.value = content;
     elem.select();
     document.execCommand("copy");
     document.body.removeChild(elem);
-
-    Swal.fire({
-        icon: 'success',
-        title: 'Succes!',
-        text: 'Textul a fost copiat!'
-    });
+    alert('Textul a fost copiat!');
 }
 
-
-// run when user press enter on chat input box
 askGpt.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-        renderAnswer2(askGpt.value);
-        addMessage('right', askGpt.value)
+        handleApiResponse(askGpt.value);
+        addMessage('right', askGpt.value);
         addLoading();
     }
 });
 
-// clear chat history
 function clearChatHistory() {
-    localStorage.removeItem('chatMoni')
-    localStorage.removeItem('conversationId')
-    location.reload();
+    localStorage.removeItem('chatMoni');
+    localStorage.removeItem('conversationId');
+    window.location.reload();
 }
 
 document.getElementById('trimite').addEventListener("click", function () {
-    renderAnswer2(askGpt.value);
-    addMessage('right', askGpt.value)
+    handleApiResponse(askGpt.value);
+    addMessage('right', askGpt.value);
     addLoading();
-})
-document.getElementById('img_generate').addEventListener("click", function () {
-    renderimage(askGpt.value);
-    addMessage('right', askGpt.value)
-    addLoading();
-})
+});
 
-const aiQuestion1 = document.getElementById('ai-question-1');
-aiQuestion1.addEventListener('click', function () {
-    renderAnswer2(aiQuestion1.innerHTML);
-    addMessage('right', askGpt.innerHTML)
+document.getElementById('img_generate').addEventListener("click", function () {
+    handleApiResponse(askGpt.value, true);
+    addMessage('right', askGpt.value);
     addLoading();
-})
-const aiQuestion2 = document.getElementById('ai-question-2');
-aiQuestion2.addEventListener('click', function () {
-    renderAnswer2(aiQuestion2.innerHTML);
-    addMessage('right', askGpt.innerHTML)
-    addLoading();
-})
-const aiQuestion3 = document.getElementById('ai-question-3');
-aiQuestion3.addEventListener('click', function () {
-    renderAnswer2(aiQuestion3.innerHTML);
-    addMessage('right', askGpt.innerHTML)
-    addLoading();
-})
-const aiQuestion4 = document.getElementById('ai-question-4');
-aiQuestion4.addEventListener('click', function () {
-    renderAnswer2(aiQuestion4.innerHTML);
-    addMessage('right', askGpt.innerHTML)
-    addLoading();
-})
-const aiQuestion5 = document.getElementById('ai-question-5');
-aiQuestion5.addEventListener('click', function () {
-    renderAnswer2(aiQuestion5.innerHTML);
-    addMessage('right', askGpt.innerHTML)
-    addLoading();
-})
-const aiQuestion6 = document.getElementById('ai-question-6');
-aiQuestion6.addEventListener('click', function () {
-    renderAnswer2(aiQuestion6.innerHTML);
-    addMessage('right', askGpt.innerHTML)
-    addLoading();
-})
+});
+
+const aiQuestions = document.querySelectorAll('[id^="ai-question-"]');
+aiQuestions.forEach(question => {
+    question.addEventListener('click', function () {
+        handleApiResponse(question.innerText);
+        addMessage('right', question.innerText);
+        addLoading();
+    });
+});
