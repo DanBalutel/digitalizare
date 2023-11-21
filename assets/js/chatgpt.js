@@ -78,7 +78,6 @@ async function handleApiResponse(question, isImage = false) {
         askGpt.disabled = false;
         document.getElementById('img_generate').disabled = false;
         document.getElementById('trimite').disabled = false;
-        chatBox.scrollTop = chatBox.scrollHeight;
     }
 }
 
@@ -129,9 +128,10 @@ function addMessage(msgLoc, msgText) {
     }
 
     chatBox.appendChild(msgChild);
-    // Scroll the chatBox to the bottom to show the latest message
-    chatBox.scrollTop = chatBox.scrollHeight;
     localStorage.setItem('chatMoni', chatBox.innerHTML);
+    setTimeout(() => {
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }, 0);
 }
 
 //onclick="copyElementText(this.innerText)"
