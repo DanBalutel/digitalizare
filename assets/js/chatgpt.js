@@ -44,8 +44,8 @@ async function handleApiResponse(question, isImage = false) {
     const body = isImage ? null : { "question": question };
 
     if(isImage) {
-        const response = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
-        const attempts = await response.text(); // Get the text from the response
+        const response2 = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
+        const attempts = await response2.text(); // Get the text from the response
 
         incercari.innerText = `(${2 - attempts} incercari)`; // Update the text
 
