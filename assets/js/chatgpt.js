@@ -28,9 +28,6 @@ async function makeApiRequest(url, method, headers, body = null) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         if (method !== 'GET') {
-            askGpt.disabled = false;
-            document.getElementById('img_generate').disabled = false;
-            document.getElementById('trimite').disabled = false;
             const result = await response.json()
             lastMessage = result.data; 
             return result.data;
@@ -77,6 +74,9 @@ async function handleApiResponse(question, isImage = false) {
         const ansText = response; 
         removeLoading();
         addMessage('left', ansText);
+        askGpt.disabled = false;
+        document.getElementById('img_generate').disabled = false;
+        document.getElementById('trimite').disabled = false;
         chatBox.scrollTop = chatBox.scrollHeight;
     }
 }
