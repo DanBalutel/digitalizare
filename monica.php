@@ -207,6 +207,24 @@ header("Access-Control-Allow-Origin: *");
     setMaxHeight(monyIds1);
     setMaxHeight(monyIds2);
   });
+
+  const incercari = document.getElementById('incercari');
+  const img_generate = document.getElementById('img_generate');
+  try {
+      
+      const response = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
+      console.log(response.json())
+
+      return await response.text();
+  } catch (error) {
+      console.error('Request failed:', error);
+  }
+  // Load chat history from localStorage
+  if (localStorage.chatMoni) {
+      chatBox.innerHTML = localStorage.chatMoni;
+  } else {
+      localStorage.setItem('chatMoni', chatBox.innerHTML);
+  }
 </script>
 <script src="https://www.youtube.com/iframe_api"></script>
 <script src="assets/js/moniSteps.js"></script>
