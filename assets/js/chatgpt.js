@@ -129,6 +129,7 @@ function addMessage(msgLoc, msgText) {
         `;
     }
     chatBox.appendChild(msgChild);
+    msgChild.scrollTop = msgChild.scrollHeight;
     localStorage.setItem('chatMoni', chatBox.innerHTML);
 }
 //onclick="copyElementText(this.innerText)"
