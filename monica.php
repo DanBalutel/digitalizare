@@ -182,7 +182,7 @@ async function checkIncercari() {
         const response = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
         const attempts = await response.text(); // Get the text from the response
 
-        incercari.innerText = `(${attempts} incercari)`; // Update the text
+        incercari.innerText = `(${2 - attempts} incercari)`; // Update the text
 
         if (parseInt(attempts) === 0) {
             img_generate.disabled = true; // Disable the button if attempts are 0
