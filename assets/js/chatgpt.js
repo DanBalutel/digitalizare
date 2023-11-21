@@ -44,7 +44,7 @@ async function handleApiResponse(question, isImage = false) {
         const response2 = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
         const attempts = await response2.text(); // Get the text from the response
 
-        incercari.innerText = `(${2 - attempts} incercari)`; // Update the text
+        incercari.innerText = `(${1 - attempts} incercari)`; // Update the text
 
         if (parseInt(attempts) === 2) {
             img_generate.disabled = true; // Disable the button if attempts are 0
