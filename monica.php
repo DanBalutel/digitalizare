@@ -173,7 +173,7 @@ header("Access-Control-Allow-Origin: *");
 <?php include('partial/scripts.php') ?>
 
 <script>
-function checkIncercari(){
+async function checkIncercari(){
   const incercari = document.getElementById('incercari');
   const img_generate = document.getElementById('img_generate');
   try {
