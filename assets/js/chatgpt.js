@@ -114,7 +114,11 @@ function copyElementText(content) {
     elem.select();
     document.execCommand("copy");
     document.body.removeChild(elem);
-    alert('Textul a fost copiat!');
+    Swal.fire({
+        icon: 'success',
+        title: 'Succes!',
+        text: 'Textul a fost copiat!'
+    });
 }
 
 askGpt.addEventListener('keypress', function (e) {
