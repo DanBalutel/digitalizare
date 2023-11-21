@@ -28,9 +28,9 @@ async function makeApiRequest(url, method, headers, body = null) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         if (method !== 'GET') {
-            askGpt.disabled = true;
-            document.getElementById('img_generate').disabled = true;
-            document.getElementById('trimite').disabled = true;
+            askGpt.disabled = false;
+            document.getElementById('img_generate').disabled = false;
+            document.getElementById('trimite').disabled = false;
             const result = await response.json()
             lastMessage = result.data; 
             return result.data;
