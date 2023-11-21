@@ -38,23 +38,24 @@ async function makeApiRequest(url, method, headers, body = null) {
 // Function to handle API responses
 async function handleApiResponse(question, isImage = false) {
     const cui = window.localStorage.getItem('cui')
-    const apiURL = isImage ? `https://punctaj.ro/api/image/${question}/${cui}` : 'https://ai.aipro.ro/proxy.php?path=gpt';
-    const method = isImage ? 'GET' : 'POST';
-    const headers = { 'Content-Type': 'application/json' };
-    const body = isImage ? null : { "question": question };
-
     if(isImage) {
         const incercari = document.getElementById('incercari');
         const img_generate = document.getElementById('img_generate');
         const response2 = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
         const attempts = await response2.text(); // Get the text from the response
 
-        incercari.innerText = `(${2 - attempts} incercari)`; // Update the text
+        incercari.innerText = `(${1 - attempts} incercari)`; // Update the text
 
         if (parseInt(attempts) === 2) {
             img_generate.disabled = true; // Disable the button if attempts are 0
         }
     }
+    const apiURL = isImage ? `https://punctaj.ro/api/image/${question}/${cui}` : 'https://ai.aipro.ro/proxy.php?path=gpt';
+    const method = isImage ? 'GET' : 'POST';
+    const headers = { 'Content-Type': 'application/json' };
+    const body = isImage ? null : { "question": question };
+
+  
     const response = await makeApiRequest(apiURL, method, headers, body);
 
     if (response) {
