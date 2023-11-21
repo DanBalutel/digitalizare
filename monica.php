@@ -173,30 +173,28 @@ header("Access-Control-Allow-Origin: *");
 <?php include('partial/scripts.php') ?>
 
 <script>
-async function checkIncercari(){
-  const incercari = document.getElementById('incercari');
-  const img_generate = document.getElementById('img_generate');
-  try {
-      
-    const cui = window.localStorage.getItem('cui')
-    console.log('test')
-      const response = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
-      console.log(response)
-      console.log(response.json())
+async function checkIncercari() {
+    const incercari = document.getElementById('incercari');
+    const img_generate = document.getElementById('img_generate');
 
-      return await response.text();
-  } catch (error) {
-      console.error('Request failed:', error);
-  }
-  // Load chat history from localStorage
-  if (localStorage.chatMoni) {
-      chatBox.innerHTML = localStorage.chatMoni;
-  } else {
-      localStorage.setItem('chatMoni', chatBox.innerHTML);
-  }
+    try {
+        const cui = window.localStorage.getItem('cui');
+        const response = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
+        const attempts = await response.text(); // Get the text from the response
+
+        incercari.innerText = attempts; // Update the text
+
+        if (parseInt(attempts) === 0) {
+            img_generate.disabled = true; // Disable the button if attempts are 0
+        }
+    } catch (error) {
+        console.error('Request failed:', error);
+    }
 }
+
 checkIncercari();
 </script>
+
 <script>
   // define Moni steps fideo ID
   const moniVideoSteps = 'iqHC5eQIH7k';

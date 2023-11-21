@@ -1,6 +1,11 @@
 const askGpt = document.getElementById('askGPT');
 const chatBox = document.getElementById('chatBox');
-
+ // Load chat history from localStorage
+ if (localStorage.chatMoni) {
+    chatBox.innerHTML = localStorage.chatMoni;
+} else {
+    localStorage.setItem('chatMoni', chatBox.innerHTML);
+}
 
 // Helper function to make API requests
 async function makeApiRequest(url, method, headers, body = null) {
