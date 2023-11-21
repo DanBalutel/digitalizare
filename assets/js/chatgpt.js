@@ -108,30 +108,32 @@ function removeLoading() {
     }
 }
 
-// Add message to chat
 function addMessage(msgLoc, msgText) {
     const msgChild = document.createElement('li');
     msgChild.classList = "clearfix";
 
     if (msgLoc === 'right') {
         msgChild.innerHTML = `
-            <div id="chat-feed" class="message other-message pull-right">
+            <div class="message other-message pull-right">
                 <img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
                 <div class="message-data">${msgText}</div>
             </div>
         `;
     } else {
         msgChild.innerHTML = `
-            <div id="chat-feed" class="message my-message">
+            <div class="message my-message">
                 <img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
                 <div class="message-data">${msgText}</div> 
             </div>
         `;
     }
+
     chatBox.appendChild(msgChild);
-    msgChild.scrollTop = msgChild.scrollHeight;
+    // Scroll the chatBox to the bottom to show the latest message
+    chatBox.scrollTop = chatBox.scrollHeight;
     localStorage.setItem('chatMoni', chatBox.innerHTML);
 }
+
 //onclick="copyElementText(this.innerText)"
 function copyElementText(content) {
     if (content.includes('img')) {
