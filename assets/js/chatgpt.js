@@ -50,10 +50,10 @@ async function handleApiResponse(question, isImage = false) {
             img_generate.disabled = true; // Disable the button if attempts are 0
         }
     }
-    const apiURL = isImage ? `https://punctaj.ro/api/image/${question}/${cui}` : 'https://ai.aipro.ro/proxy.php?path=gpt';
+    const apiURL = isImage ? `https://punctaj.ro/api/image/${question}/${cui}` : 'https://punctaj.ro/api/chat';
     const method = isImage ? 'GET' : 'POST';
     const headers = { 'Content-Type': 'application/json' };
-    const body = isImage ? null : { "question": question };
+    const body = isImage ? null : { "userMessage": question };
 
   
     const response = await makeApiRequest(apiURL, method, headers, body);
