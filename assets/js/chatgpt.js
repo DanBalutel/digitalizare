@@ -41,12 +41,12 @@ function renderAnswer2(question) {
 
             // all html rendering goes here
             removeLoading();
-            // if (!localStorage.conversationId) {
-            //     localStorage.setItem("conversationId", ansText.conversationId);
-            //     localStorage.setItem("messageId", ansText.messageId);
-            // } else {
-            //     localStorage.setItem("messageId", ansText.messageId);
-            // }
+            if (!localStorage.conversationId) {
+                localStorage.setItem("conversationId", ansText.conversationId);
+                localStorage.setItem("messageId", ansText.messageId);
+            } else {
+                localStorage.setItem("messageId", ansText.messageId);
+            }
             addMessage('left', ansText)
             chatBox.scrollTop = chatBox.scrollHeight;
 
@@ -188,36 +188,36 @@ document.getElementById('img_generate').addEventListener("click", function () {
 const aiQuestion1 = document.getElementById('ai-question-1');
 aiQuestion1.addEventListener('click', function () {
     renderAnswer2(aiQuestion1.innerHTML);
-    addMessage('right', aiQuestion1.innerHTML)
+    addMessage('right', askGpt.innerHTML)
     addLoading();
 })
 const aiQuestion2 = document.getElementById('ai-question-2');
 aiQuestion2.addEventListener('click', function () {
     renderAnswer2(aiQuestion2.innerHTML);
-    addMessage('right', aiQuestion2.innerHTML)
+    addMessage('right', askGpt.innerHTML)
     addLoading();
 })
 const aiQuestion3 = document.getElementById('ai-question-3');
 aiQuestion3.addEventListener('click', function () {
     renderAnswer2(aiQuestion3.innerHTML);
-    addMessage('right', aiQuestion3.innerHTML)
+    addMessage('right', askGpt.innerHTML)
     addLoading();
 })
 const aiQuestion4 = document.getElementById('ai-question-4');
 aiQuestion4.addEventListener('click', function () {
     renderAnswer2(aiQuestion4.innerHTML);
-    addMessage('right', aiQuestion4.innerHTML)
+    addMessage('right', askGpt.innerHTML)
     addLoading();
 })
 const aiQuestion5 = document.getElementById('ai-question-5');
 aiQuestion5.addEventListener('click', function () {
     renderAnswer2(aiQuestion5.innerHTML);
-    addMessage('right', aiQuestion5.innerHTML)
+    addMessage('right', askGpt.innerHTML)
     addLoading();
 })
 const aiQuestion6 = document.getElementById('ai-question-6');
 aiQuestion6.addEventListener('click', function () {
     renderAnswer2(aiQuestion6.innerHTML);
-    addMessage('right', aiQuestion6.innerHTML)
+    addMessage('right', askGpt.innerHTML)
     addLoading();
 })
