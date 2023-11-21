@@ -31,7 +31,7 @@ header("Access-Control-Allow-Origin: *");
                   <!-- Chat right side start-->
                   <div class="col pe-0 chat-right-aside">
                     <!-- chat start-->
-                    <div class="chat">
+                    <div class="chat" style="min-height: 80vh">
                       <!-- chat-header start-->
                       <div class="chat-header clearfix"><img class="rounded-circle" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
                         <div class="about">
@@ -126,7 +126,7 @@ header("Access-Control-Allow-Origin: *");
         </div>
       </div>
 
-      <div class="container-fluid">
+      <!-- <div class="container-fluid">
         <div class="row">
           <div class="col-md-4">
             <img class="center" style="max-width: 350px;" src="assets/images/iphone1.png" alt="">
@@ -140,7 +140,7 @@ header("Access-Control-Allow-Origin: *");
           </div>
         </div>
 
-      </div>
+      </div> -->
 
       <!-- Modal loading-->
       <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true" role="dialog">
