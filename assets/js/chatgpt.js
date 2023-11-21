@@ -27,7 +27,7 @@ async function makeApiRequest(url, method, headers, body = null) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
 
-        return await response.response;
+        return await response.text();
     } catch (error) {
         console.error('Request failed:', error);
         removeLoading();
