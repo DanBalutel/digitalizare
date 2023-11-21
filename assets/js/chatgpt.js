@@ -9,14 +9,20 @@ if (localStorage.chatMoni) {
 }
 
 // Helper function to make API requests
-async function makeApiRequest(url, method, headers, body) {
+async function makeApiRequest(url, method, headers, body = null) {
     try {
-        const response = await fetch(url, {
+        const fetchOptions = {
             method: method,
             headers: headers,
-            body: JSON.stringify(body),
             cors: 'no-cors'
-        });
+        };
+
+        // Only add body for methods other than GET
+        if (method !== 'GET' && body) {
+            fetchOptions.body = JSON.stringify(body);
+        }
+
+        const response = await fetch(url, fetchOptions);
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -28,6 +34,7 @@ async function makeApiRequest(url, method, headers, body) {
         removeLoading();
     }
 }
+
 
 // Function to handle API responses
 async function handleApiResponse(question, isImage = false) {
