@@ -82,7 +82,7 @@ header("Access-Control-Allow-Origin: *");
             <a style="cursor: pointer;">
               <div class="card" style="min-height: 4rem;">
                 <div id="ai-question-1" class="card-body p-3">
-                  Enumeră 10 avantaje pentru folosirea unui CRM.
+                  Enumeră 5 avantaje pentru folosirea unui CRM.
                 </div>
               </div>
             </a>
@@ -91,7 +91,7 @@ header("Access-Control-Allow-Origin: *");
             <a style="cursor: pointer;">
               <div class="card" style="min-height: 4rem;">
                 <div id="ai-question-2" class="card-body p-3">
-                  Enumeră 10 avantaje pentru folosirea unui ERP.
+                  Enumeră 5 avantaje pentru folosirea unui ERP.
                 </div>
               </div>
             </a>
