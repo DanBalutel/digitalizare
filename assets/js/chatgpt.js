@@ -38,7 +38,8 @@ async function makeApiRequest(url, method, headers, body = null) {
 
 // Function to handle API responses
 async function handleApiResponse(question, isImage = false) {
-    const apiURL = isImage ? `https://punctaj.ro/api/image/${question}` : 'https://ai.aipro.ro/proxy.php?path=gpt';
+    const cui = window.localStorage.getItem('cui')
+    const apiURL = isImage ? `https://punctaj.ro/api/image/${question}/${cui}` : 'https://ai.aipro.ro/proxy.php?path=gpt';
     const method = isImage ? 'GET' : 'POST';
     const headers = { 'Content-Type': 'application/json' };
     const body = isImage ? null : { "question": question };
@@ -46,7 +47,7 @@ async function handleApiResponse(question, isImage = false) {
     const response = await makeApiRequest(apiURL, method, headers, body);
 
     if (response) {
-        const ansText = response; // Assuming response is the text to be displayed
+        const ansText = response; 
         removeLoading();
         addMessage('left', ansText);
         chatBox.scrollTop = chatBox.scrollHeight;
