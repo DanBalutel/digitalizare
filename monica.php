@@ -178,6 +178,7 @@ async function checkIncercari(){
   const img_generate = document.getElementById('img_generate');
   try {
       
+    const cui = window.localStorage.getItem('cui')
     console.log('test')
       const response = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
       console.log(response)
