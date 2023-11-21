@@ -44,6 +44,8 @@ async function handleApiResponse(question, isImage = false) {
     const body = isImage ? null : { "question": question };
 
     if(isImage) {
+        const incercari = document.getElementById('incercari');
+        const img_generate = document.getElementById('img_generate');
         const response2 = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
         const attempts = await response2.text(); // Get the text from the response
 
