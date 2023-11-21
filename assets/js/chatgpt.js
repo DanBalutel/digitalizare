@@ -43,6 +43,16 @@ async function handleApiResponse(question, isImage = false) {
     const headers = { 'Content-Type': 'application/json' };
     const body = isImage ? null : { "question": question };
 
+    if(isImage) {
+        const response = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
+        const attempts = await response.text(); // Get the text from the response
+
+        incercari.innerText = `(${2 - attempts} incercari)`; // Update the text
+
+        if (parseInt(attempts) === 2) {
+            img_generate.disabled = true; // Disable the button if attempts are 0
+        }
+    }
     const response = await makeApiRequest(apiURL, method, headers, body);
 
     if (response) {
