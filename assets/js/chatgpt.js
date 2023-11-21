@@ -28,6 +28,9 @@ async function makeApiRequest(url, method, headers, body = null) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         if (method !== 'GET') {
+            askGpt.disabled = true;
+            document.getElementById('img_generate').disabled = true;
+            document.getElementById('trimite').disabled = true;
             const result = await response.json()
             lastMessage = result.data; 
             return result.data;
@@ -64,8 +67,12 @@ async function handleApiResponse(question, isImage = false) {
     const body = isImage ? null : { "userMessage": question, "last": lastMessage  };
 
   
+
     const response = await makeApiRequest(apiURL, method, headers, body);
 
+    askGpt.disabled = true;
+    document.getElementById('img_generate').disabled = true;
+    document.getElementById('trimite').disabled = true;
     if (response) {
         const ansText = response; 
         removeLoading();
