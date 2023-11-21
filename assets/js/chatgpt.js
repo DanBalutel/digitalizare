@@ -95,14 +95,14 @@ function addMessage(msgLoc, msgText) {
         msgChild.innerHTML = `
             <div id="chat-feed" class="message my-message">
                 <img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
-                <div class="message-data" style="cursor:pointer;" title="Copiaza" onclick="copyElementText(this.innerText)">${msgText}</div>
+                <div class="message-data" style="cursor:pointer;" >${msgText}</div> 
             </div>
         `;
     }
     chatBox.appendChild(msgChild);
     localStorage.setItem('chatMoni', chatBox.innerHTML);
 }
-
+//onclick="copyElementText(this.innerText)"
 function copyElementText(content) {
     if (content.includes('img')) {
         return;
