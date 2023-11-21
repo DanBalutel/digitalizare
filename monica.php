@@ -213,6 +213,7 @@ header("Access-Control-Allow-Origin: *");
   try {
       
       const response = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
+      console.log(response)
       console.log(response.json())
 
       return await response.text();
