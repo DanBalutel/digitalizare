@@ -1,4 +1,3 @@
-// Elements
 const askGpt = document.getElementById('askGPT');
 const chatBox = document.getElementById('chatBox');
 
@@ -134,8 +133,8 @@ document.getElementById('img_generate').addEventListener("click", function () {
 });
 
 const aiQuestions = document.querySelectorAll('[id^="ai-question-"]');
-console.log(aiQuestions)
 aiQuestions.forEach(question => {
+    console.log(question)
     question.addEventListener('click', function () {
         handleApiResponse(question.innerText);
         addMessage('right', question.innerText);

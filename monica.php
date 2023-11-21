@@ -102,7 +102,7 @@ header("Access-Control-Allow-Origin: *");
                 <div id="ai-question-3" class="card-body p-3">
                   Scrie un email de informare către clienții mei să îi notifici că în luna aceasta oferim un discount de 10%.
                 </div>
-              </div>
+              </div> 
             </a>
           </div>
           <div class="col-md-4">
