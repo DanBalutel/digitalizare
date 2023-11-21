@@ -39,6 +39,7 @@ async function makeApiRequest(url, method, headers, body = null) {
 // Function to handle API responses
 async function handleApiResponse(question, isImage = false) {
     const cui = window.localStorage.getItem('cui')
+    console.log(cui)
     const apiURL = isImage ? `https://punctaj.ro/api/image/${question}/${cui}` : 'https://ai.aipro.ro/proxy.php?path=gpt';
     const method = isImage ? 'GET' : 'POST';
     const headers = { 'Content-Type': 'application/json' };
