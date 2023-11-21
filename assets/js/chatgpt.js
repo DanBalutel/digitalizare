@@ -104,7 +104,7 @@ function addMessage(msgLoc, msgText) {
 }
 
 function copyElementText(content) {
-    if (content.includes('<img')) {
+    if (content.includes('img')) {
         return;
     }
 
