@@ -64,12 +64,13 @@ async function handleApiResponse(question, isImage = false) {
     const body = isImage ? null : { "userMessage": question, "last": lastMessage  };
 
   
-
-    const response = await makeApiRequest(apiURL, method, headers, body);
-
     askGpt.disabled = true;
     document.getElementById('img_generate').disabled = true;
     document.getElementById('trimite').disabled = true;
+
+    const response = await makeApiRequest(apiURL, method, headers, body);
+
+
     if (response) {
         const ansText = response; 
         removeLoading();
