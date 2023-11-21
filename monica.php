@@ -82,7 +82,7 @@ header("Access-Control-Allow-Origin: *");
             <a style="cursor: pointer;">
               <div class="card" style="min-height: 4rem;">
                 <div id="ai-question-1" class="card-body p-3">
-                  Enumeră 5 avantaje pentru folosirea unui CRM.
+                  Enumeră 3 avantaje pentru folosirea unui CRM.
                 </div>
               </div>
             </a>
@@ -91,7 +91,7 @@ header("Access-Control-Allow-Origin: *");
             <a style="cursor: pointer;">
               <div class="card" style="min-height: 4rem;">
                 <div id="ai-question-2" class="card-body p-3">
-                  Enumeră 5 avantaje pentru folosirea unui ERP.
+                  Enumeră 3 avantaje pentru folosirea unui ERP.
                 </div>
               </div>
             </a>
@@ -109,13 +109,13 @@ header("Access-Control-Allow-Origin: *");
             <a style="cursor: pointer;">
               <div class="card" style="min-height: 4rem;">
                 <div id="ai-question-4" class="card-body p-3">
-                  Enumeră 10 afaceri în trend în 2023 din România.
+                  Enumeră 3 afaceri în trend în 2023 din România.
                 </div>
               </div>
             </a>
           </div>
           <div class="col-md-4">
-            <a style="cursor: pointer; min">
+            <a style="cursor: pointer;">
               <div class="card" style="min-height:4rem">
                 <div id="ai-question-5" class="card-body p-3">
                   Tradu în română: Digitalisation of company in the construction sector
