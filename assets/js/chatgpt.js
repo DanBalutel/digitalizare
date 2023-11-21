@@ -134,6 +134,7 @@ document.getElementById('img_generate').addEventListener("click", function () {
 });
 
 const aiQuestions = document.querySelectorAll('[id^="ai-question-"]');
+console.log(aiQuestions)
 aiQuestions.forEach(question => {
     question.addEventListener('click', function () {
         handleApiResponse(question.innerText);
