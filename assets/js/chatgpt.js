@@ -7,6 +7,7 @@ const chatBox = document.getElementById('chatBox');
     localStorage.setItem('chatMoni', chatBox.innerHTML);
 }
 
+let lastMessage = '';
 // Helper function to make API requests
 async function makeApiRequest(url, method, headers, body = null) {
     try {
@@ -28,6 +29,7 @@ async function makeApiRequest(url, method, headers, body = null) {
         }
         if (method !== 'GET') {
             const result = await response.json()
+            lastMessage = result.data; 
             return result.data;
         } else {
             
@@ -59,7 +61,7 @@ async function handleApiResponse(question, isImage = false) {
     const apiURL = isImage ? `https://punctaj.ro/api/image/${question}/${cui}` : 'https://punctaj.ro/api/chat';
     const method = isImage ? 'GET' : 'POST';
     const headers = { 'Content-Type': 'application/json' };
-    const body = isImage ? null : { "userMessage": question };
+    const body = isImage ? null : { "userMessage": question, "last": lastMessage  };
 
   
     const response = await makeApiRequest(apiURL, method, headers, body);
