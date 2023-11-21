@@ -184,7 +184,7 @@ async function checkIncercari() {
 
         incercari.innerText = `(${2 - attempts} incercari)`; // Update the text
 
-        if (parseInt(attempts) === 0) {
+        if (parseInt(attempts) === 2) {
             img_generate.disabled = true; // Disable the button if attempts are 0
         }
     } catch (error) {
