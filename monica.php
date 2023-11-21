@@ -44,7 +44,7 @@ header("Access-Control-Allow-Origin: *");
                       </div>
                       <!-- chat-header end-->
                       <div class="chat-history chat-msg-box custom-scrollbar">
-                        <ul id="chatBox" style="overflow-y: auto; min-height: 62vh">
+                        <ul id="chatBox" style="overflow-y: auto;">
 
                           <li>
                             <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
