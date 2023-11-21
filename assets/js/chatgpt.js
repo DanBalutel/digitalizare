@@ -46,7 +46,7 @@ async function handleApiResponse(question, isImage = false) {
 
         incercari.innerText = `(${1 - attempts} incercari)`; // Update the text
 
-        if (parseInt(attempts) === 2) {
+        if (parseInt(attempts) > 1) {
             img_generate.disabled = true; // Disable the button if attempts are 0
         }
     }
