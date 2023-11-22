@@ -110,6 +110,8 @@ function removeLoading() {
 
 function addMessage(msgLoc, msgText) {
     const msgChild = document.createElement('li');
+    msgChild.classList = "clearfix";
+
     if (msgLoc === 'right') {
         msgChild.innerHTML = `
             <div class="message other-message pull-right">
@@ -129,7 +131,7 @@ function addMessage(msgLoc, msgText) {
     localStorage.setItem('chatMoni', chatBox.innerHTML);
     chatBox.appendChild(msgChild);
     setTimeout(() => {
-        chatBox.scrollTop = chatBox.scrollHeight;
+        msgChild.scrollTop = msgChild.scrollHeight;
     }, 100);
 }
 
