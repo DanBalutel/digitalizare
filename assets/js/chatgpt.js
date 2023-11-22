@@ -8,18 +8,33 @@ localStorage.setItem('chatMoni', chatBox.innerHTML);
 let lastMessage = '';
 
 // Simplified API request function
-async function makeApiRequest(url, method, body = null) {
-    const headers = { 'Content-Type': 'application/json' };
-    const fetchOptions = {
-        method: method,
-        headers: headers,
-        body: method !== 'GET' && body ? JSON.stringify(body) : null
-    };
-
+async function makeApiRequest(url, method, headers, body = null) {
     try {
+        const fetchOptions = {
+            method: method,
+            headers: headers,
+            cors: 'no-cors'
+        };
+
+        // Only add body for methods other than GET
+        if (method !== 'GET' && body) {
+            fetchOptions.body = JSON.stringify(body);
+        }
+
         const response = await fetch(url, fetchOptions);
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        return method !== 'GET' ? await response.json() : await response.text();
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        if (method !== 'GET') {
+            const result = await response.json()
+            lastMessage = result.data; 
+            return result.data;
+        } else {
+            
+            return await response.text();
+        }
+
     } catch (error) {
         console.error('Request failed:', error);
         removeLoading();
