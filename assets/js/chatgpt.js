@@ -110,8 +110,6 @@ function removeLoading() {
 
 function addMessage(msgLoc, msgText) {
     const msgChild = document.createElement('li');
-    msgChild.classList = "clearfix";
-
     if (msgLoc === 'right') {
         msgChild.innerHTML = `
             <div class="message other-message pull-right">
