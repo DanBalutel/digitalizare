@@ -19,7 +19,7 @@
       <!-- Container-fluid starts-->
       <div class="container-fluid">
         <div class="row g-sm-3 height-equal-2 widget-charts">
-          <h3 class="text-primary"><span id="name"></span></h3>
+          <h3 style="color: #00CCFF"><span id="name"></span></h3>
           <hr style="height: 10px;border-radius: 1rem;">
           <h4 style="color: #00CCFF">Situatii financiare 2022</h4>
 
