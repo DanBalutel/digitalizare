@@ -75,57 +75,6 @@ header("Access-Control-Allow-Origin: *");
         </div>
       </div>
 
-      <div class="container-fluid">
-        <h3 style="color:#00CCFF;">CLICK pe Exemple ⬇️</h3>
-        <div class="row">
-          <div class="col-md-4">
-            <a style="cursor: pointer;">
-              <div class="card" style="min-height: 4rem;">
-                <div id="ai-question-1" class="card-body p-3">
-                  Enumeră 3 avantaje pentru folosirea unui CRM.
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a style="cursor: pointer;">
-              <div class="card" style="min-height: 4rem;">
-                <div id="ai-question-2" class="card-body p-3">
-                  Enumeră 3 avantaje pentru folosirea unui ERP.
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a style="cursor: pointer;">
-              <div class="card" style="min-height: 4rem;">
-                <div id="ai-question-3" class="card-body p-3">
-                  Scrie un email de informare către clienții mei să îi notifici că în luna aceasta oferim un discount de 10%.
-                </div>
-              </div> 
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a style="cursor: pointer;">
-              <div class="card" style="min-height: 4rem;">
-                <div id="ai-question-4" class="card-body p-3">
-                  Enumeră 3 afaceri în trend în 2023 din România.
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a style="cursor: pointer;">
-              <div class="card" style="min-height:4rem">
-                <div id="ai-question-5" class="card-body p-3">
-                  Tradu în română: Digitalisation of company in the construction sector
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
       <!-- <div class="container-fluid">
         <div class="row">
           <div class="col-md-4">
@@ -198,7 +147,7 @@ checkIncercari();
 <script>
   // define Moni steps fideo ID
   const moniVideoSteps = 'iqHC5eQIH7k';
-
+ 
   const moniStepsJson1 = {
     "tag": "div",
     "id": "videoContainerStepsMony",
@@ -222,14 +171,6 @@ checkIncercari();
   // d.createHandler('demoPlay', 'click', showMoniSteps)
 
 
-  // moni copy question cards
-  const monyIds1 = ['ai-question-1', 'ai-question-2', 'ai-question-3', 'ai-question-5', 'ai-question-5']
-  const monyIds2 = ['ai-question-4', 'ai-question-5']
-
-  document.addEventListener("DOMContentLoaded", function() {
-    setMaxHeight(monyIds1);
-    setMaxHeight(monyIds2);
-  });
 
 
 </script>
