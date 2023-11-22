@@ -1,41 +1,25 @@
 const askGpt = document.getElementById('askGPT');
 const chatBox = document.getElementById('chatBox');
- // Load chat history from localStorage
- if (localStorage.chatMoni) {
-    chatBox.innerHTML = localStorage.chatMoni;
-} else {
-    localStorage.setItem('chatMoni', chatBox.innerHTML);
-}
+
+// Load chat history from localStorage
+chatBox.innerHTML = localStorage.chatMoni || '';
+localStorage.setItem('chatMoni', chatBox.innerHTML);
 
 let lastMessage = '';
-// Helper function to make API requests
-async function makeApiRequest(url, method, headers, body = null) {
+
+// Simplified API request function
+async function makeApiRequest(url, method, body = null) {
+    const headers = { 'Content-Type': 'application/json' };
+    const fetchOptions = {
+        method: method,
+        headers: headers,
+        body: method !== 'GET' && body ? JSON.stringify(body) : null
+    };
+
     try {
-        const fetchOptions = {
-            method: method,
-            headers: headers,
-            cors: 'no-cors'
-        };
-
-        // Only add body for methods other than GET
-        if (method !== 'GET' && body) {
-            fetchOptions.body = JSON.stringify(body);
-        }
-
         const response = await fetch(url, fetchOptions);
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        if (method !== 'GET') {
-            const result = await response.json()
-            lastMessage = result.data; 
-            return result.data;
-        } else {
-            
-            return await response.text();
-        }
-
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        return method !== 'GET' ? await response.json() : await response.text();
     } catch (error) {
         console.error('Request failed:', error);
         removeLoading();
@@ -45,34 +29,29 @@ async function makeApiRequest(url, method, headers, body = null) {
 
 // Function to handle API responses
 async function handleApiResponse(question, isImage = false) {
-    const cui = window.localStorage.getItem('cui')
-    if(isImage) {
+    const cui = window.localStorage.getItem('cui');
+    if (isImage) {
         const incercari = document.getElementById('incercari');
         const img_generate = document.getElementById('img_generate');
         const response2 = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
-        const attempts = await response2.text(); // Get the text from the response
+        const attempts = await response2.text();
 
-        incercari.innerText = `(${1 - attempts} incercari)`; // Update the text
-
+        incercari.innerText = `(${1 - attempts} incercari)`;
         if (parseInt(attempts) > 0) {
-            img_generate.disabled = true; // Disable the button if attempts are 0
+            img_generate.disabled = true;
         }
     }
     const apiURL = isImage ? `https://aipro.ro/api/image/${question}/${cui}` : 'https://aipro.ro/api/chat';
     const method = isImage ? 'GET' : 'POST';
-    const headers = { 'Content-Type': 'application/json' };
-    const body = isImage ? null : { "userMessage": question, "last": lastMessage  };
+    const body = isImage ? null : { "userMessage": question, "last": lastMessage };
 
-  
     askGpt.disabled = true;
     document.getElementById('img_generate').disabled = true;
     document.getElementById('trimite').disabled = true;
 
-    const response = await makeApiRequest(apiURL, method, headers, body);
-
-
+    const response = await makeApiRequest(apiURL, method, body);
     if (response) {
-        const ansText = response; 
+        const ansText = response;
         removeLoading();
         addMessage('left', ansText);
         askGpt.disabled = false;
@@ -84,7 +63,7 @@ async function handleApiResponse(question, isImage = false) {
 // Add loading animation
 function addLoading() {
     const loadingChild = document.createElement('div');
-    loadingChild.classList = 'chat-content-leftside';
+    loadingChild.classList.add('chat-content-leftside');
     loadingChild.id = 'loading-child';
     loadingChild.innerHTML = `
         <div id="chat-feed" class="message my-message">
@@ -96,11 +75,9 @@ function addLoading() {
     `;
     chatBox.appendChild(loadingChild);
     askGpt.value = '';
-    setTimeout(() => {
-        chatBox.scrollTop = chatBox.scrollHeight;
-    }, 500);
-    loadingChild.scrollTop = loadingChild.scrollHeight;
+    scrollToBottom();
 }
+
 function removeLoading() {
     const loadingChild = document.getElementById('loading-child');
     if (loadingChild) {
@@ -110,31 +87,28 @@ function removeLoading() {
 
 function addMessage(msgLoc, msgText) {
     const msgChild = document.createElement('li');
-    msgChild.classList = "clearfix";
+    msgChild.classList.add("clearfix");
+    msgChild.innerHTML = msgLoc === 'right' ? 
+        `<div class="message other-message pull-right">
+            <img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
+            <div class="message-data">${msgText}</div>
+         </div>` : 
+        `<div class="message my-message">
+            <img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
+            <div class="message-data">${msgText}</div> 
+         </div>`;
 
-    if (msgLoc === 'right') {
-        msgChild.innerHTML = `
-            <div class="message other-message pull-right">
-                <img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
-                <div class="message-data">${msgText}</div>
-            </div>
-        `;
-    } else {
-        msgChild.innerHTML = `
-            <div class="message my-message">
-                <img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
-                <div class="message-data">${msgText}</div> 
-            </div>
-        `;
-    }
-
-    localStorage.setItem('chatMoni', chatBox.innerHTML);
     chatBox.appendChild(msgChild);
-    setTimeout(() => {
-        msgChild.scrollTop = msgChild.scrollHeight;
-    }, 100);
+    localStorage.setItem('chatMoni', chatBox.innerHTML);
+    scrollToBottom();
 }
 
+function scrollToBottom() {
+    const lastMessageElement = chatBox.lastElementChild;
+    if (lastMessageElement) {
+        lastMessageElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+}
 //onclick="copyElementText(this.innerText)"
 function copyElementText(content) {
     if (content.includes('img')) {
