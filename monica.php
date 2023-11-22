@@ -15,12 +15,10 @@ header("Access-Control-Allow-Origin: *");
     <?php include('partial/sidebar.php') ?>
     <!-- Page Sidebar Ends-->
     <div class="page-body">
-
       <?php
       $title = 'Mony AI';
       include('partial/breadcrumb.php')
       ?>
-
       <div class="container-fluid">
         <div class="row">
           <div class="col call-chat-body">
@@ -71,7 +69,6 @@ header("Access-Control-Allow-Origin: *");
           </div>
         </div>
       </div>
-
     </div>
     <!-- footer start-->
     <?php include('partial/footer.php') ?>
@@ -87,23 +84,17 @@ async function checkIncercari() {
     try {
         const cui = window.localStorage.getItem('cui');
         const response = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
-        const attempts = await response.text(); // Get the text from the response
-
-        incercari.innerText = `(${2 - attempts} incercari)`; // Update the text
-
+        const attempts = await response.text();
+        incercari.innerText = `(${2 - attempts} incercari)`; 
         if (parseInt(attempts) === 2) {
-            img_generate.disabled = true; // Disable the button if attempts are 0
+            img_generate.disabled = true; 
         }
     } catch (error) {
         console.error('Request failed:', error);
     }
 }
-
 checkIncercari();
 </script>
-
-
-<script src="assets/js/moniSteps.js"></script>
 
 <!-- Plugins JS start-->
 <script src="assets/js/notify/index.js"></script>
