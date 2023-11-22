@@ -20,7 +20,7 @@ header("Access-Control-Allow-Origin: *");
       include('partial/breadcrumb.php')
       ?>
       <div class="container-fluid">
-        <div class="row" style="margin-bottom: -10rem">
+        <div class="row">
           <div class="col call-chat-body">
             <div class="card">
               <div class="card-body p-0">
@@ -80,7 +80,6 @@ header("Access-Control-Allow-Origin: *");
 async function checkIncercari() {
     const incercari = document.getElementById('incercari');
     const img_generate = document.getElementById('img_generate');
-
     try {
         const cui = window.localStorage.getItem('cui');
         const response = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
