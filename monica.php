@@ -37,6 +37,8 @@ header("Access-Control-Allow-Origin: *");
                         <div class="about">
                           <div class="name">Mony AI</div>
                         </div>
+                        <ul class="list-inline float-start float-sm-end chat-menu-icons">
+                        </ul>
                         <div class="input-group-text btn btn-primary text-white fw-bold" style="margin:0 1rem" onclick="clearChatHistory()">X istoric</div>
                       </div>
                       <!-- chat-header end-->
