@@ -132,7 +132,7 @@ function addMessage(msgLoc, msgText) {
     chatBox.appendChild(msgChild);
     setTimeout(() => {
         chatBox.scrollTop = chatBox.scrollHeight;
-    }, 500);
+    }, 100);
 }
 
 //onclick="copyElementText(this.innerText)"

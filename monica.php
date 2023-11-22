@@ -17,12 +17,11 @@ header("Access-Control-Allow-Origin: *");
     <div class="page-body">
 
       <?php
-      $title = 'AI';
+      $title = 'Mony AI';
       include('partial/breadcrumb.php')
       ?>
 
       <div class="container-fluid">
-
         <div class="row">
           <div class="col call-chat-body">
             <div class="card">
@@ -31,30 +30,27 @@ header("Access-Control-Allow-Origin: *");
                   <!-- Chat right side start-->
                   <div class="col pe-0 chat-right-aside">
                     <!-- chat start-->
-                    <div class="chat" style="min-height: 80vh">
+                    <div class="chat">
                       <!-- chat-header start-->
                       <div class="chat-header clearfix"><img class="rounded-circle" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
                         <div class="about">
                           <div class="name">Mony AI</div>
-                          <div class="status font-success">Online</div>
                         </div>
                         <ul class="list-inline float-start float-sm-end chat-menu-icons">
                         </ul>
                         <div class="input-group-text btn btn-primary text-white fw-bold" style="margin:0 1rem" onclick="clearChatHistory()">X istoric</div>
                       </div>
                       <!-- chat-header end-->
-                      <div class="chat-history chat-msg-box custom-scrollbar" style="min-height: 62vh">
-                        <ul id="chatBox" style="overflow-y: auto; ">
-
+                      <div class="chat-history chat-msg-box custom-scrollbar">
+                        <ul id="chatBox">
                           <li>
-                            <div class="message my-message"><img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
+                            <div class="message my-message">
+                              <img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
                               Bună ziua! Numele meu este Mony, sunt un robot cu inteligență artificială care poate răspunde la întrebări generale, explica lucruri, sugereaza idei, traduce, scrie e-mailuri și cod programare.
                             </div>
                           </li>
-
                         </ul>
                       </div>
-                      <!-- end chat-history-->
                       <div class="chat-message clearfix">
                         <div class="row">
                           <div class="col-xl-12 d-flex">
@@ -75,45 +71,6 @@ header("Access-Control-Allow-Origin: *");
         </div>
       </div>
 
-      <!-- <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4">
-            <img class="center" style="max-width: 350px;" src="assets/images/iphone1.png" alt="">
-          </div>
-          <div class="col-md-8 d-flex flex-column justify-content-center">
-            <span style="color:#00CCFF">
-            <b>0742024473<b> Salvați numărul și puteți accesa AI:  <br>
-            1. <a href="https://wa.me/40742024473" target="_blank">Click: <u>Whatsapp</u></a>: Acces rapid și istoric  <br>
-            2. <a href="sms:+40742024473" target="_blank">Click: <u>SMS</u></a> (acces la AI chiar si in zone fără internet)
-            </span>
-          </div>
-        </div>
-
-      </div> -->
-
-      <!-- Modal loading-->
-      <div id="modal-loading" class="modal fade bd-example-modal-lg show" tabindex="-1" aria-labelledby="myLargeModalLabel" style="display: none;background: #000000a6;" aria-modal="true" role="dialog">
-        <div class="mt-5 modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-body dark-modal">
-
-
-              <h6 id="loadingLabel" class="w-100 d-flex justify-content-center">text here</h6>
-
-              <div class="progress">
-                <div id="loadingLoader" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <!-- Container-fluid Ends-->
     </div>
     <!-- footer start-->
     <?php include('partial/footer.php') ?>
@@ -144,37 +101,7 @@ async function checkIncercari() {
 checkIncercari();
 </script>
 
-<script>
-  // define Moni steps fideo ID
-  const moniVideoSteps = 'iqHC5eQIH7k';
- 
-  const moniStepsJson1 = {
-    "tag": "div",
-    "id": "videoContainerStepsMony",
-    "class": "videoContainerSteps",
-    "children": [{
-      "tag": "div",
-      "id": "moniStepsVideo"
-    }]
-  }
 
-  const topbarHeight = d.element('headerWrapper').offsetHeight;
-  const demoPlayDiv = d.element('demoPlayDiv');
-  // d.createElement(moniStepsJson1, demoPlayDiv);
-
-  // function showMoniSteps() {
-  //   d.createElement(moniStepsJson1, demoPlayDiv);
-  //   onYouTubeIframeAPIReady()
-  //   d.e.demoPlay.classList.toggle('hide');
-  // }
-
-  // d.createHandler('demoPlay', 'click', showMoniSteps)
-
-
-
-
-</script>
-<script src="https://www.youtube.com/iframe_api"></script>
 <script src="assets/js/moniSteps.js"></script>
 
 <!-- Plugins JS start-->
