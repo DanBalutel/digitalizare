@@ -41,7 +41,7 @@ header("Access-Control-Allow-Origin: *");
                         <div class="input-group-text btn btn-primary text-white fw-bold" style="margin:0 1rem" onclick="clearChatHistory()">X istoric</div>
                       </div>
                       <!-- chat-header end-->
-                      <div class="chat-history chat-msg-box custom-scrollbar pb-5" style="min-height: 80vh">
+                      <div class="chat-history chat-msg-box custom-scrollbar pb-5" style="min-height: 75vh">
                         <ul id="chatBox">
                           <li>
                             <div class="message my-message">

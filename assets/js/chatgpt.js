@@ -112,11 +112,11 @@ function addMessage(msgLoc, msgText) {
     const msgChild = document.createElement('li');
     msgChild.classList.add("clearfix");
     msgChild.innerHTML = msgLoc === 'right' ? 
-        `<div class="message other-message pull-right">
+        `<div class="message other-message pull-right" style="margin-bottom: 20px">
             <img class="rounded-circle float-end chat-user-img img-30" src="assets/images/user/12.png" alt="">
             <div class="message-data">${msgText}</div>
          </div>` : 
-        `<div class="message my-message">
+        `<div class="message my-message" style="margin-bottom: 20px">
             <img class="rounded-circle float-start chat-user-img img-30" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
             <div class="message-data">${msgText}</div> 
          </div>`;
