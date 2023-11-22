@@ -19,7 +19,7 @@
       <!-- Container-fluid starts-->
       <div class="container-fluid">
         <div class="row g-sm-3 height-equal-2 widget-charts">
-          <h3 id="name"></h3>
+          <h3 class="text-primary"><span id="name"></span></h3>
           <hr style="height: 10px;border-radius: 1rem;">
           <h4 style="color: #00CCFF">Situatii financiare 2022</h4>
 
@@ -27,7 +27,8 @@
             <div class="card small-widget mb-sm-0">
               <div id="card1" class="card-body primary min-h-7"> <span class="f-light">Cifra de afaceri</span>
                 <div class="d-flex align-items-end gap-1">
-                  <h4 id="cifra-de-afaceri"></h4><span class="font-primary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span>
+                  <h4 id="cifra-de-afaceri"></h4>
+                  <!-- <span class="font-primary f-12 f-w-500"><i class="icon-arrow-up"></i><span>+50%</span></span> -->
                 </div>
                 <div class="bg-gradient">
                   <svg class="stroke-icon svg-fill">
