@@ -96,10 +96,11 @@ function addLoading() {
     `;
     chatBox.appendChild(loadingChild);
     askGpt.value = '';
+    setTimeout(() => {
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }, 500);
     loadingChild.scrollTop = loadingChild.scrollHeight;
 }
-
-// Remove loading animation
 function removeLoading() {
     const loadingChild = document.getElementById('loading-child');
     if (loadingChild) {
@@ -127,8 +128,8 @@ function addMessage(msgLoc, msgText) {
         `;
     }
 
-    chatBox.appendChild(msgChild);
     localStorage.setItem('chatMoni', chatBox.innerHTML);
+    chatBox.appendChild(msgChild);
     setTimeout(() => {
         chatBox.scrollTop = chatBox.scrollHeight;
     }, 500);
@@ -179,12 +180,3 @@ document.getElementById('img_generate').addEventListener("click", function () {
     addLoading();
 });
 
-const aiQuestions = document.querySelectorAll('[id^="ai-question-"]');
-aiQuestions.forEach(question => {
-    question.addEventListener('click', function () {
-        console.log(question.innerText)
-        handleApiResponse(question.innerText);
-        addMessage('right', question.innerText);
-        addLoading();
-    });
-});
