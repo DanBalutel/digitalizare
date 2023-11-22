@@ -1,13 +1,14 @@
 const askGpt = document.getElementById('askGPT');
 const chatBox = document.getElementById('chatBox');
-
-// Load chat history from localStorage
-chatBox.innerHTML = localStorage.chatMoni || '';
-localStorage.setItem('chatMoni', chatBox.innerHTML);
+ // Load chat history from localStorage
+ if (localStorage.chatMoni) {
+    chatBox.innerHTML = localStorage.chatMoni;
+} else {
+    localStorage.setItem('chatMoni', chatBox.innerHTML);
+}
 
 let lastMessage = '';
-
-// Simplified API request function
+// Helper function to make API requests
 async function makeApiRequest(url, method, headers, body = null) {
     try {
         const fetchOptions = {
@@ -44,29 +45,34 @@ async function makeApiRequest(url, method, headers, body = null) {
 
 // Function to handle API responses
 async function handleApiResponse(question, isImage = false) {
-    const cui = window.localStorage.getItem('cui');
-    if (isImage) {
+    const cui = window.localStorage.getItem('cui')
+    if(isImage) {
         const incercari = document.getElementById('incercari');
         const img_generate = document.getElementById('img_generate');
         const response2 = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
-        const attempts = await response2.text();
+        const attempts = await response2.text(); // Get the text from the response
 
-        incercari.innerText = `(${1 - attempts} incercari)`;
+        incercari.innerText = `(${1 - attempts} incercari)`; // Update the text
+
         if (parseInt(attempts) > 0) {
-            img_generate.disabled = true;
+            img_generate.disabled = true; // Disable the button if attempts are 0
         }
     }
-    const apiURL = isImage ? `https://aipro.ro/api/image/${question}/${cui}` : 'https://aipro.ro/api/chat';
+    const apiURL = isImage ? `https://punctaj.ro/api/image/${question}/${cui}` : 'https://punctaj.ro/api/chat';
     const method = isImage ? 'GET' : 'POST';
-    const body = isImage ? null : { "userMessage": question, "last": lastMessage };
+    const headers = { 'Content-Type': 'application/json' };
+    const body = isImage ? null : { "userMessage": question, "last": lastMessage  };
 
+  
     askGpt.disabled = true;
     document.getElementById('img_generate').disabled = true;
     document.getElementById('trimite').disabled = true;
 
-    const response = await makeApiRequest(apiURL, method, body);
+    const response = await makeApiRequest(apiURL, method, headers, body);
+
+
     if (response) {
-        const ansText = response;
+        const ansText = response; 
         removeLoading();
         addMessage('left', ansText);
         askGpt.disabled = false;
@@ -93,6 +99,8 @@ function addLoading() {
     scrollToBottom();
 }
 
+
+// Remove loading animation
 function removeLoading() {
     const loadingChild = document.getElementById('loading-child');
     if (loadingChild) {
@@ -117,13 +125,13 @@ function addMessage(msgLoc, msgText) {
     localStorage.setItem('chatMoni', chatBox.innerHTML);
     scrollToBottom();
 }
-
 function scrollToBottom() {
     const lastMessageElement = chatBox.lastElementChild;
     if (lastMessageElement) {
         lastMessageElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
 }
+
 //onclick="copyElementText(this.innerText)"
 function copyElementText(content) {
     if (content.includes('img')) {
@@ -169,3 +177,12 @@ document.getElementById('img_generate').addEventListener("click", function () {
     addLoading();
 });
 
+const aiQuestions = document.querySelectorAll('[id^="ai-question-"]');
+aiQuestions.forEach(question => {
+    question.addEventListener('click', function () {
+        console.log(question.innerText)
+        handleApiResponse(question.innerText);
+        addMessage('right', question.innerText);
+        addLoading();
+    });
+});
