@@ -131,7 +131,7 @@ function addMessage(msgLoc, msgText) {
     localStorage.setItem('chatMoni', chatBox.innerHTML);
     setTimeout(() => {
         chatBox.scrollTop = chatBox.scrollHeight;
-    }, 0);
+    }, 500);
 }
 
 //onclick="copyElementText(this.innerText)"
