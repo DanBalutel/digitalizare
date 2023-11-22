@@ -30,7 +30,7 @@ header("Access-Control-Allow-Origin: *");
                   <!-- Chat right side start-->
                   <div class="col pe-0 chat-right-aside">
                     <!-- chat start-->
-                    <div class="chat" style="min-height: 80vh">
+                    <div class="chat">
                       <!-- chat-header start-->
                       <div class="chat-header clearfix"><img class="rounded-circle" src="../assets/images/avtar/moniProfileImage.jpg" alt="">
                         <div class="about">
@@ -41,7 +41,7 @@ header("Access-Control-Allow-Origin: *");
                         <div class="input-group-text btn btn-primary text-white fw-bold" style="margin:0 1rem" onclick="clearChatHistory()">X istoric</div>
                       </div>
                       <!-- chat-header end-->
-                      <div class="chat-history chat-msg-box custom-scrollbar pb-5">
+                      <div class="chat-history chat-msg-box custom-scrollbar pb-5" style="min-height: 80vh">
                         <ul id="chatBox">
                           <li>
                             <div class="message my-message">
