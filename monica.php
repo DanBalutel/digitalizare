@@ -19,7 +19,7 @@ header("Access-Control-Allow-Origin: *");
       $title = 'Mony AI';
       include('partial/breadcrumb.php')
       ?>
-      <div class="container-fluid">
+      <div class="container-fluid" style="margin-bottom: -10vh">
         <div class="row">
           <div class="col call-chat-body">
             <div class="card">
