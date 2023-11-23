@@ -83,9 +83,11 @@ async function checkIncercari() {
         const cui = window.localStorage.getItem('cui');
         const response = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
         const attempts = await response.text();
-        incercari.innerText = `(${2 - attempts} incercari)`; 
-        if (parseInt(attempts) === 2) {
-            img_generate.disabled = true; 
+        if(attempts) {
+          incercari.innerText = `(${2 - attempts} incercari)`; 
+          if (parseInt(attempts) === 2) {
+              img_generate.disabled = true; 
+          }
         }
     } catch (error) {
         console.error('Request failed:', error);
