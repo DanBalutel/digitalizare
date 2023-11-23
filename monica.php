@@ -87,6 +87,9 @@ async function checkIncercari() {
           incercari.innerText = `(${2 - attempts} incercari)`; 
           if (parseInt(attempts) === 2) {
               img_generate.disabled = true; 
+          } else {
+              img_generate.disabled = true; 
+              incercari.innerText = `2 incercari)`; 
           }
         }
     } catch (error) {
