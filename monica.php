@@ -83,6 +83,8 @@ async function checkIncercari() {
         const cui = window.localStorage.getItem('cui');
         const response = await fetch(`https://punctaj.ro/api/incercari/${cui}`);
         const attempts = await response.text();
+        console.log(response)
+        console.log(attmepts)
         if(attempts > 0) {
           incercari.innerText = `(${2 - attempts} incercari)`; 
           if (parseInt(attempts) === 2) {
@@ -96,7 +98,7 @@ async function checkIncercari() {
         console.error('Request failed:', error);
     }
 }
-// checkIncercari();
+checkIncercari();
 </script>
 
 <!-- Plugins JS start-->
