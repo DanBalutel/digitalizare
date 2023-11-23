@@ -96,7 +96,7 @@ async function checkIncercari() {
         console.error('Request failed:', error);
     }
 }
-checkIncercari();
+// checkIncercari();
 </script>
 
 <!-- Plugins JS start-->
