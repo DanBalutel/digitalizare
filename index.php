@@ -23,7 +23,7 @@
           <hr style="height: 10px;border-radius: 1rem;">
           <h4 style="color: #00CCFF">Situatii financiare 2022</h4>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="card small-widget mb-sm-0">
               <div id="card1" class="card-body primary min-h-7"> <span class="f-light">Cifra de afaceri</span>
                 <div class="d-flex align-items-end gap-1">
@@ -39,7 +39,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="card small-widget mb-sm-0">
               <div id="card2" class="card-body success min-h-7"><span class="f-light">Profit</span>
                 <div class="d-flex align-items-end gap-1">
@@ -54,7 +54,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="card small-widget mb-sm-0">
               <div id="card3" class="card-body secondary min-h-7"><span class="f-light">Angajați</span>
                 <div class="d-flex align-items-end gap-1">
@@ -68,7 +68,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="card small-widget mb-sm-0">
               <div id="card4" class="card-body success min-h-7"><span class="f-light">Cod CAEN</span>
                 <div class="flex-wrap d-flex align-items-end gap-1">
@@ -84,7 +84,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="card small-widget mb-sm-0">
               <div id="card5" class="card-body secondary"> <span class="f-light">Active Totale</span>
                 <div class="d-flex align-items-end gap-1">
@@ -99,7 +99,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="card small-widget mb-sm-0">
               <div id="card6" class="card-body warning"><span class="f-light">Stocuri</span>
                 <div class="d-flex align-items-end gap-1">
@@ -114,7 +114,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="card small-widget mb-sm-0">
               <div id="card7" class="card-body secondary"><span class="f-light">Casa si conturi in banci</span>
                 <div class="d-flex align-items-end gap-1">
@@ -129,7 +129,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="card small-widget mb-sm-0">
               <div id="card8" class="card-body success"><span class="f-light">Capital total</span>
                 <div class="d-flex align-items-end gap-1">
