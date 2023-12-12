@@ -18,8 +18,27 @@
       ?>
       <!-- Container-fluid starts-->
         <div class="container-fluid">
-          
-          <iframe src="https://gmail.com" style="height: 80vh; width: 100%" frameborder="0"></iframe>
+          <div class="card h-100">
+            <div class="card-body ">
+                <form action="">
+                    <div class="row justify-content-center align-items-center text">
+                        <div class="col-md-4 ">
+                            <div class="text-center">
+                                <img  src="assets/images/meniu/gmail.png" width="150" alt="">
+                            </div>
+                            <br>
+                            <label for="login">Email</label>
+                            <input type="email" placeholder="email@gmail.com" class="form-control">
+                            <br>
+                            <label for="password">Password</label>
+                            <input type="password" placeholder="*******" class="form-control">
+                            <br>
+                            <button class="btn btn-primary w-100">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          </div>
         </div>
       <!-- Container-fluid Ends-->
     </div>
