@@ -20,7 +20,7 @@
         <div class="container-fluid">
           <div class="card h-100">
             <div class="card-body ">
-                <form action="">
+                <!-- <form action="">
                     <div class="row justify-content-center align-items-center text">
                         <div class="col-md-4 ">
                             <div class="text-center">
@@ -36,9 +36,10 @@
                             <button class="btn btn-primary w-100">Login</button>
                         </div>
                     </div>
-                </form>
+                </form> -->
+                
+            <iframe src="https://gmail.com" style="height: 80vh" frameborder="0"></iframe>
             </div>
-            <iframe src="https://gmail.com" frameborder="0"></iframe>
           </div>
         </div>
       <!-- Container-fluid Ends-->
