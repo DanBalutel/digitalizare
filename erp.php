@@ -43,7 +43,7 @@
                                         <div class="p-4 border radius-15">
                                             <img src="assets/images/custom-persons/5.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
                                             <h6 class="mt-3">Pagina: ERP</h6>
-                                            <h5 class="mt-2 mb-2"> Alexandru Irimescu <br>
+                                            <h5 class="mt-2 mb-2"> Alexandru Popescu <br>
                                                 <span class="blink">🟢</span> Lucreaza in ERP
                                             </h5>
 
@@ -88,7 +88,7 @@
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
                                             <img src="assets/images/custom-persons/3.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                            <h5 class="mt-2 mb-2">Alexandra G. <br>
+                                            <h5 class="mt-2 mb-2">Alexandra Popescu <br>
                                                 <span class="blink">🟢</span> Lucreaza in Social Media
                                             </h5>
 
@@ -124,7 +124,7 @@
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
                                             <img src="assets/images/custom-persons/4.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                            <h5 class="mt-2 mb-2">🔴 Stefania H.</h5>
+                                            <h5 class="mt-2 mb-2">🔴 Stefania Popescu</h5>
 
 
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
@@ -166,7 +166,7 @@
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
                                             <img src="assets/images/custom-persons/8.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                            <h5 class="mt-2 mb-2"> Andra B. <br>
+                                            <h5 class="mt-2 mb-2"> Andra Popescu <br>
                                                 <span class="blink">🟢</span> Lucreaza in Contabilitate
                                             </h5>
 
@@ -204,7 +204,7 @@
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
                                             <img src="assets/images/custom-persons/10.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                            <h5 class="mt-2 mb-2">🔴 Daniela Irimescu</h5>
+                                            <h5 class="mt-2 mb-2">🔴 Daniela Popescu</h5>
 
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
@@ -245,7 +245,7 @@
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
                                             <img src="assets/images/custom-persons/2.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                            <h5 class="mt-2 mb-2">🔴 Dan Balutel</h5>
+                                            <h5 class="mt-2 mb-2">🔴 Dan Popescu</h5>
 
                                             <div class="d-grid"> <a href="#" class="btn btn-outline-primary radius-15">Trimite mesaj</a></div>
                                             <div class="chat-tab-menu mt-3">
@@ -288,7 +288,7 @@
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
                                             <img src="assets/images/custom-persons/12.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                            <h5 class="mt-2 mb-2">Iordache Mihaela <br>
+                                            <h5 class="mt-2 mb-2">Popescu Mihaela <br>
                                                 <span class="blink">🟢</span> Lucreaza in Contabilitate
                                             </h5>
 
@@ -324,7 +324,7 @@
                                     <div class="card-body text-center">
                                         <div class="p-4 border radius-15">
                                             <img src="assets/images/custom-persons/9.jpg" width="110" height="110" class="rounded-circle shadow" alt="">
-                                            <h5 class="mt-2 mb-2">Ionut Rusu <br>
+                                            <h5 class="mt-2 mb-2">Mariano Hriscu <br>
                                                 <span class="blink">🟢</span> Lucreaza in IOT
                                             </h5>
 
